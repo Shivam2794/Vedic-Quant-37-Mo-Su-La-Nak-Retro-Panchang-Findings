@@ -1,0 +1,43 @@
+{
+    "cagr_train": 0.0026202243593982377,
+    "dd_train": 0.27804577878360814,
+    "oos_cagr": -0.02404381514472742,
+    "oos_dd": 0.17696043233722908,
+    "params": {
+        "F25": {
+            "hold_days": 2,
+            "stop_pct": 0.01861754357554079,
+            "is_trailing": false,
+            "direction": 1,
+            "entry_delay": 1
+        },
+        "F2": {
+            "hold_days": 9,
+            "stop_pct": 0.027768012625015853,
+            "is_trailing": false,
+            "direction": -1,
+            "entry_delay": 1
+        },
+        "F37": {
+            "hold_days": 13,
+            "stop_pct": 0.031820393567160335,
+            "is_trailing": false,
+            "direction": -1,
+            "entry_delay": 1
+        },
+        "F20": {
+            "hold_days": 3,
+            "stop_pct": 0.015908471896566176,
+            "is_trailing": false,
+            "direction": 1,
+            "entry_delay": 0
+        },
+        "F11": {
+            "hold_days": 17,
+            "stop_pct": 0.032141163594172836,
+            "is_trailing": true,
+            "direction": 1,
+            "entry_delay": 1
+        }
+    }
+}

@@ -1,0 +1,131 @@
+{
+  "generation": 1100,
+  "train_cagr": 0.045525355274523394,
+  "train_dd": 0.02205718391435142,
+  "train_sharpe": 6.932848326514884,
+  "oos_cagr": 0.03507471826284081,
+  "oos_dd": 0.030318081736351876,
+  "oos_sharpe": 2.498603461707079,
+  "n_fids": 12,
+  "active_fids": [
+    "F12",
+    "F22",
+    "F23",
+    "F27",
+    "F35",
+    "F2",
+    "F28",
+    "F25",
+    "F34",
+    "F13",
+    "F5",
+    "F19"
+  ],
+  "params": {
+    "F12": {
+      "hold_days": 8,
+      "stop_pct": 0.03987390043273467,
+      "is_trailing": true,
+      "direction": 1,
+      "entry_delay": 1
+    },
+    "F22": {
+      "hold_days": 9,
+      "stop_pct": 0.05751519778070581,
+      "is_trailing": true,
+      "direction": 1,
+      "entry_delay": 1
+    },
+    "F23": {
+      "hold_days": 18,
+      "stop_pct": 0.002,
+      "is_trailing": true,
+      "direction": -1,
+      "entry_delay": 0
+    },
+    "F27": {
+      "hold_days": 8,
+      "stop_pct": 0.003281317682674656,
+      "is_trailing": false,
+      "direction": 1,
+      "entry_delay": 1
+    },
+    "F35": {
+      "hold_days": 6,
+      "stop_pct": 0.031669708401257025,
+      "is_trailing": false,
+      "direction": -1,
+      "entry_delay": 0
+    },
+    "F2": {
+      "hold_days": 1,
+      "stop_pct": 0.07584124925064416,
+      "is_trailing": true,
+      "direction": -1,
+      "entry_delay": 0
+    },
+    "F28": {
+      "hold_days": 22,
+      "stop_pct": 0.07004333191934348,
+      "is_trailing": false,
+      "direction": 1,
+      "entry_delay": 1
+    },
+    "F25": {
+      "hold_days": 14,
+      "stop_pct": 0.008972636920919371,
+      "is_trailing": true,
+      "direction": 1,
+      "entry_delay": 1
+    },
+    "F34": {
+      "hold_days": 26,
+      "stop_pct": 0.04369652785574245,
+      "is_trailing": false,
+      "direction": 1,
+      "entry_delay": 0
+    },
+    "F13": {
+      "hold_days": 6,
+      "stop_pct": 0.06432720893051339,
+      "is_trailing": false,
+      "direction": -1,
+      "entry_delay": 0
+    },
+    "F5": {
+      "hold_days": 27,
+      "stop_pct": 0.02519805552398957,
+      "is_trailing": true,
+      "direction": -1,
+      "entry_delay": 0
+    },
+    "F19": {
+      "hold_days": 28,
+      "stop_pct": 0.03287941543497009,
+      "is_trailing": true,
+      "direction": -1,
+      "entry_delay": 0
+    }
+  },
+  "regime_filter": 1,
+  "vol_gate": 1,
+  "vol_threshold": 0.2805909369782967,
+  "min_confluence": 1,
+  "use_tier_sizing": true,
+  "seasonal_scale": {
+    "1": 1.1137962216414548,
+    "2": 1.0385605636714894,
+    "3": 0.9296412028232144,
+    "4": 1.1275328331723653,
+    "5": 1.0134753769442015,
+    "6": 1.006859305994724,
+    "7": 0.8438967500806869,
+    "8": 1.039925398278807,
+    "9": 0.7450374167441934,
+    "10": 1.0363667367024125,
+    "11": 0.9304045437456006,
+    "12": 1.0800181787173118
+  },
+  "use_rsi_gate": true,
+  "rsi_threshold": 48.27791887620859
+}
