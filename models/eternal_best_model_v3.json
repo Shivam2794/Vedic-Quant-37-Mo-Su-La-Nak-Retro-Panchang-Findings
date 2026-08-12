@@ -1,0 +1,94 @@
+{
+  "generation": 100,
+  "train_cagr": 0.026564596273060737,
+  "train_dd": 0.017599835038944,
+  "train_sharpe": 3.715855445703874,
+  "oos_cagr": 0.011683092976938037,
+  "oos_dd": 0.04334245811441574,
+  "oos_sharpe": 1.2876177828315893,
+  "n_fids": 7,
+  "active_fids": [
+    "F37",
+    "F10",
+    "F7",
+    "F13",
+    "F4",
+    "F32",
+    "F26"
+  ],
+  "params": {
+    "F37": {
+      "hold_days": 13,
+      "stop_pct": 0.04208220187882388,
+      "is_trailing": true,
+      "direction": 1,
+      "entry_delay": 0
+    },
+    "F10": {
+      "hold_days": 8,
+      "stop_pct": 0.05351838032163511,
+      "is_trailing": false,
+      "direction": 1,
+      "entry_delay": 0
+    },
+    "F7": {
+      "hold_days": 6,
+      "stop_pct": 0.002,
+      "is_trailing": true,
+      "direction": 1,
+      "entry_delay": 0
+    },
+    "F13": {
+      "hold_days": 2,
+      "stop_pct": 0.003266644101399265,
+      "is_trailing": false,
+      "direction": 1,
+      "entry_delay": 0
+    },
+    "F4": {
+      "hold_days": 9,
+      "stop_pct": 0.02744963439172466,
+      "is_trailing": false,
+      "direction": 1,
+      "entry_delay": 0
+    },
+    "F32": {
+      "hold_days": 9,
+      "stop_pct": 0.002,
+      "is_trailing": false,
+      "direction": 1,
+      "entry_delay": 0
+    },
+    "F26": {
+      "hold_days": 6,
+      "stop_pct": 0.02352831335696464,
+      "is_trailing": true,
+      "direction": -1,
+      "entry_delay": 0
+    }
+  },
+  "regime_filter": 1,
+  "vol_gate": 1,
+  "vol_threshold": 0.18506393711807534,
+  "min_confluence": 2,
+  "use_tier_sizing": true,
+  "seasonal_scale": {
+    "1": 1.0670758192873284,
+    "2": 0.9896924477961058,
+    "3": 1.0031386828471904,
+    "4": 1.0765497494685898,
+    "5": 0.952022869434153,
+    "6": 0.7842551482900514,
+    "7": 0.9367536381521896,
+    "8": 0.9331755517796456,
+    "9": 0.9588044721289026,
+    "10": 0.9200482318443516,
+    "11": 1.0049608214817543,
+    "12": 1.1063443995057287
+  },
+  "use_rsi_gate": false,
+  "rsi_threshold": 48.3760826645234,
+  "max_leverage": 1.0,
+  "use_pyramiding": true,
+  "asset_idx": 3
+}
