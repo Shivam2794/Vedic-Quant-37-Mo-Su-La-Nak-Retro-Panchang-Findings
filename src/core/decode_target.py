@@ -1,0 +1,1 @@
+import base64; path = r" C:\Users\Shivam Patel\.gemini\antigravity\brain\f7cdee3c-586a-4806-b281-db74f64d657a\eternal_quant_evolution_v5.py\; data = open(\code_b64.txt\, \r\).read().strip(); open(path, \w\, encoding=\utf-8\).write(base64.b64decode(data).decode(\utf-8\)); print(\Target successfully updated!\)
