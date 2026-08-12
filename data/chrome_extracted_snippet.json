@@ -1,0 +1,387 @@
+{
+  "Sector_ETFs_trading": {
+    "D1_nakshatra_pada": {
+      "Sun": {"nakshatra": "Mula", "pada": 3},
+      "Moon": {"nakshatra": "Shravana", "pada": 3},
+      "Mars": {"nakshatra": "Hasta", "pada": 3},
+      "Mercury": {"nakshatra": "Anuradha", "pada": 4},
+      "Jupiter": {"nakshatra": "Purva Bhadrapada", "pada": 3},
+      "Venus": {"nakshatra": "Purva Ashadha", "pada": 2},
+      "Saturn": {"nakshatra": "Ashwini", "pada": 1},
+      "Rahu": {"nakshatra": "Magha", "pada": 1},
+      "Ketu": {"nakshatra": "Dhanishtha", "pada": 3},
+      "Ascendant": {"nakshatra": "Shravana", "pada": 1}
+    },
+    "panchang": {
+      "tithi": "Chaturthi (Shukla)",
+      "karana": "Vishti",
+      "yoga": "Harshana",
+      "vara": "Tuesday"
+    },
+    "bhinnashtakvarga": {
+      "Sun": {"Aries": 4, "Taurus": 3, "Gemini": 6, "Cancer": 5, "Leo": 2, "Virgo": 3, "Libra": 7, "Scorpio": 4, "Sagittarius": 5, "Capricorn": 3, "Aquarius": 1, "Pisces": 5},
+      "Moon": {"Aries": 1, "Taurus": 4, "Gemini": 7, "Cancer": 3, "Leo": 4, "Virgo": 5, "Libra": 5, "Scorpio": 5, "Sagittarius": 1, "Capricorn": 4, "Aquarius": 6, "Pisces": 4},
+      "Mars": {"Aries": 4, "Taurus": 2, "Gemini": 3, "Cancer": 4, "Leo": 0, "Virgo": 3, "Libra": 5, "Scorpio": 5, "Sagittarius": 3, "Capricorn": 4, "Aquarius": 2, "Pisces": 4},
+      "Mercury": {"Aries": 7, "Taurus": 3, "Gemini": 3, "Cancer": 5, "Leo": 5, "Virgo": 3, "Libra": 7, "Scorpio": 5, "Sagittarius": 4, "Capricorn": 5, "Aquarius": 4, "Pisces": 3},
+      "Jupiter": {"Aries": 5, "Taurus": 4, "Gemini": 4, "Cancer": 5, "Leo": 5, "Virgo": 8, "Libra": 4, "Scorpio": 4, "Sagittarius": 4, "Capricorn": 3, "Aquarius": 5, "Pisces": 5},
+      "Venus": {"Aries": 4, "Taurus": 3, "Gemini": 2, "Cancer": 5, "Leo": 5, "Virgo": 5, "Libra": 3, "Scorpio": 6, "Sagittarius": 4, "Capricorn": 6, "Aquarius": 5, "Pisces": 4},
+      "Saturn": {"Aries": 2, "Taurus": 1, "Gemini": 7, "Cancer": 4, "Leo": 3, "Virgo": 3, "Libra": 4, "Scorpio": 4, "Sagittarius": 2, "Capricorn": 4, "Aquarius": 2, "Pisces": 3}
+    },
+    "vimshottari_dasha": {
+      "full_sequence": [
+        {"lord": "Moon", "start": "1992-02-17", "end": "2002-02-16"},
+        {"lord": "Mars", "start": "2002-02-16", "end": "2009-02-16"},
+        {"lord": "Rahu", "start": "2009-02-16", "end": "2027-02-16"},
+        {"lord": "Jupiter", "start": "2027-02-16", "end": "2043-02-16"},
+        {"lord": "Saturn", "start": "2043-02-16", "end": "2062-02-16"},
+        {"lord": "Mercury", "start": "2062-02-16", "end": "2079-02-16"},
+        {"lord": "Ketu", "start": "2079-02-16", "end": "2086-02-16"},
+        {"lord": "Venus", "start": "2086-02-16", "end": "2106-02-17"},
+        {"lord": "Sun", "start": "2106-02-17", "end": "2112-02-18"}
+      ],
+      "at_birth": {
+        "mahadasha": {"lord": "Moon", "start": "1992-02-17", "end": "2002-02-16"},
+        "antardasha": {"lord": "Mercury", "start": "1997-12-17", "end": "1999-05-19"},
+        "pratyantardasha": {"lord": "Jupiter", "start": "1998-12-19", "end": "1999-02-26"}
+      },
+      "at_2026_06_04": {
+        "mahadasha": {"lord": "Rahu", "start": "2009-02-16", "end": "2027-02-16"},
+        "antardasha": {"lord": "Mars", "start": "2026-01-29", "end": "2027-02-16"},
+        "pratyantardasha": {"lord": "Jupiter", "start": "2026-04-19", "end": "2026-06-09"}
+      }
+    },
+    "shadbala": {
+      "Sun": {"total_rupas": 7.33, "required_rupas": 5.0, "ratio": 1.47},
+      "Moon": {"total_rupas": 6.6, "required_rupas": 6.0, "ratio": 1.10},
+      "Mars": {"total_rupas": 6.35, "required_rupas": 5.0, "ratio": 1.27},
+      "Mercury": {"total_rupas": 8.43, "required_rupas": 7.0, "ratio": 1.20},
+      "Jupiter": {"total_rupas": 7.48, "required_rupas": 6.5, "ratio": 1.15},
+      "Venus": {"total_rupas": 4.62, "required_rupas": 5.5, "ratio": 0.84},
+      "Saturn": {"total_rupas": 4.19, "required_rupas": 5.0, "ratio": 0.84}
+    },
+    "vedha_pairs": [
+      {"planet_a": "Saturn", "planet_b": "Purva Phalguni", "type": "Front Vedha (Right)"},
+      {"planet_a": "Mars", "planet_b": "Uttara Phalguni", "type": "Front Vedha (Left)"},
+      {"planet_a": "Venus", "planet_b": "Ardra", "type": "Front Vedha (Up)"},
+      {"planet_a": "Mercury", "planet_b": "Krittika", "type": "Diagonal Vedha (North-West)"}
+    ]
+  },
+  "Sector_ETFs_conception": {
+    "D1_nakshatra_pada": {
+      "Sun": {"nakshatra": "Mula", "pada": 1},
+      "Moon": {"nakshatra": "Anuradha", "pada": 1},
+      "Mars": {"nakshatra": "Hasta", "pada": 3},
+      "Mercury": {"nakshatra": "Anuradha", "pada": 2},
+      "Jupiter": {"nakshatra": "Purva Bhadrapada", "pada": 2},
+      "Venus": {"nakshatra": "Mula", "pada": 4},
+      "Saturn": {"nakshatra": "Ashwini", "pada": 1},
+      "Rahu": {"nakshatra": "Magha", "pada": 1},
+      "Ketu": {"nakshatra": "Dhanishtha", "pada": 3},
+      "Ascendant": {"nakshatra": "Purva Bhadrapada", "pada": 3}
+    },
+    "panchang": {
+      "tithi": "Trayodashi (Krishna)",
+      "karana": "Vanija",
+      "yoga": "Dhriti",
+      "vara": "Wednesday"
+    },
+    "bhinnashtakvarga": {
+      "Sun": {"Aries": 5, "Taurus": 4, "Gemini": 4, "Cancer": 6, "Leo": 3, "Virgo": 4, "Libra": 5, "Scorpio": 3, "Sagittarius": 5, "Capricorn": 5, "Aquarius": 1, "Pisces": 3},
+      "Moon": {"Aries": 3, "Taurus": 5, "Gemini": 5, "Cancer": 3, "Leo": 5, "Virgo": 6, "Libra": 3, "Scorpio": 5, "Sagittarius": 2, "Capricorn": 4, "Aquarius": 6, "Pisces": 2},
+      "Mars": {"Aries": 6, "Taurus": 2, "Gemini": 1, "Cancer": 5, "Leo": 0, "Virgo": 4, "Libra": 4, "Scorpio": 4, "Sagittarius": 4, "Capricorn": 4, "Aquarius": 3, "Pisces": 2},
+      "Mercury": {"Aries": 6, "Taurus": 4, "Gemini": 2, "Cancer": 6, "Leo": 4, "Virgo": 5, "Libra": 5, "Scorpio": 4, "Sagittarius": 6, "Capricorn": 4, "Aquarius": 4, "Pisces": 4},
+      "Jupiter": {"Aries": 4, "Taurus": 4, "Gemini": 4, "Cancer": 5, "Leo": 6, "Virgo": 7, "Libra": 4, "Scorpio": 3, "Sagittarius": 6, "Capricorn": 2, "Aquarius": 4, "Pisces": 7},
+      "Venus": {"Aries": 3, "Taurus": 2, "Gemini": 4, "Cancer": 6, "Leo": 3, "Virgo": 5, "Libra": 5, "Scorpio": 5, "Sagittarius": 5, "Capricorn": 5, "Aquarius": 5, "Pisces": 4},
+      "Saturn": {"Aries": 3, "Taurus": 3, "Gemini": 3, "Cancer": 5, "Leo": 2, "Virgo": 3, "Libra": 4, "Scorpio": 3, "Sagittarius": 3, "Capricorn": 3, "Aquarius": 4, "Pisces": 5}
+    },
+    "vimshottari_dasha": {
+      "full_sequence": [
+        {"lord": "Saturn", "start": "1995-06-30", "end": "2014-06-29"},
+        {"lord": "Mercury", "start": "2014-06-29", "end": "2031-06-30"},
+        {"lord": "Ketu", "start": "2031-06-30", "end": "2038-06-29"},
+        {"lord": "Venus", "start": "2038-06-29", "end": "2058-06-29"},
+        {"lord": "Sun", "start": "2058-06-29", "end": "2064-06-29"},
+        {"lord": "Moon", "start": "2064-06-29", "end": "2074-06-29"},
+        {"lord": "Mars", "start": "2074-06-29", "end": "2081-06-29"},
+        {"lord": "Rahu", "start": "2081-06-29", "end": "2099-06-30"},
+        {"lord": "Jupiter", "start": "2099-06-30", "end": "2115-07-01"}
+      ],
+      "at_birth": {
+        "mahadasha": {"lord": "Saturn", "start": "1995-06-30", "end": "2014-06-29"},
+        "antardasha": {"lord": "Mercury", "start": "1998-07-02", "end": "2001-03-12"},
+        "pratyantardasha": {"lord": "Mercury", "start": "1998-07-04", "end": "1999-01-18"}
+      },
+      "at_2026_06_04": {
+        "mahadasha": {"lord": "Mercury", "start": "2014-06-29", "end": "2031-06-30"},
+        "antardasha": {"lord": "Rahu", "start": "2023-12-26", "end": "2026-07-15"},
+        "pratyantardasha": {"lord": "Mars", "start": "2026-05-21", "end": "2026-07-15"}
+      }
+    },
+    "shadbala": {
+      "Sun": {"total_rupas": 10.22, "required_rupas": 5.0, "ratio": 2.04},
+      "Moon": {"total_rupas": 5.32, "required_rupas": 6.0, "ratio": 0.89},
+      "Mars": {"total_rupas": 5.35, "required_rupas": 5.0, "ratio": 1.07},
+      "Mercury": {"total_rupas": 7.88, "required_rupas": 7.0, "ratio": 1.13},
+      "Jupiter": {"total_rupas": 7.61, "required_rupas": 6.5, "ratio": 1.17},
+      "Venus": {"total_rupas": 4.21, "required_required": 5.5, "ratio": 0.77},
+      "Saturn": {"total_rupas": 3.15, "required_rupas": 5.0, "ratio": 0.63}
+    },
+    "vedha_pairs": "UNREAD"
+  },
+  "SPY_trading": {
+    "birth_datetime": "1993-01-29 09:30:00",
+    "location": "New York, NY",
+    "D1_rasi": {
+      "Ascendant": {"sign": "Pisces", "degrees": "10° 18' 21\"", "nakshatra": "Uttarabhadra", "pada": 3},
+      "Sun": {"sign": "Capricorn", "degrees": "15° 57' 03\"", "nakshatra": "Sravana", "pada": 2},
+      "Moon": {"sign": "Aries", "degrees": "00° 37' 17\"", "nakshatra": "Ashvini", "pada": 1},
+      "Mars": {"sign": "Gemini", "degrees": "16° 40' 60\"", "nakshatra": "Ardra", "pada": 4},
+      "Mercury": {"sign": "Capricorn", "degrees": "20° 08' 47\"", "nakshatra": "Sravana", "pada": 4},
+      "Jupiter": {"sign": "Virgo", "degrees": "20° 54' 07\"", "nakshatra": "Hasta", "pada": 4},
+      "Venus": {"sign": "Pisces", "degrees": "02° 38' 43\"", "nakshatra": "Purvabhadra", "pada": 4},
+      "Saturn": {"sign": "Capricorn", "degrees": "25° 49' 57\"", "nakshatra": "Dhanishta", "pada": 1},
+      "Rahu": {"sign": "Scorpio", "degrees": "25° 08' 31\"", "nakshatra": "Jyeshtha", "pada": 3},
+      "Ketu": {"sign": "Taurus", "degrees": "25° 08' 31\"", "nakshatra": "Mrigasira", "pada": 1}
+    },
+    "D9_navamsa": {
+      "Ascendant": "Libra", "Sun": "Gemini", "Moon": "Aries", "Mars": "Pisces", "Mercury": "Cancer", "Jupiter": "Leo", "Venus": "Cancer", "Saturn": "Leo", "Rahu": "Capricorn", "Ketu": "Cancer"
+    },
+    "D10_dasamsa": {
+      "Ascendant": "Aquarius", "Sun": "Aquarius", "Moon": "Aries", "Mars": "Scorpio", "Mercury": "Pisces", "Jupiter": "Sagittarius", "Venus": "Scorpio", "Saturn": "Taurus", "Rahu": "Capricorn", "Ketu": "Cancer"
+    },
+    "panchang": {
+      "tithi": "Saptami",
+      "karana": "Gar",
+      "yoga": "Sadhya",
+      "vara": "Friday",
+      "nakshatra": "Ashvini"
+    },
+    "ashtakvarga": {
+      "bhinnashtakvarga": {
+        "Sun": {"Aries": 3, "Taurus": 3, "Gemini": 4, "Cancer": 4, "Leo": 4, "Virgo": 6, "Libra": 3, "Scorpio": 3, "Sagittarius": 3, "Capricorn": 6, "Aquarius": 7, "Pisces": 2},
+        "Moon": {"Aries": 4, "Taurus": 4, "Gemini": 5, "Cancer": 5, "Leo": 5, "Virgo": 3, "Libra": 4, "Scorpio": 5, "Sagittarius": 3, "Capricorn": 4, "Aquarius": 2, "Pisces": 5},
+        "Mars": {"Aries": 2, "Taurus": 3, "Gemini": 5, "Cancer": 3, "Leo": 4, "Virgo": 3, "Libra": 3, "Scorpio": 3, "Sagittarius": 2, "Capricorn": 4, "Aquarius": 3, "Pisces": 4},
+        "Mercury": {"Aries": 5, "Taurus": 4, "Gemini": 5, "Cancer": 5, "Leo": 3, "Virgo": 5, "Libra": 4, "Scorpio": 5, "Sagittarius": 4, "Capricorn": 6, "Aquarius": 4, "Pisces": 4},
+        "Jupiter": {"Aries": 6, "Taurus": 3, "Gemini": 5, "Cancer": 5, "Leo": 4, "Virgo": 5, "Libra": 4, "Scorpio": 5, "Sagittarius": 6, "Capricorn": 5, "Aquarius": 3, "Pisces": 5},
+        "Venus": {"Aries": 6, "Taurus": 7, "Gemini": 5, "Cancer": 4, "Leo": 4, "Virgo": 2, "Libra": 4, "Scorpio": 7, "Sagittarius": 3, "Capricorn": 3, "Aquarius": 2, "Pisces": 5},
+        "Saturn": {"Aries": 2, "Taurus": 3, "Gemini": 4, "Cancer": 2, "Leo": 6, "Virgo": 2, "Libra": 3, "Scorpio": 4, "Sagittarius": 2, "Capricorn": 4, "Aquarius": 4, "Pisces": 3}
+      },
+      "sarvashtakvarga": {
+        "Aries": 28, "Taurus": 26, "Gemini": 29, "Cancer": 23, "Leo": 26, "Virgo": 31, "Libra": 27, "Scorpio": 33, "Sagittarius": 28, "Capricorn": 25, "Aquarius": 32, "Pisces": 29
+      }
+    },
+    "vimshottari_dasha": {
+      "full_sequence": [
+        {"lord": "Ketu", "start": "1993-01-29", "end": "1999-10-02"},
+        {"lord": "Venus", "start": "1999-10-02", "end": "2019-10-02"},
+        {"lord": "Sun", "start": "2019-10-02", "end": "2025-10-02"},
+        {"lord": "Moon", "start": "2025-10-02", "end": "2035-10-02"},
+        {"lord": "Mars", "start": "2035-10-02", "end": "2042-10-02"},
+        {"lord": "Rahu", "start": "2042-10-02", "end": "2060-10-02"},
+        {"lord": "Jupiter", "start": "2060-10-02", "end": "2076-10-02"},
+        {"lord": "Saturn", "start": "2076-10-02", "end": "2095-10-02"},
+        {"lord": "Mercury", "start": "2095-10-02", "end": "2112-10-02"}
+      ],
+      "at_birth": {
+        "mahadasha": {"lord": "Ketu", "start": "1993-01-29", "end": "1999-10-02"},
+        "antardasha": {"lord": "Ketu", "start": "1993-01-29", "end": "1993-03-01"},
+        "pratyantardasha": {"lord": "Ketu", "start": "1993-01-29", "end": "1993-03-01"}
+      },
+      "at_2026_06_04": {
+        "mahadasha": {"lord": "Moon", "start": "2025-10-02", "end": "2035-10-02"},
+        "antardasha": {"lord": "Moon", "start": "2025-10-02", "end": "2026-08-02"},
+        "pratyantardasha": {"lord": "Venus", "start": "2026-05-03", "end": "2026-07-01"}
+      }
+    },
+    "shadbala": {
+      "Sun": {"total_rupas": 6.04, "required_rupas": 5.0, "ratio": 1.21},
+      "Moon": {"total_rupas": 5.72, "required_rupas": 6.0, "ratio": 0.95},
+      "Mars": {"total_rupas": 6.71, "required_rupas": 5.0, "ratio": 1.34},
+      "Mercury": {"total_rupas": 7.75, "required_rupas": 7.0, "ratio": 1.11},
+      "Jupiter": {"total_rupas": 5.73, "required_rupas": 6.5, "ratio": 0.88},
+      "Venus": {"total_rupas": 8.58, "required_rupas": 5.5, "ratio": 1.56},
+      "Saturn": {"total_rupas": 4.37, "required_rupas": 5.0, "ratio": 0.87}
+    },
+    "vedha_pairs": [
+      {"planet_a": "Mars", "planet_b": "H, Lr, Leo", "type": "Diagonal-Down-Right Vedha (↘)"},
+      {"planet_a": "Moon", "planet_b": "L, Lr, Taurus, Gemini, Cancer", "type": "Horizontal-Right Vedha (→)"},
+      {"planet_a": "Jupiter", "planet_b": "M, Cancer", "type": "Diagonal-Up-Left Vedha (↖)"},
+      {"planet_a": "Venus", "planet_b": "D, Aries, K", "type": "Diagonal-Up-Right Vedha (↗)"},
+      {"planet_a": "Saturn", "planet_b": "G, Aquarius, Ricta", "type": "Diagonal-Up-Right Vedha (↗)"},
+      {"planet_a": "Rahu", "planet_b": "Na, E, Libra", "type": "Vertical-Up Vedha (↑)"}
+    ]
+  },
+  "QQQ_conception": {
+    "birth_datetime": "1998-08-07 00:00:00",
+    "location": "New York, NY",
+    "D1_rasi": {
+      "Ascendant": {"sign": "Aries", "degrees": "26° 01' 08\"", "nakshatra": "Bharani", "pada": 4},
+      "Sun": {"sign": "Cancer", "degrees": "20° 38' 18\"", "nakshatra": "Ashlesha", "pada": 2},
+      "Moon": {"sign": "Capricorn", "degrees": "08° 42' 50\"", "nakshatra": "Uttarashadha", "pada": 4},
+      "Mars": {"sign": "Gemini", "degrees": "27° 18' 40\"", "nakshatra": "Punarvasu", "pada": 3},
+      "Mercury": {"sign": "Leo", "degrees": "02° 18' 16\"", "nakshatra": "Magha", "pada": 1},
+      "Jupiter": {"sign": "Pisces", "degrees": "03° 35' 26\"", "nakshatra": "Uttarabhadra", "pada": 1},
+      "Venus": {"sign": "Gemini", "degrees": "28° 35' 38\"", "nakshatra": "Punarvasu", "pada": 3},
+      "Saturn": {"sign": "Aries", "degrees": "09° 42' 43\"", "nakshatra": "Ashvini", "pada": 3},
+      "Rahu": {"sign": "Leo", "degrees": "08° 19' 59\"", "nakshatra": "Magha", "pada": 3},
+      "Ketu": {"sign": "Aquarius", "degrees": "08° 19' 59\"", "nakshatra": "Shatabhisha", "pada": 1}
+    },
+    "D9_navamsa": {
+      "Ascendant": "Scorpio", "Sun": "Capricorn", "Moon": "Pisces", "Mars": "Gemini", "Mercury": "Aries", "Jupiter": "Leo", "Venus": "Gemini", "Saturn": "Gemini", "Rahu": "Gemini", "Ketu": "Sagittarius"
+    },
+    "D10_dasamsa": {
+      "Ascendant": "Sagittarius", "Sun": "Virgo", "Moon": "Scorpio", "Mars": "Pisces", "Mercury": "Leo", "Jupiter": "Sagittarius", "Venus": "Pisces", "Saturn": "Cancer", "Rahu": "Libra", "Ketu": "Aries"
+    },
+    "panchang": {
+      "tithi": "Purnima",
+      "karana": "Bhadra (Visit)",
+      "yoga": "Ayushman",
+      "vara": "Thursday (Vedic)",
+      "nakshatra": "Uttarashadha"
+    },
+    "ashtakvarga": {
+      "bhinnashtakvarga": {
+        "Sun": {"Aries": 4, "Taurus": 4, "Gemini": 4, "Cancer": 6, "Leo": 2, "Virgo": 2, "Libra": 4, "Scorpio": 4, "Sagittarius": 4, "Capricorn": 6, "Aquarius": 4, "Pisces": 4},
+        "Moon": {"Aries": 3, "Taurus": 2, "Gemini": 5, "Cancer": 2, "Leo": 4, "Virgo": 5, "Libra": 5, "Scorpio": 3, "Sagittarius": 4, "Capricorn": 4, "Aquarius": 7, "Pisces": 5},
+        "Mars": {"Aries": 5, "Taurus": 2, "Gemini": 4, "Cancer": 2, "Leo": 1, "Virgo": 3, "Libra": 2, "Scorpio": 4, "Sagittarius": 5, "Capricorn": 6, "Aquarius": 3, "Pisces": 2},
+        "Mercury": {"Aries": 6, "Taurus": 4, "Gemini": 5, "Cancer": 5, "Leo": 4, "Virgo": 3, "Libra": 5, "Scorpio": 4, "Sagittarius": 4, "Capricorn": 6, "Aquarius": 6, "Pisces": 2},
+        "Jupiter": {"Aries": 6, "Taurus": 5, "Gemini": 4, "Cancer": 5, "Leo": 4, "Virgo": 7, "Libra": 4, "Scorpio": 3, "Sagittarius": 4, "Capricorn": 5, "Aquarius": 4, "Pisces": 5},
+        "Venus": {"Aries": 5, "Taurus": 4, "Gemini": 5, "Cancer": 4, "Leo": 5, "Virgo": 2, "Libra": 4, "Scorpio": 5, "Sagittarius": 5, "Capricorn": 5, "Aquarius": 6, "Pisces": 2},
+        "Saturn": {"Aries": 5, "Taurus": 4, "Gemini": 4, "Cancer": 4, "Leo": 4, "Virgo": 2, "Libra": 2, "Scorpio": 3, "Sagittarius": 0, "Capricorn": 4, "Aquarius": 4, "Pisces": 3}
+      },
+      "sarvashtakvarga": {
+        "Aries": 34, "Taurus": 25, "Gemini": 31, "Cancer": 28, "Leo": 24, "Virgo": 24, "Libra": 26, "Scorpio": 26, "Sagittarius": 26, "Capricorn": 36, "Aquarius": 34, "Pisces": 23
+      }
+    },
+    "vimshottari_dasha": {
+      "full_sequence": [
+        {"lord": "Sun", "end": "1999"},
+        {"lord": "Moon", "end": "2009"},
+        {"lord": "Mars", "end": "2016"},
+        {"lord": "Rahu", "end": "2034"},
+        {"lord": "Jupiter", "end": "2050"},
+        {"lord": "Saturn", "end": "2069"},
+        {"lord": "Mercury", "end": "2086"},
+        {"lord": "Ketu", "end": "2093"},
+        {"lord": "Venus", "end": "2113"}
+      ],
+      "at_birth": {
+        "mahadasha": "Sun", "antardasha": "Venus", "pratyantardasha": "Mars"
+      },
+      "at_2026_06_04": {
+        "mahadasha": "Rahu", "antardasha": "Mercury", "pratyantardasha": "Saturn"
+      }
+    },
+    "shadbala": {
+      "Sun": {"total_rupas": 7.62, "required_rupas": 5.0, "ratio": 1.52},
+      "Moon": {"total_rupas": 8.34, "required_rupas": 6.0, "ratio": 1.39},
+      "Mars": {"total_rupas": 4.92, "required_rupas": 5.0, "ratio": 0.98},
+      "Mercury": {"total_rupas": 8.92, "required_rupas": 7.0, "ratio": 1.27},
+      "Jupiter": {"total_rupas": 8.98, "required_rupas": 6.5, "ratio": 1.38},
+      "Venus": {"total_rupas": 8.24, "required_rupas": 5.5, "ratio": 1.50},
+      "Saturn": {"total_rupas": 5.04, "required_rupas": 5.0, "ratio": 1.01}
+    },
+    "vedha_pairs": [
+      {"planet_a": "Mars & Venus", "planet_b": "Aa, EE, Pushyami", "type": "Vedha"},
+      {"planet_a": "Sun", "planet_b": "Aa, Pushyami, Uttara Phalguni", "type": "Vedha"},
+      {"planet_a": "Mercury & Rahu", "planet_b": "Aa, OO, Purva Phalguni", "type": "Vedha"},
+      {"planet_a": "Saturn", "planet_b": "A, L, Bharani, Revati", "type": "Vedha"},
+      {"planet_a": "Jupiter", "planet_b": "D, Revati, Pisces, Purva Bhadrapada", "type": "Vedha"},
+      {"planet_a": "Ketu", "planet_b": "G, Purva Bhadrapada, Dhanishta", "type": "Vedha"}
+    ]
+  },
+  "SPY_conception": {
+    "vimshottari_dasha": {
+      "full_sequence": [
+        {"lord": "Venus", "start": "1996-01-19", "end": "2012-08-13"},
+        {"lord": "Sun", "start": "2012-08-13", "end": "2018-08-13"},
+        {"lord": "Moon", "start": "2018-08-13", "end": "2028-08-13"},
+        {"lord": "Mars", "start": "2028-08-13", "end": "2035-08-13"},
+        {"lord": "Rahu", "start": "2035-08-13", "end": "2053-08-13"},
+        {"lord": "Jupiter", "start": "2053-08-13", "end": "2069-08-13"},
+        {"lord": "Saturn", "start": "2069-08-13", "end": "2088-08-13"},
+        {"lord": "Mercury", "start": "2088-08-13", "end": "2105-08-13"},
+        {"lord": "Ketu", "start": "2105-08-13", "end": "2112-08-13"}
+      ],
+      "at_birth": {
+        "mahadasha": {"lord": "Venus", "start": "1995-12-13", "end": "1996-02-01"},
+        "antardasha": {"lord": "Sun", "start": "1995-12-13", "end": "1996-02-01"},
+        "pratyantardasha": {"lord": "Sun", "start": "1995-12-13", "end": "1996-02-01"}
+      },
+      "at_2026_06_04": {
+        "mahadasha": {"lord": "Moon", "start": "2018-08-13", "end": "2028-08-13"},
+        "antardasha": {"lord": "Ketu", "start": "2025-12-13", "end": "2026-07-13"},
+        "pratyantardasha": {"lord": "Mercury", "start": "2026-05-13", "end": "2026-06-13"}
+      }
+    }
+  },
+  "QQQ_trading": {
+    "birth_datetime": "1999-03-10 09:30:00",
+    "location": "New York, NY",
+    "D1_rasi": {
+      "Ascendant": {"sign": "Taurus", "degrees": "08° 26' 11\"", "nakshatra": "Krittika", "pada": 4},
+      "Sun": {"sign": "Aquarius", "degrees": "25° 44' 15\"", "nakshatra": "Purvabhadra", "pada": 2},
+      "Moon": {"sign": "Scorpio", "degrees": "28° 23' 41\"", "nakshatra": "Jyeshtha", "pada": 4},
+      "Mars": {"sign": "Libra", "degrees": "17° 59' 20\"", "nakshatra": "Swati", "pada": 4},
+      "Mercury": {"sign": "Pisces", "degrees": "10° 13' 23\"", "nakshatra": "Uttarabhadra", "pada": 3, "retrograde": true},
+      "Jupiter": {"sign": "Pisces", "degrees": "12° 02' 12\"", "nakshatra": "Uttarabhadra", "pada": 3},
+      "Venus": {"sign": "Pisces", "degrees": "26° 41' 10\"", "nakshatra": "Revati", "pada": 4},
+      "Saturn": {"sign": "Aries", "degrees": "07° 07' 22\"", "nakshatra": "Ashvini", "pada": 2},
+      "Rahu": {"sign": "Cancer", "degrees": "26° 54' 60\"", "nakshatra": "Ashlesha", "pada": 4},
+      "Ketu": {"sign": "Capricorn", "degrees": "26° 54' 60\"", "nakshatra": "Dhanishtha", "pada": 2}
+    },
+    "D9_navamsa": {
+      "Ascendant": "Aries", "Sun": "Taurus", "Moon": "Scorpio", "Mars": "Aquarius", "Mercury": "Scorpio", "Jupiter": "Aquarius", "Venus": "Gemini", "Saturn": "Aquarius", "Rahu": "Aquarius", "Ketu": "Virgo"
+    },
+    "D10_dasamsa": {
+      "Ascendant": "Pisces", "Sun": "Scorpio", "Moon": "Aries", "Mars": "Pisces", "Mercury": "Aquarius", "Jupiter": "Pisces", "Venus": "Cancer", "Saturn": "Gemini", "Rahu": "Scorpio", "Ketu": "Taurus"
+    },
+    "panchang": {
+      "tithi": "Ashtami",
+      "karana": "Kolav",
+      "yoga": "Siddhi",
+      "vara": "Wednesday",
+      "nakshatra": "Jyeshtha"
+    },
+    "ashtakvarga": {
+      "sarvashtakvarga": {
+        "Aries": 21, "Taurus": 25, "Gemini": 22, "Cancer": 33, "Leo": 37, "Virgo": 24, "Libra": 26, "Scorpio": 28, "Sagittarius": 31, "Capricorn": 37, "Aquarius": 30, "Pisces": 23
+      }
+    },
+    "vimshottari_dasha": {
+      "full_sequence": [
+        {"lord": "Mercury", "end": "2001-05-09"},
+        {"lord": "Ketu", "end": "2008-05-09"},
+        {"lord": "Venus", "end": "2028-05-09"},
+        {"lord": "Sun", "end": "2034-05-09"},
+        {"lord": "Moon", "end": "2044-05-09"},
+        {"lord": "Mars", "end": "2051-05-09"},
+        {"lord": "Rahu", "end": "2069-05-09"},
+        {"lord": "Jupiter", "end": "2085-05-09"},
+        {"lord": "Saturn", "end": "2104-05-09"}
+      ],
+      "at_birth": {
+        "mahadasha": "Mercury", "antardasha": "Saturn", "pratyantardasha": "Saturn"
+      },
+      "at_2026_06_04": {
+        "mahadasha": "Venus", "antardasha": "Mercury", "pratyantardasha": "Jupiter"
+      }
+    },
+    "shadbala": {
+      "Sun": {"total_rupas": 7.01, "required_rupas": 5.0, "ratio": 1.40},
+      "Moon": {"total_rupas": 5.79, "required_rupas": 6.0, "ratio": 0.96},
+      "Mars": {"total_rupas": 5.40, "required_rupas": 5.0, "ratio": 1.08},
+      "Mercury": {"total_rupas": 7.59, "required_rupas": 7.0, "ratio": 1.08},
+      "Jupiter": {"total_rupas": 5.77, "required_rupas": 6.5, "ratio": 0.89},
+      "Venus": {"total_rupas": 5.37, "required_rupas": 5.5, "ratio": 0.98},
+      "Saturn": {"total_rupas": 5.77, "required_rupas": 5.0, "ratio": 1.15}
+    },
+    "vedha_pairs": [
+      {"planet_a": "Rahu", "planet_b": "Aa, Purva Phalguni", "type": "Vedha"},
+      {"planet_a": "Saturn", "planet_b": "Aa, L, A", "type": "Vedha"},
+      {"planet_a": "Venus", "planet_b": "D, A", "type": "Vedha"},
+      {"planet_a": "Mercury/Jupiter", "planet_b": "D, L, Purva Bhadra", "type": "Vedha"},
+      {"planet_a": "Mars", "planet_b": "T", "type": "Vedha"}
+    ]
+  }
+}

@@ -1,0 +1,4146 @@
+{
+  "SPY_Conception": {
+    "birth_datetime": "1996-01-19 00:00:00",
+    "moon_nakshatra": "Purva Ashadha",
+    "moon_longitude": 255.6272,
+    "birth_dasha_lord": "Venus",
+    "years_remaining_first_dasha": 16.5593,
+    "dasha_at_query_date": {
+      "Mahadasha": "Moon",
+      "Mahadasha_start": "2018-08-11",
+      "Mahadasha_end": "2028-08-10",
+      "Antardasha": "Ketu",
+      "Antardasha_start": "2025-11-10",
+      "Antardasha_end": "2026-06-11",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-05-12",
+      "Pratyantar_end": "2026-06-11"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Venus",
+        "start": "1992-08-10",
+        "end": "2012-08-10",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2012-08-10",
+        "end": "2018-08-11",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2018-08-11",
+        "end": "2028-08-10",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2028-08-10",
+        "end": "2035-08-11",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2035-08-11",
+        "end": "2053-08-11",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2053-08-11",
+        "end": "2069-08-11",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2069-08-11",
+        "end": "2088-08-11",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2088-08-11",
+        "end": "2105-08-12",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2105-08-12",
+        "end": "2112-08-12",
+        "years": 7
+      }
+    ]
+  },
+  "SPY_Trading": {
+    "birth_datetime": "1993-01-29 09:30:00",
+    "moon_nakshatra": "Ashwini",
+    "moon_longitude": 0.6265,
+    "birth_dasha_lord": "Ketu",
+    "years_remaining_first_dasha": 6.6711,
+    "dasha_at_query_date": {
+      "Mahadasha": "Moon",
+      "Mahadasha_start": "2025-10-01",
+      "Mahadasha_end": "2035-10-02",
+      "Antardasha": "Moon",
+      "Antardasha_start": "2025-10-01",
+      "Antardasha_end": "2026-08-02",
+      "Pratyantardasha": "Venus",
+      "Pratyantar_start": "2026-05-28",
+      "Pratyantar_end": "2026-07-18"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Ketu",
+        "start": "1992-10-01",
+        "end": "1999-10-02",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "1999-10-02",
+        "end": "2019-10-02",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2019-10-02",
+        "end": "2025-10-01",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2025-10-01",
+        "end": "2035-10-02",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2035-10-02",
+        "end": "2042-10-02",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2042-10-02",
+        "end": "2060-10-01",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2060-10-01",
+        "end": "2076-10-02",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2076-10-02",
+        "end": "2095-10-02",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2095-10-02",
+        "end": "2112-10-03",
+        "years": 17
+      }
+    ]
+  },
+  "QQQ_Conception": {
+    "birth_datetime": "1998-08-07 00:00:00",
+    "moon_nakshatra": "Uttara Ashadha",
+    "moon_longitude": 278.7216,
+    "birth_dasha_lord": "Sun",
+    "years_remaining_first_dasha": 0.5753,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2016-03-04",
+      "Mahadasha_end": "2034-03-05",
+      "Antardasha": "Mercury",
+      "Antardasha_start": "2024-02-15",
+      "Antardasha_end": "2026-09-03",
+      "Pratyantardasha": "Saturn",
+      "Pratyantar_start": "2026-04-09",
+      "Pratyantar_end": "2026-09-03"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Sun",
+        "start": "1993-03-04",
+        "end": "1999-03-05",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "1999-03-05",
+        "end": "2009-03-04",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2009-03-04",
+        "end": "2016-03-04",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2016-03-04",
+        "end": "2034-03-05",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2034-03-05",
+        "end": "2050-03-05",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2050-03-05",
+        "end": "2069-03-05",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2069-03-05",
+        "end": "2086-03-05",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2086-03-05",
+        "end": "2093-03-05",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2093-03-05",
+        "end": "2113-03-06",
+        "years": 20
+      }
+    ]
+  },
+  "QQQ_Trading": {
+    "birth_datetime": "1999-03-10 09:30:00",
+    "moon_nakshatra": "Jyeshtha",
+    "moon_longitude": 238.3991,
+    "birth_dasha_lord": "Mercury",
+    "years_remaining_first_dasha": 2.0411,
+    "dasha_at_query_date": {
+      "Mahadasha": "Venus",
+      "Mahadasha_start": "2008-03-24",
+      "Mahadasha_end": "2028-03-25",
+      "Antardasha": "Mercury",
+      "Antardasha_start": "2024-03-25",
+      "Antardasha_end": "2027-01-23",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-03-28",
+      "Pratyantar_end": "2026-08-13"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Mercury",
+        "start": "1984-03-24",
+        "end": "2001-03-25",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2001-03-25",
+        "end": "2008-03-24",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2008-03-24",
+        "end": "2028-03-25",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2028-03-25",
+        "end": "2034-03-25",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2034-03-25",
+        "end": "2044-03-25",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2044-03-25",
+        "end": "2051-03-25",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2051-03-25",
+        "end": "2069-03-25",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2069-03-25",
+        "end": "2085-03-25",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2085-03-25",
+        "end": "2104-03-26",
+        "years": 19
+      }
+    ]
+  },
+  "DIA_Conception": {
+    "birth_datetime": "1997-07-13 20:00:00",
+    "moon_nakshatra": "Swati",
+    "moon_longitude": 190.1137,
+    "birth_dasha_lord": "Rahu",
+    "years_remaining_first_dasha": 13.3464,
+    "dasha_at_query_date": {
+      "Mahadasha": "Jupiter",
+      "Mahadasha_start": "2010-11-17",
+      "Mahadasha_end": "2026-11-17",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2024-06-24",
+      "Antardasha_end": "2026-11-17",
+      "Pratyantardasha": "Sun",
+      "Pratyantar_start": "2026-06-02",
+      "Pratyantar_end": "2026-07-16"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Rahu",
+        "start": "1992-11-17",
+        "end": "2010-11-17",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2010-11-17",
+        "end": "2026-11-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2026-11-17",
+        "end": "2045-11-17",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2045-11-17",
+        "end": "2062-11-18",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2062-11-18",
+        "end": "2069-11-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2069-11-17",
+        "end": "2089-11-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2089-11-18",
+        "end": "2095-11-18",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2095-11-18",
+        "end": "2105-11-19",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2105-11-19",
+        "end": "2112-11-19",
+        "years": 7
+      }
+    ]
+  },
+  "DIA_Trading": {
+    "birth_datetime": "1998-01-20 09:30:00",
+    "moon_nakshatra": "Chitra",
+    "moon_longitude": 184.1468,
+    "birth_dasha_lord": "Mars",
+    "years_remaining_first_dasha": 1.3229,
+    "dasha_at_query_date": {
+      "Mahadasha": "Jupiter",
+      "Mahadasha_start": "2017-05-18",
+      "Mahadasha_end": "2033-05-18",
+      "Antardasha": "Venus",
+      "Antardasha_start": "2025-03-30",
+      "Antardasha_end": "2027-11-29",
+      "Pratyantardasha": "Rahu",
+      "Pratyantar_start": "2026-03-14",
+      "Pratyantar_end": "2026-08-07"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Mars",
+        "start": "1992-05-18",
+        "end": "1999-05-18",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "1999-05-18",
+        "end": "2017-05-18",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2017-05-18",
+        "end": "2033-05-18",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2033-05-18",
+        "end": "2052-05-18",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2052-05-18",
+        "end": "2069-05-18",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2069-05-18",
+        "end": "2076-05-18",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2076-05-18",
+        "end": "2096-05-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2096-05-18",
+        "end": "2102-05-20",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2102-05-20",
+        "end": "2112-05-19",
+        "years": 10
+      }
+    ]
+  },
+  "IWM_Conception": {
+    "birth_datetime": "2000-05-22 12:00:00",
+    "moon_nakshatra": "Purva Ashadha",
+    "moon_longitude": 265.8211,
+    "birth_dasha_lord": "Venus",
+    "years_remaining_first_dasha": 1.2684,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2024-08-28",
+      "Mahadasha_end": "2042-08-29",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2024-08-28",
+      "Antardasha_end": "2027-05-12",
+      "Pratyantardasha": "Venus",
+      "Pratyantar_start": "2026-05-23",
+      "Pratyantar_end": "2026-11-04"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Venus",
+        "start": "1981-08-28",
+        "end": "2001-08-28",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2001-08-28",
+        "end": "2007-08-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2007-08-29",
+        "end": "2017-08-29",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2017-08-29",
+        "end": "2024-08-28",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2024-08-28",
+        "end": "2042-08-29",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2042-08-29",
+        "end": "2058-08-29",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2058-08-29",
+        "end": "2077-08-29",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2077-08-29",
+        "end": "2094-08-29",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2094-08-29",
+        "end": "2101-08-30",
+        "years": 7
+      }
+    ]
+  },
+  "IWM_Trading": {
+    "birth_datetime": "2000-05-26 09:30:00",
+    "moon_nakshatra": "Shatabhisha",
+    "moon_longitude": 312.487,
+    "birth_dasha_lord": "Rahu",
+    "years_remaining_first_dasha": 10.1426,
+    "dasha_at_query_date": {
+      "Mahadasha": "Jupiter",
+      "Mahadasha_start": "2010-07-18",
+      "Mahadasha_end": "2026-07-18",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2024-02-22",
+      "Antardasha_end": "2026-07-18",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-28",
+      "Pratyantar_end": "2026-07-18"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Rahu",
+        "start": "1992-07-17",
+        "end": "2010-07-18",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2010-07-18",
+        "end": "2026-07-18",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2026-07-18",
+        "end": "2045-07-18",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2045-07-18",
+        "end": "2062-07-18",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2062-07-18",
+        "end": "2069-07-18",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2069-07-18",
+        "end": "2089-07-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2089-07-18",
+        "end": "2095-07-19",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2095-07-19",
+        "end": "2105-07-19",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2105-07-19",
+        "end": "2112-07-19",
+        "years": 7
+      }
+    ]
+  },
+  "XLK_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLK_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLF_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLF_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLE_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLE_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLV_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLV_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLY_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLY_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLP_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLP_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLU_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLU_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLI_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLI_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLB_Conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "moon_nakshatra": "Anuradha",
+    "moon_longitude": 215.7648,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.5352,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2014-06-30",
+      "Mahadasha_end": "2031-06-30",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2023-12-26",
+      "Antardasha_end": "2026-07-15",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-07-15"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "1995-06-30",
+        "end": "2014-06-30",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2014-06-30",
+        "end": "2031-06-30",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2031-06-30",
+        "end": "2038-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2038-06-30",
+        "end": "2058-06-30",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2058-06-30",
+        "end": "2064-06-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2064-06-29",
+        "end": "2074-06-30",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2074-06-30",
+        "end": "2081-06-30",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2081-06-30",
+        "end": "2099-06-30",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2099-06-30",
+        "end": "2115-07-01",
+        "years": 16
+      }
+    ]
+  },
+  "XLB_Trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "moon_nakshatra": "Shravana",
+    "moon_longitude": 289.1283,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 3.1538,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-02-16",
+      "Mahadasha_end": "2027-02-16",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-29",
+      "Antardasha_end": "2027-02-16",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1992-02-16",
+        "end": "2002-02-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2002-02-16",
+        "end": "2009-02-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-02-16",
+        "end": "2027-02-16",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-02-16",
+        "end": "2043-02-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-02-17",
+        "end": "2062-02-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-02-16",
+        "end": "2079-02-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-02-17",
+        "end": "2086-02-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-02-17",
+        "end": "2106-02-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-02-18",
+        "end": "2112-02-18",
+        "years": 6
+      }
+    ]
+  },
+  "XLRE_Conception": {
+    "birth_datetime": "2015-10-06 12:00:00",
+    "moon_nakshatra": "Pushya",
+    "moon_longitude": 99.7859,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 9.8051,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2025-07-27",
+      "Mahadasha_end": "2042-07-27",
+      "Antardasha": "Mercury",
+      "Antardasha_start": "2025-07-27",
+      "Antardasha_end": "2027-12-23",
+      "Pratyantardasha": "Venus",
+      "Pratyantar_start": "2026-01-18",
+      "Pratyantar_end": "2026-06-14"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "2006-07-27",
+        "end": "2025-07-27",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2025-07-27",
+        "end": "2042-07-27",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2042-07-27",
+        "end": "2049-07-27",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2049-07-27",
+        "end": "2069-07-27",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2069-07-27",
+        "end": "2075-07-27",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2075-07-27",
+        "end": "2085-07-27",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2085-07-27",
+        "end": "2092-07-27",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2092-07-27",
+        "end": "2110-07-28",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2110-07-28",
+        "end": "2126-07-28",
+        "years": 16
+      }
+    ]
+  },
+  "XLRE_Trading": {
+    "birth_datetime": "2015-10-08 09:30:00",
+    "moon_nakshatra": "Magha",
+    "moon_longitude": 122.7704,
+    "birth_dasha_lord": "Ketu",
+    "years_remaining_first_dasha": 5.5455,
+    "dasha_at_query_date": {
+      "Mahadasha": "Venus",
+      "Mahadasha_start": "2021-04-25",
+      "Mahadasha_end": "2041-04-25",
+      "Antardasha": "Moon",
+      "Antardasha_start": "2025-08-24",
+      "Antardasha_end": "2027-04-25",
+      "Pratyantardasha": "Saturn",
+      "Pratyantar_start": "2026-05-10",
+      "Pratyantar_end": "2026-08-14"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Ketu",
+        "start": "2014-04-25",
+        "end": "2021-04-25",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2021-04-25",
+        "end": "2041-04-25",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2041-04-25",
+        "end": "2047-04-25",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2047-04-25",
+        "end": "2057-04-25",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2057-04-25",
+        "end": "2064-04-25",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2064-04-25",
+        "end": "2082-04-25",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2082-04-25",
+        "end": "2098-04-25",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2098-04-25",
+        "end": "2117-04-26",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2117-04-26",
+        "end": "2134-04-27",
+        "years": 17
+      }
+    ]
+  },
+  "XLC_Conception": {
+    "birth_datetime": "2018-06-18 12:00:00",
+    "moon_nakshatra": "Magha",
+    "moon_longitude": 130.23,
+    "birth_dasha_lord": "Ketu",
+    "years_remaining_first_dasha": 1.6293,
+    "dasha_at_query_date": {
+      "Mahadasha": "Venus",
+      "Mahadasha_start": "2020-02-03",
+      "Mahadasha_end": "2040-02-03",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-02-03",
+      "Antardasha_end": "2027-04-05",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-05-03",
+      "Pratyantar_end": "2026-06-28"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Ketu",
+        "start": "2013-02-02",
+        "end": "2020-02-03",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2020-02-03",
+        "end": "2040-02-03",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2040-02-03",
+        "end": "2046-02-03",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2046-02-03",
+        "end": "2056-02-03",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2056-02-03",
+        "end": "2063-02-03",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2063-02-03",
+        "end": "2081-02-03",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2081-02-03",
+        "end": "2097-02-03",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2097-02-03",
+        "end": "2116-02-05",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2116-02-05",
+        "end": "2133-02-04",
+        "years": 17
+      }
+    ]
+  },
+  "XLC_Trading": {
+    "birth_datetime": "2018-06-19 09:30:00",
+    "moon_nakshatra": "Purva Phalguni",
+    "moon_longitude": 142.7806,
+    "birth_dasha_lord": "Venus",
+    "years_remaining_first_dasha": 5.8292,
+    "dasha_at_query_date": {
+      "Mahadasha": "Sun",
+      "Mahadasha_start": "2024-04-17",
+      "Mahadasha_end": "2030-04-18",
+      "Antardasha": "Jupiter",
+      "Antardasha_start": "2026-05-06",
+      "Antardasha_end": "2027-02-22",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-05-06",
+      "Pratyantar_end": "2026-06-14"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Venus",
+        "start": "2004-04-17",
+        "end": "2024-04-17",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2024-04-17",
+        "end": "2030-04-18",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2030-04-18",
+        "end": "2040-04-17",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2040-04-17",
+        "end": "2047-04-18",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2047-04-18",
+        "end": "2065-04-18",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2065-04-18",
+        "end": "2081-04-18",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2081-04-18",
+        "end": "2100-04-19",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2100-04-19",
+        "end": "2117-04-19",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2117-04-19",
+        "end": "2124-04-19",
+        "years": 7
+      }
+    ]
+  },
+  "SMH_Conception": {
+    "birth_datetime": "2000-12-18 12:00:00",
+    "moon_nakshatra": "Hasta",
+    "moon_longitude": 161.7781,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 8.6664,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2016-08-18",
+      "Mahadasha_end": "2034-08-19",
+      "Antardasha": "Mercury",
+      "Antardasha_start": "2024-07-31",
+      "Antardasha_end": "2027-02-18",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-05-22",
+      "Pratyantar_end": "2026-09-23"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "1999-08-19",
+        "end": "2009-08-19",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2009-08-19",
+        "end": "2016-08-18",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2016-08-18",
+        "end": "2034-08-19",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2034-08-19",
+        "end": "2050-08-19",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2050-08-19",
+        "end": "2069-08-19",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2069-08-19",
+        "end": "2086-08-19",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2086-08-19",
+        "end": "2093-08-19",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2093-08-19",
+        "end": "2113-08-20",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2113-08-20",
+        "end": "2119-08-21",
+        "years": 6
+      }
+    ]
+  },
+  "SMH_Trading": {
+    "birth_datetime": "2000-12-20 09:30:00",
+    "moon_nakshatra": "Swati",
+    "moon_longitude": 186.8388,
+    "birth_dasha_lord": "Rahu",
+    "years_remaining_first_dasha": 17.7676,
+    "dasha_at_query_date": {
+      "Mahadasha": "Jupiter",
+      "Mahadasha_start": "2018-09-27",
+      "Mahadasha_end": "2034-09-27",
+      "Antardasha": "Ketu",
+      "Antardasha_start": "2025-09-02",
+      "Antardasha_end": "2026-08-09",
+      "Pratyantardasha": "Saturn",
+      "Pratyantar_start": "2026-04-29",
+      "Pratyantar_end": "2026-06-22"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Rahu",
+        "start": "2000-09-26",
+        "end": "2018-09-27",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2018-09-27",
+        "end": "2034-09-27",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2034-09-27",
+        "end": "2053-09-27",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2053-09-27",
+        "end": "2070-09-27",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2070-09-27",
+        "end": "2077-09-27",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2077-09-27",
+        "end": "2097-09-27",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2097-09-27",
+        "end": "2103-09-29",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2103-09-29",
+        "end": "2113-09-28",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2113-09-28",
+        "end": "2120-09-28",
+        "years": 7
+      }
+    ]
+  },
+  "XME_Conception": {
+    "birth_datetime": "2006-06-19 12:00:00",
+    "moon_nakshatra": "Revati",
+    "moon_longitude": 348.4049,
+    "birth_dasha_lord": "Mercury",
+    "years_remaining_first_dasha": 14.7838,
+    "dasha_at_query_date": {
+      "Mahadasha": "Ketu",
+      "Mahadasha_start": "2021-04-01",
+      "Mahadasha_end": "2028-04-01",
+      "Antardasha": "Saturn",
+      "Antardasha_start": "2026-02-24",
+      "Antardasha_end": "2027-04-05",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-04-29",
+      "Pratyantar_end": "2026-06-25"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Mercury",
+        "start": "2004-04-01",
+        "end": "2021-04-01",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2021-04-01",
+        "end": "2028-04-01",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2028-04-01",
+        "end": "2048-04-01",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2048-04-01",
+        "end": "2054-04-01",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2054-04-01",
+        "end": "2064-04-01",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2064-04-01",
+        "end": "2071-04-02",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2071-04-02",
+        "end": "2089-04-01",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2089-04-01",
+        "end": "2105-04-03",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2105-04-03",
+        "end": "2124-04-02",
+        "years": 19
+      }
+    ]
+  },
+  "XME_Trading": {
+    "birth_datetime": "2006-06-22 09:30:00",
+    "moon_nakshatra": "Krittika",
+    "moon_longitude": 28.4996,
+    "birth_dasha_lord": "Sun",
+    "years_remaining_first_dasha": 5.1752,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mars",
+      "Mahadasha_start": "2021-08-25",
+      "Mahadasha_end": "2028-08-25",
+      "Antardasha": "Ketu",
+      "Antardasha_start": "2026-02-21",
+      "Antardasha_end": "2026-07-20",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-05-16",
+      "Pratyantar_end": "2026-06-05"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Sun",
+        "start": "2005-08-25",
+        "end": "2011-08-25",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2011-08-25",
+        "end": "2021-08-25",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2021-08-25",
+        "end": "2028-08-25",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2028-08-25",
+        "end": "2046-08-25",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2046-08-25",
+        "end": "2062-08-25",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2062-08-25",
+        "end": "2081-08-25",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2081-08-25",
+        "end": "2098-08-26",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2098-08-26",
+        "end": "2105-08-26",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2105-08-26",
+        "end": "2125-08-27",
+        "years": 20
+      }
+    ]
+  },
+  "XBI_Conception": {
+    "birth_datetime": "2006-01-31 12:00:00",
+    "moon_nakshatra": "Shatabhisha",
+    "moon_longitude": 317.6756,
+    "birth_dasha_lord": "Rahu",
+    "years_remaining_first_dasha": 3.138,
+    "dasha_at_query_date": {
+      "Mahadasha": "Saturn",
+      "Mahadasha_start": "2025-03-22",
+      "Mahadasha_end": "2044-03-22",
+      "Antardasha": "Saturn",
+      "Antardasha_start": "2025-03-22",
+      "Antardasha_end": "2028-03-25",
+      "Pratyantardasha": "Venus",
+      "Pratyantar_start": "2026-04-20",
+      "Pratyantar_end": "2026-10-20"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Rahu",
+        "start": "1991-03-23",
+        "end": "2009-03-22",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2009-03-22",
+        "end": "2025-03-22",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2025-03-22",
+        "end": "2044-03-22",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2044-03-22",
+        "end": "2061-03-23",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2061-03-23",
+        "end": "2068-03-22",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2068-03-22",
+        "end": "2088-03-23",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2088-03-23",
+        "end": "2094-03-23",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2094-03-23",
+        "end": "2104-03-24",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2104-03-24",
+        "end": "2111-03-25",
+        "years": 7
+      }
+    ]
+  },
+  "XBI_Trading": {
+    "birth_datetime": "2006-02-06 09:30:00",
+    "moon_nakshatra": "Krittika",
+    "moon_longitude": 39.7994,
+    "birth_dasha_lord": "Sun",
+    "years_remaining_first_dasha": 0.0903,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2023-03-11",
+      "Mahadasha_end": "2041-03-11",
+      "Antardasha": "Jupiter",
+      "Antardasha_start": "2025-11-22",
+      "Antardasha_end": "2028-04-16",
+      "Pratyantardasha": "Saturn",
+      "Pratyantar_start": "2026-03-19",
+      "Pratyantar_end": "2026-08-04"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Sun",
+        "start": "2000-03-11",
+        "end": "2006-03-11",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2006-03-11",
+        "end": "2016-03-11",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2016-03-11",
+        "end": "2023-03-11",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2023-03-11",
+        "end": "2041-03-11",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2041-03-11",
+        "end": "2057-03-11",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2057-03-11",
+        "end": "2076-03-11",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2076-03-11",
+        "end": "2093-03-11",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2093-03-11",
+        "end": "2100-03-12",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2100-03-12",
+        "end": "2120-03-12",
+        "years": 20
+      }
+    ]
+  },
+  "KRE_Conception": {
+    "birth_datetime": "2006-06-19 12:00:00",
+    "moon_nakshatra": "Revati",
+    "moon_longitude": 348.4049,
+    "birth_dasha_lord": "Mercury",
+    "years_remaining_first_dasha": 14.7838,
+    "dasha_at_query_date": {
+      "Mahadasha": "Ketu",
+      "Mahadasha_start": "2021-04-01",
+      "Mahadasha_end": "2028-04-01",
+      "Antardasha": "Saturn",
+      "Antardasha_start": "2026-02-24",
+      "Antardasha_end": "2027-04-05",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-04-29",
+      "Pratyantar_end": "2026-06-25"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Mercury",
+        "start": "2004-04-01",
+        "end": "2021-04-01",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2021-04-01",
+        "end": "2028-04-01",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2028-04-01",
+        "end": "2048-04-01",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2048-04-01",
+        "end": "2054-04-01",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2054-04-01",
+        "end": "2064-04-01",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2064-04-01",
+        "end": "2071-04-02",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2071-04-02",
+        "end": "2089-04-01",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2089-04-01",
+        "end": "2105-04-03",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2105-04-03",
+        "end": "2124-04-02",
+        "years": 19
+      }
+    ]
+  },
+  "KRE_Trading": {
+    "birth_datetime": "2006-06-22 09:30:00",
+    "moon_nakshatra": "Krittika",
+    "moon_longitude": 28.4996,
+    "birth_dasha_lord": "Sun",
+    "years_remaining_first_dasha": 5.1752,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mars",
+      "Mahadasha_start": "2021-08-25",
+      "Mahadasha_end": "2028-08-25",
+      "Antardasha": "Ketu",
+      "Antardasha_start": "2026-02-21",
+      "Antardasha_end": "2026-07-20",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-05-16",
+      "Pratyantar_end": "2026-06-05"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Sun",
+        "start": "2005-08-25",
+        "end": "2011-08-25",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2011-08-25",
+        "end": "2021-08-25",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2021-08-25",
+        "end": "2028-08-25",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2028-08-25",
+        "end": "2046-08-25",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2046-08-25",
+        "end": "2062-08-25",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2062-08-25",
+        "end": "2081-08-25",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2081-08-25",
+        "end": "2098-08-26",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2098-08-26",
+        "end": "2105-08-26",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2105-08-26",
+        "end": "2125-08-27",
+        "years": 20
+      }
+    ]
+  },
+  "XOP_Conception": {
+    "birth_datetime": "2006-06-19 12:00:00",
+    "moon_nakshatra": "Revati",
+    "moon_longitude": 348.4049,
+    "birth_dasha_lord": "Mercury",
+    "years_remaining_first_dasha": 14.7838,
+    "dasha_at_query_date": {
+      "Mahadasha": "Ketu",
+      "Mahadasha_start": "2021-04-01",
+      "Mahadasha_end": "2028-04-01",
+      "Antardasha": "Saturn",
+      "Antardasha_start": "2026-02-24",
+      "Antardasha_end": "2027-04-05",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-04-29",
+      "Pratyantar_end": "2026-06-25"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Mercury",
+        "start": "2004-04-01",
+        "end": "2021-04-01",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2021-04-01",
+        "end": "2028-04-01",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2028-04-01",
+        "end": "2048-04-01",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2048-04-01",
+        "end": "2054-04-01",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2054-04-01",
+        "end": "2064-04-01",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2064-04-01",
+        "end": "2071-04-02",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2071-04-02",
+        "end": "2089-04-01",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2089-04-01",
+        "end": "2105-04-03",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2105-04-03",
+        "end": "2124-04-02",
+        "years": 19
+      }
+    ]
+  },
+  "XOP_Trading": {
+    "birth_datetime": "2006-06-22 09:30:00",
+    "moon_nakshatra": "Krittika",
+    "moon_longitude": 28.4996,
+    "birth_dasha_lord": "Sun",
+    "years_remaining_first_dasha": 5.1752,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mars",
+      "Mahadasha_start": "2021-08-25",
+      "Mahadasha_end": "2028-08-25",
+      "Antardasha": "Ketu",
+      "Antardasha_start": "2026-02-21",
+      "Antardasha_end": "2026-07-20",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-05-16",
+      "Pratyantar_end": "2026-06-05"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Sun",
+        "start": "2005-08-25",
+        "end": "2011-08-25",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2011-08-25",
+        "end": "2021-08-25",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2021-08-25",
+        "end": "2028-08-25",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2028-08-25",
+        "end": "2046-08-25",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2046-08-25",
+        "end": "2062-08-25",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2062-08-25",
+        "end": "2081-08-25",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2081-08-25",
+        "end": "2098-08-26",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2098-08-26",
+        "end": "2105-08-26",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2105-08-26",
+        "end": "2125-08-27",
+        "years": 20
+      }
+    ]
+  },
+  "ITB_Conception": {
+    "birth_datetime": "2006-05-01 12:00:00",
+    "moon_nakshatra": "Mrigasira",
+    "moon_longitude": 66.4429,
+    "birth_dasha_lord": "Mars",
+    "years_remaining_first_dasha": 0.1175,
+    "dasha_at_query_date": {
+      "Mahadasha": "Jupiter",
+      "Mahadasha_start": "2024-06-13",
+      "Mahadasha_end": "2040-06-13",
+      "Antardasha": "Jupiter",
+      "Antardasha_start": "2024-06-13",
+      "Antardasha_end": "2026-08-01",
+      "Pratyantardasha": "Rahu",
+      "Pratyantar_start": "2026-04-06",
+      "Pratyantar_end": "2026-08-01"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Mars",
+        "start": "1999-06-13",
+        "end": "2006-06-13",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2006-06-13",
+        "end": "2024-06-13",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2024-06-13",
+        "end": "2040-06-13",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2040-06-13",
+        "end": "2059-06-14",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2059-06-14",
+        "end": "2076-06-13",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2076-06-13",
+        "end": "2083-06-14",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2083-06-14",
+        "end": "2103-06-15",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2103-06-15",
+        "end": "2109-06-14",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2109-06-14",
+        "end": "2119-06-15",
+        "years": 10
+      }
+    ]
+  },
+  "ITB_Trading": {
+    "birth_datetime": "2006-05-05 09:30:00",
+    "moon_nakshatra": "Ashlesha",
+    "moon_longitude": 114.7634,
+    "birth_dasha_lord": "Mercury",
+    "years_remaining_first_dasha": 6.6766,
+    "dasha_at_query_date": {
+      "Mahadasha": "Venus",
+      "Mahadasha_start": "2020-01-08",
+      "Mahadasha_end": "2040-01-08",
+      "Antardasha": "Mars",
+      "Antardasha_start": "2026-01-07",
+      "Antardasha_end": "2027-03-09",
+      "Pratyantardasha": "Saturn",
+      "Pratyantar_start": "2026-06-02",
+      "Pratyantar_end": "2026-08-08"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Mercury",
+        "start": "1996-01-07",
+        "end": "2013-01-07",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2013-01-07",
+        "end": "2020-01-08",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2020-01-08",
+        "end": "2040-01-08",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2040-01-08",
+        "end": "2046-01-07",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2046-01-07",
+        "end": "2056-01-08",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2056-01-08",
+        "end": "2063-01-08",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2063-01-08",
+        "end": "2081-01-07",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2081-01-07",
+        "end": "2097-01-07",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2097-01-07",
+        "end": "2116-01-09",
+        "years": 19
+      }
+    ]
+  },
+  "PAVE_Conception": {
+    "birth_datetime": "2017-03-06 12:00:00",
+    "moon_nakshatra": "Ardra",
+    "moon_longitude": 68.3016,
+    "birth_dasha_lord": "Rahu",
+    "years_remaining_first_dasha": 15.7929,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2014-12-21",
+      "Mahadasha_end": "2032-12-21",
+      "Antardasha": "Ketu",
+      "Antardasha_start": "2025-06-21",
+      "Antardasha_end": "2026-07-10",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-05-16",
+      "Pratyantar_end": "2026-07-10"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Rahu",
+        "start": "2014-12-21",
+        "end": "2032-12-21",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2032-12-21",
+        "end": "2048-12-21",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2048-12-21",
+        "end": "2067-12-22",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2067-12-22",
+        "end": "2084-12-21",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2084-12-21",
+        "end": "2091-12-22",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2091-12-22",
+        "end": "2111-12-23",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2111-12-23",
+        "end": "2117-12-22",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2117-12-22",
+        "end": "2127-12-23",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2127-12-23",
+        "end": "2134-12-23",
+        "years": 7
+      }
+    ]
+  },
+  "PAVE_Trading": {
+    "birth_datetime": "2017-03-08 09:30:00",
+    "moon_nakshatra": "Pushya",
+    "moon_longitude": 94.6157,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 17.1726,
+    "dasha_at_query_date": {
+      "Mahadasha": "Saturn",
+      "Mahadasha_start": "2015-05-11",
+      "Mahadasha_end": "2034-05-11",
+      "Antardasha": "Moon",
+      "Antardasha_start": "2026-04-13",
+      "Antardasha_end": "2027-11-12",
+      "Pratyantardasha": "Mars",
+      "Pratyantar_start": "2026-05-31",
+      "Pratyantar_end": "2026-07-04"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "2015-05-11",
+        "end": "2034-05-11",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2034-05-11",
+        "end": "2051-05-11",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2051-05-11",
+        "end": "2058-05-11",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2058-05-11",
+        "end": "2078-05-11",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2078-05-11",
+        "end": "2084-05-10",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2084-05-10",
+        "end": "2094-05-11",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2094-05-11",
+        "end": "2101-05-12",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2101-05-12",
+        "end": "2119-05-12",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2119-05-12",
+        "end": "2135-05-12",
+        "years": 16
+      }
+    ]
+  },
+  "JETS_Conception": {
+    "birth_datetime": "2015-04-28 12:00:00",
+    "moon_nakshatra": "Magha",
+    "moon_longitude": 133.2538,
+    "birth_dasha_lord": "Ketu",
+    "years_remaining_first_dasha": 0.0417,
+    "dasha_at_query_date": {
+      "Mahadasha": "Venus",
+      "Mahadasha_start": "2015-05-13",
+      "Mahadasha_end": "2035-05-14",
+      "Antardasha": "Jupiter",
+      "Antardasha_start": "2025-07-13",
+      "Antardasha_end": "2028-03-13",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-04-23",
+      "Pratyantar_end": "2026-09-08"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Ketu",
+        "start": "2008-05-13",
+        "end": "2015-05-13",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2015-05-13",
+        "end": "2035-05-14",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2035-05-14",
+        "end": "2041-05-13",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2041-05-13",
+        "end": "2051-05-14",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2051-05-14",
+        "end": "2058-05-13",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2058-05-13",
+        "end": "2076-05-13",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2076-05-13",
+        "end": "2092-05-13",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2092-05-13",
+        "end": "2111-05-15",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2111-05-15",
+        "end": "2128-05-14",
+        "years": 17
+      }
+    ]
+  },
+  "JETS_Trading": {
+    "birth_datetime": "2015-04-30 09:30:00",
+    "moon_nakshatra": "Uttara Phalguni",
+    "moon_longitude": 155.6572,
+    "birth_dasha_lord": "Sun",
+    "years_remaining_first_dasha": 1.9543,
+    "dasha_at_query_date": {
+      "Mahadasha": "Moon",
+      "Mahadasha_start": "2017-04-13",
+      "Mahadasha_end": "2027-04-13",
+      "Antardasha": "Venus",
+      "Antardasha_start": "2025-02-11",
+      "Antardasha_end": "2026-10-13",
+      "Pratyantardasha": "Saturn",
+      "Pratyantar_start": "2026-03-09",
+      "Pratyantar_end": "2026-06-13"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Sun",
+        "start": "2011-04-13",
+        "end": "2017-04-13",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2017-04-13",
+        "end": "2027-04-13",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2027-04-13",
+        "end": "2034-04-13",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2034-04-13",
+        "end": "2052-04-13",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2052-04-13",
+        "end": "2068-04-13",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2068-04-13",
+        "end": "2087-04-14",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2087-04-14",
+        "end": "2104-04-14",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2104-04-14",
+        "end": "2111-04-15",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2111-04-15",
+        "end": "2131-04-15",
+        "years": 20
+      }
+    ]
+  },
+  "HACK_Conception": {
+    "birth_datetime": "2014-11-10 12:00:00",
+    "moon_nakshatra": "Ardra",
+    "moon_longitude": 70.3572,
+    "birth_dasha_lord": "Rahu",
+    "years_remaining_first_dasha": 13.0178,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2009-11-16",
+      "Mahadasha_end": "2027-11-17",
+      "Antardasha": "Moon",
+      "Antardasha_start": "2025-04-30",
+      "Antardasha_end": "2026-10-30",
+      "Pratyantardasha": "Ketu",
+      "Pratyantar_start": "2026-06-01",
+      "Pratyantar_end": "2026-07-03"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Rahu",
+        "start": "2009-11-16",
+        "end": "2027-11-17",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2027-11-17",
+        "end": "2043-11-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2043-11-17",
+        "end": "2062-11-17",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2062-11-17",
+        "end": "2079-11-17",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2079-11-17",
+        "end": "2086-11-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2086-11-17",
+        "end": "2106-11-18",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2106-11-18",
+        "end": "2112-11-18",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2112-11-18",
+        "end": "2122-11-18",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2122-11-18",
+        "end": "2129-11-18",
+        "years": 7
+      }
+    ]
+  },
+  "HACK_Trading": {
+    "birth_datetime": "2014-11-12 09:30:00",
+    "moon_nakshatra": "Pushya",
+    "moon_longitude": 93.7967,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 18.3398,
+    "dasha_at_query_date": {
+      "Mahadasha": "Saturn",
+      "Mahadasha_start": "2014-03-16",
+      "Mahadasha_end": "2033-03-16",
+      "Antardasha": "Moon",
+      "Antardasha_start": "2025-02-16",
+      "Antardasha_end": "2026-09-18",
+      "Pratyantardasha": "Venus",
+      "Pratyantar_start": "2026-05-15",
+      "Pratyantar_end": "2026-08-20"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "2014-03-16",
+        "end": "2033-03-16",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2033-03-16",
+        "end": "2050-03-16",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2050-03-16",
+        "end": "2057-03-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2057-03-16",
+        "end": "2077-03-16",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2077-03-16",
+        "end": "2083-03-17",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2083-03-17",
+        "end": "2093-03-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2093-03-16",
+        "end": "2100-03-17",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2100-03-17",
+        "end": "2118-03-18",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2118-03-18",
+        "end": "2134-03-18",
+        "years": 16
+      }
+    ]
+  },
+  "URA_Conception": {
+    "birth_datetime": "2010-11-03 12:00:00",
+    "moon_nakshatra": "Hasta",
+    "moon_longitude": 162.5462,
+    "birth_dasha_lord": "Moon",
+    "years_remaining_first_dasha": 8.0903,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2025-12-06",
+      "Mahadasha_end": "2043-12-07",
+      "Antardasha": "Rahu",
+      "Antardasha_start": "2025-12-06",
+      "Antardasha_end": "2028-08-18",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-05-03",
+      "Pratyantar_end": "2026-09-11"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Moon",
+        "start": "2008-12-06",
+        "end": "2018-12-06",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2018-12-06",
+        "end": "2025-12-06",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2025-12-06",
+        "end": "2043-12-07",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2043-12-07",
+        "end": "2059-12-07",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2059-12-07",
+        "end": "2078-12-07",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2078-12-07",
+        "end": "2095-12-07",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2095-12-07",
+        "end": "2102-12-08",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2102-12-08",
+        "end": "2122-12-08",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2122-12-08",
+        "end": "2128-12-07",
+        "years": 6
+      }
+    ]
+  },
+  "URA_Trading": {
+    "birth_datetime": "2010-11-05 09:30:00",
+    "moon_nakshatra": "Swati",
+    "moon_longitude": 190.3883,
+    "birth_dasha_lord": "Rahu",
+    "years_remaining_first_dasha": 12.9758,
+    "dasha_at_query_date": {
+      "Mahadasha": "Jupiter",
+      "Mahadasha_start": "2023-10-28",
+      "Mahadasha_end": "2039-10-28",
+      "Antardasha": "Saturn",
+      "Antardasha_start": "2025-12-15",
+      "Antardasha_end": "2028-06-27",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-05-10",
+      "Pratyantar_end": "2026-09-18"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Rahu",
+        "start": "2005-10-27",
+        "end": "2023-10-28",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2023-10-28",
+        "end": "2039-10-28",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2039-10-28",
+        "end": "2058-10-28",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2058-10-28",
+        "end": "2075-10-28",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2075-10-28",
+        "end": "2082-10-28",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2082-10-28",
+        "end": "2102-10-29",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2102-10-29",
+        "end": "2108-10-28",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2108-10-28",
+        "end": "2118-10-29",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2118-10-29",
+        "end": "2125-10-29",
+        "years": 7
+      }
+    ]
+  },
+  "TAN_Conception": {
+    "birth_datetime": "2008-04-10 12:00:00",
+    "moon_nakshatra": "Mrigasira",
+    "moon_longitude": 59.6073,
+    "birth_dasha_lord": "Mars",
+    "years_remaining_first_dasha": 3.7062,
+    "dasha_at_query_date": {
+      "Mahadasha": "Rahu",
+      "Mahadasha_start": "2011-12-25",
+      "Mahadasha_end": "2029-12-24",
+      "Antardasha": "Venus",
+      "Antardasha_start": "2023-07-14",
+      "Antardasha_end": "2026-07-13",
+      "Pratyantardasha": "Ketu",
+      "Pratyantar_start": "2026-05-10",
+      "Pratyantar_end": "2026-07-13"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Mars",
+        "start": "2004-12-24",
+        "end": "2011-12-25",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2011-12-25",
+        "end": "2029-12-24",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2029-12-24",
+        "end": "2045-12-25",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2045-12-25",
+        "end": "2064-12-24",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2064-12-24",
+        "end": "2081-12-25",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2081-12-25",
+        "end": "2088-12-25",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2088-12-25",
+        "end": "2108-12-26",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2108-12-26",
+        "end": "2114-12-26",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2114-12-26",
+        "end": "2124-12-26",
+        "years": 10
+      }
+    ]
+  },
+  "TAN_Trading": {
+    "birth_datetime": "2008-04-15 09:30:00",
+    "moon_nakshatra": "Magha",
+    "moon_longitude": 126.234,
+    "birth_dasha_lord": "Ketu",
+    "years_remaining_first_dasha": 3.7271,
+    "dasha_at_query_date": {
+      "Mahadasha": "Venus",
+      "Mahadasha_start": "2012-01-06",
+      "Mahadasha_end": "2032-01-07",
+      "Antardasha": "Saturn",
+      "Antardasha_start": "2024-11-06",
+      "Antardasha_end": "2028-01-07",
+      "Pratyantardasha": "Venus",
+      "Pratyantar_start": "2025-12-25",
+      "Pratyantar_end": "2026-07-06"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Ketu",
+        "start": "2005-01-06",
+        "end": "2012-01-06",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2012-01-06",
+        "end": "2032-01-07",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2032-01-07",
+        "end": "2038-01-06",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2038-01-06",
+        "end": "2048-01-07",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2048-01-07",
+        "end": "2055-01-06",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2055-01-06",
+        "end": "2073-01-06",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2073-01-06",
+        "end": "2089-01-06",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2089-01-06",
+        "end": "2108-01-08",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2108-01-08",
+        "end": "2125-01-07",
+        "years": 17
+      }
+    ]
+  },
+  "NLR_Conception": {
+    "birth_datetime": "2007-08-10 12:00:00",
+    "moon_nakshatra": "Punarvasu",
+    "moon_longitude": 85.5955,
+    "birth_dasha_lord": "Jupiter",
+    "years_remaining_first_dasha": 9.2854,
+    "dasha_at_query_date": {
+      "Mahadasha": "Saturn",
+      "Mahadasha_start": "2016-11-22",
+      "Mahadasha_end": "2035-11-23",
+      "Antardasha": "Venus",
+      "Antardasha_start": "2023-09-13",
+      "Antardasha_end": "2026-11-13",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-03-27",
+      "Pratyantar_end": "2026-09-07"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Jupiter",
+        "start": "2000-11-22",
+        "end": "2016-11-22",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2016-11-22",
+        "end": "2035-11-23",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2035-11-23",
+        "end": "2052-11-22",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2052-11-22",
+        "end": "2059-11-23",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2059-11-23",
+        "end": "2079-11-23",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2079-11-23",
+        "end": "2085-11-22",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2085-11-22",
+        "end": "2095-11-23",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2095-11-23",
+        "end": "2102-11-24",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2102-11-24",
+        "end": "2120-11-23",
+        "years": 18
+      }
+    ]
+  },
+  "NLR_Trading": {
+    "birth_datetime": "2007-08-15 09:30:00",
+    "moon_nakshatra": "Uttara Phalguni",
+    "moon_longitude": 148.6278,
+    "birth_dasha_lord": "Sun",
+    "years_remaining_first_dasha": 5.1175,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mars",
+      "Mahadasha_start": "2022-09-27",
+      "Mahadasha_end": "2029-09-27",
+      "Antardasha": "Mercury",
+      "Antardasha_start": "2026-03-28",
+      "Antardasha_end": "2027-03-25",
+      "Pratyantardasha": "Ketu",
+      "Pratyantar_start": "2026-05-19",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Sun",
+        "start": "2006-09-27",
+        "end": "2012-09-26",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2012-09-26",
+        "end": "2022-09-27",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2022-09-27",
+        "end": "2029-09-27",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2029-09-27",
+        "end": "2047-09-27",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2047-09-27",
+        "end": "2063-09-27",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2063-09-27",
+        "end": "2082-09-27",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2082-09-27",
+        "end": "2099-09-28",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2099-09-28",
+        "end": "2106-09-28",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2106-09-28",
+        "end": "2126-09-28",
+        "years": 20
+      }
+    ]
+  },
+  "GDX_Conception": {
+    "birth_datetime": "2006-05-16 12:00:00",
+    "moon_nakshatra": "Purva Ashadha",
+    "moon_longitude": 253.4452,
+    "birth_dasha_lord": "Venus",
+    "years_remaining_first_dasha": 19.8322,
+    "dasha_at_query_date": {
+      "Mahadasha": "Sun",
+      "Mahadasha_start": "2026-03-16",
+      "Mahadasha_end": "2032-03-16",
+      "Antardasha": "Sun",
+      "Antardasha_start": "2026-03-16",
+      "Antardasha_end": "2026-07-04",
+      "Pratyantardasha": "Mercury",
+      "Pratyantar_start": "2026-05-24",
+      "Pratyantar_end": "2026-06-09"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Venus",
+        "start": "2006-03-16",
+        "end": "2026-03-16",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2026-03-16",
+        "end": "2032-03-16",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2032-03-16",
+        "end": "2042-03-16",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2042-03-16",
+        "end": "2049-03-16",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2049-03-16",
+        "end": "2067-03-17",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2067-03-17",
+        "end": "2083-03-17",
+        "years": 16
+      },
+      {
+        "mahadasha": "Saturn",
+        "start": "2083-03-17",
+        "end": "2102-03-17",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2102-03-17",
+        "end": "2119-03-18",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2119-03-18",
+        "end": "2126-03-18",
+        "years": 7
+      }
+    ]
+  },
+  "GDX_Trading": {
+    "birth_datetime": "2006-05-22 09:30:00",
+    "moon_nakshatra": "Uttara Bhadrapada",
+    "moon_longitude": 336.1158,
+    "birth_dasha_lord": "Saturn",
+    "years_remaining_first_dasha": 15.035,
+    "dasha_at_query_date": {
+      "Mahadasha": "Mercury",
+      "Mahadasha_start": "2021-06-04",
+      "Mahadasha_end": "2038-06-04",
+      "Antardasha": "Venus",
+      "Antardasha_start": "2024-10-28",
+      "Antardasha_end": "2027-08-28",
+      "Pratyantardasha": "Jupiter",
+      "Pratyantar_start": "2026-04-07",
+      "Pratyantar_end": "2026-08-23"
+    },
+    "full_sequence": [
+      {
+        "mahadasha": "Saturn",
+        "start": "2002-06-04",
+        "end": "2021-06-04",
+        "years": 19
+      },
+      {
+        "mahadasha": "Mercury",
+        "start": "2021-06-04",
+        "end": "2038-06-04",
+        "years": 17
+      },
+      {
+        "mahadasha": "Ketu",
+        "start": "2038-06-04",
+        "end": "2045-06-04",
+        "years": 7
+      },
+      {
+        "mahadasha": "Venus",
+        "start": "2045-06-04",
+        "end": "2065-06-04",
+        "years": 20
+      },
+      {
+        "mahadasha": "Sun",
+        "start": "2065-06-04",
+        "end": "2071-06-05",
+        "years": 6
+      },
+      {
+        "mahadasha": "Moon",
+        "start": "2071-06-05",
+        "end": "2081-06-04",
+        "years": 10
+      },
+      {
+        "mahadasha": "Mars",
+        "start": "2081-06-04",
+        "end": "2088-06-04",
+        "years": 7
+      },
+      {
+        "mahadasha": "Rahu",
+        "start": "2088-06-04",
+        "end": "2106-06-05",
+        "years": 18
+      },
+      {
+        "mahadasha": "Jupiter",
+        "start": "2106-06-05",
+        "end": "2122-06-06",
+        "years": 16
+      }
+    ]
+  }
+}

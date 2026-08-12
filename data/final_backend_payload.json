@@ -1,0 +1,4538 @@
+{
+  "1_EQUITIES_NATAL_DATA": {
+    "SPY": {
+      "Conception_Date": "1996-01-19 00:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 274.59,
+          "Moon": 255.63,
+          "Mars": 284.64,
+          "Mercury": 273.88,
+          "Jupiter": 249.73,
+          "Venus": 311.09,
+          "Saturn": 327.04,
+          "Rahu": 177.67,
+          "Ketu": 357.67,
+          "Ascendant": 179.05
+        },
+        "D1_Signs": {
+          "Sun": "Capricorn",
+          "Moon": "Sagittarius",
+          "Mars": "Capricorn",
+          "Mercury": "Capricorn",
+          "Jupiter": "Sagittarius",
+          "Venus": "Aquarius",
+          "Saturn": "Aquarius",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Virgo"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Leo",
+          "Mars": "Taurus",
+          "Mercury": "Aquarius",
+          "Jupiter": "Gemini",
+          "Venus": "Capricorn",
+          "Saturn": "Gemini",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Virgo"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Libra",
+          "Moon": "Taurus",
+          "Mars": "Capricorn",
+          "Mercury": "Libra",
+          "Jupiter": "Pisces",
+          "Venus": "Taurus",
+          "Saturn": "Scorpio",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Aquarius"
+        },
+        "Ashtakvarga_Total": [
+          23,
+          29,
+          30,
+          29,
+          21,
+          31,
+          41,
+          38,
+          27,
+          20,
+          26,
+          20
+        ],
+        "Dasha_Mahadasha": "Venus"
+      },
+      "Trading_Date": "1993-01-29 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 285.94,
+          "Moon": 0.63,
+          "Mars": 76.73,
+          "Mercury": 290.13,
+          "Jupiter": 170.93,
+          "Venus": 332.64,
+          "Saturn": 295.84,
+          "Rahu": 235.15,
+          "Ketu": 55.15,
+          "Ascendant": 340.31
+        },
+        "D1_Signs": {
+          "Sun": "Capricorn",
+          "Moon": "Aries",
+          "Mars": "Gemini",
+          "Mercury": "Capricorn",
+          "Jupiter": "Virgo",
+          "Venus": "Pisces",
+          "Saturn": "Capricorn",
+          "Rahu": "Scorpio",
+          "Ketu": "Taurus",
+          "Ascendant": "Pisces"
+        },
+        "D9_Navamsa": {
+          "Sun": "Taurus",
+          "Moon": "Aries",
+          "Mars": "Pisces",
+          "Mercury": "Cancer",
+          "Jupiter": "Cancer",
+          "Venus": "Cancer",
+          "Saturn": "Leo",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Aries",
+          "Mars": "Scorpio",
+          "Mercury": "Pisces",
+          "Jupiter": "Scorpio",
+          "Venus": "Scorpio",
+          "Saturn": "Taurus",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Aquarius"
+        },
+        "Ashtakvarga_Total": [
+          28,
+          26,
+          33,
+          28,
+          30,
+          25,
+          25,
+          32,
+          23,
+          32,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Ketu"
+      }
+    },
+    "QQQ": {
+      "Conception_Date": "1998-08-07 00:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 110.63,
+          "Moon": 278.72,
+          "Mars": 87.31,
+          "Mercury": 122.3,
+          "Jupiter": 333.57,
+          "Venus": 88.58,
+          "Saturn": 9.73,
+          "Rahu": 128.34,
+          "Ketu": 308.34,
+          "Ascendant": 26.03
+        },
+        "D1_Signs": {
+          "Sun": "Cancer",
+          "Moon": "Capricorn",
+          "Mars": "Gemini",
+          "Mercury": "Leo",
+          "Jupiter": "Pisces",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aries"
+        },
+        "D9_Navamsa": {
+          "Sun": "Capricorn",
+          "Moon": "Pisces",
+          "Mars": "Gemini",
+          "Mercury": "Aries",
+          "Jupiter": "Leo",
+          "Venus": "Gemini",
+          "Saturn": "Gemini",
+          "Rahu": "Gemini",
+          "Ketu": "Sagittarius",
+          "Ascendant": "Scorpio"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Virgo",
+          "Moon": "Scorpio",
+          "Mars": "Pisces",
+          "Mercury": "Leo",
+          "Jupiter": "Sagittarius",
+          "Venus": "Pisces",
+          "Saturn": "Cancer",
+          "Rahu": "Libra",
+          "Ketu": "Aries",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          34,
+          24,
+          31,
+          28,
+          24,
+          24,
+          25,
+          26,
+          26,
+          36,
+          34,
+          23
+        ],
+        "Dasha_Mahadasha": "Sun"
+      },
+      "Trading_Date": "1999-03-10 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 325.72,
+          "Moon": 238.4,
+          "Mars": 197.98,
+          "Mercury": 340.21,
+          "Jupiter": 342.02,
+          "Venus": 356.67,
+          "Saturn": 7.13,
+          "Rahu": 116.92,
+          "Ketu": 296.92,
+          "Ascendant": 38.44
+        },
+        "D1_Signs": {
+          "Sun": "Aquarius",
+          "Moon": "Scorpio",
+          "Mars": "Libra",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Pisces",
+          "Saturn": "Aries",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Taurus"
+        },
+        "D9_Navamsa": {
+          "Sun": "Taurus",
+          "Moon": "Pisces",
+          "Mars": "Pisces",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Pisces",
+          "Saturn": "Gemini",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Pisces"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Libra",
+          "Moon": "Aries",
+          "Mars": "Pisces",
+          "Mercury": "Aquarius",
+          "Jupiter": "Pisces",
+          "Venus": "Cancer",
+          "Saturn": "Gemini",
+          "Rahu": "Scorpio",
+          "Ketu": "Taurus",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          21,
+          25,
+          22,
+          33,
+          37,
+          23,
+          26,
+          27,
+          31,
+          37,
+          30,
+          23
+        ],
+        "Dasha_Mahadasha": "Mercury"
+      }
+    },
+    "DIA": {
+      "Conception_Date": "1997-07-13 20:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 87.78,
+          "Moon": 190.11,
+          "Mars": 168.15,
+          "Mercury": 106.62,
+          "Jupiter": 296.35,
+          "Venus": 114.64,
+          "Saturn": 356.24,
+          "Rahu": 148.96,
+          "Ketu": 328.96,
+          "Ascendant": 261.84
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Libra",
+          "Mars": "Virgo",
+          "Mercury": "Cancer",
+          "Jupiter": "Capricorn",
+          "Venus": "Cancer",
+          "Saturn": "Pisces",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Capricorn",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Leo",
+          "Venus": "Aquarius",
+          "Saturn": "Aquarius",
+          "Rahu": "Sagittarius",
+          "Ketu": "Gemini",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Pisces",
+          "Moon": "Capricorn",
+          "Mars": "Scorpio",
+          "Mercury": "Leo",
+          "Jupiter": "Taurus",
+          "Venus": "Scorpio",
+          "Saturn": "Cancer",
+          "Rahu": "Taurus",
+          "Ketu": "Scorpio",
+          "Ascendant": "Cancer"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          34,
+          25,
+          26,
+          24,
+          27,
+          29,
+          31,
+          36,
+          24,
+          20,
+          32
+        ],
+        "Dasha_Mahadasha": "Rahu"
+      },
+      "Trading_Date": "1998-01-20 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 276.5,
+          "Moon": 184.15,
+          "Mars": 302.39,
+          "Mercury": 256.74,
+          "Jupiter": 302.71,
+          "Venus": 269.8,
+          "Saturn": 350.81,
+          "Rahu": 138.86,
+          "Ketu": 318.86,
+          "Ascendant": 324.52
+        },
+        "D1_Signs": {
+          "Sun": "Capricorn",
+          "Moon": "Libra",
+          "Mars": "Aquarius",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Pisces",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Scorpio",
+          "Mars": "Libra",
+          "Mercury": "Virgo",
+          "Jupiter": "Libra",
+          "Venus": "Sagittarius",
+          "Saturn": "Capricorn",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Taurus"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Scorpio",
+          "Moon": "Scorpio",
+          "Mars": "Aquarius",
+          "Mercury": "Taurus",
+          "Jupiter": "Aquarius",
+          "Venus": "Virgo",
+          "Saturn": "Taurus",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Libra"
+        },
+        "Ashtakvarga_Total": [
+          26,
+          29,
+          20,
+          29,
+          30,
+          25,
+          32,
+          36,
+          37,
+          21,
+          25,
+          25
+        ],
+        "Dasha_Mahadasha": "Mars"
+      }
+    },
+    "IWM": {
+      "Conception_Date": "2000-05-22 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 37.99,
+          "Moon": 265.82,
+          "Mars": 49.25,
+          "Mercury": 53.24,
+          "Jupiter": 27.46,
+          "Venus": 32.65,
+          "Saturn": 28.1,
+          "Rahu": 93.65,
+          "Ketu": 273.65,
+          "Ascendant": 121.87
+        },
+        "D1_Signs": {
+          "Sun": "Taurus",
+          "Moon": "Sagittarius",
+          "Mars": "Taurus",
+          "Mercury": "Taurus",
+          "Jupiter": "Aries",
+          "Venus": "Taurus",
+          "Saturn": "Aries",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Leo"
+        },
+        "D9_Navamsa": {
+          "Sun": "Pisces",
+          "Moon": "Scorpio",
+          "Mars": "Gemini",
+          "Mercury": "Cancer",
+          "Jupiter": "Sagittarius",
+          "Venus": "Capricorn",
+          "Saturn": "Sagittarius",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Pisces",
+          "Moon": "Leo",
+          "Mars": "Cancer",
+          "Mercury": "Leo",
+          "Jupiter": "Capricorn",
+          "Venus": "Capricorn",
+          "Saturn": "Capricorn",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Leo"
+        },
+        "Ashtakvarga_Total": [
+          18,
+          26,
+          26,
+          23,
+          26,
+          28,
+          33,
+          25,
+          24,
+          33,
+          37,
+          36
+        ],
+        "Dasha_Mahadasha": "Venus"
+      },
+      "Trading_Date": "2000-05-26 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 41.73,
+          "Moon": 312.49,
+          "Mars": 51.93,
+          "Mercury": 60.27,
+          "Jupiter": 28.37,
+          "Venus": 37.43,
+          "Saturn": 28.6,
+          "Rahu": 93.45,
+          "Ketu": 273.45,
+          "Ascendant": 95.46
+        },
+        "D1_Signs": {
+          "Sun": "Taurus",
+          "Moon": "Aquarius",
+          "Mars": "Taurus",
+          "Mercury": "Gemini",
+          "Jupiter": "Aries",
+          "Venus": "Taurus",
+          "Saturn": "Aries",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Capricorn",
+          "Mars": "Cancer",
+          "Mercury": "Libra",
+          "Jupiter": "Sagittarius",
+          "Venus": "Pisces",
+          "Saturn": "Sagittarius",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Leo"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aries",
+          "Moon": "Gemini",
+          "Mars": "Leo",
+          "Mercury": "Gemini",
+          "Jupiter": "Capricorn",
+          "Venus": "Pisces",
+          "Saturn": "Capricorn",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "Ashtakvarga_Total": [
+          29,
+          24,
+          22,
+          26,
+          27,
+          25,
+          28,
+          29,
+          32,
+          22,
+          36,
+          35
+        ],
+        "Dasha_Mahadasha": "Rahu"
+      }
+    },
+    "XLK": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLF": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLE": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLV": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLY": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLP": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLU": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLI": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLB": {
+      "Conception_Date": "1998-12-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 240.69,
+          "Moon": 215.76,
+          "Mars": 166.7,
+          "Mercury": 219.63,
+          "Jupiter": 326.15,
+          "Venus": 252.36,
+          "Saturn": 3.08,
+          "Rahu": 121.37,
+          "Ketu": 301.37,
+          "Ascendant": 329.44
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Scorpio",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Virgo",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Leo",
+          "Mars": "Libra",
+          "Mercury": "Libra",
+          "Jupiter": "Libra",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          23,
+          25,
+          36,
+          22,
+          35,
+          29,
+          27,
+          31,
+          28,
+          26,
+          23
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "1998-12-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 246.69,
+          "Moon": 289.13,
+          "Mars": 169.78,
+          "Mercury": 225.3,
+          "Jupiter": 326.83,
+          "Venus": 259.76,
+          "Saturn": 2.97,
+          "Rahu": 121.05,
+          "Ketu": 301.05,
+          "Ascendant": 280.95
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Scorpio",
+          "Jupiter": "Gemini",
+          "Venus": "Virgo",
+          "Saturn": "Aries",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Aries"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Pisces",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Libra",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          20,
+          32,
+          30,
+          23,
+          30,
+          35,
+          33,
+          23,
+          29,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Moon"
+      }
+    },
+    "XLRE": {
+      "Conception_Date": "2015-10-06 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 169.0,
+          "Moon": 99.79,
+          "Mars": 133.14,
+          "Mercury": 157.6,
+          "Jupiter": 137.91,
+          "Venus": 124.26,
+          "Saturn": 217.43,
+          "Rahu": 156.1,
+          "Ketu": 336.1,
+          "Ascendant": 227.85
+        },
+        "D1_Signs": {
+          "Sun": "Virgo",
+          "Moon": "Cancer",
+          "Mars": "Leo",
+          "Mercury": "Virgo",
+          "Jupiter": "Leo",
+          "Venus": "Leo",
+          "Saturn": "Scorpio",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Scorpio"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Virgo",
+          "Mars": "Cancer",
+          "Mercury": "Pisces",
+          "Jupiter": "Virgo",
+          "Venus": "Taurus",
+          "Saturn": "Virgo",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Sagittarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Scorpio",
+          "Moon": "Gemini",
+          "Mars": "Sagittarius",
+          "Mercury": "Cancer",
+          "Jupiter": "Capricorn",
+          "Venus": "Virgo",
+          "Saturn": "Virgo",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          29,
+          31,
+          37,
+          30,
+          26,
+          33,
+          15,
+          27,
+          25,
+          30,
+          28,
+          24
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      },
+      "Trading_Date": "2015-10-08 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 170.87,
+          "Moon": 122.77,
+          "Mars": 134.31,
+          "Mercury": 156.92,
+          "Jupiter": 138.29,
+          "Venus": 125.79,
+          "Saturn": 217.6,
+          "Rahu": 156.0,
+          "Ketu": 336.0,
+          "Ascendant": 199.53
+        },
+        "D1_Signs": {
+          "Sun": "Virgo",
+          "Moon": "Leo",
+          "Mars": "Leo",
+          "Mercury": "Virgo",
+          "Jupiter": "Leo",
+          "Venus": "Leo",
+          "Saturn": "Scorpio",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Libra"
+        },
+        "D9_Navamsa": {
+          "Sun": "Cancer",
+          "Moon": "Aries",
+          "Mars": "Leo",
+          "Mercury": "Pisces",
+          "Jupiter": "Virgo",
+          "Venus": "Taurus",
+          "Saturn": "Virgo",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Pisces"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Scorpio",
+          "Moon": "Leo",
+          "Mars": "Sagittarius",
+          "Mercury": "Cancer",
+          "Jupiter": "Aquarius",
+          "Venus": "Virgo",
+          "Saturn": "Virgo",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Aries"
+        },
+        "Ashtakvarga_Total": [
+          22,
+          29,
+          43,
+          33,
+          26,
+          25,
+          22,
+          25,
+          24,
+          33,
+          25,
+          28
+        ],
+        "Dasha_Mahadasha": "Ketu"
+      }
+    },
+    "XLC": {
+      "Conception_Date": "2018-06-18 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 63.26,
+          "Moon": 130.23,
+          "Mars": 284.69,
+          "Mercury": 77.69,
+          "Jupiter": 199.96,
+          "Venus": 101.42,
+          "Saturn": 252.39,
+          "Rahu": 103.85,
+          "Ketu": 283.85,
+          "Ascendant": 142.28
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Leo",
+          "Mars": "Capricorn",
+          "Mercury": "Gemini",
+          "Jupiter": "Libra",
+          "Venus": "Cancer",
+          "Saturn": "Sagittarius",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Leo"
+        },
+        "D9_Navamsa": {
+          "Sun": "Libra",
+          "Moon": "Cancer",
+          "Mars": "Taurus",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Libra",
+          "Saturn": "Cancer",
+          "Rahu": "Scorpio",
+          "Ketu": "Taurus",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Cancer",
+          "Moon": "Scorpio",
+          "Mars": "Capricorn",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aries",
+          "Venus": "Gemini",
+          "Saturn": "Aries",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          31,
+          30,
+          31,
+          20,
+          33,
+          26,
+          35,
+          29,
+          18,
+          28,
+          25,
+          29
+        ],
+        "Dasha_Mahadasha": "Ketu"
+      },
+      "Trading_Date": "2018-06-19 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 64.11,
+          "Moon": 142.78,
+          "Mars": 284.78,
+          "Mercury": 79.4,
+          "Jupiter": 199.9,
+          "Venus": 102.46,
+          "Saturn": 252.33,
+          "Rahu": 103.81,
+          "Ketu": 283.81,
+          "Ascendant": 113.52
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Leo",
+          "Mars": "Capricorn",
+          "Mercury": "Gemini",
+          "Jupiter": "Libra",
+          "Venus": "Cancer",
+          "Saturn": "Sagittarius",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Scorpio",
+          "Moon": "Libra",
+          "Mars": "Taurus",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Libra",
+          "Saturn": "Cancer",
+          "Rahu": "Scorpio",
+          "Ketu": "Taurus",
+          "Ascendant": "Aquarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Cancer",
+          "Moon": "Pisces",
+          "Mars": "Capricorn",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Aries",
+          "Venus": "Cancer",
+          "Saturn": "Aries",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Libra"
+        },
+        "Ashtakvarga_Total": [
+          35,
+          31,
+          25,
+          24,
+          31,
+          28,
+          35,
+          26,
+          22,
+          22,
+          27,
+          29
+        ],
+        "Dasha_Mahadasha": "Venus"
+      }
+    },
+    "SMH": {
+      "Conception_Date": "2000-12-18 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 243.22,
+          "Moon": 161.78,
+          "Mars": 183.22,
+          "Mercury": 239.24,
+          "Jupiter": 39.63,
+          "Venus": 288.11,
+          "Saturn": 31.43,
+          "Rahu": 82.52,
+          "Ketu": 262.52,
+          "Ascendant": 333.71
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Virgo",
+          "Mars": "Libra",
+          "Mercury": "Scorpio",
+          "Jupiter": "Taurus",
+          "Venus": "Capricorn",
+          "Saturn": "Taurus",
+          "Rahu": "Gemini",
+          "Ketu": "Sagittarius",
+          "Ascendant": "Pisces"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Aries",
+          "Mars": "Libra",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Gemini",
+          "Saturn": "Capricorn",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Leo"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Capricorn",
+          "Moon": "Leo",
+          "Mars": "Scorpio",
+          "Mercury": "Aries",
+          "Jupiter": "Aries",
+          "Venus": "Pisces",
+          "Saturn": "Capricorn",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          25,
+          24,
+          25,
+          32,
+          31,
+          26,
+          29,
+          28,
+          26,
+          29,
+          25,
+          35
+        ],
+        "Dasha_Mahadasha": "Moon"
+      },
+      "Trading_Date": "2000-12-20 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 245.15,
+          "Moon": 186.84,
+          "Mars": 184.35,
+          "Mercury": 242.22,
+          "Jupiter": 39.42,
+          "Venus": 290.28,
+          "Saturn": 31.32,
+          "Rahu": 82.42,
+          "Ketu": 262.42,
+          "Ascendant": 279.07
+        },
+        "D1_Signs": {
+          "Sun": "Sagittarius",
+          "Moon": "Libra",
+          "Mars": "Libra",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Taurus",
+          "Venus": "Capricorn",
+          "Saturn": "Taurus",
+          "Rahu": "Gemini",
+          "Ketu": "Sagittarius",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Taurus",
+          "Moon": "Sagittarius",
+          "Mars": "Scorpio",
+          "Mercury": "Aries",
+          "Jupiter": "Pisces",
+          "Venus": "Cancer",
+          "Saturn": "Capricorn",
+          "Rahu": "Aries",
+          "Ketu": "Libra",
+          "Ascendant": "Pisces"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Capricorn",
+          "Moon": "Sagittarius",
+          "Mars": "Scorpio",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Aries",
+          "Venus": "Pisces",
+          "Saturn": "Capricorn",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          26,
+          24,
+          23,
+          33,
+          25,
+          36,
+          31,
+          26,
+          23,
+          27,
+          34
+        ],
+        "Dasha_Mahadasha": "Rahu"
+      }
+    },
+    "XME": {
+      "Conception_Date": "2006-06-19 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 64.29,
+          "Moon": 348.4,
+          "Mars": 105.68,
+          "Mercury": 89.17,
+          "Jupiter": 195.45,
+          "Venus": 30.89,
+          "Saturn": 104.97,
+          "Rahu": 336.06,
+          "Ketu": 156.06,
+          "Ascendant": 143.15
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Pisces",
+          "Mars": "Cancer",
+          "Mercury": "Gemini",
+          "Jupiter": "Libra",
+          "Venus": "Taurus",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Leo"
+        },
+        "D9_Navamsa": {
+          "Sun": "Scorpio",
+          "Moon": "Sagittarius",
+          "Mars": "Scorpio",
+          "Mercury": "Gemini",
+          "Jupiter": "Aquarius",
+          "Venus": "Capricorn",
+          "Saturn": "Scorpio",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Cancer",
+          "Moon": "Taurus",
+          "Mars": "Leo",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Capricorn",
+          "Saturn": "Cancer",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          34,
+          35,
+          22,
+          21,
+          35,
+          25,
+          29,
+          26,
+          20,
+          33,
+          23,
+          32
+        ],
+        "Dasha_Mahadasha": "Mercury"
+      },
+      "Trading_Date": "2006-06-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 67.05,
+          "Moon": 28.5,
+          "Mars": 107.44,
+          "Mercury": 91.9,
+          "Jupiter": 195.32,
+          "Venus": 34.32,
+          "Saturn": 105.28,
+          "Rahu": 335.91,
+          "Ketu": 155.91,
+          "Ascendant": 115.92
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Aries",
+          "Mars": "Cancer",
+          "Mercury": "Cancer",
+          "Jupiter": "Libra",
+          "Venus": "Taurus",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Sagittarius",
+          "Mars": "Sagittarius",
+          "Mercury": "Cancer",
+          "Jupiter": "Aquarius",
+          "Venus": "Aquarius",
+          "Saturn": "Scorpio",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Leo",
+          "Moon": "Capricorn",
+          "Mars": "Leo",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Aquarius",
+          "Saturn": "Leo",
+          "Rahu": "Sagittarius",
+          "Ketu": "Gemini",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          35,
+          38,
+          19,
+          27,
+          26,
+          33,
+          25,
+          23,
+          28,
+          22,
+          28,
+          31
+        ],
+        "Dasha_Mahadasha": "Sun"
+      }
+    },
+    "XBI": {
+      "Conception_Date": "2006-01-31 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 287.74,
+          "Moon": 317.68,
+          "Mars": 27.98,
+          "Mercury": 291.17,
+          "Jupiter": 203.36,
+          "Venus": 262.23,
+          "Saturn": 103.61,
+          "Rahu": 343.43,
+          "Ketu": 163.43,
+          "Ascendant": 38.88
+        },
+        "D1_Signs": {
+          "Sun": "Capricorn",
+          "Moon": "Aquarius",
+          "Mars": "Aries",
+          "Mercury": "Capricorn",
+          "Jupiter": "Libra",
+          "Venus": "Sagittarius",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Taurus"
+        },
+        "D9_Navamsa": {
+          "Sun": "Gemini",
+          "Moon": "Pisces",
+          "Mars": "Sagittarius",
+          "Mercury": "Cancer",
+          "Jupiter": "Taurus",
+          "Venus": "Libra",
+          "Saturn": "Scorpio",
+          "Rahu": "Scorpio",
+          "Ketu": "Taurus",
+          "Ascendant": "Pisces"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Cancer",
+          "Mars": "Capricorn",
+          "Mercury": "Aries",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          25,
+          34,
+          22,
+          29,
+          30,
+          26,
+          34,
+          29,
+          24,
+          23,
+          29,
+          30
+        ],
+        "Dasha_Mahadasha": "Rahu"
+      },
+      "Trading_Date": "2006-02-06 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 293.72,
+          "Moon": 39.8,
+          "Mars": 30.63,
+          "Mercury": 301.65,
+          "Jupiter": 203.87,
+          "Venus": 262.28,
+          "Saturn": 103.14,
+          "Rahu": 343.12,
+          "Ketu": 163.12,
+          "Ascendant": 353.38
+        },
+        "D1_Signs": {
+          "Sun": "Capricorn",
+          "Moon": "Taurus",
+          "Mars": "Taurus",
+          "Mercury": "Aquarius",
+          "Jupiter": "Libra",
+          "Venus": "Sagittarius",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Pisces"
+        },
+        "D9_Navamsa": {
+          "Sun": "Leo",
+          "Moon": "Pisces",
+          "Mars": "Capricorn",
+          "Mercury": "Libra",
+          "Jupiter": "Taurus",
+          "Venus": "Libra",
+          "Saturn": "Libra",
+          "Rahu": "Libra",
+          "Ketu": "Aries",
+          "Ascendant": "Aquarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aries",
+          "Moon": "Aries",
+          "Mars": "Capricorn",
+          "Mercury": "Aquarius",
+          "Jupiter": "Taurus",
+          "Venus": "Cancer",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Gemini"
+        },
+        "Ashtakvarga_Total": [
+          23,
+          29,
+          27,
+          30,
+          31,
+          21,
+          32,
+          28,
+          27,
+          27,
+          26,
+          34
+        ],
+        "Dasha_Mahadasha": "Sun"
+      }
+    },
+    "KRE": {
+      "Conception_Date": "2006-06-19 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 64.29,
+          "Moon": 348.4,
+          "Mars": 105.68,
+          "Mercury": 89.17,
+          "Jupiter": 195.45,
+          "Venus": 30.89,
+          "Saturn": 104.97,
+          "Rahu": 336.06,
+          "Ketu": 156.06,
+          "Ascendant": 143.15
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Pisces",
+          "Mars": "Cancer",
+          "Mercury": "Gemini",
+          "Jupiter": "Libra",
+          "Venus": "Taurus",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Leo"
+        },
+        "D9_Navamsa": {
+          "Sun": "Scorpio",
+          "Moon": "Sagittarius",
+          "Mars": "Scorpio",
+          "Mercury": "Gemini",
+          "Jupiter": "Aquarius",
+          "Venus": "Capricorn",
+          "Saturn": "Scorpio",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Cancer",
+          "Moon": "Taurus",
+          "Mars": "Leo",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Capricorn",
+          "Saturn": "Cancer",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          34,
+          35,
+          22,
+          21,
+          35,
+          25,
+          29,
+          26,
+          20,
+          33,
+          23,
+          32
+        ],
+        "Dasha_Mahadasha": "Mercury"
+      },
+      "Trading_Date": "2006-06-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 67.05,
+          "Moon": 28.5,
+          "Mars": 107.44,
+          "Mercury": 91.9,
+          "Jupiter": 195.32,
+          "Venus": 34.32,
+          "Saturn": 105.28,
+          "Rahu": 335.91,
+          "Ketu": 155.91,
+          "Ascendant": 115.92
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Aries",
+          "Mars": "Cancer",
+          "Mercury": "Cancer",
+          "Jupiter": "Libra",
+          "Venus": "Taurus",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Sagittarius",
+          "Mars": "Sagittarius",
+          "Mercury": "Cancer",
+          "Jupiter": "Aquarius",
+          "Venus": "Aquarius",
+          "Saturn": "Scorpio",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Leo",
+          "Moon": "Capricorn",
+          "Mars": "Leo",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Aquarius",
+          "Saturn": "Leo",
+          "Rahu": "Sagittarius",
+          "Ketu": "Gemini",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          35,
+          38,
+          19,
+          27,
+          26,
+          33,
+          25,
+          23,
+          28,
+          22,
+          28,
+          31
+        ],
+        "Dasha_Mahadasha": "Sun"
+      }
+    },
+    "XOP": {
+      "Conception_Date": "2006-06-19 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 64.29,
+          "Moon": 348.4,
+          "Mars": 105.68,
+          "Mercury": 89.17,
+          "Jupiter": 195.45,
+          "Venus": 30.89,
+          "Saturn": 104.97,
+          "Rahu": 336.06,
+          "Ketu": 156.06,
+          "Ascendant": 143.15
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Pisces",
+          "Mars": "Cancer",
+          "Mercury": "Gemini",
+          "Jupiter": "Libra",
+          "Venus": "Taurus",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Leo"
+        },
+        "D9_Navamsa": {
+          "Sun": "Scorpio",
+          "Moon": "Sagittarius",
+          "Mars": "Scorpio",
+          "Mercury": "Gemini",
+          "Jupiter": "Aquarius",
+          "Venus": "Capricorn",
+          "Saturn": "Scorpio",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Cancer",
+          "Moon": "Taurus",
+          "Mars": "Leo",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Capricorn",
+          "Saturn": "Cancer",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          34,
+          35,
+          22,
+          21,
+          35,
+          25,
+          29,
+          26,
+          20,
+          33,
+          23,
+          32
+        ],
+        "Dasha_Mahadasha": "Mercury"
+      },
+      "Trading_Date": "2006-06-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 67.05,
+          "Moon": 28.5,
+          "Mars": 107.44,
+          "Mercury": 91.9,
+          "Jupiter": 195.32,
+          "Venus": 34.32,
+          "Saturn": 105.28,
+          "Rahu": 335.91,
+          "Ketu": 155.91,
+          "Ascendant": 115.92
+        },
+        "D1_Signs": {
+          "Sun": "Gemini",
+          "Moon": "Aries",
+          "Mars": "Cancer",
+          "Mercury": "Cancer",
+          "Jupiter": "Libra",
+          "Venus": "Taurus",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Sagittarius",
+          "Mars": "Sagittarius",
+          "Mercury": "Cancer",
+          "Jupiter": "Aquarius",
+          "Venus": "Aquarius",
+          "Saturn": "Scorpio",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Leo",
+          "Moon": "Capricorn",
+          "Mars": "Leo",
+          "Mercury": "Pisces",
+          "Jupiter": "Pisces",
+          "Venus": "Aquarius",
+          "Saturn": "Leo",
+          "Rahu": "Sagittarius",
+          "Ketu": "Gemini",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          35,
+          38,
+          19,
+          27,
+          26,
+          33,
+          25,
+          23,
+          28,
+          22,
+          28,
+          31
+        ],
+        "Dasha_Mahadasha": "Sun"
+      }
+    },
+    "ITB": {
+      "Conception_Date": "2006-05-01 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 17.2,
+          "Moon": 66.44,
+          "Mars": 76.32,
+          "Mercury": 359.35,
+          "Jupiter": 200.42,
+          "Venus": 334.06,
+          "Saturn": 101.04,
+          "Rahu": 338.66,
+          "Ketu": 158.66,
+          "Ascendant": 105.25
+        },
+        "D1_Signs": {
+          "Sun": "Aries",
+          "Moon": "Gemini",
+          "Mars": "Gemini",
+          "Mercury": "Pisces",
+          "Jupiter": "Libra",
+          "Venus": "Pisces",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Virgo",
+          "Moon": "Scorpio",
+          "Mars": "Aquarius",
+          "Mercury": "Pisces",
+          "Jupiter": "Aries",
+          "Venus": "Leo",
+          "Saturn": "Libra",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Scorpio"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Virgo",
+          "Moon": "Leo",
+          "Mars": "Scorpio",
+          "Mercury": "Leo",
+          "Jupiter": "Aries",
+          "Venus": "Sagittarius",
+          "Saturn": "Gemini",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Leo"
+        },
+        "Ashtakvarga_Total": [
+          33,
+          30,
+          18,
+          33,
+          32,
+          25,
+          25,
+          29,
+          27,
+          29,
+          28,
+          26
+        ],
+        "Dasha_Mahadasha": "Mars"
+      },
+      "Trading_Date": "2006-05-05 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 20.97,
+          "Moon": 114.76,
+          "Mars": 78.62,
+          "Mercury": 6.45,
+          "Jupiter": 199.93,
+          "Venus": 338.46,
+          "Saturn": 101.23,
+          "Rahu": 338.45,
+          "Ketu": 158.45,
+          "Ascendant": 78.09
+        },
+        "D1_Signs": {
+          "Sun": "Aries",
+          "Moon": "Cancer",
+          "Mars": "Gemini",
+          "Mercury": "Aries",
+          "Jupiter": "Libra",
+          "Venus": "Pisces",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Gemini"
+        },
+        "D9_Navamsa": {
+          "Sun": "Libra",
+          "Moon": "Aquarius",
+          "Mars": "Pisces",
+          "Mercury": "Taurus",
+          "Jupiter": "Pisces",
+          "Venus": "Virgo",
+          "Saturn": "Libra",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Pisces"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Libra",
+          "Moon": "Scorpio",
+          "Mars": "Sagittarius",
+          "Mercury": "Gemini",
+          "Jupiter": "Aries",
+          "Venus": "Capricorn",
+          "Saturn": "Gemini",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Sagittarius"
+        },
+        "Ashtakvarga_Total": [
+          32,
+          26,
+          24,
+          26,
+          32,
+          33,
+          21,
+          27,
+          24,
+          29,
+          32,
+          29
+        ],
+        "Dasha_Mahadasha": "Mercury"
+      }
+    },
+    "PAVE": {
+      "Conception_Date": "2017-03-06 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 322.22,
+          "Moon": 68.3,
+          "Mars": 3.51,
+          "Mercury": 321.93,
+          "Jupiter": 177.8,
+          "Venus": 348.94,
+          "Saturn": 242.94,
+          "Rahu": 128.7,
+          "Ketu": 308.7,
+          "Ascendant": 72.63
+        },
+        "D1_Signs": {
+          "Sun": "Aquarius",
+          "Moon": "Gemini",
+          "Mars": "Aries",
+          "Mercury": "Aquarius",
+          "Jupiter": "Virgo",
+          "Venus": "Pisces",
+          "Saturn": "Sagittarius",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Gemini"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Sagittarius",
+          "Mars": "Taurus",
+          "Mercury": "Aries",
+          "Jupiter": "Virgo",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Gemini",
+          "Ketu": "Sagittarius",
+          "Ascendant": "Capricorn"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Virgo",
+          "Moon": "Leo",
+          "Mars": "Taurus",
+          "Mercury": "Virgo",
+          "Jupiter": "Aquarius",
+          "Venus": "Taurus",
+          "Saturn": "Sagittarius",
+          "Rahu": "Libra",
+          "Ketu": "Aries",
+          "Ascendant": "Libra"
+        },
+        "Ashtakvarga_Total": [
+          37,
+          20,
+          28,
+          34,
+          30,
+          25,
+          26,
+          31,
+          28,
+          26,
+          28,
+          22
+        ],
+        "Dasha_Mahadasha": "Rahu"
+      },
+      "Trading_Date": "2017-03-08 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 324.11,
+          "Moon": 94.62,
+          "Mars": 4.88,
+          "Mercury": 325.57,
+          "Jupiter": 177.64,
+          "Venus": 348.68,
+          "Saturn": 243.03,
+          "Rahu": 128.6,
+          "Ketu": 308.6,
+          "Ascendant": 36.59
+        },
+        "D1_Signs": {
+          "Sun": "Aquarius",
+          "Moon": "Cancer",
+          "Mars": "Aries",
+          "Mercury": "Aquarius",
+          "Jupiter": "Virgo",
+          "Venus": "Pisces",
+          "Saturn": "Sagittarius",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Taurus"
+        },
+        "D9_Navamsa": {
+          "Sun": "Taurus",
+          "Moon": "Leo",
+          "Mars": "Taurus",
+          "Mercury": "Taurus",
+          "Jupiter": "Virgo",
+          "Venus": "Sagittarius",
+          "Saturn": "Aries",
+          "Rahu": "Gemini",
+          "Ketu": "Sagittarius",
+          "Ascendant": "Aquarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Libra",
+          "Moon": "Aries",
+          "Mars": "Taurus",
+          "Mercury": "Libra",
+          "Jupiter": "Aquarius",
+          "Venus": "Taurus",
+          "Saturn": "Capricorn",
+          "Rahu": "Libra",
+          "Ketu": "Aries",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          30,
+          25,
+          35,
+          28,
+          25,
+          30,
+          22,
+          33,
+          26,
+          32,
+          22
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      }
+    },
+    "JETS": {
+      "Conception_Date": "2015-04-28 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 13.98,
+          "Moon": 133.25,
+          "Mars": 26.35,
+          "Mercury": 32.28,
+          "Jupiter": 109.13,
+          "Venus": 55.54,
+          "Saturn": 219.29,
+          "Rahu": 164.64,
+          "Ketu": 344.64,
+          "Ascendant": 102.66
+        },
+        "D1_Signs": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Aries",
+          "Mercury": "Taurus",
+          "Jupiter": "Cancer",
+          "Venus": "Taurus",
+          "Saturn": "Scorpio",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Leo",
+          "Moon": "Cancer",
+          "Mars": "Scorpio",
+          "Mercury": "Capricorn",
+          "Jupiter": "Sagittarius",
+          "Venus": "Leo",
+          "Saturn": "Virgo",
+          "Rahu": "Taurus",
+          "Ketu": "Scorpio",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Leo",
+          "Moon": "Sagittarius",
+          "Mars": "Sagittarius",
+          "Mercury": "Capricorn",
+          "Jupiter": "Virgo",
+          "Venus": "Virgo",
+          "Saturn": "Libra",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Cancer"
+        },
+        "Ashtakvarga_Total": [
+          28,
+          33,
+          26,
+          27,
+          20,
+          31,
+          31,
+          22,
+          26,
+          31,
+          34,
+          26
+        ],
+        "Dasha_Mahadasha": "Ketu"
+      },
+      "Trading_Date": "2015-04-30 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 15.82,
+          "Moon": 155.66,
+          "Mars": 27.71,
+          "Mercury": 35.18,
+          "Jupiter": 109.25,
+          "Venus": 57.68,
+          "Saturn": 219.17,
+          "Rahu": 164.53,
+          "Ketu": 344.53,
+          "Ascendant": 73.58
+        },
+        "D1_Signs": {
+          "Sun": "Aries",
+          "Moon": "Virgo",
+          "Mars": "Aries",
+          "Mercury": "Taurus",
+          "Jupiter": "Cancer",
+          "Venus": "Taurus",
+          "Saturn": "Scorpio",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Gemini"
+        },
+        "D9_Navamsa": {
+          "Sun": "Leo",
+          "Moon": "Aquarius",
+          "Mars": "Sagittarius",
+          "Mercury": "Aquarius",
+          "Jupiter": "Sagittarius",
+          "Venus": "Virgo",
+          "Saturn": "Virgo",
+          "Rahu": "Taurus",
+          "Ketu": "Scorpio",
+          "Ascendant": "Aquarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Virgo",
+          "Moon": "Gemini",
+          "Mars": "Capricorn",
+          "Mercury": "Aquarius",
+          "Jupiter": "Virgo",
+          "Venus": "Libra",
+          "Saturn": "Libra",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Libra"
+        },
+        "Ashtakvarga_Total": [
+          29,
+          26,
+          26,
+          31,
+          21,
+          30,
+          26,
+          29,
+          20,
+          30,
+          37,
+          30
+        ],
+        "Dasha_Mahadasha": "Sun"
+      }
+    },
+    "HACK": {
+      "Conception_Date": "2014-11-10 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 204.15,
+          "Moon": 70.36,
+          "Mars": 257.34,
+          "Mercury": 188.53,
+          "Jupiter": 117.31,
+          "Venus": 208.3,
+          "Saturn": 210.95,
+          "Rahu": 173.59,
+          "Ketu": 353.59,
+          "Ascendant": 276.16
+        },
+        "D1_Signs": {
+          "Sun": "Libra",
+          "Moon": "Gemini",
+          "Mars": "Sagittarius",
+          "Mercury": "Libra",
+          "Jupiter": "Cancer",
+          "Venus": "Libra",
+          "Saturn": "Scorpio",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Capricorn"
+        },
+        "D9_Navamsa": {
+          "Sun": "Taurus",
+          "Moon": "Capricorn",
+          "Mars": "Virgo",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Pisces",
+          "Venus": "Gemini",
+          "Saturn": "Cancer",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Aquarius"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Gemini",
+          "Moon": "Virgo",
+          "Mars": "Taurus",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Sagittarius",
+          "Venus": "Cancer",
+          "Saturn": "Cancer",
+          "Rahu": "Sagittarius",
+          "Ketu": "Gemini",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          29,
+          26,
+          32,
+          26,
+          36,
+          25,
+          26,
+          26,
+          24,
+          26,
+          28,
+          31
+        ],
+        "Dasha_Mahadasha": "Rahu"
+      },
+      "Trading_Date": "2014-11-12 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 206.06,
+          "Moon": 93.8,
+          "Mars": 258.77,
+          "Mercury": 191.44,
+          "Jupiter": 117.47,
+          "Venus": 210.68,
+          "Saturn": 211.18,
+          "Rahu": 173.49,
+          "Ketu": 353.49,
+          "Ascendant": 239.87
+        },
+        "D1_Signs": {
+          "Sun": "Libra",
+          "Moon": "Cancer",
+          "Mars": "Sagittarius",
+          "Mercury": "Libra",
+          "Jupiter": "Cancer",
+          "Venus": "Scorpio",
+          "Saturn": "Scorpio",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Scorpio"
+        },
+        "D9_Navamsa": {
+          "Sun": "Taurus",
+          "Moon": "Leo",
+          "Mars": "Virgo",
+          "Mercury": "Capricorn",
+          "Jupiter": "Pisces",
+          "Venus": "Cancer",
+          "Saturn": "Cancer",
+          "Rahu": "Leo",
+          "Ketu": "Aquarius",
+          "Ascendant": "Pisces"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Gemini",
+          "Moon": "Aries",
+          "Mars": "Gemini",
+          "Mercury": "Capricorn",
+          "Jupiter": "Sagittarius",
+          "Venus": "Cancer",
+          "Saturn": "Cancer",
+          "Rahu": "Sagittarius",
+          "Ketu": "Gemini",
+          "Ascendant": "Aries"
+        },
+        "Ashtakvarga_Total": [
+          28,
+          29,
+          26,
+          28,
+          35,
+          36,
+          22,
+          20,
+          29,
+          26,
+          29,
+          27
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      }
+    },
+    "URA": {
+      "Conception_Date": "2010-11-03 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 197.11,
+          "Moon": 162.55,
+          "Mars": 220.58,
+          "Mercury": 207.91,
+          "Jupiter": 329.87,
+          "Venus": 188.18,
+          "Saturn": 167.77,
+          "Rahu": 251.38,
+          "Ketu": 71.38,
+          "Ascendant": 252.48
+        },
+        "D1_Signs": {
+          "Sun": "Libra",
+          "Moon": "Virgo",
+          "Mars": "Scorpio",
+          "Mercury": "Libra",
+          "Jupiter": "Aquarius",
+          "Venus": "Libra",
+          "Saturn": "Virgo",
+          "Rahu": "Sagittarius",
+          "Ketu": "Gemini",
+          "Ascendant": "Sagittarius"
+        },
+        "D9_Navamsa": {
+          "Sun": "Pisces",
+          "Moon": "Aries",
+          "Mars": "Libra",
+          "Mercury": "Gemini",
+          "Jupiter": "Gemini",
+          "Venus": "Sagittarius",
+          "Saturn": "Gemini",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Cancer"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Pisces",
+          "Moon": "Virgo",
+          "Mars": "Libra",
+          "Mercury": "Cancer",
+          "Jupiter": "Scorpio",
+          "Venus": "Sagittarius",
+          "Saturn": "Libra",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Aries"
+        },
+        "Ashtakvarga_Total": [
+          19,
+          28,
+          26,
+          36,
+          32,
+          30,
+          23,
+          25,
+          34,
+          24,
+          31,
+          27
+        ],
+        "Dasha_Mahadasha": "Moon"
+      },
+      "Trading_Date": "2010-11-05 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 199.01,
+          "Moon": 190.39,
+          "Mars": 221.95,
+          "Mercury": 210.81,
+          "Jupiter": 329.78,
+          "Venus": 187.18,
+          "Saturn": 167.98,
+          "Rahu": 251.28,
+          "Ketu": 71.28,
+          "Ascendant": 221.54
+        },
+        "D1_Signs": {
+          "Sun": "Libra",
+          "Moon": "Libra",
+          "Mars": "Scorpio",
+          "Mercury": "Scorpio",
+          "Jupiter": "Aquarius",
+          "Venus": "Libra",
+          "Saturn": "Virgo",
+          "Rahu": "Sagittarius",
+          "Ketu": "Gemini",
+          "Ascendant": "Scorpio"
+        },
+        "D9_Navamsa": {
+          "Sun": "Pisces",
+          "Moon": "Capricorn",
+          "Mars": "Libra",
+          "Mercury": "Cancer",
+          "Jupiter": "Gemini",
+          "Venus": "Sagittarius",
+          "Saturn": "Gemini",
+          "Rahu": "Cancer",
+          "Ketu": "Capricorn",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aries",
+          "Moon": "Capricorn",
+          "Mars": "Libra",
+          "Mercury": "Cancer",
+          "Jupiter": "Scorpio",
+          "Venus": "Sagittarius",
+          "Saturn": "Libra",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Libra"
+        },
+        "Ashtakvarga_Total": [
+          28,
+          21,
+          24,
+          32,
+          40,
+          34,
+          16,
+          29,
+          31,
+          29,
+          24,
+          27
+        ],
+        "Dasha_Mahadasha": "Rahu"
+      }
+    },
+    "TAN": {
+      "Conception_Date": "2008-04-10 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 357.18,
+          "Moon": 59.61,
+          "Mars": 81.2,
+          "Mercury": 351.12,
+          "Jupiter": 267.11,
+          "Venus": 341.5,
+          "Saturn": 128.14,
+          "Rahu": 301.04,
+          "Ketu": 121.04,
+          "Ascendant": 89.2
+        },
+        "D1_Signs": {
+          "Sun": "Pisces",
+          "Moon": "Taurus",
+          "Mars": "Gemini",
+          "Mercury": "Pisces",
+          "Jupiter": "Sagittarius",
+          "Venus": "Pisces",
+          "Saturn": "Leo",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Gemini"
+        },
+        "D9_Navamsa": {
+          "Sun": "Pisces",
+          "Moon": "Virgo",
+          "Mars": "Aries",
+          "Mercury": "Capricorn",
+          "Jupiter": "Sagittarius",
+          "Venus": "Libra",
+          "Saturn": "Gemini",
+          "Rahu": "Libra",
+          "Ketu": "Aries",
+          "Ascendant": "Gemini"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Leo",
+          "Moon": "Libra",
+          "Mars": "Capricorn",
+          "Mercury": "Gemini",
+          "Jupiter": "Virgo",
+          "Venus": "Aquarius",
+          "Saturn": "Libra",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          29,
+          23,
+          28,
+          30,
+          28,
+          24,
+          31,
+          31,
+          25,
+          32,
+          21,
+          33
+        ],
+        "Dasha_Mahadasha": "Mars"
+      },
+      "Trading_Date": "2008-04-15 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 1.98,
+          "Moon": 126.23,
+          "Mars": 83.56,
+          "Mercury": 1.15,
+          "Jupiter": 267.5,
+          "Venus": 347.54,
+          "Saturn": 127.97,
+          "Rahu": 300.78,
+          "Ketu": 120.78,
+          "Ascendant": 60.86
+        },
+        "D1_Signs": {
+          "Sun": "Aries",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Aries",
+          "Jupiter": "Sagittarius",
+          "Venus": "Pisces",
+          "Saturn": "Leo",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Gemini"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aries",
+          "Moon": "Taurus",
+          "Mars": "Taurus",
+          "Mercury": "Aries",
+          "Jupiter": "Sagittarius",
+          "Venus": "Sagittarius",
+          "Saturn": "Gemini",
+          "Rahu": "Libra",
+          "Ketu": "Aries",
+          "Ascendant": "Libra"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Aries",
+          "Moon": "Libra",
+          "Mars": "Capricorn",
+          "Mercury": "Aries",
+          "Jupiter": "Virgo",
+          "Venus": "Aries",
+          "Saturn": "Libra",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Gemini"
+        },
+        "Ashtakvarga_Total": [
+          32,
+          20,
+          35,
+          23,
+          27,
+          29,
+          29,
+          30,
+          23,
+          31,
+          29,
+          27
+        ],
+        "Dasha_Mahadasha": "Ketu"
+      }
+    },
+    "NLR": {
+      "Conception_Date": "2007-08-10 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 113.69,
+          "Moon": 85.6,
+          "Mars": 38.25,
+          "Mercury": 108.07,
+          "Jupiter": 225.98,
+          "Venus": 125.24,
+          "Saturn": 123.13,
+          "Rahu": 313.97,
+          "Ketu": 133.97,
+          "Ascendant": 183.51
+        },
+        "D1_Signs": {
+          "Sun": "Cancer",
+          "Moon": "Gemini",
+          "Mars": "Taurus",
+          "Mercury": "Cancer",
+          "Jupiter": "Scorpio",
+          "Venus": "Leo",
+          "Saturn": "Leo",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Libra"
+        },
+        "D9_Navamsa": {
+          "Sun": "Aquarius",
+          "Moon": "Taurus",
+          "Mars": "Pisces",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Scorpio",
+          "Venus": "Taurus",
+          "Saturn": "Aries",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Scorpio"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Libra",
+          "Moon": "Aquarius",
+          "Mars": "Pisces",
+          "Mercury": "Virgo",
+          "Jupiter": "Sagittarius",
+          "Venus": "Virgo",
+          "Saturn": "Virgo",
+          "Rahu": "Gemini",
+          "Ketu": "Sagittarius",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          30,
+          30,
+          24,
+          29,
+          26,
+          26,
+          29,
+          29,
+          24,
+          24,
+          34
+        ],
+        "Dasha_Mahadasha": "Jupiter"
+      },
+      "Trading_Date": "2007-08-15 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 118.39,
+          "Moon": 148.63,
+          "Mars": 41.36,
+          "Mercury": 118.11,
+          "Jupiter": 226.07,
+          "Venus": 122.48,
+          "Saturn": 123.75,
+          "Rahu": 313.71,
+          "Ketu": 133.71,
+          "Ascendant": 157.68
+        },
+        "D1_Signs": {
+          "Sun": "Cancer",
+          "Moon": "Leo",
+          "Mars": "Taurus",
+          "Mercury": "Cancer",
+          "Jupiter": "Scorpio",
+          "Venus": "Leo",
+          "Saturn": "Leo",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Virgo"
+        },
+        "D9_Navamsa": {
+          "Sun": "Pisces",
+          "Moon": "Sagittarius",
+          "Mars": "Aries",
+          "Mercury": "Pisces",
+          "Jupiter": "Scorpio",
+          "Venus": "Aries",
+          "Saturn": "Taurus",
+          "Rahu": "Aquarius",
+          "Ketu": "Leo",
+          "Ascendant": "Pisces"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Sagittarius",
+          "Moon": "Taurus",
+          "Mars": "Aries",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Sagittarius",
+          "Venus": "Leo",
+          "Saturn": "Virgo",
+          "Rahu": "Gemini",
+          "Ketu": "Sagittarius",
+          "Ascendant": "Cancer"
+        },
+        "Ashtakvarga_Total": [
+          27,
+          32,
+          39,
+          23,
+          20,
+          31,
+          27,
+          28,
+          29,
+          24,
+          28,
+          27
+        ],
+        "Dasha_Mahadasha": "Sun"
+      }
+    },
+    "GDX": {
+      "Conception_Date": "2006-05-16 12:00:00",
+      "Conception_Data": {
+        "D1_Degrees": {
+          "Sun": 31.7,
+          "Moon": 253.45,
+          "Mars": 85.2,
+          "Mercury": 29.07,
+          "Jupiter": 198.54,
+          "Venus": 351.15,
+          "Saturn": 101.91,
+          "Rahu": 337.87,
+          "Ketu": 157.87,
+          "Ascendant": 116.81
+        },
+        "D1_Signs": {
+          "Sun": "Taurus",
+          "Moon": "Sagittarius",
+          "Mars": "Gemini",
+          "Mercury": "Aries",
+          "Jupiter": "Libra",
+          "Venus": "Pisces",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Capricorn",
+          "Moon": "Leo",
+          "Mars": "Taurus",
+          "Mercury": "Sagittarius",
+          "Jupiter": "Pisces",
+          "Venus": "Capricorn",
+          "Saturn": "Libra",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Pisces"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Capricorn",
+          "Moon": "Aries",
+          "Mars": "Aquarius",
+          "Mercury": "Capricorn",
+          "Jupiter": "Aries",
+          "Venus": "Gemini",
+          "Saturn": "Gemini",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Scorpio"
+        },
+        "Ashtakvarga_Total": [
+          29,
+          30,
+          21,
+          28,
+          30,
+          30,
+          28,
+          21,
+          29,
+          26,
+          33,
+          30
+        ],
+        "Dasha_Mahadasha": "Venus"
+      },
+      "Trading_Date": "2006-05-22 09:30:00",
+      "Trading_Data": {
+        "D1_Degrees": {
+          "Sun": 37.38,
+          "Moon": 336.12,
+          "Mars": 88.72,
+          "Mercury": 41.95,
+          "Jupiter": 197.84,
+          "Venus": 357.96,
+          "Saturn": 102.34,
+          "Rahu": 337.55,
+          "Ketu": 157.55,
+          "Ascendant": 91.87
+        },
+        "D1_Signs": {
+          "Sun": "Taurus",
+          "Moon": "Pisces",
+          "Mars": "Gemini",
+          "Mercury": "Taurus",
+          "Jupiter": "Libra",
+          "Venus": "Pisces",
+          "Saturn": "Cancer",
+          "Rahu": "Pisces",
+          "Ketu": "Virgo",
+          "Ascendant": "Cancer"
+        },
+        "D9_Navamsa": {
+          "Sun": "Pisces",
+          "Moon": "Leo",
+          "Mars": "Gemini",
+          "Mercury": "Aries",
+          "Jupiter": "Pisces",
+          "Venus": "Pisces",
+          "Saturn": "Libra",
+          "Rahu": "Virgo",
+          "Ketu": "Pisces",
+          "Ascendant": "Cancer"
+        },
+        "D10_Dasamsa": {
+          "Sun": "Pisces",
+          "Moon": "Capricorn",
+          "Mars": "Pisces",
+          "Mercury": "Aries",
+          "Jupiter": "Pisces",
+          "Venus": "Leo",
+          "Saturn": "Cancer",
+          "Rahu": "Capricorn",
+          "Ketu": "Cancer",
+          "Ascendant": "Pisces"
+        },
+        "Ashtakvarga_Total": [
+          30,
+          32,
+          17,
+          31,
+          29,
+          29,
+          28,
+          21,
+          27,
+          30,
+          27,
+          34
+        ],
+        "Dasha_Mahadasha": "Saturn"
+      }
+    }
+  },
+  "2_FUTURE_TRANSITS_DATA": {
+    "2000-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 297.41,
+        "Moon": 358.63,
+        "Mars": 335.13,
+        "Mercury": 314.59,
+        "Jupiter": 5.48,
+        "Venus": 266.91,
+        "Saturn": 17.24,
+        "Rahu": 99.06,
+        "Ketu": 279.06,
+        "Ascendant": 49.4
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Pisces",
+        "Mars": "Pisces",
+        "Mercury": "Aquarius",
+        "Jupiter": "Aries",
+        "Venus": "Sagittarius",
+        "Saturn": "Aries",
+        "Rahu": "Cancer",
+        "Ketu": "Capricorn",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2000-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 94.36,
+        "Moon": 319.48,
+        "Mars": 88.73,
+        "Mercury": 76.97,
+        "Jupiter": 40.13,
+        "Venus": 105.15,
+        "Saturn": 34.67,
+        "Rahu": 90.53,
+        "Ketu": 270.53,
+        "Ascendant": 167.82
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Aquarius",
+        "Mars": "Gemini",
+        "Mercury": "Gemini",
+        "Jupiter": "Taurus",
+        "Venus": "Cancer",
+        "Saturn": "Taurus",
+        "Rahu": "Cancer",
+        "Ketu": "Capricorn",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2000-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 199.72,
+        "Moon": 305.02,
+        "Mars": 157.14,
+        "Mercury": 186.63,
+        "Jupiter": 45.16,
+        "Venus": 237.25,
+        "Saturn": 34.73,
+        "Rahu": 84.8,
+        "Ketu": 264.8,
+        "Ascendant": 270.97
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Aquarius",
+        "Mars": "Virgo",
+        "Mercury": "Libra",
+        "Jupiter": "Taurus",
+        "Venus": "Scorpio",
+        "Saturn": "Taurus",
+        "Rahu": "Gemini",
+        "Ketu": "Sagittarius",
+        "Ascendant": "Capricorn"
+      }
+    },
+    "2005-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 298.14,
+        "Moon": 322.7,
+        "Mars": 248.86,
+        "Mercury": 295.28,
+        "Jupiter": 174.82,
+        "Venus": 286.16,
+        "Saturn": 87.83,
+        "Rahu": 2.24,
+        "Ketu": 182.24,
+        "Ascendant": 50.16
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Aquarius",
+        "Mars": "Sagittarius",
+        "Mercury": "Capricorn",
+        "Jupiter": "Virgo",
+        "Venus": "Capricorn",
+        "Saturn": "Gemini",
+        "Rahu": "Aries",
+        "Ketu": "Libra",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2005-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 94.09,
+        "Moon": 262.75,
+        "Mars": 1.55,
+        "Mercury": 116.29,
+        "Jupiter": 167.88,
+        "Venus": 123.21,
+        "Saturn": 96.6,
+        "Rahu": 353.76,
+        "Ketu": 173.76,
+        "Ascendant": 167.59
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Sagittarius",
+        "Mars": "Aries",
+        "Mercury": "Cancer",
+        "Jupiter": "Virgo",
+        "Venus": "Leo",
+        "Saturn": "Cancer",
+        "Rahu": "Pisces",
+        "Ketu": "Virgo",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2005-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 199.44,
+        "Moon": 245.32,
+        "Mars": 21.65,
+        "Mercury": 222.68,
+        "Jupiter": 188.36,
+        "Venus": 246.43,
+        "Saturn": 107.12,
+        "Rahu": 348.04,
+        "Ketu": 168.04,
+        "Ascendant": 270.65
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Sagittarius",
+        "Mars": "Aries",
+        "Mercury": "Scorpio",
+        "Jupiter": "Libra",
+        "Venus": "Sagittarius",
+        "Saturn": "Cancer",
+        "Rahu": "Pisces",
+        "Ketu": "Virgo",
+        "Ascendant": "Capricorn"
+      }
+    },
+    "2010-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 297.84,
+        "Moon": 261.03,
+        "Mars": 101.28,
+        "Mercury": 276.46,
+        "Jupiter": 311.46,
+        "Venus": 305.0,
+        "Saturn": 159.96,
+        "Rahu": 265.48,
+        "Ketu": 85.48,
+        "Ascendant": 49.87
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Sagittarius",
+        "Mars": "Cancer",
+        "Mercury": "Capricorn",
+        "Jupiter": "Aquarius",
+        "Venus": "Aquarius",
+        "Saturn": "Virgo",
+        "Rahu": "Sagittarius",
+        "Ketu": "Gemini",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2010-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 93.83,
+        "Moon": 211.76,
+        "Mars": 150.37,
+        "Mercury": 115.34,
+        "Jupiter": 339.38,
+        "Venus": 137.31,
+        "Saturn": 155.91,
+        "Rahu": 257.0,
+        "Ketu": 77.0,
+        "Ascendant": 167.35
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Scorpio",
+        "Mars": "Virgo",
+        "Mercury": "Cancer",
+        "Jupiter": "Pisces",
+        "Venus": "Leo",
+        "Saturn": "Virgo",
+        "Rahu": "Sagittarius",
+        "Ketu": "Gemini",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2010-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 199.12,
+        "Moon": 191.9,
+        "Mars": 222.03,
+        "Mercury": 210.97,
+        "Jupiter": 329.77,
+        "Venus": 187.13,
+        "Saturn": 167.99,
+        "Rahu": 251.28,
+        "Ketu": 71.28,
+        "Ascendant": 254.4
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Libra",
+        "Mars": "Scorpio",
+        "Mercury": "Scorpio",
+        "Jupiter": "Aquarius",
+        "Venus": "Libra",
+        "Saturn": "Virgo",
+        "Rahu": "Sagittarius",
+        "Ketu": "Gemini",
+        "Ascendant": "Sagittarius"
+      }
+    },
+    "2015-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 297.56,
+        "Moon": 190.96,
+        "Mars": 328.75,
+        "Mercury": 277.28,
+        "Jupiter": 113.04,
+        "Venus": 323.42,
+        "Saturn": 220.01,
+        "Rahu": 168.71,
+        "Ketu": 348.71,
+        "Ascendant": 49.57
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Libra",
+        "Mars": "Aquarius",
+        "Mercury": "Capricorn",
+        "Jupiter": "Cancer",
+        "Venus": "Aquarius",
+        "Saturn": "Scorpio",
+        "Rahu": "Virgo",
+        "Ketu": "Pisces",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2015-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 93.56,
+        "Moon": 145.41,
+        "Mars": 83.31,
+        "Mercury": 89.86,
+        "Jupiter": 121.34,
+        "Venus": 126.28,
+        "Saturn": 214.33,
+        "Rahu": 160.24,
+        "Ketu": 340.24,
+        "Ascendant": 167.12
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Leo",
+        "Mars": "Gemini",
+        "Mercury": "Gemini",
+        "Jupiter": "Leo",
+        "Venus": "Leo",
+        "Saturn": "Scorpio",
+        "Rahu": "Virgo",
+        "Ketu": "Pisces",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2015-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 198.87,
+        "Moon": 133.19,
+        "Mars": 151.58,
+        "Mercury": 191.57,
+        "Jupiter": 143.43,
+        "Venus": 152.77,
+        "Saturn": 220.54,
+        "Rahu": 154.51,
+        "Ketu": 334.51,
+        "Ascendant": 270.05
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Leo",
+        "Mars": "Virgo",
+        "Mercury": "Libra",
+        "Jupiter": "Leo",
+        "Venus": "Virgo",
+        "Saturn": "Scorpio",
+        "Rahu": "Virgo",
+        "Ketu": "Pisces",
+        "Ascendant": "Capricorn"
+      }
+    },
+    "2020-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 297.28,
+        "Moon": 136.72,
+        "Mars": 241.9,
+        "Mercury": 315.46,
+        "Jupiter": 261.61,
+        "Venus": 339.24,
+        "Saturn": 272.01,
+        "Rahu": 71.95,
+        "Ketu": 251.95,
+        "Ascendant": 49.28
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Leo",
+        "Mars": "Sagittarius",
+        "Mercury": "Aquarius",
+        "Jupiter": "Sagittarius",
+        "Venus": "Pisces",
+        "Saturn": "Capricorn",
+        "Rahu": "Gemini",
+        "Ketu": "Sagittarius",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2020-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 94.24,
+        "Moon": 93.42,
+        "Mars": 348.63,
+        "Mercury": 74.46,
+        "Jupiter": 267.39,
+        "Venus": 51.23,
+        "Saturn": 274.52,
+        "Rahu": 63.42,
+        "Ketu": 243.42,
+        "Ascendant": 167.67
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Cancer",
+        "Mars": "Pisces",
+        "Mercury": "Gemini",
+        "Jupiter": "Sagittarius",
+        "Venus": "Taurus",
+        "Saturn": "Capricorn",
+        "Rahu": "Gemini",
+        "Ketu": "Sagittarius",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2020-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 199.59,
+        "Moon": 75.73,
+        "Mars": 351.55,
+        "Mercury": 182.11,
+        "Jupiter": 267.58,
+        "Venus": 166.36,
+        "Saturn": 272.34,
+        "Rahu": 57.7,
+        "Ketu": 237.7,
+        "Ascendant": 270.87
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Gemini",
+        "Mars": "Pisces",
+        "Mercury": "Libra",
+        "Jupiter": "Sagittarius",
+        "Venus": "Virgo",
+        "Saturn": "Capricorn",
+        "Rahu": "Taurus",
+        "Ketu": "Scorpio",
+        "Ascendant": "Capricorn"
+      }
+    },
+    "2024-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 297.25,
+        "Moon": 307.89,
+        "Mars": 273.85,
+        "Mercury": 284.43,
+        "Jupiter": 14.21,
+        "Venus": 268.43,
+        "Saturn": 313.38,
+        "Rahu": 354.53,
+        "Ketu": 174.53,
+        "Ascendant": 49.26
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Aquarius",
+        "Mars": "Capricorn",
+        "Mercury": "Capricorn",
+        "Jupiter": "Aries",
+        "Venus": "Sagittarius",
+        "Saturn": "Aquarius",
+        "Rahu": "Pisces",
+        "Ketu": "Virgo",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2024-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 94.22,
+        "Moon": 264.13,
+        "Mars": 35.66,
+        "Mercury": 121.09,
+        "Jupiter": 48.08,
+        "Venus": 106.84,
+        "Saturn": 324.87,
+        "Rahu": 346.0,
+        "Ketu": 166.0,
+        "Ascendant": 167.63
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Sagittarius",
+        "Mars": "Taurus",
+        "Mercury": "Leo",
+        "Jupiter": "Taurus",
+        "Venus": "Cancer",
+        "Saturn": "Aquarius",
+        "Rahu": "Pisces",
+        "Ketu": "Virgo",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2024-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 199.57,
+        "Moon": 246.7,
+        "Mars": 96.31,
+        "Mercury": 219.78,
+        "Jupiter": 55.9,
+        "Venus": 238.55,
+        "Saturn": 318.57,
+        "Rahu": 340.27,
+        "Ketu": 160.27,
+        "Ascendant": 270.85
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Sagittarius",
+        "Mars": "Cancer",
+        "Mercury": "Scorpio",
+        "Jupiter": "Taurus",
+        "Venus": "Scorpio",
+        "Saturn": "Aquarius",
+        "Rahu": "Pisces",
+        "Ketu": "Virgo",
+        "Ascendant": "Capricorn"
+      }
+    },
+    "2025-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 298.0,
+        "Moon": 95.79,
+        "Mars": 83.96,
+        "Mercury": 298.92,
+        "Jupiter": 47.14,
+        "Venus": 340.12,
+        "Saturn": 324.3,
+        "Rahu": 335.13,
+        "Ketu": 155.13,
+        "Ascendant": 50.04
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Cancer",
+        "Mars": "Gemini",
+        "Mercury": "Capricorn",
+        "Jupiter": "Taurus",
+        "Venus": "Pisces",
+        "Saturn": "Aquarius",
+        "Rahu": "Pisces",
+        "Ketu": "Virgo",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2025-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 93.97,
+        "Moon": 39.16,
+        "Mars": 145.18,
+        "Mercury": 111.11,
+        "Jupiter": 75.03,
+        "Venus": 53.74,
+        "Saturn": 337.67,
+        "Rahu": 326.66,
+        "Ketu": 146.66,
+        "Ascendant": 167.43
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Taurus",
+        "Mars": "Leo",
+        "Mercury": "Cancer",
+        "Jupiter": "Gemini",
+        "Venus": "Taurus",
+        "Saturn": "Pisces",
+        "Rahu": "Aquarius",
+        "Ketu": "Leo",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2025-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 199.32,
+        "Moon": 21.51,
+        "Mars": 216.62,
+        "Mercury": 221.54,
+        "Jupiter": 90.87,
+        "Venus": 184.23,
+        "Saturn": 331.38,
+        "Rahu": 320.93,
+        "Ketu": 140.93,
+        "Ascendant": 270.56
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Aries",
+        "Mars": "Scorpio",
+        "Mercury": "Scorpio",
+        "Jupiter": "Cancer",
+        "Venus": "Libra",
+        "Saturn": "Pisces",
+        "Rahu": "Aquarius",
+        "Ketu": "Leo",
+        "Ascendant": "Capricorn"
+      }
+    },
+    "2026-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 297.74,
+        "Moon": 220.54,
+        "Mars": 290.12,
+        "Mercury": 312.25,
+        "Jupiter": 82.16,
+        "Venus": 306.13,
+        "Saturn": 335.42,
+        "Rahu": 315.79,
+        "Ketu": 135.79,
+        "Ascendant": 49.77
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Scorpio",
+        "Mars": "Capricorn",
+        "Mercury": "Aquarius",
+        "Jupiter": "Gemini",
+        "Venus": "Aquarius",
+        "Saturn": "Pisces",
+        "Rahu": "Aquarius",
+        "Ketu": "Leo",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2026-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 93.73,
+        "Moon": 174.56,
+        "Mars": 51.1,
+        "Mercury": 82.57,
+        "Jupiter": 100.22,
+        "Venus": 137.8,
+        "Saturn": 350.49,
+        "Rahu": 307.32,
+        "Ketu": 127.32,
+        "Ascendant": 167.23
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Virgo",
+        "Mars": "Taurus",
+        "Mercury": "Gemini",
+        "Jupiter": "Cancer",
+        "Venus": "Leo",
+        "Saturn": "Pisces",
+        "Rahu": "Aquarius",
+        "Ketu": "Leo",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2026-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 199.06,
+        "Moon": 157.05,
+        "Mars": 116.72,
+        "Mercury": 196.52,
+        "Jupiter": 120.63,
+        "Venus": 180.04,
+        "Saturn": 344.77,
+        "Rahu": 301.59,
+        "Ketu": 121.59,
+        "Ascendant": 270.27
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Virgo",
+        "Mars": "Cancer",
+        "Mercury": "Libra",
+        "Jupiter": "Leo",
+        "Venus": "Libra",
+        "Saturn": "Pisces",
+        "Rahu": "Aquarius",
+        "Ketu": "Leo",
+        "Ascendant": "Capricorn"
+      }
+    },
+    "2027-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 297.49,
+        "Moon": 343.24,
+        "Mars": 130.0,
+        "Mercury": 311.66,
+        "Jupiter": 117.84,
+        "Venus": 253.96,
+        "Saturn": 346.91,
+        "Rahu": 296.45,
+        "Ketu": 116.45,
+        "Ascendant": 49.5
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Pisces",
+        "Mars": "Leo",
+        "Mercury": "Aquarius",
+        "Jupiter": "Cancer",
+        "Venus": "Sagittarius",
+        "Saturn": "Pisces",
+        "Rahu": "Capricorn",
+        "Ketu": "Cancer",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2027-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 93.48,
+        "Moon": 295.29,
+        "Mars": 158.88,
+        "Mercury": 73.76,
+        "Jupiter": 124.63,
+        "Venus": 87.32,
+        "Saturn": 3.29,
+        "Rahu": 287.97,
+        "Ketu": 107.97,
+        "Ascendant": 167.02
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Capricorn",
+        "Mars": "Virgo",
+        "Mercury": "Gemini",
+        "Jupiter": "Leo",
+        "Venus": "Gemini",
+        "Saturn": "Aries",
+        "Rahu": "Capricorn",
+        "Ketu": "Cancer",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2027-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 198.76,
+        "Moon": 281.56,
+        "Mars": 230.74,
+        "Mercury": 180.2,
+        "Jupiter": 146.84,
+        "Venus": 221.15,
+        "Saturn": 358.72,
+        "Rahu": 282.25,
+        "Ketu": 102.25,
+        "Ascendant": 254.05
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Capricorn",
+        "Mars": "Scorpio",
+        "Mercury": "Libra",
+        "Jupiter": "Leo",
+        "Venus": "Scorpio",
+        "Saturn": "Pisces",
+        "Rahu": "Capricorn",
+        "Ketu": "Cancer",
+        "Ascendant": "Sagittarius"
+      }
+    },
+    "2028-02-10 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 297.22,
+        "Moon": 118.37,
+        "Mars": 305.76,
+        "Mercury": 280.66,
+        "Jupiter": 151.91,
+        "Venus": 339.59,
+        "Saturn": 358.85,
+        "Rahu": 277.11,
+        "Ketu": 97.11,
+        "Ascendant": 49.24
+      },
+      "Transiting_Signs": {
+        "Sun": "Capricorn",
+        "Moon": "Cancer",
+        "Mars": "Aquarius",
+        "Mercury": "Capricorn",
+        "Jupiter": "Virgo",
+        "Venus": "Pisces",
+        "Saturn": "Pisces",
+        "Rahu": "Capricorn",
+        "Ketu": "Cancer",
+        "Ascendant": "Taurus"
+      }
+    },
+    "2028-07-20 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 94.19,
+        "Moon": 74.52,
+        "Mars": 65.62,
+        "Mercury": 88.48,
+        "Jupiter": 149.38,
+        "Venus": 50.61,
+        "Saturn": 16.1,
+        "Rahu": 268.58,
+        "Ketu": 88.58,
+        "Ascendant": 167.6
+      },
+      "Transiting_Signs": {
+        "Sun": "Cancer",
+        "Moon": "Gemini",
+        "Mars": "Gemini",
+        "Mercury": "Gemini",
+        "Jupiter": "Leo",
+        "Venus": "Taurus",
+        "Saturn": "Aries",
+        "Rahu": "Sagittarius",
+        "Ketu": "Gemini",
+        "Ascendant": "Virgo"
+      }
+    },
+    "2028-11-05 12:00:00": {
+      "Transiting_Degrees": {
+        "Sun": 199.55,
+        "Moon": 57.99,
+        "Mars": 132.89,
+        "Mercury": 190.8,
+        "Jupiter": 171.3,
+        "Venus": 166.86,
+        "Saturn": 13.08,
+        "Rahu": 262.85,
+        "Ketu": 82.85,
+        "Ascendant": 270.83
+      },
+      "Transiting_Signs": {
+        "Sun": "Libra",
+        "Moon": "Taurus",
+        "Mars": "Leo",
+        "Mercury": "Libra",
+        "Jupiter": "Virgo",
+        "Venus": "Virgo",
+        "Saturn": "Aries",
+        "Rahu": "Sagittarius",
+        "Ketu": "Gemini",
+        "Ascendant": "Capricorn"
+      }
+    }
+  }
+}

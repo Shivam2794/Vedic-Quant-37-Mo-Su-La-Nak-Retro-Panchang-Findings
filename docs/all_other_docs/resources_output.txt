@@ -1,0 +1,332 @@
+[2025-10-18T05:06:19.8500000-05:00] the_biggest_rick: Quant Blogs
+
+• MATLAB Trading - http://matlab-trading.blogspot.co.uk/
+• Quantitative Trading (Ernest Chan) - http://epchan.blogspot.com/
+• Quantivity - http://quantivity.wordpress.com/
+• Quantopian - http://blog.quantopian.com/
+• Quantpedia - http://quantpedia.com/
+Aggregators
+
+It has become fashionable in the last few years for topical links to be aggregated and then
+discussed. I read the following aggregators:
+
+• Quantocracy - http://www.quantocracy.com/
+• Quant News - http://www.quantnews.com/
+• Algo Trading Sub-Reddit - http://www.reddit.com/r/algotrading
+Forums
+The next place to find additional strategy ideas is with trading forums. Do not be put off by
+more "technical analysis" oriented strategies. These strategies often provide good ideas that can
+be statistically tested:
+• Elite Trader Forums - http://www.elitetrader.com/
+
+• QuantNet - http://www.quantnet.com/
+
+• Wilmott Forums - http://www.wilmott.com/
+• arXiv - http://arxiv.org/archive/q-fin
+• SSRN - http://www.ssrn.com/
+
+• Mathematical Finance - http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1467-9965
+----------------------------------------
+[2025-10-18T05:06:40.6380000-05:00] the_biggest_rick: https://www.naaim.org/wp-content/uploads/2019/05/00K_Antifragile-Asset-Allocation-Model_GioeleGiordano_1st-Place.pdf
+----------------------------------------
+[2025-10-18T05:06:54.4090000-05:00] the_biggest_rick: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2741701
+----------------------------------------
+[2025-10-19T17:01:37.5490000-05:00] the_biggest_rick: The dow award papers never dissapoint me:
+
+*This paper evaluates the profitability of an industry-based long-only trend-following portfolio. Utilizing 48 industry portfolios from 1926 to 2024*
+
+*The Timing Industry strategy achieves an average annual return of 18.2% with an annual volatility of 12.6%, resulting in a Sharpe Ratio of 1.39, compared to the US equity market's 9.7% return, 17.1% volatility, and 0.63 Sharpe Ratio. The model's outperformance is underscored by an annualized alpha of 10.9%, with the timing strategy reducing drawdown by almost 60% compared to a passive long exposure.*
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4857230
+----------------------------------------
+[2025-10-26T06:25:58.8840000-05:00] the_biggest_rick: https://www.youtube.com/@TheQuantGuide
+----------------------------------------
+[2025-10-26T06:26:17.0160000-05:00] the_biggest_rick: @here interview questions
+----------------------------------------
+[2025-10-26T06:26:34.2050000-05:00] the_biggest_rick: [www.youtube.com/@QuantQuestionsio/videos?sttick=0](https://www.youtube.com/@QuantQuestionsio/videos?sttick=0)
+----------------------------------------
+[2025-10-29T04:07:23.6710000-05:00] the_biggest_rick: https://www.youtube.com/watch?v=slbZ-SLpIgg&t=180s
+----------------------------------------
+[2025-10-29T04:20:05.4490000-05:00] the_biggest_rick: If you're going the prop-firm way, a montecarlo can give you a percentage estimation of your likelihood of passing the challenge
+----------------------------------------
+[2025-10-29T05:04:19.1780000-05:00] the_biggest_rick: https://cmtassociation.org/association/award-recognizing/charles-h-dow-award
+----------------------------------------
+[2025-10-29T17:11:50.5170000-05:00] the_biggest_rick: @everyone Short thing by @White Hammock on linkedin posting
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\Linkedin_Maxing-b68a86c17d3b70f5.pdf
+----------------------------------------
+[2025-11-02T11:43:49.1150000-06:00] the_biggest_rick: https://www.interactivebrokers.com/campus/ibkr-quant-news/automating-tasks-with-python-a-complete-guide/
+----------------------------------------
+[2025-11-04T06:08:19.1990000-06:00] the_biggest_rick: https://catnip-elbow-51e.notion.site/Possibly-EVERY-Trading-Book-5d3b9d2184f245cd807cae578bad5194
+----------------------------------------
+[2025-11-04T06:09:36.0690000-06:00] the_biggest_rick: TBBO data
+
+https://drive.google.com/file/d/1WSXQhitAPx7SlkUK2Gna7CA_W2qdmRzG/view?usp=sharing
+----------------------------------------
+[2025-11-04T06:10:12.8130000-06:00] the_biggest_rick: http://tradingphysics.com/Resources/Papers/default.aspx
+----------------------------------------
+[2025-11-07T06:36:50.8140000-06:00] the_biggest_rick: Learning:
+https://www.trendfollowing.com/resources
+https://scikit-learn.org/stable/supervised_learning.html
+https://www.mediafire.com/folder/d1n553s1t8z8m/Dimensional_Market_Theory_ressource
+https://www.mediafire.com/folder/d1n553s1t8z8m/Dimensional_Market_Theory_ressource#m1cjzp4cgxoqf
+https://github.com/gjimzhou/MTH9879-Market-Microstructure-Models
+http://www.nanex.net/FlashCrash/OngoingResearch.html
+https://robotwealth.com/blog/
+https://www.khanacademy.org/economics-finance-domain/core-finance
+https://thehedgefundjournal.com/trading-volatility-as-an-asset-class/
+----------------------------------------
+[2025-11-13T07:30:53.7290000-06:00] the_biggest_rick: **Corey Hoffstein**
+Newfound Research
+Chief Investment Officer
+
+https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=1945670
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\image-a033ba7fcd8e6508.png
+----------------------------------------
+[2025-11-13T12:55:48.6950000-06:00] the_biggest_rick: huge library on value investing, momentum investing, and trend-following.
+
+alpha-architect is a research platform with multiple veteran investors with PhD certificates, there is more in here than i could describe.
+
+https://alphaarchitect.com/category/architect-academic-insights/trend-following
+
+https://alphaarchitect.com/category/architect-academic-insights/value-investing
+
+https://alphaarchitect.com/category/architect-academic-insights/momentum-investing
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\image-b4cdc1144e98bf22.png,rick's skool - skool - resources [1429047696290746368].csv_Files\image-6860fbd20f9b4d39.png,rick's skool - skool - resources [1429047696290746368].csv_Files\image-230a33e1454744ff.png
+----------------------------------------
+[2025-11-13T12:58:33.4370000-06:00] the_biggest_rick: @everyone fascinating resource, total goldmine
+----------------------------------------
+[2025-11-21T15:32:06.2610000-06:00] the_biggest_rick: https://docs.google.com/document/d/1HrVvsp7STlJKP4HgiSw1uyD6toc4AYImNR8q8ulNCFc/edit?tab=t.0#heading=h.samyyk2m76tp
+----------------------------------------
+[2025-11-21T15:32:24.5240000-06:00] the_biggest_rick: @everyone largest archive on renaissance technologies ive found on the web
+----------------------------------------
+[2025-11-24T13:43:07.2850000-06:00] the_biggest_rick: @everyone the table on the left i use on TV
+----------------------------------------
+[2025-11-24T13:43:15.5470000-06:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\image-3c1aa31f18d00451.png
+----------------------------------------
+[2025-11-24T13:43:19.0040000-06:00] the_biggest_rick: you paste it under all your code
+----------------------------------------
+[2025-11-24T14:03:32.4300000-06:00] the_biggest_rick: .
+----------------------------------------
+[2025-11-24T14:08:33.9890000-06:00] the_biggest_rick: if you get an error dm me w script please ill fix it
+----------------------------------------
+[2025-12-02T08:36:05.3960000-06:00] 3wolfster: Started a thread.
+----------------------------------------
+[2025-12-13T09:11:47.6410000-06:00] the_biggest_rick: https://www.youtube.com/@Stoic_research/videos
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\image-4d793ee62bee6313.png
+----------------------------------------
+[2025-12-13T13:30:33.5150000-06:00] the_biggest_rick: // Aroon calculations
+upper = 10 * (ta.highestbars(high, lengthAroon+1) + lengthAroon)/lengthAroon
+lower = 10 * (ta.lowestbars(low, lengthAroon+1) + lengthAroon)/lengthAroon
+----------------------------------------
+[2025-12-13T13:30:39.8870000-06:00] the_biggest_rick: ^ these do well for me
+----------------------------------------
+[2025-12-18T12:34:17.5740000-06:00] the_biggest_rick: MASSIVE LIST OF DEFINITIONS OF RATIO'S, INDICATORS. ETC
+
+https://docs.rax.trade/key-performance-metrics#sortino-vs-sharpe-approximation
+
+@everyone
+----------------------------------------
+[2025-12-18T18:10:18.0840000-06:00] the_biggest_rick: https://arxiv.org/abs/cond-mat/0408143
+----------------------------------------
+[2025-12-20T17:53:22.1570000-06:00] the_biggest_rick: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5680782
+
+It was removed but is back, LLM sentiment reading improving momentum!
+
+@everyone
+----------------------------------------
+[2025-12-20T18:14:10.0620000-06:00] the_biggest_rick: https://www.tradinformed.com/a-simple-rsi-mean-reversion-strategy/
+----------------------------------------
+[2025-12-21T11:12:27.9040000-06:00] the_biggest_rick: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5747964
+
+https://concretumgroup.com/when-execution-delays-erode-short-term-alpha/
+
+https://concretumgroup.com/opportunity-set-bias-in-mean-reversion-trading-systems/
+
+@everyone 
+
+new papers/articles by carlo, the ex-blackrock analyst who'se papers i reviewed in drivers to price action!
+----------------------------------------
+[2025-12-23T18:54:48.3630000-06:00] the_biggest_rick: https://www.aqr.com/Insights/Research?&page=5#filtered-list
+----------------------------------------
+[2026-01-02T07:45:35.3740000-06:00] the_biggest_rick: https://funds.aqr.com/Insights/Strategies/Understanding-Factor-Investing
+----------------------------------------
+[2026-01-11T09:38:17.9600000-06:00] the_biggest_rick: https://pmr.sulakov.dev
+----------------------------------------
+[2026-01-17T08:37:23.7430000-06:00] the_biggest_rick: **Quant Rick (2:24pm)**
+So tell me what you optimized, because these seem like unoptimized parameters.
+
+**Anonymous (2:26pm)**
+
+Train: 2020-01-02 → 2022-01-01, Test: 2022-01-02 → 2023-01-01
+
+Train: 2021-01-02 → 2023-01-01, Test: 2023-01-02 → 2024-01-01
+
+Train: 2022-01-02 → 2024-01-01, Test: 2024-01-02 → 2025-01-01
+
+Train: 2023-01-02 → 2025-01-01, Test: 2025-01-02 → 2026-01-01
+
+**Anonymous (2:27pm)**
+The problem I have is the model works well at preventing large drawdowns, but it struggles to outperform during strong bull markets with momentum.
+
+**Anonymous (2:28pm)**
+The only things optimized were the MA length and ATR length inside each training block. Everything else stayed fixed.
+
+**Quant Rick (2:28pm)**
+Ahhh, it’s a walk-forward.
+
+**Anonymous (2:29pm)**
+Yes.
+
+**Quant Rick (2:29pm)**
+Gotcha.
+
+**Anonymous (2:29pm)**
+My goal is to build a model that consistently beats the market year over year while keeping drawdowns low.
+
+**Anonymous (2:29pm)**
+Which is everyone’s goal, I guess, haha.
+
+**Anonymous (2:31pm)**
+So what do you think I should do with the parameters? Scrap them and move on to something else? I’m not sure how I can tweak them anymore — I ran a grid search on both MA and ATR and they’re fully optimized to the training windows.
+----------------------------------------
+[2026-01-17T08:37:25.2550000-06:00] the_biggest_rick: **Quant Rick (2:31pm)**
+I’d actually advise doing this slightly differently, because there are a few things not accounted for. I understand what you’re doing, but let’s change it a bit.
+
+First, split the data. You have a fairly large dataset — you’re going back to 2010, I believe — so split it 80–20. Take the training set and split it further into, let’s say, six periods. Make sure you calculate embargo periods and use a cappershed cross-validation. Then test it walking forward interchangeably on a period in the test set, as you normally would, and continue like that.
+
+This accounts much more for some of the natural problems caused by non-stationarity. If you simply do a standard walk-forward, it’s leaking in a sense, because the time series coming in are never identical. Walking forward like that becomes inconsistent with true generalization.
+
+**Anonymous (2:32pm)**
+Okay, thank you. Should I keep the same technicals — MA and ATR — and adjust exposure based on ATR?
+
+**Quant Rick (2:34pm)**
+Generally, I like to avoid making any adjustments to exposure at this stage. The goal is to make sure the base strategy actually works first, and then maybe play with exposure later. Otherwise, you’re introducing a bias that could overshadow your results.
+
+If you’re taking different position sizes, the question is: why? I don’t really see the point early on. The point is to have a working strategy first and then adjust exposure afterward. If you start adjusting exposure right away — for example, for volatility — you might mask later problems or under-the-hood issues you wouldn’t otherwise see.
+
+So start very bare bones.
+----------------------------------------
+[2026-01-19T09:54:14.1940000-06:00] the_biggest_rick: https://sites.google.com/site/unofficialnasdaq100site/yearly-year-end-rosters/1986?authuser=0
+----------------------------------------
+[2026-01-19T09:54:20.3560000-06:00] the_biggest_rick: ^ nasdaq 100 constituents
+----------------------------------------
+[2026-01-19T18:49:28.9090000-06:00] the_biggest_rick: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5095349
+----------------------------------------
+[2026-01-20T06:50:33.2420000-06:00] the_biggest_rick: https://concretumgroup.com/the-volatility-you-cant-see/
+
+NEW CONCRETUM ARTICLE! MUST READ! THIS IS AN EX BLACKROCK ANALYST!\
+
+@everyone
+----------------------------------------
+[2026-01-24T16:20:29.5520000-06:00] vinpocetine: Pinned a message.
+----------------------------------------
+[2026-01-26T09:02:25.7780000-06:00] the_biggest_rick: Cool paper on Polymarket and bots identifying trades.
+
+Unravelling the Probabilistic Forest: Arbitrage in Prediction Markets
+
+https://arxiv.org/pdf/2508.03474
+
+@everyone
+----------------------------------------
+[2026-02-02T10:35:10.4320000-06:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\afml-concepts-0e2a5d5ce7639751.zip
+----------------------------------------
+[2026-02-02T10:35:32.2410000-06:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\image-f525cc690202e1f1.png
+----------------------------------------
+[2026-02-02T10:35:52.5480000-06:00] the_biggest_rick: y'all can thank @𓂀 Shane for this
+----------------------------------------
+[2026-02-05T18:51:33.4510000-06:00] the_biggest_rick: https://www.sciencedirect.com/science/article/abs/pii/S0304405X14000890
+----------------------------------------
+[2026-02-06T07:10:54.4570000-06:00] the_biggest_rick: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3947905
+----------------------------------------
+[2026-02-18T08:06:50.1180000-06:00] the_biggest_rick: amazing dataset of SPY going back to 1871 @everyone 
+
+https://shillerdata.com
+----------------------------------------
+[2026-02-22T11:18:59.7290000-06:00] the_biggest_rick: 150 years of momentum backtest
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5561720
+
+@everyone
+----------------------------------------
+[2026-02-22T11:19:29.1570000-06:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\2025-11-12-12_09_15-ssrn-5561720.pdf-b04c14182f2d9290.png
+----------------------------------------
+[2026-03-24T05:59:58.5860000-05:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - resources [1429047696290746368].csv_Files\message-3edf4eaca8e309f5.txt
+----------------------------------------
+[2026-04-02T12:56:38.4810000-05:00] the_biggest_rick: Ticker Company ~5Y CAGR
+-----------------------------------------------------------
+1 MSTR MicroStrategy ~87%
+2 NVDA NVIDIA ~67%
+3 AVGO Broadcom ~58%
+4 PLTR Palantir ~31%
+5 GOOG Alphabet ~26%
+6 GE GE Aerospace ~22%
+7 JPM JPMorgan Chase ~19%
+8 AAPL Apple ~18%
+9 RACE Ferrari ~18%
+10 BRK.B Berkshire Hathaway ~17%
+11 META Meta Platforms ~16%
+12 XOM Exxon Mobil ~15%
+13 IBM IBM ~15%
+14 WMT Walmart ~14%
+15 V Visa ~11%
+16 CVX Chevron ~11%
+17 RTX Raytheon ~11%
+18 MSFT Microsoft ~9.5%
+19 NFLX Netflix ~8.5%
+20 MCD McDonald’s ~7%
+21 KO Coca-Cola ~7%
+22 TSLA Tesla ~7%
+23 QCOM Qualcomm ~6%
+24 LMT Lockheed Martin ~6%
+25 AMD AMD ~5%
+26 CSCO Cisco ~5%
+27 BAC Bank of America ~4%
+28 AMZN Amazon ~4%
+29 AZN AstraZeneca ~4%
+30 ASML ASML Holding ~4%
+31 JNJ Johnson & Johnson ~3%
+32 T AT&T ~1%
+33 ARM Arm Holdings N/A (IPO 2023)
+34 PFE Pfizer ~-3%
+35 SBUX Starbucks ~-4%
+36 FDX FedEx ~-2%
+37 BA Boeing ~-6%
+38 NKE Nike ~-11%
+39 SNOW Snowflake ~-10%
+40 DIS Walt Disney ~-13%
+41 BABA Alibaba ~-13%
+42 INTC Intel ~-15%
+43 GME GameStop ~-27%
+44 ZM Zoom ~-28%
+EUROPEAN EQUITIES — Ranked by ~5Y CAGR
+1 SAN — Banco Santander — ~12%
+2 TTE — TotalEnergies — ~10%
+3 DBKGn — Deutsche Bank — ~10%
+4 ALVG — Allianz — ~9%
+5 SIEGn — Siemens — ~9%
+6 IBE — Iberdrola — ~8%
+7 AIRF — Air France KLM — ~6%
+8 ADSGn — Adidas — ~3%
+9 LVMH — LVMH — ~2%
+10 BMW — BMW AG — ~-2%
+11 MBG — Mercedes-Benz — ~-8%
+12 VOWG_p — Volkswagen — ~-10%
+13 BAYGn — Bayer — ~-15%
+----------------------------------------
+[2026-05-08T10:25:49.4910000-05:00] the_biggest_rick: https://quantocracy.com
+
+absolute goldmine!
+
+@everyone
+----------------------------------------
+[2026-07-19T05:11:38.5570000-05:00] the_biggest_rick: https://concretumgroup.substack.com/p/timing-equity-factors-with-momentum
+
+@everyone
+----------------------------------------
+[2026-07-19T05:11:50.2400000-05:00] the_biggest_rick: new piece by carlo
+----------------------------------------

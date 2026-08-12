@@ -1,0 +1,19 @@
+{
+    "ticker": "SLV",
+    "trials": 3049,
+    "total_trades": 50,
+    "win_rate": 0.14,
+    "annual_return": -0.0069282930394886635,
+    "annual_volatility": 0.008581682713117909,
+    "sharpe": -0.8073350263693758,
+    "expected_max_sr": 0.41488946016008743,
+    "dsr": 0.0023539451635067594,
+    "best_params": {
+        "entry_z": 2.069445610620908,
+        "sl_mult": 1.7375513604187183,
+        "tp_mult": 4.9959698749724035,
+        "vb_mult": 2.7372898921568973,
+        "direction": "long",
+        "latent_dim": 3
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "arch": "grand_portfolio",
+    "params": {
+        "arch": "grand_portfolio",
+        "md_rsi_min": 54.4963768552513,
+        "md_rsi_max": 69.16225147690184,
+        "md_roc5_min": 0.04999418603706321,
+        "md_accel_min": -0.0029321350891907136,
+        "md_hold_days": 9,
+        "md_target_vol": 0.4600756337777466,
+        "id_rsi_min": 48.714416202986094,
+        "id_rsi_max": 60.49944038951797,
+        "id_gap_max": 0.02494574196352739,
+        "id_vol_ratio": 0.628520594512128,
+        "id_tp": 12.814627145892656,
+        "id_sl": 9.98519143855533,
+        "id_target_vol": 0.31259913171914966
+    },
+    "best_objective": 0.011379828593162333,
+    "trials_completed": 26714
+}

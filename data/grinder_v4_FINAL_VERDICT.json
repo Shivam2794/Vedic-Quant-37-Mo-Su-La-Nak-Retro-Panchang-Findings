@@ -1,0 +1,9 @@
+{
+    "Option1_TPE_Multiday": {
+        "CAGR": "23.87%",
+        "Sharpe": "1.5554",
+        "MaxDD": "-8.32%",
+        "WinRate": "62.96%",
+        "Trades": 81,
+        "WalkForward": true,
+        "GoalMet": 

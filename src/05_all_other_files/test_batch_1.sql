@@ -1,0 +1,2 @@
+CREATE OR REPLACE TABLE `antigravity_quant.sector_sieve_results` AS
+SELECT 'test_rule' AS rule_name, '1D' AS horizon, s.sector AS sector, COUNT(*) AS n_total, 1 AS n_active, 0.5 AS activation_rate, 0.0 AS mean_return_active, 0.0 AS mean_return_inactive, 0.0 AS differential_return, 0.0 AS std_return_active, 0.0 AS cost_adjusted_ir, 0.0 AS pearson_corr FROM `antigravity_quant.feature_matrix` f JOIN `antigravity_quant.stock_returns` r ON f.ticker = r.ticker AND DATE(f.date) = DATE(r.date) JOIN `antigravity_quant.sector_tags` s ON f.ticker = s.ticker GROUP BY s.sector

@@ -1,0 +1,299 @@
+Searching across 8 transcripts...
+
+==================================================
+FILE: 20251027_125937_transcript.txt (66 matches)
+==================================================
+L54 [exclusion]: [00:02:20] Accounts, which are our exclusions, um, right here,
+L55 [inclusion]: [00:02:25] if the, and it has our inclusions, uh, which just, I mean, but they all block accounts,
+L56 [inclusion]: [00:02:29] but they're like, obviously, like if you're added to an inclusion, then, um,
+L57 [exclusion]: [00:02:34] you have access and if you're added to an exclusion, you don't have access.
+L58 [exclusion, inclusion]: [00:02:37] So this, uh, are you familiar with, kind of like exclusions and inclusions?
+L91 [gpo]: [00:04:09] vision career health trust GPO, as we can pop it into this.
+L110 [sap]: [00:05:26] So the first thing that we do, however we do get a request is we just put in the account and send into SAP,
+L114 [sap]: [00:05:46] And so just to make sure that this is an LAI issue, I'll just pop it into SAP and just kind of see what we,
+L124 [sap]: [00:06:13] No, but I know basic interface of SAP.
+L133 [exclusion]: [00:06:29] And so right here, you know, this exclusion.
+L145 [exclusion]: [00:07:10] But yeah, so for this one, we know it's an exclusion.
+L147 [sap]: [00:07:16] So we're good to go ahead and there are, there are T codes and SAP that we can use to serve this.
+L152 [inclusion]: [00:07:36] That is the LEI inclusions dashboard.
+L155 [inclusion]: [00:07:50] It just kind of generally shows the inclusions and next inclusions that account to materials,
+L162 [exclusion]: [00:08:24] I'm going to filter this exclusion just so it narrows it down.
+L173 [exclusion]: [00:09:26] And so if I go here to the PD section, I can go to reference, well, actually, first I'll change it to exclusions because that's obviously what I'm trying to find.
+L203 [exclusion]: [00:11:36] may this account be removed from this exclusion?
+L225 [exclusion, inclusion]: [00:12:59] whether that's an inclusion or exclusion.
+L246 [exclusion]: [00:14:15] And so like the very next code we get for exclusion would be,
+L247 [exclusion]: [00:14:22] it would be exclusion 727.
+L248 [exclusion]: [00:14:25] But it's kind of weird because like you see here, there's no exclusion.
+L249 [exclusion]: [00:14:31] There's no exclusion 725.
+L251 [exclusion]: [00:14:39] They're kind of like if you have an exclusion 726 and PD, we won't have exclusion 726 and SPD.
+L263 [exclusion]: [00:15:14] So these ones are, these specific ones are contract pharmacy exclusions.
+L285 [exclusion]: [00:16:33] So to find that, we would have to go to the SPD exclusions.
+L338 [exclusion]: [00:19:47] So this is an account blocked by exclusion.
+L341 [inclusion]: [00:19:56] kind of be actually an inclusion.
+L345 [exclusion]: [00:20:00] But so for this one, it's just, this is an account that cannot be removed from the exclusion.
+L348 [exclusion]: [00:20:14] exclusion.
+L379 [exclusion]: [00:21:40] requests is for our exclusion 151.
+L381 [exclusion, override]: [00:21:49] but we are able to override those exclusions with the group of the code owners.
+L397 [exclusion]: [00:23:06] just letting us know this is the exclusion that's preventing the account set from being eligible.
+L405 [audit]: [00:23:47] And then also because every week we audit, I think it says, I don't know if it's 25%, but
+L407 [audit]: [00:24:01] like email requests get grabbed and then we all audit each other's work, just to ensure that we're
+L411 [audit]: [00:24:15] auditing my work, they know the action that I did.
+L412 [audit]: [00:24:18] But yeah, so this is really just for like our internal team to use whenever we're auditing
+L462 [sap]: [00:27:49] And so if I go search this in SAP.
+L464 [inclusion]: [00:28:07] So if I search out accounts and you can see it's blocked by inclusion.
+L470 [inclusion]: [00:28:39] if you look at this one, it's blocked by inclusion.
+L471 [inclusion]: [00:28:42] And it's an SPD inclusion.
+L480 [class of trade]: [00:29:21] And then their class of trade, which is nursing home.
+L508 [inclusion]: [00:31:24] So you said inclusion and rejected.
+L512 [inclusion]: [00:31:41] Yeah, so with an inclusion, for this it's saying it's not found in the inclusion.
+L513 [inclusion]: [00:31:47] So the only way for the account to be eligible would for the account to be added to that inclusion.
+L514 [inclusion]: [00:31:56] And so any account wanting access to this sin would have to be attached to that sin's inclusion.
+L516 [inclusion]: [00:32:05] And so this, so this account just does not meet the criteria to be automatically added to the inclusion
+L520 [inclusion]: [00:32:21] Not being on the inclusion.
+L524 [sap]: [00:32:28] And it's, SAP, it's like, which is kind of kind of weird.
+L526 [exclusion]: [00:32:36] So in exclusion, it's a, yeah, otherwise worse.
+L570 [sap]: [00:34:55] And so this one, like our first step that I always do is just see what's going on in SAP.
+L572 [exclusion]: [00:35:15] And it's blocked by exclusion again.
+L574 [exclusion]: [00:35:24] And this again, just to see which exclusion is blocking it.
+L580 [exclusion]: [00:35:50] So I need to go back to our mapping file and see what exclusion 119 is and why it's blocking this
+L585 [exclusion]: [00:36:15] since I'm looking for exclusion right now, there should only be one exclusion that
+L595 [exclusion]: [00:36:36] And so I'll just go back to here and look up exclusion 119.
+L602 [peneer]: [00:37:09] And so if I scroll over here, it says it's Alan Peneer.
+L616 [exclusion]: [00:37:55] sense the accounts in the blockchain exclusion.
+L619 [exclusion]: [00:38:05] be removed from the below exclusion so that way we could give them access.
+L624 [exclusion]: [00:38:30] And if you were to say yes, we would just remove the account for the exclusion.
+L658 [inclusion]: [00:40:31] And it doesn't really it's it's pretty similar, but this is only inclusions.
+L659 [exclusion]: [00:40:39] And SPD we do have exclusions.
+L660 [exclusion]: [00:40:41] They're over here in this tab, exclusion listings.
+L661 [inclusion]: [00:40:44] There's just not as many of them because most of the blocking we do in SPD is buying inclusions
+L663 [roster]: [00:40:54] Our eligibility in SPD is a manufacturer sends us a roster of customers
+L678 [class of trade]: [00:42:20] it's calling out if that class of trade is approved or not just based on the letter that's
+L679 [class of trade]: [00:42:25] in that column for that class of trade.
+
+==================================================
+FILE: 20251027_134548_transcript.txt (38 matches)
+==================================================
+L7 [class of trade]: [00:00:04] class of trade that is ineligible for a different reason. They
+L9 [class of trade]: [00:00:14] need to block a customer that is an approved class of trade, we
+L10 [kotg]: [00:00:18] just come in here. And first we add it to the KOTG 73 table,
+L19 [roster]: [00:00:53] lost access. And then this tab is just all of our rosters that we
+L24 [roster]: [00:01:22] roster for like, we're talking about Doppler earlier. If we
+L26 [roster]: [00:01:32] roster for Doppler. But for the price, if you have a roster
+L27 [roster]: [00:01:35] for it, it'll usually say like check roster in the restriction.
+L41 [roster]: [00:02:38] trying to find a way, because whenever you receive the rosters
+L43 [roster]: [00:02:48] just replace all the information with the new roster. Okay.
+L45 [roster]: [00:02:56] automate whenever you receive that roster. If we can just take
+L46 [roster]: [00:03:00] that file that they provide us with the new roster and dump
+L48 [override]: [00:03:07] file and overrides the information for that product by itself.
+L56 [exclusion]: [00:03:32] of our different exclusions and listings. And so this works
+L59 [exclusion]: [00:03:46] locked by an SPD exclusion, we would just find either the external
+L64 [roster]: [00:04:07] So when you when you get the rosters, does this table so, you
+L66 [exclusion]: [00:04:15] I know. So all of these exclusions are actually put in place by our
+L72 [inclusion]: [00:04:48] sins of it. They don't see them. Whereas the inclusions are from
+L77 [roster]: [00:05:08] list and everything in the rosters, right?
+L78 [roster]: [00:05:13] No, so the rosters are these customers are all these correspond to
+L79 [inclusion]: [00:05:20] an inclusion. And so all the numbers here are going to be found in
+L81 [exclusion, inclusion]: [00:05:30] inclusions from the exclusions like they're very separated. And so
+L82 [inclusion]: [00:05:35] all of the inclusions are put in place at the direction of the
+L83 [roster]: [00:05:40] vendors. Okay. And that's where we manage these rosters for the
+L84 [exclusion]: [00:05:45] vendors. And then these, the exclusions are put in place at the
+L89 [exclusion, inclusion]: [00:06:11] Yeah, so basically exclusion is same as BD. Yeah, and inclusion
+L93 [exclusion, inclusion]: [00:06:32] or exclusions are the same as PD, and then inclusions are
+L94 [roster]: [00:06:36] kind of just based off of the rosters that we are provided by
+L97 [exclusion, kotg]: [00:06:49] like 73 KOTG, what was that? Yeah, so these are just exclusions
+L98 [exclusion]: [00:06:54] like very one off exclusions that are directed by the
+L102 [class of trade]: [00:07:11] approved class of trade, so they are automatically loaded with
+L106 [inclusion]: [00:07:27] just remove the account from the customer or the inclusion, it
+L108 [class of trade, audit]: [00:07:34] has an approved class of trade. And we have a Jake has an audit
+L111 [class of trade]: [00:07:48] that are approved class of trade every single day. And so the
+L117 [inclusion]: [00:08:19] of the SPD sense that we have. And then their inclusion that
+L119 [inclusion]: [00:08:30] that inclusion and then what classes of trade are eligible.
+L121 [exclusion, roster]: [00:08:42] there's just one last tab. And this is our exclusion roster. And
+L123 [roster]: [00:08:53] well. There's not we only have rosters for looks like seven
+L135 [exclusion]: [00:09:51] eligible ones. So exclusion has similar as PD and this to
+
+==================================================
+FILE: 20251104_130130_transcript.txt (77 matches)
+==================================================
+L12 [exclusion, inclusion]: [00:00:22] So we have our exclusions and inclusions, but then our listings.
+L27 [inclusion]: [00:01:29] When I first started out, I was so confused about like why we had listings because they seem similar to inclusions.
+L29 [inclusion]: [00:01:41] To many different inclusions, but only be added to a single listing.
+L37 [inclusion]: [00:02:03] Oh, we're going to say so it can be attached to many inclusions, but only one listing.
+L53 [t-?code]: [00:03:11] Can you tell me one of the T-code you use?
+L58 [t-?code]: [00:03:26] Which is one of the T-code you can just want to do.
+L64 [t-?code]: [00:03:47] I'm trying to say I always wanted to say I don't really look at the actual T-code here.
+L68 [t-?code]: [00:04:04] I guess I can also drop the different T-codes that like the main ones.
+L96 [sap]: [00:06:09] SAP.
+L108 [exclusion]: [00:07:07] Exclusion analysis.
+L110 [exclusion]: [00:07:11] Why is the list exclusion heard.
+L162 [inclusion]: [00:11:10] And it's just showing block by inclusion, which one is it, which is something that we're able to look at, do you think fully?
+L165 [inclusion]: [00:11:30] And we will go put them into our LAI dashboard to see what inclusion is attached to the sin.
+L166 [inclusion]: [00:11:40] So that way we know the inclusion that the account would need to be added to for access.
+L167 [inclusion]: [00:11:57] All right, so I'll change this to look for inclusions in the usage.
+L179 [inclusion]: [00:12:57] Okay, so I will change this to inclusion.
+L183 [exclusion]: [00:13:13] And so to find this, we have to go to the SPD exclusions tab.
+L185 [exclusion, roster]: [00:13:28] And if you go to exclusion rosters, it's got really breakeven.
+L187 [exclusion, roster]: [00:13:42] So that exclusion roster is one before SPD or?
+L188 [exclusion, roster]: [00:13:47] But yeah, this exclusion roster right here is, well, it's in the SPD or I file, I guess.
+L195 [inclusion]: [00:14:24] Yeah, it is from them our inclusion for SPD, right?
+L202 [roster]: [00:14:47] And the way that we search all of our rosters is by address first in the DEA.
+L212 [exclusion, inclusion]: [00:15:30] So this T code is used to add accounts to inclusions and exclusions.
+L229 [sap]: [00:17:19] And then you can see I upload it in SAP.
+L245 [inclusion]: [00:19:17] But if I'm going to remove an account from an inclusion then I would just hit delete.
+L254 [inclusion]: [00:20:11] And I'll say account has been added to the below inclusion or reddit access.
+L255 [inclusion]: [00:20:25] And then I will just go to the inclusion that we had a day account to copy these three columns.
+L280 [exclusion]: [00:22:28] And so our first step is just always to go put it into the exclusion analysis T code.
+L283 [exclusion]: [00:22:50] Okay, so this one is blocked by exclusion.
+L285 [exclusion]: [00:22:58] So to find why exclusion is blocking it, I will go back to that LEI dashboard.
+L287 [exclusion]: [00:23:10] Now I'll put in the sin and I'll change it to exclusion.
+L289 [exclusion]: [00:23:19] All right, so now we know all of the exclusions that are attached to this sin.
+L290 [exclusion]: [00:23:23] So now we need to see which exclusion is attached to the account that matches.
+L292 [exclusion]: [00:23:36] Okay, so if that is this first one right here, this exclusion 151 is the code that is incoming between the two.
+L296 [override]: [00:24:06] They just have to be approved for an override.
+L298 [howell]: [00:24:15] They have access to all these items, but first they have to get approval from Jacob Howell and K Hartman who are the code owners.
+L299 [exclusion]: [00:24:24] And so whenever you see anything blocked by exclusion 151,
+L307 [override]: [00:25:04] And so this first one is just asking for override approval.
+L318 [override]: [00:26:18] Perfect. And then he will get back to us and let us know if we can approve this override.
+L320 [override]: [00:26:30] Yeah. So then I'll just put in here there's an EC1 override request.
+L326 [inclusion]: [00:27:33] Block by inclusion. And it is PD.
+L327 [inclusion]: [00:27:39] And it is not put a request. So we can go ahead and search for the inclusion on the send.
+L329 [exclusion]: [00:27:48] So we were searching for exclusions.
+L330 [exclusion]: [00:27:49] We have to search the account and the material to see which exclusion is loaded to both.
+L332 [inclusion]: [00:28:00] Because it's not on the right inclusion yet.
+L333 [inclusion]: [00:28:05] And so to find the inclusion, I'll switch it to I.
+L335 [inclusion]: [00:28:17] And it looks like this is the inclusion is attached to the send.
+L336 [inclusion]: [00:28:22] I'll take this 564 inclusion and I'll go search it in the mapping file.
+L337 [inclusion]: [00:28:33] And then there will inclusion. And here we go.
+L347 [inclusion]: [00:29:28] And if we go to the standard responses, we can find when an account is blocked by inclusion right here.
+L366 [inclusion]: [00:31:32] Okay, so now we are asking this account management team if the account can be added to the inclusion for access.
+L371 [inclusion]: [00:32:00] If account and the added to inclusion.
+L376 [exclusion]: [00:32:38] So I'll follow the process. I just put it into exclusion analysis.
+L378 [exclusion]: [00:32:53] All right, exclusion. It's PD.
+L382 [exclusion]: [00:33:13] And I will look for exclusions.
+L386 [exclusion]: [00:33:40] And it looks like it's exclusion 498 on both.
+L392 [exclusion]: [00:34:13] They're just being blocked by exclusion. So I'll go back to that standard responses.
+L393 [exclusion]: [00:34:20] And block by exclusion. And I'll copy that.
+L397 [exclusion]: [00:34:43] Yeah. So I need to pay exclusion code and roll. So I'll go copy that.
+L399 [brugamand]: [00:34:58] So the code owner is Patrick Brugamand.
+L404 [exclusion]: [00:35:26] That's code owner if the account can be removed from exclusion.
+L443 [exclusion]: [00:39:16] And so it looks like he said this is denied we can't remove the account from the exclusion.
+L455 [inclusion]: [00:40:35] Okay. And for inclusion, you just have the material number.
+L459 [exclusion, inclusion]: [00:40:51] But any other questions about the PD exclusions and inclusions?
+L461 [kinray]: [00:40:59] Okay. That's good. I'm going to show you just quickly what the Kinray rules look like.
+L462 [kinray]: [00:41:06] We don't get a lot of emails for just Kinray often because most of our accounts are PD, Kinray, or ASPD.
+L463 [kinray]: [00:41:14] They're not just Kinray.
+L465 [kinray]: [00:41:23] We have a in our SharePoint, we have a Kinray folder.
+L467 [kinray]: [00:41:32] And then in the core working documents, we have this Kinray rules and codes.
+L469 [kinray]: [00:41:40] Yeah, Kinray rules and codes, which is basically our mapping file for Kinray.
+L475 [exclusion]: [00:42:04] So this first tab is all of our exclusions.
+L477 [inclusion]: [00:42:15] And then we have our inclusions right here.
+L480 [kinray]: [00:42:28] But just in case you did get a Kinray request, you saw that the division was, division 30, when you were looking at the items.
+L494 [inclusion]: [00:43:36] Okay, so this, uh, in the inclusions, there actually is a reference number.
+L500 [exclusion]: [00:44:01] And then here's the, um, here's the exclusion part of it.
+L501 [exclusion]: [00:44:09] And it's, I've never seen, um, I've never seen an exclusion be the reason for
+L502 [inclusion]: [00:44:15] an eligibility in Kenrae, have a library's inclusion staff.
+
+==================================================
+FILE: 20251111_130036_transcript.txt (35 matches)
+==================================================
+L41 [cartesian]: [00:04:10] And this is where it's going to be fun because we actually have to do a Cartesian joint on this,
+L83 [gpo]: [00:09:28] onboards. We have vital source, um, rheumatology just, it depends on the, the GPO that's loaded on
+L84 [gpo]: [00:09:35] the account. And when it's a vital source GPO account, we have to turn on this little quadri
+L96 [class of trade]: [00:11:09] specific to because it'll, it knows the account's class of trade and, um, the different
+L98 [class of trade]: [00:11:21] we'll say like, um, this account is blocked because it has a class of trade of retail pharmacy
+L197 [exclusion]: [00:23:29] little bit more looking. And so this one says it's a prison facility exclusion.
+L198 [exclusion, inclusion]: [00:23:37] And with any prison facility exclusion or inclusion, our team is not able to assist with that.
+L221 [inclusion]: [00:25:49] And the way that we call it an SPD code is this little 20 right between the code and inclusion.
+L239 [roster]: [00:27:04] automating it to where it can look at rosters and stuff like that to see if they're already eligible.
+L241 [yy\s*prime]: [00:27:20] So if I come here, if we go to YY Prime, the primary view, it would say SPD only.
+L275 [gpo]: [00:30:30] But to double check, I can come over to primary GPO and buying group.
+L295 [hosp]: [00:32:48] So 30003, there's one exception is that HOSP accounts are allowed access.
+L296 [hosp]: [00:32:56] And so if an account is list as HOSP, even though their PD pass-through, they would still be allowed
+L299 [hosp]: [00:33:19] how will they or HOSP or you could tell it they were HOSP by something in the data then you could
+L301 [gpo, \bcot\b]: [00:33:31] yeah. Yeah, it's just OP, that's the COT, right? That is the, it's kind of like their GPO.
+L302 [hosp]: [00:33:45] Sanctuary hospital system outpatient and it's normally not listed anywhere in here, but if you go
+L303 [sap]: [00:33:52] into, if you go into SAP, it's listed in their account information in there. So it's definitely
+L304 [hoso]: [00:33:59] the table somewhere where we can tell if they're HOSO, peer or not. Okay, so you checked last time
+L306 [gpo]: [00:34:16] one of these accounts was premiered GPO. And that there was that one. Let's see. That was for this
+L307 [inclusion]: [00:34:29] inclusion right here where the only accounts that are approved are premiered in Innovative's accounts,
+L309 [gpo]: [00:34:40] Innovative's GPO. And so just to check that one quick, I can tell by since they're buying group
+L310 [gpo]: [00:34:47] is null that they're not part of that GPO. And what does by I prime mean? So why why prime? I'm
+L331 [pdp]: [00:38:18] What is PDP means? I mean how if you can explain me about that as well.
+L332 [pdp]: [00:38:27] Sorry you said PDP. Oh PDP. Yeah. Yeah. So PDP is it's kind of just here on me.
+L334 [pdp]: [00:38:52] but for it to be eligible the customers end it has to be present in PDP which is just like a I think it's
+L337 [sap]: [00:39:11] an account to be eligible on SAP. It usually takes 10 to 15 minutes and then it'll that accounts
+L338 [pdp]: [00:39:19] in combinations PDP will show up in the PDP table which means that now it's it's showing it
+L341 [pdp]: [00:39:40] accounts not eligible and then we'll recheck out to them and say it's showing eligible but PDP
+L342 [pdp]: [00:39:47] is not available yet and our process with that is we reach out to the PDP run team and then they
+L343 [pdp]: [00:39:55] just kind of manually force it into the PDP e-table which makes it eligible for the customer.
+L344 [t-?code]: [00:40:02] Okay. Okay. So do we have any table for that like the T-code or?
+L345 [t-?code, pdp]: [00:40:08] Yeah, right here. So I can go ahead and send this to you. So this is the PDP T-code and
+L347 [pdp]: [00:40:24] this will show me all Sins that are in PDP for this account. So these are by theory these are all
+L350 [t-?code, sap, exclusion]: [00:40:46] SAP are normal T-code, exclusion else T-code, we come here second to double check that's present
+L351 [pdp]: [00:40:53] in PDP and sets present we know that the issue is not an R-ed
+
+==================================================
+FILE: 20251202_123515_transcript.txt (3 matches)
+==================================================
+L40 [exclusion]: [00:02:21] And then I'll come over to the exclusion analysis t code
+L49 [inclusion]: [00:03:01] So that one's blocked by inclusion
+L53 [inclusion]: [00:03:18] And so for SPD to figure out what inclusion is blocking this item I can copy
+
+==================================================
+FILE: 20251202_124555_transcript.txt (24 matches)
+==================================================
+L12 [hosp]: [00:00:40] And so it looks like they are all, they're both hospital accounts, once 340 B,
+L16 [hosp]: [00:01:03] it will specify 340 B hospital accounts in that access.
+L18 [hosp]: [00:01:11] Okay. So if we change the cost of trade down to hospital,
+L26 [roster]: [00:01:56] This is showing us that there's a roster that we can check and if they're not on the roster,
+L28 [roster]: [00:02:07] And that's referring to that roster.
+L30 [inclusion, roster]: [00:02:16] And so to check if they're on the roster, we just come to this inclusion rosters tab,
+L34 [roster]: [00:02:35] I have to keep one that we found tab open with the roster one with the mapping file,
+L57 [roster]: [00:04:47] And then I'll just come back here and also the account, not, not on roster or accounts.
+L68 [t-?code]: [00:05:44] We can either use this T-code, this GCUL, I'm setting for a table.
+L77 [t-?code]: [00:06:31] And then if I go back into here, there's a customer list upload T-code.
+L129 [exclusion]: [00:10:35] Yeah, but in the exclusion analysis to code.
+L228 [hosp]: [00:17:33] and it looks like they said this is hospital in this column, and that is the last one that is filled out.
+L278 [inclusion]: [00:21:24] And so this is different than whenever we see block wide inclusion,
+L320 [inclusion]: [00:23:50] Get blocked by inclusion and it is p080.
+L366 [hosp]: [00:27:01] Okay, hospital owned no and it is not
+L501 [audit]: [00:36:35] Because if it's undefined, then we won't audit it.
+L513 [exclusion]: [00:37:22] So I'll go to exclusion analysis.
+L517 [inclusion]: [00:37:41] All right, and they're all blocked by inclusion and they're all SPD.
+L539 [roster]: [00:39:06] So if I go to include roster.
+L569 [class of trade]: [00:41:01] The class of trade is infusion.
+L577 [class of trade]: [00:41:24] And whenever it comes to tonight based on class of trade,
+L578 [class of trade]: [00:41:27] I just say this customer is denied to their class of trade of infusion center.
+L591 [roster]: [00:42:08] If it's not on the roster, then we send in that response.
+L609 [roster]: [00:43:08] Denied not on the roster.
+
+==================================================
+FILE: 20251203_135232_transcript.txt (2 matches)
+==================================================
+L22 [web\s*equals]: [00:01:13] And the only thing you need to change if you do this method is this will say web equals
+L25 [web\s*equals]: [00:01:22] You just need to change that to web equals zero in our downloads.
+
+==================================================
+FILE: 20251215_110307_transcript.txt (21 matches)
+==================================================
+L12 [sap, exclusion]: [00:00:26] So I'll go to SAP and then I'll go to exclusion analysis and I'll just copy these over.
+L33 [inclusion]: [00:02:59] Alright, so it's block by inclusion and it is plant PD.
+L35 [inclusion]: [00:03:05] So to figure out how SPD inclusion is blocking this, we'll just take the sender and put it in the dashboard.
+L36 [class of trade]: [00:03:12] Alright, now it's the account's class of trade now to see if it's approved.
+L37 [class of trade, hosp]: [00:03:36] Okay, so if I scroll over to class of very customer one, this is hospital class of trade.
+L39 [hosp]: [00:03:44] It's already on hospital perfect.
+L41 [class of trade, hosp]: [00:03:49] So we know that this account is ineligible due to having a class of trade of hospital.
+L51 [inclusion]: [00:04:52] Activate inclusion and play 80.
+L53 [class of trade]: [00:04:56] And now let's go ahead and put this new account to find their class of trade.
+L54 [class of trade, hosp]: [00:05:04] Alright, this looks like this is also hospital class of trade and it's the same send so we'll just fly back the same thing.
+L63 [class of trade]: [00:06:31] We'll see if there's the same class of trade tab.
+L66 [class of trade]: [00:06:44] Okay, so it's same same same same class of trade and it's blocked by glues and solar supply with the same thing.
+L81 [sap]: [00:08:21] Okay, so we're going to check this in SAP.
+L113 [inclusion]: [00:10:58] That's an inclusion and it's about 80.
+L114 [inclusion]: [00:11:02] So we'll find the inclusion.
+L116 [class of trade]: [00:11:06] So we'll go ahead and find the account class of trade.
+L118 [class of trade, hosp]: [00:11:15] So this is a hospital class of trade customer one.
+L119 [class of trade]: [00:11:18] And so we'll go ahead and find the account class of trade.
+L121 [class of trade, hosp]: [00:11:23] So this is a hospital class of trade customer one.
+L127 [hosp]: [00:11:45] So since the sales are committed to these specific hospital customers, V.A., D.O.D., Kaiser, or any retail pharmacy operated by hospital that is associated with an NCI or the vendors.
+L130 [hosp]: [00:12:10] And it does not look like their V.A., or D.O.D., and so what we'll do here now is since we can't see if they're all the conditions like if they are retail pharmacy operated by hospital, that's associated with an NCI.

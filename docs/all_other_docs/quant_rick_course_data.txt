@@ -1,0 +1,54 @@
+Lesson 1: Introduction to the drivers of price
+Video ID: 5b230de7ed89423fa6ff03d2ae1cc436
+Description:
+The drivers of price and the inefficiencies that arise in markets follow a clear flow. It begins with news events, which then impact prices, and continues as institutions identify inefficiencies—either through models or through valuations by financial analysts. In this course, we explore where price flows, what constitutes different trend factors that are considered healthy and create momentum effects, and the horizons on which trading makes the most sense. Additional topics cover a variety of market dynamics and practical concepts that help explain how prices move and how to interpret them effectively.
+------------------------------------------------------------
+
+Lesson 2: MACD-V, and some extra ensembling theory
+Video ID: e37fc810d95d4c5d8bc45e9954203014
+Description:
+
+------------------------------------------------------------
+
+Lesson 3: Donchian channel ensembles for trend-following
+Video ID: f6a6e404ffb9467c8d1e83d03789af97
+Description:
+
+------------------------------------------------------------
+
+Lesson 4: Intraday opening hour study
+Video ID: 8c9e0fba98b441f29e5d05166230ee41
+Description:
+
+------------------------------------------------------------
+
+Lesson 5: Ensembling analogies + VWAP
+Video ID: 8570ddacbf7444a9be5acb1e5b0a5ac0
+Description:
+
+------------------------------------------------------------
+
+Lesson 6: Short and Medium term Volatility measures
+Video ID: bd98356f512d4a01834658ea4946131a
+Description:
+
+------------------------------------------------------------
+
+Lesson 7: The conclusion + last 2 papers covered
+Video ID: 2db6983c6d5441e9a9523dff6ff2bd87
+Description:
+
+------------------------------------------------------------
+
+Lesson 8: The paper
+Video ID: 
+Description:
+
+------------------------------------------------------------
+
+Lesson 9: Backtest articles of the papers
+Video ID: 
+Description:
+
+------------------------------------------------------------
+

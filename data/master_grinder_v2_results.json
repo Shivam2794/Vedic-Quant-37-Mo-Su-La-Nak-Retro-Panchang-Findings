@@ -1,0 +1,20 @@
+{
+    "arch": "multiday",
+    "params": {
+        "arch": "multiday",
+        "rsi_thresh": 74.31464305120372,
+        "roc5_min": 0.04737525598564353,
+        "hold_days": 6,
+        "target_vol": 0.5343533788145028
+    },
+    "metrics": {
+        "Sharpe": 1.2180901771840627,
+        "MaxDD": -0.04984680231047345,
+        "CAGR": 0.09857174088401477,
+        "AnnVol": 0.08092318838978688,
+        "WinRate": 0.6666666666666666,
+        "Trades": 54.0
+    },
+    "walk_forward_passed": true,
+    "best_objective": 0.7109488816041365
+}

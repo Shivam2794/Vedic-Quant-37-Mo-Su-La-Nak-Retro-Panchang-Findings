@@ -1,0 +1,15 @@
+{
+    "arch": "intraday",
+    "params": {
+        "arch": "intraday",
+        "rsi_min": 53.72197180214881,
+        "rsi_max": 74.63073513418752,
+        "gap_max": 0.029538446005492727,
+        "vol_ratio_min": 0.16348842991464194,
+        "tp_mult": 6.222789352131001,
+        "sl_mult": 2.754488426923546,
+        "target_vol": 0.28941749931167055
+    },
+    "best_objective": -10.114448919509043,
+    "trials_completed": 1448
+}

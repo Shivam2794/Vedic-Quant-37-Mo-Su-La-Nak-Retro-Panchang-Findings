@@ -1,0 +1,71 @@
+[2026-04-17T12:37:52.6450000-05:00] the_biggest_rick: @here
+----------------------------------------
+[2026-04-17T12:44:57.5850000-05:00] jurachi: Ive been monitoring since the war the insane steepness on the Cl curve, here is the perf of a cal spread. I haven’t update yet, but I’d guess the trade is closing up
+  ATTACHMENTS: rick's skool - skool - macro-analysis [1494749535082123476].csv_Files\1F2CEA01-F116-4E87-840C-2141F723975F-415fb00de67f295f.jpg
+----------------------------------------
+[2026-04-17T12:45:11.8600000-05:00] leeho5402: Letsss gooo
+----------------------------------------
+[2026-04-17T12:45:19.7940000-05:00] leeho5402: https://tenor.com/view/wolf-of-wall-street-lets-goo-gif-11742735383203550293
+----------------------------------------
+[2026-04-17T12:45:27.9710000-05:00] jurachi: April 20 we will see if the gas elasticity is only one sided 👀
+  ATTACHMENTS: rick's skool - skool - macro-analysis [1494749535082123476].csv_Files\IMG_9164-10acf890e8b3b0c0.png
+----------------------------------------
+[2026-05-28T02:08:53.9940000-05:00] rasta_mcpasta: fellas I was thinking about why btc is down while brent crude is down and equities feel risk on, when btc is generally a risk asset.
+I'm thinking institutions were using btc as a 24/7 piggy bank during hormuz instability and crude prices are way up so they can move money on weekends, but now that we're apparently pricing in reopening that btc money is getting rotated back into the ai/energy/compute equities.
+I'm taking crypto as the vehicle for excess m2 liquidity overflow, which tracks with the 2020-2021 btc run. Equities were contracting from covid, m2 was increasing from quantitative easing, relief grants and money from liquidated equities. Equities were flat or shitting the bed so that excess m2 overflowed into crypto. I'm leaning towards ignoring btc until the ai money starts cooling off hard.
+----------------------------------------
+[2026-05-28T02:09:10.8050000-05:00] rasta_mcpasta: Anyone got opinions on this?
+----------------------------------------
+[2026-05-28T06:13:11.6330000-05:00] the_biggest_rick: might agree
+----------------------------------------
+[2026-05-28T06:13:26.4810000-05:00] the_biggest_rick: note thst BTC has made significsnt moves since the 125 rally
+----------------------------------------
+[2026-05-28T06:13:46.4990000-05:00] the_biggest_rick: i just had BTC sell signals
+----------------------------------------
+[2026-05-28T14:20:01.8160000-05:00] the_biggest_rick: that or it hasnt broken above the 200MA ahaha, everything else is
+----------------------------------------
+[2026-05-28T14:43:56.9880000-05:00] rasta_mcpasta: Ahaha true that
+----------------------------------------
+[2026-05-28T14:44:18.4680000-05:00] rasta_mcpasta: I guess I just don't see the case for anyone to put money into bitcoin right now. Retail is broke, got jeeted by shitcoins or gambling polymarket and ai related stonks. Or capitulating after buying the top. Institutions are going all in on AI stuff too. BTC and its 1.4T market cap, who's even there to put money into this?
+----------------------------------------
+[2026-05-28T14:45:57.9830000-05:00] rasta_mcpasta: I'm getting way better returns from the japanese market anyway, I'll come back when btc goes above its 200ma
+----------------------------------------
+[2026-05-28T14:48:46.0120000-05:00] jaygonza: Same here, I found one strategy that uses the volatility risk premium with a sharpe of 5 and 100% win rate but it only happened at 2%. 98%  of the time it’s dormant. After exhausting all other strategies and archiving them I had to move to a different asset class.
+----------------------------------------
+[2026-05-29T02:07:10.9680000-05:00] rasta_mcpasta: I'd be interested in hearing about it if you're willing to share, I'm still pretty new to this
+Currently still running on pimped out trend following which is why I even care about btc macro, no incoming liquidity means no point looking for longs
+----------------------------------------
+[2026-05-29T02:08:32.9980000-05:00] rasta_mcpasta: Are you getting your iv data from binance? Always had the impression that btc options and futures had too much retail degen noise to be worth diving into, but how are you finding it? Useable?
+----------------------------------------
+[2026-05-29T14:56:17.3980000-05:00] kawa.636_: just so you know thats not statistically significant enough to consider the strategy profitable
+----------------------------------------
+[2026-05-29T14:56:47.1000000-05:00] kawa.636_: you need a certain activity and frequency for it to have meaningful statistical value
+----------------------------------------
+[2026-06-05T19:06:47.9010000-05:00] paul0805: BTC is great above sma50, I ve return above SP500 and sharpe >1 if you take into account Vol. You should definitely try that !
+----------------------------------------
+[2026-06-06T02:40:01.2140000-05:00] rasta_mcpasta: Agreed, btc's easy to trade because the trend is the narrative, not trend following btc is just putting free money on the table. I'm having good success with a trend quality gated ma cross entry but I'll def see if I can refine it with the sma50 👍
+----------------------------------------
+[2026-06-06T02:40:31.1430000-05:00] rasta_mcpasta: It's more of a position sizing and capital allocation thing for me, broke bois gotta choose where they put their money
+----------------------------------------
+[2026-06-06T02:40:52.0620000-05:00] rasta_mcpasta: No point chasing longs till money starts coming back in
+----------------------------------------
+[2026-06-06T02:45:03.6410000-05:00] rasta_mcpasta: Good call on vol tho, I mainly use it for early exits when the vol degrades but it's been pretty inconsistent
+----------------------------------------
+[2026-06-06T02:48:20.8400000-05:00] rasta_mcpasta: I think my problem with vol is that I'm only capturing it on binance, but there's so much more vol data spread across hype and the other exchanges and I'm not sure if it's worth the work to ingest absolutely everything when trend following works so well already lol
+----------------------------------------
+[2026-06-06T02:52:19.6510000-05:00] jaygonza: Correct, that’s why I put crypto on pause. Circled back around after a few more days and today came up with a  decouple gate and a bull-capture overlay. Basically buy and hold btc and eth when the trend is your friend let it run until the trend isn’t. Requires btc or eth to be green 3 days before holding, sells once it turns red. Based off of the btc 200 sma and btc daily close.
+----------------------------------------
+[2026-06-08T09:41:45.9100000-05:00] leeho5402: 
+  ATTACHMENTS: rick's skool - skool - macro-analysis [1494749535082123476].csv_Files\US_Macro2Markets_Outlook__Private_Credit_P-42af934dfb9a9941.pdf
+----------------------------------------
+[2026-06-08T09:42:23.4880000-05:00] leeho5402: If you are interest about macro its really cool to read this report
+----------------------------------------
+[2026-06-14T08:51:08.7600000-05:00] jurachi: You give too much credit to institutions
+----------------------------------------
+[2026-06-14T08:51:23.3540000-05:00] jurachi: Maybe hedge fund, but that’s far from the bulk of the capital
+----------------------------------------
+[2026-06-14T08:51:49.2650000-05:00] jurachi: It would be too niche of an approach to be generalized
+----------------------------------------
+[2026-06-20T21:45:47.8140000-05:00] jurachi: Calendar trade closing up
+  ATTACHMENTS: rick's skool - skool - macro-analysis [1494749535082123476].csv_Files\image-464315b38165f995.png
+----------------------------------------

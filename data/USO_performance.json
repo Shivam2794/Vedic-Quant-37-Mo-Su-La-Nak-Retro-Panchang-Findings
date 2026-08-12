@@ -1,0 +1,19 @@
+{
+    "ticker": "USO",
+    "trials": 4880,
+    "total_trades": 71,
+    "win_rate": 0.36619718309859156,
+    "annual_return": -0.0007879243851133554,
+    "annual_volatility": 0.01865719550434665,
+    "sharpe": -0.0422316625738198,
+    "expected_max_sr": 1.0602223163616302,
+    "dsr": 0.0006359958593662485,
+    "best_params": {
+        "entry_z": 2.005314477436332,
+        "sl_mult": 2.8135630339145234,
+        "tp_mult": 4.997966943575753,
+        "vb_mult": 7.020988340850147,
+        "direction": "short",
+        "latent_dim": 0
+    }
+}

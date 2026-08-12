@@ -1,0 +1,860 @@
+[2026-04-04T08:24:26.4000000-05:00] the_biggest_rick: @everyone post gridsearch results here and specify asset, indicator, etc.
+
+so people can see what worked on what asset
+----------------------------------------
+[2026-04-06T05:21:37.7770000-05:00] leeho5402: FOR BTC ❤️
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-6874fceeb8290d42.png,rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-8e8e5b5897bc20e6.png,rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-6aece9451304f54b.png,rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-7ee2317944b5f9a2.png,rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-eb2b95502e344320.png
+----------------------------------------
+[2026-04-06T05:26:38.1730000-05:00] quantscott: I really like how you’ve split the results to show Sharpe by different Regimes @Andra
+----------------------------------------
+[2026-04-06T05:30:17.8230000-05:00] leeho5402: Yes, I think it’s really important to understand the performance of the environment you want to trade in.
+For example, it aligns with Rick mindset: trade with the trend, not against it.
+I’m simply applying it 🙂
+----------------------------------------
+[2026-04-06T06:01:53.8380000-05:00] rubsbc: Thank you for posting this! I have been obsessing over low OOS Sharpes and lost the big picture there for a while. Sharpe will naturally increase in trending regimes, as it is designed to do. If an asset is not trending, just look for another one instead of bruteforcing the model to fit
+----------------------------------------
+[2026-04-06T06:04:19.5940000-05:00] leeho5402: Your strategy < exactly the assets you choose. Rick says to choose strong momentum power, not BTC in a bear market.
+----------------------------------------
+[2026-04-06T06:06:13.2470000-05:00] leeho5402: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-8df9d401f76abde8.png
+----------------------------------------
+[2026-04-06T06:07:44.0940000-05:00] rubsbc: Noice, I have not reached this point of the bootcamp yet ^^
+----------------------------------------
+[2026-04-06T15:43:44.0640000-05:00] mukka7505: SMH
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-06_194207-f79728d007893559.png,rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-06_194514-3bf907639edf9205.png
+----------------------------------------
+[2026-04-06T15:44:14.9470000-05:00] mukka7505: ESPO
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-06_205849-f7ab007c5034b296.png,rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-06_205912-a2d0f8de17a4f876.png
+----------------------------------------
+[2026-04-06T15:44:36.8320000-05:00] mukka7505: Some I started I can add more as I test more but if anyones got any things that might help let me know thank you
+----------------------------------------
+[2026-04-06T15:45:19.4830000-05:00] mukka7505: Gonna try some STC indicator on different pairs
+----------------------------------------
+[2026-04-06T15:49:08.5810000-05:00] mukka7505: This is QQQ one I did, I will try a wider search maybe one evening as its a lot of combinations.
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\TEMACD-7500d5a0fac990e7.png
+----------------------------------------
+[2026-04-06T15:55:08.1470000-05:00] the_biggest_rick: show IS to OOS comparisons
+----------------------------------------
+[2026-04-06T16:03:32.1000000-05:00] mukka7505: ESPO
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-eeec7af75b87388a.png
+----------------------------------------
+[2026-04-06T16:05:42.9040000-05:00] mukka7505: SMH
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-ab1a956de0fdd897.png
+----------------------------------------
+[2026-04-06T16:48:02.4440000-05:00] the_biggest_rick: if it passes the sens analysis thats looking good 👍
+----------------------------------------
+[2026-04-07T10:09:57.2970000-05:00] nico108_: man idk why but the french inthose pictures pissed me of
+----------------------------------------
+[2026-04-07T10:10:28.1840000-05:00] leeho5402: baguette
+----------------------------------------
+[2026-04-07T10:10:39.7050000-05:00] nico108_: merde
+----------------------------------------
+[2026-04-07T10:11:20.5960000-05:00] leeho5402: amour
+----------------------------------------
+[2026-04-07T10:13:16.1800000-05:00] .murat13100: French is the language of love tho
+----------------------------------------
+[2026-04-07T10:13:19.7120000-05:00] .murat13100: Elegancy
+----------------------------------------
+[2026-04-07T10:13:24.2930000-05:00] nico108_: but for the results i think this deviates
+----------------------------------------
+[2026-04-07T10:14:04.3950000-05:00] nico108_: sharpe 1 > is good but im not really sure
+----------------------------------------
+[2026-04-07T10:14:20.4820000-05:00] nico108_: and the urge to send a Nuke
+----------------------------------------
+[2026-04-07T10:15:49.8130000-05:00] leeho5402: Bitcoin, and then I ran a grid search on the MACD using EMA parameters to identify the window in which it is properly aligned with the EMA in a robust way.
+----------------------------------------
+[2026-04-07T10:16:32.1110000-05:00] nico108_: so in my latest algo i t was a more stable only deviating by -0.2 sharpe
+----------------------------------------
+[2026-04-07T10:16:33.8320000-05:00] leeho5402: thats natural effect with no stationarity and decay for me
+----------------------------------------
+[2026-04-07T10:16:59.1400000-05:00] leeho5402: with btc ?
+----------------------------------------
+[2026-04-07T10:17:04.6010000-05:00] nico108_: jup
+----------------------------------------
+[2026-04-07T10:17:23.6060000-05:00] leeho5402: ?
+----------------------------------------
+[2026-04-07T10:17:32.8790000-05:00] nico108_: with btc yes
+----------------------------------------
+[2026-04-07T10:28:36.3370000-05:00] xyrus1418: Here are my grid search results with BTC. Lower Sharpe but less degradation IS -> OOS
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-07_at_10.09.10_AM-cfa457f378299145.png,rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-07_at_10.28.25_AM-bdec8ed8759ab1f5.png
+----------------------------------------
+[2026-04-07T10:28:46.5540000-05:00] xyrus1418: triple ema + bollinger bands
+----------------------------------------
+[2026-04-07T10:35:43.7990000-05:00] leeho5402: strong
+----------------------------------------
+[2026-04-08T08:37:33.0730000-05:00] sinuslive.: in general what kind of logic do you guys use for buy /sell signal generation? like for example TEMA: buy and sell on every cross-over of each signal? or conditions like only buy if mid>slow and fast crosses mid (just as an example)
+----------------------------------------
+[2026-04-08T08:38:47.3970000-05:00] quantscott: For me, I’ve used rules like: 
+
+Buy once MA’s cross
+Buy when MA’s cross & RSI / MACD > X value
+----------------------------------------
+[2026-04-08T10:51:27.0200000-05:00] leeho5402: do you implemente tstat and p value permutation
+----------------------------------------
+[2026-04-08T10:52:07.7120000-05:00] xyrus1418: It’s hard to do that bc the data isn’t exactly independent, and the sample size for a trend following algo is small
+----------------------------------------
+[2026-04-08T10:52:12.9850000-05:00] xyrus1418: There aren’t a lot of trades
+----------------------------------------
+[2026-04-08T10:52:49.9050000-05:00] leeho5402: Yes I test and Thats my conclusion so its really difficult to are robust with BTC
+----------------------------------------
+[2026-04-08T10:52:51.5890000-05:00] the_biggest_rick: observation type changes
+----------------------------------------
+[2026-04-08T10:53:16.4550000-05:00] the_biggest_rick: the 1 trade being an observation type isnt valid when its alot fo time spend in them
+----------------------------------------
+[2026-04-08T10:53:27.9380000-05:00] xyrus1418: If I were to calculate a 95% confidence interval for the sharpe result using t stat then it’d be [0.5, 2.5] or something
+----------------------------------------
+[2026-04-08T10:53:33.3430000-05:00] xyrus1418: Because sample size N is so small
+----------------------------------------
+[2026-04-08T10:53:54.8040000-05:00] xyrus1418: There’s this as well. This is time series data, not the normal experimental data
+----------------------------------------
+[2026-04-08T10:54:04.9720000-05:00] the_biggest_rick: if you couldnt then trend-following wouldnt be possible to prove
+----------------------------------------
+[2026-04-08T10:54:07.3200000-05:00] xyrus1418: So a standard t test can’t just be slapped on top of it
+----------------------------------------
+[2026-04-08T10:54:11.6160000-05:00] the_biggest_rick: but thats reducto ad absurdum
+----------------------------------------
+[2026-04-08T10:54:56.6040000-05:00] xyrus1418: @Quant Rickdanoff what do you think of Andra’s idea of using t stat or a similar statistic technique to get the confidence level of a result
+----------------------------------------
+[2026-04-08T11:16:51.6520000-05:00] the_biggest_rick: fine as an analytical tool to gain further insights but since winrate = 50%~ give or take i wouldnt use it as a decision maker for trendfollowing
+----------------------------------------
+[2026-04-11T06:12:36.4990000-05:00] rubsbc: No ensembles yet but so far on QQQ 2018-01-02 → 2026-04-10 with 60/40 split not a bad max drawdown reduction compared to B&H (and pretty nice winrate). Sharpe is nothing too great but I feel like its a decent point to start to build the ensembles now
+----------------------------------------
+[2026-04-11T06:13:03.1460000-05:00] rubsbc: Also almost no sharpe degradation
+----------------------------------------
+[2026-04-11T06:13:09.5670000-05:00] rubsbc: between IS and OOS
+----------------------------------------
+[2026-04-11T06:26:25.9980000-05:00] rubsbc: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-9d35a81edcc0dd20.png
+----------------------------------------
+[2026-04-11T06:48:04.2330000-05:00] the_biggest_rick: BTC
+----------------------------------------
+[2026-04-11T06:48:05.9480000-05:00] the_biggest_rick: ?
+----------------------------------------
+[2026-04-11T06:49:19.4970000-05:00] rubsbc: Nasdaq
+----------------------------------------
+[2026-04-11T06:50:05.4820000-05:00] the_biggest_rick: 3x?
+----------------------------------------
+[2026-04-11T06:50:21.1460000-05:00] rubsbc: no, just regular
+----------------------------------------
+[2026-04-11T06:50:30.4650000-05:00] rubsbc: have not added any leverage yet
+----------------------------------------
+[2026-04-11T06:50:32.2810000-05:00] the_biggest_rick: 80 DD past 2018 on QQQ
+----------------------------------------
+[2026-04-11T06:50:35.9560000-05:00] the_biggest_rick: really?
+----------------------------------------
+[2026-04-11T06:50:56.3090000-05:00] the_biggest_rick: winrate is extremely high, can you show the timing of the trades
+----------------------------------------
+[2026-04-11T06:51:51.3630000-05:00] rubsbc: as in the signals?
+----------------------------------------
+[2026-04-11T06:53:11.2000000-05:00] the_biggest_rick: yes
+----------------------------------------
+[2026-04-11T06:55:12.4790000-05:00] rubsbc: sent you DM
+----------------------------------------
+[2026-04-11T09:10:19.1680000-05:00] mukka7505: AAPL - 2018 - 60/40 - STC
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-11_103018-5b2be1ca188f407f.png,rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-11_103057-31167727cd24c03e.png
+----------------------------------------
+[2026-04-11T09:24:24.2710000-05:00] xyrus1418: STC: Fast length, Slow length to 50, Cycle, and Smoothing.
+Long Entry: Wait for the STC to drop below 25, then buy when it crosses back up through 25.
+Short Entry: Wait for the STC to rise above 75, then sell when it crosses back down through 75.
+Exits: Close your position on the opposite signal
+----------------------------------------
+[2026-04-11T09:24:36.8430000-05:00] xyrus1418: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image0-89eb95672302e762.jpg
+----------------------------------------
+[2026-04-11T09:24:45.6470000-05:00] xyrus1418: This the one you were using?
+----------------------------------------
+[2026-04-11T12:07:33.3760000-05:00] mukka7505: Yes sir
+----------------------------------------
+[2026-04-11T12:07:50.3350000-05:00] mukka7505: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-c38939cfebda92f9.png
+----------------------------------------
+[2026-04-11T12:08:13.9960000-05:00] mukka7505: Im quite new to this so any advice or tips given my way would be much appreciated
+----------------------------------------
+[2026-04-11T12:08:44.5950000-05:00] ogragu.yurrrr: buy low sell high
+----------------------------------------
+[2026-04-11T12:11:43.4870000-05:00] the_biggest_rick: never sell never lose
+----------------------------------------
+[2026-04-11T12:11:50.1060000-05:00] the_biggest_rick: just buy a total market index
+----------------------------------------
+[2026-04-11T12:11:50.9920000-05:00] the_biggest_rick: duh
+----------------------------------------
+[2026-04-11T13:46:10.7860000-05:00] mukka7505: 😭 😂
+----------------------------------------
+[2026-04-11T13:47:01.3770000-05:00] davideclementoni: niggas in 70s was ACTUALLY saying this
+----------------------------------------
+[2026-04-11T13:47:42.6870000-05:00] k0nstantinos: Never ask a woman her age
+----------------------------------------
+[2026-04-11T13:48:08.3000000-05:00] the_biggest_rick: is it really investing if you're buying index only
+----------------------------------------
+[2026-04-11T13:48:17.1350000-05:00] davideclementoni: it’s like when you say “yea i like dudes because i’m more of a man than all the others” just to find out some retard nazi used to say ts
+----------------------------------------
+[2026-04-11T13:49:22.3570000-05:00] davideclementoni: great point, no. that’s a strategy too that rotates the stocks with higher capitalisation and weights them by that (for the s&p)
+----------------------------------------
+[2026-04-11T13:49:54.5820000-05:00] kawa.636_: you cannot get liquidated if it doesnt hit the margin call 😂
+----------------------------------------
+[2026-04-11T13:50:59.8380000-05:00] the_biggest_rick: people will shout survivorship bias then buy an index
+----------------------------------------
+[2026-04-11T13:52:15.7410000-05:00] davideclementoni: “yea i tested my mean reverting strategy on the stocks of the s&p 500 and shit turned out to be great”
+----------------------------------------
+[2026-04-11T13:52:30.7200000-05:00] kawa.636_: still better than some people i know buying stocks on some random ass broker they found on apple store based on how much theyre currently up last week's pnl
+----------------------------------------
+[2026-04-11T13:53:07.1230000-05:00] the_biggest_rick: actually thats a momentum model......
+----------------------------------------
+[2026-04-11T13:53:38.2910000-05:00] kawa.636_: lmao it could indeed work perhaps but they just be like "oh its up 14% lets buy this" not doing it with any logic
+----------------------------------------
+[2026-04-11T13:54:02.5200000-05:00] kawa.636_: and putting half the account size in there too
+----------------------------------------
+[2026-04-11T13:55:25.3170000-05:00] the_biggest_rick: hehehhhehehe
+----------------------------------------
+[2026-04-11T13:55:26.0310000-05:00] kawa.636_: i mean its autocorrelation in a sense still but theres a big difference if you're aware or not ahah
+----------------------------------------
+[2026-04-11T13:55:35.8360000-05:00] the_biggest_rick: tbh if its 6 months gain and only indexes its not half bad
+----------------------------------------
+[2026-04-11T13:56:33.3940000-05:00] kawa.636_: i can imagine in the millions of stupid traders around world someone just printing hella money outta luck 😂
+----------------------------------------
+[2026-04-11T13:58:04.4340000-05:00] the_biggest_rick: oh they do
+----------------------------------------
+[2026-04-11T13:58:08.9150000-05:00] the_biggest_rick: thats where ego comes from
+----------------------------------------
+[2026-04-11T13:58:18.0910000-05:00] the_biggest_rick: anyone who bought nvidia 2 years ago probably thinks theyre hot shit
+----------------------------------------
+[2026-04-11T13:58:48.8420000-05:00] davideclementoni: my dad made 400% in 2021 bc he bought small caps, good intuition mixed with a shit ton of luck
+----------------------------------------
+[2026-04-11T13:59:27.2600000-05:00] the_biggest_rick: troovis waa did too
+----------------------------------------
+[2026-04-11T14:03:49.0510000-05:00] xyrus1418: I mean that’s exactly how the momentum model makes money right?
+----------------------------------------
+[2026-04-11T14:03:59.9800000-05:00] xyrus1418: Because there’s people that FOMO
+----------------------------------------
+[2026-04-11T14:04:26.1240000-05:00] xyrus1418: We need ppl like that 😂
+----------------------------------------
+[2026-04-11T14:07:37.4850000-05:00] kawa.636_: will cheer those ppl into buying more then lmao
+----------------------------------------
+[2026-04-13T12:33:19.7970000-05:00] mukka7505: Has anyone tried Forex pairs ?
+----------------------------------------
+[2026-04-13T12:34:46.5280000-05:00] quantscott: I do
+----------------------------------------
+[2026-04-13T12:34:54.1790000-05:00] quantscott: That has been my main focus
+----------------------------------------
+[2026-04-13T12:36:11.6670000-05:00] mukka7505: Can we get Forex data using Yfinance
+----------------------------------------
+[2026-04-13T12:36:20.0130000-05:00] mukka7505: Im gonna run some searches I guess
+----------------------------------------
+[2026-04-13T12:36:49.8990000-05:00] quantscott: Yes you can
+----------------------------------------
+[2026-04-13T12:38:14.7850000-05:00] mukka7505: Thanks Scott
+----------------------------------------
+[2026-04-13T12:38:26.6070000-05:00] ludwigvon111: ig mostly mean rev no?
+----------------------------------------
+[2026-04-13T12:38:55.6640000-05:00] quantscott: No problem @mukka
+----------------------------------------
+[2026-04-13T12:39:13.7960000-05:00] quantscott: @Kond Hmm not in my experience, I'm long only and I usually catch really great moves
+----------------------------------------
+[2026-04-13T12:40:06.3200000-05:00] quantscott: I use a simple strategy on the 30m timeframe consisting of three moving averages. 200 ema as my regime filter, 44 ema low, 44ema high, when price above all three im looking for longs, otherwise not doing much. I've tested and found that breakouts happen often on certain pairs when these things happen
+----------------------------------------
+[2026-04-13T12:40:09.2740000-05:00] quantscott: NZDUSD especially
+----------------------------------------
+[2026-04-13T12:40:22.2380000-05:00] quantscott: So that's one of my systems for trading forex. The other is a bit more sophisticated
+----------------------------------------
+[2026-04-13T12:41:29.5550000-05:00] ludwigvon111: i mean if it works it works do u have a backtest?
+----------------------------------------
+[2026-04-13T12:49:10.1420000-05:00] quantscott: Yeah I have some old ones. I didn't really rely 100% on the backtested results I got but they were encouraging enough that I just started by practicing the strategy on a demo account and working it out like that. So it's a mixture of discretionary and automated. I will share with you later
+----------------------------------------
+[2026-04-16T11:14:00.4920000-05:00] xyrus1418: I was experimenting with STC, and across a sample size of 10-20 tickers I found STC performance collapses a lot IS -> OOS
+----------------------------------------
+[2026-04-16T15:28:05.5770000-05:00] mukka7505: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-e0f1d244fc03d19d.png
+----------------------------------------
+[2026-04-16T15:28:47.3250000-05:00] mukka7505: I found the majority of my testing is having a lot of OOS collapses at the moment.
+----------------------------------------
+[2026-04-16T15:34:46.9980000-05:00] the_biggest_rick: these pass
+----------------------------------------
+[2026-04-16T15:34:49.9730000-05:00] the_biggest_rick: theyre >1
+----------------------------------------
+[2026-04-16T15:34:57.4490000-05:00] the_biggest_rick: find more indicators and run boruta
+----------------------------------------
+[2026-04-16T15:35:22.7050000-05:00] the_biggest_rick: which asset is this?
+----------------------------------------
+[2026-04-16T15:38:49.1010000-05:00] xyrus1418: But if it degraded from IS = 2 to OOS = 1, then isn’t it problematic because who’s the say it won’t degrade further in the future?
+----------------------------------------
+[2026-04-16T15:38:58.2510000-05:00] xyrus1418: That’s a big percentage change
+----------------------------------------
+[2026-04-16T15:41:02.4900000-05:00] mukka7505: It was just re-shared from this
+----------------------------------------
+[2026-04-16T15:41:41.1820000-05:00] mukka7505: I was just replying to
+----------------------------------------
+[2026-04-16T15:47:08.1830000-05:00] the_biggest_rick: the data is non stationary and thats the data it isnt trained on
+----------------------------------------
+[2026-04-16T15:47:17.6470000-05:00] the_biggest_rick: >1 is 0.35 higher than the SPY
+----------------------------------------
+[2026-04-16T15:47:22.0490000-05:00] the_biggest_rick: thats the generalizing ability
+----------------------------------------
+[2026-04-16T15:47:29.1820000-05:00] the_biggest_rick: and its only the start of the gating mechanism
+----------------------------------------
+[2026-04-16T15:47:40.6900000-05:00] the_biggest_rick: you have thrown it into the rotation yet
+----------------------------------------
+[2026-04-16T15:50:03.3340000-05:00] xyrus1418: Looking at AAPL, the buy and hold Sharpe increased from IS and OOS. So if the strategy IS degraded by 50%+ from IS to OOS, then not only did it drop IS to OOS, it also went in the opposite direction of the asset itself
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-16_at_3.49.07_PM-301ee83a004782ac.png
+----------------------------------------
+[2026-04-16T15:50:19.7470000-05:00] xyrus1418: Do you think that is another consideration?
+----------------------------------------
+[2026-04-16T15:56:57.6480000-05:00] the_biggest_rick: is this MACD?
+----------------------------------------
+[2026-04-16T16:09:00.5260000-05:00] the_biggest_rick: You need to keep in mind that you’re looking at a single asset here, not the entire portfolio. When you combine everything and equally weight all the ensembles, the Sharpe ratio should already improve. Matching the Sharpe of the underlying asset is actually the baseline goal—because what you’ve built is a system that effectively replicates the asset’s behavior while introducing entry and exit logic. That alone gives you a structured, algorithmic way to time the market, which is already an improvement in terms of control and flexibility.
+
+The real advantage shows up when you expand to multiple assets. Once you introduce RSI-based allocation, capital shifts away from assets that are exiting and into those with stronger signals. That’s where the Sharpe improves further—because you’re now benefiting from cross-sectional momentum. In other words, you’re allocating toward assets that are outperforming relative to the rest. That’s exactly what the gating mechanism is designed to do. It’s also why focusing on a single ensemble misses the point entirely.
+
+As for performance thresholds, Sharpe ratios above 1 are the minimum you’re aiming for. That indicates at least some level of generalization over a period like 3.5 years, which already includes multiple market regimes and a few corrections. If the system maintains that level, it suggests your timing logic is still outperforming a simple buy-and-hold approach. Adding the gating layer on top completes the full strategy.
+----------------------------------------
+[2026-04-16T16:09:11.4820000-05:00] the_biggest_rick: So don’t get discouraged if results fluctuate—that’s expected. Financial data is non-stationary, meaning it constantly evolves. You can’t apply something like a strict 5% overfitting rule the same way you would in traditional machine learning, where data is assumed to be stationary. Here, the real test is whether the model continues to meet that baseline Sharpe threshold while the environment changes. That’s what demonstrates robustness. Parameter sensitivity analysis also plays a role in confirming this.
+
+If you want a simple way to validate the idea, just equally weight all the ensembles without applying RSI rotation. You should already see an improvement in the Sharpe ratio. If you don’t, then something else is likely wrong. From there, adding the rotation and gating should enhance performance even further.
+----------------------------------------
+[2026-04-16T16:10:05.3140000-05:00] the_biggest_rick: You also have to recognize that the rolling Sharpe ratio naturally fluctuates and can decline over time. That’s exactly where RSI rotation becomes useful. It helps you enter positions when returns are expanding significantly relative to average losses—essentially when momentum is strong. In practice, that often means you’re entering an asset during periods when its rolling Sharpe is elevated.
+
+Because of that, you’re not fully exposed to all the weaker periods of a single asset. Instead, you can sidestep many of those drawdowns by rotating into other assets that are uncorrelated and currently showing stronger behavior. That rotation effect is key—it allows you to continuously reallocate capital toward areas where risk-adjusted returns are improving.
+
+A good example of this kind of behavior can be seen in sectors like energy at certain times, where relative strength stands out compared to the broader market. In those situations, rotation naturally pulls you into those outperforming segments while avoiding weaker ones.
+----------------------------------------
+[2026-04-16T17:02:52.9150000-05:00] xyrus1418: STC
+----------------------------------------
+[2026-04-16T17:05:13.0490000-05:00] xyrus1418: Thanks for sharing this, it clears things up a lot
+----------------------------------------
+[2026-04-16T17:10:22.8880000-05:00] the_biggest_rick: READ @everyone
+----------------------------------------
+[2026-04-17T13:36:49.5390000-05:00] felixzim.: Hey guys, can someone explain, why the annualized return for the FS test is higher than the BH but the total return is lower in the the FS?
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-9954ab997030d739.png
+----------------------------------------
+[2026-04-17T13:38:16.1030000-05:00] felixzim.: @Quant Rickdanoff Shouldn't the total return AND the annualized return higher in the FS test OR in the Buy & Hold test?
+----------------------------------------
+[2026-04-17T13:46:25.7650000-05:00] the_biggest_rick: can you dm the screenshots please?
+----------------------------------------
+[2026-04-17T13:47:00.2910000-05:00] felixzim.: In skool? Or in the discord?
+----------------------------------------
+[2026-04-17T13:47:15.4520000-05:00] the_biggest_rick: skool
+----------------------------------------
+[2026-04-18T11:50:19.9430000-05:00] ludwigvon111: fuckin hell
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-18_at_18.48.16-86b72425823b1d73.png
+----------------------------------------
+[2026-04-18T11:56:15.8910000-05:00] xyrus1418: Use Bayesian optimization
+----------------------------------------
+[2026-04-18T11:57:06.2380000-05:00] ludwigvon111: tought abt it i just dig myself into beyasian and use it for strategy selection
+----------------------------------------
+[2026-04-18T11:57:20.2920000-05:00] ludwigvon111: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-04-18_at_17.32.47-3b6351e99174085c.png
+----------------------------------------
+[2026-04-18T11:59:52.7990000-05:00] ludwigvon111: for this i added a shit ton of assets and like 13 strategies to fuck around as soon as they run trought ill remove the beta strats
+----------------------------------------
+[2026-04-22T11:29:54.7830000-05:00] the_biggest_rick: @Foosball
+----------------------------------------
+[2026-04-22T11:30:13.4240000-05:00] foosball0365_82785: yes
+----------------------------------------
+[2026-04-22T11:31:47.2540000-05:00] the_biggest_rick: @rick
+----------------------------------------
+[2026-04-30T10:48:42.8100000-05:00] thijs_71567: Anyone got experience with or thoughts on gridsearching in a nested CV framework? I applied it on TQQQ with the tema strategy, and the results OOS are pretty good. I used data from 2016-2026 with a 20% holdout and 3 outer nests en 2 inner. OOS sharpe (2024-2026) was 1.25.
+----------------------------------------
+[2026-04-30T11:34:40.8720000-05:00] xyrus1418: Can you elaborate? I dont quite get your description
+----------------------------------------
+[2026-04-30T13:25:31.8200000-05:00] thijs_71567: During the inner loop, for each parameter combination, the strategy is trained on the training split and then evaluated on both the training data and the validation data. This produces an in-sample Sharpe ratio and a validation Sharpe ratio. I then compute a combined score defined as the validation Sharpe minus the absolute difference between the training and validation Sharpe. This means that parameter sets are rewarded not only for achieving strong out-of-sample performance within the cross-validation, but also for showing consistency between training and validation results, which helps reduce overfitting.
+The parameter set with the highest combined score is selected within the inner loop and then applied to the outer test fold. This outer fold acts as a true out-of-sample evaluation for that iteration. The same process is repeated across all outer folds so that each segment of the data is used once as an out-of-sample test. (Until here the whole process is just to evaluate the parameter selection process)
+After completing the nested cross-validation, I then perform one final inner cross-validation over the entire training dataset, excluding the holdout period, using the same scoring method. This step produces a final set of parameters based on all available training data. Those parameters are subsequently applied to the holdout period, which serves as the final and completely unseen out-of-sample test.
+----------------------------------------
+[2026-04-30T13:28:23.9340000-05:00] thijs_71567: This is a quick ChatGPT description if this doesn’t make sense I will write  a more elaborate description myself, lmk. Thank you in advance.
+----------------------------------------
+[2026-04-30T13:34:35.2790000-05:00] thijs_71567: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\IMG_0046-ec4c26ecc5ef2287.png
+----------------------------------------
+[2026-04-30T13:36:42.5870000-05:00] thijs_71567: @Quant Rickdanoff any thoughts on this?
+----------------------------------------
+[2026-04-30T13:46:17.3730000-05:00] basstion1100: Do you apply k-fold cross validation in the inner loop?
+----------------------------------------
+[2026-04-30T13:48:13.0100000-05:00] thijs_71567: Expanding time series split
+----------------------------------------
+[2026-04-30T13:52:33.3170000-05:00] thijs_71567: I can send the notebook if that would help?
+----------------------------------------
+[2026-04-30T13:59:29.2250000-05:00] zinklee: pls do
+----------------------------------------
+[2026-04-30T14:09:46.4180000-05:00] basstion1100: What indicator or model are you using for the CV?
+----------------------------------------
+[2026-04-30T14:16:02.8990000-05:00] thijs_71567: tema crossover
+----------------------------------------
+[2026-04-30T14:19:39.7440000-05:00] basstion1100: So in your grid you have the EMA periods right?
+----------------------------------------
+[2026-04-30T14:24:26.1390000-05:00] thijs_71567: this is the file
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\triple_ema_strategy-70d5871d79ac6aba.py
+----------------------------------------
+[2026-04-30T14:25:07.3950000-05:00] cruellerkhan: Do rolling window not expanding window
+----------------------------------------
+[2026-04-30T14:25:58.5880000-05:00] cruellerkhan: And thats overkill for tema
+----------------------------------------
+[2026-04-30T14:26:30.0520000-05:00] cruellerkhan: Ik someone whos made it work but their loss function has like 30 params
+----------------------------------------
+[2026-04-30T14:27:53.9600000-05:00] ludwigvon111: sorry but i aint reading allat but judging by the picture
+
+isnt this like a rolling gridsearch but lets say the first test gets the 20 best results and then from those gets the best one for the next testing period and from those 20 gets another best and so on?
+----------------------------------------
+[2026-04-30T14:32:20.4900000-05:00] thijs_71567: in the innerloop it gets the sharpe for every parameter combination on train and on validate its the same, highest en most consistent sharpe gets selected for test (OOS). this is done for every fold. this is to evaluate selection process, after which an inner loop is ran on all train data highest en most consistent sharpe gets picked for test on the holdout period (OOS)
+----------------------------------------
+[2026-04-30T14:39:30.9150000-05:00] ludwigvon111: how are the results?
+----------------------------------------
+[2026-04-30T14:43:05.2480000-05:00] xyrus1418: Yes I implemented something similar. It’s also called anchored walk forward. The biggest problem I encountered with it is that there is too little sample size per window. Especially something like TEMA, there are maybe 2-10 trades a year
+----------------------------------------
+[2026-04-30T14:43:22.0020000-05:00] xyrus1418: So it’s very hard to make a judgment on the performance based on the low sample size
+----------------------------------------
+[2026-04-30T14:43:42.4060000-05:00] xyrus1418: The traditional 60/40 split is just enough sample size to make some conclusion on significance
+----------------------------------------
+[2026-04-30T14:44:25.7110000-05:00] xyrus1418: The other option I’ve seen is just doing a rolling window optimization. The assumption for those who do this is that “the best parameters that worked for the last 3 years will be the best parameters for the next year”
+----------------------------------------
+[2026-04-30T14:44:43.6990000-05:00] xyrus1418: And then they just keep updating parameters during each rolling window
+----------------------------------------
+[2026-04-30T14:45:44.2140000-05:00] xyrus1418: The problem with that assumption is that regimes change
+----------------------------------------
+[2026-04-30T14:46:36.2050000-05:00] thijs_71567: considering that right now, because i also thought sample size was low especially in the first outer fold and i only had 3
+----------------------------------------
+[2026-04-30T14:46:51.4640000-05:00] thijs_71567: what do you do/recommend?
+----------------------------------------
+[2026-04-30T14:49:38.8570000-05:00] thijs_71567: they were allright i guess, sharpe 1.25, return of 89% max dd of 30%, 11-12 trades in two years
+----------------------------------------
+[2026-04-30T14:50:31.7120000-05:00] ludwigvon111: on what asset?
+----------------------------------------
+[2026-04-30T14:51:35.6640000-05:00] thijs_71567: TQQQ
+----------------------------------------
+[2026-04-30T14:53:00.5590000-05:00] xyrus1418: Is this OOS or full period
+----------------------------------------
+[2026-04-30T14:53:27.4280000-05:00] thijs_71567: OOS
+----------------------------------------
+[2026-04-30T15:05:13.7200000-05:00] the_biggest_rick: try 4-5 id say
+----------------------------------------
+[2026-04-30T15:06:24.2640000-05:00] the_biggest_rick: with the model im making for the hedgefund the question is not 'model' or method its a adaptive decision engine that can re-optimize at any moment and perform, a complete walking forward with a mechanism that can re-optimize is what is truly the money maker
+----------------------------------------
+[2026-04-30T15:07:04.9620000-05:00] the_biggest_rick: more popular for genetic programming
+----------------------------------------
+[2026-04-30T15:07:38.2570000-05:00] the_biggest_rick: either keep the flat 60/40 because sparsity of data can kill the signal or widen the window entirely and use a combinatorial k-purge and shorten the indicator lengths
+----------------------------------------
+[2026-04-30T15:07:41.9570000-05:00] xyrus1418: Given this, would your new notebook use rolling walk forward optimization rather than 60/40?
+----------------------------------------
+[2026-04-30T15:09:18.0240000-05:00] the_biggest_rick: the 2018-2023 window is extremely good data because of the close proximity of trends and crashes
+----------------------------------------
+[2026-04-30T15:09:27.0230000-05:00] the_biggest_rick: to the extend that it lives through OOS stress tests
+----------------------------------------
+[2026-04-30T15:09:35.5310000-05:00] the_biggest_rick: so no
+----------------------------------------
+[2026-04-30T15:09:58.7420000-05:00] the_biggest_rick: https://klipy.com/gifs/list-amazinggrace--k01KQG06A0HYJWWS5QDNS9XGJYF
+----------------------------------------
+[2026-04-30T15:10:03.6020000-05:00] the_biggest_rick: its somewhere on the list though
+----------------------------------------
+[2026-04-30T15:11:54.9020000-05:00] xyrus1418: The way I’ve been thinking about it is that the parameters will reflect the regime they were trained on. So 60/40 in Rick’s notebook works well because 2018-2022 has bear, bull and sideways regimes. But take the same 5 years of data but a different time like 2020-2025 then it’s mainly just a raging bull market with one bear, so the parameters will be more fragile.
+
+So whether you do 60/40 or rolling windows optimization, you have to make sure the training window contains different regimes
+----------------------------------------
+[2026-04-30T15:12:04.8030000-05:00] xyrus1418: @Quant Rickdanoff let me know if you agree or disagree
+----------------------------------------
+[2026-04-30T15:13:11.3630000-05:00] the_biggest_rick: if u can do stress tests ur fine
+----------------------------------------
+[2026-04-30T15:13:21.1130000-05:00] the_biggest_rick: what can kill it is mean reverting regime
+----------------------------------------
+[2026-04-30T15:13:30.0860000-05:00] the_biggest_rick: in these cases having RSI / Beta rotation can save you
+----------------------------------------
+[2026-04-30T15:14:09.5960000-05:00] the_biggest_rick: XLU/SPY going in favor of the XLU implies the flows of the economy going defensive and that sector seeing increases of capital which would be a favorable allocaton to those equities
+----------------------------------------
+[2026-04-30T15:14:41.7230000-05:00] xyrus1418: @Quant Rickdanoff I found that adding RSI threshold to the safe haven asset works better than just default allocating to safe haven. Because there are some liquidity meltdown periods where every single asset even gold drops. What do you think?
+----------------------------------------
+[2026-04-30T15:15:15.7330000-05:00] the_biggest_rick: yeah
+----------------------------------------
+[2026-04-30T15:15:28.7960000-05:00] the_biggest_rick: VIX based threshold adjustment can help allocating to new and changed regimes faster
+----------------------------------------
+[2026-04-30T15:15:31.3150000-05:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-577d35188bb8e9b5.png
+----------------------------------------
+[2026-04-30T15:15:38.3350000-05:00] the_biggest_rick: here you see beta rotation ive been tempering with
+----------------------------------------
+[2026-04-30T15:15:59.5930000-05:00] the_biggest_rick: amazing in the 1999-2008 bear market, loses alpha post 2009 bull market because my meta model currently isnt adjusting to that market
+----------------------------------------
+[2026-04-30T15:16:16.7510000-05:00] the_biggest_rick: if your meta-model can adjust that your model is worth millions
+----------------------------------------
+[2026-04-30T15:16:19.0680000-05:00] the_biggest_rick: 🙂
+----------------------------------------
+[2026-04-30T15:16:59.0310000-05:00] .murat13100: What is beta rotation?
+----------------------------------------
+[2026-04-30T15:17:34.2620000-05:00] the_biggest_rick: XLU/SPY
+----------------------------------------
+[2026-04-30T15:17:37.5270000-05:00] the_biggest_rick: sector dominance
+----------------------------------------
+[2026-04-30T15:17:49.0400000-05:00] the_biggest_rick: if this ratio changes the general index is underperforming a certain sector
+----------------------------------------
+[2026-04-30T15:17:56.2720000-05:00] the_biggest_rick: QQQ/SPY
+----------------------------------------
+[2026-04-30T15:18:02.0740000-05:00] the_biggest_rick: tech outperforming general market
+----------------------------------------
+[2026-04-30T15:18:13.3190000-05:00] the_biggest_rick: SOXX/QQQ semis outperforming tech in general
+----------------------------------------
+[2026-04-30T15:18:25.1300000-05:00] the_biggest_rick: insurances/banks
+----------------------------------------
+[2026-04-30T15:18:30.1950000-05:00] the_biggest_rick: pharmacies/healthcare
+----------------------------------------
+[2026-04-30T15:19:35.0820000-05:00] the_biggest_rick: BTC/TQQQ
+----------------------------------------
+[2026-04-30T15:20:14.9940000-05:00] .murat13100: Good for slow but steady growth but at some point SPY catches
+----------------------------------------
+[2026-04-30T15:20:53.9670000-05:00] .murat13100: Is it always defensive? Perhaps in good market conditions you can add leverage for faster growth
+----------------------------------------
+[2026-04-30T15:24:08.2220000-05:00] the_biggest_rick: QQQ/SPY
+----------------------------------------
+[2026-04-30T15:24:18.0200000-05:00] the_biggest_rick: tech more vol, if outperforming, more gains
+----------------------------------------
+[2026-04-30T15:26:00.2350000-05:00] the_biggest_rick: # ── Credit regime signal: HYG/LQD ─────────────────────────────────────
+# Spreads tightening (HYG outperforming) = healthy credit.
+# Spreads widening = stress, leads equity by 3-6 weeks.
+----------------------------------------
+[2026-04-30T15:26:29.6050000-05:00] the_biggest_rick: XLY/XLP
+----------------------------------------
+[2026-04-30T15:27:05.4200000-05:00] the_biggest_rick: Consumer Discretionary Select Sector SPDR Fund (XLY)
+What it holds: Companies people spend money on optionally
+(e.g., retail, travel, entertainment)
+Examples: Amazon, Tesla, McDonald's
+Behavior:
+Tends to outperform in strong economies
+More volatile
+Think: “Wants” spending
+----------------------------------------
+[2026-04-30T15:27:13.2670000-05:00] the_biggest_rick: Consumer Staples Select Sector SPDR Fund (XLP)
+What it holds: Companies people buy regardless of the economy
+(food, household goods, hygiene)
+Examples: Procter & Gamble, Coca-Cola, Walmart
+Behavior:
+More stable and defensive
+Holds up better in recessions
+Think: “Needs” spending
+----------------------------------------
+[2026-04-30T15:27:20.0890000-05:00] the_biggest_rick: ergo
+----------------------------------------
+[2026-04-30T15:27:29.5790000-05:00] the_biggest_rick: a ratio of desires vs needs
+----------------------------------------
+[2026-04-30T15:27:31.6170000-05:00] the_biggest_rick: get it?
+----------------------------------------
+[2026-04-30T15:27:38.2800000-05:00] the_biggest_rick: super simple super indicative
+----------------------------------------
+[2026-04-30T15:27:51.8260000-05:00] the_biggest_rick: @everyone
+----------------------------------------
+[2026-04-30T15:29:00.6120000-05:00] the_biggest_rick: with enough brain and testing you can make a beta rotation flow model for almost anything
+----------------------------------------
+[2026-04-30T15:29:15.3580000-05:00] the_biggest_rick: and have it rule your portfolio
+----------------------------------------
+[2026-04-30T15:29:17.4440000-05:00] the_biggest_rick: 🙂
+----------------------------------------
+[2026-04-30T15:30:06.3100000-05:00] the_biggest_rick: Energy
+
+Core idea: Oil, gas, energy services
+
+Integrated Oil & Gas
+Oil & Gas Exploration & Production
+Oil & Gas Equipment & Services
+Oil & Gas Storage & Transportation
+
+right now, 100% its
+
+XLE > SPY
+----------------------------------------
+[2026-05-01T03:41:40.8180000-05:00] felixzim.: Has somebody found good gridsearch results for Broadcom? The performance off AVGO is pretty solid, but I'm not able to find strategies with a good / consistense IS/OS sharpe...
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-6d3b079c89ccf29c.png
+----------------------------------------
+[2026-05-01T07:32:14.4390000-05:00] felixzim.: Or APPL? The results are terrible and I can't figure out why
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-0b73c2f370eba2fc.png
+----------------------------------------
+[2026-05-01T07:35:12.8480000-05:00] ludwigvon111: increase the ranges of the gridsearch maybe
+----------------------------------------
+[2026-05-01T08:10:08.6290000-05:00] felixzim.: I will try
+----------------------------------------
+[2026-05-01T08:26:47.7020000-05:00] the_biggest_rick: AAPL moves strangely
+----------------------------------------
+[2026-05-01T08:26:53.6430000-05:00] the_biggest_rick: MACD works best though
+----------------------------------------
+[2026-05-01T16:03:55.2760000-05:00] xyrus1418: I got good consistent results with KAMA and Donchian
+----------------------------------------
+[2026-05-01T16:58:59.9800000-05:00] felixzim.: Thanks I will look into it
+----------------------------------------
+[2026-05-01T16:59:11.5660000-05:00] felixzim.: I’ll check it out thx
+----------------------------------------
+[2026-06-01T09:44:39.3600000-05:00] colmanwong: is it just for broadcom or works for other instruments too
+----------------------------------------
+[2026-06-01T10:11:59.5480000-05:00] xyrus1418: Instruments? You mean stocks?
+----------------------------------------
+[2026-06-01T10:12:11.5860000-05:00] xyrus1418: It works for other ones
+----------------------------------------
+[2026-06-29T07:19:43.5530000-05:00] thijs_71567: can someone spot something fundamentally wrong with this or share their workflow on modelling assets (like do you use the same indicator set for every asset, or find new ones for each asset)  Ensemble Trading Pipeline
+Fixed 60/40 train/holdout split on daily OHLCV (yfinance, from 2016). Per indicator, a parameter grid is searched on the dev set; combinations with <20% market exposure are rejected. Best parameters selected via IS_Sharpe × (1 − CV), where CV = bootstrap_std / bootstrap_mean over 1000 bootstrap samples on active returns.
+Confirmed indicators (via SHAP-Boruta, 100 RF iterations, binomial test α=0.01, target = 21-day binary forward return) are combined into size-2 and size-3 combos with MAJORITY and OR voting. Combos pass a second SHAP-Boruta round; the surviving combo with the highest selection score is chosen as the final system.
+The same fixed set of technical indicators is applied to every asset without modification. The pipeline works well on TQQQ and semi-well on BTC, but underperforms buy & hold on XLE, AAPL, and SOXX.
+----------------------------------------
+[2026-06-29T15:43:25.1910000-05:00] the_biggest_rick: ‘ve responded to you.
+----------------------------------------
+[2026-07-06T18:54:19.1860000-05:00] montanelas_19: Hey everyone! Joined the Skool community about 3–4 months ago and it's been a pretty interesting ride so far — thought I'd share where I'm at.
+
+I built a backtesting framework in Python (vectorbt) with a master notebook where I set the grid search parameters for 10 indicators + a few ensembles (pairs, triples, some specific combos). Under it I have individual indicator notebooks that run in phases: first everything under 1M parameter combinations runs in parallel, then the heavier ones go sequentially. This parallelisation lets me test ~14 million combinations in around 3 hours — used to take me 5 full days.
+
+The indicators I'm currently testing: 3EMA, 3EMA with ATR Stop Loss, MACD, StochRSI, KAMA, Supertrend, Donchian Channel, Schaff Trend Cycle, RSI and ADX. On the ensemble side I'm combining them into pairs and triples, using boruta. 
+
+Each notebook spits out a results folder named after the indicator + its key metrics (overall Sharpe, IS/OOS Sharpe, return, best params), and appends everything to a running Excel summary so I don't lose results between runs.
+
+Results-wise, I've had some interesting findings, especially on the ensemble side — though I'm staying sceptical on some of them. I've mainly been evaluating by overall Sharpe, max drawdown and win rate.
+
+The thing I still need to fix: most of the combinations I thought looked good have sensitivity analysis charts that are very red (especially on the IS side), which is not great and probably means overfitting. Still digging into it.
+
+Sharing this in case anyone has tips or has been through the same. And if anyone wants to chat, compare notes, or just needs a hand with anything — I'm 100% available, don't hesitate to reach out. Feel free to DM me preferably on Skool (André Francisco) 🙂
+
+(ps: rewritten with AI)
+----------------------------------------
+[2026-07-06T18:56:59.8790000-05:00] montanelas_19: Som grid results (i.e. from the excel file that my notebooks save)
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-9fca365e9ec69984.png
+----------------------------------------
+[2026-07-19T06:20:26.4380000-05:00] the_biggest_rick: i want people to network! @here
+----------------------------------------
+[2026-07-25T08:16:45.7200000-05:00] armored3551: Hey! Im a little late but I do have some advice as I've tried a similar thing before. Biggest thing is that your noise ceiling is enormous.
+
+Best-of-N under a pure noise null scales as √(2·ln N). At 14M combos that's ~5.7 t-units, so your best result needs to clear that before it means anything. Most indicator grids top out around 2-3. Worth computing that number and drawing it as a line on your charts. (If your not sure how to do the calculations or what they mean claude can run them just lookover it thoroughly)  also those red sensitivity charts aren't really a thing to fix later, they're the biggest red flag. If IS is already unstable, OOS can't rescue it. 
+
+The fix for exactly your situation is Deflated Sharpe. It takes your number of trials, the variance across those trials, and your returns' skew and tells you the Sharpe you'd expect from the luckiest of 14M random tries. Your observed Sharpe has to beat that, not zero. DSR > 0.95 is the usual bar. It's maybe 30 lines of numpy and it'll re-rank your whole Excel sheet in one pass. My guess is most of the ensemble stuff drops out, since combining indicators multiplies trials fast.
+
+Happy to expand more, I've been running a similar meat grinder and mostly producing extremely well documented negatives lol
+----------------------------------------
+[2026-07-25T10:25:06.3040000-05:00] xyrus1418: I found the best way to reduce the degrees of freedom is by fixing params and only letting 1-2 params be optimized per indicator
+----------------------------------------
+[2026-07-25T12:29:54.2770000-05:00] montanelas_19: clever
+----------------------------------------
+[2026-07-25T12:30:30.3440000-05:00] montanelas_19: i'll DM you shortly, but thanks for the feedback
+----------------------------------------
+[2026-07-31T09:38:14.0890000-05:00] montanelas_19: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-03ccad47d1327257.png
+----------------------------------------
+[2026-07-31T09:39:32.6880000-05:00] nico108_: Btc?
+----------------------------------------
+[2026-07-31T09:40:00.3290000-05:00] montanelas_19: tqqq
+----------------------------------------
+[2026-07-31T09:40:43.3680000-05:00] nico108_: Then 50% dd shouldnt be a problem
+----------------------------------------
+[2026-07-31T09:41:05.5350000-05:00] nico108_: This one looks good
+----------------------------------------
+[2026-07-31T10:00:26.5550000-05:00] montanelas_19: this is so adiictive, the other day I saw an article stating that when chatbots provide good results it generates the same dopamine reaction when as social media likes/messages
+----------------------------------------
+[2026-07-31T10:01:03.7100000-05:00] xyrus1418: What was the IS/OOS period
+----------------------------------------
+[2026-07-31T10:01:29.5790000-05:00] montanelas_19: at least I'm using this adiciotn in a productive way lol
+----------------------------------------
+[2026-07-31T10:01:49.1490000-05:00] montanelas_19: 2018 unitl today, 60/40 split
+----------------------------------------
+[2026-07-31T10:03:14.4450000-05:00] montanelas_19: results on trading view using rick pine script
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-5a2d64ae5a11a2e0.png
+----------------------------------------
+[2026-07-31T11:21:47.8600000-05:00] montanelas_19: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-f5db7f6fff199817.png
+----------------------------------------
+[2026-07-31T11:24:28.3640000-05:00] montanelas_19: console looking good
+----------------------------------------
+[2026-07-31T11:24:30.1070000-05:00] shanks9899: are you 🇵🇹
+----------------------------------------
+[2026-07-31T11:24:41.5270000-05:00] montanelas_19: tuga yh
+----------------------------------------
+[2026-07-31T11:25:31.5820000-05:00] shanks9899: então não sou o único aqui😂
+----------------------------------------
+[2026-07-31T11:27:04.5900000-05:00] montanelas_19: há mais somos uns 5 no minimo
+----------------------------------------
+[2026-07-31T11:27:25.3510000-05:00] montanelas_19: you can see it by my username lol
+----------------------------------------
+[2026-07-31T11:27:48.8140000-05:00] shanks9899: porra😂
+----------------------------------------
+[2026-07-31T12:37:09.5090000-05:00] montanelas_19: is it really that bad?
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-6a7499156fb73ba1.png
+----------------------------------------
+[2026-07-31T12:38:16.3860000-05:00] nico108_: Yeah
+----------------------------------------
+[2026-07-31T12:39:27.7990000-05:00] montanelas_19: 😢
+----------------------------------------
+[2026-07-31T12:41:33.2220000-05:00] montanelas_19: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-fb9f804cc88170fb.png
+----------------------------------------
+[2026-07-31T12:43:56.8230000-05:00] nico108_: Its more about the degration. If you see thar sharpe went from 2 to under 1 chances are high it wont perform well in live markets
+----------------------------------------
+[2026-07-31T12:48:22.6640000-05:00] montanelas_19: is 20 to 30% sharpe degradation acceptable? or more to the 10-20%?
+----------------------------------------
+[2026-07-31T12:50:16.0270000-05:00] nico108_: From 1.3 to 1 is fine, but smt like 2.3 to 1.4 is questionable
+----------------------------------------
+[2026-07-31T12:50:41.6470000-05:00] ludwigvon111: 30% is good under that is bad
+----------------------------------------
+[2026-07-31T12:50:52.2640000-05:00] montanelas_19: 1.129 to 0,934
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-4a2d5d677d98038e.png
+----------------------------------------
+[2026-07-31T12:51:13.6940000-05:00] ludwigvon111: what asset?
+----------------------------------------
+[2026-07-31T12:51:27.4360000-05:00] montanelas_19: you mean a degradation of more than 30%, right?
+----------------------------------------
+[2026-07-31T12:51:33.0760000-05:00] montanelas_19: btc
+----------------------------------------
+[2026-07-31T12:51:42.1820000-05:00] nico108_: The procedure is use is take the best 15 strats by sharpe and then decide between the 3 that have the lowest sharpe degration
+----------------------------------------
+[2026-07-31T12:52:15.2510000-05:00] ludwigvon111: yea if the degradation is more then 30% its questionable
+----------------------------------------
+[2026-07-31T12:52:33.6170000-05:00] nico108_: Sharpe alright, WR not okey
+----------------------------------------
+[2026-07-31T12:53:00.0410000-05:00] montanelas_19: even IS wr aint good
+----------------------------------------
+[2026-07-31T12:53:02.1070000-05:00] ludwigvon111: could ensembling help with that
+----------------------------------------
+[2026-07-31T12:53:18.7390000-05:00] montanelas_19: this is 3emacd ensemble
+----------------------------------------
+[2026-07-31T12:53:18.8050000-05:00] ludwigvon111: but yea the wr is really bad
+----------------------------------------
+[2026-07-31T12:53:29.5980000-05:00] ludwigvon111: oh
+----------------------------------------
+[2026-07-31T12:53:32.4610000-05:00] ludwigvon111: nvm
+----------------------------------------
+[2026-07-31T12:54:53.6460000-05:00] ludwigvon111: try checking both strategies performance in the gridsearch
+maybe theres the flaw
+----------------------------------------
+[2026-07-31T12:56:23.7330000-05:00] montanelas_19: what ultra wide ranges do you guys use for MACD?
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-2fc33cf0814d6575.png
+----------------------------------------
+[2026-07-31T13:00:19.6830000-05:00] ludwigvon111: increase the signal maybe to 150? or 200 
+fast under 30-40
+slow around 120
+----------------------------------------
+[2026-07-31T13:07:12.3130000-05:00] ludwigvon111: would it be retarded to optimize for faster strategies in a gridsearch and then making a slow strategy gridsearch on top of it then shuffle them trought boruta?
+
+like 
+
+VWAP (9) IF EMA (200)
+----------------------------------------
+[2026-07-31T13:11:31.5410000-05:00] the_biggest_rick: reading through the chats after dinner guys @here
+----------------------------------------
+[2026-07-31T13:26:24.0220000-05:00] montanelas_19: seems good to me
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-5fee94f7aa203e7c.png
+----------------------------------------
+[2026-07-31T13:32:52.0770000-05:00] ludwigvon111: check param sensitivity and go trought some overfit indications and how could u recognise them 
+
+otherwise its pretty good
+----------------------------------------
+[2026-07-31T13:52:42.8720000-05:00] montanelas_19: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-2c1f1345c7b8fd9a.png
+----------------------------------------
+[2026-07-31T13:52:46.3200000-05:00] montanelas_19: what do you think
+----------------------------------------
+[2026-07-31T14:06:43.1660000-05:00] ludwigvon111: i would make it either in colums or a heatmap but its okay i think
+----------------------------------------
+[2026-07-31T14:32:59.8900000-05:00] montanelas_19: i backtested it to 2007-today and it became shitty
+----------------------------------------
+[2026-07-31T15:12:03.9230000-05:00] the_biggest_rick: get vol, mdd, trades taken and the axis below to have the parameters
+----------------------------------------
+[2026-07-31T17:08:40.3700000-05:00] montanelas_19: go to skool
+----------------------------------------
+[2026-07-31T23:49:53.6910000-05:00] xyrus1418: It actually depends on the underlying asset’s buy and hold. For example, if the asset’s sharpe went up IS -> OOS, your strategy’s should ideally too
+----------------------------------------
+[2026-08-01T04:29:18.3160000-05:00] montanelas_19: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-33833e45b3d307be.png
+----------------------------------------
+[2026-08-01T05:54:23.1610000-05:00] montanelas_19: GLD
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-b64a97da39e2b89a.png
+----------------------------------------
+[2026-08-01T07:59:55.2840000-05:00] xyrus1418: Bit confused why the sharpe distribution looks like a Gaussian normal distribution
+----------------------------------------
+[2026-08-03T09:16:45.4360000-05:00] rubsbc: is this a gridsearch tema crossover or an ensemble, and which timeframes If I may ask? I'm finding it tough to beat simple 200 MAs with Gold
+----------------------------------------
+[2026-08-03T09:44:43.4140000-05:00] the_biggest_rick: i have a very strong gold ensemble with tema macd aroon
+----------------------------------------
+[2026-08-03T09:47:14.0390000-05:00] xyrus1418: Interesting, you use the same ensemble as QQQ’s?
+----------------------------------------
+[2026-08-03T09:47:46.8310000-05:00] the_biggest_rick: yes ive ran QQQ and GLD like this for 4 years
+----------------------------------------
+[2026-08-03T09:48:25.9210000-05:00] rubsbc: for reference, gridsearched tema, macd & aroon separated and then ensemble best combinations of them?
+----------------------------------------
+[2026-08-03T09:57:17.4420000-05:00] montanelas_19: 3ema + macd + atr ensemble, 2018-today 60/40 split
+----------------------------------------
+[2026-08-03T10:32:02.8770000-05:00] montanelas_19: GLD - 2028-now 60/40 split, Rick's pinescript results
+----------------------------------------
+[2026-08-03T10:32:26.4440000-05:00] montanelas_19: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-6ec07f0386af2b24.png
+----------------------------------------
+[2026-08-03T10:32:34.6970000-05:00] montanelas_19: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\image-822e7aad106952ee.png
+----------------------------------------
+[2026-08-03T11:01:51.2740000-05:00] xyrus1418: You should compare against buy and hold's sharpe, max dd, etc.
+----------------------------------------
+[2026-08-03T11:02:16.0270000-05:00] the_biggest_rick: and 200ma
+----------------------------------------
+[2026-08-03T11:08:09.1080000-05:00] xyrus1418: Hey guys, I ran an experiment and I think the results will be useful for the community
+----------------------------------------
+[2026-08-03T11:08:18.1030000-05:00] xyrus1418: I ran an ablation test to see whether cross-sectional momentum ranking plus absolute trend filters could preserve roughly market-level returns while materially reducing volatility and drawdowns.
+----------------------------------------
+[2026-08-03T11:08:37.9560000-05:00] xyrus1418: 
+  ATTACHMENTS: rick's skool - skool - gridsearch-results [1489978760815185962].csv_Files\Screenshot_2026-08-04_at_12.08.31_AM-0cae436eb29f870b.png
+----------------------------------------
+[2026-08-03T11:08:54.6100000-05:00] xyrus1418: Methodology: Weekly rotation across QQQ, SOXX, SPY, XLU, DIA, and gold futures from May 2002 onward. I ranked assets by RSI(28), held the top 3, and tested: ranking alone, RSI(28) > 50 eligibility, and per-asset trend filters including SMA50/200, Close > SMA200, and Close > EMA100. Signals used a one-bar execution lag and 10 bps trading costs.
+----------------------------------------
+[2026-08-03T11:09:36.0260000-05:00] xyrus1418: Here are the results
+----------------------------------------
+[2026-08-03T11:11:21.9130000-05:00] xyrus1418: The most surprising findings:
+1. RSI ranking did NOT add return relative to the assets it selected from. RSI ranking had Sharpe of 0.7 while simply buying and holding yielded a higher Sharpe of 0.8
+2. Ranking alone did NOT protect downside, max DD was -39% versus buy and hold's -43%
+3. Adding RSI threshold did NOT reduce downside by improving selection, it did so by REDUCING exposure
+4. Stacking RSI threshold + an individual ticker moving average like 200MA was actively *harmful*
+----------------------------------------
+[2026-08-03T11:12:40.5030000-05:00] the_biggest_rick: time horizon?
+----------------------------------------
+[2026-08-03T11:13:54.2950000-05:00] xyrus1418: May 3, 2002 through June 30, 2026
+----------------------------------------
+[2026-08-03T11:16:14.2140000-05:00] xyrus1418: Did not start before 2000 because SOXX was launched in 2001, and I needed to give SMA200 warm up period
+----------------------------------------
+[2026-08-03T11:17:37.7950000-05:00] xyrus1418: 5. The configuration with the best risk-adjusted return was to just use a per-ticker gate of SMA200, no RSI rotation, etc.
+----------------------------------------
+[2026-08-03T11:17:51.1640000-05:00] xyrus1418: Am open to any feedback or questions
+----------------------------------------
+[2026-08-03T12:00:07.5700000-05:00] rubsbc: Very interesting, one from me: how did the weight allocation move within your portfolio? When you say "use a per-ticker gate of SMA200, no RSI rotation" you mean for example 100$ dedicated per ticker, signal in is full 100% allocation, signal out is empty 0% allocation? or did you move cash between tickers up to certain weight %s?
+----------------------------------------
+[2026-08-03T12:01:24.6610000-05:00] rubsbc: Intuitevely, one of the fastest ways to collapse an RSI allocation system if it is not well calibrated is by mishandling portfolio rebalances, it can generate a lot of "additional" whipsaws that individual tickers don't show just due to the fact that it is rebalancing internally
+----------------------------------------
+[2026-08-03T12:02:16.8210000-05:00] rubsbc: so that might be one of the reasons why simply allocating a fixed part of your portfolio per ticker and to always be either in or out within that particular % might beat the RSI rotation
+----------------------------------------
+[2026-08-03T12:15:31.6870000-05:00] xyrus1418: Do you mean by constantly rebalancing if the RSI ranking shifts? Yes I recognize that can cause whipsaws
+----------------------------------------
+[2026-08-03T12:15:44.3340000-05:00] xyrus1418: That’s why I coded it to only look at the ranking once a week and rebalance once a week
+----------------------------------------
+[2026-08-03T12:15:59.2360000-05:00] xyrus1418: And yes, it’s 100% of the ticker versus 0%
+----------------------------------------
+[2026-08-03T12:16:07.3560000-05:00] xyrus1418: Each ticker gets 1/N weighting
+----------------------------------------
+[2026-08-03T12:16:23.6130000-05:00] xyrus1418: This experiment does ask a really important question tho
+----------------------------------------
+[2026-08-03T12:16:46.6600000-05:00] xyrus1418: Does that mean RSI cross section ranking should not be used and we should just rely on the ensemble indicator?
+----------------------------------------
+[2026-08-03T12:21:36.2380000-05:00] ludwigvon111: i mean it can be played around with 
+maybe the param of the RSI could be bigger 
+
+u can implement it into a asset score like above thereshold and use this as a multiplier on other factors
+----------------------------------------
+[2026-08-03T12:34:38.8030000-05:00] xyrus1418: Can you elaborate? I don’t quite understand
+----------------------------------------
+[2026-08-03T12:40:55.0550000-05:00] ludwigvon111: like u will use these for a asset ranking
+
+abs mom
+inverse vol
+corr
+rsi 
+
+give each of them a weight 
+like 25% for each 
+
+the rsi can only produce long and close signals but u can cap it 
+or u can just use the rsi value
+
+M x Mw + IV x IVw + C x Cw + rsi x rsi weight
+
+this is an example only it might have flaws but u get it i think
+----------------------------------------
+[2026-08-03T12:46:47.3950000-05:00] xyrus1418: Oh you mean using other factors besides RSI to rank the assets?
+----------------------------------------
+[2026-08-03T12:46:53.9190000-05:00] xyrus1418: Yeah I gotchu I’m doing that next
+----------------------------------------
+[2026-08-03T12:47:17.4690000-05:00] xyrus1418: I didn’t use RSI as long signals tho, I think you misunderstand that part, I used it to rank only
+----------------------------------------
+[2026-08-03T12:47:45.3400000-05:00] ludwigvon111: yea just realized
+----------------------------------------
+[2026-08-03T12:48:28.3370000-05:00] ludwigvon111: antifragile asset allocation paper is a good base for it just replace the ATR
+----------------------------------------

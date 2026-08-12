@@ -1,0 +1,12 @@
+{
+    "TP_M": 16.49806426808465,
+    "SL_M": 1.2688795532227655,
+    "use_rsi": false,
+    "use_gap": false,
+    "use_vol": true,
+    "use_fh_green": true,
+    "use_trend": true,
+    "use_mom": false,
+    "VOL_M": 0.16983177646602093,
+    "TREND_M": -0.07548272567646692
+}

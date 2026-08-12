@@ -1,0 +1,934 @@
+LE&I TRANSCRIPTS DEEP-DIVE KEYWORDS EXTRACTION
+==================================================
+
+
+
+==================================================
+FILE: 20251027_125937_transcript.txt (682 lines)
+==================================================
+
+--- CATEGORY: T-Codes & SAP Systems (7 matches) ---
+Line 53 (Matched: t\s*code):
+    L52: [00:02:09] Um, so start off with like, with our PD side, our, uh, our main file,
+>>> L53: [00:02:14] just, just a mapping file, which, um, it just lets all the different codes that block.
+    L54: [00:02:20] Accounts, which are our exclusions, um, right here,
+
+Line 147 (Matched: t\s*code):
+    L146: [00:07:14] And we know it's PD.
+>>> L147: [00:07:16] So we're good to go ahead and there are, there are T codes and SAP that we can use to serve this.
+    L148: [00:07:22] But I think that the tableau that Jake has built out is a lot.
+
+Line 163 (Matched: t\s*code):
+    L162: [00:08:24] I'm going to filter this exclusion just so it narrows it down.
+>>> L163: [00:08:26] But at the moment, you kind of have to look and see what codes are in common.
+    L164: [00:08:31] And with accounts, it sends out a lot more codes.
+
+Line 172 (Matched: t\s*code):
+    L171: [00:09:13] Okay.
+>>> L172: [00:09:15] So my next set now, just do you hear what that code is and why this account and material are linked to it and why why this block is occurring.
+    L173: [00:09:26] And so if I go here to the PD section, I can go to reference, well, actually, first I'll change it to exclusions because that's obviously what I'm trying to find.
+
+Line 189 (Matched: t\s*code):
+    L188: [00:10:37] Yeah, it's just a way to help us identify when we look stuff up or when we talk about it.
+>>> L189: [00:10:42] So that way everybody knows what code we're talking about.
+    L190: [00:10:45] It's kind of like a name.
+
+Line 243 (Matched: t\s*code):
+    L242: [00:13:59] So if we created something request that you create new code,
+>>> L243: [00:14:03] then they're, they would, yeah, they're being new external reference number for that code.
+    L244: [00:14:08] So if I go to the, it's going to the bottom.
+
+Line 246 (Matched: t\s*code):
+    L245: [00:14:11] So it looks like these will be the aren't new as codes down here.
+>>> L246: [00:14:15] And so like the very next code we get for exclusion would be,
+    L247: [00:14:22] it would be exclusion 727.
+
+
+--- CATEGORY: Exclusion Owners & Codes (3 matches) ---
+Line 182 (Matched: ec\s*[0-9]+):
+    L181: [00:10:09] So it's so like it's December right here, this column B.
+>>> L182: [00:10:14] And so that's like whenever we refer to example, like EC 80, it would be this code right here.
+    L183: [00:10:20] Or 180. Sorry.
+
+Line 273 (Matched: ec\s*[0-9]+):
+    L272: [00:15:50] they usually don't know what the code is, that's blocking it.
+>>> L273: [00:15:53] So they don't really ever say like, hey, can this be removed from EC645?
+    L274: [00:15:58] We'll just say in this account, and have access.
+
+Line 602 (Matched: peneer):
+    L601: [00:37:04] an exception can be made for the account to have access.
+>>> L602: [00:37:09] And so if I scroll over here, it says it's Alan Peneer.
+    L603: [00:37:12] And there's always a primary owner, a second error owner.
+
+
+--- CATEGORY: Alteryx & Cartesian Joins (1 matches) ---
+Line 90 (Matched: prime):
+    L89: [00:04:01] Uh, like, for example, if we need to know if an account can be added to, uh,
+>>> L90: [00:04:06] prepare a prime label for one of these, uh,
+    L91: [00:04:09] vision career health trust GPO, as we can pop it into this.
+
+
+--- CATEGORY: Email Auditing & Retention (4 matches) ---
+Line 405 (Matched: audit):
+    L404: [00:23:44] if we needed to come back to it.
+>>> L405: [00:23:47] And then also because every week we audit, I think it says, I don't know if it's 25%, but
+    L406: [00:23:54] like I will say it's my 5% to say this, like 25% of our teams,
+
+Line 407 (Matched: audit):
+    L406: [00:23:54] like I will say it's my 5% to say this, like 25% of our teams,
+>>> L407: [00:24:01] like email requests get grabbed and then we all audit each other's work, just to ensure that we're
+    L408: [00:24:08] doing it correctly and things like that.
+
+Line 411 (Matched: audit):
+    L410: [00:24:11] And so that's why like these notes are kind of important just so like with stuff whenever somebody's
+>>> L411: [00:24:15] auditing my work, they know the action that I did.
+    L412: [00:24:18] But yeah, so this is really just for like our internal team to use whenever we're auditing
+
+Line 412 (Matched: audit):
+    L411: [00:24:15] auditing my work, they know the action that I did.
+>>> L412: [00:24:18] But yeah, so this is really just for like our internal team to use whenever we're auditing
+    L413: [00:24:27] or trying to track down our request.
+
+
+--- CATEGORY: Special exceptions & PR (1 matches) ---
+Line 111 (Matched: puerto, rico):
+    L110: [00:05:26] So the first thing that we do, however we do get a request is we just put in the account and send into SAP,
+>>> L111: [00:05:33] just to kind of see what's going on, because that's sometimes we get requests where it's a send that's for Puerto Rico and the account.
+    L112: [00:05:40] And that's the issue.
+
+
+--- CATEGORY: SharePoint & Web=0 (3 matches) ---
+Line 53 (Matched: mapping\s*file):
+    L52: [00:02:09] Um, so start off with like, with our PD side, our, uh, our main file,
+>>> L53: [00:02:14] just, just a mapping file, which, um, it just lets all the different codes that block.
+    L54: [00:02:20] Accounts, which are our exclusions, um, right here,
+
+Line 177 (Matched: mapping\s*file):
+    L176: [00:09:47] Yeah, what does that mean exactly?
+>>> L177: [00:09:50] Yeah, so this reference number is just, where's that mapping file?
+    L178: [00:09:55] So it's just kind of like the number assigned to the code when it was created.
+
+Line 580 (Matched: mapping\s*file):
+    L579: [00:35:46] And so this is where I see this reference number is the common one.
+>>> L580: [00:35:50] So I need to go back to our mapping file and see what exclusion 119 is and why it's blocking this
+    L581: [00:35:57] account.
+
+
+
+==================================================
+FILE: 20251027_134548_transcript.txt (140 lines)
+==================================================
+
+--- CATEGORY: T-Codes & SAP Systems (2 matches) ---
+Line 10 (Matched: kotg):
+    L9: [00:00:14] need to block a customer that is an approved class of trade, we
+>>> L10: [00:00:18] just come in here. And first we add it to the KOTG 73 table,
+    L11: [00:00:24] manually block it. And then we just kind of document it in here.
+
+Line 97 (Matched: kotg):
+    L96: [00:06:44] the vendor. Okay. And can you take, can you repeat again, about
+>>> L97: [00:06:49] like 73 KOTG, what was that? Yeah, so these are just exclusions
+    L98: [00:06:54] like very one off exclusions that are directed by the
+
+
+--- CATEGORY: Email Auditing & Retention (1 matches) ---
+Line 108 (Matched: audit):
+    L107: [00:07:31] would just it would get automatically added again, because it
+>>> L108: [00:07:34] has an approved class of trade. And we have a Jake has an audit
+    L109: [00:07:40] that will go through. I think it's once a day, and it'll take
+
+
+--- CATEGORY: SharePoint & Web=0 (2 matches) ---
+Line 55 (Matched: mapping\s*file):
+    L54: [00:03:23] Okay. And this is this is just the same thing as kind of the
+>>> L55: [00:03:29] mapping file is but for SPD. So this is just where we have all
+    L56: [00:03:32] of our different exclusions and listings. And so this works
+
+Line 57 (Matched: mapping\s*file):
+    L56: [00:03:32] of our different exclusions and listings. And so this works
+>>> L57: [00:03:36] the exact same way as the PD mapping file does. So like that,
+    L58: [00:03:40] this one. So it's like whenever if we found that an account was
+
+
+
+==================================================
+FILE: 20251104_130130_transcript.txt (576 lines)
+==================================================
+
+--- CATEGORY: T-Codes & SAP Systems (18 matches) ---
+Line 9 (Matched: t\s*code):
+    L8: [00:00:03] So let me go to last time.
+>>> L9: [00:00:05] So this is just the different codes that we have in PD.
+    L10: [00:00:09] And one thing that I don't think I really touched on a lot last time was listings.
+
+Line 53 (Matched: t-?code):
+    L52: [00:03:09] Great.
+>>> L53: [00:03:11] Can you tell me one of the T-code you use?
+    L54: [00:03:13] I can check if I have the NEA access or not.
+
+Line 58 (Matched: t-?code):
+    L57: [00:03:22] Even.
+>>> L58: [00:03:26] Which is one of the T-code you can just want to do.
+    L59: [00:03:31] Yep.
+
+Line 64 (Matched: t-?code):
+    L63: [00:03:44] I
+>>> L64: [00:03:47] I'm trying to say I always wanted to say I don't really look at the actual T-code here.
+    L65: [00:03:52] It is.
+
+Line 68 (Matched: t-?code):
+    L67: [00:03:57] Here you go.
+>>> L68: [00:04:04] I guess I can also drop the different T-codes that like the main ones.
+    L69: [00:04:08] If you want to pin them or what?
+
+Line 113 (Matched: t\s*code):
+    L112: [00:07:16] Sorry.
+>>> L113: [00:07:17] I don't really know the t code super well.
+    L114: [00:07:20] I just haven't saved differently.
+
+Line 118 (Matched: t\s*code):
+    L117: [00:07:26] I said so the pair one.
+>>> L118: [00:07:28] Is a t code that we use but it's not it's not the main one.
+    L119: [00:07:33] So let me try to get to the right one.
+
+Line 120 (Matched: t\s*code):
+    L119: [00:07:33] So let me try to get to the right one.
+>>> L120: [00:07:45] It's this window but I don't know the t code.
+    L121: [00:07:52] Let me see if we have a resource.
+
+Line 126 (Matched: t\s*code):
+    L125: [00:08:15] So this is our main.
+>>> L126: [00:08:18] T code that we use.
+    L127: [00:08:19] This is just how we check for eligibility.
+
+Line 168 (Matched: t\s*code):
+    L167: [00:11:57] All right, so I'll change this to look for inclusions in the usage.
+>>> L168: [00:12:02] And then if I just enter the sins and I'll see the different codes that this is on.
+    L169: [00:12:09] And so reddit crit, we have it through PD, SPD and Ken, right?
+
+Line 208 (Matched: t\s*code):
+    L207: [00:15:14] Okay.
+>>> L208: [00:15:17] And to add access to accounts, we will use actually a different T code.
+    L209: [00:15:22] I can go ahead and set you that one to a second.
+
+Line 212 (Matched: t\s*code):
+    L211: [00:15:27] I'll put justice in the chat.
+>>> L212: [00:15:30] So this T code is used to add accounts to inclusions and exclusions.
+    L213: [00:15:38] Okay.
+
+Line 226 (Matched: t\s*code):
+    L225: [00:16:53] It's all shit, it's an upload template way.
+>>> L226: [00:16:55] So whenever that T code is not working, you can use this upload template.
+    L227: [00:17:01] And basically what we do here is we put it in the customer list.
+
+Line 237 (Matched: t\s*code):
+    L236: [00:18:17] And so once I have that filled out, I come to this.
+>>> L237: [00:18:23] I'll actually do the T code that goes with two watts there.
+    L238: [00:18:29] And so that is the T code that goes with the upload template.
+
+Line 238 (Matched: t\s*code):
+    L237: [00:18:23] I'll actually do the T code that goes with two watts there.
+>>> L238: [00:18:29] And so that is the T code that goes with the upload template.
+    L239: [00:18:35] That's where you'll put it in.
+
+Line 240 (Matched: t\s*code):
+    L239: [00:18:35] That's where you'll put it in.
+>>> L240: [00:18:37] So once I have that template saved, I come to go to that T code I just sent him.
+    L241: [00:18:43] And this is where we can upload any additions or removals from a customer list.
+
+Line 280 (Matched: t\s*code):
+    L279: [00:22:23] So this customer wants to place the order for this and this is their account number.
+>>> L280: [00:22:28] And so our first step is just always to go put it into the exclusion analysis T code.
+    L281: [00:22:38] And so I will put in the account.
+
+Line 422 (Matched: t\s*code):
+    L421: [00:37:10] And it'll bring it right back to me.
+>>> L422: [00:37:12] And so then I'll be able to see what that code is.
+    L423: [00:37:17] And everything, honestly, you can find you don't even have to use the reference number if you don't want to.
+
+
+--- CATEGORY: Exclusion Owners & Codes (4 matches) ---
+Line 298 (Matched: howell, hartman):
+    L297: [00:24:11] And so this one we see all the time is crogr.
+>>> L298: [00:24:15] They have access to all these items, but first they have to get approval from Jacob Howell and K Hartman who are the code owners.
+    L299: [00:24:24] And so whenever you see anything blocked by exclusion 151,
+
+Line 320 (Matched: ec\s*[0-9]+):
+    L319: [00:26:27] And that is all for those ones. Those things are really quick.
+>>> L320: [00:26:30] Yeah. So then I'll just put in here there's an EC1 override request.
+    L321: [00:26:39] Right.
+
+Line 397 (Matched: exclusion\s*code):
+    L396: [00:34:40] Now, excuse me that.
+>>> L397: [00:34:43] Yeah. So I need to pay exclusion code and roll. So I'll go copy that.
+    L398: [00:34:52] There we go. And then be code owner your day.
+
+Line 399 (Matched: brugamand):
+    L398: [00:34:52] There we go. And then be code owner your day.
+>>> L399: [00:34:58] So the code owner is Patrick Brugamand.
+    L400: [00:35:02] So I'll add him right here.
+
+
+--- CATEGORY: Special exceptions & PR (7 matches) ---
+Line 151 (Matched: puerto, rico):
+    L150: [00:10:08] Then over on the right, one of the first things that we always do is when there is an issue where there is not eligibility.
+>>> L151: [00:10:16] We always want to make sure this is not Puerto Rico sin.
+    L152: [00:10:21] And if it was that this little Puerto Rico item would say yes.
+
+Line 152 (Matched: puerto, rico):
+    L151: [00:10:16] We always want to make sure this is not Puerto Rico sin.
+>>> L152: [00:10:21] And if it was that this little Puerto Rico item would say yes.
+    L153: [00:10:25] And in that case, we can just let them know that we don't work with Puerto Rico sins.
+
+Line 153 (Matched: puerto, rico):
+    L152: [00:10:21] And if it was that this little Puerto Rico item would say yes.
+>>> L153: [00:10:25] And in that case, we can just let them know that we don't work with Puerto Rico sins.
+    L154: [00:10:31] And what about kindergarten?
+
+Line 161 (Matched: puerto, rico):
+    L160: [00:11:04] Okay, so for this one, everything looks normal.
+>>> L161: [00:11:08] It's not a Puerto Rico item.
+    L162: [00:11:10] And it's just showing block by inclusion, which one is it, which is something that we're able to look at, do you think fully?
+
+Line 220 (Matched: alternate):
+    L219: [00:16:27] If this ever does freeze up kind of like this, where it's taking forever,
+>>> L220: [00:16:31] we do have an alternate way to add accounts to this,
+    L221: [00:16:35] which is uploading them through an upload template.
+
+Line 284 (Matched: puerto, rico):
+    L283: [00:22:50] Okay, so this one is blocked by exclusion.
+>>> L284: [00:22:53] And I will scroll over to the right and it is not Puerto Rico.
+    L285: [00:22:58] So to find why exclusion is blocking it, I will go back to that LEI dashboard.
+
+Line 379 (Matched: puerto, rico):
+    L378: [00:32:53] All right, exclusion. It's PD.
+>>> L379: [00:32:57] And it is not Puerto Rico.
+    L380: [00:33:00] Perfect. So that way I now know that I can search for it in here.
+
+
+--- CATEGORY: SharePoint & Web=0 (10 matches) ---
+Line 184 (Matched: mapping\s*file):
+    L183: [00:13:13] And so to find this, we have to go to the SPD exclusions tab.
+>>> L184: [00:13:19] And to find that, we just go to the mapping files, tab below, which has our PD, SPD mapping files.
+    L185: [00:13:28] And if you go to exclusion rosters, it's got really breakeven.
+
+Line 243 (Matched: path):
+    L242: [00:18:51] And so I will hit presentation server, excel and dialogue.
+>>> L243: [00:18:59] And then I just choose the file I want in presentation path.
+    L244: [00:19:05] Now if you I can just send you this as well just that way you can just so you can see the default settings that is always ran on.
+
+Line 293 (Matched: mapping\s*file):
+    L292: [00:23:36] Okay, so if that is this first one right here, this exclusion 151 is the code that is incoming between the two.
+>>> L293: [00:23:45] And so we'll just go look that up in the mapping file and see what the details are.
+    L294: [00:23:57] Okay, so this is the code we're looking at.
+
+Line 336 (Matched: mapping\s*file):
+    L335: [00:28:17] And it looks like this is the inclusion is attached to the send.
+>>> L336: [00:28:22] I'll take this 564 inclusion and I'll go search it in the mapping file.
+    L337: [00:28:33] And then there will inclusion. And here we go.
+
+Line 420 (Matched: mapping\s*file):
+    L419: [00:36:53] And so I can go ahead and copy this number, this customer list restriction entry number.
+>>> L420: [00:36:58] And then if I come to the mapping file and clear all filters, I can scroll over the customer list and then just pop that in.
+    L421: [00:37:10] And it'll bring it right back to me.
+
+Line 465 (Matched: sharepoint):
+    L464: [00:41:17] But in the rare occurrence that we do, where is this?
+>>> L465: [00:41:23] We have a in our SharePoint, we have a Kinray folder.
+    L466: [00:41:30] Okay.
+
+Line 469 (Matched: mapping\s*file):
+    L468: [00:41:37] Or is this one?
+>>> L469: [00:41:40] Yeah, Kinray rules and codes, which is basically our mapping file for Kinray.
+    L470: [00:41:46] Okay.
+
+Line 471 (Matched: mapping\s*file):
+    L470: [00:41:46] Okay.
+>>> L471: [00:41:49] It's pretty much just like the PD mapping file.
+    L472: [00:41:54] All the rules work the same way.
+
+Line 531 (Matched: mapping\s*file):
+    L530: [00:46:39] Yeah, I think it might be because it's so much data.
+>>> L531: [00:46:42] You're being, you're being like the one that we checked the codes for and then the one that didn't just the normal mapping files one.
+    L532: [00:46:49] Uh, yes, we don't need to go to the dashboard to check that.
+
+Line 534 (Matched: mapping\s*file):
+    L533: [00:46:53] Yeah.
+>>> L534: [00:46:55] I think it must be, I don't know the actual reason I, I've been Jake would know, but I would guess it be because of speed because I know that when you use the, just like the mapping files as it is right now, it can be pretty slow.
+    L535: [00:47:10] And then those things dashboard contains all of our products, which in it kicks all their products and then all the changes that they've had ever.
+
+
+
+==================================================
+FILE: 20251111_130036_transcript.txt (356 lines)
+==================================================
+
+--- CATEGORY: T-Codes & SAP Systems (3 matches) ---
+Line 344 (Matched: t-?code):
+    L343: [00:39:55] just kind of manually force it into the PDP e-table which makes it eligible for the customer.
+>>> L344: [00:40:02] Okay. Okay. So do we have any table for that like the T-code or?
+    L345: [00:40:08] Yeah, right here. So I can go ahead and send this to you. So this is the PDP T-code and
+
+Line 345 (Matched: t-?code):
+    L344: [00:40:02] Okay. Okay. So do we have any table for that like the T-code or?
+>>> L345: [00:40:08] Yeah, right here. So I can go ahead and send this to you. So this is the PDP T-code and
+    L346: [00:40:16] be really just search, let me see if I search just this account and I should search right there
+
+Line 350 (Matched: t-?code):
+    L349: [00:40:41] buy one SIN and so I thought you asked if something is eligible and if it's showing eligible and
+>>> L350: [00:40:46] SAP are normal T-code, exclusion else T-code, we come here second to double check that's present
+    L351: [00:40:53] in PDP and sets present we know that the issue is not an R-ed
+
+
+--- CATEGORY: Alteryx & Cartesian Joins (16 matches) ---
+Line 41 (Matched: cartesian, join):
+    L40: [00:03:53] the same thing and download this. Okay, so these are all of the accounts. And there we go.
+>>> L41: [00:04:10] And this is where it's going to be fun because we actually have to do a Cartesian joint on this,
+    L42: [00:04:17] which is fine because I have an alter X workflow for it. But it's kind of annoying with it.
+
+Line 241 (Matched: prime, yy\s*prime):
+    L240: [00:27:13] Okay. So this one, it says the eligibility is SPD only.
+>>> L241: [00:27:20] So if I come here, if we go to YY Prime, the primary view, it would say SPD only.
+    L242: [00:27:27] If it was an SPD only account.
+
+Line 275 (Matched: buying\s*group):
+    L274: [00:30:23] at their name. And their name is Brookings Health, so it doesn't seem like it.
+>>> L275: [00:30:30] But to double check, I can come over to primary GPO and buying group.
+    L276: [00:30:38] And since it doesn't seem premier or innovatics, then they cannot have access.
+
+Line 292 (Matched: prime):
+    L291: [00:32:19] the check did manually.
+>>> L292: [00:32:23] No, that's a good question because I said that's just the Y Y prime. Now we have brought that
+    L293: [00:32:30] down. I think it would be able to. I think that the only reason, the only thing I can think of
+
+Line 295 (Matched: hosp):
+    L294: [00:32:38] that would be stopping it is that for some of these, let's see if I go to 30003 here.
+>>> L295: [00:32:48] So 30003, there's one exception is that HOSP accounts are allowed access.
+    L296: [00:32:56] And so if an account is list as HOSP, even though their PD pass-through, they would still be allowed
+
+Line 296 (Matched: hosp):
+    L295: [00:32:48] So 30003, there's one exception is that HOSP accounts are allowed access.
+>>> L296: [00:32:56] And so if an account is list as HOSP, even though their PD pass-through, they would still be allowed
+    L297: [00:33:03] access just because the manufacturers let us know. So I wonder if that's the reason because
+
+Line 299 (Matched: hosp):
+    L298: [00:33:10] then it would I guess incorrectly classify them as uneligible, but if you could,
+>>> L299: [00:33:19] how will they or HOSP or you could tell it they were HOSP by something in the data then you could
+    L300: [00:33:25] definitely do it. Yeah, I mean it's not reading the language, it's just taking the values, so I guess
+
+Line 302 (Matched: hosp):
+    L301: [00:33:31] yeah. Yeah, it's just OP, that's the COT, right? That is the, it's kind of like their GPO.
+>>> L302: [00:33:45] Sanctuary hospital system outpatient and it's normally not listed anywhere in here, but if you go
+    L303: [00:33:52] into, if you go into SAP, it's listed in their account information in there. So it's definitely
+
+Line 304 (Matched: hoso):
+    L303: [00:33:52] into, if you go into SAP, it's listed in their account information in there. So it's definitely
+>>> L304: [00:33:59] the table somewhere where we can tell if they're HOSO, peer or not. Okay, so you checked last time
+    L305: [00:34:09] you checked in buying group, that's the thing. So that's that's the tell if they're that was the
+
+Line 305 (Matched: buying\s*group):
+    L304: [00:33:59] the table somewhere where we can tell if they're HOSO, peer or not. Okay, so you checked last time
+>>> L305: [00:34:09] you checked in buying group, that's the thing. So that's that's the tell if they're that was the
+    L306: [00:34:16] one of these accounts was premiered GPO. And that there was that one. Let's see. That was for this
+
+Line 309 (Matched: buying\s*group):
+    L308: [00:34:35] which is by not like by working through these, I know that means that they are either premier
+>>> L309: [00:34:40] Innovative's GPO. And so just to check that one quick, I can tell by since they're buying group
+    L310: [00:34:47] is null that they're not part of that GPO. And what does by I prime mean? So why why prime? I'm
+
+Line 310 (Matched: prime):
+    L309: [00:34:40] Innovative's GPO. And so just to check that one quick, I can tell by since they're buying group
+>>> L310: [00:34:47] is null that they're not part of that GPO. And what does by I prime mean? So why why prime? I'm
+    L311: [00:35:01] not sure where the name comes from. But it's basically just the number value for their BU.
+
+Line 316 (Matched: prime):
+    L315: [00:35:39] just like the number version of it. That's what I was thinking to check if it accounts PD pass through.
+>>> L316: [00:35:48] You could just look out the Y Y prime. And if it's 06, then you could classify it as PD pass through.
+    L317: [00:35:57] Okay, what other why I prime you work with like PD pass through. Is there any else that we work with
+
+Line 317 (Matched: prime):
+    L316: [00:35:48] You could just look out the Y Y prime. And if it's 06, then you could classify it as PD pass through.
+>>> L317: [00:35:57] Okay, what other why I prime you work with like PD pass through. Is there any else that we work with
+    L318: [00:36:05] constantly? 07 and 05 are the other two I believe. Okay. So I mean just like you explain me what
+
+Line 320 (Matched: prime):
+    L319: [00:36:17] is PD pass through. Can you explain me as well? Yeah, so 07 is SPD only.
+>>> L320: [00:36:26] And then 05 I believe is PD only. Okay. And we're getting some new changes under by the prime.
+    L321: [00:36:37] What is that? So they just I don't know. I honestly don't know much about it. But it used to be
+
+Line 323 (Matched: prime):
+    L322: [00:36:46] that their primary BU was a number. And then there was a change maybe like two months ago to where
+>>> L323: [00:36:54] they separated out to a new column called Y Y prime. And then primary BU became like the text
+    L324: [00:37:03] version of it. I don't know why they did it or what the reason is. I think that maybe it's just
+
+
+--- CATEGORY: PDP & Ordering Platforms (12 matches) ---
+Line 19 (Matched: visibility):
+    L18: [00:01:06] download this.
+>>> L19: [00:01:22] So the onboarding means the onboarding of the customer to the rules and visibility rules or
+    L20: [00:01:36] what exactly on board. Sorry, I am like internet just cut out. I don't know what it is that
+
+Line 331 (Matched: pdp):
+    L330: [00:38:09] to if you're if you need time. Can I just up to you? Yeah. This last thing I had a question.
+>>> L331: [00:38:18] What is PDP means? I mean how if you can explain me about that as well.
+    L332: [00:38:27] Sorry you said PDP. Oh PDP. Yeah. Yeah. So PDP is it's kind of just here on me.
+
+Line 332 (Matched: pdp):
+    L331: [00:38:18] What is PDP means? I mean how if you can explain me about that as well.
+>>> L332: [00:38:27] Sorry you said PDP. Oh PDP. Yeah. Yeah. So PDP is it's kind of just here on me.
+    L333: [00:38:39] We open this. So whenever we update a account with eligibility it's not fully eligible on our end
+
+Line 334 (Matched: pdp):
+    L333: [00:38:39] We open this. So whenever we update a account with eligibility it's not fully eligible on our end
+>>> L334: [00:38:52] but for it to be eligible the customers end it has to be present in PDP which is just like a I think it's
+    L335: [00:38:59] I'm not an expert on it but I'm pretty sure it's just like a master table that has all of the
+
+Line 338 (Matched: pdp):
+    L337: [00:39:11] an account to be eligible on SAP. It usually takes 10 to 15 minutes and then it'll that accounts
+>>> L338: [00:39:19] in combinations PDP will show up in the PDP table which means that now it's it's showing it
+    L339: [00:39:26] all systems and it'll be available in the ordering platform. Okay. Yeah. So the way that we kind
+
+Line 339 (Matched: platform):
+    L338: [00:39:19] in combinations PDP will show up in the PDP table which means that now it's it's showing it
+>>> L339: [00:39:26] all systems and it'll be available in the ordering platform. Okay. Yeah. So the way that we kind
+    L340: [00:39:35] of tell if an account is going to be because sometimes people reach out to us and they'll say this
+
+Line 341 (Matched: pdp):
+    L340: [00:39:35] of tell if an account is going to be because sometimes people reach out to us and they'll say this
+>>> L341: [00:39:40] accounts not eligible and then we'll recheck out to them and say it's showing eligible but PDP
+    L342: [00:39:47] is not available yet and our process with that is we reach out to the PDP run team and then they
+
+Line 342 (Matched: pdp, run\s*team):
+    L341: [00:39:40] accounts not eligible and then we'll recheck out to them and say it's showing eligible but PDP
+>>> L342: [00:39:47] is not available yet and our process with that is we reach out to the PDP run team and then they
+    L343: [00:39:55] just kind of manually force it into the PDP e-table which makes it eligible for the customer.
+
+Line 343 (Matched: pdp):
+    L342: [00:39:47] is not available yet and our process with that is we reach out to the PDP run team and then they
+>>> L343: [00:39:55] just kind of manually force it into the PDP e-table which makes it eligible for the customer.
+    L344: [00:40:02] Okay. Okay. So do we have any table for that like the T-code or?
+
+Line 345 (Matched: pdp):
+    L344: [00:40:02] Okay. Okay. So do we have any table for that like the T-code or?
+>>> L345: [00:40:08] Yeah, right here. So I can go ahead and send this to you. So this is the PDP T-code and
+    L346: [00:40:16] be really just search, let me see if I search just this account and I should search right there
+
+Line 347 (Matched: pdp):
+    L346: [00:40:16] be really just search, let me see if I search just this account and I should search right there
+>>> L347: [00:40:24] this will show me all Sins that are in PDP for this account. So these are by theory these are all
+    L348: [00:40:31] the eligible Sins for the customer. But if I the way that we want me to look up stuff is just
+
+Line 351 (Matched: pdp):
+    L350: [00:40:46] SAP are normal T-code, exclusion else T-code, we come here second to double check that's present
+>>> L351: [00:40:53] in PDP and sets present we know that the issue is not an R-ed
+    L352: [00:41:00] because once it's here then we've done everything that we can and it's all perfect.
+
+
+--- CATEGORY: Special exceptions & PR (14 matches) ---
+Line 173 (Matched: alternate):
+    L172: [00:20:05] the reason we use NDC is because we like to check all sends under each NDC. And we have this
+>>> L173: [00:20:11] column over here that has an alternate send that's eligible. And so if the send is eligible in the
+    L174: [00:20:18] workflow, it'll check other sends under that same NDC. And if one of them is eligible, it'll put
+
+Line 176 (Matched: alternate):
+    L175: [00:20:25] it in this column for us. And so what I always do when I start is I filter this to just where there
+>>> L176: [00:20:31] is an eligible alternate. And then I come over here and I just, I just make note of that and I say
+    L177: [00:20:41] alternate send available. How does it find the alternate CIN and the workflow?
+
+Line 177 (Matched: alternate):
+    L176: [00:20:31] is an eligible alternate. And then I come over here and I just, I just make note of that and I say
+>>> L177: [00:20:41] alternate send available. How does it find the alternate CIN and the workflow?
+    L178: [00:20:51] Yep. So it looks at the, it takes the account and then it takes the NDC and it basically looks at
+
+Line 179 (Matched: alternate):
+    L178: [00:20:51] Yep. So it looks at the, it takes the account and then it takes the NDC and it basically looks at
+>>> L179: [00:21:01] every single send under that NDC. And it finds which one is alternate or which one is eligible. And
+    L180: [00:21:10] if that eligible send is under an NDC that has multiple sends under the NDC, then it's considered
+
+Line 181 (Matched: alternate):
+    L180: [00:21:10] if that eligible send is under an NDC that has multiple sends under the NDC, then it's considered
+>>> L181: [00:21:19] an alternate send that's available. I don't know. It's kind of clunky to explain. And they find that from
+    L182: [00:21:28] which file? From the, the local report. I believe we used or the tablwork report.
+
+Line 186 (Matched: alternate):
+    L185: [00:21:50] Yep. And so this file just contains all of our NDCs and all sends. And so it just uses that one.
+>>> L186: [00:21:57] Yep. And so I put that in this first column. Just that there's an alternate send available.
+    L187: [00:22:05] And then the second one, I actually just put eligibility reason one. So that way they know why
+
+Line 188 (Matched: alternate):
+    L187: [00:22:05] And then the second one, I actually just put eligibility reason one. So that way they know why
+>>> L188: [00:22:11] we're suggesting an alternate send. Yep. There we go. And then
+    L189: [00:22:23] then filter everything. Then go back to the ones I haven't worked. And that takes a lot
+
+Line 197 (Matched: prison):
+    L196: [00:23:22] All right. So that's all the easy ones out of the way. And so now we have to do the ones that take a
+>>> L197: [00:23:29] little bit more looking. And so this one says it's a prison facility exclusion.
+    L198: [00:23:37] And with any prison facility exclusion or inclusion, our team is not able to assist with that.
+
+Line 198 (Matched: prison):
+    L197: [00:23:29] little bit more looking. And so this one says it's a prison facility exclusion.
+>>> L198: [00:23:37] And with any prison facility exclusion or inclusion, our team is not able to assist with that.
+    L199: [00:23:44] So we always just refer them to reach out to the prison team.
+
+Line 199 (Matched: prison):
+    L198: [00:23:37] And with any prison facility exclusion or inclusion, our team is not able to assist with that.
+>>> L199: [00:23:44] So we always just refer them to reach out to the prison team.
+    L200: [00:23:48] And we have a lot of scenarios like that. Call it out in this spreadsheet.
+
+Line 201 (Matched: prison):
+    L200: [00:23:48] And we have a lot of scenarios like that. Call it out in this spreadsheet.
+>>> L201: [00:23:56] And so I just control F and just look for prison. It looks like it's starting to cheat.
+    L202: [00:24:02] So we have a second one too. And it looks like it's right here. Any prison restricted code.
+
+Line 202 (Matched: prison):
+    L201: [00:23:56] And so I just control F and just look for prison. It looks like it's starting to cheat.
+>>> L202: [00:24:02] So we have a second one too. And it looks like it's right here. Any prison restricted code.
+    L203: [00:24:09] We just copy and paste that. And then this first one, I believe we just put the code information.
+
+Line 205 (Matched: prison):
+    L204: [00:24:19] And so that way, whatever we're sending, whatever we're sending this to, when they see
+>>> L205: [00:24:25] prison restricted, they should know that they need to reach out to the prison team.
+    L206: [00:24:29] Yeah.
+
+Line 208 (Matched: sequestered):
+    L207: [00:24:32] And then this one, this one says that
+>>> L208: [00:24:41] is a sequestered sent. And we are not able to do anything about sequestered since.
+    L209: [00:24:48] And so I'll go back to that same sheet. And I believe here we go.
+
+
+--- CATEGORY: SharePoint & Web=0 (4 matches) ---
+Line 48 (Matched: sharepoint):
+    L47: [00:04:59] um, here, let me actually just delete this and I'll explain it. So this is our file that we
+>>> L48: [00:05:08] input to all tricks. And this comes from our SharePoint. Oh, this little control bar.
+    L49: [00:05:15] There we go. So if you could, our SharePoint.
+
+Line 49 (Matched: sharepoint):
+    L48: [00:05:08] input to all tricks. And this comes from our SharePoint. Oh, this little control bar.
+>>> L49: [00:05:15] There we go. So if you could, our SharePoint.
+    L50: [00:05:19] And then, um, in our LEI SharePoint, we have this onboarding folder. And then we have this workflow folder
+
+Line 50 (Matched: sharepoint):
+    L49: [00:05:15] There we go. So if you could, our SharePoint.
+>>> L50: [00:05:19] And then, um, in our LEI SharePoint, we have this onboarding folder. And then we have this workflow folder
+    L51: [00:05:31] within that. And this contains all of the relevant Excel files that we use. And so, um, this
+
+Line 217 (Matched: mapping\s*file):
+    L216: [00:25:22] Three or 30,000 in three. I'll have to go see if this account can have access.
+>>> L217: [00:25:27] And so the way that we do that is looking at the mapping file.
+    L218: [00:25:32] And we'll need to look at the all customer report as well.
+
+
+
+==================================================
+FILE: 20251202_123515_transcript.txt (61 lines)
+==================================================
+
+--- CATEGORY: T-Codes & SAP Systems (1 matches) ---
+Line 40 (Matched: t\s*code):
+    L39: [00:02:15] Until we'll just grab the the not where we're going
+>>> L40: [00:02:21] And then I'll come over to the exclusion analysis t code
+    L41: [00:02:28] But then the send
+
+
+
+==================================================
+FILE: 20251202_124555_transcript.txt (664 lines)
+==================================================
+
+--- CATEGORY: T-Codes & SAP Systems (2 matches) ---
+Line 68 (Matched: t-?code, gcul):
+    L67: [00:05:40] And so to add an account to customer list, there's two ways you can do it.
+>>> L68: [00:05:44] We can either use this T-code, this GCUL, I'm setting for a table.
+    L69: [00:05:51] But I find that this, whenever you switch to customer list in here,
+
+Line 77 (Matched: t-?code):
+    L76: [00:06:29] And I save that.
+>>> L77: [00:06:31] And then if I go back into here, there's a customer list upload T-code.
+    L78: [00:06:36] And if I go here, and I fill it up with the presentation server, Excel,
+
+
+--- CATEGORY: REMS Blocks & Errors (11 matches) ---
+Line 276 (Matched: rems, brems):
+    L275: [00:21:14] And then I grab the account.
+>>> L276: [00:21:20] Okay, it says brems failed.
+    L277: [00:21:22] Remstruct failed.
+
+Line 277 (Matched: rems):
+    L276: [00:21:20] Okay, it says brems failed.
+>>> L277: [00:21:22] Remstruct failed.
+    L278: [00:21:24] And so this is different than whenever we see block wide inclusion,
+
+Line 280 (Matched: rems, brems):
+    L279: [00:21:27] we know that nothing out of ordinary is going wrong.
+>>> L280: [00:21:30] But this is brems failed and we are not able to help with that.
+    L281: [00:21:35] So if I go to the response sheet,
+
+Line 282 (Matched: rems):
+    L281: [00:21:35] So if I go to the response sheet,
+>>> L282: [00:21:39] all search and see if there's a remstruct here.
+    L283: [00:21:42] Okay, here we go.
+
+Line 284 (Matched: rems):
+    L283: [00:21:42] Okay, here we go.
+>>> L284: [00:21:43] So this is what we send if it's remstailed.
+    L285: [00:21:46] Let's go ahead and copy that.
+
+Line 291 (Matched: rems, brems):
+    L290: [00:22:01] Yep.
+>>> L291: [00:22:04] And I'll classify this one as brems.
+    L292: [00:22:07] And then close to complete it.
+
+Line 293 (Matched: rems):
+    L292: [00:22:07] And then close to complete it.
+>>> L293: [00:22:11] And I'll say remstilled.
+    L294: [00:22:14] Over this ram, it's been for?
+
+Line 296 (Matched: rems):
+    L295: [00:22:16] Oh.
+>>> L296: [00:22:18] I'm not exactly sure what remst stands for,
+    L297: [00:22:22] but it's a separate team that handles specific drugs.
+
+Line 303 (Matched: rems):
+    L302: [00:22:48] talent protection from customers accessing items.
+>>> L303: [00:22:51] So if there's a remst item, they have to be approved by the remst team for access.
+    L304: [00:22:57] And so, of course, we can't update somebody with remst eligibility.
+
+Line 304 (Matched: rems):
+    L303: [00:22:51] So if there's a remst item, they have to be approved by the remst team for access.
+>>> L304: [00:22:57] And so, of course, we can't update somebody with remst eligibility.
+    L305: [00:23:01] They have to on their end.
+
+Line 306 (Matched: rems):
+    L305: [00:23:01] They have to on their end.
+>>> L306: [00:23:02] So whenever we just see anything is blocked by a remst,
+    L307: [00:23:06] we know that we're good to just refer them toward with their team.
+
+
+--- CATEGORY: Pfizer & Genentech Restrictions (21 matches) ---
+Line 20 (Matched: pfizer, genentech):
+    L19: [00:01:16] this shows S, so that'll be set to vendor.
+>>> L20: [00:01:20] But sometimes with, it's only with two tech products, Pfizer and Genentech,
+    L21: [00:01:30] we never send requests to either of them.
+
+Line 31 (Matched: pfizer):
+    L30: [00:02:16] And so to check if they're on the roster, we just come to this inclusion rosters tab,
+>>> L31: [00:02:21] which shows all of the accounts that are approved by Pfizer.
+    L32: [00:02:31] This one takes it.
+
+Line 36 (Matched: the\s*max):
+    L35: [00:02:41] just because sometimes this likes to take its time.
+>>> L36: [00:02:50] So if I type in the product, which has been the max, here it is.
+    L37: [00:02:59] And then I will just go ahead and search their DA.
+
+Line 41 (Matched: pfizer):
+    L40: [00:03:17] And so I'll just go back to that email.
+>>> L41: [00:03:21] And then I have a quick response to 8 to 4 Pfizer.
+    L42: [00:03:26] We have our list of,
+
+Line 45 (Matched: pfizer):
+    L44: [00:03:37] kind of, or mad responses.
+>>> L45: [00:03:40] And if I scroll down here, there should be one for Pfizer.
+    L46: [00:03:44] Yep.
+
+Line 47 (Matched: pfizer):
+    L46: [00:03:44] Yep.
+>>> L47: [00:03:44] So this is our Pfizer one, so I'll copy that.
+    L48: [00:03:55] And then I will put in the account numbers.
+
+Line 50 (Matched: pfizer, the\s*max):
+    L49: [00:04:07] Oops.
+>>> L50: [00:04:12] Okay, these two accounts are not approved by Pfizer or the max.
+    L51: [00:04:21] And then a digital set against take for Pfizer is we have to send them
+
+Line 51 (Matched: pfizer):
+    L50: [00:04:12] Okay, these two accounts are not approved by Pfizer or the max.
+>>> L51: [00:04:21] And then a digital set against take for Pfizer is we have to send them
+    L52: [00:04:26] Pfizer provided us with the PDF that has all the contact information,
+
+Line 52 (Matched: pfizer):
+    L51: [00:04:21] And then a digital set against take for Pfizer is we have to send them
+>>> L52: [00:04:26] Pfizer provided us with the PDF that has all the contact information,
+    L53: [00:04:29] so we just insert that file.
+
+Line 100 (Matched: pfizer):
+    L99: [00:08:20] we actually have to save that email.
+>>> L100: [00:08:24] And we have to do this because Pfizer was sending us some questions saying how did this
+    L101: [00:08:29] account get access? And it was from two years ago.
+
+Line 196 (Matched: pfizer):
+    L195: [00:15:10] Build to that.
+>>> L196: [00:15:13] All right, it says send a vendor and it is not genitech or Pfizer,
+    L197: [00:15:19] so that means we can actually send it to the vendor.
+
+Line 535 (Matched: genentech):
+    L534: [00:38:44] All right, and so it says ads for sole error.
+>>> L535: [00:38:46] But Genentech is one of those two companies that we can't send the request to.
+    L536: [00:38:53] And so this says that, and it says that there are approved accounts listed on the sole error tab.
+
+Line 547 (Matched: genentech):
+    L546: [00:39:47] And I'll say for sole error.
+>>> L547: [00:39:54] And then we have a saved response for Genentech.
+    L548: [00:39:57] So there are responses.
+
+Line 549 (Matched: genentech):
+    L548: [00:39:57] So there are responses.
+>>> L549: [00:39:59] And copy this Genentech section.
+    L550: [00:40:05] That's just the manufacturer.
+
+Line 581 (Matched: camera):
+    L580: [00:41:40] All right.
+>>> L581: [00:41:40] And so the last part is a camera.
+    L582: [00:41:45] So I'll put it in.
+
+Line 585 (Matched: camera):
+    L584: [00:41:50] Okay.
+>>> L585: [00:41:50] Infusion center, camera.
+    L586: [00:41:52] It's a bug.
+
+Line 590 (Matched: solar):
+    L589: [00:42:02] And so this will just fall into the exact same
+>>> L590: [00:42:06] category as the solar.
+    L591: [00:42:08] If it's not on the roster, then we send in that response.
+
+Line 592 (Matched: camera):
+    L591: [00:42:08] If it's not on the roster, then we send in that response.
+>>> L592: [00:42:11] And so search a camera.
+    L593: [00:42:18] And then I'll search for DEA.
+
+Line 595 (Matched: camera):
+    L594: [00:42:25] No, there are no matches.
+>>> L595: [00:42:26] So I can just add this on here and say for exo-lularic and a camera.
+    L596: [00:42:31] So that way they know that this is the condition for both of those products.
+
+Line 603 (Matched: solar):
+    L602: [00:42:53] I'll just say,
+>>> L603: [00:42:55] solar,
+    L604: [00:42:57] and a camera.
+
+Line 604 (Matched: camera):
+    L603: [00:42:55] solar,
+>>> L604: [00:42:57] and a camera.
+    L605: [00:42:59] He goes denied.
+
+
+--- CATEGORY: Alteryx & Cartesian Joins (5 matches) ---
+Line 12 (Matched: hosp):
+    L11: [00:00:35] And then we'll be doing this so it shows the SPD accounts.
+>>> L12: [00:00:40] And so it looks like they are all, they're both hospital accounts, once 340 B,
+    L13: [00:00:47] which we can tell by this industry 3402. Anything with the 340 B340 B.
+
+Line 16 (Matched: hosp):
+    L15: [00:00:58] So sometimes that's good to know because some of our rules will say,
+>>> L16: [00:01:03] it will specify 340 B hospital accounts in that access.
+    L17: [00:01:08] And so you have to come check this form.
+
+Line 18 (Matched: hosp):
+    L17: [00:01:08] And so you have to come check this form.
+>>> L18: [00:01:11] Okay. So if we change the cost of trade down to hospital,
+    L19: [00:01:16] this shows S, so that'll be set to vendor.
+
+Line 228 (Matched: hosp):
+    L227: [00:17:30] bomb down,
+>>> L228: [00:17:33] and it looks like they said this is hospital in this column, and that is the last one that is filled out.
+    L229: [00:17:42] So that'll, yeah.
+
+Line 366 (Matched: hosp):
+    L365: [00:26:57] is kind of a better type of.
+>>> L366: [00:27:01] Okay, hospital owned no and it is not
+    L367: [00:27:05] 340 beer.
+
+
+--- CATEGORY: Email Auditing & Retention (2 matches) ---
+Line 102 (Matched: outlook):
+    L101: [00:08:29] account get access? And it was from two years ago.
+>>> L102: [00:08:32] And our outlook only keeps that there are emails from one year.
+    L103: [00:08:36] And so we're, they have a process change where we have to start saving.
+
+Line 501 (Matched: audit):
+    L500: [00:36:32] That is because we can just close it as undefined.
+>>> L501: [00:36:35] Because if it's undefined, then we won't audit it.
+    L502: [00:36:38] And we don't really care about it.
+
+
+--- CATEGORY: SharePoint & Web=0 (2 matches) ---
+Line 6 (Matched: mapping\s*file):
+    L5: 
+>>> L6: [00:00:00] Then we're looking for on the SPD mapping file and our next step would be to look up the account
+    L7: [00:00:09] of the account formation to see if they fit the criteria for access.
+
+Line 34 (Matched: mapping\s*file):
+    L33: [00:02:32] I should have two tabs open, I'll duplicate this.
+>>> L34: [00:02:35] I have to keep one that we found tab open with the roster one with the mapping file,
+    L35: [00:02:41] just because sometimes this likes to take its time.
+
+
+
+==================================================
+FILE: 20251203_135232_transcript.txt (32 lines)
+==================================================
+
+
+==================================================
+FILE: 20251215_110307_transcript.txt (191 lines)
+==================================================
+
+--- CATEGORY: REMS Blocks & Errors (2 matches) ---
+Line 17 (Matched: check\s*failed):
+    L16: [00:01:00] We'll have both of them in the account and we'll check it.
+>>> L17: [00:01:04] Okay, so the return message here is revs check failed.
+    L18: [00:01:10] And so we are not able to do anything for that, but before I respond back to her or look more into it, I'll go ahead and check the second account too.
+
+Line 20 (Matched: check\s*failed):
+    L19: [00:01:20] Just to see if that's the same.
+>>> L20: [00:01:24] Alright, okay, so both accounts say revs check failed.
+    L21: [00:01:28] And to see what we say back here, I'll just go to our response sheet.
+
+
+--- CATEGORY: Pfizer & Genentech Restrictions (1 matches) ---
+Line 66 (Matched: solar):
+    L65: [00:06:41] So this is a new account.
+>>> L66: [00:06:44] Okay, so it's same same same same class of trade and it's blocked by glues and solar supply with the same thing.
+    L67: [00:07:06] Oh, it's close out.
+
+
+--- CATEGORY: Alteryx & Cartesian Joins (8 matches) ---
+Line 37 (Matched: hosp):
+    L36: [00:03:12] Alright, now it's the account's class of trade now to see if it's approved.
+>>> L37: [00:03:36] Okay, so if I scroll over to class of very customer one, this is hospital class of trade.
+    L38: [00:03:42] It's now filtered to the teplo.
+
+Line 39 (Matched: hosp):
+    L38: [00:03:42] It's now filtered to the teplo.
+>>> L39: [00:03:44] It's already on hospital perfect.
+    L40: [00:03:47] And there's an X there.
+
+Line 41 (Matched: hosp):
+    L40: [00:03:47] And there's an X there.
+>>> L41: [00:03:49] So we know that this account is ineligible due to having a class of trade of hospital.
+    L42: [00:03:55] There's nothing that can be done.
+
+Line 54 (Matched: hosp):
+    L53: [00:04:56] And now let's go ahead and put this new account to find their class of trade.
+>>> L54: [00:05:04] Alright, this looks like this is also hospital class of trade and it's the same send so we'll just fly back the same thing.
+    L55: [00:05:16] And it should be so for these request that are straight out the night with an X, we've actually given all of these people away to this tablo.
+
+Line 118 (Matched: hosp):
+    L117: [00:11:14] Yeah.
+>>> L118: [00:11:15] So this is a hospital class of trade customer one.
+    L119: [00:11:18] And so we'll go ahead and find the account class of trade.
+
+Line 121 (Matched: hosp):
+    L120: [00:11:21] Okay.
+>>> L121: [00:11:23] So this is a hospital class of trade customer one.
+    L122: [00:11:26] And so now we will go back to here.
+
+Line 127 (Matched: hosp):
+    L126: [00:11:40] And so if I just be here, I'll probably just go in a little bit.
+>>> L127: [00:11:45] So since the sales are committed to these specific hospital customers, V.A., D.O.D., Kaiser, or any retail pharmacy operated by hospital that is associated with an NCI or the vendors.
+    L128: [00:12:00] Okay.
+
+Line 130 (Matched: hosp):
+    L129: [00:12:01] So we go here to see if they're V.A., or D.O.D., it'll usually not end up their name, say, V.A.
+>>> L130: [00:12:10] And it does not look like their V.A., or D.O.D., and so what we'll do here now is since we can't see if they're all the conditions like if they are retail pharmacy operated by hospital, that's associated with an NCI.
+    L131: [00:12:32] We can't find that on our own.
+

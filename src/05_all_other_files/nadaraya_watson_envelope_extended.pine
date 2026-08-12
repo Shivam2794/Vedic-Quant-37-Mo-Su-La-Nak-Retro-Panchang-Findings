@@ -1,0 +1,160 @@
+// This work is licensed under a Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) https://creativecommons.org/licenses/by-nc-sa/4.0/
+// © LuxAlgo
+
+//@version=5
+indicator("Nadaraya-Watson Envelope [LuxAlgo] - Extended", "LuxAlgo - Nadaraya-Watson Envelope (Extended)", overlay = true, max_lines_count = 500, max_labels_count = 500, max_bars_back=1000)
+//------------------------------------------------------------------------------
+//Settings
+//-----------------------------------------------------------------------------{
+h = input.float(8., 'Bandwidth', minval = 0)
+mult = input.float(3., minval = 0)
+src = input(close, 'Source')
+
+repaint = input(true, 'Repainting Smoothing', tooltip = 'Repainting is an effect where the indicators historical output is subject to change over time. Disabling repainting will cause the indicator to output the endpoints of the calculations')
+lag = input.int(100, 'Repainting Lag', minval = 10, maxval = 500, tooltip = 'Controls the historical window offset for repainting. Larger values increase historical accuracy but use more resources.')
+
+//Style
+upCss = input.color(color.teal, 'Colors', inline = 'inline1', group = 'Style')
+dnCss = input.color(color.red, '', inline = 'inline1', group = 'Style')
+
+//-----------------------------------------------------------------------------}
+//Functions
+//-----------------------------------------------------------------------------{
+//Gaussian window
+gauss(x, h) => math.exp(-(math.pow(x, 2)/(h * h * 2)))
+
+//-----------------------------------------------------------------------------}
+//End point method (Non-repainting)
+//-----------------------------------------------------------------------------{
+var coefs = array.new_float(0)
+var den = 0.
+
+if barstate.isfirst and not repaint
+    for i = 0 to 499
+        w = gauss(i, h)
+        coefs.push(w)
+
+    den := coefs.sum()
+
+out = 0.
+if not repaint
+    for i = 0 to 499
+        out += src[i] * coefs.get(i)
+out /= den
+mae = ta.sma(math.abs(src - out), 499) * mult
+
+upper_nonrepaint = out + mae
+lower_nonrepaint = out - mae
+
+//-----------------------------------------------------------------------------}
+// Centered / Repainting Method using Plot + Offset
+//-----------------------------------------------------------------------------{
+float nwe_target = na
+
+if repaint and bar_index >= lag
+    sum = 0.
+    sumw = 0.
+    for k = 0 to 2 * lag
+        w = gauss(lag - k, h)
+        sum += src[k] * w
+        sumw += w
+    nwe_target := sum / sumw
+
+// Dynamic MAE calculation for historical data (placed outside the conditional block to avoid warnings)
+abs_err = repaint and bar_index >= lag ? math.abs(src[lag] - nwe_target) : na
+mae_target = ta.sma(abs_err, 499) * mult
+
+//-----------------------------------------------------------------------------}
+// Real-time End-of-Chart Drawings for Repainting Mode
+//-----------------------------------------------------------------------------{
+var upper_lines = array.new_line(0)
+var lower_lines = array.new_line(0)
+var label_crossings = array.new_label(0)
+
+if barstate.islast and repaint
+    // Delete existing lines
+    if array.size(upper_lines) > 0
+        for i = 0 to array.size(upper_lines) - 1
+            line.delete(array.get(upper_lines, i))
+            line.delete(array.get(lower_lines, i))
+    array.clear(upper_lines)
+    array.clear(lower_lines)
+
+    // Delete existing labels
+    if array.size(label_crossings) > 0
+        for i = 0 to array.size(label_crossings) - 1
+            label.delete(array.get(label_crossings, i))
+    array.clear(label_crossings)
+
+    float y2 = na
+    nwe_vals = array.new<float>(lag + 1)
+    
+    // First, calculate the NWE values for the last lag bars
+    for i = 0 to lag
+        sum = 0.
+        sumw = 0.
+        for j = 0 to math.min(bar_index, i + lag)
+            w = gauss(i - j, h)
+            sum += src[j] * w
+            sumw += w
+        y2 := sum / sumw
+        array.set(nwe_vals, i, y2)
+        
+    // Use the MAE value from the boundary
+    float boundary_mae = not na(mae_target) ? mae_target : (ta.sma(math.abs(src - src[1]), 50) * mult)
+    
+    // Draw the lines connecting the points
+    for i = 0 to lag - 1
+        val_i = array.get(nwe_vals, i)
+        val_next = array.get(nwe_vals, i + 1)
+        
+        array.push(upper_lines, line.new(bar_index - i, val_i + boundary_mae, bar_index - i - 1, val_next + boundary_mae, color = upCss, width = 1))
+        array.push(lower_lines, line.new(bar_index - i, val_i - boundary_mae, bar_index - i - 1, val_next - boundary_mae, color = dnCss, width = 1))
+        
+        // Draw crossing signals for the last lag bars
+        if src[i] > val_i + boundary_mae and src[i+1] <= val_i + boundary_mae
+            array.push(label_crossings, label.new(bar_index - i, src[i], '▼', color = color.new(color.white, 100), style = label.style_label_down, textcolor = dnCss, textalign = text.align_center))
+        if src[i] < val_i - boundary_mae and src[i+1] >= val_i - boundary_mae
+            array.push(label_crossings, label.new(bar_index - i, src[i], '▲', color = color.new(color.white, 100), style = label.style_label_up, textcolor = upCss, textalign = text.align_center))
+
+//-----------------------------------------------------------------------------}
+// Plotting
+//-----------------------------------------------------------------------------{
+// Non-repainting plots
+plot(not repaint ? upper_nonrepaint : na, 'Upper', upCss)
+plot(not repaint ? lower_nonrepaint : na, 'Lower', dnCss)
+
+// Repainting plots (using negative offset to shift the plot back by 'lag' bars)
+plot(repaint ? nwe_target + mae_target : na, 'Upper Repaint', upCss, offset = -lag)
+plot(repaint ? nwe_target - mae_target : na, 'Lower Repaint', dnCss, offset = -lag)
+
+//-----------------------------------------------------------------------------}
+// Crossing Signals (Historical Plotting)
+//-----------------------------------------------------------------------------{
+// Non-repainting signals
+plotshape(not repaint and ta.crossunder(close, out - mae) ? low : na, "Crossunder", shape.labelup, location.absolute, color(na), 0 , text = '▲', textcolor = upCss, size = size.tiny)
+plotshape(not repaint and ta.crossover(close, out + mae) ? high : na, "Crossover", shape.labeldown, location.absolute, color(na), 0 , text = '▼', textcolor = dnCss, size = size.tiny)
+
+// Repainting signals (plotted with offset = -lag)
+upper_tgt = nwe_target + mae_target
+lower_tgt = nwe_target - mae_target
+cross_up = src[lag] > upper_tgt and src[lag + 1] <= upper_tgt
+cross_dn = src[lag] < lower_tgt and src[lag + 1] >= lower_tgt
+
+plotshape(repaint and cross_dn ? low[lag] : na, "Repaint Crossunder", shape.labelup, location.absolute, color(na), 0 , text = '▲', textcolor = upCss, size = size.tiny, offset = -lag)
+plotshape(repaint and cross_up ? high[lag] : na, "Repaint Crossover", shape.labeldown, location.absolute, color(na), 0 , text = '▼', textcolor = dnCss, size = size.tiny, offset = -lag)
+
+//-----------------------------------------------------------------------------}
+//Dashboard
+//-----------------------------------------------------------------------------{
+var tb = table.new(position.top_right, 1, 1
+  , bgcolor = #1e222d
+  , border_color = #373a46
+  , border_width = 1
+  , frame_color = #373a46
+  , frame_width = 1)
+
+if repaint
+    tb.cell(0, 0, 'Repainting Mode Enabled (Extended)', text_color = color.white, text_size = size.small)
+
+//-----------------------------------------------------------------------------}

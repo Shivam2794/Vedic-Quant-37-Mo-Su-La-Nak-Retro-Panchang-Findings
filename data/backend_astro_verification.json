@@ -1,0 +1,4322 @@
+{
+    "SPY": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 9,
+                "Moon": 8,
+                "Mars": 9,
+                "Mercury": 9,
+                "Jupiter": 8,
+                "Venus": 10,
+                "Saturn": 10,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 5
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 10,
+                "Moon": 4,
+                "Mars": 1,
+                "Mercury": 10,
+                "Jupiter": 2,
+                "Venus": 9,
+                "Saturn": 2,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 5
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 6,
+                "Moon": 1,
+                "Mars": 9,
+                "Mercury": 6,
+                "Jupiter": 11,
+                "Venus": 1,
+                "Saturn": 7,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 10
+            },
+            "Ashtakvarga_Total_Per_House": [
+                23,
+                29,
+                30,
+                29,
+                21,
+                31,
+                41,
+                38,
+                27,
+                20,
+                26,
+                20
+            ],
+            "Dasha_At_Birth": "Venus-Venus-Venus"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 9,
+                "Moon": 0,
+                "Mars": 2,
+                "Mercury": 9,
+                "Jupiter": 5,
+                "Venus": 11,
+                "Saturn": 9,
+                "Rahu": 7,
+                "Ketu": 1,
+                "Ascendant": 11
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 1,
+                "Moon": 0,
+                "Mars": 11,
+                "Mercury": 3,
+                "Jupiter": 3,
+                "Venus": 3,
+                "Saturn": 4,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 0,
+                "Mars": 7,
+                "Mercury": 11,
+                "Jupiter": 7,
+                "Venus": 7,
+                "Saturn": 1,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 10
+            },
+            "Ashtakvarga_Total_Per_House": [
+                28,
+                26,
+                33,
+                28,
+                30,
+                25,
+                25,
+                32,
+                23,
+                32,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Ketu-Ketu-Ketu"
+        }
+    },
+    "QQQ": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 3,
+                "Moon": 9,
+                "Mars": 2,
+                "Mercury": 4,
+                "Jupiter": 11,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 0
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 9,
+                "Moon": 11,
+                "Mars": 2,
+                "Mercury": 0,
+                "Jupiter": 4,
+                "Venus": 2,
+                "Saturn": 2,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 7
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 5,
+                "Moon": 7,
+                "Mars": 11,
+                "Mercury": 4,
+                "Jupiter": 8,
+                "Venus": 11,
+                "Saturn": 3,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                34,
+                24,
+                31,
+                28,
+                24,
+                24,
+                25,
+                26,
+                26,
+                36,
+                34,
+                23
+            ],
+            "Dasha_At_Birth": "Sun-Sun-Sun"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 10,
+                "Moon": 7,
+                "Mars": 6,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 11,
+                "Saturn": 0,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 1
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 1,
+                "Moon": 11,
+                "Mars": 11,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 11,
+                "Saturn": 2,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 6,
+                "Moon": 0,
+                "Mars": 11,
+                "Mercury": 10,
+                "Jupiter": 11,
+                "Venus": 3,
+                "Saturn": 2,
+                "Rahu": 7,
+                "Ketu": 1,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                21,
+                25,
+                22,
+                33,
+                37,
+                23,
+                26,
+                27,
+                31,
+                37,
+                30,
+                23
+            ],
+            "Dasha_At_Birth": "Mercury-Mercury-Mercury"
+        }
+    },
+    "DIA": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 6,
+                "Mars": 5,
+                "Mercury": 3,
+                "Jupiter": 9,
+                "Venus": 3,
+                "Saturn": 11,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 9,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 4,
+                "Venus": 10,
+                "Saturn": 10,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 11,
+                "Moon": 9,
+                "Mars": 7,
+                "Mercury": 4,
+                "Jupiter": 1,
+                "Venus": 7,
+                "Saturn": 3,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 3
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                34,
+                25,
+                26,
+                24,
+                27,
+                29,
+                31,
+                36,
+                24,
+                20,
+                32
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 9,
+                "Moon": 6,
+                "Mars": 10,
+                "Mercury": 8,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 11,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 10,
+                "Moon": 7,
+                "Mars": 6,
+                "Mercury": 5,
+                "Jupiter": 6,
+                "Venus": 8,
+                "Saturn": 9,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 1
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 7,
+                "Moon": 7,
+                "Mars": 10,
+                "Mercury": 1,
+                "Jupiter": 10,
+                "Venus": 5,
+                "Saturn": 1,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 6
+            },
+            "Ashtakvarga_Total_Per_House": [
+                26,
+                29,
+                20,
+                29,
+                30,
+                25,
+                32,
+                36,
+                37,
+                21,
+                25,
+                25
+            ],
+            "Dasha_At_Birth": "Mars-Mars-Mars"
+        }
+    },
+    "IWM": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 1,
+                "Moon": 8,
+                "Mars": 1,
+                "Mercury": 1,
+                "Jupiter": 0,
+                "Venus": 1,
+                "Saturn": 0,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 4
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 11,
+                "Moon": 7,
+                "Mars": 2,
+                "Mercury": 3,
+                "Jupiter": 8,
+                "Venus": 9,
+                "Saturn": 8,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 11,
+                "Moon": 4,
+                "Mars": 3,
+                "Mercury": 4,
+                "Jupiter": 9,
+                "Venus": 9,
+                "Saturn": 9,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 4
+            },
+            "Ashtakvarga_Total_Per_House": [
+                18,
+                26,
+                26,
+                23,
+                26,
+                28,
+                33,
+                25,
+                24,
+                33,
+                37,
+                36
+            ],
+            "Dasha_At_Birth": "Venus-Venus-Venus"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 1,
+                "Moon": 10,
+                "Mars": 1,
+                "Mercury": 2,
+                "Jupiter": 0,
+                "Venus": 1,
+                "Saturn": 0,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 9,
+                "Mars": 3,
+                "Mercury": 6,
+                "Jupiter": 8,
+                "Venus": 11,
+                "Saturn": 8,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 4
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 0,
+                "Moon": 2,
+                "Mars": 4,
+                "Mercury": 2,
+                "Jupiter": 9,
+                "Venus": 11,
+                "Saturn": 9,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "Ashtakvarga_Total_Per_House": [
+                29,
+                24,
+                22,
+                26,
+                27,
+                25,
+                28,
+                29,
+                32,
+                22,
+                36,
+                35
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        }
+    },
+    "XLK": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLF": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLE": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLV": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLY": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLP": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLU": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLI": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLB": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 7,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                25,
+                36,
+                22,
+                35,
+                29,
+                27,
+                31,
+                28,
+                26,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 7,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 0,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                20,
+                32,
+                30,
+                23,
+                30,
+                35,
+                33,
+                23,
+                29,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "XLRE": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 5,
+                "Moon": 3,
+                "Mars": 4,
+                "Mercury": 5,
+                "Jupiter": 4,
+                "Venus": 4,
+                "Saturn": 7,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 7
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 5,
+                "Mars": 3,
+                "Mercury": 11,
+                "Jupiter": 5,
+                "Venus": 1,
+                "Saturn": 5,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 8
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 7,
+                "Moon": 2,
+                "Mars": 8,
+                "Mercury": 3,
+                "Jupiter": 9,
+                "Venus": 5,
+                "Saturn": 5,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                29,
+                31,
+                37,
+                30,
+                26,
+                33,
+                15,
+                27,
+                25,
+                30,
+                28,
+                24
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 5,
+                "Moon": 4,
+                "Mars": 4,
+                "Mercury": 5,
+                "Jupiter": 4,
+                "Venus": 4,
+                "Saturn": 7,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 6
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 3,
+                "Moon": 0,
+                "Mars": 4,
+                "Mercury": 11,
+                "Jupiter": 5,
+                "Venus": 1,
+                "Saturn": 5,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 7,
+                "Moon": 4,
+                "Mars": 8,
+                "Mercury": 3,
+                "Jupiter": 10,
+                "Venus": 5,
+                "Saturn": 5,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 0
+            },
+            "Ashtakvarga_Total_Per_House": [
+                22,
+                29,
+                43,
+                33,
+                26,
+                25,
+                22,
+                25,
+                24,
+                33,
+                25,
+                28
+            ],
+            "Dasha_At_Birth": "Ketu-Ketu-Ketu"
+        }
+    },
+    "XLC": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 4,
+                "Mars": 9,
+                "Mercury": 2,
+                "Jupiter": 6,
+                "Venus": 3,
+                "Saturn": 8,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 4
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 6,
+                "Moon": 3,
+                "Mars": 1,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 6,
+                "Saturn": 3,
+                "Rahu": 7,
+                "Ketu": 1,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 3,
+                "Moon": 7,
+                "Mars": 9,
+                "Mercury": 7,
+                "Jupiter": 0,
+                "Venus": 2,
+                "Saturn": 0,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                31,
+                30,
+                31,
+                20,
+                33,
+                26,
+                35,
+                29,
+                18,
+                28,
+                25,
+                29
+            ],
+            "Dasha_At_Birth": "Ketu-Ketu-Ketu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 4,
+                "Mars": 9,
+                "Mercury": 2,
+                "Jupiter": 6,
+                "Venus": 3,
+                "Saturn": 8,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 7,
+                "Moon": 6,
+                "Mars": 1,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 6,
+                "Saturn": 3,
+                "Rahu": 7,
+                "Ketu": 1,
+                "Ascendant": 10
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 3,
+                "Moon": 11,
+                "Mars": 9,
+                "Mercury": 8,
+                "Jupiter": 0,
+                "Venus": 3,
+                "Saturn": 0,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 6
+            },
+            "Ashtakvarga_Total_Per_House": [
+                35,
+                31,
+                25,
+                24,
+                31,
+                28,
+                35,
+                26,
+                22,
+                22,
+                27,
+                29
+            ],
+            "Dasha_At_Birth": "Venus-Venus-Venus"
+        }
+    },
+    "SMH": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 5,
+                "Mars": 6,
+                "Mercury": 7,
+                "Jupiter": 1,
+                "Venus": 9,
+                "Saturn": 1,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 11
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 0,
+                "Mars": 6,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 2,
+                "Saturn": 9,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 4
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 9,
+                "Moon": 4,
+                "Mars": 7,
+                "Mercury": 0,
+                "Jupiter": 0,
+                "Venus": 11,
+                "Saturn": 9,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                25,
+                24,
+                25,
+                32,
+                31,
+                26,
+                29,
+                28,
+                26,
+                29,
+                25,
+                35
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 6,
+                "Mars": 6,
+                "Mercury": 8,
+                "Jupiter": 1,
+                "Venus": 9,
+                "Saturn": 1,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 1,
+                "Moon": 8,
+                "Mars": 7,
+                "Mercury": 0,
+                "Jupiter": 11,
+                "Venus": 3,
+                "Saturn": 9,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 9,
+                "Moon": 8,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 0,
+                "Venus": 11,
+                "Saturn": 9,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                26,
+                24,
+                23,
+                33,
+                25,
+                36,
+                31,
+                26,
+                23,
+                27,
+                34
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        }
+    },
+    "XME": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 11,
+                "Mars": 3,
+                "Mercury": 2,
+                "Jupiter": 6,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 4
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 7,
+                "Moon": 8,
+                "Mars": 7,
+                "Mercury": 2,
+                "Jupiter": 10,
+                "Venus": 9,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 3,
+                "Moon": 1,
+                "Mars": 4,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 9,
+                "Saturn": 3,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                34,
+                35,
+                22,
+                21,
+                35,
+                25,
+                29,
+                26,
+                20,
+                33,
+                23,
+                32
+            ],
+            "Dasha_At_Birth": "Mercury-Mercury-Mercury"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 0,
+                "Mars": 3,
+                "Mercury": 3,
+                "Jupiter": 6,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 8,
+                "Moon": 8,
+                "Mars": 8,
+                "Mercury": 3,
+                "Jupiter": 10,
+                "Venus": 10,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 9,
+                "Mars": 4,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 10,
+                "Saturn": 4,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                35,
+                38,
+                19,
+                27,
+                26,
+                33,
+                25,
+                23,
+                28,
+                22,
+                28,
+                31
+            ],
+            "Dasha_At_Birth": "Sun-Sun-Sun"
+        }
+    },
+    "XBI": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 9,
+                "Moon": 10,
+                "Mars": 0,
+                "Mercury": 9,
+                "Jupiter": 6,
+                "Venus": 8,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 1
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 11,
+                "Mars": 8,
+                "Mercury": 3,
+                "Jupiter": 1,
+                "Venus": 6,
+                "Saturn": 7,
+                "Rahu": 7,
+                "Ketu": 1,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 3,
+                "Mars": 9,
+                "Mercury": 0,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                25,
+                34,
+                22,
+                29,
+                30,
+                26,
+                34,
+                29,
+                24,
+                23,
+                29,
+                30
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 9,
+                "Moon": 1,
+                "Mars": 1,
+                "Mercury": 10,
+                "Jupiter": 6,
+                "Venus": 8,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 11
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 4,
+                "Moon": 11,
+                "Mars": 9,
+                "Mercury": 6,
+                "Jupiter": 1,
+                "Venus": 6,
+                "Saturn": 6,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 10
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 0,
+                "Moon": 0,
+                "Mars": 9,
+                "Mercury": 10,
+                "Jupiter": 1,
+                "Venus": 3,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 2
+            },
+            "Ashtakvarga_Total_Per_House": [
+                23,
+                29,
+                27,
+                30,
+                31,
+                21,
+                32,
+                28,
+                27,
+                27,
+                26,
+                34
+            ],
+            "Dasha_At_Birth": "Sun-Sun-Sun"
+        }
+    },
+    "KRE": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 11,
+                "Mars": 3,
+                "Mercury": 2,
+                "Jupiter": 6,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 4
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 7,
+                "Moon": 8,
+                "Mars": 7,
+                "Mercury": 2,
+                "Jupiter": 10,
+                "Venus": 9,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 3,
+                "Moon": 1,
+                "Mars": 4,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 9,
+                "Saturn": 3,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                34,
+                35,
+                22,
+                21,
+                35,
+                25,
+                29,
+                26,
+                20,
+                33,
+                23,
+                32
+            ],
+            "Dasha_At_Birth": "Mercury-Mercury-Mercury"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 0,
+                "Mars": 3,
+                "Mercury": 3,
+                "Jupiter": 6,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 8,
+                "Moon": 8,
+                "Mars": 8,
+                "Mercury": 3,
+                "Jupiter": 10,
+                "Venus": 10,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 9,
+                "Mars": 4,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 10,
+                "Saturn": 4,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                35,
+                38,
+                19,
+                27,
+                26,
+                33,
+                25,
+                23,
+                28,
+                22,
+                28,
+                31
+            ],
+            "Dasha_At_Birth": "Sun-Sun-Sun"
+        }
+    },
+    "XOP": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 11,
+                "Mars": 3,
+                "Mercury": 2,
+                "Jupiter": 6,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 4
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 7,
+                "Moon": 8,
+                "Mars": 7,
+                "Mercury": 2,
+                "Jupiter": 10,
+                "Venus": 9,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 3,
+                "Moon": 1,
+                "Mars": 4,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 9,
+                "Saturn": 3,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                34,
+                35,
+                22,
+                21,
+                35,
+                25,
+                29,
+                26,
+                20,
+                33,
+                23,
+                32
+            ],
+            "Dasha_At_Birth": "Mercury-Mercury-Mercury"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 0,
+                "Mars": 3,
+                "Mercury": 3,
+                "Jupiter": 6,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 8,
+                "Moon": 8,
+                "Mars": 8,
+                "Mercury": 3,
+                "Jupiter": 10,
+                "Venus": 10,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 9,
+                "Mars": 4,
+                "Mercury": 11,
+                "Jupiter": 11,
+                "Venus": 10,
+                "Saturn": 4,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                35,
+                38,
+                19,
+                27,
+                26,
+                33,
+                25,
+                23,
+                28,
+                22,
+                28,
+                31
+            ],
+            "Dasha_At_Birth": "Sun-Sun-Sun"
+        }
+    },
+    "ITB": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 11,
+                "Jupiter": 6,
+                "Venus": 11,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 5,
+                "Moon": 7,
+                "Mars": 10,
+                "Mercury": 11,
+                "Jupiter": 0,
+                "Venus": 4,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 7
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 5,
+                "Moon": 4,
+                "Mars": 7,
+                "Mercury": 4,
+                "Jupiter": 0,
+                "Venus": 8,
+                "Saturn": 2,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 4
+            },
+            "Ashtakvarga_Total_Per_House": [
+                33,
+                30,
+                18,
+                33,
+                32,
+                25,
+                25,
+                29,
+                27,
+                29,
+                28,
+                26
+            ],
+            "Dasha_At_Birth": "Mars-Mars-Mars"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 3,
+                "Mars": 2,
+                "Mercury": 0,
+                "Jupiter": 6,
+                "Venus": 11,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 6,
+                "Moon": 10,
+                "Mars": 11,
+                "Mercury": 1,
+                "Jupiter": 11,
+                "Venus": 5,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 6,
+                "Moon": 7,
+                "Mars": 8,
+                "Mercury": 2,
+                "Jupiter": 0,
+                "Venus": 9,
+                "Saturn": 2,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                32,
+                26,
+                24,
+                26,
+                32,
+                33,
+                21,
+                27,
+                24,
+                29,
+                32,
+                29
+            ],
+            "Dasha_At_Birth": "Mercury-Mercury-Mercury"
+        }
+    },
+    "PAVE": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 10,
+                "Moon": 2,
+                "Mars": 0,
+                "Mercury": 10,
+                "Jupiter": 5,
+                "Venus": 11,
+                "Saturn": 8,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 8,
+                "Mars": 1,
+                "Mercury": 0,
+                "Jupiter": 5,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 9
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 5,
+                "Moon": 4,
+                "Mars": 1,
+                "Mercury": 5,
+                "Jupiter": 10,
+                "Venus": 1,
+                "Saturn": 8,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 6
+            },
+            "Ashtakvarga_Total_Per_House": [
+                37,
+                20,
+                28,
+                34,
+                30,
+                25,
+                26,
+                31,
+                28,
+                26,
+                28,
+                22
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 10,
+                "Moon": 3,
+                "Mars": 0,
+                "Mercury": 10,
+                "Jupiter": 5,
+                "Venus": 11,
+                "Saturn": 8,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 1
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 1,
+                "Moon": 4,
+                "Mars": 1,
+                "Mercury": 1,
+                "Jupiter": 5,
+                "Venus": 8,
+                "Saturn": 0,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 10
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 6,
+                "Moon": 0,
+                "Mars": 1,
+                "Mercury": 6,
+                "Jupiter": 10,
+                "Venus": 1,
+                "Saturn": 9,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                30,
+                25,
+                35,
+                28,
+                25,
+                30,
+                22,
+                33,
+                26,
+                32,
+                22
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        }
+    },
+    "JETS": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 0,
+                "Mercury": 1,
+                "Jupiter": 3,
+                "Venus": 1,
+                "Saturn": 7,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 4,
+                "Moon": 3,
+                "Mars": 7,
+                "Mercury": 9,
+                "Jupiter": 8,
+                "Venus": 4,
+                "Saturn": 5,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 8,
+                "Mars": 8,
+                "Mercury": 9,
+                "Jupiter": 5,
+                "Venus": 5,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 3
+            },
+            "Ashtakvarga_Total_Per_House": [
+                28,
+                33,
+                26,
+                27,
+                20,
+                31,
+                31,
+                22,
+                26,
+                31,
+                34,
+                26
+            ],
+            "Dasha_At_Birth": "Ketu-Ketu-Ketu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 5,
+                "Mars": 0,
+                "Mercury": 1,
+                "Jupiter": 3,
+                "Venus": 1,
+                "Saturn": 7,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 4,
+                "Moon": 10,
+                "Mars": 8,
+                "Mercury": 10,
+                "Jupiter": 8,
+                "Venus": 5,
+                "Saturn": 5,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 10
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 5,
+                "Moon": 2,
+                "Mars": 9,
+                "Mercury": 10,
+                "Jupiter": 5,
+                "Venus": 6,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 6
+            },
+            "Ashtakvarga_Total_Per_House": [
+                29,
+                26,
+                26,
+                31,
+                21,
+                30,
+                26,
+                29,
+                20,
+                30,
+                37,
+                30
+            ],
+            "Dasha_At_Birth": "Sun-Sun-Sun"
+        }
+    },
+    "HACK": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 6,
+                "Moon": 2,
+                "Mars": 8,
+                "Mercury": 6,
+                "Jupiter": 3,
+                "Venus": 6,
+                "Saturn": 7,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 1,
+                "Moon": 9,
+                "Mars": 5,
+                "Mercury": 8,
+                "Jupiter": 11,
+                "Venus": 2,
+                "Saturn": 3,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 10
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 2,
+                "Moon": 5,
+                "Mars": 1,
+                "Mercury": 8,
+                "Jupiter": 8,
+                "Venus": 3,
+                "Saturn": 3,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                29,
+                26,
+                32,
+                26,
+                36,
+                25,
+                26,
+                26,
+                24,
+                26,
+                28,
+                31
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 6,
+                "Moon": 3,
+                "Mars": 8,
+                "Mercury": 6,
+                "Jupiter": 3,
+                "Venus": 7,
+                "Saturn": 7,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 7
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 1,
+                "Moon": 4,
+                "Mars": 5,
+                "Mercury": 9,
+                "Jupiter": 11,
+                "Venus": 3,
+                "Saturn": 3,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 2,
+                "Moon": 0,
+                "Mars": 2,
+                "Mercury": 9,
+                "Jupiter": 8,
+                "Venus": 3,
+                "Saturn": 3,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 0
+            },
+            "Ashtakvarga_Total_Per_House": [
+                28,
+                29,
+                26,
+                28,
+                35,
+                36,
+                22,
+                20,
+                29,
+                26,
+                29,
+                27
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        }
+    },
+    "URA": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 6,
+                "Moon": 5,
+                "Mars": 7,
+                "Mercury": 6,
+                "Jupiter": 10,
+                "Venus": 6,
+                "Saturn": 5,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 8
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 11,
+                "Moon": 0,
+                "Mars": 6,
+                "Mercury": 2,
+                "Jupiter": 2,
+                "Venus": 8,
+                "Saturn": 2,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 3
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 11,
+                "Moon": 5,
+                "Mars": 6,
+                "Mercury": 3,
+                "Jupiter": 7,
+                "Venus": 8,
+                "Saturn": 6,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 0
+            },
+            "Ashtakvarga_Total_Per_House": [
+                19,
+                28,
+                26,
+                36,
+                32,
+                30,
+                23,
+                25,
+                34,
+                24,
+                31,
+                27
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 6,
+                "Moon": 6,
+                "Mars": 7,
+                "Mercury": 7,
+                "Jupiter": 10,
+                "Venus": 6,
+                "Saturn": 5,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 7
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 11,
+                "Moon": 9,
+                "Mars": 6,
+                "Mercury": 3,
+                "Jupiter": 2,
+                "Venus": 8,
+                "Saturn": 2,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 0,
+                "Moon": 9,
+                "Mars": 6,
+                "Mercury": 3,
+                "Jupiter": 7,
+                "Venus": 8,
+                "Saturn": 6,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 6
+            },
+            "Ashtakvarga_Total_Per_House": [
+                28,
+                21,
+                24,
+                32,
+                40,
+                34,
+                16,
+                29,
+                31,
+                29,
+                24,
+                27
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        }
+    },
+    "TAN": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 11,
+                "Moon": 1,
+                "Mars": 2,
+                "Mercury": 11,
+                "Jupiter": 8,
+                "Venus": 11,
+                "Saturn": 4,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 11,
+                "Moon": 5,
+                "Mars": 0,
+                "Mercury": 9,
+                "Jupiter": 8,
+                "Venus": 6,
+                "Saturn": 2,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 6,
+                "Mars": 9,
+                "Mercury": 2,
+                "Jupiter": 5,
+                "Venus": 10,
+                "Saturn": 6,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                29,
+                23,
+                28,
+                30,
+                28,
+                24,
+                31,
+                31,
+                25,
+                32,
+                21,
+                33
+            ],
+            "Dasha_At_Birth": "Mars-Mars-Mars"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 0,
+                "Jupiter": 8,
+                "Venus": 11,
+                "Saturn": 4,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 1,
+                "Mars": 1,
+                "Mercury": 0,
+                "Jupiter": 8,
+                "Venus": 8,
+                "Saturn": 2,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 0,
+                "Moon": 6,
+                "Mars": 9,
+                "Mercury": 0,
+                "Jupiter": 5,
+                "Venus": 0,
+                "Saturn": 6,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 2
+            },
+            "Ashtakvarga_Total_Per_House": [
+                32,
+                20,
+                35,
+                23,
+                27,
+                29,
+                29,
+                30,
+                23,
+                31,
+                29,
+                27
+            ],
+            "Dasha_At_Birth": "Ketu-Ketu-Ketu"
+        }
+    },
+    "NLR": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 3,
+                "Moon": 2,
+                "Mars": 1,
+                "Mercury": 3,
+                "Jupiter": 7,
+                "Venus": 4,
+                "Saturn": 4,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 6
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 10,
+                "Moon": 1,
+                "Mars": 11,
+                "Mercury": 8,
+                "Jupiter": 7,
+                "Venus": 1,
+                "Saturn": 0,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 7
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 6,
+                "Moon": 10,
+                "Mars": 11,
+                "Mercury": 5,
+                "Jupiter": 8,
+                "Venus": 5,
+                "Saturn": 5,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                30,
+                30,
+                24,
+                29,
+                26,
+                26,
+                29,
+                29,
+                24,
+                24,
+                34
+            ],
+            "Dasha_At_Birth": "Jupiter-Jupiter-Jupiter"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 3,
+                "Moon": 4,
+                "Mars": 1,
+                "Mercury": 3,
+                "Jupiter": 7,
+                "Venus": 4,
+                "Saturn": 4,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 5
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 11,
+                "Moon": 8,
+                "Mars": 0,
+                "Mercury": 11,
+                "Jupiter": 7,
+                "Venus": 0,
+                "Saturn": 1,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 8,
+                "Moon": 1,
+                "Mars": 0,
+                "Mercury": 8,
+                "Jupiter": 8,
+                "Venus": 4,
+                "Saturn": 5,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 3
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                32,
+                39,
+                23,
+                20,
+                31,
+                27,
+                28,
+                29,
+                24,
+                28,
+                27
+            ],
+            "Dasha_At_Birth": "Sun-Sun-Sun"
+        }
+    },
+    "GDX": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 1,
+                "Moon": 8,
+                "Mars": 2,
+                "Mercury": 0,
+                "Jupiter": 6,
+                "Venus": 11,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 9,
+                "Moon": 4,
+                "Mars": 1,
+                "Mercury": 8,
+                "Jupiter": 11,
+                "Venus": 9,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 9,
+                "Moon": 0,
+                "Mars": 10,
+                "Mercury": 9,
+                "Jupiter": 0,
+                "Venus": 2,
+                "Saturn": 2,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                29,
+                30,
+                21,
+                28,
+                30,
+                30,
+                28,
+                21,
+                29,
+                26,
+                33,
+                30
+            ],
+            "Dasha_At_Birth": "Venus-Venus-Venus"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 1,
+                "Moon": 11,
+                "Mars": 2,
+                "Mercury": 1,
+                "Jupiter": 6,
+                "Venus": 11,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 11,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 0,
+                "Jupiter": 11,
+                "Venus": 11,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 3
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 11,
+                "Moon": 9,
+                "Mars": 11,
+                "Mercury": 0,
+                "Jupiter": 11,
+                "Venus": 4,
+                "Saturn": 3,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                32,
+                17,
+                31,
+                29,
+                29,
+                28,
+                21,
+                27,
+                30,
+                27,
+                34
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        }
+    },
+    "COPX": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 0,
+                "Mars": 3,
+                "Mercury": 0,
+                "Jupiter": 10,
+                "Venus": 0,
+                "Saturn": 5,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 3
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 0,
+                "Mars": 6,
+                "Mercury": 5,
+                "Jupiter": 1,
+                "Venus": 6,
+                "Saturn": 10,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 3
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 0,
+                "Moon": 0,
+                "Mars": 3,
+                "Mercury": 5,
+                "Jupiter": 6,
+                "Venus": 7,
+                "Saturn": 2,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                30,
+                25,
+                29,
+                25,
+                33,
+                22,
+                25,
+                34,
+                28,
+                38,
+                19
+            ],
+            "Dasha_At_Birth": "Ketu-Ketu-Ketu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 2,
+                "Mars": 3,
+                "Mercury": 0,
+                "Jupiter": 10,
+                "Venus": 0,
+                "Saturn": 5,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 1,
+                "Moon": 8,
+                "Mars": 7,
+                "Mercury": 5,
+                "Jupiter": 2,
+                "Venus": 8,
+                "Saturn": 10,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 7
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 1,
+                "Moon": 4,
+                "Mars": 3,
+                "Mercury": 6,
+                "Jupiter": 7,
+                "Venus": 9,
+                "Saturn": 2,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 3
+            },
+            "Ashtakvarga_Total_Per_House": [
+                33,
+                22,
+                26,
+                28,
+                30,
+                30,
+                19,
+                32,
+                28,
+                29,
+                33,
+                25
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        }
+    },
+    "CPER": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 11,
+                "Mars": 3,
+                "Mercury": 8,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 5,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 0
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 5,
+                "Mars": 10,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 1,
+                "Saturn": 0,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 8
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 11,
+                "Moon": 10,
+                "Mars": 7,
+                "Mercury": 5,
+                "Jupiter": 10,
+                "Venus": 9,
+                "Saturn": 4,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 9
+            },
+            "Ashtakvarga_Total_Per_House": [
+                31,
+                34,
+                22,
+                31,
+                27,
+                31,
+                30,
+                23,
+                27,
+                32,
+                28,
+                19
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 6,
+                "Moon": 2,
+                "Mars": 4,
+                "Mercury": 7,
+                "Jupiter": 0,
+                "Venus": 7,
+                "Saturn": 6,
+                "Rahu": 7,
+                "Ketu": 1,
+                "Ascendant": 8
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 0,
+                "Mars": 2,
+                "Mercury": 9,
+                "Jupiter": 2,
+                "Venus": 9,
+                "Saturn": 6,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 0
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 3,
+                "Moon": 9,
+                "Mars": 6,
+                "Mercury": 10,
+                "Jupiter": 2,
+                "Venus": 10,
+                "Saturn": 6,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                32,
+                26,
+                22,
+                26,
+                35,
+                33,
+                26,
+                24,
+                23,
+                27,
+                29,
+                32
+            ],
+            "Dasha_At_Birth": "Jupiter-Jupiter-Jupiter"
+        }
+    },
+    "GLD": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 5,
+                "Mars": 9,
+                "Mercury": 0,
+                "Jupiter": 3,
+                "Venus": 0,
+                "Saturn": 2,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 5
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 5,
+                "Jupiter": 7,
+                "Venus": 0,
+                "Saturn": 7,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 4
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 9,
+                "Moon": 9,
+                "Mars": 11,
+                "Mercury": 6,
+                "Jupiter": 4,
+                "Venus": 0,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                26,
+                22,
+                30,
+                30,
+                23,
+                29,
+                25,
+                33,
+                27,
+                27,
+                44,
+                19
+            ],
+            "Dasha_At_Birth": "Mars-Mars-Mars"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 7,
+                "Moon": 9,
+                "Mars": 6,
+                "Mercury": 7,
+                "Jupiter": 5,
+                "Venus": 6,
+                "Saturn": 3,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 8
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 3,
+                "Moon": 4,
+                "Mars": 9,
+                "Mercury": 10,
+                "Jupiter": 2,
+                "Venus": 6,
+                "Saturn": 3,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 1
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 3,
+                "Moon": 1,
+                "Mars": 9,
+                "Mercury": 11,
+                "Jupiter": 6,
+                "Venus": 6,
+                "Saturn": 0,
+                "Rahu": 2,
+                "Ketu": 8,
+                "Ascendant": 9
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                28,
+                25,
+                31,
+                33,
+                32,
+                26,
+                27,
+                21,
+                26,
+                28,
+                31
+            ],
+            "Dasha_At_Birth": "Mars-Mars-Mars"
+        }
+    },
+    "SLV": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 2,
+                "Moon": 6,
+                "Mars": 11,
+                "Mercury": 2,
+                "Jupiter": 5,
+                "Venus": 2,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 6
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 6,
+                "Moon": 7,
+                "Mars": 6,
+                "Mercury": 11,
+                "Jupiter": 1,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 2,
+                "Moon": 7,
+                "Mars": 10,
+                "Mercury": 8,
+                "Jupiter": 6,
+                "Venus": 9,
+                "Saturn": 11,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                35,
+                23,
+                21,
+                29,
+                34,
+                20,
+                28,
+                28,
+                28,
+                30,
+                25,
+                34
+            ],
+            "Dasha_At_Birth": "Mars-Mars-Mars"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 0,
+                "Mars": 2,
+                "Mercury": 11,
+                "Jupiter": 6,
+                "Venus": 11,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 4,
+                "Moon": 7,
+                "Mars": 10,
+                "Mercury": 10,
+                "Jupiter": 0,
+                "Venus": 3,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 9
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 8,
+                "Mars": 6,
+                "Mercury": 3,
+                "Jupiter": 0,
+                "Venus": 7,
+                "Saturn": 2,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 6
+            },
+            "Ashtakvarga_Total_Per_House": [
+                29,
+                26,
+                25,
+                30,
+                31,
+                28,
+                22,
+                30,
+                21,
+                32,
+                33,
+                28
+            ],
+            "Dasha_At_Birth": "Venus-Venus-Venus"
+        }
+    },
+    "TLT": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 3,
+                "Moon": 8,
+                "Mars": 3,
+                "Mercury": 3,
+                "Jupiter": 3,
+                "Venus": 4,
+                "Saturn": 1,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 5
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 4,
+                "Moon": 4,
+                "Mars": 6,
+                "Mercury": 5,
+                "Jupiter": 4,
+                "Venus": 5,
+                "Saturn": 5,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 0,
+                "Moon": 1,
+                "Mars": 2,
+                "Mercury": 1,
+                "Jupiter": 0,
+                "Venus": 10,
+                "Saturn": 6,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 7
+            },
+            "Ashtakvarga_Total_Per_House": [
+                29,
+                41,
+                26,
+                28,
+                19,
+                27,
+                27,
+                26,
+                31,
+                24,
+                32,
+                25
+            ],
+            "Dasha_At_Birth": "Venus-Venus-Venus"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 3,
+                "Moon": 10,
+                "Mars": 3,
+                "Mercury": 3,
+                "Jupiter": 3,
+                "Venus": 4,
+                "Saturn": 2,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 4
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 5,
+                "Moon": 7,
+                "Mars": 7,
+                "Mercury": 7,
+                "Jupiter": 4,
+                "Venus": 7,
+                "Saturn": 6,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 2,
+                "Moon": 11,
+                "Mars": 3,
+                "Mercury": 4,
+                "Jupiter": 0,
+                "Venus": 11,
+                "Saturn": 2,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                37,
+                40,
+                28,
+                23,
+                23,
+                24,
+                25,
+                28,
+                32,
+                26,
+                23,
+                26
+            ],
+            "Dasha_At_Birth": "Mars-Mars-Mars"
+        }
+    },
+    "HYG": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 11,
+                "Moon": 6,
+                "Mars": 10,
+                "Mercury": 10,
+                "Jupiter": 7,
+                "Venus": 0,
+                "Saturn": 3,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 9,
+                "Moon": 9,
+                "Mars": 7,
+                "Mercury": 1,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 10,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 1
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 1,
+                "Moon": 9,
+                "Mars": 11,
+                "Mercury": 6,
+                "Jupiter": 11,
+                "Venus": 9,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 9
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                23,
+                27,
+                25,
+                30,
+                31,
+                28,
+                32,
+                32,
+                22,
+                25,
+                30
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 11,
+                "Moon": 9,
+                "Mars": 10,
+                "Mercury": 11,
+                "Jupiter": 7,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 1
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 11,
+                "Moon": 11,
+                "Mars": 9,
+                "Mercury": 5,
+                "Jupiter": 10,
+                "Venus": 10,
+                "Saturn": 10,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 4
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 7,
+                "Mars": 1,
+                "Mercury": 9,
+                "Jupiter": 11,
+                "Venus": 10,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 5
+            },
+            "Ashtakvarga_Total_Per_House": [
+                21,
+                29,
+                24,
+                26,
+                29,
+                28,
+                32,
+                29,
+                27,
+                27,
+                27,
+                36
+            ],
+            "Dasha_At_Birth": "Sun-Sun-Sun"
+        }
+    },
+    "DBA": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 11,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 7,
+                "Venus": 8,
+                "Saturn": 4,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 3,
+                "Moon": 3,
+                "Mars": 9,
+                "Mercury": 1,
+                "Jupiter": 6,
+                "Venus": 7,
+                "Saturn": 0,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 11
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 11,
+                "Moon": 7,
+                "Mars": 9,
+                "Mercury": 9,
+                "Jupiter": 7,
+                "Venus": 4,
+                "Saturn": 4,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                33,
+                29,
+                28,
+                22,
+                35,
+                36,
+                33,
+                26,
+                21,
+                23,
+                23,
+                26
+            ],
+            "Dasha_At_Birth": "Jupiter-Jupiter-Jupiter"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 3,
+                "Mars": 7,
+                "Mercury": 8,
+                "Jupiter": 7,
+                "Venus": 9,
+                "Saturn": 4,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 6,
+                "Moon": 7,
+                "Mars": 11,
+                "Mercury": 5,
+                "Jupiter": 7,
+                "Venus": 11,
+                "Saturn": 0,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 2,
+                "Moon": 4,
+                "Mars": 0,
+                "Mercury": 2,
+                "Jupiter": 8,
+                "Venus": 7,
+                "Saturn": 4,
+                "Rahu": 6,
+                "Ketu": 0,
+                "Ascendant": 10
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                35,
+                26,
+                24,
+                27,
+                37,
+                30,
+                29,
+                31,
+                16,
+                27,
+                23
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        }
+    },
+    "USO": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 3,
+                "Mars": 10,
+                "Mercury": 0,
+                "Jupiter": 5,
+                "Venus": 1,
+                "Saturn": 2,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 7
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 8,
+                "Moon": 4,
+                "Mars": 10,
+                "Mercury": 2,
+                "Jupiter": 1,
+                "Venus": 0,
+                "Saturn": 2,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 5
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 9,
+                "Moon": 0,
+                "Mars": 3,
+                "Mercury": 2,
+                "Jupiter": 6,
+                "Venus": 0,
+                "Saturn": 11,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 5
+            },
+            "Ashtakvarga_Total_Per_House": [
+                31,
+                20,
+                24,
+                24,
+                32,
+                35,
+                21,
+                26,
+                31,
+                29,
+                36,
+                26
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 11,
+                "Moon": 4,
+                "Mars": 2,
+                "Mercury": 10,
+                "Jupiter": 6,
+                "Venus": 10,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 1
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 10,
+                "Moon": 6,
+                "Mars": 7,
+                "Mercury": 2,
+                "Jupiter": 0,
+                "Venus": 9,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 4
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 3,
+                "Moon": 11,
+                "Mars": 3,
+                "Mercury": 7,
+                "Jupiter": 1,
+                "Venus": 1,
+                "Saturn": 2,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 5
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                27,
+                30,
+                30,
+                25,
+                26,
+                34,
+                21,
+                30,
+                29,
+                26,
+                30
+            ],
+            "Dasha_At_Birth": "Venus-Venus-Venus"
+        }
+    },
+    "UNG": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 5,
+                "Moon": 11,
+                "Mars": 5,
+                "Mercury": 6,
+                "Jupiter": 6,
+                "Venus": 5,
+                "Saturn": 3,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 9
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 2,
+                "Moon": 7,
+                "Mars": 4,
+                "Mercury": 9,
+                "Jupiter": 1,
+                "Venus": 1,
+                "Saturn": 11,
+                "Rahu": 3,
+                "Ketu": 9,
+                "Ascendant": 4
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 7,
+                "Moon": 0,
+                "Mars": 9,
+                "Mercury": 10,
+                "Jupiter": 2,
+                "Venus": 5,
+                "Saturn": 8,
+                "Rahu": 7,
+                "Ketu": 1,
+                "Ascendant": 1
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                30,
+                30,
+                34,
+                29,
+                24,
+                28,
+                24,
+                23,
+                28,
+                27,
+                31
+            ],
+            "Dasha_At_Birth": "Saturn-Saturn-Saturn"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 0,
+                "Mars": 10,
+                "Mercury": 11,
+                "Jupiter": 7,
+                "Venus": 1,
+                "Saturn": 3,
+                "Rahu": 10,
+                "Ketu": 4,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 1,
+                "Moon": 5,
+                "Mars": 10,
+                "Mercury": 8,
+                "Jupiter": 10,
+                "Venus": 1,
+                "Saturn": 10,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 1,
+                "Moon": 6,
+                "Mars": 3,
+                "Mercury": 1,
+                "Jupiter": 11,
+                "Venus": 1,
+                "Saturn": 7,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 2
+            },
+            "Ashtakvarga_Total_Per_House": [
+                27,
+                26,
+                26,
+                25,
+                28,
+                33,
+                26,
+                32,
+                24,
+                26,
+                32,
+                30
+            ],
+            "Dasha_At_Birth": "Venus-Venus-Venus"
+        }
+    },
+    "EEM": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 11,
+                "Moon": 3,
+                "Mars": 8,
+                "Mercury": 0,
+                "Jupiter": 3,
+                "Venus": 10,
+                "Saturn": 2,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 11,
+                "Moon": 8,
+                "Mars": 8,
+                "Mercury": 4,
+                "Jupiter": 7,
+                "Venus": 1,
+                "Saturn": 6,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 4,
+                "Mars": 5,
+                "Mercury": 5,
+                "Jupiter": 3,
+                "Venus": 6,
+                "Saturn": 2,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                32,
+                26,
+                29,
+                21,
+                28,
+                34,
+                27,
+                23,
+                32,
+                30,
+                26,
+                27
+            ],
+            "Dasha_At_Birth": "Mercury-Mercury-Mercury"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 0,
+                "Moon": 5,
+                "Mars": 9,
+                "Mercury": 0,
+                "Jupiter": 3,
+                "Venus": 10,
+                "Saturn": 2,
+                "Rahu": 1,
+                "Ketu": 7,
+                "Ascendant": 2
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 0,
+                "Moon": 1,
+                "Mars": 9,
+                "Mercury": 6,
+                "Jupiter": 7,
+                "Venus": 2,
+                "Saturn": 6,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 6
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 0,
+                "Moon": 5,
+                "Mars": 5,
+                "Mercury": 6,
+                "Jupiter": 3,
+                "Venus": 7,
+                "Saturn": 2,
+                "Rahu": 11,
+                "Ketu": 5,
+                "Ascendant": 2
+            },
+            "Ashtakvarga_Total_Per_House": [
+                32,
+                21,
+                30,
+                27,
+                25,
+                28,
+                26,
+                34,
+                24,
+                27,
+                36,
+                25
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    },
+    "PPLT": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 11,
+                "Moon": 2,
+                "Mars": 10,
+                "Mercury": 11,
+                "Jupiter": 9,
+                "Venus": 11,
+                "Saturn": 4,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 4
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 8,
+                "Moon": 0,
+                "Mars": 0,
+                "Mercury": 9,
+                "Jupiter": 4,
+                "Venus": 5,
+                "Saturn": 6,
+                "Rahu": 0,
+                "Ketu": 6,
+                "Ascendant": 4
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 1,
+                "Moon": 9,
+                "Mars": 4,
+                "Mercury": 2,
+                "Jupiter": 1,
+                "Venus": 10,
+                "Saturn": 11,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 8
+            },
+            "Ashtakvarga_Total_Per_House": [
+                25,
+                29,
+                30,
+                22,
+                34,
+                20,
+                29,
+                39,
+                32,
+                34,
+                18,
+                23
+            ],
+            "Dasha_At_Birth": "Jupiter-Jupiter-Jupiter"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 8,
+                "Moon": 6,
+                "Mars": 3,
+                "Mercury": 8,
+                "Jupiter": 10,
+                "Venus": 8,
+                "Saturn": 5,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 10
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 7,
+                "Moon": 8,
+                "Mars": 9,
+                "Mercury": 4,
+                "Jupiter": 7,
+                "Venus": 7,
+                "Saturn": 0,
+                "Rahu": 8,
+                "Ketu": 2,
+                "Ascendant": 7
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 4,
+                "Moon": 8,
+                "Mars": 6,
+                "Mercury": 1,
+                "Jupiter": 11,
+                "Venus": 3,
+                "Saturn": 4,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 11
+            },
+            "Ashtakvarga_Total_Per_House": [
+                30,
+                33,
+                19,
+                33,
+                27,
+                26,
+                32,
+                28,
+                34,
+                22,
+                27,
+                24
+            ],
+            "Dasha_At_Birth": "Rahu-Rahu-Rahu"
+        }
+    },
+    "ARKK": {
+        "Conception": {
+            "D1_Signs": {
+                "Sun": 6,
+                "Moon": 8,
+                "Mars": 8,
+                "Mercury": 5,
+                "Jupiter": 3,
+                "Venus": 6,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 8
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 9,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 4,
+                "Jupiter": 10,
+                "Venus": 9,
+                "Saturn": 2,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 2
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 9,
+                "Moon": 11,
+                "Mars": 10,
+                "Mercury": 8,
+                "Jupiter": 7,
+                "Venus": 9,
+                "Saturn": 3,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 10
+            },
+            "Ashtakvarga_Total_Per_House": [
+                22,
+                38,
+                26,
+                29,
+                31,
+                25,
+                32,
+                19,
+                27,
+                29,
+                33,
+                24
+            ],
+            "Dasha_At_Birth": "Ketu-Ketu-Ketu"
+        },
+        "Trading": {
+            "D1_Signs": {
+                "Sun": 6,
+                "Moon": 9,
+                "Mars": 8,
+                "Mercury": 5,
+                "Jupiter": 3,
+                "Venus": 6,
+                "Saturn": 6,
+                "Rahu": 5,
+                "Ketu": 11,
+                "Ascendant": 7
+            },
+            "D9_Navamsa_Signs": {
+                "Sun": 10,
+                "Moon": 2,
+                "Mars": 2,
+                "Mercury": 4,
+                "Jupiter": 10,
+                "Venus": 10,
+                "Saturn": 2,
+                "Rahu": 4,
+                "Ketu": 10,
+                "Ascendant": 5
+            },
+            "D10_Dasamsa_Signs": {
+                "Sun": 10,
+                "Moon": 11,
+                "Mars": 11,
+                "Mercury": 9,
+                "Jupiter": 7,
+                "Venus": 11,
+                "Saturn": 3,
+                "Rahu": 9,
+                "Ketu": 3,
+                "Ascendant": 5
+            },
+            "Ashtakvarga_Total_Per_House": [
+                26,
+                29,
+                31,
+                29,
+                35,
+                25,
+                22,
+                29,
+                24,
+                30,
+                31,
+                24
+            ],
+            "Dasha_At_Birth": "Moon-Moon-Moon"
+        }
+    }
+}

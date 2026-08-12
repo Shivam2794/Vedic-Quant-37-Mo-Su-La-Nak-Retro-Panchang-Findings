@@ -1,0 +1,19 @@
+{
+    "ticker": "FXY",
+    "trials": 3586,
+    "total_trades": 54,
+    "win_rate": 0.42592592592592593,
+    "annual_return": -0.0003887102936898123,
+    "annual_volatility": 0.004892075276564271,
+    "sharpe": -0.07945713663727708,
+    "expected_max_sr": 1.2810803417882088,
+    "dsr": 3.434389851636159e-05,
+    "best_params": {
+        "entry_z": 2.451454526636422,
+        "sl_mult": 2.7154960455483734,
+        "tp_mult": 4.994450002442086,
+        "vb_mult": 4.776238083833562,
+        "direction": "short",
+        "latent_dim": 3
+    }
+}

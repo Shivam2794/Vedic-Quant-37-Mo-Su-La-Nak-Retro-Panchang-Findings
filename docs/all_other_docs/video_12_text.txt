@@ -1,0 +1,243 @@
+[0.0 - 4.0]  What's up everybody?
+[4.0 - 10.5]  Okay, so the last part until I have to get to FTI, which has to be like, you know, something
+[10.5 - 12.6]  unrelated, we'll have to explain a little bit more.
+[12.6 - 15.4]  The FTI is from Timothy Masters, right?
+[15.4 - 17.9]  It's the last overlay.
+[17.9 - 19.7]  It's the trend quality gating.
+[19.7 - 25.3]  If you want to read about that until I review it, it's Timothy Masters FTI.
+[25.3 - 27.2]  A read of a noise line.
+[27.2 - 30.6]  If it crosses, then quality goes down in short.
+[30.6 - 33.8]  Basically, we're going to be covering the last two parts, right?
+[33.8 - 37.2]  So layer six and seven.
+[37.2 - 38.2]  Sumer meme.
+[38.2 - 40.7]  I hate that one, honestly.
+[40.7 - 42.8]  Okay, so last two layers.
+[42.8 - 50.0]  It's the combination of weights and the FDM and the forecast into the final position.
+[50.0 - 54.5]  These together create these numbers, right?
+[54.5 - 55.7]  So combined, right?
+[55.7 - 59.3]  So combined implying like all the layers, right?
+[59.3 - 67.5]  In combination, you will see here that it is the first per asset, by the way.
+[67.5 - 70.2]  Again here, we're looking at Bitcoin.
+[70.2 - 75.3]  So like it's different, of course, on NASDAQ slightly different.
+[75.3 - 79.8]  The sharps and everything they defiate slightly.
+[79.8 - 80.9]  It depends on your tastes.
+[80.9 - 87.1]  I added the FDI because the consistency over assets improves fixed static measures.
+[87.1 - 90.3]  I've tested that both over a hundred years.
+[90.3 - 96.0]  I added it as an extra component to just have another orthogonal layer.
+[96.0 - 101.0]  Helps in some cases, improves Kaggle, slightly less drawdown, but still very acceptable to
+[101.0 - 102.0]  my degree.
+[102.0 - 105.0]  The drawdown mostly is controlled by your volatility target anyway.
+[105.0 - 110.9]  So if you're going to be wanting to use this for props, obviously you want to encourage
+[110.9 - 114.6]  that full target so that your risk is higher.
+[114.6 - 122.4]  I've ran tests where I basically try to deduce like the, how do you put it?
+[122.4 - 128.8]  Maximum speed with still the highest probability of passing where I got to off the top of my
+[128.8 - 136.0]  head, 16 million days with 32, 33 probability of passing, right?
+[136.0 - 140.8]  So that's a little over two weeks, three trading weeks on crypto.
+[140.8 - 142.5]  Obviously that is a little bit different.
+[142.5 - 147.0]  In this case, I tested it over indices, oil, gold and crypto.
+[147.0 - 153.4]  So that's three trading weeks with a 33, one in the three chance of passing, making very
+[153.4 - 154.7]  good odds, right?
+[154.7 - 160.9]  So that does imply like very good general odds, very good general numbers.
+[160.9 - 168.6]  See here looking at, you know, in comparison to Bitcoin, I'm not sure if I have the numbers
+[168.6 - 169.6]  up here.
+[169.6 - 176.0]  Yeah, you can see like when they combine Bitcoin in its base form is sharp one drawdowns are
+[176.0 - 177.6]  like 80.
+[177.6 - 180.1]  When you combine here, you can see that it becomes a lot better, right?
+[180.1 - 182.8]  And that's what we get to in these last two layers, right?
+[182.8 - 189.0]  So the last ones, completely speaking, like everything together, it presents the breakout,
+[189.0 - 191.0]  the excel, the SKU, right?
+[191.0 - 196.0]  Where it's different formulas, same bet that are the alternatives to the first layer, which
+[196.0 - 202.8]  are the EWMAC, the exponentially weighted moving average cost or trend rules, right?
+[202.8 - 207.4]  In layer six, it's a reproduction of like the combination stuff, right?
+[207.4 - 211.0]  Which is above, you know, if I throw up a little bit, right?
+[211.0 - 218.4]  It's a combination where the linear vote with sub one weights, which is these, it's a total
+[218.8 - 222.6]  of one to 65 renormalizes, right?
+[222.6 - 229.0]  By the value of one five five to create, you know, an expected forecast where it stays
+[229.0 - 231.1]  around 10, right?
+[231.1 - 236.0]  Where the different votes together so that one does not overpower the others, right?
+[236.0 - 238.2]  Which is again a part of the correction.
+[238.2 - 241.8]  It's a scaling correction rather than like a large diversification boost, right?
+[241.8 - 246.1]  Because you don't want one to overpower the others while we're also, you know, compensating
+[246.1 - 250.1]  for the correlation as explained in the theory video, right?
+[250.1 - 254.6]  Where the basic premise is that the trend trio, which, you know, are highly correlated,
+[254.6 - 261.2]  but SKU presents the diversifier, then in layer seven comes like the universal position
+[261.2 - 267.8]  sizing equation that is used throughout, you know, this whole code, shebang.
+[267.8 - 274.0]  The forecast of 10 at the target will produce that 100% maximum long position, right?
+[274.1 - 277.7]  Obviously a higher full target is more risk taken, right?
+[277.7 - 282.7]  You'll see that if you tune that full target higher, it's going to more aggressively allocate
+[282.7 - 287.3]  according to like a volatility target based on the past volatility numbers that are being
+[287.3 - 289.7]  computed by the different layers.
+[289.7 - 294.4]  Obviously that will be clipped zero one, you know, value zero zero one hundred of one,
+[294.4 - 299.5]  you know, presented by one in that mathematical blah, blah, blah, right?
+[299.5 - 307.6]  And that's the limit of that where this will come to be, it won't over leverage, it will
+[307.6 - 308.6]  avoid that.
+[308.6 - 313.9]  And then the volatility and attenuation, which is layer five, right?
+[313.9 - 319.0]  That is a further overlay that will reduce if, you know, volatility regimes are more
+[319.0 - 324.2]  shocky, you know, given the five year look back of this, right?
+[324.2 - 325.5]  These all come together.
+[325.5 - 329.2]  It is in fact more complicated to understand.
+[329.2 - 330.8]  I'm going to write more about it.
+[330.8 - 335.1]  Like I'm giving you these videos to, you know, give you the code, give you my thoughts on
+[335.1 - 336.1]  it.
+[336.1 - 340.6]  I'm going to make another article that breaks it down further so that along with the theory
+[340.6 - 346.2]  video over these layers that these little implants of, you know, knowledge are put there
+[346.2 - 351.3]  and then I'm going to put it in writing to like actually give you the, you know, the full
+[351.3 - 354.5]  picture because it is a lot.
+[354.5 - 365.0]  But this is simply put, I think the best prop system that should be available online.
+[365.0 - 366.8]  Very little to argue against that.
+[366.8 - 370.8]  I think the ensembles have a huge merit for what I've mentioned, like timing purposes
+[370.8 - 371.8]  etc.
+[371.8 - 378.9]  But this one is easily the best, at least from a universal perspective, not per se for returns,
+[378.9 - 384.5]  but controlling those drawdowns, which would make them the best for like preventing in
+[384.5 - 386.8]  most cases daily scenarios, right?
+[386.8 - 387.8]  Because it's a mapping.
+[387.8 - 393.5]  I've tested this on the NASDAQ composite over 50 years on the SPY back to 1870.
+[393.5 - 399.7]  The max drawdowns are very controlled and for that exact same reason, it is likely one
+[399.7 - 404.5]  of the best systems that you can deploy and for which I'm doing all of the hard work for
+[404.5 - 406.5]  you in a sense, right?
+[406.5 - 412.4]  So that all comes together and it makes it, you know, by normalizing, by combining, by
+[412.4 - 418.4]  adjusting for correlation, it becomes an apples to apples comparison more than something overpowering
+[418.4 - 419.4]  the other.
+[419.4 - 424.8]  And that also helps the universality as I've, you know, largely try to explain the theory
+[424.8 - 425.8]  videos.
+[425.8 - 428.8]  I expect many questions about this.
+[428.8 - 429.8]  Please shoot them.
+[429.8 - 433.2]  I understand this is not the simplest.
+[433.2 - 434.4]  It is not.
+[434.4 - 440.7]  It took me weeks to even, you know, over many tests too, because you try to map this like
+[440.7 - 445.4]  statistically you try to understand how the strategy behaves.
+[445.4 - 449.8]  I mean, a back test obviously isn't like how you say it, like, oh, it's going to do exactly
+[449.8 - 454.7]  this or this is going to be like, no, no, no, the future is totally unknown to us, but
+[454.7 - 459.4]  it gives us a mapping of how it behaves under certain regimes, like how it looks in 2022
+[459.4 - 462.1]  or over your stress test, et cetera.
+[462.1 - 463.1]  Okay.
+[463.1 - 464.7]  So yeah, we're going to come together, right?
+[464.7 - 470.5]  So here, just going to read this first correlation matrix, the trend three of clusters, SKU sits
+[470.5 - 478.6]  apart second under betting the weights sum to 0.65, 0.65 times 1.55 creates, well, give
+[478.6 - 482.5]  or take one should be one of course, but that's where the capping and the keeping comes cross
+[482.5 - 488.1]  rule FDM is entirely renormalizing the sub one weight some rather than adding diversification
+[488.1 - 491.6]  lift the true FDM on unit some weights at these correlations would be larger.
+[491.6 - 496.3]  The payoff test does to combine sharp beat the average of the four singles, which I just
+[496.3 - 498.4]  showed the answer is yes.
+[498.4 - 499.4]  Okay.
+[499.4 - 503.6]  The gap is diversification made visible over those different layers, which helped the universalization
+[503.6 - 507.4]  helped by all the math, basically, right?
+[507.4 - 514.2]  So coming to the function of combined forecasts here, here and here, right?
+[514.2 - 519.2]  So we're looking at WBWBWAWS.
+[519.2 - 527.2]  So that's SKU, acceleration breakout and the EWMAC is creating the weights called unpacks
+[527.2 - 530.2]  the four weights, of course, defined here.
+[530.2 - 536.3]  And that takes that from the global weights to pull that has been, you know, defined above
+[536.3 - 542.8]  returns this linear combination of the four forecasted series and then skills that in
+[542.8 - 546.7]  the FDM where it calls that.
+[546.7 - 551.4]  So let's go down a bit, right?
+[551.4 - 555.6]  Where let me just give me a second to look for that line.
+[555.6 - 557.5]  Oh, yeah, here.
+[557.5 - 558.5]  Okay.
+[558.5 - 566.6]  So here it calls the given definitions pseudonyms for the columns.
+[566.6 - 574.6]  Here it's a stack of the four rules to take it into a data frame for the correlation matrix.
+[574.6 - 576.9]  Then obviously here prints, etc.
+[576.9 - 581.4]  This is a little bit less interesting, but here is that given correlation matrix as I've
+[581.4 - 585.0]  said, then we get to layer seven, right?
+[585.0 - 589.4]  So what do you take from this holistically speaking correlation matrix?
+[589.4 - 593.4]  Adjusts takes it to a value of one by timing it by 1.55.
+[593.4 - 595.0]  Yeah, the idea.
+[595.0 - 596.0]  Right?
+[596.0 - 600.9]  So let's get to W rod W cap, right?
+[600.9 - 611.3]  So this line here is basically the uncapping of weight of the combined forecast divide
+[611.3 - 617.4]  10 and then scaling that by the full target as you see here.
+[617.4 - 624.8]  And then that will take current fall and then, you know, alliance mathematically W cap applies
+[624.8 - 628.8]  the long only the clipping of zero to one to bring you those values, which will then
+[628.8 - 633.6]  eventually give you the allocation like I've shown you on trading view before.
+[633.6 - 637.2]  Then again, it's a bunch of plot of lines for the visual, which is a little bit less
+[637.2 - 639.7]  interesting and then that starts to look like this, right?
+[639.7 - 643.1]  So sizing combined forecast weight.
+[643.1 - 649.4]  And here you see the allocations much like I showed on trading view before, but this
+[649.4 - 652.4]  is, you know, the Python equivalent of.
+[652.4 - 656.3]  So you can see here that it's successfully adjusting that right.
+[656.3 - 663.2]  Like if you remember the Bitcoin charts, it's sizing up a lot, likely these are the 2017.
+[663.2 - 665.8]  So you see here in the big boom markets, it rises up.
+[665.8 - 669.6]  Then I believe 2021 we had a big rally 2024, right?
+[669.6 - 671.0]  Like these are the respective half things.
+[671.0 - 676.4]  So you see that it successfully is full sizing and giving you that right behavior, which
+[676.4 - 679.8]  gives you that display of that behavior.
+[679.8 - 680.8]  Basically speaking.
+[680.8 - 688.0]  So that again, I will, you know, here you see the combined track, of course, too.
+[688.0 - 696.3]  Can we compare to no, but that's fine combined with no attenuation.
+[696.3 - 701.2]  That's the raw and then after attenuation, I believe you get the result here, right?
+[701.2 - 704.5]  So that this is with with attenuation with no FDI, right?
+[704.5 - 710.3]  So you see that the attenuation really helps with at least increasing the sharps slightly.
+[710.3 - 712.9]  Let's see what happens to the drawdowns.
+[712.9 - 718.0]  Okay, drawdown the miniature to turn over turns to four.
+[718.0 - 721.0]  Anyway, that's the basic rundown of the code.
+[721.0 - 725.2]  You should by now maybe hopefully have seen the notebook below.
+[725.2 - 732.0]  My advice would be take that notebook, run it over one asset.
+[732.0 - 738.8]  My advice would be very frankly, simply put is that you get this all together.
+[738.8 - 744.5]  I would say if you want to automate this because this is something you can do by daily,
+[744.5 - 746.1]  weekly and monthly, right?
+[746.1 - 752.1]  So what I do for my personal portfolio right now, at least when my ensemble flash is like
+[752.1 - 756.4]  when ensemble flash is one for this particular asset, obviously our side rotation, et cetera,
+[756.4 - 762.2]  I'm running this one asset when it's in the top, especially for a very like, because I
+[762.2 - 763.7]  do different things, right?
+[763.7 - 768.6]  Like I run my bootcamp on portfolio, but then I'm using this one for like more risky beds,
+[768.6 - 770.2]  like for my crypto for my salon.
+[770.2 - 775.4]  So when it flashes, and especially I would advise this also for props, is that you build
+[775.4 - 780.9]  a system where you in an essence wait for a flag, a mapping above, and then you can
+[780.9 - 788.7]  try to hold that asset and have its size by, and or by accounts when the ensemble flashes,
+[788.7 - 789.7]  right?
+[789.7 - 794.3]  So the most opportune moment on a timing basis would be obviously when the ensemble flashes.
+[794.3 - 798.0]  The ensemble is best at timing you perfectly.
+[798.0 - 805.2]  That's also the best moment when you would ideally buy an account on a prop firm, right?
+[805.2 - 810.6]  So like if QQQ flashes, opportune time for tech, you could deploy a tech stock portfolio,
+[810.6 - 816.6]  which would be, you know, obviously something you want to do with the cross sectional momentum
+[816.6 - 821.8]  layer attached to, it's also perfectly fine if you do it on one asset by the way, because
+[821.9 - 824.9]  this is just performance on one asset.
+[824.9 - 826.0]  It's also really good on QQQ.
+[826.0 - 827.9]  It's really good on gold.
+[827.9 - 829.7]  I've shown you the curves.
+[829.7 - 834.9]  I do believe, let me just head over to my trading view here.
+[834.9 - 836.9]  Like I've seen you, shown you the curves, right?
+[836.9 - 842.5]  Like these curves, let me just get these curves here pretty solid, right?
+[842.5 - 843.6]  Like these are clean.
+[843.6 - 844.9]  Let me just remove the back hold.
+[844.9 - 850.7]  Like this is, this is actually, let me just move this down.
+[850.7 - 854.2]  I'm not giving you the full horizon here.
+[854.2 - 858.6]  Wait, 2000.
+[858.6 - 862.4]  So here you can see the full curve.
+[862.4 - 864.1]  Let me just, yeah, right?
+[864.1 - 865.8]  So this is the full curve.
+[865.8 - 867.7]  You see that, and this is with full target by the way.
+[867.7 - 872.5]  So like this looks more witty, but I was looking at like, you know, the highest risk version
+[872.5 - 874.8]  of it, which is also like the drawdown looks a bit frisky.
+[874.8 - 880.0]  Wait, let me just adjust that to reset settings daily.
+[880.0 - 883.1]  And I will change it to weekly just cause it's more visible.
+[883.1 - 887.1]  Anyway, here 20, you see it sizes very well.
+[887.1 - 889.1]  Max drawdowns are very controlled.
+[889.1 - 896.9]  Then if I go to the QQQ here, you'll see that accordingly again over that whole time
+[896.9 - 898.5]  horizon follows the trend very well.
+[898.5 - 900.6]  So this is deployable on one asset.
+[900.6 - 905.7]  I could do that like in an RSI rotation sense, where you try to open account for the biggest
+[905.7 - 906.7]  one.
+[906.7 - 909.6]  So when they flash, you try to buy an account and hold that one asset.
+[909.6 - 913.4]  You could, I mean, it also works very well on mode, I would say.
+[913.4 - 914.4]  Yeah, it's a shorter history.
+[914.4 - 917.5]  So it looks a little bit like this.
+[917.5 - 920.7]  Dow is a good option.
+[920.7 - 921.7]  Look at that trend.
+[921.7 - 922.7]  It's pretty good.
+[922.7 - 926.7]  So if you get some uncorrelated assets, you could equally weigh them and hold them when
+[926.7 - 930.5]  ensemble flashes and then you would size those equally cut up parts.
+[930.5 - 931.8]  Let's say you have four assets.
+[931.8 - 935.2]  So it's 100, 25, 25.
+[935.2 - 939.8]  You get full allocation to the carver, to size with that 25%.
+[939.8 - 945.8]  And then the uncorrelation would basically take your, let me just draw.
+[945.8 - 949.3]  It's a little bit more clear if I draw along with that a little bit.
+[949.3 - 952.9]  So obviously if your one curve looks like this, your one curve looks like this, you're
+[952.9 - 954.2]  going to get the equal of the both.
+[954.2 - 956.7]  So if you get uncorrelated assets, that's going to be better.
+[956.7 - 961.2]  That's probably going to look like, at least for FDMO, you're going to be having like Bitcoin,
+[961.2 - 967.6]  gold, perhaps silver, QQ there, Dow, just a Dow, it's less tech.
+[967.6 - 972.1]  Anyway, if you have questions, I know, quick video, quick talking, but I'm going to write
+[972.1 - 978.5]  it up more after so that if you rewatch, read the article, see the theory, this is more
+[978.5 - 983.0]  complex, but it's frankly put, once you've got it deployed to the best system that you
+[983.0 - 984.0]  can have.
+[984.0 - 989.0]  So I'll see you guys in the next videos about FDI and when I get the article out.

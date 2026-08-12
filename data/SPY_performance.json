@@ -1,0 +1,19 @@
+{
+    "ticker": "SPY",
+    "trials": 4864,
+    "total_trades": 74,
+    "win_rate": 0.13513513513513514,
+    "annual_return": -0.0024131605603291664,
+    "annual_volatility": 0.0114508144829173,
+    "sharpe": -0.21074138996218988,
+    "expected_max_sr": 1.670394024925269,
+    "dsr": 3.9989396490254934e-07,
+    "best_params": {
+        "entry_z": 2.0190599502917235,
+        "sl_mult": 0.7606270461877698,
+        "tp_mult": 4.998008325039788,
+        "vb_mult": 2.140070236706581,
+        "direction": "long",
+        "latent_dim": 3
+    }
+}

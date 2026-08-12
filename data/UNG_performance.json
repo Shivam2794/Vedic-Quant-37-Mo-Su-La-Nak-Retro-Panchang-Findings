@@ -1,0 +1,19 @@
+{
+    "ticker": "UNG",
+    "trials": 3122,
+    "total_trades": 52,
+    "win_rate": 0.09615384615384616,
+    "annual_return": -0.0022333248172333978,
+    "annual_volatility": 0.009926326840920758,
+    "sharpe": -0.22499005453121232,
+    "expected_max_sr": 1.013711619987407,
+    "dsr": 0.0005532961011179261,
+    "best_params": {
+        "entry_z": 2.3087815920184815,
+        "sl_mult": 0.5002356722537337,
+        "tp_mult": 4.997453173031963,
+        "vb_mult": 6.56094163125781,
+        "direction": "short",
+        "latent_dim": 0
+    }
+}

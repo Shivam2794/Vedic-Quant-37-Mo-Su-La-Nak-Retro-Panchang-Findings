@@ -1,0 +1,235 @@
+[2026-08-04T17:48:47.566000+00:00] xyrus1418: lol
+[2026-08-04T17:49:22.792000+00:00] xyrus1418: They have some other stuff like profitability metrics
+[2026-08-04T17:49:28.506000+00:00] ghost.3d: Jokes aside, you can use VIX, 200MA, and some regime-filtering tools for already similar returns with far lower Max DD%
+[2026-08-04T17:49:53.179000+00:00] xyrus1418: Yeah check out the experiment results I posted in the grid search-results channel
+[2026-08-04T17:51:00.024000+00:00] ghost.3d: You can also add a cross-section correlation filter that avoids half the major financial crashes if not more
+[2026-08-04T17:51:01.701000+00:00] nico108_: Holding only above 2 Month ma beats the sp500 even over 100 years
+[2026-08-04T17:52:06.750000+00:00] nico108_: 
+  [Attachment: image.png - https://cdn.discordapp.com/attachments/1429032513560379432/1534257640383709367/image.png?ex=6a737846&is=6a7226c6&hm=441afe242312bb9ded188d5d4a8b6fc245219ae934371362bb21b813f963d381&]
+[2026-08-04T17:53:30.284000+00:00] ludwigvon111: not difficult at all
+
+check out meb fabers smart allocation paper
+
+its really simple, there are alot of easy ways to beat it
+[2026-08-04T18:01:01.037000+00:00] the_biggest_rick: just think of the Leverage for the long run paper
+[2026-08-04T18:01:22.328000+00:00] the_biggest_rick: you could do a 50/50 of TQQQ/QQQ and exit into gold/t-bills/BND below and youd likely outperform for the rest of your life.
+[2026-08-04T18:01:31.564000+00:00] the_biggest_rick: its about concentration and leveraging low volatiltiy states
+[2026-08-04T18:03:12.039000+00:00] the_biggest_rick: case in point. 1.5x on 2025-1-1 to date
+  [Attachment: image.png - https://cdn.discordapp.com/attachments/1429032513560379432/1534260430778925126/image.png?ex=6a737adf&is=6a72295f&hm=36ac3316f21486662d9ebd12de2fda4432a0ef46e95a3cac9b8654cde99c6654&]
+[2026-08-04T18:04:02.648000+00:00] the_biggest_rick: im teaching something that likely entries and exits better and is more fit for props in the time that its applicable to the regimes currently but if you exit this discord and skool tommorow simply do this.
+[2026-08-04T18:04:12.729000+00:00] the_biggest_rick: cant break, it wont.
+[2026-08-04T18:11:04.143000+00:00] gordongoat: i saw that its easy to the s and p sharpe wise, but im takling about cagr in this situation, like reliably more cagr
+[2026-08-04T18:12:21.366000+00:00] gordongoat: damn wtf
+[2026-08-04T18:13:44.274000+00:00] ludwigvon111: kinda same for btc
+if u bux on monday, sell on friday u almost 2x ur portfolio
+[2026-08-04T18:14:27.087000+00:00] nico108_: is weekend returns that bad on btc ?
+[2026-08-04T18:18:56.717000+00:00] gordongoat: this has heavy sampling bias tho no, what does this look like more backward lookiong
+[2026-08-04T18:23:33.015000+00:00] the_biggest_rick: no this has no bias
+[2026-08-04T18:23:48.325000+00:00] the_biggest_rick: this is the same as is tested in leverage for the long run on 92 years
+[2026-08-04T18:25:01.632000+00:00] gordongoat: how, that was only 1 year of data in the image you showed
+[2026-08-04T18:25:21.645000+00:00] gordongoat: leverage in the long run was about leveraging during low vol periods right, i kinda forgot
+[2026-08-04T18:25:34.110000+00:00] the_biggest_rick: i said since 2025-1-1
+[2026-08-04T18:31:57.468000+00:00] xyrus1418: Which one?
+[2026-08-04T18:32:00.108000+00:00] gordongoat: ig how would you know that it would outperform long term, and how can you find the booming industries earlier, like in the past have their been industries like tech that have risen temporarily but not had the dominance that tech has had, or instead is it the case that once it rises it begin to dominate. essentially im trying to ask is was early allocation to tech feasable in that time or were there other potential growth stoks that overshadowed
+[2026-08-04T18:33:34.151000+00:00] the_biggest_rick: https://www.youtube.com/watch?v=C-AqMeiP2wc&t=741s
+[2026-08-04T18:44:49.981000+00:00] xyrus1418: I think it’s more nuanced than that
+[2026-08-04T18:45:14.502000+00:00] xyrus1418: Yes, over the long run, moving average and trend following does return better than the market
+[2026-08-04T18:45:27.305000+00:00] xyrus1418: But this is not an absolute outperformance *at any time*
+[2026-08-04T18:45:59.780000+00:00] xyrus1418: During bull runs, trend following can underperform the market, in fact a paper showed trend following underperforms the market 51% of the time
+[2026-08-04T18:46:12.418000+00:00] xyrus1418: But what it *does* do is reduce downside risk substantially
+[2026-08-04T18:47:05.554000+00:00] xyrus1418: By avoiding the big crashes like 2000 and 2008, the overall total return outperforms the market because a -60% needs over 100% return to go back to where you were
+[2026-08-04T18:50:38.725000+00:00] xyrus1418: Consider this:
+
+* SPY earns 12% annually for eight years, then loses 40%.
+* A trend strategy earns only 10% annually for those eight years, then loses 10%.
+
+After the eight good years and the crash:
+
+* SPY turns $100 into about $149.
+* The trend strategy turns $100 into about $193.
+[2026-08-04T18:50:49.924000+00:00] xyrus1418: The trend strategy looked inferior for eight consecutive years. Then one crisis more than compensated for the entire period of lagging.
+[2026-08-04T18:50:58.729000+00:00] gordongoat: gotchu
+[2026-08-04T18:51:03.010000+00:00] xyrus1418: That’s why decades-long backtests can show outperformance
+[2026-08-04T18:51:10.542000+00:00] xyrus1418: But in the short to medium term show underperformance
+[2026-08-04T18:51:11.773000+00:00] gordongoat: gotcho so its main catch its crisis aversion
+[2026-08-04T18:51:14.280000+00:00] gordongoat: gotchu gotchu
+[2026-08-04T18:51:48.181000+00:00] gordongoat: yeah i dont get why it would underperform in a bull amrket thats like perfect trends no?
+[2026-08-04T18:52:12.505000+00:00] xyrus1418: Because moving averages lag
+[2026-08-04T18:52:20.392000+00:00] xyrus1418: So you miss the first leg
+[2026-08-04T18:52:33.241000+00:00] xyrus1418: moving averages also whipsaw
+[2026-08-04T18:52:43.466000+00:00] xyrus1418: Each whipsaw = underperform the bull runs
+[2026-08-04T19:00:09.817000+00:00] the_biggest_rick: AQR underperformed for a few years.
+
+thats the best trend-following firm known to man.
+
+No, its not the strategy with the higgest hitrate.
+
+but it's the approach to positioning yourself in the market that exposes you maximally to;
+
+the best trading days.
+economic contractions.
+low volatility.
+
+1 year is **nothing**
+
+if you think it is you're immature, you're going to be doing this untill you're dead.
+
+higher frequency, meaning anything higher frequency that the few trades a year im making you take are exposed to 10x more regime shifts because of increased geo brownian motion.
+
+be smart, think like a passive investor while modelling for low-vol, smart beta like i'm advicing.
+
+@everyone
+[2026-08-04T19:03:41.266000+00:00] the_biggest_rick: Why do people say that underperformance is easy, that the market is hard to beat?
+
+Because supposedly firms are best at this.
+
+firms have different priorities, its the people paying them, stakeholders.
+
+they demand low beta to invest in 10+ hedgefunds.
+
+you *NEED* beta, (correlation to market), to perform, otherwise you're essentially saying, *no i wont hold megacaps like nvidia*.
+
+naive, it wont work.
+
+you need beta.
+
+smart beta
+
+smart beta = value, momentum, size, quality.
+
+FACTORS.
+
+Quant funds dont outperform discretionary macro, struglly with the market.
+
+Momentum is the most consistent and algoritmically simple to model out of all of them, if you paid attention to the **mandatory reads** you'd would know this.
+
+the long-term is yours with trend-following.
+[2026-08-04T19:04:38.329000+00:00] the_biggest_rick: https://klipy.com/gifs/knowledge-tai-lopez-knowledge
+[2026-08-04T19:04:58.352000+00:00] the_biggest_rick: im 9 years into markets and diagnosed a schizo this is my riddance.
+[2026-08-04T19:05:58.087000+00:00] the_biggest_rick: as we speak my entire net-worth is riding on what i've shown and teached everyone, simply put.
+[2026-08-04T19:07:16.531000+00:00] ghost.3d: You never fail to disappoint, love what you just laid out for us.
+
+great work you're doing for skool and the entire community!
+[2026-08-04T19:07:32.064000+00:00] the_biggest_rick: i'll do it till i die or people forget me.
+[2026-08-04T19:07:37.974000+00:00] ghost.3d: I won't
+[2026-08-04T19:07:43.162000+00:00] the_biggest_rick: appreciated
+[2026-08-04T19:19:20.981000+00:00] the_biggest_rick: this is my CV before the page.
+
+on august 23rd it marks *1-year* of me having this page.
+
+i'm dutch-born calvinist protestant, the culture of calvinist is humble and honest, 0 homeages to god.
+
+i was raised with words like honesty last longest, i'd die on a knee more than admit fake shit.
+
+me and <@1411475916663558204> tested more than 5000 papers by now, the time-bound posts are in this discord where i handed him my powerfull desktop for backtest to run all of this.
+
+reminder, rickula is a top EU scientist who i had to convince for years that he had to look into to finance, he is in the circles of people who put satellites in the sky.
+
+we talk, daily, about test, theories, we are insane.
+
+we have deemed the higher techniques like genetic algos, machine learning, ***extremely dangerous*** the second you understand data properly you will know that.
+
+technical indicators are a transformation.
+
+making OHLCV like raw open high low close from yfinance to be like
+
+RSI, average win / average loss = blablala
+
+is a statement of some form of price movement.
+
+when you dont know anything about finance you learn ML in a raw, closed form.
+
+you become optimistic, you believe laser guns are fucking real.
+
+***theyre not***
+
+in a closed system like a hospitals limited dataset which has some decades of history there may be some patterns.
+
+but in the total human driven order market of finance.
+
+***ITS A SHITFUCK BONANZA***
+
+the one thing that turned out to be consistent was
+
+*** when me and rickula, and trust me whe are the biggest fucking autists you'll find***
+
+***are moving, fucking, averages***
+
+i was telling rickula these things in 2022
+
+that i really thought this was a thing
+
+***yeah im nuts you watched me in videos say say***
+
+but its true.
+
+its a trailing. basic. statistic. with almost no adaptivitiy. near to no ability to overfit.
+
+economists and traditional financial.
+
+we're talking simple measures here like your statistic I and statics II class here like hypothesis tests and standard deviations have been measuring.
+
+these outperformed all the 'fancy' metrics like a kolmogorov or yadda yadda martingale.
+
+moving averages work because they trail price and discount negative psychology
+  [Attachment: image.png - https://cdn.discordapp.com/attachments/1429032513560379432/1534279594616553604/image.png?ex=6a738cb8&is=6a723b38&hm=371b44ba833b913effa739855b09bcf44a4427cb05f1d10a47ee350722e41f91&]
+[2026-08-04T19:19:43.179000+00:00] the_biggest_rick: 
+  [Attachment: Cover.png - https://cdn.discordapp.com/attachments/1429032513560379432/1534279687763660911/Cover.png?ex=6a738ccf&is=6a723b4f&hm=96f9396d24e7b8fbfbd5df15656101e2d24a3fa6203e1e2b9851fbcb75ca7802&]
+[2026-08-04T19:20:01.862000+00:00] the_biggest_rick: everything in this market is placed by humans.
+
+its all pure psychology.
+[2026-08-04T19:21:25.986000+00:00] the_biggest_rick: 
+  [Attachment: image.png - https://cdn.discordapp.com/attachments/1429032513560379432/1534280116920909996/image.png?ex=6a738d35&is=6a723bb5&hm=f0a1499eb84a312aa28cc919823e8f40d60e3294d315caf79d1ad5761abba7f3&]
+  [Attachment: image.png - https://cdn.discordapp.com/attachments/1429032513560379432/1534280117369438361/image.png?ex=6a738d35&is=6a723bb5&hm=cf514ea852e44bd7e2e7153b3a59ed1ef62f8095d808f01c8ac31d6e981b7162&]
+  [Attachment: image.png - https://cdn.discordapp.com/attachments/1429032513560379432/1534280118028210207/image.png?ex=6a738d35&is=6a723bb5&hm=c5f836c5b4ab1e6f8e2f0be4d71f27aed409b0831c77ebcaacf5ed2766b0d2d5&]
+[2026-08-04T19:21:43.422000+00:00] the_biggest_rick: 200MA ONLY
+
+EXPANSIONS. VOL, EXCESS RETURNS
+[2026-08-04T19:28:23.993000+00:00] the_biggest_rick: Deflated, the index and passive holding is a fucking lie. 
+
+Look at this fucking chart. It's solid 72 fucking years. 
+
+There's none. The only way you earn is by reinvesting, ergo, not losing. 
+
+The only money you keep is what you earn. Trading is not naive. Timing the market is not something that is supposed to be impossible. It is essential.
+  [Attachment: image.png - https://cdn.discordapp.com/attachments/1429032513560379432/1534281872325218436/image.png?ex=6a738ed7&is=6a723d57&hm=a604de0e4304c35f502e56e08e4783970695342cca2f02ba80fdc591bde7dcac&]
+[2026-08-04T19:29:03.594000+00:00] the_biggest_rick: the index keeps near to none of its real value.
+[2026-08-04T19:31:46.369000+00:00] the_biggest_rick: systems literally rigged
+[2026-08-04T19:31:56.108000+00:00] the_biggest_rick: https://klipy.com/gifs/ye-yekub
+[2026-08-04T19:40:02.458000+00:00] ghost.3d: Holding SP500 boomers looking at this graph will not be happy Rick!
+[2026-08-04T19:40:10.092000+00:00] ghost.3d: Why would you do that to them!!
+[2026-08-04T19:40:20.754000+00:00] ghost.3d: They had hope!
+[2026-08-04T19:41:01.288000+00:00] ghost.3d: https://klipy.com/gifs/anakin
+[2026-08-04T19:52:05.082000+00:00] the_biggest_rick: the financial system is deep and when you know it you realise the real value tied to a deflated unit is near to none
+[2026-08-04T20:39:23.340000+00:00] rickulaquant_11963: I will say that when <@783618021923094548> was trying to convince me MAs was the way I thought he was being a simpleton and my ego was convinced I could mog him in his own field by applying my own knowledge of statistics and ML
+[2026-08-04T20:40:04.821000+00:00] rickulaquant_11963: As I learned about finance -- which is not my field -- I began to realize that the nonstationary regimes of finance were kryptonite to ML.
+[2026-08-04T20:40:54.392000+00:00] rickulaquant_11963: By design, market efficiency intends to destroy all patterns. As human beings, this is nigh-paradoxical, because our evolutionary mechanisms were built for pattern recognition.
+[2026-08-04T20:41:05.945000+00:00] rickulaquant_11963: Likewise, ML is built for pattern recognition.
+[2026-08-04T20:42:02.358000+00:00] rickulaquant_11963: I've tried very very hard to get machine learning, genetic algorithms, and hidden Markov models to work. The results? Sharpe ratios identical to the SPY. More concretely: 0.6 - 0.8 over a 20 year history.
+[2026-08-04T20:42:56.865000+00:00] rickulaquant_11963: I could very easily build my GAs to have Sharpe >3.0. In fact, I even built one with Sharpe 3.7. But this collapses the moment it is applied live.
+[2026-08-04T20:44:13.387000+00:00] rickulaquant_11963: The reflex to use ML is a reflex based on ignorance. People hope that their lack of understanding of finance can be supplemented by the God box that is ML. And so they neglect the theory, the fundamentals, everything, and deposit all trust into the God machine.
+[2026-08-04T20:45:52.870000+00:00] rickulaquant_11963: As I explained previously, the mathematical properties of the market are kryptonite for ML. Any genuinely honest exploration with proper validation, no-leakage, overfitting prevention methods, etc., will cause it to fail. The same for HMMs and GAs. To get these tools to work, if at all possible, requires a next level degree of ingenuity and out-of-the-box thinking.
+[2026-08-04T20:46:19.167000+00:00] rickulaquant_11963: And it is ***that*** which is the actual secret sauce: the ingenuity, the creativity.
+[2026-08-04T20:48:08.025000+00:00] rickulaquant_11963: As it stands, LLMs too remain patently unable to magically give you the financial models you need. Why? Because LLMs can take a corpus of knowledge 1000s of times larger than you'll ever read and interpolate between them, but they are incapable of genuine novel breakthroughs. If they appear to do so, it is only because they're putting pre-existing puzzle pieces together, ***not*** because they've divined a genuine new source of knowledge.
+[2026-08-04T20:49:44.689000+00:00] rickulaquant_11963: This ability to "divine" new knowledge remains an unsolved mystery of the human mind. Statistically speaking, the probability of discovering strategies that work is effectively 0, on account of the sheer size of the parameter space. And yet, human beings can accomplish what millions of genetic algorithm iterations cannot: a true measure of perception.
+[2026-08-04T20:51:47.185000+00:00] rickulaquant_11963: My personal opinion is to actually learn the theory and to start simple: moving averages, volatility sizing, ranked asset allocation, and so on. No amount of LLM-induced ML slop will substitute actual domain knowledge intuition.
+[2026-08-04T20:52:27.584000+00:00] montanelas_19: So the course on ML on skool isnt worth it?
+[2026-08-04T20:53:27.474000+00:00] rickulaquant_11963: The course on ML is "not worth it" only if your preconception is an immature expectation that you can immediately import xgboost and have it predict tomorrow's price.
+[2026-08-04T20:53:54.350000+00:00] rickulaquant_11963: The point of the ML course is to direct you into the domains where it actually works.
+[2026-08-04T20:54:19.892000+00:00] ludwigvon111: u can use it as a layer easily like HRP i think
+[2026-08-04T20:54:25.974000+00:00] rickulaquant_11963: My ML videos are explaining all the different failure modes and demystifies preconceptions. It then shows where it can actually be useful.
+[2026-08-04T20:55:24.307000+00:00] rickulaquant_11963: For example: ML can be used for identifying market regimes. What it ___cannot do___ is to instantly tell you when a regime switch happens.
+[2026-08-04T20:55:53.719000+00:00] rickulaquant_11963: ML can serve as a substitute for volatility modelling. Personally, I developed a system that outperforms GARCH
+[2026-08-04T20:56:26.396000+00:00] rickulaquant_11963: The more creative and perceptive of you might be able to use these lessons and apply ML to entirely novel domains.
+[2026-08-04T20:56:57.631000+00:00] rickulaquant_11963: For example: I managed to discover alpha by applying sentimental analysis natural language processing machine learning to analyst reports.
+[2026-08-04T20:58:41.455000+00:00] rickulaquant_11963: The average person will prompt a LLM, ask for a ML model that optimizes Sharpe or CAGR or tries to predict tomorrow's price or whatever. They'll import xgboost, vibecode some features, and then overfit it
+[2026-08-04T20:58:56.105000+00:00] rickulaquant_11963: This isn't the way
+[2026-08-04T20:59:19.309000+00:00] ludwigvon111: https://cdn.discordapp.com/attachments/1439352444688531496/1474108013190053958/togif.gif
+[2026-08-04T20:59:24.962000+00:00] ludwigvon111: litterally
+[2026-08-04T21:00:02.444000+00:00] rickulaquant_11963: The biggest misconception that I fear people might have is that Finance is about learning enough theory and then retiring. By the very definition of market efficiency and alpha decay, ***this is not possible***
+[2026-08-04T21:00:57.416000+00:00] rickulaquant_11963: There is no single source of knowledge that will tell you exactly what the cheat code is, because the very nature of leaking the cheat code causes it to disappear. This is as true for ML as it is for technical analysis or fundamentals or economics.
+[2026-08-04T21:02:06.943000+00:00] rickulaquant_11963: This is an ___active research field___ whose very mathematical nature obliges us to be creative in ways that no textbook can tell you. The point of learning theory is to empower us with the tools and intuitions necessary to survive more easily.
+[2026-08-04T21:03:11.428000+00:00] rickulaquant_11963: Markets are adversarial. It's like Kung Fu. You're not the only one training, your opponents also are.
+[2026-08-04T21:04:17.802000+00:00] rickulaquant_11963: So, in that respect, the ML lectures are absolutely worth it. They're a tool to empower you, not a cheat code.
+[2026-08-04T22:11:05.041000+00:00] the_biggest_rick: i answer to demand by hiring <@1411475916663558204> but also push what is real.
+[2026-08-04T23:42:15.332000+00:00] gordongoat: what type of regime is optimal for trend follwing

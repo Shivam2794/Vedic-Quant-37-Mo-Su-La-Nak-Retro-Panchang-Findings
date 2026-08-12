@@ -1,0 +1,1377 @@
+[
+  {
+    "entity_name": "Nadi Astrology",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Nadi Sutra 78",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Mars']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Nadi Sutra 79",
+    "category": "sign",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Nadi Sutra 80",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Saturn']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Venus",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Mars",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Saturn",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Mercury",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Moon",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Sun",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Jupiter",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Rahu",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Sex Yoga",
+    "category": "yoga",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Couple Made For Each Other",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Mars']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Ketu",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Income",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Cash Flow",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Expenses",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Professional Activities",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Debt",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Phlegmatic Nature",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Saturn']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Stomach Ailments",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Water Element",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Earth Element",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Sign",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Childhood",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Moon']['house'] == 1 and ed['planets']['Jupiter']['house'] == 1"
+  },
+  {
+    "entity_name": "Old Age",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Saturn']['house'] in [6, 8, 12]"
+  },
+  {
+    "entity_name": "Mind",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Restlessness Of Mind",
+    "category": "planet",
+    "python_code": "lambda ed: any(abs(ed['planets']['Moon']['lon'] - ed['planets'][p]['lon']) < 10.0 for p in ['Rahu', 'Ketu', 'Saturn'])"
+  },
+  {
+    "entity_name": "Intellectual Ability",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Mercury']['lon'] - ed['planets']['Sun']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Nativity Karka Planet",
+    "category": "sign",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['sign'] == 1 or ed['planets']['Venus']['sign'] == 1"
+  },
+  {
+    "entity_name": "Purpose Of Life",
+    "category": "sign",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] == 9 or ed['planets']['Venus']['house'] == 9"
+  },
+  {
+    "entity_name": "Richness",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Saturn']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Earning With Hardship",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Saturn']['lon'] - ed['planets']['Mercury']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Obstacle In Professional Success",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Saturn']['lon'] - ed['planets']['Ketu']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Instability In Professional Life",
+    "category": "planet",
+    "python_code": "lambda ed: any(abs(ed['planets']['Saturn']['lon'] - ed['planets'][p]['lon']) < 10.0 for p in ['Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Venus'])"
+  },
+  {
+    "entity_name": "Less/No Savings",
+    "category": "planet",
+    "python_code": "lambda ed: any(abs(ed['planets']['Venus']['lon'] - ed['planets'][p]['lon']) < 10.0 for p in ['Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Saturn'])"
+  },
+  {
+    "entity_name": "Disturbance In Cash Flow",
+    "category": "planet",
+    "python_code": "lambda ed: any(abs(ed['planets']['Mercury']['lon'] - ed['planets'][p]['lon']) < 10.0 for p in ['Sun', 'Moon', 'Mars', 'Jupiter', 'Venus', 'Saturn'])"
+  },
+  {
+    "entity_name": "Savings",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] in [2, 11]"
+  },
+  {
+    "entity_name": "Status",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Sun']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Show Off",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Rahu']['house'] in [2, 11]"
+  },
+  {
+    "entity_name": "Charity",
+    "category": "aspect",
+    "python_code": "lambda ed: abs(ed['planets']['Jupiter']['lon'] - ed['planets']['Sun']['lon']) < 10.0 or abs(ed['planets']['Jupiter']['lon'] - ed['planets']['Mercury']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Wastage Of Money",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] in [2, 11]"
+  },
+  {
+    "entity_name": "Husband",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['planets']['Mars']['house'] == 7"
+  },
+  {
+    "entity_name": "Wife",
+    "category": "yoga",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Younger Brother",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Mars']['lon'] - ed['planets']['Venus']['lon']) < 10.0 or abs(ed['planets']['Mars']['lon'] - ed['planets']['Mercury']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Brother-in-law",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Mars']['house'] == 3"
+  },
+  {
+    "entity_name": "Younger Uncle",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Mars']['house'] == 3"
+  },
+  {
+    "entity_name": "Beauty",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] in [1, 5, 9]"
+  },
+  {
+    "entity_name": "Luxury",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Saturn']['house'] == 4 and ed['planets']['Mars']['house'] != 4 and ed['planets']['Rahu']['house'] != 4"
+  },
+  {
+    "entity_name": "Parents",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Saturn']['lon'] - ed['planets']['Venus']['lon']) < 10.0 or abs(ed['planets']['Saturn']['lon'] - ed['planets']['Venus']['lon'] - 360) < 10.0 or abs(ed['planets']['Saturn']['lon'] - ed['planets']['Venus']['lon'] + 360) < 10.0"
+  },
+  {
+    "entity_name": "Wealth",
+    "category": "conjunction",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 1 and ed['planets']['Venus']['sign'] == 'Libra' and ed['planets']['Jupiter']['house'] == 1"
+  },
+  {
+    "entity_name": "Enemy Planet",
+    "category": "house",
+    "python_code": "lambda ed: any(ed['planets'][p]['house'] == 7 and ed['planets'][p]['is_malefic'] for p in ed['planets'])"
+  },
+  {
+    "entity_name": "Digestion Process",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Moon']['house'] == 4 or ed['planets']['Moon']['sign'] == 'Cancer'"
+  },
+  {
+    "entity_name": "Venus And Mars Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Mars']['lon']) < 10.0 or abs(ed['planets']['Venus']['lon'] - ed['planets']['Mars']['lon'] - 360) < 10.0 or abs(ed['planets']['Venus']['lon'] - ed['planets']['Mars']['lon'] + 360) < 10.0"
+  },
+  {
+    "entity_name": "Saturn And Venus Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Saturn']['lon'] - ed['planets']['Venus']['lon']) < 10.0 or abs(ed['planets']['Saturn']['lon'] - ed['planets']['Venus']['lon'] - 360) < 10.0 or abs(ed['planets']['Saturn']['lon'] - ed['planets']['Venus']['lon'] + 360) < 10.0"
+  },
+  {
+    "entity_name": "Venus And Moon Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Moon']['lon']) < 10.0 or abs(ed['planets']['Venus']['lon'] - ed['planets']['Moon']['lon'] - 360) < 10.0 or abs(ed['planets']['Venus']['lon'] - ed['planets']['Moon']['lon'] + 360) < 10.0"
+  },
+  {
+    "entity_name": "Venus And Sun Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Sun']['lon']) < 10.0 or abs(ed['planets']['Venus']['lon'] - ed['planets']['Sun']['lon'] - 360) < 10.0 or abs(ed['planets']['Venus']['lon'] - ed['planets']['Sun']['lon'] + 360) < 10.0"
+  },
+  {
+    "entity_name": "Saturn And Mercury Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Saturn']['lon'] - ed['planets']['Mercury']['lon']) < 10.0 or abs(ed['planets']['Saturn']['lon'] - ed['planets']['Mercury']['lon'] - 360) < 10.0 or abs(ed['planets']['Saturn']['lon'] - ed['planets']['Mercury']['lon'] + 360) < 10.0"
+  },
+  {
+    "entity_name": "Saturn And Ketu Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Saturn']['lon'] - ed['planets']['Ketu']['lon']) < 10.0 or abs(ed['planets']['Saturn']['lon'] - ed['planets']['Ketu']['lon'] - 360) < 10.0 or abs(ed['planets']['Saturn']['lon'] - ed['planets']['Ketu']['lon'] + 360) < 10.0"
+  },
+  {
+    "entity_name": "Moon And Saturn Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Saturn']['lon']) < 10.0 or abs(ed['planets']['Moon']['lon'] - ed['planets']['Saturn']['lon'] - 360) < 10.0 or abs(ed['planets']['Moon']['lon'] - ed['planets']['Saturn']['lon'] + 360) < 10.0 or abs(ed['planets']['Moon']['lon'] - ed['planets']['Saturn']['lon']) < 10.0 or abs(ed['planets']['Moon']['lon'] - ed['planets']['Saturn']['lon'] - 360) < 10.0 or abs(ed['planets']['Moon']['lon'] - ed['planets']['Saturn']['lon'] + 360) < 10.0"
+  },
+  {
+    "entity_name": "Nadi Jyotish",
+    "category": "sign",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Bhrigu Nandi Nadi",
+    "category": "dasha",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Saptarishi Nadi",
+    "category": "house",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Meena Nadi",
+    "category": "divisional_chart",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Lagna",
+    "category": "aspect",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Vimshottari Dasha",
+    "category": "dasha",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Parashari Tradition",
+    "category": "dasha",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Jaimini Tradition",
+    "category": "dasha",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "K.P. Tradition",
+    "category": "dasha",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Progression (Pragati)",
+    "category": "dasha",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Natal Moon",
+    "category": "dasha",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Nakshatra",
+    "category": "dasha",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Planets",
+    "category": "nakshatra",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Karakatva",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Navamsha",
+    "category": "divisional_chart",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Life Karaka (Jeeva Karaka)",
+    "category": "planet",
+    "python_code": "lambda ed: ed.get('gender') == 'male' and ed['planets']['Jupiter']['house'] is not None or ed.get('gender') == 'female' and ed['planets']['Venus']['house'] is not None"
+  },
+  {
+    "entity_name": "Other Astrological Systems",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Natal Chart",
+    "category": "house",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Planet Detail Noting",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "House",
+    "category": "house",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Combust Planet",
+    "category": "planet",
+    "python_code": "lambda ed: any(abs(ed['planets'][p]['lon'] - ed['planets']['Sun']['lon']) < 6.0 for p in ed['planets'] if p != 'Sun')"
+  },
+  {
+    "entity_name": "Trine",
+    "category": "aspect",
+    "python_code": "lambda ed: any(abs(ed['planets'][p1]['lon'] - ed['planets'][p2]['lon']) % 120 < 1.0 for p1 in ed['planets'] for p2 in ed['planets'] if p1 != p2)"
+  },
+  {
+    "entity_name": "Opposite",
+    "category": "house",
+    "python_code": "lambda ed: any(abs(ed['planets'][p1]['lon'] - ed['planets'][p2]['lon']) % 180 < 1.0 for p1 in ed['planets'] for p2 in ed['planets'] if p1 != p2)"
+  },
+  {
+    "entity_name": "Mutual Placement",
+    "category": "aspect",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: any(abs(ed['planets'][p1]['lon'] - ed['planets'][p2]['lon']) < 10.0 for p1 in ed['planets'] for p2 in ed['planets'] if p1 != p2)"
+  },
+  {
+    "entity_name": "Carbon-Fiber Spikes",
+    "category": "sign",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Shukracharya",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Lord Vishnu",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Sage Parashara",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "BPHS",
+    "category": "sign",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Native",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Tamo Graha",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Rahu']['house'] is not None or ed['planets']['Ketu']['house'] is not None"
+  },
+  {
+    "entity_name": "Yoga Karka",
+    "category": "yoga",
+    "python_code": "lambda ed: (ed['planets']['Rahu']['house'] in [1,5,9] or ed['planets']['Ketu']['house'] in [1,5,9]) and any(ed['planets'][b]['house'] in [1,5,9] for b in ['Jupiter','Venus','Mercury','Moon'] if b in ed['planets'])"
+  },
+  {
+    "entity_name": "Bhu Tattwa",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Jiva Karka",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] is not None"
+  },
+  {
+    "entity_name": "Moksha Karka",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] is not None"
+  },
+  {
+    "entity_name": "Kaala",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Rahu']['house'] is not None"
+  },
+  {
+    "entity_name": "Jeeva",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] is not None"
+  },
+  {
+    "entity_name": "Materialism",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Spiritualism",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Ketu']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Wealth Karka",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 2 or ed['planets']['Venus']['house'] == 11"
+  },
+  {
+    "entity_name": "Luxurious Life Style",
+    "category": "planet",
+    "python_code": "lambda ed: (abs(ed['planets']['Sun']['lon'] - ed['planets']['Mercury']['lon']) < 10.0 and abs(ed['planets']['Sun']['lon'] - ed['planets']['Venus']['lon']) < 10.0) or (abs(ed['planets']['Sun']['lon'] - ed['planets']['Venus']['lon']) < 10.0)"
+  },
+  {
+    "entity_name": "Ego",
+    "category": "planet",
+    "python_code": "lambda ed: abs(ed['planets']['Sun']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Insecurity",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Saturn']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Self Employment",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Saturn']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Intuitive Nature",
+    "category": "planet",
+    "python_code": "lambda ed: (abs(ed['planets']['Venus']['lon'] - ed['planets']['Ketu']['lon']) < 10.0) or (abs(ed['planets']['Venus']['lon'] - ed['planets']['Saturn']['lon']) < 10.0) or (ed['planets']['Ketu']['is_benefic'] == True)"
+  },
+  {
+    "entity_name": "Independent Nature",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Ketu']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "More expenses",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Ketu']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Feminine",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 7 or ed['planets']['Venus']['house'] == 1"
+  },
+  {
+    "entity_name": "Desire",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Rahu']['house'] == 5 or ed['planets']['Rahu']['house'] == 11"
+  },
+  {
+    "entity_name": "Salvation",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] in [4, 8, 12]"
+  },
+  {
+    "entity_name": "Conflicts at Materialism",
+    "category": "planet",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Ketu']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Exaltation Status",
+    "category": "sign",
+    "python_code": "lambda ed: ed['planets']['Moon']['sign'] == 2"
+  },
+  {
+    "entity_name": "Enmity",
+    "category": "planet",
+    "python_code": "lambda ed: (ed['planets']['Moon']['sign'] == 7 and ed['planets']['Venus']['sign'] == 1) or (ed['planets']['Mercury']['sign'] == 3 and ed['planets']['Mars']['sign'] == 9)"
+  },
+  {
+    "entity_name": "Radioactive Elements",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Rahu']['house'] == 8 or ed['planets']['Ketu']['house'] == 8"
+  },
+  {
+    "entity_name": "Trikona/Kendra Bhava",
+    "category": "yoga",
+    "python_code": "lambda ed: (ed['planets']['Rahu']['house'] in [1,4,5,7,9,10] and ed['planets']['Rahu']['is_benefic'] == True) or (ed['planets']['Ketu']['house'] in [1,4,5,7,9,10] and ed['planets']['Ketu']['is_benefic'] == True)"
+  },
+  {
+    "entity_name": "Benefic",
+    "category": "conjunction",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['is_benefic'] == True or ed['planets']['Venus']['is_benefic'] == True"
+  },
+  {
+    "entity_name": "Malefic",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Saturn']['house'] == 7 or ed['planets']['Mars']['house'] == 7"
+  },
+  {
+    "entity_name": "Jiva-Hani",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['is_benefic'] == False"
+  },
+  {
+    "entity_name": "Plurality",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['is_benefic'] == True"
+  },
+  {
+    "entity_name": "Mandbuddhi",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['is_benefic'] == False"
+  },
+  {
+    "entity_name": "Lower Deities",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['is_benefic'] == False"
+  },
+  {
+    "entity_name": "Charitable Activities",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['is_benefic'] == True"
+  },
+  {
+    "entity_name": "Taurus Sign",
+    "category": "sign",
+    "python_code": "lambda ed: ed['planets']['Ketu']['sign'] == 2"
+  },
+  {
+    "entity_name": "Cancer Sign",
+    "category": "sign",
+    "python_code": "lambda ed: ed['planets']['Sun']['sign'] == 3 or ed['planets']['Moon']['sign'] == 3 or ed['planets']['Venus']['sign'] == 3"
+  },
+  {
+    "entity_name": "Sun-Mercury-Venus Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Sun']['lon'] - ed['planets']['Mercury']['lon']) < 10 and abs(ed['planets']['Sun']['lon'] - ed['planets']['Venus']['lon']) < 10"
+  },
+  {
+    "entity_name": "Sun-Venus Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Sun']['lon'] - ed['planets']['Venus']['lon']) < 10"
+  },
+  {
+    "entity_name": "Venus-Ketu Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Ketu']['lon']) < 10"
+  },
+  {
+    "entity_name": "Venus-Saturn Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Saturn']['lon']) < 10"
+  },
+  {
+    "entity_name": "Manas",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Progression",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Bhava",
+    "category": "house",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Fundamentals Of Nadi Astrology: Progression Jupiter",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Affliction",
+    "category": "sign",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Jupiter Ketu Conjunction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Jupiter']['lon'] - ed['planets']['Ketu']['lon']) < 10"
+  },
+  {
+    "entity_name": "Impatient Nature",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Jupiter']['lon'] - ed['planets']['Ketu']['lon']) < 10"
+  },
+  {
+    "entity_name": "Higher Knowledge",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Expansion",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Limitations",
+    "category": "sign",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Transit",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Curse",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Karka",
+    "category": "kp_system",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Sun In 4Th Or 11Th House From Moon",
+    "category": "house",
+    "python_code": "lambda ed: (ed['planets']['Sun']['house_from_moon'] == 4) or (ed['planets']['Sun']['house_from_moon'] == 11)"
+  },
+  {
+    "entity_name": "Nadi Sutras",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "In-Laws",
+    "category": "planet",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Mother",
+    "category": "conjunction",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "4Th House From Moon",
+    "category": "house",
+    "python_code": "lambda ed: ed['houses']['moon_house'] == 4"
+  },
+  {
+    "entity_name": "11Th House From Moon",
+    "category": "house",
+    "python_code": "lambda ed: ed['houses']['moon_house'] == 11"
+  },
+  {
+    "entity_name": "Placement Of Venus With Respect To Sun",
+    "category": "planet",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Sun']['lon']) < 10"
+  },
+  {
+    "entity_name": "Placement Of Jupiter With Respect To Sun",
+    "category": "planet",
+    "python_code": "lambda ed: abs(ed['planets']['Jupiter']['lon'] - ed['planets']['Sun']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Condition Of 4Th House From Moon",
+    "category": "house",
+    "python_code": "lambda ed: ed['houses']['moon_4th']['strength'] > 0.5"
+  },
+  {
+    "entity_name": "Virgo Ascendant",
+    "category": "house",
+    "python_code": "lambda ed: ed['ascendant']['sign'] == 'Virgo'"
+  },
+  {
+    "entity_name": "Chart 1",
+    "category": "house",
+    "python_code": "lambda ed: ed['chart_id'] == 1"
+  },
+  {
+    "entity_name": "Aries Sign",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['planets']['Sun']['sign'] == 'Aries'"
+  },
+  {
+    "entity_name": "8Th House",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Moon']['house'] == 8"
+  },
+  {
+    "entity_name": "2Nd House From Sun",
+    "category": "house",
+    "python_code": "lambda ed: (ed['planets']['Sun']['house'] + 1) % 12 + 1 == ed['planets']['Moon']['house']"
+  },
+  {
+    "entity_name": "Gemini Sign",
+    "category": "sign",
+    "python_code": "lambda ed: ed['planets']['Saturn']['sign'] == 'Gemini'"
+  },
+  {
+    "entity_name": "9Th House",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] == 9"
+  },
+  {
+    "entity_name": "Pisces Sign",
+    "category": "sign",
+    "python_code": "lambda ed: ed['planets']['Mars']['sign'] == 'Pisces' and ed['planets']['Ketu']['sign'] == 'Pisces'"
+  },
+  {
+    "entity_name": "7Th House",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Mars']['house'] == 7"
+  },
+  {
+    "entity_name": "Leo Sign",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['sign'] == 'Leo'"
+  },
+  {
+    "entity_name": "12Th House",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 12"
+  },
+  {
+    "entity_name": "Exaltation",
+    "category": "dasha",
+    "python_code": "lambda ed: any(ed['planets'][p]['exaltation'] for p in ['Sun','Moon','Mercury','Mars','Jupiter','Venus','Saturn'])"
+  },
+  {
+    "entity_name": "Hard Work",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Saturn']['house'] == 2"
+  },
+  {
+    "entity_name": "Agriculture",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Sun']['sign'] == 'Virgo'"
+  },
+  {
+    "entity_name": "Siblings",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['sign'] == 'Gemini' and ed['planets']['Mars']['sign'] == 'Aries' and ed['planets']['Moon']['sign'] == 'Cancer'"
+  },
+  {
+    "entity_name": "Aspect",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Mars']['lon'] - ed['planets']['Mercury']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Natural Benefic",
+    "category": "planet",
+    "python_code": "lambda ed: any(ed['planets'][p]['benefic'] for p in ['Venus','Mercury','Jupiter'])"
+  },
+  {
+    "entity_name": "Inauspicious Result",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Obstacles",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Dissatisfaction",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Showiness",
+    "category": "planet",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Inner Emptiness",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Moon']['lon'] - ed['planets']['Venus']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Children",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['aspect'] == 'good'"
+  },
+  {
+    "entity_name": "Post dated 20 May, 2017",
+    "category": "conjunction",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Chandra Kala Nadi",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Navamsa Sign",
+    "category": "aspect",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "8th Lord",
+    "category": "house",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Saturn Transit",
+    "category": "aspect",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Grandfather's Death",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Disaster",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Spouse",
+    "category": "sign",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Physical Sickness",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Walking Slowly",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Family Circle",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Paternal Grandfather",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Son",
+    "category": "conjunction",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Maternal Grandfather",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Eunuch Planet",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Combust",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Maximum Elongation",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Gemini",
+    "category": "conjunction",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Capricorn",
+    "category": "conjunction",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Writing Skills",
+    "category": "sign",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Heroic Poet",
+    "category": "sign",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Management/Leadership Qualities",
+    "category": "sign",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "War-Room Strategist",
+    "category": "sign",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Quarrel/Dispute",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Domestic Life",
+    "category": "planet",
+    "python_code": "lambda ed: False"
+  },
+  {
+    "entity_name": "Losses",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Venus']['conjunct']('Ketu')"
+  },
+  {
+    "entity_name": "Movable Signs",
+    "category": "sign",
+    "python_code": "lambda ed: ed['signs']['Sun']['type'] == 'movable'"
+  },
+  {
+    "entity_name": "Fixed Signs",
+    "category": "sign",
+    "python_code": "lambda ed: ed['signs']['Sun']['type'] == 'fixed'"
+  },
+  {
+    "entity_name": "Dual Signs",
+    "category": "sign",
+    "python_code": "lambda ed: ed['signs']['Sun']['type'] == 'dual'"
+  },
+  {
+    "entity_name": "Liberation",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 12"
+  },
+  {
+    "entity_name": "Worldly Matters",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Saturn']['house'] in [2, 6, 10]"
+  },
+  {
+    "entity_name": "Termination of Karmas",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 8"
+  },
+  {
+    "entity_name": "Flag",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['aspects']['Ketu']['aspects']('Flag')"
+  },
+  {
+    "entity_name": "Blemish",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['afflicted']"
+  },
+  {
+    "entity_name": "Dhana Bhava",
+    "category": "house",
+    "python_code": "lambda ed: ed['houses'][2]['name'] == 'Dhana Bhava'"
+  },
+  {
+    "entity_name": "Expenditure",
+    "category": "house",
+    "python_code": "lambda ed: ed['houses'][12]['lord'] == 'Venus'"
+  },
+  {
+    "entity_name": "Money",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 2"
+  },
+  {
+    "entity_name": "Dhatu Karaka",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['karakas']['Rahu'] == 'Dhatu'"
+  },
+  {
+    "entity_name": "Grand Father Karaka",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['karakas']['Rahu'] == 'Grand Father'"
+  },
+  {
+    "entity_name": "Shastras",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 5"
+  },
+  {
+    "entity_name": "Kaal Purusha Kundli",
+    "category": "house",
+    "python_code": "lambda ed: ed['houses'][1]['lord'] == 'Rahu' and ed['houses'][7]['lord'] == 'Ketu'"
+  },
+  {
+    "entity_name": "Purnayu Yoga",
+    "category": "yoga",
+    "python_code": "lambda ed: ed['yogas']['Purnayu']"
+  },
+  {
+    "entity_name": "Female Nativity",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['nativity']['gender'] == 'female'"
+  },
+  {
+    "entity_name": "Trikona",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['houses'][1]['type'] == 'trikona' or ed['houses'][5]['type'] == 'trikona' or ed['houses'][9]['type'] == 'trikona'"
+  },
+  {
+    "entity_name": "Kendra",
+    "category": "house",
+    "python_code": "lambda ed: ed['houses'][1]['type'] == 'kendra' or ed['houses'][4]['type'] == 'kendra' or ed['houses'][7]['type'] == 'kendra' or ed['houses'][10]['type'] == 'kendra'"
+  },
+  {
+    "entity_name": "Life Track Change",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['conjunct']('Jupiter') or ed['planets']['Ketu']['conjunct']('Saturn')"
+  },
+  {
+    "entity_name": "Native's Father",
+    "category": "dasha",
+    "python_code": "lambda ed: ed['dasha']['current'] == 'Sun' and ed['planets']['Sun']['house'] == 9"
+  },
+  {
+    "entity_name": "Respectable Profession",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Sun']['house'] == 10 and ed['planets']['Sun']['strength'] > 0.5"
+  },
+  {
+    "entity_name": "Benefic Aspects",
+    "category": "aspect",
+    "python_code": "lambda ed: not ed['aspects']['Mars']['benefic'] and not ed['aspects']['Ketu']['benefic']"
+  },
+  {
+    "entity_name": "Nadi Sutra 17",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['previous_house'] == ed['planets']['Jupiter']['house'] - 1"
+  },
+  {
+    "entity_name": "Nadi Sutra 19",
+    "category": "jaimini",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Karka Judgement",
+    "category": "aspect",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "Previous Life",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] == (ed['planets']['Jupiter']['house'] - 1) % 12 + 1"
+  },
+  {
+    "entity_name": "Nativity",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] == 1"
+  },
+  {
+    "entity_name": "Virgo Asc",
+    "category": "house",
+    "python_code": "lambda ed: ed['ascendant'] == 6"
+  },
+  {
+    "entity_name": "Name and Fame",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Sun']['lon'] - ed['planets']['Saturn']['lon']) < 10.0"
+  },
+  {
+    "entity_name": "Two Wives",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 7 and ed['planets']['Mars']['house'] == 7"
+  },
+  {
+    "entity_name": "Jaimini Rasi Chart",
+    "category": "aspect",
+    "python_code": "lambda ed: True"
+  },
+  {
+    "entity_name": "House 1",
+    "category": "jaimini",
+    "python_code": "lambda ed: ed['planets']['Sun']['house'] == 1 and ed['planets']['Mercury']['house'] == 1 and ed['planets']['Venus']['house'] == 1"
+  },
+  {
+    "entity_name": "House 2",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Saturn']['house'] == 2"
+  },
+  {
+    "entity_name": "House 3",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Moon']['house'] == 3"
+  },
+  {
+    "entity_name": "House 4",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] == 4"
+  },
+  {
+    "entity_name": "House 5",
+    "category": "conjunction",
+    "python_code": "lambda ed: ed['planets']['Sun']['house'] == 5 and ed['planets']['Mercury']['house'] == 5 and ed['planets']['Venus']['house'] == 5"
+  },
+  {
+    "entity_name": "House 6",
+    "category": "conjunction",
+    "python_code": "lambda ed: ed['planets']['Rahu']['house'] == 6"
+  },
+  {
+    "entity_name": "House 7",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 7"
+  },
+  {
+    "entity_name": "House 8",
+    "category": "jaimini",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 8"
+  },
+  {
+    "entity_name": "House 9",
+    "category": "conjunction",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] == 9"
+  },
+  {
+    "entity_name": "House 10",
+    "category": "dasha",
+    "python_code": "lambda ed: ed['planets']['Sun']['house'] == 10"
+  },
+  {
+    "entity_name": "House 11",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Mars']['house'] == 11"
+  },
+  {
+    "entity_name": "House 12",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Mars']['house'] == 12 and ed['planets']['Ketu']['house'] == 12"
+  },
+  {
+    "entity_name": "Chara Lagna",
+    "category": "jaimini",
+    "python_code": "lambda ed: ed['chara_lagna'] == 6"
+  },
+  {
+    "entity_name": "Sagittarius Ascendant",
+    "category": "house",
+    "python_code": "lambda ed: ed['ascendant'] == 9"
+  },
+  {
+    "entity_name": "Karakamsa",
+    "category": "jaimini",
+    "python_code": "lambda ed: ed['karakamsa'] == 8"
+  },
+  {
+    "entity_name": "Longevity",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] == 8 and ed['planets']['Rahu']['house'] == 8"
+  },
+  {
+    "entity_name": "Previous Life Checking Method",
+    "category": "house",
+    "python_code": "lambda ed: ed['planets']['Jupiter']['house'] == (ed['planets']['Jupiter']['house'] - 1) % 12 + 1"
+  },
+  {
+    "entity_name": "North Direction",
+    "category": "sign",
+    "python_code": "lambda ed: ed['planets']['Moon']['sign'] == 4"
+  },
+  {
+    "entity_name": "Three Goddesses",
+    "category": "nakshatra",
+    "python_code": "lambda ed: ed['nakshatra']['name'] in ['Ashwini', 'Bharani', 'Krittika']"
+  },
+  {
+    "entity_name": "Father",
+    "category": "conjunction",
+    "python_code": "lambda ed: any(abs(ed['planets']['Sun']['lon'] - ed['planets'][p]['lon']) < 10 for p in ['Venus', 'Saturn', 'Mars', 'Rahu', 'Jupiter'])"
+  },
+  {
+    "entity_name": "Parvati",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Moon']['sign'] == 4 or ed['planets']['Saturn']['sign'] == 4"
+  },
+  {
+    "entity_name": "Saraswati",
+    "category": "nakshatra",
+    "python_code": "lambda ed: ed['nakshatra']['name'] in ['Magha', 'Purva Phalguni', 'Uttara Phalguni']"
+  },
+  {
+    "entity_name": "Laxmi",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Venus']['sign'] == 2 or ed['planets']['Mercury']['sign'] == 2"
+  },
+  {
+    "entity_name": "Guru",
+    "category": "conjunction",
+    "python_code": "lambda ed: any(abs(ed['planets']['Jupiter']['lon'] - ed['planets'][p]['lon']) < 10 for p in ['Saturn', 'Rahu', 'Ketu', 'Venus'])"
+  },
+  {
+    "entity_name": "Education",
+    "category": "aspect",
+    "python_code": "lambda ed: ed['planets']['Mercury']['house'] in [2, 5, 9] or ed['planets']['Jupiter']['aspects'].get('Mercury', False)"
+  },
+  {
+    "entity_name": "Nadi Sutra 50",
+    "category": "kp_system",
+    "python_code": "lambda ed: ed['planets']['Ketu']['sign'] == 1"
+  },
+  {
+    "entity_name": "Independence",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 1"
+  },
+  {
+    "entity_name": "Authority",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 10"
+  },
+  {
+    "entity_name": "Freedom",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 11"
+  },
+  {
+    "entity_name": "Patriotism",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 9"
+  },
+  {
+    "entity_name": "Independent Nature at Work Place",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 6"
+  },
+  {
+    "entity_name": "Spiritual Growth",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Ketu']['house'] == 12"
+  },
+  {
+    "entity_name": "Severing of Rahu's Head",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Rahu']['house'] == 6"
+  },
+  {
+    "entity_name": "Nadi Sutra 51",
+    "category": "conjunction",
+    "python_code": "lambda ed: any(abs(ed['planets']['Venus']['lon'] - ed['planets'][p]['lon']) < 10 for p in ['Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Saturn', 'Rahu'])"
+  },
+  {
+    "entity_name": "Wife's Nature",
+    "category": "planet",
+    "python_code": "lambda ed: ed['planets']['Venus']['house'] == 7"
+  },
+  {
+    "entity_name": "Talented Wife",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Sun']['lon']) < 10"
+  },
+  {
+    "entity_name": "Beautiful Lovely Wife",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Moon']['lon']) < 10"
+  },
+  {
+    "entity_name": "Learned Wife with Good sense of humour",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Mars']['lon']) < 10"
+  },
+  {
+    "entity_name": "a Caring Wife",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Mercury']['lon']) < 10"
+  },
+  {
+    "entity_name": "Wife... a Well-wisher",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Jupiter']['lon']) < 10"
+  },
+  {
+    "entity_name": "a Hardworking/Professional Wife",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Saturn']['lon']) < 10"
+  },
+  {
+    "entity_name": "Wife of luxurious Nature/Desires",
+    "category": "conjunction",
+    "python_code": "lambda ed: abs(ed['planets']['Venus']['lon'] - ed['planets']['Rahu']['lon']) < 10"
+  }
+]

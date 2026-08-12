@@ -1,0 +1,13 @@
+{
+    "arch": "multiday",
+    "params": {
+        "rsi_min": 54.09336127320675,
+        "rsi_max": 64.81071105942699,
+        "roc5_min": 0.018802475646492057,
+        "accel_min": -0.0039081864243024995,
+        "hold_days": 5,
+        "target_vol": 0.7705599858296439
+    },
+    "best_objective": 1.3300150503740664,
+    "trials_completed": 14110
+}

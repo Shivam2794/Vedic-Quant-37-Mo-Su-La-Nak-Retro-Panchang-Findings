@@ -1,0 +1,16 @@
+{
+  "hivePartitioningOptions": {
+    "mode": "AUTO",
+    "sourceUriPrefix": "gs://antigravity-quant-matrix"
+  },
+  "parquetOptions": {
+    "enableListInference": false,
+    "enumAsString": false,
+    "mapTargetType": null
+  },
+  "sourceFormat": "PARQUET",
+  "sourceUris": [
+    "gs://antigravity-quant-matrix/ticker=*"
+  ],
+  "timestampTargetPrecision": []
+}

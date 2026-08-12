@@ -1,0 +1,436 @@
+[2025-10-19T06:29:54.7290000-05:00] the_biggest_rick: https://medium.com/@yavuzakbay/how-a-quant-would-build-a-portfolio-2c39f74c480e
+----------------------------------------
+[2025-10-19T06:32:05.4810000-05:00] the_biggest_rick: methodical backtest of TSI on SPY & QQQ (1996–2022)
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4708400
+----------------------------------------
+[2025-10-20T08:42:39.2240000-05:00] the_biggest_rick: *"In the world of finance, a long-standing belief persists: trading is a game best left to large institutional investors. This myth suggests that retail investors lack the resources, technology, and market influence to compete effectively. However, recent developments challenge this notion, revealing that retail traders are not only capable but may sometimes be better positioned than their institutional counterparts to outperform the market."*
+
+https://concretumgroup.com/breaking-the-myth-retail-investors-can-trade-like-the-pros
+----------------------------------------
+[2025-10-28T08:19:10.3100000-05:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - articles [1429431222429417583].csv_Files\3E56B58D-988D-480B-A7CC-3465C7B79869-c31b14376b949adf.jpg
+----------------------------------------
+[2025-10-30T06:17:26.6500000-05:00] the_biggest_rick: Paper: ***The Alchemy of Multibagger Stocks:
+An empirical investigation of factors that drive outperformance in the
+stock market***
+
+https://www.open-access.bcu.ac.uk/16180
+----------------------------------------
+[2025-10-30T06:31:19.0370000-05:00] the_biggest_rick: *Story: Econometrics vs. Backtesting — The Two Sciences of the Market*
+
+There’s this divide in how people try to “understand” the market.
+One side comes from econometrics, the other from the algorithmic and ML world.
+
+Econometrics is like the classic academic science of markets. It builds models from theory, with equations full of betas, fixed effects, and “ceteris paribus” assumptions. The idea is to isolate one variable’s effect while holding everything else constant. You take accounting data, macro indicators, valuation ratios, and run regressions to see what should influence returns. If the math checks out, you get a statistically significant relationship — maybe something like “cash-flow yield predicts excess return.” But the truth is, these models live in a controlled, theoretical bubble. They describe what might drive performance, not necessarily what will.
+
+Now, compare that to the algorithmic trader or ML engineer.
+They don’t start with assumptions, they start with data. They test thousands of combinations — lookback windows, thresholds, parameter grids — and find what actually works. It’s not about why it works, it’s about if it works.
+You run a grid search on a moving average crossover, RSI, or volatility breakout system. You optimize lookbacks from 5 to 200 days, test them over ten years of data, and check the Sharpe ratios, drawdowns, and hit rates. Every run gives you a measurable outcome. You get validation curves, not theoretical betas. When you finish, you have an actual entry and exit rule that’s tuned, that you can backtest in-sample, stress test out-of-sample, and deploy.
+----------------------------------------
+[2025-10-30T06:31:39.6820000-05:00] the_biggest_rick: -
+----------------------------------------
+[2025-10-30T06:31:43.2410000-05:00] the_biggest_rick: Machine learning goes even deeper.
+It takes historical data, learns from patterns that consistently led to certain outcomes, and updates its internal structure to predict those outcomes better. It’s supervised by results — the label tells it whether it guessed right or wrong. The more data, the sharper it gets. You can visualize how it learned, see which features matter, and then benchmark it live. That’s science with feedback.
+
+Econometrics, in contrast, works more like a simulation built on beliefs about how the economy functions. It uses lagged variables to mimic causality and claims to “control for” other effects. But the feedback is weaker. You don’t retrain; you re-estimate and test significance again. There’s rarely a validation dataset, just robustness checks that depend on the same theory that built the model in the first place.
+
+In trading, this difference matters a lot.
+A regression might tell you that “low price-to-book firms outperform,” but that’s descriptive. It’s a statement about a relationship, not a trading rule. A backtest, on the other hand, tells you how to use that information — when to enter, when to exit, what lookback gives stability, what volatility filter avoids traps. It turns relationships into mechanics. You can visualize the result as an equity curve, not a t-stat.
+
+That’s why many econometric findings don’t survive contact with the market.
+They aren’t wrong, they’re just not operational. They explain a tendency under ideal assumptions, while algorithmic backtesting shows behavior under real conditions — slippage, regime shifts, noise, and all. One is theory-first, the other is data-first. One seeks meaning, the other seeks function.
+----------------------------------------
+[2025-10-30T06:32:33.9670000-05:00] the_biggest_rick: -
+But the truth is, both belong to the same scientific family.
+Econometrics explains why a signal could exist — say, that investors overreact to earnings revisions. Machine learning or algorithmic backtesting shows whether that signal actually persists when traded live. Econometrics frames the logic; ML quantifies the edge.
+
+So in the end, you can see the contrast clearly.
+Econometrics is like building a model car and testing how well it rolls on paper. Algorithmic trading is driving the car around the track until it either wins or crashes. Both use math. Both are forms of science. But only one gives you the lap time.
+----------------------------------------
+[2025-12-20T18:11:50.0230000-06:00] the_biggest_rick: **Introduction to Trend Following Trading**
+
+The premise of trading as a trend follower is exactly what you think it is — trading in the direction of the trend. As seen in the above image, one way to trend trade is to look at an asset with a resistance line. Once the price breaks through resistance, a trend trader would trade in the direction of the breakout [1]. In our above example, the trader would take a long position (betting the price will go up for profit). After a period of time, the trend normally stops for some reason, and the price of the asset will reverse. Once the reversal occurs, a trend trader would close the position for a profit or enter a short position, following the trend again.
+
+From my own personal research, trend following tends to have good payouts (i.e. you gain much more than risk such as $2 reward to $1 risk or better). The downside of this strategy is trends do not happen too often, so you should expect to have a lot of your trades lose before you get the big trend trade. Of course, you can make alterations to this basic trend following strategy to improve other aspects, but I am simply explaining what would happen if you took up this strategy as a beginner. Another thing to note is trend follow can be psychologically difficult to execute. It takes a certain personality type to have conviction to take a bunch of losing little trades before getting the big trade. Once the big trade occurs, the trend trader also needs to be careful not to take profits too early in order to be profitable from their smaller losing trades.
+,
+----------------------------------------
+[2025-12-20T18:11:51.6420000-06:00] the_biggest_rick: **Introduction to Mean Reversion Trading**
+
+On the other hand, mean reversion trading makes an assumption that prices converge towards a mean. Once the price gets too far away from the mean, a mean reversion trader thinks the price will return towards this mean [2]. In the above image, the black arrow represent the means, while the blue line would be the price reverting towards the mean once the momentum took it too far.
+
+In my experience, mean reversion trading tends to have high win rates but lower reward to risk payouts. In other words, the characteristics of mean reversion strategies are roughly the opposite of trend following strategies. It is common for mean reversion strategies to have a 70% win rate with $1.5 reward to $1 risk. For a newer trader, a mean reversion strategy maybe more easier to operate psychologically, since wins are seen often. The cons of mean reversion are similar to what is known as picking up pennies in front of a steam roller. You often get a few small wins, but occasionally you may suffer a big loss.
+----------------------------------------
+[2025-12-20T18:12:51.5190000-06:00] the_biggest_rick: **Hurst Exponent Applied With Python**
+
+The Hurst exponent relates to the autocorrelations of the time series and the rate at which these decrease as the lag between pairs of values increases [4]. Another way of looking at stationarity is to compare it with Geometric Brownian Motion (GBM). A stationary price series is meant to diffuse more slowly than GBM.
+----------------------------------------
+[2025-12-20T18:13:17.6930000-06:00] the_biggest_rick: **Mean reversion and trend following.**
+
+ Mean reversion tends to be a high probability system with low reward and high risk per trade. Conversely, trend following tends to be a low probability system with high reward and low risk per trade. Next, we examined two methods to detect if an asset is trending or mean reverting with the ADF test and Hurst exponent.
+----------------------------------------
+[2025-12-25T22:48:46.9830000-06:00] the_biggest_rick: EASIEST WAY TO RUN A DAILY PYTHON SCRIPT AFTER MARKET CLOSE
+
+No servers. No cron. No coding setup. Just GitHub Actions doing the work for you.
+
+WHAT YOU NEED
+
+A GitHub account (free)
+A Python script that runs once and finishes
+Runtime under 6 hours
+
+STEP 1 — CREATE A GITHUB REPO
+
+Go to github.com and log in.
+Click New Repository.
+Give it any name you like.
+Make it public or private.
+Click Create Repository.
+
+STEP 2 — ADD YOUR PYTHON SCRIPT
+
+In your repo, click Add File → Create New File.
+Name the file after_close.py.
+Paste your script. For example:
+from datetime import datetime
+
+import pytz
+
+eastern = pytz.timezone("US/Eastern")
+now = datetime.now(eastern)
+
+print("Script ran successfully")
+print("Time:", now)
+
+Commit the file.
+
+STEP 3 — ADD YOUR DEPENDENCIES
+
+Click Add File → Create New File.
+Name it requirements.txt.
+
+List all Python libraries your script needs, for example:
+
+pytz
+pandas
+requests
+
+Commit the file.
+
+STEP 4 — SET UP THE SCHEDULE (THE “AUTO-RUN” PART)
+
+In your repo, click Actions.
+Click Set up a workflow yourself.
+GitHub will guide you with a simple interface — just select “Simple workflow”.
+In the interface, tell it:
+Run your Python script
+Every weekday (Monday–Friday)
+After market close (4:30 PM ET is safe)
+Save the workflow. GitHub will handle the schedule automatically.
+You do not need to know YAML or write anything complicated.
+
+STEP 5 — YOU’RE DONE
+
+Your script will now:
+Run Monday through Friday
+After US market close
+On GitHub’s computers automatically
+Keep logs and email you if it fails
+No VPS. No cron. No maintenance.
+
+STEP 6 — VIEW LOGS OR TEST
+
+Go to your repo → Actions
+Click the workflow
+See the output and errors
+Optional: click Run workflow to test it manually
+
+OPTIONAL — HANDLE API KEYS OR SECRETS
+
+Go to Settings → Secrets and Variables → Actions → New Repository Secret
+Name it something like API_KEY
+In Python, use it like this:
+
+import os
+API_KEY = os.environ["API_KEY"]
+----------------------------------------
+[2025-12-25T22:49:24.5730000-06:00] the_biggest_rick: Secrets are encrypted and never visible in logs.
+
+OPTIONAL — SKIP MARKET HOLIDAYS
+
+Inside your script, you can check if the market is closed:
+import pandas_market_calendars as mcal
+
+nyse = mcal.get_calendar("NYSE")
+today = nyse.valid_days(start_date="today", end_date="today")
+
+if len(today) == 0:
+print("Market closed today — exiting")
+exit(0)
+
+IMPORTANT RULES
+
+Script must start, run, and exit
+No infinite loops
+No local file persistence
+No always-on services
+
+COST
+
+Public repository → free
+Private repository → free for most people (up to 2,000 minutes/month)
+Typical daily script uses ~100 minutes/month
+You will almost never pay anything.
+
+HOW TO THINK ABOUT IT
+
+GitHub spins up a temporary computer → runs your script → saves logs → deletes the computer. Every run is fresh and clean.
+----------------------------------------
+[2025-12-26T02:51:25.6550000-06:00] riemifx: Pinned a message.
+----------------------------------------
+[2025-12-27T10:58:41.8360000-06:00] the_biggest_rick: 2.3.2. Boruta feature selection
+Boruta is a feature selection algorithm built upon a Random Forest
+classification (Kursa & Rudnicki, 2010). Boruta tests individual features
+iteratively and eliminates them from the selected feature list if they are
+less relevant compared to random probes. (Kursa & Rudnicki, 2010)
+described the Boruta algorithm in following steps:
+
+1. Add “shadow attributes” to the dataset that are copies of existing
+attributes.
+2. Shuffle the shadow attributes to ensure they are not correlated to the
+target. These attributes act as the random probes referred earlier.
+3. Random Forest classification is performed on this dataset which has
+both original and shadow attributes. Then z-score is computed for
+the attributes.
+4. Maximum z score is computed for shadow attributes and termed as
+MZSA. Each feature’s z score is compared against MZSA. Features
+with higher z score are labeled important and features with lower z
+score are labeled unimportant.
+5. Each feature’s importance is evaluated using two-sided MZSA test.
+For features with significantly less MZSA are eliminated from
+selected feature set. Features with significantly high MZSA are
+retained in selected feature set.
+6. All shadow attributes are dropped and the process is repeated again
+until all features in feature set are labeled important or unimportant
+or a predefined stop criteria is achieved.
+----------------------------------------
+[2026-01-04T11:09:20.1150000-06:00] the_biggest_rick: Automated Trading Signal System: Technical Implementation Guide
+Overview
+
+This outlines a send automated trading signals 
+
+System Architecture
+
+1. Signal Generation
+Tool: Jupyter Notebook (.ipynb)
+
+Objective:
+
+Export signals in standardized format
+
+Signal JSON Structure
+json 
+     {
+    "symbol": "EURUSD",
+    "action": "BUY",
+    "lot": 0.1,
+    "sl": 1.0800,
+    "tp": 1.0900,
+    "timestamp": "2026-01-04T10:00:00Z"
+       }
+
+
+Bash Command to Publish Signal:
+
+bash:
+git add signals/latest.json
+git commit -m "New trading signal"
+git push
+
+2. Signal Validation
+
+Tool: GitHub Actions
+
+Validation Criteria:
+
+Verify JSON structure
+Validate trade parameters
+Ensure signal integrity
+Automate signal publishing process
+
+3. Trade Execution
+Tool: MetaTrader 5 Expert Advisor
+
+Execution Workflow:
+
+Fetch signals from GitHub
+Validate incoming signals
+Execute trades in trading platform
+Prevent duplicate trade execution
+
+Implementation:
+
+Develop trading strategy in Jupyter Notebook
+Create algorithm to generate trade signals
+Convert signals to standardized JSON format
+Publish signals to version-controlled repository
+
+Validation:
+
+Set up GitHub repository
+Configure GitHub Actions
+Implement automated validation pipeline
+
+Execution Strategy:
+
+Develop Expert Advisor in MQL5
+Configure signal retrieval mechanism
+Implement trade execution logic
+Add safeguards against duplicate trades
+
+Technology stack:
+
+Python 3.8+
+Jupyter Notebook
+MetaTrader 5
+GitHub
+JSON
+MQL5
+----------------------------------------
+[2026-01-14T12:35:29.8160000-06:00] the_biggest_rick: Trading Systems and Quantitative Methods
+
+For those that are involved in the development and application of quant models, risk management, and algo trading systems, these books offer strategies for systematic trading.
+
+Quantitative Trading, by Chan: Introduction to basic quantitative trading on a retail level.
+
+Algorithmic Trading, by Chan: A more advanced book by Ernie, with a number of interesting strategies to try out and backtest.
+
+Mechanical Trading Systems, by Weissman: Great book for strategies. Covers a plethora of momentum and mean reversion strategies on multiple time frames, along with backtested results.
+
+Following the Trend, by Clenow: I consider this book, one of the best reads on the topic of Trend Following, a very popular trading strategy.
+
+Trade Your Way to Financial Freedom, by Tharp: Terrible title aside, this classic outlines a structured approach to developing a personal trading system that aligns with individual traders’ psychological.
+
+Mathematics of Money Management, by Vince: Details the mathematical techniques for risk management and optimal money management in managing portfolios.
+
+Intermarket Trading Strategies, by Katsanos: Discusses the relationships between global markets and how understanding these can lead to building trading strategies.
+
+Applied Quantitative Methods for Trading and Investment, by Dunis et al: A practical guide to applying quantitative techniques to real-world trading and investment situations.
+
+Algorithmic Trading and DMA, by Johnson: An introduction to direct market access and algorithmic trading strategies. Dated but still an entertaining read (if you're into that kind of thing).
+
+Technical Analysis from A to Z, by Achelis: An encyclopedic reference of technical analysis indicators and their practical applications in trading.
+
+Inside the Black Box, by Narang: Great book for a headstart on all the different aspects of quant trading. Very general information, but broadly brushes through every aspect of the business
+----------------------------------------
+[2026-01-14T12:35:42.2670000-06:00] the_biggest_rick: The Concepts and Practice of Mathematical Finance, by Joshi: This book provides a clear understanding of the intuition behind derivatives pricing, how models are implemented, and how they are used and adapted in practice.
+
+Behavioral and Historical Perspectives
+These books are about the psychological aspects of trading and historical accounts of significant market events. They focus on the importance of market psychology and the impact of human behavior on decision-making.
+
+Reminiscences of a Stock Operator, by Lefèvre: A narrative that provides insight into the life and strategies of the legendary trader Jesse Livermore The book is packed with trading wisdom and market psychology.
+
+When Genius Failed, by Lowenstein: Chronicles the rise and fall of Long-Term Capital Management, one of the most storied hedge funds of all times.
+
+Predictably Irrational, by Ariely: Explores the hidden forces that shape our decision making process, revealing how rational thought is often subverted by irrational behaviors. ($1,500 iPhone anyone?)
+
+Behavioral Investing, by Montier: A comprehensive look at the psychological barriers to successful investing and strategies to overcome them.
+
+The Laws of Trading, by Lebron: Offers a unique perspective on decision-making through the lens of a professional trader at Jane Street.
+
+Statistical and Econometric Analysis
+This category includes books that detail the use of time series analysis, econometrics, wavelet methods, and market modeling in understanding financial data, asset price dynamics, and volatility.
+
+Machine Learning for Algorithmic Trading, by Jansen: Introduces the use of machine learning to design and evaluate automated trading strategies, covering a wide range of tools and techniques. An absolute gold mine.
+----------------------------------------
+[2026-01-14T12:35:44.9020000-06:00] the_biggest_rick: Time Series Analysis, by Hamilton: An in-depth exploration of the statistical methods used in analyzing time series data, with applications in economics and finance.
+
+Econometric Analysis, by Greene: A textbook covering the fundamentals and applications of econometrics in empirical research in economics and finance.
+
+Wavelet Methods for Time Series Analysis, by Percival and Walden: Examines the use of wavelet analysis in time series, particularly for non-stationary financial data. Warning: uses R and S-Plus! Also see A Wavelet Tour of Signal Processing.
+
+Analysis of Financial Time Series, by Tsay: Focuses on the statistical tools and techniques for analyzing financial time series data.
+
+The Elements of Statistical Learning, by Hastie, Tibshirani, and Friedman: Presents an overview of statistical learning theory and its applications in various fields, including finance. Warning: uses R!
+
+Asset Price Dynamics, Volatility, and Prediction, by Taylor: Analyzes asset price movements and volatility, which helps predict future market behaviors.
+----------------------------------------
+[2026-01-25T08:51:36.6140000-06:00] the_biggest_rick: 
+----------------------------------------
+[2026-01-25T08:51:51.6740000-06:00] the_biggest_rick: 
+----------------------------------------
+[2026-01-25T08:52:06.0910000-06:00] the_biggest_rick: FTMO assets @everyone
+----------------------------------------
+[2026-02-08T20:38:45.9400000-06:00] the_biggest_rick: @everyone FTMO assets!
+----------------------------------------
+[2026-03-20T13:02:13.4940000-05:00] the_biggest_rick: Based on the images you've shared, here's a comprehensive list of all the tickers:
+
+## Equities I CFD
+- AAPL (Apple)
+- AMZN (Amazon)
+- BABA (Alibaba Group)
+- BAC (Bank of America)
+- GOOG (Alphabet Class C)
+- META (Meta Platforms)
+- MSFT (Microsoft)
+- NFLX (Netflix)
+- NVDA (NVIDIA)
+- PFE (Pfizer)
+- RACE (Ferrari)
+- T (AT&T)
+- TSLA (Tesla)
+- V (Visa)
+
+## Forex
+- EURUSD (Euro vs US Dollar)
+- GBPUSD (Great Britain Pound vs US Dollar)
+- USDCHF (US Dollar vs Swiss Franc)
+- USDJPY (US Dollar vs Japanese Yen)
+- USDCAD (US Dollar vs Canadian Dollar)
+- AUDUSD (Australian Dollar vs US Dollar)
+- AUDNZD (Australian Dollar vs New Zealand Dollar)
+- AUDCAD (Australian Dollar vs Canadian Dollar)
+- AUDCHF (Australian Dollar vs Swiss Franc)
+- AUDJPY (Australian Dollar vs Japanese Yen)
+- CHFJPY (Swiss Franc vs Japanese Yen)
+- EURGBP (Euro vs Great Britain Pound)
+- EURAUD (Euro vs Australian Dollar)
+
+## Crypto I CFD
+- BTCUSD (Bitcoin vs US Dollar)
+- DASHUSD (Dash vs US Dollar)
+- ETHUSD (Ethereum vs US Dollar)
+- LTCUSD (Litecoin vs US Dollar)
+- DOTUSD (Polkadot vs US Dollar)
+- ADAUSD (Cardano vs US Dollar)
+- XRPUSD (Ripple vs US Dollar)
+- BCHUSD (BitCoin Cash vs US Dollar)
+- SOLUSD (Solana vs US Dollar)
+- AVAUSD (Avalanche vs US Dollar)
+- ETCUSD (Ethereum Classic vs US Dollar)
+
+## Equities II CFD
+- AIRF (Air France KLM)
+- ALVG (Allianz)
+- BAYGn (Bayer)
+- DBKGn (Deutsche Bank)
+- IBE (Iberdrola)
+- LVMH (LVMH)
+- VOWG_p (Volkswagen)
+
+## Metals CFD
+- XAUUSD (Gold vs US Dollar)
+- XAUEUR (Gold vs Euro)
+- XAUAUD (Gold vs Australian Dollar)
+- XAGAUD (Silver vs Australian Dollar)
+- XAGEUR (Silver vs Euro)
+- XAGUSD (Silver vs US Dollar)
+- XPDUSD (Palladium vs US Dollar)
+- XPTUSD (Platinum vs US Dollar)
+- XCUUSD (Copper vs US Dollar)
+
+@everyone FTMO asset list
+----------------------------------------
+[2026-04-23T08:41:17.7440000-05:00] the_biggest_rick: RECOMMENDED READS IF YOU'RE WILLING
+"A Unified Theory of Underreaction, Momentum Trading and Overreaction" — Hong & Stein (1999) Why momentum exists mechanically. Two investor types — newswatchers and momentum traders — interact to create predictable mispricings. The micro-foundation AQR's strategies implicitly rely on.
+"When Are Contrarian Profits Due to Stock Market Overreaction?" — Jegadeesh & Titman (1995) The complement to their 1993 paper. Separates momentum from mean reversion — crucial for knowing when each regime dominates.
+----------------------------------------

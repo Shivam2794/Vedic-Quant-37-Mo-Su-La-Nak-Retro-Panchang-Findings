@@ -1,0 +1,12 @@
+{
+  "features_head": [
+    "['feat_1355' 'feat_659' 'feat_1337' 'feat_1482' 'feat_1282' 'feat_889'\n 'feat_927' 'feat_88' 'feat_740' 'feat_442' 'feat_1283' 'feat_1124'\n 'feat_502' 'feat_196' 'feat_325' 'feat_1636' 'feat_792' 'feat_586'\n 'feat_608' 'feat_1918']",
+    "['feat_799' 'feat_1440' 'feat_1016' 'feat_744' 'feat_1307' 'feat_576'\n 'feat_1566' 'feat_1955' 'feat_1199' 'feat_1699' 'feat_914' 'feat_1720'\n 'feat_1664' 'feat_106' 'feat_184' 'feat_1915' 'feat_1234' 'feat_1070'\n 'feat_1902' 'feat_643']",
+    "['feat_605' 'feat_1906' 'feat_888' 'feat_244' 'feat_1853' 'feat_133'\n 'feat_786' 'feat_679' 'feat_1757' 'feat_1991' 'feat_1978' 'feat_250'\n 'feat_647' 'feat_761' 'feat_26' 'feat_698' 'feat_109' 'feat_122'\n 'feat_77' 'feat_1993']"
+  ],
+  "anchors_head": [
+    "{'SPY_conception': '1990-01-22', 'SPY_first_traded': '1993-01-22', 'QQQ_first_traded': '1999-03-10', 'US_independence': '1776-07-04'}",
+    "{'SPY_conception': '1990-01-22', 'SPY_first_traded': '1993-01-22', 'QQQ_first_traded': '1999-03-10', 'US_independence': '1776-07-04'}",
+    "{'SPY_conception': '1990-01-22', 'SPY_first_traded': '1993-01-22', 'QQQ_first_traded': '1999-03-10', 'US_independence': '1776-07-04'}"
+  ]
+}

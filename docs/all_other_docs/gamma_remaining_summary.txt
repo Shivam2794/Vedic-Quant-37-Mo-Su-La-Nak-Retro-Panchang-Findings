@@ -1,0 +1,798 @@
+- anchor_analysis_log.txt: .txt file. 83 lines. [load] Reading C:\Users\sgadekar\Downloads\Astrolo
+- ASTROLOGY_FINANCIAL_CANON.md: .md file. 600 lines. # Astrology + Financial Markets: An Honest Canon
+- backtest_log.txt: .txt file. 49 lines. [load] Reading C:\Users\sgadekar\Downloads\Astrolo
+- build_22k_log.txt: .txt file. 41 lines. [yfinance] Downloading SPY 1999-01-01 to 2025-12-3
+- CLAUDE.md: .md file. 12 lines. # Project Orion: Claude Code Instructions
+- CLAUDE_HANDOFF_PRIMER.md: .md file. 253 lines. # Handoff Primer for Claude Code
+- CLAUDE_NEXT_SESSION_HANDOFF.md: .md file. 429 lines. # Handoff to Next Claude Session
+- hierarchical_log.txt: .txt file. 38 lines. [load] Reading C:\Users\sgadekar\Downloads\Astrolo
+- MASTER_ANALYSIS_PLAN.md: .md file. 386 lines. # Project Orion — Master Analysis Plan
+- NATAL_ANCHORS.md: .md file. 148 lines. # Project Orion — Canonical Natal Anchors
+- PATH_ALPHA_RUNBOOK.md: .md file. 253 lines. # Path α Runbook — Project Orion
+- POSTMORTEM.md: .md file. 123 lines. # Project Orion — Postmortem
+- PREREGISTRATION_v1.md: .md file. 120 lines. # Project Orion Path α — Pre-Registration v1
+- PROJECT_JOURNEY.md: .md file. 280 lines. # Project Orion — What I Now Understand
+- .gitignore:  file. 2 lines. # Created by pytest automatically.
+- CACHEDIR.TAG: .tag file. 4 lines. Signature: 8a477f597d28d172789f06886806bc55
+- README.md: .md file. 8 lines. # pytest cache directory #
+- lastfailed:  file. 3 lines. {
+- nodeids:  file. 56 lines. [
+- astro_validation_report.md: .md file. 97 lines. # Deep Audit Final Report: Chrome Agent vs Python 
+- astro_validation_report.md.metadata.json: .json file. 5 lines. {
+- backend_payload.md: .md file. 4544 lines. # Backend Ephemeris Payload
+- backtest_accuracy_report.md: .md file. 109 lines. # Vedic Alpha: Brutal Backtest Accuracy & Anti-Ove
+- backtest_accuracy_report.md.metadata.json: .json file. 5 lines. {
+- brainstorm_combinatorial_ml.md: .md file. 39 lines. # The Ultimate Combinatorial ML Debate: SPY & QQQ
+- brainstorm_combinatorial_ml.md.metadata.json: .json file. 5 lines. {
+- brutal_audit_final_categories.md: .md file. 28 lines. 
+- brutal_audit_final_categories.md.metadata.json: .json file. 5 lines. {
+- brutal_audit_phase3_phase4.md: .md file. 47 lines. 
+- brutal_audit_phase3_phase4.md.metadata.json: .json file. 5 lines. {
+- brutal_audit_t1_t3.md: .md file. 65 lines. 
+- brutal_audit_t1_t3.md.metadata.json: .json file. 5 lines. {
+- brutal_audit_t4_t7.md: .md file. 52 lines. 
+- brutal_audit_t4_t7.md.metadata.json: .json file. 5 lines. {
+- brutal_audit_t8_t10.md: .md file. 45 lines. 
+- brutal_audit_t8_t10.md.metadata.json: .json file. 5 lines. {
+- chrome_agent_prompt.md: .md file. 302 lines. # Complete Vedic Astrology Verification Prompt (v2
+- chrome_agent_prompt.md.metadata.json: .json file. 4 lines. {
+- comprehensive_astrological_universe.md: .md file. 79 lines. # The Absolute Exhaustive Astrological Universe (F
+- comprehensive_astrological_universe.md.metadata.json: .json file. 5 lines. {
+- deep_audit_t10_t11_t12.md: .md file. 86 lines. 
+- deep_audit_t10_t11_t12.md.metadata.json: .json file. 5 lines. {
+- definitive_inspection_report.md: .md file. 87 lines. # The Ultimate Grand-Scale Vedic Quantum Inspectio
+- definitive_inspection_report.md.metadata.json: .json file. 5 lines. {
+- definitive_inspection_report_v2.md: .md file. 41 lines. # Definitive Mathematical Inspection Report
+- definitive_inspection_report_v2.md.metadata.json: .json file. 5 lines. {
+- definitive_math_inspection.md: .md file. 48 lines. # The Absolute Final Mathematical Audit (V3): 8-Le
+- definitive_math_inspection.md.metadata.json: .json file. 5 lines. {
+- eda_report.md: .md file. 712 lines. 
+- eda_report.md.metadata.json: .json file. 5 lines. {
+- exhaustive_database_columns.md: .md file. 447 lines. # The True Combinatorial Matrix of Astrological ML
+- exhaustive_database_columns.md.metadata.json: .json file. 5 lines. {
+- final_multipoint_inspection.md: .md file. 42 lines. 
+- final_multipoint_inspection.md.metadata.json: .json file. 5 lines. {
+- holistic_database_scan.md: .md file. 39 lines. 
+- holistic_database_scan.md.metadata.json: .json file. 5 lines. {
+- honest_plan_audit.md: .md file. 415 lines. # Honest Multi-Hat Audit: Can I Bet My Life On Thi
+- implementation_plan.md: .md file. 1126 lines. 
+- implementation_plan.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_astrological_architecture.md: .md file. 59 lines. # Astrological Logic Architecture: Feature Categor
+- implementation_plan_astrological_architecture.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_bruteforce_dualswarm.md: .md file. 37 lines. # Implementation Plan: GPU Brute-Force Dual-Swarm
+- implementation_plan_bruteforce_dualswarm.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_chapter1_swarm.md: .md file. 39 lines. # Implementation Plan: Chapter 1 Data Engineering 
+- implementation_plan_chapter1_swarm.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_chapter2_swarm.md: .md file. 39 lines. # Implementation Plan: Phase 2 Astrological Swarm
+- implementation_plan_chapter2_swarm.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_chapter3_inspection.md: .md file. 31 lines. # Implementation Plan: Chapter 3 Brutal Inspection
+- implementation_plan_chapter3_inspection.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_chapter3_swarm.md: .md file. 44 lines. # Implementation Plan: Chapter 3 XGBoost Swarm
+- implementation_plan_chapter3_swarm.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_chapter45_swarm.md: .md file. 49 lines. # Implementation Plan: Ch 4 & 5 Adversarial Swarm 
+- implementation_plan_chapter45_swarm.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_combinatorial_ml.md: .md file. 48 lines. # Master Combinatorial ML Implementation Plan
+- implementation_plan_combinatorial_ml.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_computation_engine.md: .md file. 60 lines. 
+- implementation_plan_computation_engine.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_computation_engine_v2.md: .md file. 39 lines. 
+- implementation_plan_computation_engine_v2.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_computation_engine_v3.md: .md file. 41 lines. 
+- implementation_plan_computation_engine_v3.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_computation_engine_v4.md: .md file. 33 lines. 
+- implementation_plan_computation_engine_v4.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_computation_engine_v5.md: .md file. 32 lines. 
+- implementation_plan_computation_engine_v5.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_computation_engine_v6.md: .md file. 31 lines. 
+- implementation_plan_computation_engine_v6.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_database_architecture.md: .md file. 88 lines. # Brutally Advanced Database Architecture: The Ast
+- implementation_plan_database_architecture.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_esoteric_abyss.md: .md file. 51 lines. 
+- implementation_plan_esoteric_abyss.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_exhaustive_brute_force.md: .md file. 31 lines. # Implementation Plan: The Exhaustive Brute-Force 
+- implementation_plan_exhaustive_brute_force.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_expert_consensus.md: .md file. 33 lines. # Implementation Plan: The Expert Consensus (Phase
+- implementation_plan_expert_consensus.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_full_transits.md: .md file. 27 lines. # Full Dynamic Transit Feature Generation Plan
+- implementation_plan_full_transits.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_market_data.md: .md file. 324 lines. # Stock Market Data Architecture
+- implementation_plan_market_data.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_master_seal.md: .md file. 63 lines. 
+- implementation_plan_master_seal.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_ml.md: .md file. 53 lines. # Brutally Advanced ML & Quant Analytics Pipeline 
+- implementation_plan_ml.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_phase1_inspection.md: .md file. 31 lines. # Implementation Plan: Phase 1 Brutal Inspection S
+- implementation_plan_phase1_inspection.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_phase2_inspection.md: .md file. 31 lines. # Implementation Plan: Phase 2 Brutal Inspection S
+- implementation_plan_phase2_inspection.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_phase3.md: .md file. 43 lines. 
+- implementation_plan_phase3.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_phase3_v2.md: .md file. 39 lines. 
+- implementation_plan_phase3_v2.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_phase3_v3.md: .md file. 32 lines. 
+- implementation_plan_phase3_v3.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_smart_ml_combinations.md: .md file. 38 lines. # Implementation Plan: The "Smart ML" Combinatoria
+- implementation_plan_smart_ml_combinations.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_smart_ml_inspection.md: .md file. 50 lines. # Implementation Plan: Lethal Multipoint Inspectio
+- implementation_plan_smart_ml_inspection.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_step34.md: .md file. 48 lines. 
+- implementation_plan_step34.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_step34_35_fixes.md: .md file. 121 lines. # Brutal Architectural Refactor: Step 3.4 & 3.5
+- implementation_plan_step34_35_fixes.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_step36.md: .md file. 66 lines. # Implementation Plan: Step 3.6 - KP Sub-Lord Arra
+- implementation_plan_step36.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_step36_fixes.md: .md file. 42 lines. # Implementation Plan: Step 3.6 - Master Trap Reme
+- implementation_plan_step36_fixes.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_ultimate_audit.md: .md file. 65 lines. # Implementation Plan: The Ultimate 60-Agent Swarm
+- implementation_plan_ultimate_audit.md.metadata.json: .json file. 6 lines. {
+- implementation_plan_ultimate_fix.md: .md file. 43 lines. # Implementation Plan: The Ultimate Fix Swarm
+- implementation_plan_ultimate_fix.md.metadata.json: .json file. 6 lines. {
+- institutional_quantitative_research_plan.md: .md file. 83 lines. # Institutional Quantitative Research Plan: Projec
+- institutional_quantitative_research_plan.md.metadata.json: .json file. 6 lines. {
+- institutional_quantitative_research_plan_v2.md: .md file. 147 lines. # PROJECT ORION: INSTITUTIONAL QUANTITATIVE RESEAR
+- institutional_quantitative_research_plan_v2.md.metadata.json: .json file. 6 lines. {
+- master_smart_ml_traps.md: .md file. 33 lines. # Master Trap Compendium: Smart ML Inspection
+- master_smart_ml_traps.md.metadata.json: .json file. 5 lines. {
+- master_trap_compendium.md: .md file. 115 lines. 
+- master_trap_compendium.md.metadata.json: .json file. 5 lines. {
+- ML_Falsification_Report.md: .md file. 57 lines. # Project Orion: ML Falsification Report
+- multipoint_inspection_report.md: .md file. 201 lines. # Brutal Multipoint Inspection Report
+- multipoint_inspection_report.md.metadata.json: .json file. 6 lines. {
+- phase2_lethal_inspection.md: .md file. 82 lines. 
+- phase2_lethal_inspection.md.metadata.json: .json file. 5 lines. {
+- phase2_lethal_inspection_v2.md: .md file. 58 lines. 
+- phase2_lethal_inspection_v2.md.metadata.json: .json file. 5 lines. {
+- project_orion_definitive_report.md: .md file. 567 lines. # PROJECT ORION — THE DEFINITIVE MEGA REPORT
+- project_orion_definitive_report.md.metadata.json: .json file. 5 lines. {
+- Project_Timeline_and_Pivots.md: .md file. 24 lines. # Project Timeline and Pivots: The Brutal 11-Phase
+- repo_analysis.md: .md file. 396 lines. # Deep Analysis: 3 Vedic Astrology GitHub Repos
+- step31_32_reinspection.md: .md file. 118 lines. 
+- step31_32_reinspection.md.metadata.json: .json file. 5 lines. {
+- step32_trap_audit.md: .md file. 107 lines. 
+- step32_trap_audit.md.metadata.json: .json file. 5 lines. {
+- step33_quad_lens_inspection.md: .md file. 138 lines. 
+- step33_quad_lens_inspection.md.metadata.json: .json file. 5 lines. {
+- task.md: .md file. 13 lines. - `[/]` Extract API Baseline Data
+- task.md.metadata.json: .json file. 5 lines. {
+- task_bruteforce_dualswarm.md: .md file. 15 lines. # Task Tracker: GPU Brute-Force Dual-Swarm
+- task_bruteforce_dualswarm.md.metadata.json: .json file. 5 lines. {
+- task_chapter1_swarm.md: .md file. 23 lines. # Task Tracker: Chapter 1 Data Engineering Swarm
+- task_chapter1_swarm.md.metadata.json: .json file. 5 lines. {
+- task_chapter2_swarm.md: .md file. 23 lines. # Task Tracker: Phase 2 Astrological Swarm
+- task_chapter2_swarm.md.metadata.json: .json file. 5 lines. {
+- task_chapter3_inspection.md: .md file. 8 lines. # Task Tracker: Chapter 3 QA Inspection Swarm
+- task_chapter3_inspection.md.metadata.json: .json file. 5 lines. {
+- task_chapter3_swarm.md: .md file. 28 lines. # Task Tracker: Chapter 3 XGBoost Swarm
+- task_chapter3_swarm.md.metadata.json: .json file. 5 lines. {
+- task_chapter45_swarm.md: .md file. 17 lines. # Task Tracker: Chapter 4 & 5 Adversarial Swarm
+- task_chapter45_swarm.md.metadata.json: .json file. 5 lines. {
+- task_combinatorial_ml.md: .md file. 27 lines. # Task List: Combinatorial ML Execution
+- task_combinatorial_ml.md.metadata.json: .json file. 5 lines. {
+- task_computation_engine.md: .md file. 28 lines. 
+- task_computation_engine.md.metadata.json: .json file. 5 lines. {
+- task_db_architecture.md: .md file. 15 lines. # Astrological Database Architecture Task List
+- task_db_architecture.md.metadata.json: .json file. 5 lines. {
+- task_exhaustive_brute_force.md: .md file. 10 lines. # Task Tracker: GPU Exhaustive Brute-Force Engine
+- task_exhaustive_brute_force.md.metadata.json: .json file. 5 lines. {
+- task_full_transits.md: .md file. 6 lines. # Astrological Architecture Task List
+- task_full_transits.md.metadata.json: .json file. 5 lines. {
+- task_master_fix.md: .md file. 19 lines. 
+- task_master_fix.md.metadata.json: .json file. 5 lines. {
+- task_ml.md: .md file. 20 lines. # Advanced ML Pipeline Task List
+- task_ml.md.metadata.json: .json file. 5 lines. {
+- task_orion.md: .md file. 31 lines. # Task Tracker: Project Orion Execution
+- task_orion.md.metadata.json: .json file. 5 lines. {
+- task_phase1_inspection.md: .md file. 8 lines. # Task Tracker: Phase 1 QA Inspection Swarm
+- task_phase1_inspection.md.metadata.json: .json file. 5 lines. {
+- task_phase2_inspection.md: .md file. 8 lines. # Task Tracker: Phase 2 QA Inspection Swarm
+- task_phase2_inspection.md.metadata.json: .json file. 5 lines. {
+- task_phase3.md: .md file. 25 lines. 
+- task_phase3.md.metadata.json: .json file. 5 lines. {
+- task_phase3_expert_execution.md: .md file. 21 lines. # Task Tracker: Phase 3 Expert Execution
+- task_phase3_expert_execution.md.metadata.json: .json file. 5 lines. {
+- task_phase3_v2.md: .md file. 25 lines. 
+- task_phase3_v2.md.metadata.json: .json file. 5 lines. {
+- task_phase3_v3.md: .md file. 34 lines. 
+- task_phase3_v3.md.metadata.json: .json file. 5 lines. {
+- task_smart_ml_combinations.md: .md file. 24 lines. # Task Tracker: Smart ML Combinatorial Swarm
+- task_smart_ml_combinations.md.metadata.json: .json file. 5 lines. {
+- task_smart_ml_inspection.md: .md file. 17 lines. # Task Tracker: Lethal Multipoint Inspection
+- task_smart_ml_inspection.md.metadata.json: .json file. 5 lines. {
+- task_step34_35_fixes.md: .md file. 45 lines. # Task Tracker: Step 3.4 & 3.5 Architectural Refac
+- task_step34_35_fixes.md.metadata.json: .json file. 5 lines. {
+- task_step36.md: .md file. 31 lines. # Task Tracker: Step 3.6 - KP Sub-Lord Arrays
+- task_step36.md.metadata.json: .json file. 5 lines. {
+- task_step36_fixes.md: .md file. 29 lines. # Task Tracker: Step 3.6 - Master Trap Remediation
+- task_step36_fixes.md.metadata.json: .json file. 5 lines. {
+- task_ultimate_fix.md: .md file. 27 lines. # Task List: Ultimate Swarm Remediation
+- task_ultimate_fix.md.metadata.json: .json file. 5 lines. {
+- ultimate_brutal_audit.md: .md file. 54 lines. 
+- ultimate_brutal_audit.md.metadata.json: .json file. 5 lines. {
+- ultimate_quad_lens_inspection.md: .md file. 33 lines. 
+- ultimate_quad_lens_inspection.md.metadata.json: .json file. 5 lines. {
+- ultimate_swarm_registry.md: .md file. 22 lines. # Ultimate 60-Agent Swarm Registry
+- ultimate_swarm_registry.md.metadata.json: .json file. 5 lines. {
+- vedic_inspection_report.md: .md file. 114 lines. # Vedic Alpha: Brutal Deep Quality Inspection Repo
+- vedic_inspection_report.md.metadata.json: .json file. 5 lines. {
+- walkthrough.md: .md file. 39 lines. 
+- walkthrough.md.metadata.json: .json file. 5 lines. {
+- walkthrough_astrological_architecture.md: .md file. 40 lines. # Expert Astrological Architecture: ML Verificatio
+- walkthrough_astrological_architecture.md.metadata.json: .json file. 5 lines. {
+- walkthrough_bruteforce_dualswarm.md: .md file. 21 lines. # Walkthrough: GPU Brute-Force Dual-Swarm
+- walkthrough_bruteforce_dualswarm.md.metadata.json: .json file. 5 lines. {
+- walkthrough_chapter1_swarm.md: .md file. 28 lines. # Walkthrough: Chapter 1 Data Engineering Swarm Ex
+- walkthrough_chapter1_swarm.md.metadata.json: .json file. 5 lines. {
+- walkthrough_chapter2_swarm.md: .md file. 29 lines. # Walkthrough: Phase 2 Astrological Swarm Executio
+- walkthrough_chapter2_swarm.md.metadata.json: .json file. 5 lines. {
+- walkthrough_chapter3_inspection.md: .md file. 26 lines. # Walkthrough: Chapter 3 QA Inspection Swarm
+- walkthrough_chapter3_inspection.md.metadata.json: .json file. 5 lines. {
+- walkthrough_chapter3_swarm.md: .md file. 24 lines. # Walkthrough: Chapter 3 XGBoost Swarm
+- walkthrough_chapter3_swarm.md.metadata.json: .json file. 5 lines. {
+- walkthrough_chapter45_swarm.md: .md file. 17 lines. # Walkthrough: Chapter 4 & 5 Dual-Swarm Execution
+- walkthrough_chapter45_swarm.md.metadata.json: .json file. 5 lines. {
+- walkthrough_computation_engine.md: .md file. 32 lines. 
+- walkthrough_computation_engine.md.metadata.json: .json file. 5 lines. {
+- walkthrough_computation_engine_final.md: .md file. 27 lines. 
+- walkthrough_computation_engine_final.md.metadata.json: .json file. 5 lines. {
+- walkthrough_db_architecture.md: .md file. 23 lines. # Database Architecture: Execution & Verification
+- walkthrough_db_architecture.md.metadata.json: .json file. 5 lines. {
+- walkthrough_full_transits.md: .md file. 33 lines. # Full Transit Feature Upgrade: ML Discoveries
+- walkthrough_full_transits.md.metadata.json: .json file. 5 lines. {
+- walkthrough_ml.md: .md file. 39 lines. # Machine Learning Pipeline Walkthrough: Astrologi
+- walkthrough_ml.md.metadata.json: .json file. 5 lines. {
+- walkthrough_orion.md: .md file. 30 lines. # Walkthrough: Project Orion Execution
+- walkthrough_orion.md.metadata.json: .json file. 5 lines. {
+- walkthrough_phase1_inspection.md: .md file. 28 lines. # Walkthrough: Phase 1 QA Inspection Swarm
+- walkthrough_phase1_inspection.md.metadata.json: .json file. 5 lines. {
+- walkthrough_phase2_inspection.md: .md file. 31 lines. # Walkthrough: Phase 2 QA Inspection Swarm
+- walkthrough_phase2_inspection.md.metadata.json: .json file. 5 lines. {
+- walkthrough_phase3_expert_execution.md: .md file. 15 lines. # Walkthrough: Phase 3 Expert Execution
+- walkthrough_phase3_expert_execution.md.metadata.json: .json file. 5 lines. {
+- walkthrough_smart_ml_combinations.md: .md file. 18 lines. # Walkthrough: Smart ML Combinatorial Engine
+- walkthrough_smart_ml_combinations.md.metadata.json: .json file. 5 lines. {
+- walkthrough_smart_ml_inspection_fixes.md: .md file. 28 lines. # Walkthrough: Lethal Multipoint Inspection & Trap
+- walkthrough_smart_ml_inspection_fixes.md.metadata.json: .json file. 5 lines. {
+- walkthrough_step34_35_fixes.md: .md file. 33 lines. # Walkthrough: Step 3.4 & 3.5 Brutal Refactor Comp
+- walkthrough_step34_35_fixes.md.metadata.json: .json file. 5 lines. {
+- walkthrough_step36.md: .md file. 32 lines. # Walkthrough: Step 3.6 - KP Sub-Lord Arrays Compl
+- walkthrough_step36.md.metadata.json: .json file. 5 lines. {
+- walkthrough_step36_fixes.md: .md file. 25 lines. # Walkthrough: Step 3.6 Master Trap Remediation Co
+- walkthrough_step36_fixes.md.metadata.json: .json file. 5 lines. {
+- walkthrough_ultimate_fix.md: .md file. 29 lines. # Walkthrough: The Ultimate Swarm Remediation
+- walkthrough_ultimate_fix.md.metadata.json: .json file. 5 lines. {
+- chrome_agent_prompt.md: .md file. 302 lines. # Complete Vedic Astrology Verification Prompt (v2
+- CLAUDE.md: .md file. 12 lines. # Project Orion: Claude Code Instructions
+- CLAUDE_HANDOFF_PRIMER.md: .md file. 20 lines. # Handoff Primer for Claude Code
+- 31fab584-aca4-4294-886d-0d2e24d993e0.jsonl: Binary/Log/Cache
+- 4057ee3d-c062-46a2-b169-9f1a24436428.jsonl: Binary/Log/Cache
+- 4975f365-d0d6-441d-929e-0a3804b37c3f.jsonl: Binary/Log/Cache
+- 7082bc81-4527-4c94-9ebb-389acfcacae4.jsonl: Binary/Log/Cache
+- 94d39555-8cc6-48d4-8cb3-e328c56c01ec.jsonl: Binary/Log/Cache
+- 95500285-65fb-4a34-a917-551ceb20624e.jsonl: Binary/Log/Cache
+- a429e171-774e-4bbd-8988-12ee596cb562.jsonl: Binary/Log/Cache
+- f4b1f7ef-42ae-474d-96b8-4841bfe2086b.jsonl: Binary/Log/Cache
+- ff84100b-c10e-446d-a3d7-2d262a5797a3.jsonl: Binary/Log/Cache
+- analyze_drawdowns.py: Python script. No docstring
+- analyze_oos.py: Python script. No docstring
+- astro_encoder_final.pt: Binary/Log/Cache
+- chapter3_agent10_triplets.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent11_counter.py: Python script. No docstring
+- chapter3_agent12_matrix_out.py: Python script. No docstring
+- chapter3_agent13_tree_explainer.py: Python script. No docstring
+- chapter3_agent14_global_shap.py: Python script. No docstring
+- chapter3_agent15_shap_approx.py: Python script. No docstring
+- chapter3_agent16_dependency_plot.py: Python script. No docstring
+- chapter3_agent17_noise_filter.py: Python script. No docstring
+- chapter3_agent18_additivity.py: Python script. No docstring
+- chapter3_agent19_master_aggregator.py: Python script. Chapter 3: The XGBoost Interaction Mapper - Master Aggregator
+- chapter3_agent1_dmatrix.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent2_monotonic.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent3_objective.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent4_evaluation.py: Python script. Project Orion, Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent5_regularization.py: Python script. No docstring
+- chapter3_agent6_cuda_params.py: Python script. No docstring
+- chapter3_agent7_json_parser.py: Python script. No docstring
+- chapter3_agent8_dfs.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent9_pairs.py: Python script. No docstring
+- check.txt: .txt file. 15 lines. < p y a r r o w . _ p a r q u e t . F i l e M e t 
+- check_dates.txt: .txt file. 5 lines. 2 0 0 4 - 0 1 - 0 8   0 0 : 0 0 : 0 0 
+- check_math.py: Python script. No docstring
+- compute_stats.py: Python script. No docstring
+- crash_vectors.py: Python script. No docstring
+- df_info.txt: .txt file. 0 lines. 
+- docker-compose.yml: .yml file. 37 lines. version: '3.8'
+- Dockerfile:  file. 29 lines. FROM python:3.10-slim
+- drawdown_penalty.py: Python script. No docstring
+- early_termination.py: Python script. No docstring
+- enforce_precision.py: Python script. No docstring
+- ephemeris_core.py: Python script. Orion Pipeline - Ephemeris Core
+- esoteric_math.py: Python script. No docstring
+- extract_kp_longitudes.py: Python script. No docstring
+- falsifiability_quant_predictions.csv: .csv file. 505 lines. timestamp,astro_encoder_pred,sae_recon_error,actua
+- falsifiability_suite.py: Python script. No docstring
+- fitness_sortino.py: Python script. No docstring
+- fix_manifest.py: Python script. No docstring
+- get_imports.py: Python script. No docstring
+- harmonic_oscillator.py: Python script. No docstring
+- house_systems.py: Python script. No docstring
+- inspect_parquet.py: Python script. No docstring
+- integration_test.py: Python script. No docstring
+- kill_switch.py: Python script. Kill Switch Logic for Bleeding Strategies
+- kinematics.py: Python script. No docstring
+- lightweight_surrogate.pth: Binary/Log/Cache
+- local_ephemeris_AAL_20050927_000000.json: .json file. 569 lines. {
+- lunar_metrics.py: Python script. No docstring
+- matrix_compiler.py: Python script. No docstring
+- metadata.txt: .txt file. 15 lines. < p y a r r o w . _ p a r q u e t . F i l e M e t 
+- moduli_sync.py: Python script. No docstring
+- neural_surrogate.py: Python script. No docstring
+- numpy_generators.py: Python script. No docstring
+- orion_data_lake.py: Python script. No docstring
+- orion_ephemeris_core.py: Python script. No docstring
+- orion_full_pipeline_runner.py: Python script. Project Orion - Full 1999-2020 End-to-End Pipeline
+- orion_genetic_combinatorics.py: Python script. No docstring
+- orion_gpu_bruteforce.py: Python script. No docstring
+- orion_pipeline_run.log: Binary/Log/Cache
+- orion_spectral_pruning.py: Python script. No docstring
+- orion_tensor_backtest.py: Python script. No docstring
+- orion_wfo_cpcv.py: Python script. No docstring
+- out.txt: .txt file. 0 lines. 
+- output.txt: .txt file. 27 lines. I n d e x ( [ ' s o u r c e ' ,   ' f e a t u r e 
+- paper_trading.py: Python script. No docstring
+- parallel_logic.py: Python script. Orion Pipeline - Parallelization Engine
+- patch.py: Python script. No docstring
+- pq_output.txt: .txt file. 5 lines. R e a d i n g   p a r q u e t   f i l e . . . 
+- pq_stats.json: .json file. 10 lines. {
+- pyarrow_output.txt: .txt file. 13 lines. [ ' s o u r c e ' ,   ' f e a t u r e s ' ,   ' n 
+- pyarrow_output2.txt: .txt file. 5 lines. [ ' s o u r c e ' ,   ' f e a t u r e s ' ,   ' n 
+- pyarrow_test.py: Python script. No docstring
+- qqq_genesis.py: Python script. No docstring
+- ray_orchestrator.py: Python script. No docstring
+- read_pq.py: Python script. No docstring
+- requirements.txt: .txt file. 14 lines. numpy
+- run_falsifiability.py: Python script. No docstring
+- run_full_20yr.py: Python script. run_full_20yr.py
+- run_generation.py: Python script. No docstring
+- run_smart_ml_pipeline.py: Python script. Orion Smart ML Pipeline — Master Entrypoint
+- sae_final.pt: Binary/Log/Cache
+- schema.txt: .txt file. 33 lines. s o u r c e :   l a r g e _ s t r i n g 
+- spy_genesis.py: Python script. No docstring
+- stats.txt: .txt file. 11 lines. n u m _ r o w s :   9 1 1 1 
+- synthetic_2d_dep_jup_vol.png: Binary/Log/Cache
+- synthetic_2d_dep_mars_sun.png: Binary/Log/Cache
+- synthetic_t2n_network.png: Binary/Log/Cache
+- t2n_engine.py: Python script. No docstring
+- t2t_engine.py: Python script. No docstring
+- test_ch5_dynamic_size.py: Python script. No docstring
+- test_continuous_target.py: Python script. No docstring
+- test_diversity_collapse.py: Python script. No docstring
+- test_diversity_collapse2.py: Python script. No docstring
+- test_evolve.py: Python script. No docstring
+- test_evolve2.py: Python script. No docstring
+- test_fitness_leak.py: Python script. No docstring
+- test_full_pipeline.py: Python script. No docstring
+- test_guided.py: Python script. No docstring
+- test_guided_auto.py: Python script. No docstring
+- test_house_systems.py: Python script. No docstring
+- test_long_loop.py: Python script. No docstring
+- test_mutation.py: Python script. No docstring
+- test_oos_probability.py: Python script. No docstring
+- test_orion_genetic.py: Python script. No docstring
+- test_packed.py: Python script. No docstring
+- test_precision.py: Python script. No docstring
+- test_recursion.py: Python script. No docstring
+- test_safe.py: Python script. No docstring
+- test_strict.py: Python script. No docstring
+- validation.py: Python script. No docstring
+- verify.py: Python script (SyntaxError).
+- verify_discrepancy.py: Python script. No docstring
+- verify_load.py: Python script. No docstring
+- verify_math.py: Python script. No docstring
+- wfo_shifters.py: Python script. No docstring
+- xgboost_multi_obj.py: Python script. No docstring
+- zero_beta.py: Python script. No docstring
+- asof_join.py: Python script. Agent 7: Pandas/cuDF merge_asof(direction='backward').
+- clickhouse_index.py: Python script. Agent 9: ClickHouse PiT indexing optimization.
+- analyze_drawdowns.py: Python script. No docstring
+- analyze_oos.py: Python script. No docstring
+- astro_encoder_final.pt: Binary/Log/Cache
+- chapter3_agent10_triplets.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent11_counter.py: Python script. No docstring
+- chapter3_agent12_matrix_out.py: Python script. No docstring
+- chapter3_agent13_tree_explainer.py: Python script. No docstring
+- chapter3_agent14_global_shap.py: Python script. No docstring
+- chapter3_agent15_shap_approx.py: Python script. No docstring
+- chapter3_agent16_dependency_plot.py: Python script. No docstring
+- chapter3_agent17_noise_filter.py: Python script. No docstring
+- chapter3_agent18_additivity.py: Python script. No docstring
+- chapter3_agent19_master_aggregator.py: Python script. Chapter 3: The XGBoost Interaction Mapper - Master Aggregator
+- chapter3_agent1_dmatrix.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent2_monotonic.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent3_objective.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent4_evaluation.py: Python script. Project Orion, Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent5_regularization.py: Python script. No docstring
+- chapter3_agent6_cuda_params.py: Python script. No docstring
+- chapter3_agent7_json_parser.py: Python script. No docstring
+- chapter3_agent8_dfs.py: Python script. Chapter 3: The XGBoost Interaction Mapper
+- chapter3_agent9_pairs.py: Python script. No docstring
+- check.txt: .txt file. 15 lines. < p y a r r o w . _ p a r q u e t . F i l e M e t 
+- check_dates.txt: .txt file. 5 lines. 2 0 0 4 - 0 1 - 0 8   0 0 : 0 0 : 0 0 
+- check_math.py: Python script. No docstring
+- compute_stats.py: Python script. No docstring
+- crash_vectors.py: Python script. No docstring
+- df_info.txt: .txt file. 0 lines. 
+- docker-compose.yml: .yml file. 37 lines. version: '3.8'
+- Dockerfile:  file. 29 lines. FROM python:3.10-slim
+- drawdown_penalty.py: Python script. No docstring
+- early_termination.py: Python script. No docstring
+- enforce_precision.py: Python script. No docstring
+- ephemeris_core.py: Python script. Orion Pipeline - Ephemeris Core
+- esoteric_math.py: Python script. No docstring
+- extract_kp_longitudes.py: Python script. No docstring
+- falsifiability_quant_predictions.csv: .csv file. 505 lines. timestamp,astro_encoder_pred,sae_recon_error,actua
+- falsifiability_suite.py: Python script. No docstring
+- fitness_sortino.py: Python script. No docstring
+- fix_manifest.py: Python script. No docstring
+- get_imports.py: Python script. No docstring
+- harmonic_oscillator.py: Python script. No docstring
+- house_systems.py: Python script. No docstring
+- inspect_parquet.py: Python script. No docstring
+- integration_test.py: Python script. No docstring
+- kill_switch.py: Python script. Kill Switch Logic for Bleeding Strategies
+- kinematics.py: Python script. No docstring
+- lightweight_surrogate.pth: Binary/Log/Cache
+- local_ephemeris_AAL_20050927_000000.json: .json file. 569 lines. {
+- lunar_metrics.py: Python script. No docstring
+- matrix_compiler.py: Python script. No docstring
+- metadata.txt: .txt file. 15 lines. < p y a r r o w . _ p a r q u e t . F i l e M e t 
+- moduli_sync.py: Python script. No docstring
+- neural_surrogate.py: Python script. No docstring
+- numpy_generators.py: Python script. No docstring
+- orion_data_lake.py: Python script. No docstring
+- orion_ephemeris_core.py: Python script. No docstring
+- orion_full_pipeline_runner.py: Python script. Project Orion - Full 1999-2020 End-to-End Pipeline
+- orion_genetic_combinatorics.py: Python script. No docstring
+- orion_gpu_bruteforce.py: Python script. No docstring
+- orion_pipeline_run.log: Binary/Log/Cache
+- orion_spectral_pruning.py: Python script. No docstring
+- orion_tensor_backtest.py: Python script. No docstring
+- orion_wfo_cpcv.py: Python script. No docstring
+- out.txt: .txt file. 0 lines. 
+- output.txt: .txt file. 27 lines. I n d e x ( [ ' s o u r c e ' ,   ' f e a t u r e 
+- paper_trading.py: Python script. No docstring
+- parallel_logic.py: Python script. Orion Pipeline - Parallelization Engine
+- patch.py: Python script. No docstring
+- pq_output.txt: .txt file. 5 lines. R e a d i n g   p a r q u e t   f i l e . . . 
+- pq_stats.json: .json file. 10 lines. {
+- pyarrow_output.txt: .txt file. 13 lines. [ ' s o u r c e ' ,   ' f e a t u r e s ' ,   ' n 
+- pyarrow_output2.txt: .txt file. 5 lines. [ ' s o u r c e ' ,   ' f e a t u r e s ' ,   ' n 
+- pyarrow_test.py: Python script. No docstring
+- qqq_genesis.py: Python script. No docstring
+- ray_orchestrator.py: Python script. No docstring
+- read_pq.py: Python script. No docstring
+- requirements.txt: .txt file. 14 lines. numpy
+- run_falsifiability.py: Python script. No docstring
+- run_full_20yr.py: Python script. run_full_20yr.py
+- run_generation.py: Python script. No docstring
+- run_smart_ml_pipeline.py: Python script. Orion Smart ML Pipeline — Master Entrypoint
+- sae_final.pt: Binary/Log/Cache
+- schema.txt: .txt file. 33 lines. s o u r c e :   l a r g e _ s t r i n g 
+- spy_genesis.py: Python script. No docstring
+- stats.txt: .txt file. 11 lines. n u m _ r o w s :   9 1 1 1 
+- synthetic_2d_dep_jup_vol.png: Binary/Log/Cache
+- synthetic_2d_dep_mars_sun.png: Binary/Log/Cache
+- synthetic_t2n_network.png: Binary/Log/Cache
+- t2n_engine.py: Python script. No docstring
+- t2t_engine.py: Python script. No docstring
+- test_ch5_dynamic_size.py: Python script. No docstring
+- test_continuous_target.py: Python script. No docstring
+- test_diversity_collapse.py: Python script. No docstring
+- test_diversity_collapse2.py: Python script. No docstring
+- test_evolve.py: Python script. No docstring
+- test_evolve2.py: Python script. No docstring
+- test_fitness_leak.py: Python script. No docstring
+- test_full_pipeline.py: Python script. No docstring
+- test_guided.py: Python script. No docstring
+- test_guided_auto.py: Python script. No docstring
+- test_house_systems.py: Python script. No docstring
+- test_long_loop.py: Python script. No docstring
+- test_mutation.py: Python script. No docstring
+- test_oos_probability.py: Python script. No docstring
+- test_orion_genetic.py: Python script. No docstring
+- test_packed.py: Python script. No docstring
+- test_precision.py: Python script. No docstring
+- test_recursion.py: Python script. No docstring
+- test_safe.py: Python script. No docstring
+- test_strict.py: Python script. No docstring
+- validation.py: Python script. No docstring
+- verify.py: Python script (SyntaxError).
+- verify_discrepancy.py: Python script. No docstring
+- verify_load.py: Python script. No docstring
+- verify_math.py: Python script. No docstring
+- wfo_shifters.py: Python script. No docstring
+- xgboost_multi_obj.py: Python script. No docstring
+- zero_beta.py: Python script. No docstring
+- .gitignore:  file. 2 lines. # Created by pytest automatically.
+- CACHEDIR.TAG: .tag file. 4 lines. Signature: 8a477f597d28d172789f06886806bc55
+- README.md: .md file. 8 lines. # pytest cache directory #
+- nodeids:  file. 25 lines. [
+- asof_join.py: Python script. Agent 7: Pandas/cuDF merge_asof(direction='backward').
+- clickhouse_index.py: Python script. Agent 9: ClickHouse PiT indexing optimization.
+- ephemeris_norm.py: Python script. Agent 5: Normalize astronomical epochs into high-precision UNIX nanosecond timestamps.
+- market_norm.py: Python script. Agent 6: Normalize SPY/QQQ market data into matching UNIX nanosecond timestamps.
+- test_asof_bias.py: Python script. Agent 8: ASOF Lookahead bias unit tests.
+- asof_join.cpython-314.pyc: Binary/Log/Cache
+- intraday_bucketing.py: Python script. Agent 10: 1m & 5m VWAP/TWAP Intraday bucketing logic.
+- long_swing.py: Python script. Agent 13: 1W & 1M Long Swing aggregations.
+- short_swing.py: Python script. Agent 12: 1H & 1D Short Swing bucketing logic (handling weekend market closures).
+- spline_interpolation.py: Python script. Agent 11: Cubic spline interpolation for missing microsecond ephemeris data.
+- tensor_aggregator.py: Python script. Agent 14: Master Tensor Aggregator (3D target shape for ML pipeline).
+- affinity_matrix.py: Python script. No docstring
+- mic_proxy.py: Python script. Mutual Information (MIC) Proxy Algorithm for Feature Pairs.
+- spectral_clustering.py: Python script. No docstring
+- submodular_maximization.py: Python script. No docstring
+- test_laplacian.py: Python script. No docstring
+- test_laplacian2.py: Python script. No docstring
+- test_mic_proxy.py: Python script. No docstring
+- test_psd.py: Python script. No docstring
+- test_qa1.py: Python script. No docstring
+- test_qa1_brutal.py: Python script. No docstring
+- affinity_matrix.cpython-314.pyc: Binary/Log/Cache
+- mic_proxy.cpython-314.pyc: Binary/Log/Cache
+- spectral_clustering.cpython-314.pyc: Binary/Log/Cache
+- best_subsets_compiled.json: .json file. 162 lines. [
+- complexity_penalty.py: Python script. Complexity Deflation Penalty Logic for the Genetic Engine.
+- crossover.py: Python script. Chapter 5: Genetic Engine - Uniform Crossover Algorithms
+- cv_wrapper.py: Python script. Chapter 5: Genetic Engine - TimeSeriesSplit Cross-Validation Wrapper
+- encoder.py: Python script. Binary Chromosome Encoder for the Genetic Engine (Chapter 5)
+- evolutionary_loop.py: Python script. evolutionary_loop.py
+- final_compiler.py: Python script. Chapter 5: Genetic Engine - Final Compiler
+- fitness_evaluator.py: Python script. No docstring
+- guided_mutation.py: Python script. Guided Mutation Module for the Orion Pipeline (Chapter 5: Genetic Engine).
+- mutation.py: Python script. Bit-flip mutation logic for the Genetic Engine (Chapter 5).
+- sae_training.py: Python script. Sparse Autoencoder (SAE) Training Logic for the Orion Pipeline.
+- sae_weights.py: Python script. No docstring
+- selection.py: Python script. No docstring
+- crossover.cpython-314.pyc: Binary/Log/Cache
+- cv_wrapper.cpython-314.pyc: Binary/Log/Cache
+- encoder.cpython-314.pyc: Binary/Log/Cache
+- evolutionary_loop.cpython-314.pyc: Binary/Log/Cache
+- fitness_evaluator.cpython-314.pyc: Binary/Log/Cache
+- guided_mutation.cpython-314.pyc: Binary/Log/Cache
+- mutation.cpython-314.pyc: Binary/Log/Cache
+- sae_training.cpython-314.pyc: Binary/Log/Cache
+- selection.cpython-314.pyc: Binary/Log/Cache
+- canonical_anchors.py: Python script. Canonical natal anchors for Project Orion.
+- generate_feature_tensor.py: Python script. No docstring
+- trading_calendar.py: Python script. No docstring
+- validate_feature_tensor.py: Python script. No docstring
+- canonical_anchors.cpython-314.pyc: Binary/Log/Cache
+- generate_feature_tensor.cpython-314.pyc: Binary/Log/Cache
+- trading_calendar.cpython-314.pyc: Binary/Log/Cache
+- validate_feature_tensor.cpython-314.pyc: Binary/Log/Cache
+- arrow_serializer.py: Python script. Agent 3: Apache Arrow in-memory zero-copy serialization protocol.
+- jpl_swisseph.py: Python script. Agent 1: NASA JPL/Swisseph ingestion hooks.
+- market_data.py: Python script. Agent 2: SPY/QQQ SIP market data ingestion hooks.
+- parquet_writer.py: Python script. Agent 4: ZSTD-compressed Parquet chunking writer to prevent OOM.
+- causal_pre_filter.py: Python script. No docstring
+- cpcv_validator.py: Python script. No docstring
+- falsifiability_suite.py: Python script. No docstring
+- orion_dual_encoder.py: Python script. No docstring
+- patch_cpcv.py: Python script. No docstring
+- sae_trainer.py: Python script. No docstring
+- sklearn_shim.py: Python script. sklearn_shim.py — Path α Patch v1 prerequisite (Bug 1 fix).
+- walk_forward_tester.py: Python script. Path alpha - Project Orion Walk-Forward Tester (patched).
+- causal_pre_filter.cpython-314.pyc: Binary/Log/Cache
+- cpcv_validator.cpython-314.pyc: Binary/Log/Cache
+- falsifiability_suite.cpython-314.pyc: Binary/Log/Cache
+- orion_dual_encoder.cpython-314.pyc: Binary/Log/Cache
+- sae_trainer.cpython-314.pyc: Binary/Log/Cache
+- feature_tensor_manifest.json: .json file. 10 lines. {
+- stage3_xgb_interactions.json: .json file. 35 lines. {
+- feature_tensor_manifest.json: .json file. 10 lines. {
+- feature_tensor_manifest.json: .json file. 10 lines. {
+- feature_tensor_manifest.json: .json file. 261 lines. {
+- alpha_agent1_basket_filter.py: Python script. Agent 1 - Alpha Team: Market Basket Extreme Day Filter
+- alpha_agent2_binarizer.py: Python script. Agent 2 - Alpha Team: Boolean Itemset Binarizer
+- alpha_agent3_fpgrowth.py: Python script. Agent 3 - Alpha Team: FP-Growth Frequent Pattern Miner
+- alpha_agent4_assoc_rules.py: Python script. Agent 4 - Alpha Team: Association Rule Miner
+- alpha_agent5_signal_filter.py: Python script. Agent 5 - Alpha Team: High-Confidence Pattern Filter
+- beta_agent10_attn_mapper.py: Python script. Agent 10 - Beta Team: Attention Weight -> Planetary Cluster Mapper
+- beta_agent6_transformer.py: Python script. Agent 6 - Beta Team: PyTorch Time-Series Transformer Ingestor
+- beta_agent7_attention_pool.py: Python script. Agent 7 - Beta Team: Multi-Head Self-Attention Pooling
+- beta_agent8_attn_baseline.py: Python script. Agent 8 - Beta Team: Attention Matrix Extractor (Pre-training baseline)
+- beta_agent9_train_transformer.py: Python script. Agent 9 - Beta Team: Transformer Training Loop
+- gamma_agent11_base_encoder.py: Python script. Agent 11 - Gamma Team: Base Neural Network for SAE
+- gamma_agent12_sae.py: Python script. Agent 12 - Gamma Team: Sparse Autoencoder (Anthropic-style)
+- gamma_agent13_sae_pipeline.py: Python script. Agent 13 - Gamma Team: SAE Training Pipeline
+- gamma_agent14_latent_decoder.py: Python script. Agent 14 - Gamma Team: Latent Direction Decoder
+- gamma_agent15_master_aggregator.py: Python script. Agent 15 - Master Aggregator
+- gamma_agent11_base_encoder.cpython-314.pyc: Binary/Log/Cache
+- test_no_leakage.py: Python script. Lens 10 Gate G6 canary: inject a peek-ahead feature, assert pipeline detects.
+- __init__.py: Python script. No docstring
+- graha_yuddha.py: Python script. Graha Yuddha (Planetary War) engine.
+- sade_sati.py: Python script. Sade Sati / Ashtama Shani / Kantaka Shani state detection.
+- shadbala.py: Python script. Shadbala (6-fold planetary strength) engine.
+- vimshottari.py: Python script. Vimshottari Mahadasha / Antardasha / Pratyantardasha engine.
+- __init__.py: Python script. Vedic computation engines for Project Orion.
+- test_vimshottari.py: Python script. Tests for the Vimshottari Dasha engine.
+- __init__.py: Python script. No docstring
+- test_vimshottari.cpython-314-pytest-9.0.3.pyc: Binary/Log/Cache
+- __init__.cpython-314.pyc: Binary/Log/Cache
+- graha_yuddha.cpython-314.pyc: Binary/Log/Cache
+- sade_sati.cpython-314.pyc: Binary/Log/Cache
+- shadbala.cpython-314.pyc: Binary/Log/Cache
+- vimshottari.cpython-314.pyc: Binary/Log/Cache
+- __init__.cpython-314.pyc: Binary/Log/Cache
+- chapter3_agent8_dfs.cpython-314.pyc: Binary/Log/Cache
+- ephemeris_core.cpython-314.pyc: Binary/Log/Cache
+- esoteric_math.cpython-314.pyc: Binary/Log/Cache
+- house_systems.cpython-314.pyc: Binary/Log/Cache
+- lunar_metrics.cpython-314.pyc: Binary/Log/Cache
+- orion_ephemeris_core.cpython-314.pyc: Binary/Log/Cache
+- orion_ephemeris_core.get_all_vargas-92.py314.1.nbc: Binary/Log/Cache
+- orion_ephemeris_core.get_all_vargas-92.py314.nbi: Binary/Log/Cache
+- orion_ephemeris_core.get_all_vargas-98.py314.1.nbc: Binary/Log/Cache
+- orion_ephemeris_core.get_all_vargas-98.py314.nbi: Binary/Log/Cache
+- orion_ephemeris_core.get_raw_ashtakvarga-120.py314.1.nbc: Binary/Log/Cache
+- orion_ephemeris_core.get_raw_ashtakvarga-120.py314.nbi: Binary/Log/Cache
+- orion_ephemeris_core.get_raw_ashtakvarga-126.py314.1.nbc: Binary/Log/Cache
+- orion_ephemeris_core.get_raw_ashtakvarga-126.py314.nbi: Binary/Log/Cache
+- orion_ephemeris_core.get_varga_sign-14.py314.1.nbc: Binary/Log/Cache
+- orion_ephemeris_core.get_varga_sign-14.py314.2.nbc: Binary/Log/Cache
+- orion_ephemeris_core.get_varga_sign-14.py314.nbi: Binary/Log/Cache
+- orion_ephemeris_core.get_varga_sign-20.py314.1.nbc: Binary/Log/Cache
+- orion_ephemeris_core.get_varga_sign-20.py314.nbi: Binary/Log/Cache
+- orion_genetic_combinatorics.cpython-314.pyc: Binary/Log/Cache
+- orion_spectral_pruning.cpython-314.pyc: Binary/Log/Cache
+- lens_01_vedic_purist.md: .md file. 47 lines. # Lens 1: Vedic Jyotish Purist
+- lens_02_fin_astrology_empiricist.md: .md file. 71 lines. # Lens 2: Financial Astrology Empiricist
+- lens_03_astronomical_precision.md: .md file. 58 lines. # Lens 3: Astronomical Precision Engineer
+- lens_04_ml_methodologist.md: .md file. 49 lines. # Lens 4: Time-Series ML Methodologist
+- lens_05_statistical_rigor.md: .md file. 59 lines. # Lens 5: Statistical Rigor Inspector
+- lens_06_data_pipeline.md: .md file. 43 lines. # Lens 6: Data Pipeline Architect
+- lens_07_feature_selection.md: .md file. 52 lines. # Lens 7: Feature Selection Scientist
+- lens_08_backtest_realism.md: .md file. 55 lines. # Lens 8: Backtest Realism Engineer
+- lens_09_software_architect.md: .md file. 82 lines. # Lens 9: Software Architect / Refactor Lead
+- lens_10_leakage_red_team.md: .md file. 80 lines. # Lens 10: Adversarial Leakage Red Team
+- MANAGER_integrated_plan.md: .md file. 124 lines. # God Manager: Integrated Foundation Rebuild Plan
+- QC_brutal_audit.md: .md file. 93 lines. # Brutal QC: Adversarial Audit of the 10-Lens Foun
+- PATCH_v1.md: .md file. 582 lines. # Project Orion: Path α Surgical Patch v1
+- SIDEREAL_MIGRATION_AUDIT.md: .md file. 114 lines. # Sidereal Migration Audit
+- 0ebfa5d7-d468-4c5a-89bb-30caa6170007_transcript.jsonl: Binary/Log/Cache
+- 169e3d81-48ce-4e00-ab37-c0896280eeb3_transcript.jsonl: Binary/Log/Cache
+- 18a79ffd-52c4-4346-81e5-adad810806ab_transcript.jsonl: Binary/Log/Cache
+- 19468f6b-6965-4940-8643-6ffda44e8146_transcript.jsonl: Binary/Log/Cache
+- 1b6e21bd-5a8e-4879-a9f0-a005d32b8b93_transcript.jsonl: Binary/Log/Cache
+- 1e77f897-3a59-40a6-bc1e-926d770d0526_transcript.jsonl: Binary/Log/Cache
+- 258f036c-d5a0-459e-b9a8-4a977c9a8903_transcript.jsonl: Binary/Log/Cache
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_implementation_plan_chapter1_swarm.md: .md file. 39 lines. # Implementation Plan: Chapter 1 Data Engineering 
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_implementation_plan_chapter3_swarm.md: .md file. 44 lines. # Implementation Plan: Chapter 3 XGBoost Swarm
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_implementation_plan_handover.md: .md file. 31 lines. # Project Orion Comprehensive Handover Update
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_implementation_plan_ultimate_fix.md: .md file. 24 lines. # Implementation Plan: The Ultimate Fix (7-Agent S
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_institutional_quantitative_research_plan_v2.md: .md file. 147 lines. # PROJECT ORION: INSTITUTIONAL QUANTITATIVE RESEAR
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_next_phase_plan.md: .md file. 241 lines. # Project Orion: Next Phase Unified Implementation
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_next_phase_plan_draft.md: .md file. 23 lines. # PROJECT ORION — NEXT PHASE COLLABORATIVE PLAN
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_project_orion_definitive_report.md: .md file. 567 lines. # PROJECT ORION — THE DEFINITIVE MEGA REPORT
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_task.md: .md file. 10 lines. # Project Orion Archive Synchronization
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_task_chapter1_swarm.md: .md file. 23 lines. # Task Tracker: Chapter 1 Data Engineering Swarm
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_task_chapter2_swarm.md: .md file. 23 lines. # Task Tracker: Phase 2 Astrological Swarm
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_task_chapter3_swarm.md: .md file. 1 lines.                                                   
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_task_orion.md: .md file. 31 lines. # Task Tracker: Project Orion Execution
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_transcript.jsonl: Binary/Log/Cache
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_walkthrough.md: .md file. 38 lines. # Project Orion Handover Walkthrough
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_walkthrough_chapter1_swarm.md: .md file. 28 lines. # Walkthrough: Chapter 1 Data Engineering Swarm Ex
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_walkthrough_chapter2_swarm.md: .md file. 29 lines. # Walkthrough: Phase 2 Astrological Swarm Executio
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_walkthrough_chapter3_swarm.md: .md file. 24 lines. # Walkthrough: Chapter 3 XGBoost Swarm
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_walkthrough_orion.md: .md file. 30 lines. # Walkthrough: Project Orion Execution
+- 35732b90-976f-4cc4-b3fe-7fc24c167fe0_walkthrough_phase3_expert_execution.md: .md file. 15 lines. # Walkthrough: Phase 3 Expert Execution
+- 3ca03a6c-eb8a-450f-87f1-7490a348dd08_transcript.jsonl: Binary/Log/Cache
+- 4396fa84-0187-4a49-b160-df5ee8d17659_ml_genius_position_paper.md: .md file. 346 lines. # PROJECT ORION — NEXT PHASE PLAN
+- 4396fa84-0187-4a49-b160-df5ee8d17659_position_paper.md: .md file. 590 lines. # ML GENIUS — POSITION PAPER (FINAL DRAFT)
+- 4396fa84-0187-4a49-b160-df5ee8d17659_transcript.jsonl: Binary/Log/Cache
+- 4b6b7c0f-9435-493c-acf0-7284c39c7f14_transcript.jsonl: Binary/Log/Cache
+- 4f9922e7-1a44-4ef6-8d73-425133d98112_transcript.jsonl: Binary/Log/Cache
+- 524c51fb-acf0-41cd-a798-069adfb16020_transcript.jsonl: Binary/Log/Cache
+- 55485323-2871-42a1-95a3-879f0bd88d6e_transcript.jsonl: Binary/Log/Cache
+- 56edc89a-05d5-433c-a322-6a930685e2fa_transcript.jsonl: Binary/Log/Cache
+- 56f83898-b835-4d53-9915-794af8d8ed97_transcript.jsonl: Binary/Log/Cache
+- 595f20c8-86c9-4254-822d-f8aa5538db0c_transcript.jsonl: Binary/Log/Cache
+- 61376360-0f1a-470d-8151-e507ebf97193_transcript.jsonl: Binary/Log/Cache
+- 662d7a28-376a-4150-8175-65c1572e8015_transcript.jsonl: Binary/Log/Cache
+- 666ed674-cbdf-4351-8441-a3f5710858ec_transcript.jsonl: Binary/Log/Cache
+- 666ed674-cbdf-4351-8441-a3f5710858ec_ultimate_output_audit.md: .md file. 23 lines. # Ultimate Output Audit Report
+- 6722e563-93ea-4b0d-a15c-fe00e729bae0_transcript.jsonl: Binary/Log/Cache
+- 6dbfcb2b-52a9-49eb-b65d-be415e53d0dd_transcript.jsonl: Binary/Log/Cache
+- 6f19feab-b5b8-4f71-83ef-e8c76f95fe58_transcript.jsonl: Binary/Log/Cache
+- 759bbf7a-d691-4839-aa8d-0338c8eb9324_transcript.jsonl: Binary/Log/Cache
+- 796f7caf-12eb-414b-90e4-68343a8a3432_transcript.jsonl: Binary/Log/Cache
+- 7cde720b-a006-4c02-a0ba-42ae8d67d2ba_institutional_quantitative_research_plan_v2.md: .md file. 141 lines. # PROJECT ORION: INSTITUTIONAL QUANTITATIVE RESEAR
+- 7cde720b-a006-4c02-a0ba-42ae8d67d2ba_transcript.jsonl: Binary/Log/Cache
+- 86768076-650c-44df-bac7-948fe6f5e946_transcript.jsonl: Binary/Log/Cache
+- 8b104be6-6002-49c3-90eb-84eb6b689d7c_transcript.jsonl: Binary/Log/Cache
+- 8b8787c1-8e57-43f8-9411-03bbce7aaf53_backtest_results.md: .md file. 37 lines. # Project Orion: Walk-Forward Falsifiability Repor
+- 8b8787c1-8e57-43f8-9411-03bbce7aaf53_transcript.jsonl: Binary/Log/Cache
+- 8d613047-f619-4382-818e-d3d2d32ed25e_transcript.jsonl: Binary/Log/Cache
+- 8f502acf-6f27-4b57-bbbb-473219bb576a_transcript.jsonl: Binary/Log/Cache
+- 90fb290e-80d0-42bb-a505-c601e50fd630_transcript.jsonl: Binary/Log/Cache
+- 941595b0-9768-4c07-a06c-cb07390a16a7_transcript.jsonl: Binary/Log/Cache
+- 9ef30369-95bb-4dec-b4e7-2b2d139421d7_transcript.jsonl: Binary/Log/Cache
+- 9f98875b-df6e-4f3b-bf7f-db3fd49937cc_transcript.jsonl: Binary/Log/Cache
+- a08b2e1f-608d-476e-8158-2fb72c4e2861_transcript.jsonl: Binary/Log/Cache
+- a0a78ba3-15aa-4529-88ba-d5289bb17057_transcript.jsonl: Binary/Log/Cache
+- a67b7722-cf09-4ac3-a492-fe172cd47360_transcript.jsonl: Binary/Log/Cache
+- a6ff95a4-9d88-46fe-acfe-1c4b974c77be_position_paper.md: .md file. 690 lines. # PROJECT ORION — DATA ENGINEERING GENIUS POSITION
+- a6ff95a4-9d88-46fe-acfe-1c4b974c77be_transcript.jsonl: Binary/Log/Cache
+- a72cc6e8-aa31-411e-9a15-8759b117b180_transcript.jsonl: Binary/Log/Cache
+- ab1d020a-0ff4-49b1-8a06-ef2192240879_transcript.jsonl: Binary/Log/Cache
+- acc5d989-2b7e-4cbb-a30a-9264504f9952_transcript.jsonl: Binary/Log/Cache
+- ad37b03b-6891-491e-bd0b-b6be13fe79f0_transcript.jsonl: Binary/Log/Cache
+- b0207f4c-9c14-4fd7-81c5-f1ab74cdbf75_transcript.jsonl: Binary/Log/Cache
+- b08e31ba-0324-43e7-b6e4-cfb923842dd0_transcript.jsonl: Binary/Log/Cache
+- b16e849b-2f20-4c3d-be1c-b1e27d262981_transcript.jsonl: Binary/Log/Cache
+- b3a14b3f-20a7-457d-938b-0c4b0afc40ef_transcript.jsonl: Binary/Log/Cache
+- b3f6f1b6-92ec-4a29-9cdd-eb10b4095d5e_transcript.jsonl: Binary/Log/Cache
+- b40a929e-3a32-44fb-85a3-1f39cd06a712_transcript.jsonl: Binary/Log/Cache
+- b69b43bd-cf04-445d-9fc2-fe4d401d8191_transcript.jsonl: Binary/Log/Cache
+- c4e65b3d-a57c-4a0f-829f-b08d6ae204cb_transcript.jsonl: Binary/Log/Cache
+- ccf4b123-8eb6-4641-b6a0-6de2141ba3b6_transcript.jsonl: Binary/Log/Cache
+- ceeb414b-159c-4d8e-995f-0a04b5c30571_transcript.jsonl: Binary/Log/Cache
+- cf3ca928-c15d-446b-99ea-785202e45915_transcript.jsonl: Binary/Log/Cache
+- d19512aa-0b08-4fb7-b3e0-3d7680f35f51_transcript.jsonl: Binary/Log/Cache
+- da2d613d-0b47-44e9-a8ab-78ad745f8239_transcript.jsonl: Binary/Log/Cache
+- dda84ea3-7563-4409-bf9a-169d0c6a934f_transcript.jsonl: Binary/Log/Cache
+- df0c5b7f-2bbc-44ab-aa38-19f696628086_transcript.jsonl: Binary/Log/Cache
+- df9c15b2-a5a0-4bc5-86f4-fa738e61ca8c_transcript.jsonl: Binary/Log/Cache
+- e0dc9ba2-83b1-4baf-9521-f9321ec9acbc_transcript.jsonl: Binary/Log/Cache
+- e328249f-6bd9-47e8-aa16-9746ef764a73_transcript.jsonl: Binary/Log/Cache
+- e3cbf4bd-5198-462c-88e2-62c04951a501_transcript.jsonl: Binary/Log/Cache
+- e91f363a-9e80-4cb8-b602-ad9a280e7fda_transcript.jsonl: Binary/Log/Cache
+- eb77ac2f-ca4f-4efd-bd7f-cf81011bfd55_transcript.jsonl: Binary/Log/Cache
+- ed96bac3-ffdd-4bac-9c87-e95f1aa5eebe_transcript.jsonl: Binary/Log/Cache
+- ee69726c-9907-4149-86ff-6b95ab6cfc83_transcript.jsonl: Binary/Log/Cache
+- f21257c6-f960-4db2-9fd5-6f26c75212e0_transcript.jsonl: Binary/Log/Cache
+- f7ef4947-c138-4de8-aed1-1585954d7e0a_transcript.jsonl: Binary/Log/Cache
+- f9deeaee-bb43-431e-9ad0-1cc11defb695_transcript.jsonl: Binary/Log/Cache
+- tasks_task-53.log: Binary/Log/Cache
+- tasks_task-7824.log: Binary/Log/Cache
+- tasks_task-7851.log: Binary/Log/Cache
+- tasks_task-7876.log: Binary/Log/Cache
+- astro_encoder_final.pt: Binary/Log/Cache
+- best_subsets_compiled.json: .json file. 162 lines. [
+- falsifiability_quant_predictions.csv: .csv file. 505 lines. timestamp,astro_encoder_pred,sae_recon_error,actua
+- feature_tensor_manifest.json: .json file. 261 lines. {
+- local_ephemeris_AAL_20050927_000000.json: .json file. 569 lines. {
+- pq_stats.json: .json file. 10 lines. {
+- sae_final.pt: Binary/Log/Cache
+- stage3_xgb_interactions.json: .json file. 35 lines. {
+- 01_vision_and_architecture.md: .md file. 227 lines. # Chapter 1: Vision & Architecture
+- 02_astrology_implementation.md: .md file. 161 lines. # Chapter 2: Astrology Implementation Reality
+- 03_ml_and_smart_ml.md: .md file. 237 lines. # Chapter 3: The ML & Smart_ML Story
+- 04_data_engineering.md: .md file. 188 lines. # Chapter 4: The Data Engineering Journey
+- 05_audits_pivots_falsification.md: .md file. 240 lines. # Chapter 5: The Audit Cycles, Pivots & Falsificat
+- feature_value_audit.md: .md file. 59 lines. # Independent Feature-Value Audit — 22K Astrologic
+- full_22k_backtest_results.json: .json file. 50 lines. {
+- full_22k_backtest_results.md: .md file. 139 lines. # Project Orion — Full 22K SPY Backtest Results
+- hierarchical_vedic_results.json: .json file. 85 lines. {
+- hierarchical_vedic_results.md: .md file. 122 lines. # Hierarchical Vedic ML — Exploratory Result
+- per_anchor_weightage.json: .json file. 82 lines. {
+- per_anchor_weightage.md: .md file. 140 lines. # Per-Anchor ML Weightage Analysis — Exploratory
+- reproducibility_audit.md: .md file. 43 lines. # Reproducibility Audit — Full-22K SPY Backtest
+- build_feature_tensor.py: Python script. Path alpha SPY 1999-2025 feature tensor builder. Single source of truth.
+- build_full_22k_history.py: Python script. Build the full 22K-feature SPY daily history (1999-2025) for backtesting.
+- per_anchor_weightage_analysis.py: Python script. Per-Anchor ML Weightage Analysis — Project Orion (exploratory).
+- reproducibility_audit.py: Python script. Reproducibility audit for the Full-22K SPY backtest.
+- run_full_22k_backtest.py: Python script. Full 22K SPY backtest runner — Project Orion Phase 2.
+- run_hierarchical_vedic_backtest.py: Python script. Hierarchical Vedic ML Backtest — Project Orion.
+- 22k_generation_log.txt: .txt file. 97 lines. ==================================================
+- FEATURE_INVENTORY_v2.md: .md file. 226 lines. # Feature Inventory v2 — Full 22K Spot-Check
+- generate_one_day_22k.py: Python script. validation_v2/generate_one_day_22k.py
+- MATH_AUDIT_v2.md: .md file. 311 lines. # Math Audit v2 — Post-Patch
+- one_day_22k_2024-01-22.csv: .csv file. 2 lines. timestamp,TRANSIT_Sun_long,TRANSIT_Sun_D1,TRANSIT_
+- one_day_22k_2024-01-22_spotchecks.json: .json file. 352 lines. [
+- one_day_22k_2024-01-22_summary.json: .json file. 133 lines. {
+- REFERENCE_VALIDATION_v2.md: .md file. 259 lines. # External Reference Validation v2 — Post-Patch
+- run_validation.py: Python script. External Reference Validation v2 - Post-Patch.
+- test_math_audit_v2.py: Python script. Math Audit v2 — Post-Patch
+- validation_results.json: .json file. 475 lines. {
+- test_math_audit_v2.cpython-314-pytest-9.0.3.pyc: Binary/Log/Cache

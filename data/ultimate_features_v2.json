@@ -1,0 +1,4958 @@
+{
+  "Sector_ETFs_trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "D1_rasi": {
+      "Sun": {
+        "sign": "Sagittarius",
+        "degrees": "06\u00b0 41' 35\"",
+        "nakshatra": "Mula",
+        "pada": 3,
+        "longitude": 246.6931011766842
+      },
+      "Moon": {
+        "sign": "Capricorn",
+        "degrees": "19\u00b0 07' 41\"",
+        "nakshatra": "Shravana",
+        "pada": 3,
+        "longitude": 289.12829753722343
+      },
+      "Mars": {
+        "sign": "Virgo",
+        "degrees": "19\u00b0 47' 00\"",
+        "nakshatra": "Hasta",
+        "pada": 3,
+        "longitude": 169.78339089171632
+      },
+      "Mercury": {
+        "sign": "Scorpio",
+        "degrees": "15\u00b0 18' 04\"",
+        "nakshatra": "Anuradha",
+        "pada": 4,
+        "longitude": 225.3013385043905
+      },
+      "Jupiter": {
+        "sign": "Aquarius",
+        "degrees": "26\u00b0 49' 55\"",
+        "nakshatra": "Purva Bhadrapada",
+        "pada": 3,
+        "longitude": 326.83213177253754
+      },
+      "Venus": {
+        "sign": "Sagittarius",
+        "degrees": "19\u00b0 45' 26\"",
+        "nakshatra": "Purva Ashadha",
+        "pada": 2,
+        "longitude": 259.7573106526615
+      },
+      "Saturn": {
+        "sign": "Aries",
+        "degrees": "02\u00b0 58' 26\"",
+        "nakshatra": "Ashwini",
+        "pada": 1,
+        "longitude": 2.9740780084826564
+      },
+      "Rahu": {
+        "sign": "Leo",
+        "degrees": "01\u00b0 03' 14\"",
+        "nakshatra": "Magha",
+        "pada": 1,
+        "longitude": 121.05390812679371
+      },
+      "Ketu": {
+        "sign": "Aquarius",
+        "degrees": "01\u00b0 03' 14\"",
+        "nakshatra": "Dhanishtha",
+        "pada": 3,
+        "longitude": 301.0539081267937
+      },
+      "Ascendant": {
+        "sign": "Capricorn",
+        "degrees": "10\u00b0 57' 05\"",
+        "nakshatra": "Shravana",
+        "pada": 1,
+        "longitude": 280.95162489580224
+      }
+    },
+    "D9_navamsa": {
+      "Sun": "Gemini",
+      "Moon": "Gemini",
+      "Mars": "Gemini",
+      "Mercury": "Scorpio",
+      "Jupiter": "Gemini",
+      "Venus": "Virgo",
+      "Saturn": "Aries",
+      "Rahu": "Aries",
+      "Ketu": "Libra",
+      "Ascendant": "Aries"
+    },
+    "D10_dasamsa": {
+      "Sun": "Aquarius",
+      "Moon": "Pisces",
+      "Mars": "Scorpio",
+      "Mercury": "Sagittarius",
+      "Jupiter": "Libra",
+      "Venus": "Gemini",
+      "Saturn": "Aries",
+      "Rahu": "Aquarius",
+      "Ketu": "Leo",
+      "Ascendant": "Sagittarius"
+    },
+    "ashtakvarga": {
+      "bhinnashtakvarga": {
+        "Sun": {
+          "Aries": 4,
+          "Taurus": 3,
+          "Gemini": 6,
+          "Cancer": 5,
+          "Leo": 2,
+          "Virgo": 3,
+          "Libra": 7,
+          "Scorpio": 4,
+          "Sagittarius": 5,
+          "Capricorn": 3,
+          "Aquarius": 1,
+          "Pisces": 5
+        },
+        "Moon": {
+          "Aries": 1,
+          "Taurus": 4,
+          "Gemini": 7,
+          "Cancer": 3,
+          "Leo": 4,
+          "Virgo": 5,
+          "Libra": 5,
+          "Scorpio": 5,
+          "Sagittarius": 1,
+          "Capricorn": 4,
+          "Aquarius": 6,
+          "Pisces": 4
+        },
+        "Mars": {
+          "Aries": 4,
+          "Taurus": 2,
+          "Gemini": 3,
+          "Cancer": 4,
+          "Leo": 0,
+          "Virgo": 3,
+          "Libra": 5,
+          "Scorpio": 5,
+          "Sagittarius": 3,
+          "Capricorn": 4,
+          "Aquarius": 2,
+          "Pisces": 4
+        },
+        "Mercury": {
+          "Aries": 7,
+          "Taurus": 3,
+          "Gemini": 3,
+          "Cancer": 5,
+          "Leo": 5,
+          "Virgo": 3,
+          "Libra": 7,
+          "Scorpio": 5,
+          "Sagittarius": 4,
+          "Capricorn": 5,
+          "Aquarius": 4,
+          "Pisces": 3
+        },
+        "Jupiter": {
+          "Aries": 5,
+          "Taurus": 4,
+          "Gemini": 4,
+          "Cancer": 4,
+          "Leo": 5,
+          "Virgo": 8,
+          "Libra": 4,
+          "Scorpio": 4,
+          "Sagittarius": 4,
+          "Capricorn": 3,
+          "Aquarius": 5,
+          "Pisces": 5
+        },
+        "Venus": {
+          "Aries": 4,
+          "Taurus": 3,
+          "Gemini": 2,
+          "Cancer": 5,
+          "Leo": 5,
+          "Virgo": 5,
+          "Libra": 3,
+          "Scorpio": 6,
+          "Sagittarius": 4,
+          "Capricorn": 6,
+          "Aquarius": 5,
+          "Pisces": 4
+        },
+        "Saturn": {
+          "Aries": 2,
+          "Taurus": 1,
+          "Gemini": 7,
+          "Cancer": 4,
+          "Leo": 2,
+          "Virgo": 3,
+          "Libra": 4,
+          "Scorpio": 4,
+          "Sagittarius": 2,
+          "Capricorn": 4,
+          "Aquarius": 2,
+          "Pisces": 3
+        }
+      },
+      "sarvashtakvarga": {
+        "Aries": 27,
+        "Taurus": 20,
+        "Gemini": 32,
+        "Cancer": 30,
+        "Leo": 23,
+        "Virgo": 30,
+        "Libra": 35,
+        "Scorpio": 33,
+        "Sagittarius": 23,
+        "Capricorn": 29,
+        "Aquarius": 25,
+        "Pisces": 28
+      }
+    },
+    "panchang": {
+      "tithi": "Chaturthi (Shukla)",
+      "vara": "Tuesday",
+      "yoga": "Harshana",
+      "karana": "Vishti",
+      "nakshatra": "Shravana"
+    },
+    "vimshottari_dasha": {
+      "moon_nakshatra": "Shravana",
+      "birth_lord": "Moon",
+      "full_sequence": [
+        {
+          "lord": "Moon",
+          "start": "1992-02-17",
+          "end": "2002-02-16"
+        },
+        {
+          "lord": "Mars",
+          "start": "2002-02-16",
+          "end": "2009-02-16"
+        },
+        {
+          "lord": "Rahu",
+          "start": "2009-02-16",
+          "end": "2027-02-16"
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2027-02-16",
+          "end": "2043-02-16"
+        },
+        {
+          "lord": "Saturn",
+          "start": "2043-02-16",
+          "end": "2062-02-16"
+        },
+        {
+          "lord": "Mercury",
+          "start": "2062-02-16",
+          "end": "2079-02-16"
+        },
+        {
+          "lord": "Ketu",
+          "start": "2079-02-16",
+          "end": "2086-02-16"
+        },
+        {
+          "lord": "Venus",
+          "start": "2086-02-16",
+          "end": "2106-02-17"
+        },
+        {
+          "lord": "Sun",
+          "start": "2106-02-17",
+          "end": "2112-02-18"
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Moon",
+          "start": "1998-12-22",
+          "end": "2002-02-16"
+        },
+        "antardasha": {
+          "lord": "Mercury",
+          "start": "1997-12-17",
+          "end": "1999-05-18"
+        },
+        "pratyantardasha": {
+          "lord": "Jupiter",
+          "start": "1998-12-18",
+          "end": "1999-02-25"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Rahu",
+          "start": "2009-02-16",
+          "end": "2027-02-16"
+        },
+        "antardasha": {
+          "lord": "Mars",
+          "start": "2026-01-28",
+          "end": "2027-02-16"
+        },
+        "pratyantardasha": {
+          "lord": "Jupiter",
+          "start": "2026-04-18",
+          "end": "2026-06-08"
+        }
+      }
+    },
+    "transit_snapshots": {
+      "2020-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 45' 29\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Virgo",
+          "degrees": "05\u00b0 08' 02\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Scorpio",
+          "degrees": "14\u00b0 06' 29\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "03\u00b0 54' 36\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Sagittarius",
+          "degrees": "15\u00b0 53' 01\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Aquarius",
+          "degrees": "08\u00b0 05' 00\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Sagittarius",
+          "degrees": "28\u00b0 59' 11\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Gemini",
+          "degrees": "13\u00b0 20' 00\"",
+          "nakshatra": "Ardra",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Sagittarius",
+          "degrees": "13\u00b0 20' 00\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 20' 52\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2020-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 45' 36\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Pisces",
+          "degrees": "25\u00b0 53' 28\"",
+          "nakshatra": "Revati",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Aquarius",
+          "degrees": "28\u00b0 03' 36\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "20\u00b0 21' 39\"",
+          "nakshatra": "Punarvasu",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 32' 56\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Taurus",
+          "degrees": "13\u00b0 03' 20\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "06\u00b0 51' 06\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Gemini",
+          "degrees": "05\u00b0 16' 51\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Sagittarius",
+          "degrees": "05\u00b0 16' 51\"",
+          "nakshatra": "Mula",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 48' 17\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2021-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 31' 04\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Aquarius",
+          "degrees": "01\u00b0 35' 49\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "09\u00b0 58' 13\"",
+          "nakshatra": "Ashwini",
+          "pada": 3
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "17\u00b0 18' 06\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Capricorn",
+          "degrees": "12\u00b0 01' 38\"",
+          "nakshatra": "Shravana",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 34' 01\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "09\u00b0 10' 46\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "23\u00b0 56' 18\"",
+          "nakshatra": "Mrigasira",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "23\u00b0 56' 18\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 34' 31\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2021-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 30' 59\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Cancer",
+          "degrees": "28\u00b0 33' 07\"",
+          "nakshatra": "Ashlesha",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "08\u00b0 18' 43\"",
+          "nakshatra": "Pushya",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "23\u00b0 49' 44\"",
+          "nakshatra": "Mrigasira",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Aquarius",
+          "degrees": "07\u00b0 59' 27\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Gemini",
+          "degrees": "21\u00b0 43' 08\"",
+          "nakshatra": "Punarvasu",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "18\u00b0 56' 21\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "15\u00b0 56' 19\"",
+          "nakshatra": "Rohini",
+          "pada": 2
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "15\u00b0 56' 19\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 36' 16\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2022-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 15' 06\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Gemini",
+          "degrees": "05\u00b0 00' 33\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Scorpio",
+          "degrees": "29\u00b0 23' 04\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "16\u00b0 03' 20\"",
+          "nakshatra": "Shravana",
+          "pada": 2
+        },
+        "Jupiter": {
+          "sign": "Aquarius",
+          "degrees": "09\u00b0 23' 22\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Sagittarius",
+          "degrees": "20\u00b0 43' 52\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "19\u00b0 23' 00\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "04\u00b0 35' 46\"",
+          "nakshatra": "Krittika",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "04\u00b0 35' 46\"",
+          "nakshatra": "Anuradha",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 09' 48\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2022-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 16' 32\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Sagittarius",
+          "degrees": "15\u00b0 31' 23\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Pisces",
+          "degrees": "21\u00b0 45' 03\"",
+          "nakshatra": "Revati",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "07\u00b0 23' 00\"",
+          "nakshatra": "Krittika",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Pisces",
+          "degrees": "11\u00b0 39' 26\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 3
+        },
+        "Venus": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 58' 24\"",
+          "nakshatra": "Krittika",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "00\u00b0 59' 37\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 35' 48\"",
+          "nakshatra": "Bharani",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "26\u00b0 35' 48\"",
+          "nakshatra": "Vishakha",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 24' 14\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2023-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 59' 11\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Libra",
+          "degrees": "07\u00b0 06' 13\"",
+          "nakshatra": "Swati",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Taurus",
+          "degrees": "14\u00b0 00' 01\"",
+          "nakshatra": "Rohini",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 36' 08\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Pisces",
+          "degrees": "09\u00b0 02' 43\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Capricorn",
+          "degrees": "21\u00b0 28' 31\"",
+          "nakshatra": "Shravana",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "29\u00b0 47' 09\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "15\u00b0 15' 15\"",
+          "nakshatra": "Bharani",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "15\u00b0 15' 15\"",
+          "nakshatra": "Swati",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 45' 10\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2023-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 01' 44\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Aries",
+          "degrees": "29\u00b0 15' 05\"",
+          "nakshatra": "Krittika",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 52' 23\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "12\u00b0 49' 35\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Aries",
+          "degrees": "12\u00b0 13' 35\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Cancer",
+          "degrees": "14\u00b0 52' 57\"",
+          "nakshatra": "Pushya",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "13\u00b0 01' 28\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "07\u00b0 15' 16\"",
+          "nakshatra": "Ashwini",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "07\u00b0 15' 16\"",
+          "nakshatra": "Swati",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 12' 11\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2024-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 43' 59\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Aquarius",
+          "degrees": "27\u00b0 12' 43\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 01' 24\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "07\u00b0 27' 39\"",
+          "nakshatra": "Mula",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Aries",
+          "degrees": "11\u00b0 48' 08\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Scorpio",
+          "degrees": "26\u00b0 16' 06\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "10\u00b0 27' 22\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "25\u00b0 54' 43\"",
+          "nakshatra": "Revati",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "25\u00b0 54' 43\"",
+          "nakshatra": "Chitra",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 20' 35\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2024-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 44' 16\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Virgo",
+          "degrees": "15\u00b0 18' 27\"",
+          "nakshatra": "Hasta",
+          "pada": 2
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "10\u00b0 31' 02\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "01\u00b0 49' 26\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Taurus",
+          "degrees": "10\u00b0 35' 01\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Gemini",
+          "degrees": "03\u00b0 42' 42\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "25\u00b0 03' 43\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "17\u00b0 51' 34\"",
+          "nakshatra": "Revati",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "17\u00b0 51' 34\"",
+          "nakshatra": "Hasta",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 46' 21\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2025-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 29' 16\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Cancer",
+          "degrees": "21\u00b0 49' 49\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "02\u00b0 12' 19\"",
+          "nakshatra": "Punarvasu",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "16\u00b0 16' 28\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Taurus",
+          "degrees": "17\u00b0 44' 07\"",
+          "nakshatra": "Rohini",
+          "pada": 3
+        },
+        "Venus": {
+          "sign": "Aquarius",
+          "degrees": "18\u00b0 33' 10\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "21\u00b0 33' 18\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "06\u00b0 31' 01\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "06\u00b0 31' 01\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 34' 20\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2025-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 29' 16\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Capricorn",
+          "degrees": "20\u00b0 03' 58\"",
+          "nakshatra": "Shravana",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Leo",
+          "degrees": "04\u00b0 47' 04\"",
+          "nakshatra": "Magha",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "18\u00b0 23' 12\"",
+          "nakshatra": "Ardra",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Gemini",
+          "degrees": "07\u00b0 04' 45\"",
+          "nakshatra": "Ardra",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Aries",
+          "degrees": "15\u00b0 18' 22\"",
+          "nakshatra": "Bharani",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "07\u00b0 05' 15\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "28\u00b0 31' 02\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "28\u00b0 31' 02\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 34' 17\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2026-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 13' 32\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Scorpio",
+          "degrees": "25\u00b0 05' 46\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Sagittarius",
+          "degrees": "29\u00b0 43' 33\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "27\u00b0 23' 18\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Gemini",
+          "degrees": "25\u00b0 10' 49\"",
+          "nakshatra": "Punarvasu",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Capricorn",
+          "degrees": "03\u00b0 21' 19\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "02\u00b0 57' 11\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "17\u00b0 10' 30\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "17\u00b0 10' 30\"",
+          "nakshatra": "Purva Phalguni",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 09' 41\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2026-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 14' 36\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Gemini",
+          "degrees": "06\u00b0 34' 29\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 13' 33\"",
+          "nakshatra": "Bharani",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "24\u00b0 44' 13\"",
+          "nakshatra": "Punarvasu",
+          "pada": 2
+        },
+        "Jupiter": {
+          "sign": "Cancer",
+          "degrees": "02\u00b0 42' 04\"",
+          "nakshatra": "Punarvasu",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Cancer",
+          "degrees": "08\u00b0 13' 49\"",
+          "nakshatra": "Pushya",
+          "pada": 2
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "19\u00b0 06' 51\"",
+          "nakshatra": "Revati",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "09\u00b0 10' 31\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "09\u00b0 10' 31\"",
+          "nakshatra": "Magha",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 22' 13\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2027-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 58' 07\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Pisces",
+          "degrees": "27\u00b0 52' 42\"",
+          "nakshatra": "Revati",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Leo",
+          "degrees": "16\u00b0 01' 32\"",
+          "nakshatra": "Purva Phalguni",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "09\u00b0 42' 44\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Leo",
+          "degrees": "01\u00b0 00' 53\"",
+          "nakshatra": "Magha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Scorpio",
+          "degrees": "14\u00b0 31' 14\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "14\u00b0 49' 31\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Capricorn",
+          "degrees": "27\u00b0 49' 58\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 2
+        },
+        "Ketu": {
+          "sign": "Cancer",
+          "degrees": "27\u00b0 49' 58\"",
+          "nakshatra": "Ashlesha",
+          "pada": 4
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 45' 05\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      }
+    }
+  },
+  "Sector_ETFs_conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "D1_rasi": {
+      "Sun": {
+        "sign": "Sagittarius",
+        "degrees": "00\u00b0 41' 21\"",
+        "nakshatra": "Mula",
+        "pada": 1,
+        "longitude": 240.68930535304423
+      },
+      "Moon": {
+        "sign": "Scorpio",
+        "degrees": "05\u00b0 45' 53\"",
+        "nakshatra": "Anuradha",
+        "pada": 1,
+        "longitude": 215.76476615491725
+      },
+      "Mars": {
+        "sign": "Virgo",
+        "degrees": "16\u00b0 41' 45\"",
+        "nakshatra": "Hasta",
+        "pada": 3,
+        "longitude": 166.69608129845966
+      },
+      "Mercury": {
+        "sign": "Scorpio",
+        "degrees": "09\u00b0 38' 05\"",
+        "nakshatra": "Anuradha",
+        "pada": 2,
+        "longitude": 219.6349280185034
+      },
+      "Jupiter": {
+        "sign": "Aquarius",
+        "degrees": "26\u00b0 09' 15\"",
+        "nakshatra": "Purva Bhadrapada",
+        "pada": 2,
+        "longitude": 326.15424616889914
+      },
+      "Venus": {
+        "sign": "Sagittarius",
+        "degrees": "12\u00b0 21' 24\"",
+        "nakshatra": "Mula",
+        "pada": 4,
+        "longitude": 252.3567361642876
+      },
+      "Saturn": {
+        "sign": "Aries",
+        "degrees": "03\u00b0 04' 59\"",
+        "nakshatra": "Ashwini",
+        "pada": 1,
+        "longitude": 3.083105363921865
+      },
+      "Rahu": {
+        "sign": "Leo",
+        "degrees": "01\u00b0 21' 58\"",
+        "nakshatra": "Magha",
+        "pada": 1,
+        "longitude": 121.36634020197897
+      },
+      "Ketu": {
+        "sign": "Aquarius",
+        "degrees": "01\u00b0 21' 58\"",
+        "nakshatra": "Dhanishtha",
+        "pada": 3,
+        "longitude": 301.36634020197897
+      },
+      "Ascendant": {
+        "sign": "Aquarius",
+        "degrees": "29\u00b0 26' 11\"",
+        "nakshatra": "Purva Bhadrapada",
+        "pada": 3,
+        "longitude": 329.4366158002824
+      }
+    },
+    "D9_navamsa": {
+      "Sun": "Aries",
+      "Moon": "Leo",
+      "Mars": "Gemini",
+      "Mercury": "Virgo",
+      "Jupiter": "Taurus",
+      "Venus": "Cancer",
+      "Saturn": "Aries",
+      "Rahu": "Aries",
+      "Ketu": "Libra",
+      "Ascendant": "Gemini"
+    },
+    "D10_dasamsa": {
+      "Sun": "Sagittarius",
+      "Moon": "Leo",
+      "Mars": "Libra",
+      "Mercury": "Libra",
+      "Jupiter": "Libra",
+      "Venus": "Aries",
+      "Saturn": "Taurus",
+      "Rahu": "Aquarius",
+      "Ketu": "Leo",
+      "Ascendant": "Scorpio"
+    },
+    "ashtakvarga": {
+      "bhinnashtakvarga": {
+        "Sun": {
+          "Aries": 5,
+          "Taurus": 4,
+          "Gemini": 4,
+          "Cancer": 6,
+          "Leo": 3,
+          "Virgo": 4,
+          "Libra": 5,
+          "Scorpio": 3,
+          "Sagittarius": 5,
+          "Capricorn": 5,
+          "Aquarius": 1,
+          "Pisces": 3
+        },
+        "Moon": {
+          "Aries": 3,
+          "Taurus": 5,
+          "Gemini": 5,
+          "Cancer": 3,
+          "Leo": 5,
+          "Virgo": 6,
+          "Libra": 3,
+          "Scorpio": 5,
+          "Sagittarius": 2,
+          "Capricorn": 4,
+          "Aquarius": 6,
+          "Pisces": 2
+        },
+        "Mars": {
+          "Aries": 6,
+          "Taurus": 2,
+          "Gemini": 1,
+          "Cancer": 5,
+          "Leo": 0,
+          "Virgo": 4,
+          "Libra": 4,
+          "Scorpio": 4,
+          "Sagittarius": 4,
+          "Capricorn": 4,
+          "Aquarius": 3,
+          "Pisces": 2
+        },
+        "Mercury": {
+          "Aries": 6,
+          "Taurus": 4,
+          "Gemini": 2,
+          "Cancer": 6,
+          "Leo": 4,
+          "Virgo": 5,
+          "Libra": 5,
+          "Scorpio": 4,
+          "Sagittarius": 6,
+          "Capricorn": 4,
+          "Aquarius": 4,
+          "Pisces": 4
+        },
+        "Jupiter": {
+          "Aries": 4,
+          "Taurus": 4,
+          "Gemini": 4,
+          "Cancer": 5,
+          "Leo": 5,
+          "Virgo": 7,
+          "Libra": 4,
+          "Scorpio": 3,
+          "Sagittarius": 6,
+          "Capricorn": 2,
+          "Aquarius": 4,
+          "Pisces": 7
+        },
+        "Venus": {
+          "Aries": 3,
+          "Taurus": 2,
+          "Gemini": 4,
+          "Cancer": 6,
+          "Leo": 3,
+          "Virgo": 5,
+          "Libra": 5,
+          "Scorpio": 5,
+          "Sagittarius": 5,
+          "Capricorn": 5,
+          "Aquarius": 5,
+          "Pisces": 4
+        },
+        "Saturn": {
+          "Aries": 3,
+          "Taurus": 2,
+          "Gemini": 5,
+          "Cancer": 5,
+          "Leo": 2,
+          "Virgo": 4,
+          "Libra": 3,
+          "Scorpio": 3,
+          "Sagittarius": 3,
+          "Capricorn": 4,
+          "Aquarius": 3,
+          "Pisces": 1
+        }
+      },
+      "sarvashtakvarga": {
+        "Aries": 30,
+        "Taurus": 23,
+        "Gemini": 25,
+        "Cancer": 36,
+        "Leo": 22,
+        "Virgo": 35,
+        "Libra": 29,
+        "Scorpio": 27,
+        "Sagittarius": 31,
+        "Capricorn": 28,
+        "Aquarius": 26,
+        "Pisces": 23
+      }
+    },
+    "panchang": {
+      "tithi": "Trayodashi (Krishna)",
+      "vara": "Wednesday",
+      "yoga": "Dhriti",
+      "karana": "Vanija",
+      "nakshatra": "Anuradha"
+    },
+    "vimshottari_dasha": {
+      "moon_nakshatra": "Anuradha",
+      "birth_lord": "Saturn",
+      "full_sequence": [
+        {
+          "lord": "Saturn",
+          "start": "1995-06-30",
+          "end": "2014-06-29"
+        },
+        {
+          "lord": "Mercury",
+          "start": "2014-06-29",
+          "end": "2031-06-30"
+        },
+        {
+          "lord": "Ketu",
+          "start": "2031-06-30",
+          "end": "2038-06-29"
+        },
+        {
+          "lord": "Venus",
+          "start": "2038-06-29",
+          "end": "2058-06-29"
+        },
+        {
+          "lord": "Sun",
+          "start": "2058-06-29",
+          "end": "2064-06-29"
+        },
+        {
+          "lord": "Moon",
+          "start": "2064-06-29",
+          "end": "2074-06-29"
+        },
+        {
+          "lord": "Mars",
+          "start": "2074-06-29",
+          "end": "2081-06-29"
+        },
+        {
+          "lord": "Rahu",
+          "start": "2081-06-29",
+          "end": "2099-06-30"
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2099-06-30",
+          "end": "2115-07-01"
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Saturn",
+          "start": "1998-12-16",
+          "end": "2014-06-29"
+        },
+        "antardasha": {
+          "lord": "Mercury",
+          "start": "1998-07-02",
+          "end": "2001-03-11"
+        },
+        "pratyantardasha": {
+          "lord": "Ketu",
+          "start": "1998-11-19",
+          "end": "1999-01-15"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Mercury",
+          "start": "2014-06-29",
+          "end": "2031-06-30"
+        },
+        "antardasha": {
+          "lord": "Rahu",
+          "start": "2023-12-26",
+          "end": "2026-07-14"
+        },
+        "pratyantardasha": {
+          "lord": "Mars",
+          "start": "2026-05-21",
+          "end": "2026-07-14"
+        }
+      }
+    },
+    "transit_snapshots": {
+      "2020-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 45' 29\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Virgo",
+          "degrees": "05\u00b0 08' 02\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Scorpio",
+          "degrees": "14\u00b0 06' 29\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "03\u00b0 54' 36\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Sagittarius",
+          "degrees": "15\u00b0 53' 01\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Aquarius",
+          "degrees": "08\u00b0 05' 00\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Sagittarius",
+          "degrees": "28\u00b0 59' 11\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Gemini",
+          "degrees": "13\u00b0 20' 00\"",
+          "nakshatra": "Ardra",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Sagittarius",
+          "degrees": "13\u00b0 20' 00\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 20' 52\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2020-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 45' 36\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Pisces",
+          "degrees": "25\u00b0 53' 28\"",
+          "nakshatra": "Revati",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Aquarius",
+          "degrees": "28\u00b0 03' 36\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "20\u00b0 21' 39\"",
+          "nakshatra": "Punarvasu",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 32' 56\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Taurus",
+          "degrees": "13\u00b0 03' 20\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "06\u00b0 51' 06\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Gemini",
+          "degrees": "05\u00b0 16' 51\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Sagittarius",
+          "degrees": "05\u00b0 16' 51\"",
+          "nakshatra": "Mula",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 48' 17\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2021-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 31' 04\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Aquarius",
+          "degrees": "01\u00b0 35' 49\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "09\u00b0 58' 13\"",
+          "nakshatra": "Ashwini",
+          "pada": 3
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "17\u00b0 18' 06\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Capricorn",
+          "degrees": "12\u00b0 01' 38\"",
+          "nakshatra": "Shravana",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 34' 01\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "09\u00b0 10' 46\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "23\u00b0 56' 18\"",
+          "nakshatra": "Mrigasira",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "23\u00b0 56' 18\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 34' 31\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2021-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 30' 59\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Cancer",
+          "degrees": "28\u00b0 33' 07\"",
+          "nakshatra": "Ashlesha",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "08\u00b0 18' 43\"",
+          "nakshatra": "Pushya",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "23\u00b0 49' 44\"",
+          "nakshatra": "Mrigasira",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Aquarius",
+          "degrees": "07\u00b0 59' 27\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Gemini",
+          "degrees": "21\u00b0 43' 08\"",
+          "nakshatra": "Punarvasu",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "18\u00b0 56' 21\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "15\u00b0 56' 19\"",
+          "nakshatra": "Rohini",
+          "pada": 2
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "15\u00b0 56' 19\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 36' 16\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2022-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 15' 06\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Gemini",
+          "degrees": "05\u00b0 00' 33\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Scorpio",
+          "degrees": "29\u00b0 23' 04\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "16\u00b0 03' 20\"",
+          "nakshatra": "Shravana",
+          "pada": 2
+        },
+        "Jupiter": {
+          "sign": "Aquarius",
+          "degrees": "09\u00b0 23' 22\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Sagittarius",
+          "degrees": "20\u00b0 43' 52\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "19\u00b0 23' 00\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "04\u00b0 35' 46\"",
+          "nakshatra": "Krittika",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "04\u00b0 35' 46\"",
+          "nakshatra": "Anuradha",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 09' 48\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2022-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 16' 32\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Sagittarius",
+          "degrees": "15\u00b0 31' 23\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Pisces",
+          "degrees": "21\u00b0 45' 03\"",
+          "nakshatra": "Revati",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "07\u00b0 23' 00\"",
+          "nakshatra": "Krittika",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Pisces",
+          "degrees": "11\u00b0 39' 26\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 3
+        },
+        "Venus": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 58' 24\"",
+          "nakshatra": "Krittika",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "00\u00b0 59' 37\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 35' 48\"",
+          "nakshatra": "Bharani",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "26\u00b0 35' 48\"",
+          "nakshatra": "Vishakha",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 24' 14\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2023-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 59' 11\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Libra",
+          "degrees": "07\u00b0 06' 13\"",
+          "nakshatra": "Swati",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Taurus",
+          "degrees": "14\u00b0 00' 01\"",
+          "nakshatra": "Rohini",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 36' 08\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Pisces",
+          "degrees": "09\u00b0 02' 43\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Capricorn",
+          "degrees": "21\u00b0 28' 31\"",
+          "nakshatra": "Shravana",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "29\u00b0 47' 09\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "15\u00b0 15' 15\"",
+          "nakshatra": "Bharani",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "15\u00b0 15' 15\"",
+          "nakshatra": "Swati",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 45' 10\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2023-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 01' 44\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Aries",
+          "degrees": "29\u00b0 15' 05\"",
+          "nakshatra": "Krittika",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 52' 23\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "12\u00b0 49' 35\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Aries",
+          "degrees": "12\u00b0 13' 35\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Cancer",
+          "degrees": "14\u00b0 52' 57\"",
+          "nakshatra": "Pushya",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "13\u00b0 01' 28\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "07\u00b0 15' 16\"",
+          "nakshatra": "Ashwini",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "07\u00b0 15' 16\"",
+          "nakshatra": "Swati",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 12' 11\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2024-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 43' 59\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Aquarius",
+          "degrees": "27\u00b0 12' 43\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 01' 24\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "07\u00b0 27' 39\"",
+          "nakshatra": "Mula",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Aries",
+          "degrees": "11\u00b0 48' 08\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Scorpio",
+          "degrees": "26\u00b0 16' 06\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "10\u00b0 27' 22\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "25\u00b0 54' 43\"",
+          "nakshatra": "Revati",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "25\u00b0 54' 43\"",
+          "nakshatra": "Chitra",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 20' 35\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2024-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 44' 16\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Virgo",
+          "degrees": "15\u00b0 18' 27\"",
+          "nakshatra": "Hasta",
+          "pada": 2
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "10\u00b0 31' 02\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "01\u00b0 49' 26\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Taurus",
+          "degrees": "10\u00b0 35' 01\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Gemini",
+          "degrees": "03\u00b0 42' 42\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "25\u00b0 03' 43\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "17\u00b0 51' 34\"",
+          "nakshatra": "Revati",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "17\u00b0 51' 34\"",
+          "nakshatra": "Hasta",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 46' 21\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2025-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 29' 16\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Cancer",
+          "degrees": "21\u00b0 49' 49\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "02\u00b0 12' 19\"",
+          "nakshatra": "Punarvasu",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "16\u00b0 16' 28\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Taurus",
+          "degrees": "17\u00b0 44' 07\"",
+          "nakshatra": "Rohini",
+          "pada": 3
+        },
+        "Venus": {
+          "sign": "Aquarius",
+          "degrees": "18\u00b0 33' 10\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "21\u00b0 33' 18\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "06\u00b0 31' 01\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "06\u00b0 31' 01\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 34' 20\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2025-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 29' 16\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Capricorn",
+          "degrees": "20\u00b0 03' 58\"",
+          "nakshatra": "Shravana",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Leo",
+          "degrees": "04\u00b0 47' 04\"",
+          "nakshatra": "Magha",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "18\u00b0 23' 12\"",
+          "nakshatra": "Ardra",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Gemini",
+          "degrees": "07\u00b0 04' 45\"",
+          "nakshatra": "Ardra",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Aries",
+          "degrees": "15\u00b0 18' 22\"",
+          "nakshatra": "Bharani",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "07\u00b0 05' 15\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "28\u00b0 31' 02\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "28\u00b0 31' 02\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 34' 17\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2026-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 13' 32\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Scorpio",
+          "degrees": "25\u00b0 05' 46\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Sagittarius",
+          "degrees": "29\u00b0 43' 33\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "27\u00b0 23' 18\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Gemini",
+          "degrees": "25\u00b0 10' 49\"",
+          "nakshatra": "Punarvasu",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Capricorn",
+          "degrees": "03\u00b0 21' 19\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "02\u00b0 57' 11\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "17\u00b0 10' 30\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "17\u00b0 10' 30\"",
+          "nakshatra": "Purva Phalguni",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 09' 41\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2026-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 14' 36\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Gemini",
+          "degrees": "06\u00b0 34' 29\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 13' 33\"",
+          "nakshatra": "Bharani",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "24\u00b0 44' 13\"",
+          "nakshatra": "Punarvasu",
+          "pada": 2
+        },
+        "Jupiter": {
+          "sign": "Cancer",
+          "degrees": "02\u00b0 42' 04\"",
+          "nakshatra": "Punarvasu",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Cancer",
+          "degrees": "08\u00b0 13' 49\"",
+          "nakshatra": "Pushya",
+          "pada": 2
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "19\u00b0 06' 51\"",
+          "nakshatra": "Revati",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "09\u00b0 10' 31\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "09\u00b0 10' 31\"",
+          "nakshatra": "Magha",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 22' 13\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2027-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 58' 07\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Pisces",
+          "degrees": "27\u00b0 52' 42\"",
+          "nakshatra": "Revati",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Leo",
+          "degrees": "16\u00b0 01' 32\"",
+          "nakshatra": "Purva Phalguni",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "09\u00b0 42' 44\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Leo",
+          "degrees": "01\u00b0 00' 53\"",
+          "nakshatra": "Magha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Scorpio",
+          "degrees": "14\u00b0 31' 14\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "14\u00b0 49' 31\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Capricorn",
+          "degrees": "27\u00b0 49' 58\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 2
+        },
+        "Ketu": {
+          "sign": "Cancer",
+          "degrees": "27\u00b0 49' 58\"",
+          "nakshatra": "Ashlesha",
+          "pada": 4
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 45' 05\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      }
+    }
+  },
+  "SPY_trading": {
+    "birth_datetime": "1993-01-29 09:30:00",
+    "D1_rasi": {
+      "Sun": {
+        "sign": "Capricorn",
+        "degrees": "15\u00b0 56' 38\"",
+        "nakshatra": "Shravana",
+        "pada": 2,
+        "longitude": 285.9441072264033
+      },
+      "Moon": {
+        "sign": "Aries",
+        "degrees": "00\u00b0 37' 35\"",
+        "nakshatra": "Ashwini",
+        "pada": 1,
+        "longitude": 0.626452933989051
+      },
+      "Mars": {
+        "sign": "Gemini",
+        "degrees": "16\u00b0 43' 41\"",
+        "nakshatra": "Ardra",
+        "pada": 4,
+        "longitude": 76.72808566219835
+      },
+      "Mercury": {
+        "sign": "Capricorn",
+        "degrees": "20\u00b0 07' 57\"",
+        "nakshatra": "Shravana",
+        "pada": 4,
+        "longitude": 290.13254549260427
+      },
+      "Jupiter": {
+        "sign": "Virgo",
+        "degrees": "20\u00b0 55' 47\"",
+        "nakshatra": "Hasta",
+        "pada": 4,
+        "longitude": 170.92974322819427
+      },
+      "Venus": {
+        "sign": "Pisces",
+        "degrees": "02\u00b0 38' 24\"",
+        "nakshatra": "Purva Bhadrapada",
+        "pada": 4,
+        "longitude": 332.640192662041
+      },
+      "Saturn": {
+        "sign": "Capricorn",
+        "degrees": "25\u00b0 50' 08\"",
+        "nakshatra": "Dhanishtha",
+        "pada": 1,
+        "longitude": 295.83559965034584
+      },
+      "Rahu": {
+        "sign": "Scorpio",
+        "degrees": "25\u00b0 08' 44\"",
+        "nakshatra": "Jyeshtha",
+        "pada": 3,
+        "longitude": 235.14571879563553
+      },
+      "Ketu": {
+        "sign": "Taurus",
+        "degrees": "25\u00b0 08' 44\"",
+        "nakshatra": "Mrigasira",
+        "pada": 1,
+        "longitude": 55.1457187956355
+      },
+      "Ascendant": {
+        "sign": "Pisces",
+        "degrees": "10\u00b0 18' 34\"",
+        "nakshatra": "Uttara Bhadrapada",
+        "pada": 3,
+        "longitude": 340.3096409888125
+      }
+    },
+    "D9_navamsa": {
+      "Sun": "Taurus",
+      "Moon": "Aries",
+      "Mars": "Pisces",
+      "Mercury": "Cancer",
+      "Jupiter": "Cancer",
+      "Venus": "Cancer",
+      "Saturn": "Leo",
+      "Rahu": "Aquarius",
+      "Ketu": "Leo",
+      "Ascendant": "Libra"
+    },
+    "D10_dasamsa": {
+      "Sun": "Aquarius",
+      "Moon": "Aries",
+      "Mars": "Scorpio",
+      "Mercury": "Pisces",
+      "Jupiter": "Scorpio",
+      "Venus": "Scorpio",
+      "Saturn": "Taurus",
+      "Rahu": "Virgo",
+      "Ketu": "Pisces",
+      "Ascendant": "Aquarius"
+    },
+    "ashtakvarga": {
+      "bhinnashtakvarga": {
+        "Sun": {
+          "Aries": 3,
+          "Taurus": 3,
+          "Gemini": 4,
+          "Cancer": 4,
+          "Leo": 4,
+          "Virgo": 6,
+          "Libra": 3,
+          "Scorpio": 3,
+          "Sagittarius": 3,
+          "Capricorn": 6,
+          "Aquarius": 7,
+          "Pisces": 2
+        },
+        "Moon": {
+          "Aries": 4,
+          "Taurus": 4,
+          "Gemini": 5,
+          "Cancer": 5,
+          "Leo": 5,
+          "Virgo": 3,
+          "Libra": 4,
+          "Scorpio": 5,
+          "Sagittarius": 3,
+          "Capricorn": 4,
+          "Aquarius": 2,
+          "Pisces": 5
+        },
+        "Mars": {
+          "Aries": 2,
+          "Taurus": 3,
+          "Gemini": 5,
+          "Cancer": 3,
+          "Leo": 4,
+          "Virgo": 3,
+          "Libra": 3,
+          "Scorpio": 3,
+          "Sagittarius": 2,
+          "Capricorn": 4,
+          "Aquarius": 3,
+          "Pisces": 4
+        },
+        "Mercury": {
+          "Aries": 5,
+          "Taurus": 4,
+          "Gemini": 5,
+          "Cancer": 5,
+          "Leo": 3,
+          "Virgo": 5,
+          "Libra": 4,
+          "Scorpio": 5,
+          "Sagittarius": 4,
+          "Capricorn": 6,
+          "Aquarius": 4,
+          "Pisces": 4
+        },
+        "Jupiter": {
+          "Aries": 6,
+          "Taurus": 3,
+          "Gemini": 5,
+          "Cancer": 5,
+          "Leo": 4,
+          "Virgo": 4,
+          "Libra": 4,
+          "Scorpio": 5,
+          "Sagittarius": 6,
+          "Capricorn": 5,
+          "Aquarius": 3,
+          "Pisces": 5
+        },
+        "Venus": {
+          "Aries": 6,
+          "Taurus": 7,
+          "Gemini": 5,
+          "Cancer": 4,
+          "Leo": 4,
+          "Virgo": 2,
+          "Libra": 4,
+          "Scorpio": 7,
+          "Sagittarius": 3,
+          "Capricorn": 3,
+          "Aquarius": 2,
+          "Pisces": 5
+        },
+        "Saturn": {
+          "Aries": 2,
+          "Taurus": 2,
+          "Gemini": 4,
+          "Cancer": 2,
+          "Leo": 6,
+          "Virgo": 2,
+          "Libra": 3,
+          "Scorpio": 4,
+          "Sagittarius": 2,
+          "Capricorn": 4,
+          "Aquarius": 4,
+          "Pisces": 3
+        }
+      },
+      "sarvashtakvarga": {
+        "Aries": 28,
+        "Taurus": 26,
+        "Gemini": 33,
+        "Cancer": 28,
+        "Leo": 30,
+        "Virgo": 25,
+        "Libra": 25,
+        "Scorpio": 32,
+        "Sagittarius": 23,
+        "Capricorn": 32,
+        "Aquarius": 25,
+        "Pisces": 28
+      }
+    },
+    "panchang": {
+      "tithi": "Saptami (Shukla)",
+      "vara": "Friday",
+      "yoga": "Sadhya",
+      "karana": "Gara",
+      "nakshatra": "Ashwini"
+    },
+    "vimshottari_dasha": {
+      "moon_nakshatra": "Ashwini",
+      "birth_lord": "Ketu",
+      "full_sequence": [
+        {
+          "lord": "Ketu",
+          "start": "1992-10-01",
+          "end": "1999-10-02"
+        },
+        {
+          "lord": "Venus",
+          "start": "1999-10-02",
+          "end": "2019-10-02"
+        },
+        {
+          "lord": "Sun",
+          "start": "2019-10-02",
+          "end": "2025-10-01"
+        },
+        {
+          "lord": "Moon",
+          "start": "2025-10-01",
+          "end": "2035-10-02"
+        },
+        {
+          "lord": "Mars",
+          "start": "2035-10-02",
+          "end": "2042-10-01"
+        },
+        {
+          "lord": "Rahu",
+          "start": "2042-10-01",
+          "end": "2060-10-01"
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2060-10-01",
+          "end": "2076-10-01"
+        },
+        {
+          "lord": "Saturn",
+          "start": "2076-10-01",
+          "end": "2095-10-02"
+        },
+        {
+          "lord": "Mercury",
+          "start": "2095-10-02",
+          "end": "2112-10-02"
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Ketu",
+          "start": "1993-01-29",
+          "end": "1999-10-02"
+        },
+        "antardasha": {
+          "lord": "Ketu",
+          "start": "1992-10-01",
+          "end": "1993-02-27"
+        },
+        "pratyantardasha": {
+          "lord": "Saturn",
+          "start": "1993-01-13",
+          "end": "1993-02-06"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Moon",
+          "start": "2025-10-01",
+          "end": "2035-10-02"
+        },
+        "antardasha": {
+          "lord": "Moon",
+          "start": "2025-10-01",
+          "end": "2026-08-02"
+        },
+        "pratyantardasha": {
+          "lord": "Venus",
+          "start": "2026-05-27",
+          "end": "2026-07-17"
+        }
+      }
+    },
+    "transit_snapshots": {
+      "2020-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 45' 29\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Virgo",
+          "degrees": "05\u00b0 08' 02\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Scorpio",
+          "degrees": "14\u00b0 06' 29\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "03\u00b0 54' 36\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Sagittarius",
+          "degrees": "15\u00b0 53' 01\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Aquarius",
+          "degrees": "08\u00b0 05' 00\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Sagittarius",
+          "degrees": "28\u00b0 59' 11\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Gemini",
+          "degrees": "13\u00b0 20' 00\"",
+          "nakshatra": "Ardra",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Sagittarius",
+          "degrees": "13\u00b0 20' 00\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 20' 52\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2020-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 45' 36\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Pisces",
+          "degrees": "25\u00b0 53' 28\"",
+          "nakshatra": "Revati",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Aquarius",
+          "degrees": "28\u00b0 03' 36\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "20\u00b0 21' 39\"",
+          "nakshatra": "Punarvasu",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 32' 56\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Taurus",
+          "degrees": "13\u00b0 03' 20\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "06\u00b0 51' 06\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Gemini",
+          "degrees": "05\u00b0 16' 51\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Sagittarius",
+          "degrees": "05\u00b0 16' 51\"",
+          "nakshatra": "Mula",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 48' 17\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2021-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 31' 04\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Aquarius",
+          "degrees": "01\u00b0 35' 49\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "09\u00b0 58' 13\"",
+          "nakshatra": "Ashwini",
+          "pada": 3
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "17\u00b0 18' 06\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Capricorn",
+          "degrees": "12\u00b0 01' 38\"",
+          "nakshatra": "Shravana",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 34' 01\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "09\u00b0 10' 46\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "23\u00b0 56' 18\"",
+          "nakshatra": "Mrigasira",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "23\u00b0 56' 18\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 34' 31\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2021-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 30' 59\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Cancer",
+          "degrees": "28\u00b0 33' 07\"",
+          "nakshatra": "Ashlesha",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "08\u00b0 18' 43\"",
+          "nakshatra": "Pushya",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "23\u00b0 49' 44\"",
+          "nakshatra": "Mrigasira",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Aquarius",
+          "degrees": "07\u00b0 59' 27\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Gemini",
+          "degrees": "21\u00b0 43' 08\"",
+          "nakshatra": "Punarvasu",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "18\u00b0 56' 21\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "15\u00b0 56' 19\"",
+          "nakshatra": "Rohini",
+          "pada": 2
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "15\u00b0 56' 19\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 36' 16\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2022-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 15' 06\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Gemini",
+          "degrees": "05\u00b0 00' 33\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Scorpio",
+          "degrees": "29\u00b0 23' 04\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "16\u00b0 03' 20\"",
+          "nakshatra": "Shravana",
+          "pada": 2
+        },
+        "Jupiter": {
+          "sign": "Aquarius",
+          "degrees": "09\u00b0 23' 22\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Sagittarius",
+          "degrees": "20\u00b0 43' 52\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "19\u00b0 23' 00\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "04\u00b0 35' 46\"",
+          "nakshatra": "Krittika",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "04\u00b0 35' 46\"",
+          "nakshatra": "Anuradha",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 09' 48\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2022-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 16' 32\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Sagittarius",
+          "degrees": "15\u00b0 31' 23\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Pisces",
+          "degrees": "21\u00b0 45' 03\"",
+          "nakshatra": "Revati",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "07\u00b0 23' 00\"",
+          "nakshatra": "Krittika",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Pisces",
+          "degrees": "11\u00b0 39' 26\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 3
+        },
+        "Venus": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 58' 24\"",
+          "nakshatra": "Krittika",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "00\u00b0 59' 37\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 35' 48\"",
+          "nakshatra": "Bharani",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "26\u00b0 35' 48\"",
+          "nakshatra": "Vishakha",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 24' 14\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2023-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 59' 11\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Libra",
+          "degrees": "07\u00b0 06' 13\"",
+          "nakshatra": "Swati",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Taurus",
+          "degrees": "14\u00b0 00' 01\"",
+          "nakshatra": "Rohini",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 36' 08\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Pisces",
+          "degrees": "09\u00b0 02' 43\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Capricorn",
+          "degrees": "21\u00b0 28' 31\"",
+          "nakshatra": "Shravana",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "29\u00b0 47' 09\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "15\u00b0 15' 15\"",
+          "nakshatra": "Bharani",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "15\u00b0 15' 15\"",
+          "nakshatra": "Swati",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 45' 10\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2023-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 01' 44\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Aries",
+          "degrees": "29\u00b0 15' 05\"",
+          "nakshatra": "Krittika",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 52' 23\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "12\u00b0 49' 35\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Aries",
+          "degrees": "12\u00b0 13' 35\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Cancer",
+          "degrees": "14\u00b0 52' 57\"",
+          "nakshatra": "Pushya",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "13\u00b0 01' 28\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "07\u00b0 15' 16\"",
+          "nakshatra": "Ashwini",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "07\u00b0 15' 16\"",
+          "nakshatra": "Swati",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 12' 11\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2024-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 43' 59\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Aquarius",
+          "degrees": "27\u00b0 12' 43\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 01' 24\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "07\u00b0 27' 39\"",
+          "nakshatra": "Mula",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Aries",
+          "degrees": "11\u00b0 48' 08\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Scorpio",
+          "degrees": "26\u00b0 16' 06\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "10\u00b0 27' 22\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "25\u00b0 54' 43\"",
+          "nakshatra": "Revati",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "25\u00b0 54' 43\"",
+          "nakshatra": "Chitra",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 20' 35\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2024-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 44' 16\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Virgo",
+          "degrees": "15\u00b0 18' 27\"",
+          "nakshatra": "Hasta",
+          "pada": 2
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "10\u00b0 31' 02\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "01\u00b0 49' 26\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Taurus",
+          "degrees": "10\u00b0 35' 01\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Gemini",
+          "degrees": "03\u00b0 42' 42\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "25\u00b0 03' 43\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "17\u00b0 51' 34\"",
+          "nakshatra": "Revati",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "17\u00b0 51' 34\"",
+          "nakshatra": "Hasta",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 46' 21\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2025-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 29' 16\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Cancer",
+          "degrees": "21\u00b0 49' 49\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "02\u00b0 12' 19\"",
+          "nakshatra": "Punarvasu",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "16\u00b0 16' 28\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Taurus",
+          "degrees": "17\u00b0 44' 07\"",
+          "nakshatra": "Rohini",
+          "pada": 3
+        },
+        "Venus": {
+          "sign": "Aquarius",
+          "degrees": "18\u00b0 33' 10\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "21\u00b0 33' 18\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "06\u00b0 31' 01\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "06\u00b0 31' 01\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 34' 20\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2025-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 29' 16\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Capricorn",
+          "degrees": "20\u00b0 03' 58\"",
+          "nakshatra": "Shravana",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Leo",
+          "degrees": "04\u00b0 47' 04\"",
+          "nakshatra": "Magha",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "18\u00b0 23' 12\"",
+          "nakshatra": "Ardra",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Gemini",
+          "degrees": "07\u00b0 04' 45\"",
+          "nakshatra": "Ardra",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Aries",
+          "degrees": "15\u00b0 18' 22\"",
+          "nakshatra": "Bharani",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "07\u00b0 05' 15\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "28\u00b0 31' 02\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "28\u00b0 31' 02\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 34' 17\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2026-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 13' 32\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Scorpio",
+          "degrees": "25\u00b0 05' 46\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Sagittarius",
+          "degrees": "29\u00b0 43' 33\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "27\u00b0 23' 18\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Gemini",
+          "degrees": "25\u00b0 10' 49\"",
+          "nakshatra": "Punarvasu",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Capricorn",
+          "degrees": "03\u00b0 21' 19\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "02\u00b0 57' 11\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "17\u00b0 10' 30\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "17\u00b0 10' 30\"",
+          "nakshatra": "Purva Phalguni",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 09' 41\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2026-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 14' 36\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Gemini",
+          "degrees": "06\u00b0 34' 29\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 13' 33\"",
+          "nakshatra": "Bharani",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "24\u00b0 44' 13\"",
+          "nakshatra": "Punarvasu",
+          "pada": 2
+        },
+        "Jupiter": {
+          "sign": "Cancer",
+          "degrees": "02\u00b0 42' 04\"",
+          "nakshatra": "Punarvasu",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Cancer",
+          "degrees": "08\u00b0 13' 49\"",
+          "nakshatra": "Pushya",
+          "pada": 2
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "19\u00b0 06' 51\"",
+          "nakshatra": "Revati",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "09\u00b0 10' 31\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "09\u00b0 10' 31\"",
+          "nakshatra": "Magha",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 22' 13\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2027-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 58' 07\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Pisces",
+          "degrees": "27\u00b0 52' 42\"",
+          "nakshatra": "Revati",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Leo",
+          "degrees": "16\u00b0 01' 32\"",
+          "nakshatra": "Purva Phalguni",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "09\u00b0 42' 44\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Leo",
+          "degrees": "01\u00b0 00' 53\"",
+          "nakshatra": "Magha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Scorpio",
+          "degrees": "14\u00b0 31' 14\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "14\u00b0 49' 31\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Capricorn",
+          "degrees": "27\u00b0 49' 58\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 2
+        },
+        "Ketu": {
+          "sign": "Cancer",
+          "degrees": "27\u00b0 49' 58\"",
+          "nakshatra": "Ashlesha",
+          "pada": 4
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 45' 05\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      }
+    }
+  },
+  "QQQ_trading": {
+    "birth_datetime": "1999-03-10 09:30:00",
+    "D1_rasi": {
+      "Sun": {
+        "sign": "Aquarius",
+        "degrees": "25\u00b0 43' 21\"",
+        "nakshatra": "Purva Bhadrapada",
+        "pada": 2,
+        "longitude": 325.72261374851433
+      },
+      "Moon": {
+        "sign": "Scorpio",
+        "degrees": "28\u00b0 23' 56\"",
+        "nakshatra": "Jyeshtha",
+        "pada": 4,
+        "longitude": 238.3991302006466
+      },
+      "Mars": {
+        "sign": "Libra",
+        "degrees": "17\u00b0 58' 54\"",
+        "nakshatra": "Swati",
+        "pada": 4,
+        "longitude": 197.98184999215135
+      },
+      "Mercury": {
+        "sign": "Pisces",
+        "degrees": "10\u00b0 12' 27\"",
+        "nakshatra": "Uttara Bhadrapada",
+        "pada": 3,
+        "longitude": 340.2077705690023
+      },
+      "Jupiter": {
+        "sign": "Pisces",
+        "degrees": "12\u00b0 01' 11\"",
+        "nakshatra": "Uttara Bhadrapada",
+        "pada": 3,
+        "longitude": 342.01978309405155
+      },
+      "Venus": {
+        "sign": "Pisces",
+        "degrees": "26\u00b0 40' 17\"",
+        "nakshatra": "Revati",
+        "pada": 4,
+        "longitude": 356.67160448761217
+      },
+      "Saturn": {
+        "sign": "Aries",
+        "degrees": "07\u00b0 07' 45\"",
+        "nakshatra": "Ashwini",
+        "pada": 3,
+        "longitude": 7.129272377126863
+      },
+      "Rahu": {
+        "sign": "Cancer",
+        "degrees": "26\u00b0 55' 13\"",
+        "nakshatra": "Ashlesha",
+        "pada": 4,
+        "longitude": 116.92053114160824
+      },
+      "Ketu": {
+        "sign": "Capricorn",
+        "degrees": "26\u00b0 55' 13\"",
+        "nakshatra": "Dhanishtha",
+        "pada": 2,
+        "longitude": 296.92053114160825
+      },
+      "Ascendant": {
+        "sign": "Taurus",
+        "degrees": "08\u00b0 26' 37\"",
+        "nakshatra": "Krittika",
+        "pada": 4,
+        "longitude": 38.44381990388831
+      }
+    },
+    "D9_navamsa": {
+      "Sun": "Taurus",
+      "Moon": "Pisces",
+      "Mars": "Pisces",
+      "Mercury": "Libra",
+      "Jupiter": "Libra",
+      "Venus": "Pisces",
+      "Saturn": "Gemini",
+      "Rahu": "Pisces",
+      "Ketu": "Virgo",
+      "Ascendant": "Pisces"
+    },
+    "D10_dasamsa": {
+      "Sun": "Libra",
+      "Moon": "Aries",
+      "Mars": "Pisces",
+      "Mercury": "Aquarius",
+      "Jupiter": "Pisces",
+      "Venus": "Cancer",
+      "Saturn": "Gemini",
+      "Rahu": "Taurus",
+      "Ketu": "Scorpio",
+      "Ascendant": "Pisces"
+    },
+    "ashtakvarga": {
+      "bhinnashtakvarga": {
+        "Sun": {
+          "Aries": 4,
+          "Taurus": 4,
+          "Gemini": 1,
+          "Cancer": 5,
+          "Leo": 7,
+          "Virgo": 3,
+          "Libra": 4,
+          "Scorpio": 5,
+          "Sagittarius": 3,
+          "Capricorn": 5,
+          "Aquarius": 5,
+          "Pisces": 2
+        },
+        "Moon": {
+          "Aries": 2,
+          "Taurus": 3,
+          "Gemini": 5,
+          "Cancer": 5,
+          "Leo": 4,
+          "Virgo": 6,
+          "Libra": 3,
+          "Scorpio": 4,
+          "Sagittarius": 5,
+          "Capricorn": 4,
+          "Aquarius": 4,
+          "Pisces": 4
+        },
+        "Mars": {
+          "Aries": 4,
+          "Taurus": 3,
+          "Gemini": 1,
+          "Cancer": 5,
+          "Leo": 4,
+          "Virgo": 1,
+          "Libra": 4,
+          "Scorpio": 3,
+          "Sagittarius": 3,
+          "Capricorn": 6,
+          "Aquarius": 4,
+          "Pisces": 1
+        },
+        "Mercury": {
+          "Aries": 4,
+          "Taurus": 5,
+          "Gemini": 5,
+          "Cancer": 5,
+          "Leo": 5,
+          "Virgo": 1,
+          "Libra": 6,
+          "Scorpio": 4,
+          "Sagittarius": 5,
+          "Capricorn": 6,
+          "Aquarius": 5,
+          "Pisces": 3
+        },
+        "Jupiter": {
+          "Aries": 5,
+          "Taurus": 5,
+          "Gemini": 4,
+          "Cancer": 4,
+          "Leo": 6,
+          "Virgo": 5,
+          "Libra": 4,
+          "Scorpio": 4,
+          "Sagittarius": 5,
+          "Capricorn": 5,
+          "Aquarius": 2,
+          "Pisces": 6
+        },
+        "Venus": {
+          "Aries": 1,
+          "Taurus": 3,
+          "Gemini": 5,
+          "Cancer": 6,
+          "Leo": 4,
+          "Virgo": 4,
+          "Libra": 3,
+          "Scorpio": 5,
+          "Sagittarius": 7,
+          "Capricorn": 7,
+          "Aquarius": 3,
+          "Pisces": 4
+        },
+        "Saturn": {
+          "Aries": 1,
+          "Taurus": 2,
+          "Gemini": 1,
+          "Cancer": 3,
+          "Leo": 7,
+          "Virgo": 3,
+          "Libra": 2,
+          "Scorpio": 2,
+          "Sagittarius": 3,
+          "Capricorn": 4,
+          "Aquarius": 7,
+          "Pisces": 3
+        }
+      },
+      "sarvashtakvarga": {
+        "Aries": 21,
+        "Taurus": 25,
+        "Gemini": 22,
+        "Cancer": 33,
+        "Leo": 37,
+        "Virgo": 23,
+        "Libra": 26,
+        "Scorpio": 27,
+        "Sagittarius": 31,
+        "Capricorn": 37,
+        "Aquarius": 30,
+        "Pisces": 23
+      }
+    },
+    "panchang": {
+      "tithi": "Ashtami (Krishna)",
+      "vara": "Wednesday",
+      "yoga": "Siddhi",
+      "karana": "Kaulava",
+      "nakshatra": "Jyeshtha"
+    },
+    "vimshottari_dasha": {
+      "moon_nakshatra": "Jyeshtha",
+      "birth_lord": "Mercury",
+      "full_sequence": [
+        {
+          "lord": "Mercury",
+          "start": "1984-03-24",
+          "end": "2001-03-25"
+        },
+        {
+          "lord": "Ketu",
+          "start": "2001-03-25",
+          "end": "2008-03-24"
+        },
+        {
+          "lord": "Venus",
+          "start": "2008-03-24",
+          "end": "2028-03-24"
+        },
+        {
+          "lord": "Sun",
+          "start": "2028-03-24",
+          "end": "2034-03-25"
+        },
+        {
+          "lord": "Moon",
+          "start": "2034-03-25",
+          "end": "2044-03-24"
+        },
+        {
+          "lord": "Mars",
+          "start": "2044-03-24",
+          "end": "2051-03-25"
+        },
+        {
+          "lord": "Rahu",
+          "start": "2051-03-25",
+          "end": "2069-03-25"
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2069-03-25",
+          "end": "2085-03-25"
+        },
+        {
+          "lord": "Saturn",
+          "start": "2085-03-25",
+          "end": "2104-03-25"
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Mercury",
+          "start": "1999-03-10",
+          "end": "2001-03-25"
+        },
+        "antardasha": {
+          "lord": "Saturn",
+          "start": "1998-07-15",
+          "end": "2001-03-24"
+        },
+        "pratyantardasha": {
+          "lord": "Mercury",
+          "start": "1998-12-18",
+          "end": "1999-05-06"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Venus",
+          "start": "2008-03-24",
+          "end": "2028-03-24"
+        },
+        "antardasha": {
+          "lord": "Mercury",
+          "start": "2024-03-24",
+          "end": "2027-01-23"
+        },
+        "pratyantardasha": {
+          "lord": "Jupiter",
+          "start": "2026-03-27",
+          "end": "2026-08-12"
+        }
+      }
+    },
+    "transit_snapshots": {
+      "2020-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 45' 29\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Virgo",
+          "degrees": "05\u00b0 08' 02\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Scorpio",
+          "degrees": "14\u00b0 06' 29\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "03\u00b0 54' 36\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Sagittarius",
+          "degrees": "15\u00b0 53' 01\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Aquarius",
+          "degrees": "08\u00b0 05' 00\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Sagittarius",
+          "degrees": "28\u00b0 59' 11\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Gemini",
+          "degrees": "13\u00b0 20' 00\"",
+          "nakshatra": "Ardra",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Sagittarius",
+          "degrees": "13\u00b0 20' 00\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 20' 52\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2020-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 45' 36\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Pisces",
+          "degrees": "25\u00b0 53' 28\"",
+          "nakshatra": "Revati",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Aquarius",
+          "degrees": "28\u00b0 03' 36\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "20\u00b0 21' 39\"",
+          "nakshatra": "Punarvasu",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 32' 56\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Taurus",
+          "degrees": "13\u00b0 03' 20\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "06\u00b0 51' 06\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Gemini",
+          "degrees": "05\u00b0 16' 51\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Sagittarius",
+          "degrees": "05\u00b0 16' 51\"",
+          "nakshatra": "Mula",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 48' 17\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2021-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 31' 04\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Aquarius",
+          "degrees": "01\u00b0 35' 49\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "09\u00b0 58' 13\"",
+          "nakshatra": "Ashwini",
+          "pada": 3
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "17\u00b0 18' 06\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Capricorn",
+          "degrees": "12\u00b0 01' 38\"",
+          "nakshatra": "Shravana",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 34' 01\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "09\u00b0 10' 46\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "23\u00b0 56' 18\"",
+          "nakshatra": "Mrigasira",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "23\u00b0 56' 18\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 34' 31\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2021-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 30' 59\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Cancer",
+          "degrees": "28\u00b0 33' 07\"",
+          "nakshatra": "Ashlesha",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "08\u00b0 18' 43\"",
+          "nakshatra": "Pushya",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "23\u00b0 49' 44\"",
+          "nakshatra": "Mrigasira",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Aquarius",
+          "degrees": "07\u00b0 59' 27\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Gemini",
+          "degrees": "21\u00b0 43' 08\"",
+          "nakshatra": "Punarvasu",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "18\u00b0 56' 21\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "15\u00b0 56' 19\"",
+          "nakshatra": "Rohini",
+          "pada": 2
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "15\u00b0 56' 19\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 36' 16\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2022-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 15' 06\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Gemini",
+          "degrees": "05\u00b0 00' 33\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Scorpio",
+          "degrees": "29\u00b0 23' 04\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "16\u00b0 03' 20\"",
+          "nakshatra": "Shravana",
+          "pada": 2
+        },
+        "Jupiter": {
+          "sign": "Aquarius",
+          "degrees": "09\u00b0 23' 22\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Sagittarius",
+          "degrees": "20\u00b0 43' 52\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "19\u00b0 23' 00\"",
+          "nakshatra": "Shravana",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Taurus",
+          "degrees": "04\u00b0 35' 46\"",
+          "nakshatra": "Krittika",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Scorpio",
+          "degrees": "04\u00b0 35' 46\"",
+          "nakshatra": "Anuradha",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 09' 48\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2022-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 16' 32\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Sagittarius",
+          "degrees": "15\u00b0 31' 23\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Pisces",
+          "degrees": "21\u00b0 45' 03\"",
+          "nakshatra": "Revati",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "07\u00b0 23' 00\"",
+          "nakshatra": "Krittika",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Pisces",
+          "degrees": "11\u00b0 39' 26\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 3
+        },
+        "Venus": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 58' 24\"",
+          "nakshatra": "Krittika",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "00\u00b0 59' 37\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 3
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 35' 48\"",
+          "nakshatra": "Bharani",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "26\u00b0 35' 48\"",
+          "nakshatra": "Vishakha",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 24' 14\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2023-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 59' 11\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Libra",
+          "degrees": "07\u00b0 06' 13\"",
+          "nakshatra": "Swati",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Taurus",
+          "degrees": "14\u00b0 00' 01\"",
+          "nakshatra": "Rohini",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 36' 08\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Pisces",
+          "degrees": "09\u00b0 02' 43\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Capricorn",
+          "degrees": "21\u00b0 28' 31\"",
+          "nakshatra": "Shravana",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Capricorn",
+          "degrees": "29\u00b0 47' 09\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "15\u00b0 15' 15\"",
+          "nakshatra": "Bharani",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "15\u00b0 15' 15\"",
+          "nakshatra": "Swati",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 45' 10\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2023-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 01' 44\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Aries",
+          "degrees": "29\u00b0 15' 05\"",
+          "nakshatra": "Krittika",
+          "pada": 1
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 52' 23\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Taurus",
+          "degrees": "12\u00b0 49' 35\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Aries",
+          "degrees": "12\u00b0 13' 35\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Cancer",
+          "degrees": "14\u00b0 52' 57\"",
+          "nakshatra": "Pushya",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "13\u00b0 01' 28\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aries",
+          "degrees": "07\u00b0 15' 16\"",
+          "nakshatra": "Ashwini",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Libra",
+          "degrees": "07\u00b0 15' 16\"",
+          "nakshatra": "Swati",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 12' 11\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2024-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 43' 59\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Aquarius",
+          "degrees": "27\u00b0 12' 43\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Sagittarius",
+          "degrees": "14\u00b0 01' 24\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "07\u00b0 27' 39\"",
+          "nakshatra": "Mula",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Aries",
+          "degrees": "11\u00b0 48' 08\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Scorpio",
+          "degrees": "26\u00b0 16' 06\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "10\u00b0 27' 22\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "25\u00b0 54' 43\"",
+          "nakshatra": "Revati",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "25\u00b0 54' 43\"",
+          "nakshatra": "Chitra",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 20' 35\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2024-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 44' 16\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Virgo",
+          "degrees": "15\u00b0 18' 27\"",
+          "nakshatra": "Hasta",
+          "pada": 2
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "10\u00b0 31' 02\"",
+          "nakshatra": "Ashwini",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "01\u00b0 49' 26\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Jupiter": {
+          "sign": "Taurus",
+          "degrees": "10\u00b0 35' 01\"",
+          "nakshatra": "Rohini",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Gemini",
+          "degrees": "03\u00b0 42' 42\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "25\u00b0 03' 43\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "17\u00b0 51' 34\"",
+          "nakshatra": "Revati",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "17\u00b0 51' 34\"",
+          "nakshatra": "Hasta",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 46' 21\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2025-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 29' 16\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Cancer",
+          "degrees": "21\u00b0 49' 49\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        },
+        "Mars": {
+          "sign": "Cancer",
+          "degrees": "02\u00b0 12' 19\"",
+          "nakshatra": "Punarvasu",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "16\u00b0 16' 28\"",
+          "nakshatra": "Purva Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Taurus",
+          "degrees": "17\u00b0 44' 07\"",
+          "nakshatra": "Rohini",
+          "pada": 3
+        },
+        "Venus": {
+          "sign": "Aquarius",
+          "degrees": "18\u00b0 33' 10\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Aquarius",
+          "degrees": "21\u00b0 33' 18\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Pisces",
+          "degrees": "06\u00b0 31' 01\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Virgo",
+          "degrees": "06\u00b0 31' 01\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 34' 20\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2025-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 29' 16\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Capricorn",
+          "degrees": "20\u00b0 03' 58\"",
+          "nakshatra": "Shravana",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Leo",
+          "degrees": "04\u00b0 47' 04\"",
+          "nakshatra": "Magha",
+          "pada": 2
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "18\u00b0 23' 12\"",
+          "nakshatra": "Ardra",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Gemini",
+          "degrees": "07\u00b0 04' 45\"",
+          "nakshatra": "Ardra",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Aries",
+          "degrees": "15\u00b0 18' 22\"",
+          "nakshatra": "Bharani",
+          "pada": 1
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "07\u00b0 05' 15\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 2
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "28\u00b0 31' 02\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 3
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "28\u00b0 31' 02\"",
+          "nakshatra": "Uttara Phalguni",
+          "pada": 1
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 34' 17\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2026-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "01\u00b0 13' 32\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Scorpio",
+          "degrees": "25\u00b0 05' 46\"",
+          "nakshatra": "Jyeshtha",
+          "pada": 3
+        },
+        "Mars": {
+          "sign": "Sagittarius",
+          "degrees": "29\u00b0 43' 33\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Sagittarius",
+          "degrees": "27\u00b0 23' 18\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 1
+        },
+        "Jupiter": {
+          "sign": "Gemini",
+          "degrees": "25\u00b0 10' 49\"",
+          "nakshatra": "Punarvasu",
+          "pada": 2
+        },
+        "Venus": {
+          "sign": "Capricorn",
+          "degrees": "03\u00b0 21' 19\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 3
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "02\u00b0 57' 11\"",
+          "nakshatra": "Purva Bhadrapada",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "17\u00b0 10' 30\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 4
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "17\u00b0 10' 30\"",
+          "nakshatra": "Purva Phalguni",
+          "pada": 2
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "16\u00b0 09' 41\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      },
+      "2026-06-15 09:30:00": {
+        "Sun": {
+          "sign": "Gemini",
+          "degrees": "00\u00b0 14' 36\"",
+          "nakshatra": "Mrigasira",
+          "pada": 3
+        },
+        "Moon": {
+          "sign": "Gemini",
+          "degrees": "06\u00b0 34' 29\"",
+          "nakshatra": "Mrigasira",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Aries",
+          "degrees": "26\u00b0 13' 33\"",
+          "nakshatra": "Bharani",
+          "pada": 4
+        },
+        "Mercury": {
+          "sign": "Gemini",
+          "degrees": "24\u00b0 44' 13\"",
+          "nakshatra": "Punarvasu",
+          "pada": 2
+        },
+        "Jupiter": {
+          "sign": "Cancer",
+          "degrees": "02\u00b0 42' 04\"",
+          "nakshatra": "Punarvasu",
+          "pada": 4
+        },
+        "Venus": {
+          "sign": "Cancer",
+          "degrees": "08\u00b0 13' 49\"",
+          "nakshatra": "Pushya",
+          "pada": 2
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "19\u00b0 06' 51\"",
+          "nakshatra": "Revati",
+          "pada": 1
+        },
+        "Rahu": {
+          "sign": "Aquarius",
+          "degrees": "09\u00b0 10' 31\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 1
+        },
+        "Ketu": {
+          "sign": "Leo",
+          "degrees": "09\u00b0 10' 31\"",
+          "nakshatra": "Magha",
+          "pada": 3
+        },
+        "Ascendant": {
+          "sign": "Cancer",
+          "degrees": "20\u00b0 22' 13\"",
+          "nakshatra": "Ashlesha",
+          "pada": 2
+        }
+      },
+      "2027-01-15 09:30:00": {
+        "Sun": {
+          "sign": "Capricorn",
+          "degrees": "00\u00b0 58' 07\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 2
+        },
+        "Moon": {
+          "sign": "Pisces",
+          "degrees": "27\u00b0 52' 42\"",
+          "nakshatra": "Revati",
+          "pada": 4
+        },
+        "Mars": {
+          "sign": "Leo",
+          "degrees": "16\u00b0 01' 32\"",
+          "nakshatra": "Purva Phalguni",
+          "pada": 1
+        },
+        "Mercury": {
+          "sign": "Capricorn",
+          "degrees": "09\u00b0 42' 44\"",
+          "nakshatra": "Uttara Ashadha",
+          "pada": 4
+        },
+        "Jupiter": {
+          "sign": "Leo",
+          "degrees": "01\u00b0 00' 53\"",
+          "nakshatra": "Magha",
+          "pada": 1
+        },
+        "Venus": {
+          "sign": "Scorpio",
+          "degrees": "14\u00b0 31' 14\"",
+          "nakshatra": "Anuradha",
+          "pada": 4
+        },
+        "Saturn": {
+          "sign": "Pisces",
+          "degrees": "14\u00b0 49' 31\"",
+          "nakshatra": "Uttara Bhadrapada",
+          "pada": 4
+        },
+        "Rahu": {
+          "sign": "Capricorn",
+          "degrees": "27\u00b0 49' 58\"",
+          "nakshatra": "Dhanishtha",
+          "pada": 2
+        },
+        "Ketu": {
+          "sign": "Cancer",
+          "degrees": "27\u00b0 49' 58\"",
+          "nakshatra": "Ashlesha",
+          "pada": 4
+        },
+        "Ascendant": {
+          "sign": "Aquarius",
+          "degrees": "15\u00b0 45' 05\"",
+          "nakshatra": "Shatabhisha",
+          "pada": 3
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "ticker": "TLT",
+    "trials": 2718,
+    "total_trades": 50,
+    "win_rate": 0.22,
+    "annual_return": -0.00604331581380916,
+    "annual_volatility": 0.0057883295123348985,
+    "sharpe": -1.044051794378825,
+    "expected_max_sr": 0.10204307817240621,
+    "dsr": 0.00020942758418164944,
+    "best_params": {
+        "entry_z": 2.4791635310177664,
+        "sl_mult": 1.9913646255162143,
+        "tp_mult": 4.997712542826067,
+        "vb_mult": 5.01954498667731,
+        "direction": "long",
+        "latent_dim": 2
+    }
+}

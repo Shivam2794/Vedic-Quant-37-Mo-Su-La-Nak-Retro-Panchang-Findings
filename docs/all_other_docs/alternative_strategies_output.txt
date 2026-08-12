@@ -1,0 +1,363 @@
+[2025-11-26T09:23:21.2260000-06:00] the_biggest_rick: Linear regression ranking:
+
+Create a diversified index of ~50 assets (stocks and/or cryptos), weighted by market cap, compute daily index returns, run linear regression on individual asset returns vs. the index, extract residuals, evaluate which assets outperform (positive alpha), and test if portfolios built from those outperform a baseline market-cap index.
+
+1. Universe Selection
+
+You need 50 assets from stocks, crypto, or a mix.
+
+Option A — Stocks
+
+>Select 50 largest by market cap
+>Data needed: daily price, market cap, total return
+
+Option B — Crypto Index
+
+>For a pure crypto index:
+>Pick top 50 by market cap
+
+* Recreate index of crypto by taking mcap of crypto / total mcap
+
+* Hold top 25% highest residual amounts
+
+* Daily interval, rebalance bi-weekly or monthly.
+----------------------------------------
+[2025-12-11T12:52:01.9500000-06:00] the_biggest_rick: Compute 20–30 day realized volatility (RV).
+
+Compare to current implied volatility (IV) on each contract.
+
+Define mispricing score:
+Score = (IV − RV) / RV.
+
+Only consider contracts with Score ≥ +20% (IV overpriced relative to RV).
+
+--
+
+Rank all qualifying contracts by a composite score:
+
+RV–IV mispricing weight: 50%
+
+Skew/term-structure inefficiency: 20%
+
+Liquidity/transaction-quality: 15%
+
+Underlying momentum regime filter: 15%
+
+Select top 5–20 premium selling opportunities depending on risk budget.
+
+--
+
+Prefer high-value premium sells such as:
+
+Short puts or short put spreads in up-to-neutral regimes.
+
+Short calls or call spreads in down-to-neutral regimes.
+
+Iron condors only when IV is extremely high (top decile).
+
+--
+
+Limit exposure to no more than 1–2% of account per spread.
+
+Portfolio-wide: Net short vega limit = 20–35% of account volatility budget.
+
+Avoid any underlying with overnight event risk (earnings, major macro).
+
+Auto-cut: exit positions when RV > IV by +15% (vol regime inversion).
+----------------------------------------
+[2025-12-13T07:10:32.0350000-06:00] rajat0047official: Great idea! VRP exits, should be a great MR alpha in long run, buy how do we measure skew/term structure inefficiency?
+----------------------------------------
+[2025-12-21T10:48:28.8440000-06:00] the_biggest_rick: Strategy Name: Portfolio-Level Mean Reversion via Euclidean Distance with Autocorrelation Filtering
+Objective: Identify portfolio-wide mean-reversion opportunities by measuring how far the current portfolio is from its historical norm, while focusing only on assets exhibiting mean-reverting behavior.
+
+Methodology:
+
+Bollinger Bands (per asset):
+Calculate (adaptive) moving averages and standard deviations to define upper and lower bands.
+Measure each asset’s deviation from its average to quantify overextension.
+
+Portfolio-Level Euclidean Distance:
+Represent the portfolio as a vector of asset deviations from their averages.
+Compute the overall Euclidean distance to quantify how stretched the portfolio is from its mean state.
+Prioritize assets contributing most to this distance for mean-reversion trades.
+
+Hurst Exponent Filter:
+Measure the Hurst exponent for each asset over a rolling window.
+Only include assets with a Hurst exponent indicating mean-reverting autocorrelated behavior.
+This ensures the strategy avoids assets that are trending or random-walking.
+
+Relative Volume Filter:
+Include only assets with trading volume above a defined threshold to ensure significant market activity.
+
+Momentum Confirmation (RSI):
+
+Use RSI to confirm overbought or oversold conditions:
+Buy when oversold
+Sell when overbought
+
+Signal Generation:
+Select assets contributing most to the portfolio’s Euclidean distance and passing all filters.
+
+Generate buy or sell signals based on extreme deviations from the moving average.
+
+Position Sizing and Risk Management:
+
+Allocate capital proportionally to each asset’s contribution to portfolio-level deviation while respecting overall risk limits.
+
+Key Feature:
+
+Euclidean distance drives the strategy by capturing portfolio-wide deviations, while the Hurst exponent ensures trades focus on assets with genuine mean-reverting patterns, enhancing the probability of profitable reversion.
+----------------------------------------
+[2025-12-21T10:51:54.8910000-06:00] the_biggest_rick: skew inefficiency, comparing current call/put skew to historicals
+----------------------------------------
+[2025-12-21T10:52:09.2370000-06:00] the_biggest_rick: + near term vs longer term iv to historical
+----------------------------------------
+[2026-03-20T02:22:47.1100000-05:00] magaausgermany: has anyone built a model using COT/CFTC data? specifically the 
+Traders in Financial Futures (TFF) report — not the aggregated 
+legacy report, but the broken-down version with Dealer/Intermediary, 
+Asset Manager, Leveraged Funds etc. as separate features
+
+curious if anyone has actually backtested this systematically
+----------------------------------------
+[2026-03-20T04:19:40.5030000-05:00] the_biggest_rick: im trying to pull it currently
+----------------------------------------
+[2026-03-20T12:59:28.2120000-05:00] the_biggest_rick: im still working on the NB i hope i remember to fill you i had a slight problem in the datapulling but i should be able to fix it, if not my API is the problem
+----------------------------------------
+[2026-03-20T16:49:10.3980000-05:00] magaausgermany: thank you ))
+----------------------------------------
+[2026-03-20T17:06:02.9160000-05:00] n0te3d: I built a harness (backtesting pipeline) with a few agents to act as sanity checks I want to throw some strategies through it any suggestions?
+----------------------------------------
+[2026-03-20T19:58:15.2130000-05:00] the_biggest_rick: more details, easier to comment
+----------------------------------------
+[2026-03-21T08:36:18.9880000-05:00] the_biggest_rick: oops
+----------------------------------------
+[2026-03-21T08:36:29.7620000-05:00] the_biggest_rick: I can give a personal case of a colleague of mine who made a lot of money in options.
+
+What he did was buy contracts that were very far out in time — meaning the expiration date was distant enough to make things more “stable,” in a sense. So instead of short-term bets, he’d go maybe 1-1.5  years ahead (I don’t know the exact numbers he used, but roughly that range).
+
+The idea is that, if the contract is far enough out, you can start thinking in terms of probabilities. In a way, it should be possible to model this — for example, by measuring certain types of price movements under relatively low and steady volatility, and then mapping the characteristics of those moves. In simple words, if ensemble = 1, what were the odds of large trend? could be done with return numbers only, just needs to be an above median gain essential or +1 sigma
+
+From there, you’re essentially betting that a trend will eventually emerge. If your call option is far enough out, there’s a relatively high chance that some kind of “wave” happens during that time. Your downside is limited, and you can ride the trend as it develops, then exit once the contract reaches a favorable price.
+
+Personally, I think this is one of the more consistent ways to trade options.
+
+Otherwise, I think a lot of options trading is basically gambling. In those cases, I’d much rather either:
+
+run iron condors in a clearly sideways market (like now), or
+
+sell premium when implied volatility is above realized volatility.
+----------------------------------------
+[2026-03-22T15:30:17.9680000-05:00] the_biggest_rick: Rotational News & Momentum Model (Google Trends–Driven)  
+Highlighting the “Rainy Day Portfolio” Logic
+
+---
+
+### 1. Core Idea
+
+The model is based on a simple premise: major news narratives create attention, and that attention can lead to momentum in certain stocks.
+
+By monitoring Google Trends, we attempt to detect when public interest suddenly increases around a specific event or topic. When this happens, the model rotates capital into stocks that historically benefit from that type of event.
+
+The goal is to systematically capture the chain:
+
+Event → Public Attention → Stock Momentum
+
+---
+
+### 2. Event Detection with Google Trends
+
+The first step is identifying search spikes related to major events.
+
+For example:
+
+| Event Theme | Google Search Activity | Related Stocks |
+|-------------|-----------------------|---------------|
+| War / geopolitical conflict | “war”, “missile”, “NATO”, “military conflict” | RTX, Lockheed Martin |
+
+When search interest spikes significantly relative to normal levels, this signals that an event narrative is emerging or intensifying.
+
+Google Trends acts as a real-time proxy for public attention.
+
+---
+----------------------------------------
+[2026-03-22T15:30:32.8680000-05:00] the_biggest_rick: ### 3. Momentum Confirmation in Related Stocks
+
+After detecting a spike in attention, the next step is to verify whether the stocks associated with that narrative are already beginning to move upward.
+
+For example:
+
+If war-related searches surge, the model checks whether stocks like:
+
+- RTX  
+- Lockheed Martin  
+
+are showing positive price momentum.
+
+If momentum is present, the model assumes that attention is beginning to translate into capital flows.
+
+---
+----------------------------------------
+[2026-03-22T15:30:35.5730000-05:00] the_biggest_rick: ### 4. The “Rainy Day Portfolio” Logic
+
+A central concept of this model is what can be called a “Rainy Day Portfolio.”
+
+The idea is to pre-identify stocks that tend to perform well when certain negative or disruptive events occur.
+
+Examples include:
+
+| Event | “Rainy Day” Beneficiaries |
+|------|------|
+| War or military conflict | RTX, Lockheed Martin |
+| Other crisis-type narratives | sector-specific beneficiaries |
+
+These stocks function as event-sensitive assets.
+
+When the model detects rising attention around a specific event through Google Trends, it rotates into the corresponding Rainy Day stocks.
+
+In other words, the portfolio is designed to activate when the world becomes more uncertain.
+
+This creates a systematic way to hold positions that benefit from events most investors normally react to emotionally or too late.
+
+---
+
+### 5. Portfolio Construction
+
+Once a narrative signal and stock momentum are both present, the model allocates capital into the relevant Rainy Day stocks.
+
+Example:
+
+If war-related search activity spikes and defense stocks show upward momentum, the portfolio may allocate into:
+
+- RTX  
+- Lockheed Martin  
+
+The portfolio therefore rotates dynamically based on real-world events and attention shifts.
+
+---
+
+### 6. Conceptual Summary
+
+The model attempts to formalize a simple behavioral pattern:
+
+News Event → Public Attention → Momentum in Event-Sensitive Stocks
+
+Google Trends provides the attention signal, while stock momentum confirms that the market is beginning to respond.
+
+The “Rainy Day Portfolio” concept ensures the system already knows which assets tend to benefit from specific types of events, allowing the portfolio to rotate into them quickly when those events gain attention.
+----------------------------------------
+[2026-03-26T03:49:00.6200000-05:00] doman_21: I have a few questions about this strategy because I'm very curious about it:
+1. did he just buy an ATM/OTM LEAPS call when the historical volatility was bottoming out, or did he have a specific IV Rank threshold to define 'low and steady volatility'?
+
+2. when you mention selling premium when IV > RV, do you usually combine this with Iron Condors, or do you prefer naked puts/calls depending on the trend?
+
+3. which underlying assets are  for this? Are you sticking to ETFs like QQQ/SPY/DAX, or do you trade individual stocks?
+----------------------------------------
+[2026-03-26T12:03:21.1570000-05:00] coffeeboyj2: wanted to ask if anyone has coded biotech catalysts strategies.  Before I joined this community, I used to trade biotech. This paper has really good insight into some edge https://www.sciencedirect.com/science/article/pii/S1544612325013947, asking cuz i want to add something to my ensemble that doesn't have a strong correlation to things like momentum, RSI, etc which all seem "uncorrelated in a correlated way"
+----------------------------------------
+[2026-03-26T12:11:35.5020000-05:00] the_biggest_rick: leap calls, based on value investing in a sideways regime assuming the trend would happen before expiration.
+
+he is not a quant so likely no hard tresholding.
+----------------------------------------
+[2026-03-26T12:13:27.0440000-05:00] the_biggest_rick: 2. historically IV>RV has shown consistent profits with premiums, if you want to test these ( i haven't btw, i don't like options for the reason i give now) they're very difficult to backtest because the numbers calculated by the great are very random, so for this youd have to test back longer and accumulate enough contracts to achieve a consistent results without significant deviation.
+----------------------------------------
+[2026-03-26T12:13:46.4750000-05:00] the_biggest_rick: 3. he picked stocks, simply put, no indices here, he did value based analysis for this
+----------------------------------------
+[2026-03-26T12:14:00.3520000-05:00] the_biggest_rick: he look at companies like qualcomms
+----------------------------------------
+[2026-03-26T12:14:15.4070000-05:00] the_biggest_rick: caution adviced, my collegue has very high risk tolerance
+----------------------------------------
+[2026-04-18T18:23:27.2440000-05:00] adamsandler2000: This gave me a idea 
+Based on  region based asset we can see ok this asset performs well  in this regime then using time series’s  analysis to cluster economic data and price movement statistical measures  to map out when  in long term will be the regime to   Where we get trend  this might be more accurate due to long term past data of price movement statistical in relation of economic indicators 
+
+ And use it to  buy long dated options before hand 
+
+Just a intuitive idea but might be issues with it
+----------------------------------------
+[2026-04-19T14:56:54.5620000-05:00] doman_21: ye, nice idea ig, but problem with backtesting options strategy
+----------------------------------------
+[2026-04-19T16:56:59.4300000-05:00] adamsandler2000: @Quant Rickdanoff  what u think
+----------------------------------------
+[2026-04-19T17:46:20.1250000-05:00] the_biggest_rick: yeah me and @᲼ are working on this behind the scenes but with genetic programming
+----------------------------------------
+[2026-04-19T17:46:33.6560000-05:00] the_biggest_rick: it can work ofc, you could take, a regressor and find the score of with too.
+----------------------------------------
+[2026-04-19T17:46:49.6720000-05:00] the_biggest_rick: subsectors of SPY with certain canaries are a concept that could be work-able
+----------------------------------------
+[2026-04-19T18:17:26.8340000-05:00] adamsandler2000: I just got the idea and you already working on it 
+
+Damnn u the real efficient market hypothesis 🥺
+----------------------------------------
+[2026-04-19T18:55:17.3860000-05:00] the_biggest_rick: (fake market hypothesis)
+----------------------------------------
+[2026-04-20T02:17:16.9480000-05:00] the_biggest_rick: The Three Timeframes in a Triple Momentum System
+
+Short-term (1 month or less) — Reversal
+
+This is the least reliable for longs. The 1-month reversal effect (Jegadeesh & Titman, 1993 and others) shows that recent short-term winners tend to underperform in the near term. This is largely attributed to microstructure noise, liquidity effects, and short-term overreaction. If anything, this signal is more useful for short positions — fading the recent spike.
+
+Medium-term (3–12 months, classically ~6–12 month lookback, skip 1 month) — Strongest Sustained Trend
+
+This is the core of documented momentum. The classic Jegadeesh & Titman finding shows winners keep winning and losers keep losing over this horizon. This is your strongest case for long-only positions, and also the most robust signal for long/short paired trades. Most serious momentum systems (including Antonacci’s Dual Momentum) anchor to this window. The “skip 1 month” convention is deliberate — it strips out the short-term reversal contamination.
+
+Long-term (36–60 months) — Reversal
+De Bondt & Thaler’s research shows that over multi-year horizons, past winners underperform and past losers outperform. This is mean reversion at a slow scale, likely driven by fundamental valuation reassertion. 
+
+Long-term signals are therefore better suited for short signals on former winners or long signals on former losers — essentially contrarian positioning, not trend following.
+----------------------------------------
+[2026-04-20T02:22:55.7970000-05:00] the_biggest_rick: Triple-Horizon Momentum Ranking System: A Research Proposal
+Motivation
+
+Existing momentum literature is limited in scope. Most studies focus on a single lookback window, a single asset class, or a single directional bias. 
+
+There is little to no documented research applying differentiated positional roles across multiple momentum horizons simultaneously. This represents a gap worth exploring.
+Core Concept
+
+A triple-horizon momentum ranking system where each timeframe is assigned a distinct role and set of permitted positions, rather than treating all horizons as additive signals.
+
+Horizon Structure
+Short-term momentum — Long and short positions permitted. The signal captures both trend continuation and short-term reversal candidates, with supplementary indicators such as RSI or rate-of-change used to differentiate between the two.
+
+Medium-term momentum — Long positions only. This is the most well-supported horizon in existing literature and serves as the anchor of the system.
+
+Long-term momentum — Long and short positions permitted, driven by overbought and oversold conditions. A ranking system combined with exhaustion indicators (such as RSI or percentile-based measures) is used to identify mean reversion candidates.
+Supporting Factors
+
+The system may be enhanced by overlaying:
+    •    Macroeconomic regime data
+    •    Value factors
+    •    Other cross-sectional or time-series filters
+Goal
+
+To build a generalized, rules-based system that performs consistently across multiple asset classes — equities, commodities, fixed income, and potentially others — without being overfit to any single market.
+
+Next Step
+
+Empirical data analysis to test each horizon layer independently before combining them into the full framework.
+----------------------------------------
+[2026-04-21T16:40:53.6550000-05:00] doman_21: I worked with it and got something like this, ofc there is a lot to improve
+  ATTACHMENTS: rick's skool - skool - alternative-strategies [1443259356152987669].csv_Files\image-d2f4e21969adbac6.png
+----------------------------------------
+[2026-04-21T16:41:31.4140000-05:00] doman_21: I mainly will try to work with lev etfs and try to get more sharpe with more short term filter what do you think?
+----------------------------------------
+[2026-04-21T16:48:36.0740000-05:00] the_biggest_rick: benchmark?
+----------------------------------------
+[2026-04-21T17:43:54.6060000-05:00] doman_21: 
+  ATTACHMENTS: rick's skool - skool - alternative-strategies [1443259356152987669].csv_Files\image-9d3efffa8c30ef33.png,rick's skool - skool - alternative-strategies [1443259356152987669].csv_Files\image-493b07c87cb2f7df.png,rick's skool - skool - alternative-strategies [1443259356152987669].csv_Files\image-a2ea2b4b51fc1afa.png
+----------------------------------------
+[2026-04-21T17:45:35.3310000-05:00] doman_21: Its build around this
+  ATTACHMENTS: rick's skool - skool - alternative-strategies [1443259356152987669].csv_Files\image-e1eb3c0bc4cdd437.png,rick's skool - skool - alternative-strategies [1443259356152987669].csv_Files\image-0dbf0c6ee650e67a.png
+----------------------------------------
+[2026-04-21T17:46:23.8320000-05:00] doman_21: so yea...
+----------------------------------------
+[2026-04-21T17:49:59.2880000-05:00] .murat13100: Sharpes are very similar
+----------------------------------------
+[2026-04-21T17:50:32.7280000-05:00] .murat13100: I don't think any of those has strong edge
+----------------------------------------
+[2026-04-21T17:52:11.2990000-05:00] doman_21: Agree, for now i just touched it and will try something, im asking maybe for some improvement ideas?
+----------------------------------------
+[2026-04-21T17:58:55.9620000-05:00] the_biggest_rick: can u lengthen it to 2007?
+----------------------------------------
+[2026-04-22T03:30:24.4590000-05:00] doman_21: Not really, most of those etfs started after 2008 crash
+----------------------------------------
+[2026-04-22T03:32:43.0870000-05:00] the_biggest_rick: then u need ETFs that benefit from the inflation after 2020 more
+----------------------------------------

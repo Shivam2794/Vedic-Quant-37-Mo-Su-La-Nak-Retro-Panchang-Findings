@@ -1,0 +1,32 @@
+{
+  "best_asset": "DIA",
+  "assets": {
+    "SPY": {
+      "cagr": 0.06036442852431079,
+      "max_drawdown": -0.5541361267839483,
+      "sharpe_ratio": 0.3953139726918769,
+      "bh_sharpe_ratio": 0.6100478891611927,
+      "random_p_value": 0.082,
+      "beats_bh": false,
+      "beats_random": false
+    },
+    "QQQ": {
+      "cagr": 0.029019454192969363,
+      "max_drawdown": -0.5667595590988375,
+      "sharpe_ratio": 0.24064807838219573,
+      "bh_sharpe_ratio": 0.7763905944584844,
+      "random_p_value": 0.258,
+      "beats_bh": false,
+      "beats_random": false
+    },
+    "DIA": {
+      "cagr": 0.07823500186873145,
+      "max_drawdown": -0.5394435566964773,
+      "sharpe_ratio": 0.49478267236243006,
+      "bh_sharpe_ratio": 0.5901236763667896,
+      "random_p_value": 0.032,
+      "beats_bh": false,
+      "beats_random": true
+    }
+  }
+}

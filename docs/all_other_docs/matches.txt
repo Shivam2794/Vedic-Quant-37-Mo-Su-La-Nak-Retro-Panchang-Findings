@@ -1,0 +1,148 @@
+./add_index_commodity_tickers.py: 90: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./append_traps.py: 28: TRAP 8: The Topocentric Parallax Void. A 1-degree shift is massive for the Moon. Explicitly call swe.set_topo() and use swe.FLG_TOPOCTR."
+./append_traps_v3.py: 16: TRAP 10: The Sidereal Year Dasha Drift. Classical Vimshottari Dasha must be calculated using the Julian Sidereal Year of 365.25636 days... across a 120-year cycle it compounds into exactly 18 hours of drift.
+./append_traps_v4.py: 20: TRAP 17: The Nadi Degree-Progression Failure. Nadi progression is not a calendar sign-shift. Fix: Progressed_Jupiter_Lon = (Natal_Jupiter_Lon + (Age_In_Days / 365.25636) * 30.0) % 360.
+./append_traps_v7.py: 20: TRAP 28: The W.D. Gann Heliocentric Redundancy. Using Earth-based ephemeris for macro structural cycles introduces retrogression noise. Fix: Execute a dual-ephemeris sweep. Run a secondary isolated C-sweep utilizing swe.FLG_HELCTR (Heliocentric) specifically for Category 10 features."
+./audit_supreme_math_v2.py: 66: years = duration_days / 365.2425
+./audit_supreme_math_v3.py: 155: years = (df["Date"].max() - df["Date"].min()).days / 365.25
+./backtest_accuracy_inspect.py: 124: total_years = (dt_end - pd.Timestamp(dt_start.date())).days / 365.25
+./backtest_accuracy_inspect.py: 162: print(f"  Using calendar days / 365.25: {total_years:.3f} years")
+./bav_bindu_investigation.py: 21: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./bav_rules_fix.py: 68: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./boundary_investigation.py: 23: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./brutal_inspection.py: 89: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./brutal_inspection.py: 191: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./brutal_inspection.py: 206: DAYS_PER_YEAR = 365.25
+./brutal_inspection.py: 225: DAYS_PER_YEAR = 365.25
+./brutal_inspection.py: 372: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./build_natal_db.py: 48: VIM_DAYS = [y * 365.25 for y in VIM_YEARS]
+./build_natal_db.py: 137: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./build_supreme_matrix.py: 40: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./build_supreme_matrix.py: 141: years_elapsed = days_elapsed / 365.2425  # accurate tropical year
+./chara_dasha_module.py: 16: - All durations in exact sidereal years (365.25636042 days each) — no 365.25 drift.
+./chara_dasha_module.py: 39: SIDEREAL_YEAR = 365.25636042
+./compare_chrome_vs_backend.py: 37: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./compute_full_features.py: 30: DAYS_PER_YEAR = 365.25
+./compute_full_features.py: 65: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./compute_full_features.py: 165: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./corrected_engine_v2.py: 44: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./corrected_engine_v2.py: 170: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./corrected_engine_v2.py: 181: DAYS_PER_YEAR = 365.25
+./corrected_engine_v2.py: 199: DAYS_PER_YEAR = 365.25
+./dasha_engine.py: 38: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./dasha_engine.py: 61: DAYS_PER_YEAR = 365.25
+./dasha_engine.py: 103: DAYS_PER_YEAR = 365.25
+./dasha_engine.py: 124: # Antardasha proportion = (antar_lord_years / 120) * maha_years * 365.25
+./deep_audit.py: 49: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./dual_matrix_builder.py: 68: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./dual_matrix_builder.py: 123: y_el = days_elapsed / 365.2425
+./dual_matrix_builder.py: 187: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./dynamic_asset_matrix_builder.py: 86: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./dynamic_asset_matrix_builder.py: 130: years_elapsed = days_elapsed / 365.2425
+./ephemeris_engine.py: 144: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./ephemeris_engine.py: 408: d_sin, d_cos = cyclical_encode(features["day_of_year"], 365.25)
+./eval_metrics.py: 59: years_in_test = (pd.to_datetime(dates_in_test.max()) - pd.to_datetime(dates_in_test.min())).days / 365.25
+./eval_metrics2.py: 77: years = (df_res['date'].max() - df_res['date'].min()).days / 365.25
+./export_backend_astrology.py: 51: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./final_comparison.py: 79: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./fix_investigation.py: 23: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./fix_natal_houses.py: 57: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./generate_final_payload.py: 49: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./generate_verification_ledger.py: 44: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./generate_verification_ledger.py: 74: years_elapsed = days_elapsed / 365.2425
+./genesis_metals_pipeline.py: 184: years = max(float((dts[-1] - dts[test_index[0]]) / np.timedelta64(1, 's')) / (365.25*24*3600), 0.01)
+./jyotish_augmenter.py: 214: total_yrs = (target_date - NYSE_NATAL).days / 365.25
+./macro_engine.py: 54: equat = swe.calc_ut(jd, pid, swe.FLG_EQUATORIAL)
+./mkbapu_deep_history_pipeline.py: 90: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./mkbapu_deep_history_pipeline.py: 134: cusps, ascmc = swe.houses_ex(jd, LAT, LON, b'P', swe.FLG_SIDEREAL)
+./mkbapu_institutional_pipeline.py: 65: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./mkbapu_institutional_pipeline.py: 81: cusps, ascmc = swe.houses_ex(jd, lat, lon, b'P', swe.FLG_SIDEREAL)
+./mkbapu_institutional_pipeline.py: 203: years = max(float((dts[-1] - dts[test_index[0]]) / np.timedelta64(1, 's')) / (365.25*24*3600), 0.01)
+./mkbapu_intraday_pipeline.py: 107: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./mkbapu_intraday_pipeline.py: 186: cusps, ascmc = swe.houses_ex(jd, NYSE_LAT, NYSE_LON, b'P', swe.FLG_SIDEREAL)
+./mkbapu_intraday_pipeline.py: 211: feats["day_of_year_sin"] = np.sin(2 * np.pi * dt_utc.timetuple().tm_yday / 365.25)
+./mkbapu_intraday_pipeline.py: 212: feats["day_of_year_cos"] = np.cos(2 * np.pi * dt_utc.timetuple().tm_yday / 365.25)
+./mkbapu_multimarket_pipeline.py: 118: cusps, ascmc = swe.houses_ex(jd, lat, lon, b'P', swe.FLG_SIDEREAL)
+./mkbapu_multimarket_pipeline.py: 212: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./mkbapu_multimarket_pipeline.py: 272: cusps, ascmc = swe.houses_ex(jd, lat, lon, b'P', swe.FLG_SIDEREAL)
+./mkbapu_multimarket_pipeline.py: 303: feats["doy_sin"]       = np.sin(2*np.pi*doy/365.25)
+./mkbapu_multimarket_pipeline.py: 304: feats["doy_cos"]       = np.cos(2*np.pi*doy/365.25)
+./mkbapu_multimarket_pipeline.py: 734: years = max((df2['dt'].iloc[-1] - df2['dt'].iloc[split]).total_seconds() / (365.25*24*3600), 0.01)
+./precision_boundary_analysis.py: 21: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./processor_natal.py: 6: SIDEREAL_YEAR = 365.25636042
+./processor_natal.py: 55: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./processor_natal.py: 118: flags = swe.FLG_SIDEREAL | swe.FLG_TOPOCTR
+./processor_transit.py: 54: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./raw_ephemeris_engine.py: 51: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH | swe.FLG_SPEED
+./saptavargaja_true.py: 34: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH | swe.FLG_SPEED
+./saptavargaja_true.py: 36: houses, ascmc = swe.houses_ex(jd, 40.7128, -74.0060, b'W', swe.FLG_SIDEREAL | swe.FLG_SWIEPH)
+./shadbala_api_reverse_engineer.py: 53: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH | swe.FLG_SPEED
+./shadbala_core.py: 154: flags = swe.FLG_SWIEPH | swe.FLG_EQUATORIAL | swe.FLG_SPEED
+./shadbala_corrected_full.py: 29: flags_sid = swe.FLG_SIDEREAL | swe.FLG_SWIEPH | swe.FLG_SPEED
+./shadbala_corrected_full.py: 30: flags_trop = swe.FLG_SWIEPH | swe.FLG_EQUATORIAL | swe.FLG_SPEED
+./shadbala_corrected_full.py: 31: houses, ascmc = swe.houses_ex(jd, 40.7128, -74.0060, b'W', swe.FLG_SIDEREAL | swe.FLG_SWIEPH)
+./shadbala_deep_investigation.py: 80: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./shadbala_deep_investigation.py: 93: flags_trop = swe.FLG_SWIEPH
+./shadbala_deep_investigation.py: 95: res = swe.calc_ut(jd, pid, flags_trop | swe.FLG_EQUATORIAL)
+./shadbala_deep_investigation.py: 195: sun_lon_trop = swe.calc_ut(jd, swe.SUN, swe.FLG_SWIEPH)[0][0]
+./skyfield_audit.py: 42: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./smh_long_short_proof.py: 36: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./smh_long_short_proof.py: 48: cusps, ascmc = swe.houses_ex(jd, lat, lon, b'P', swe.FLG_SIDEREAL)
+./step_3_2_ephemeris_tensors.py: 63: TOPO_FLAGS_TROPICAL   = swe.FLG_SWIEPH | swe.FLG_SPEED | swe.FLG_TOPOCTR
+./step_3_2_ephemeris_tensors.py: 64: TOPO_FLAGS_EQUATORIAL = swe.FLG_SWIEPH | swe.FLG_SPEED | swe.FLG_TOPOCTR | swe.FLG_EQUATORIAL
+./step_3_2_ephemeris_tensors.py: 65: HELIO_FLAGS_TROPICAL  = swe.FLG_SWIEPH | swe.FLG_SPEED | swe.FLG_HELCTR
+./step_3_2_ephemeris_tensors.py: 66: HOUSES_FLAGS          = swe.FLG_SWIEPH
+./test_ephemeris.py: 18: flags = swe.FLG_SIDEREAL | swe.FLG_SPEED
+./test_tropical_d9.py: 27: sidereal_flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./test_tropical_d9.py: 28: tropical_flags = swe.FLG_SWIEPH
+./transit_engine.py: 26: VIM_DAYS = [y * 365.25 for y in VIM_YEARS]
+./varshaphala_chart_module.py: 63: flags = swe.FLG_SPEED | swe.FLG_SIDEREAL
+./varshaphala_rootfinder.py: 20: - We use the SIDEREAL year (365.25636042 days) as the seed step since we are
+./varshaphala_rootfinder.py: 37: SIDEREAL_YEAR   = 365.25636042   # Days (exact sidereal year, used for sidereal return seed)
+./varshaphala_rootfinder.py: 45: flags = swe.FLG_SIDEREAL
+./vedic_engine_core.py: 51: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./vedic_engine_core.py: 53: flags_with_speed = swe.FLG_SIDEREAL | swe.FLG_SWIEPH | swe.FLG_SPEED
+./verified_backend_final.py: 83: flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
+./vimshottari_module.py: 16: - Uses SIDEREAL_YEAR = 365.25636042 (NOT 365.25 — Trap P2.9 fix).
+./vimshottari_module.py: 39: SIDEREAL_YEAR     = 365.25636042          # Exact sidereal year in days (Trap P2.9 fix)
+./write_audit.py: 101: lines.append("# swe.calc_ut(jd, planet_id, swe.FLG_SIDEREAL | swe.FLG_MOSEPH)")
+./write_audit.py: 111: lines.append("**Plan:** `md_days = md_years * 365.25`")
+./write_audit.py: 112: lines.append("**Correct:** `md_days = md_years * 365.25636`  (Julian sidereal year)")
+./write_audit.py: 137: lines.append("    SY     = 365.25636")
+./write_audit.py: 381: lines.append("| P0 | 365.25 vs 365.25636 | Prana Dasha off by 18 hours |")
+.\astro_ml_research/astro_engine.py: 31: cusps, ascmc = swe.houses_ex(jd_ut, lat, lon, b'P', swe.FLG_SIDEREAL)
+.\astro_ml_research\venv\Lib\site-packages\scipy\constants/_constants.py: 157: Julian_year = 365.25 * day
+.\astro_ml_research\venv\Lib\site-packages\scipy\constants/__init__.py: 191: ``Julian_year``    one Julian year (365.25 days) in seconds
+.\astro_ml_research\venv\Lib\site-packages\scipy\special\tests/test_hyp2f1.py: 994: expected=(181899621848365.2-173207123998705.7j),
+.\astro_ml_research\venv\Lib\site-packages\yfinance\scrapers/history.py: 2168: time_diffs = div_pcts['%'].index.to_series().diff().dt.total_seconds() / (365.25 * 24 * 60 * 60)
+.\gcp_backup_vm1\home\patel\omni-v2/dasha_engine.py: 35: return years * 365.25
+.\gcp_backup_vm1\home\patel\omni-v2/dasha_engine.py: 135: 'years': sub_days / 365.25
+.\gcp_backup_vm1\home\patel\omni-v2/institution_backtest.py: 147: elapsed_y = (jd_target - jd_birth) / 365.25
+.\gcp_backup_vm1\home\patel\omni-v2/institution_backtest_analysis.py: 260: years_passed = time_passed / 365.25636  # Sidereal year
+.\gcp_backup_vm1\home\patel\omni-v2/panchang_engine.py: 349: pos, _ = swe.calc_ut(jd, swe.MERCURY, swe.FLG_SPEED)
+.\nadi_env\Lib\site-packages\scipy\constants/_constants.py: 157: Julian_year = 365.25 * day
+.\nadi_env\Lib\site-packages\scipy\constants/__init__.py: 191: ``Julian_year``    one Julian year (365.25 days) in seconds
+.\nadi_env\Lib\site-packages\scipy\special\tests/test_hyp2f1.py: 994: expected=(181899621848365.2-173207123998705.7j),
+.\nadi_env\Lib\site-packages\sympy\physics\units\definitions/unit_definitions.py: 219: anomalistic_year.set_global_relative_scale_factor(365.259636, day)
+.\nadi_env\Lib\site-packages\sympy\physics\units\definitions/unit_definitions.py: 225: tropical_year.set_global_relative_scale_factor(365.24219, day)
+.\nadi_env\Lib\site-packages\sympy\physics\units\definitions/unit_definitions.py: 237: gaussian_year.set_global_relative_scale_factor(365.2568983, day)
+.\quant_framework/audit_hg_cco.py: 114: years = (eq_series.index[-1] - eq_series.index[0]).days / 365.25
+.\quant_framework/audit_hg_cco.py: 329: years = (oos_equity.index[-1] - oos_equity.index[0]).days / 365.25
+.\quant_framework/calc_cagr.py: 72: years = days / 365.25
+.\quant_framework/plot_equity_curve.py: 13: years = days / 365.25
+.\quant_framework/run_relentless_optimizer.py: 11: years = days / 365.25
+.\quant_framework/test_112_vca.py: 163: years = (equity.index[-1] - equity.index[0]).days / 365.25
+.\quant_framework/test_dsva.py: 152: years = (equity.index[-1] - equity.index[0]).days / 365.25
+.\quant_framework/test_dynamic_deleverage.py: 94: years = (tqqq.index[-1] - tqqq.index[0]).days / 365.25
+.\quant_framework/test_hg_cco.py: 110: years = (eq_series.index[-1] - eq_series.index[0]).days / 365.25
+.\quant_framework/test_hg_cco.py: 180: years = (baseline_series.index[-1] - baseline_series.index[0]).days / 365.25
+.\quant_framework/test_hg_fvk.py: 147: years = (eq_series.index[-1] - eq_series.index[0]).days / 365.25
+.\quant_framework/test_kcmd.py: 169: years = (equity.index[-1] - equity.index[0]).days / 365.25
+.\quant_framework/test_vol_targeting.py: 94: years = (tqqq.index[-1] - tqqq.index[0]).days / 365.25
+.\regime_quant_ml/genesis_drl_backtest.py: 157: years = (hist.index.max() - hist.index.min()).days / 365.25
+.\regime_quant_ml/genesis_phase301_400.py: 65: features['Dasha_Regime'] = np.floor((days_since % (120*365.25)) / (120*365.25) * 9)
+.\regime_quant_ml\genesis_v2_baseline/genesis_drl_backtest.py: 157: years = (hist.index.max() - hist.index.min()).days / 365.25
+.\spx_iron_condor\.venv\Lib\site-packages\scipy\constants/_constants.py: 157: Julian_year = 365.25 * day
+.\spx_iron_condor\.venv\Lib\site-packages\scipy\constants/__init__.py: 191: ``Julian_year``    one Julian year (365.25 days) in seconds
+.\spx_iron_condor\.venv\Lib\site-packages\scipy\special\tests/test_hyp2f1.py: 994: expected=(181899621848365.2-173207123998705.7j),
+.\spx_iron_condor\.venv\Lib\site-packages\yfinance\scrapers/history.py: 2128: time_diffs = div_pcts['%'].index.to_series().diff().dt.total_seconds() / (365.25 * 24 * 60 * 60)

@@ -1,0 +1,1 @@
+SELECT 'rule_test' AS rule_name, '1D' AS horizon, s.sector AS sector, COUNT(*) AS n_total, CAST(SUM(CAST(`rule_0` AS INT64)) AS INT64) AS n_active FROM `antigravity_quant.feature_matrix` f JOIN `antigravity_quant.stock_returns` r ON f.ticker = r.ticker AND DATE(f.date) = DATE(r.date) JOIN `antigravity_quant.sector_tags` s ON f.ticker = s.ticker GROUP BY s.sector

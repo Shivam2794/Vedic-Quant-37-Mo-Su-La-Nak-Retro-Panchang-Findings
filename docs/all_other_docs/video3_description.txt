@@ -1,0 +1,277 @@
+<USER_REQUEST>
+below is the description of Video 3 that wasn't in video but as a description below the video in website:
+
+CODE IS IN THE TRANSCRIPT ONT HE BOTTOM
+
+This lecture introduces beta rotations as the macroeconomic context layer that sits on top of your existing RSI/ensemble rotation. Your RSI rotation only looks inward — at the assets in your own portfolio and their absolute/relative momentum. It has no idea what the broader economy is doing. A beta rotation gives the whole system that missing context, acting as the embedded portfolio manager that decides when to lean into which sleeve.
+
+Meta-models and where beta rotation fits
+A meta-model is the engine on top that makes the final allocation decision over your primary models — the captain, the place you steer the ship from. Your RSI rotation is already a crude version of this: the ensemble gives a raw direction (primary model), and the RSI rotation adds context to produce the final call (the López de Prado M1/M2 framing: M1 = direction, M2 = probability). There are many ways to build the meta-layer — online learners, regression, logistic regression, full ML — but this module deliberately uses an expert system because it fits the lane of low complexity and interpretable arithmetic.
+
+Expert systems and "canaries"
+An expert system draws conclusions from an accumulated knowledge base stored as facts and relationships in if-then-else rules. The person encoding that knowledge is the knowledge engineer — which is the role you're taking on. Key argument: because the rules are static and grounded in real empirical economic theory, the overfitting risk is close to zero, the same way the momentum anomaly is a known, repeatable edge rather than a curve-fit. A decision tree would split at arbitrary values; you instead hardcode splits you can justify economically and then verify with tests.
+
+These macro rules are called canaries (beta rotations). There are effectively infinite of them and they reward creativity. Example rule families:
+
+ADX-based trend confirmation (e.g. ADX > 30 → high probability of trending)
+
+Relative-strength ratios (sector ÷ SPY) as regime signals
+
+The same logic as the existing RSI rule (above 50 + in the top list → strongest relative momentum → hold)
+
+Why RSI rotation alone isn't enough
+RSI/ensemble rotation works best on comparable assets with similar return profiles. It only sees percentage changes, so it can't sensibly compare BTC to Visa or to a pharma/biotech name — BTC is simply more shocking and will dominate the ranking. The deeper problem: your code only sees "asset #1, #2, #3." It doesn't know #2 is energy and #3 is tech. So an asset with a long sideways history (nuclear, energy) can never be grid-searched or trained into a good ensemble — there's no trending price action to calibrate on, and it'll always score a poor Sharpe. The fix is macro context: a rule like XLE/SPY or XLU/SPY tells you when that flat asset is about to trend, even when its own ensemble score looks awful. Concrete demonstration — Visa actually has one of the cleanest golden-cross trends since ~2010, but its volatility never lets it surface in a BTC-dominated RSI rotation, so the clean trend goes unused.
+
+There's also a concentration argument: a tech/crypto-only book produces a single-sleeve P&L that gets punished in years like 2022. Different sectors lead in different regimes — healthcare in Covid, energy/defense/weapons names in a war outbreak, defensives in a correction. Adding context lets the system shift attention to the "losers in class" (e.g. pharma) precisely when they're the right place to be.
+
+The expanded asset universe
+The new list of trending/thematic instruments introduced for this work, grouped by issuer:
+
+VanEck — SMH, GDX, GDXJ, MOAT, MOTI, REMX, BBH, PPH, DAPP, BIZD, NLR, VNM, ANGL, HYD, BUZZ
+
+WisdomTree — DGRW, DGRS, DON, DLN, DES, DXJ, HEDJ, EPI, CXSE, XSOE, WTV, USMF, AGGY, WCBR, WCLD, NTSX, WTMF
+
+Global X — BOTZ, AIQ, CLOU, FINX, BKCH, LIT, SNSR, SOCL, DRIV, DTCR, BUG, GNOM, EBIZ, HEAL, AGNG, MILN, URA, SHLD
+
+KraneShares — KRBN
+
+Sprott — URNM, SETM
+
+ARK — ARKK, ARKG, ARKQ, ARKW, ARKF
+
+Amplify / ETFMG — HACK, BLOK, IBUY
+
+Defiance — QTUM
+
+First Trust — AIRR
+
+Roundhill — CHAT, MAGS, WEED
+
+iShares thematic — IRBO, IDRV, IBLC, MTUM, QUAL, VLUE, USMV, INDA
+
+Alpha Architect / Other — FRDM, DBMF, KMLM, BTAL, CTA
+
+The point: these all trend, but their momentum travels differently, which is exactly why they need macro context rather than being thrown into a single RSI rotation.
+
+Screening the universe
+Before reaching for a beta rotation, screen each name on CAGR, volatility, and beta to SPY. High beta usually implies good trends — lots of volatility going up plus real CAGR means there's something to grid-search. If both CAGR and volatility are high, a long-lookback grid search will likely work and you can skip the beta rotation entirely (less work). Examples raised:
+
+DGRW — healthy trend, decent vol/CAGR, modelable directly
+
+AGNG — lower beta but workable
+
+BLOK — moves like BTC (~80% drawdowns), crypto-correlated
+
+QTUM — promising but short price history
+
+DBMF — very low beta (managed futures) with decent vol/CAGR, but limited history → use a golden cross or longer lookbacks
+
+General guidance: prefer long lookbacks (~100) for stability and fewer whipsaws; if a long lookback works, that's where robustness lives. Short-history, low-beta names may force shorter lookbacks. If an asset is structurally sideways (XLE), grid search will fail — that's the signal to use a beta rotation instead.
+
+Data-splitting methodology
+Treat the data differently from Bootcamp 1.0. Because most sector tickers (XLE, XLY, XLP, etc.) go back to 1998, build/make rules on 1998 → 2018 (or split at ~2009/2010), then hold out 2018 → 2023, and keep → 2026 (present) as the true out-of-sample. Why the split points matter:
+
+2009 onward was a strong tech market — useful if you're testing whether your rotation properly exploits tech
+
+2022 was historically brutal for bonds when normally they'd cushion everything — keep years like that in your test set (never the training/rule-making set) so the system is built to survive rainy weather
+
+The beta rotation tests
+Several concrete, deliberately un-optimized experiments (no grid search — rules came from economic knowledge, then verified):
+
+XLU/SPY z-score, quarterly rebalance — utilities outperforming SPY is a classic defensive canary (people buying utility products → economy going defensive). The risk-off switches line up cleanly with 2008 and 2000. Rule: risk-off → hold 60% XLU / 40% SPY. Result: higher Sharpe, lower max drawdown, and higher CAGR over a test starting 1998. Quarterly (or monthly) reweighting tames the whipsaw.
+
+QQQ/SPY — QQQ is concentrated tech; when it outperforms the broad index, tech is strongly risk-on. The mirror of the utilities signal.
+
+Raw sector sweep — XLF, XLK, XLE, XLV, XLI, XLY, XLP, XAR, etc., each held vs. SPY (hold the sector or hold SPY depending on which is outperforming), then read the alphas to see what works. XAR (defense) clearly earns its alpha in war periods — a lead into building war-regime rules.
+
+Four-canary voting system — XLY/XLP (discretionary vs. staples), HYG/LQD (credit), XLU/SPY (utilities), QQQ/SPY (tech). Each flag shifts 25% into a defensive bucket of T-bills + GLD. ~60% of the time it sat 100% in SPY; flags stacked rarely. Outcome: meaningfully better CAGR, lower drawdown, and a large Sharpe improvement.
+
+Aggressive vs defensive buckets
+In these tests SPY is just a stand-in for "your general/aggressive portfolio" — in practice that's your Bootcamp 1.0 BTC/tech book. The under-developed half is the defensive bucket, and the lecture pushes hard on building it out: don't settle for plain gold. Candidates — bonds (BND), T-bills, gold, silver, leveraged gold, DBMF and other low-beta managed futures, low-beta industrials. You can even grid-search or RSI-rotate inside the defensive bucket. A well-built defensive sleeve hit ~CAGR 12 with a Sharpe near 0.9 over a long window (from ~2007), which is genuinely strong for that horizon.
+
+Dynamic factor weighting (Ranked Asset Allocation Model)
+Rather than just switching buckets, you can dynamically reweight the three sleeves from the RAAM paper — M (momentum), V (volatility, GARCH-based), C (correlation) — instead of holding them static at 33/33/33. Drive the weights off a voting system:
+
+Confident regime (e.g. QQQ/SPY clean) → tilt heavily, even 100%, to momentum
+
+Degrading regime → shift toward V and C, which diversifies, moves defensive, and naturally gives priority to clean low-beta trends like Visa
+
+A 3/2/1 voting scale can map to weight schedules (e.g. 80/10/10 → 50/25/25 → fully off momentum)
+
+This is framed as the lower-labor, cleaner-arithmetic alternative to writing deep nested if XLE then prioritize oil/nuclear/solar expert systems — though those are also valid if you want sub-sector targeting on energy confirmation.
+
+VIX term structure and the dual-RSI trick
+Another canary: VIX / VIX3M as a contango/stress signal (analogous to the 2s10s). When it flags, treat it like a high-stress regime — either dump to the defensive bucket or reweight away from momentum toward vol+correlation. A blunt companion rule: SPY under its 200-day MA ≈ bear market. The creative extension is to intertwine the VIX signal with RSI rotation: normally run a slow RSI lookback (~90), but when contango flags and you're in a ~20% drawdown, switch to a shorter RSI window (e.g. 28) so the rotation re-ranks faster, cutting drawdown depth and time underwater. Worth testing across 2008, 2018, 2020, and 2022/2025 corrections — corrections are where this can both protect capital and make real money.
+
+Online learners
+Briefly previewed as a future topic: an online learner updates as new data streams in and can perform the M/V/C reweighting for you dynamically — learning, say, that momentum has gone bad and lifting the volatility/correlation weights, then reversing when conditions improve. Notable as one of the few ML techniques the lecture endorses for finance.
+
+Closing
+The whole module is intentionally open-ended — an invitation to invent your own canaries, build out the defensive bucket, and share ideas. The ETF list and the XLU/SPY-style rules are attached in Discord, and the next video continues with other trend-following material.
+
+Transcript
+Collapse
+import numpy as np
+import pandas as pd
+import yfinance as yf
+import matplotlib.pyplot as plt
+from scipy.signal import savgol_coeffs
+import warnings
+warnings.filterwarnings('ignore')
+
+# CHANGED: auto_adjust=True -> dividend/split-adjusted closes.
+# XLU is a ~3% payer, so unadjusted prices put a spurious step in the ratio
+# on every ex-div date and undercount the XLU leg's return in risk-off.
+print('Downloading XLU, SPY (adjusted, from SPY inception 1998)...')
+xlu = yf.download('XLU', start='1998-01-01', auto_adjust=True, progress=False)['Close']
+spy = yf.download('SPY', start='1998-01-01', auto_adjust=True, progress=False)['Close']
+
+# Align and drop NaN
+df_align = pd.concat([xlu, spy], axis=1).dropna()
+xlu, spy = df_align.iloc[:, 0], df_align.iloc[:, 1]
+
+print(f'Data range: {xlu.index[0].date()} to {xlu.index[-1].date()} ({len(xlu)} days)')
+
+# Z-score (trailing 252d -- already causal, unchanged)
+ratio = xlu / spy
+z_score = (ratio - ratio.rolling(252).mean()) / ratio.rolling(252).std()
+
+
+# --- CHANGED: causal (trailing) Savitzky-Golay ------------------------------
+# The original savgol_filter() is CENTERED: every smoothed point reads ~10 days
+# into its own future, and shift(1) only claws back one of them. This version
+# fits the same degree-2 polynomial to the trailing `window` samples and
+# evaluates it at the most recent point -- past+current data only. It also
+# does not repaint: historical values are final once printed.
+def causal_savgol(series, window=21, polyorder=2):
+    v = series.values.astype(float)
+    out = np.full(v.shape, np.nan)
+    c = savgol_coeffs(window, polyorder, pos=window - 1, use='dot')
+    for t in range(window - 1, len(v)):
+        seg = v[t - window + 1: t + 1]
+        if not np.isnan(seg).any():
+            out[t] = np.dot(c, seg)
+    return pd.Series(out, index=series.index)
+
+
+window = 21
+z_smooth = causal_savgol(z_score, window=window, polyorder=2).dropna()
+# ---------------------------------------------------------------------------
+
+# 2-state: risk-on (z < 0) vs risk-off (z >= 0)
+regime = pd.Series(np.where(z_smooth < 0, 1, 2), index=z_smooth.index)
+regime_clean = regime.dropna()
+
+colors = {1: '#1f77b4', 2: '#ff7f0e'}
+
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(16, 8), sharex=True)
+
+# SPY with regime
+ax1.plot(spy.index, spy.values, color='black', linewidth=1.5, label='SPY', zorder=3)
+ax1.set_title('SPY Price with XLU/SPY Regime (1998-2026, causal smoother)', fontsize=13, fontweight='bold')
+ax1.set_ylabel('SPY Price ($, adj)', fontsize=11)
+ax1.grid(True, alpha=0.3)
+
+regime_groups = (regime_clean != regime_clean.shift()).cumsum()
+for group_id in regime_groups.unique():
+    group_mask = (regime_groups == group_id)
+    start_idx = regime_clean.index[group_mask][0]
+    end_idx = regime_clean.index[group_mask][-1]
+    regime_val = regime_clean[group_mask].iloc[0]
+    if regime_val in colors:
+        ax1.axvspan(start_idx, end_idx, color=colors[regime_val], alpha=0.1, zorder=0)
+
+ax1.text(0.02, 0.95, 'Blue = Risk-On (z < 0) -> 100% SPY  |  Orange = Risk-Off (z >= 0) -> 60% XLU / 40% SPY',
+         transform=ax1.transAxes, fontsize=10, verticalalignment='top',
+         bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.3))
+ax1.legend(loc='upper left', fontsize=10)
+
+# Z-score (smoothed)
+ax2.axhline(0, color='black', linewidth=1.2, linestyle='-', alpha=0.7)
+ax2.fill_between(z_smooth.index, z_smooth.values, 0, where=(z_smooth < 0), color='#1f77b4', alpha=0.3, label='Risk-On')
+ax2.fill_between(z_smooth.index, z_smooth.values, 0, where=(z_smooth >= 0), color='#ff7f0e', alpha=0.3, label='Risk-Off')
+ax2.plot(z_smooth.index, z_smooth.values, color='black', linewidth=1, alpha=0.7)
+ax2.set_title(f'XLU/SPY Z-Score ({window}-day causal/trailing SG)', fontsize=13, fontweight='bold')
+ax2.set_ylabel('Z-Score', fontsize=11)
+ax2.set_xlabel('Date', fontsize=11)
+ax2.grid(True, alpha=0.3)
+ax2.legend(loc='upper left', fontsize=10)
+
+plt.tight_layout()
+plt.show()
+
+# METRICS - align regime with spy returns using index
+print('\n' + '='*100)
+print('REGIME STATISTICS (from first valid z-score)')
+print('='*100)
+
+spy_rets = spy.pct_change()
+xlu_rets = xlu.pct_change()
+
+# Use only dates where regime exists
+common_idx = spy_rets.index.intersection(regime_clean.index)
+spy_rets_aligned = spy_rets[common_idx]
+regime_aligned = regime_clean[common_idx]
+
+spy_ret_riskon = spy_rets_aligned[regime_aligned == 1]
+spy_ret_riskoff = spy_rets_aligned[regime_aligned == 2]
+
+spy_cagr_riskon = (1 + spy_ret_riskon).prod() ** (252/len(spy_ret_riskon)) - 1
+spy_cagr_riskoff = (1 + spy_ret_riskoff).prod() ** (252/len(spy_ret_riskoff)) - 1
+spy_full_cagr = (1 + spy_rets_aligned).prod() ** (252/len(spy_rets_aligned)) - 1
+
+spy_sharpe_riskon = spy_ret_riskon.mean() / spy_ret_riskon.std() * np.sqrt(252) if spy_ret_riskon.std() > 0 else 0
+spy_sharpe_riskoff = spy_ret_riskoff.mean() / spy_ret_riskoff.std() * np.sqrt(252) if spy_ret_riskoff.std() > 0 else 0
+spy_full_sharpe = spy_rets_aligned.mean() / spy_rets_aligned.std() * np.sqrt(252) if spy_rets_aligned.std() > 0 else 0
+
+# NOTE: the conditional stats below use the CONTEMPORANEOUS regime (no shift).
+# They are descriptive only -- not a tradable result -- so read them as
+# "what SPY did on days the (now-causal) signal labelled risk-on/off".
+
+
+def max_dd(rets):
+    eq = (1 + rets).cumprod()
+    return (eq / eq.cummax() - 1).min()
+
+
+# STRATEGY: Risk-On (regime 1) = 100% SPY ; Risk-Off (regime 2) = 60% XLU / 40% SPY
+# Use prior-day regime to set today's allocation. With the causal smoother the
+# signal no longer borrows the future, so this 1-day lag is now a genuine
+# execution lag rather than cosmetic cover over a 10-day leak.
+regime_lag = regime_aligned.shift(1)
+w_xlu = pd.Series(np.where(regime_lag == 2, 0.60, 0.00), index=regime_lag.index)
+w_spy = pd.Series(np.where(regime_lag == 2, 0.40, 1.00), index=regime_lag.index)
+
+strat_rets = (w_xlu * xlu_rets + w_spy * spy_rets).dropna()
+
+strat_cagr = (1 + strat_rets).prod() ** (252/len(strat_rets)) - 1
+strat_sharpe = strat_rets.mean() / strat_rets.std() * np.sqrt(252) if strat_rets.std() > 0 else 0
+strat_dd = max_dd(strat_rets)
+
+# SPY buy & hold benchmark over the same window
+spy_bh = spy_rets_aligned.dropna()
+spy_dd = max_dd(spy_bh)
+
+print(f'\n{"Metric":<30s} {"Risk-On":<15s} {"Risk-Off":<15s} {"Full Period":<15s}')
+print('-' * 75)
+print(f'{"SPY CAGR":<30s} {spy_cagr_riskon:>14.2%} {spy_cagr_riskoff:>14.2%} {spy_full_cagr:>14.2%}')
+print(f'{"SPY Sharpe":<30s} {spy_sharpe_riskon:>14.2f} {spy_sharpe_riskoff:>14.2f} {spy_full_sharpe:>14.2f}')
+print(f'{"Regime % days":<30s} {(regime_aligned == 1).mean():>14.1%} {(regime_aligned == 2).mean():>14.1%}')
+
+print(f'\n{"":<30s} {"Strategy":>15s} {"SPY B&H":>15s}')
+print('-' * 62)
+print(f'{"CAGR":<30s} {strat_cagr:>15.2%} {spy_full_cagr:>15.2%}')
+print(f'{"Sharpe":<30s} {strat_sharpe:>15.2f} {spy_full_sharpe:>15.2f}')
+print(f'{"Max Drawdown":<30s} {strat_dd:>15.2%} {spy_dd:>15.2%}')
+print(f'{"Strategy vs SPY (CAGR)":<30s} {(strat_cagr - spy_full_cagr):>15.2%}')
+
+current_z = z_smooth.iloc[-1]
+current_regime = {1: 'Risk-On (100% SPY)', 2: 'Risk-Off (60/40 XLU/SPY)'}.get(regime_clean.iloc[-1], 'NaN')
+print(f'\nCurrent: Z={current_z:7.3f}  ->  {current_regime}')
+
+xlu_spy_zscore = z_smooth
+xlu_spy_regime = regime_clean
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-07-09T14:24:50-05:00.
+</ADDITIONAL_METADATA>

@@ -1,0 +1,899 @@
+[2025-10-18T04:58:02.3840000-05:00] the_biggest_rick: *regarding if optuna is an option for gridsearching*
+
+Optuna is definitely a great option. The main thing to remember, though, is that Optuna uses Bayesian optimization.
+In terms of computation, it’s much faster — but unlike a grid search, which brute-forces through every possible combination, Bayesian optimization relies on a probabilistic search. It assumes a relatively well-behaved landscape, meaning it can often find a good combination more efficiently.
+However, that also means it might skip over a potential best combination, especially if the search space is rugged.
+That’s why, if computation isn’t an issue, I tend to prefer a brute-force grid search. It’s built into VectorBT, requires less coding, and is generally an easier, lower-error option — especially if you don’t have a heavy software engineering background.
+
+https://implementationscience.biomedcentral.com/articles/10.1186/s13012-020-01028-5
+----------------------------------------
+[2025-10-18T04:58:53.6720000-05:00] the_biggest_rick: And i quote 
+
+(Simulated annealing, like bruteforce grid with vectorBT and Bayesian optimization/Optuna is another method of gridsearching)
+
+*'Simulated annealing may not always find the best combination because its probabilistic nature, which allows it to escape local optima, is not guaranteed to find the global optimum. It can get stuck in a local minimum if the temperature cools too quickly, or if the cooling schedule is not set correctly, preventing it from exploring the entire solution space. 
+
+Key reasons for not always finding the global optimum
+
+Probabilistic acceptance: The algorithm can accept worse solutions, especially at high "temperatures," to explore the solution space. However, it's possible that the truly best solution is missed due to not making the right random moves or the probability of accepting a bad move becoming too low too soon.
+
+Finite time and cooling schedule: The algorithm only has a finite amount of time to run. A theoretically perfect cooling schedule requires an infinite amount of time to guarantee finding the global optimum, which is impractical for most problems. In practice, the algorithm must stop after a finite time, and if the cooling process is too fast, it can get trapped in the first good-enough solution it finds (a local minimum).
+
+Sensitivity to parameters: The final outcome is highly dependent on the "cooling schedule" and other parameters, which are problem-specific. If these parameters are not tuned correctly, the algorithm will not converge to the best solution. For example, a cooling schedule that is too fast can lead to a poor result.
+Solution space complexity: For problems with extremely large or complex solution spaces, the chances of the probabilistic search landing on the absolute best combination are very low, even with a good cooling schedule. The algorithm is designed to find a very good solution, not necessarily the absolute perfect one. '*
+----------------------------------------
+[2025-10-19T06:41:56.7060000-05:00] the_biggest_rick: --------------------------------------------------------
+
+*Regarding wanting to achieve a sharpe >2, and wanting to model small and mid-cap because of higher returns*
+
+The advantage of starting your modeling with higher-cap assets is that the data tends to be much more consistent and reliable. With small- and mid-cap assets, you can of course set up a notebook, run comparisons, and see what the actual volatility and expected returns look like. But overall, it’s better to work from top to bottom rather than the other way around.
+
+Assets like Bitcoin, Ethereum, or Solana are large-cap and still offer enough volatility and potential return to build solid models on. They also give you cleaner, more autocorrelated data, which makes it easier to capture and test momentum effects.
+
+One thing to keep in mind is that once your Sharpe ratio starts moving above 2, you might be seeing inflation in the metric rather than genuine performance. This can happen when you trade on very low time frames where there’s a lot of noise. Shorter intervals often make people feel like they’re improving returns because they’re trading more frequently, but that also means you’re bet-sizing more often and introducing more operational and modeling risk.
+
+If you’re managing a swing trading portfolio the way I describe in the portfolio management class, it’s much simpler to maintain while still offering strong returns.
+----------------------------------------
+[2025-10-19T06:41:58.2320000-05:00] the_biggest_rick: Once you move into lower time frames, you’ll need to start accounting for Sharpe inflation, and you’ll have to incorporate things like Kelly criterion adjustments, trailing stop losses, and more active monitoring. All of that adds complexity and increases the chance of small execution errors compounding into performance drag.
+That’s why I recommend working from top to bottom — start with high-cap, more liquid assets, and longer time frames. If you can model something that improves NASDAQ/QQQ on a risk-adjusted basis, that’s already exceptional. You’re improving your Sharpe ratio against a major benchmark while working with data that’s inherently more stable, more consistent, and easier to model momentum from.
+
+***REGARDING SHARPE >2***
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2460551
+----------------------------------------
+[2025-10-19T06:46:35.9670000-05:00] the_biggest_rick: ----------------------------------------------------
+
+*Regarding training on QQQ vs TQQQ and the leveraged increasing movements of price and creating noise*
+
+You raise an interesting point, though I think the differences are minimal.
+
+The decision to use leverage ofcourse stems from my theory video on taking the upside risk, if you can recall. the model i trained three years ago had such improved risk metrics that I felt like i could justify leveraging it. 
+
+In this case i did train it on QQQ and had calculated the leveraged returns in the code itself, not with a TQQQ product downloaded in the data
+That said, since the goal is to be resistant to market snaps, I’ve found that applying the earlier model (which was trained on the unleveraged version) to a leveraged version — with manual leverage calculations in place — works well despite the added noise.
+
+The key principles I rely on are:
+
+-Autocorrelated movement in prices (momentum effect),
+-Technical indicators to smooth values out and give differently derived projections of price
+-Grid search to identify persistent patterns of trend.
+
+Given that, I do think training directly on the leveraged version makes more sense. It aligns with the asset you actually want to hold. Doing it unleveraged would, in a way, falsify results, since the leveraged product behaves differently — not just through added volatility but also because of its pricing mechanics.
+
+While TQQQ is designed as a 3x leveraged product, it’s not a perfect 3x. Factors like management fees and compounding effects make the true ratio closer to something like 2.9~ (give or take, im ballparking that but its lower than 3).
+----------------------------------------
+[2025-10-20T05:41:16.2480000-05:00] the_biggest_rick: --------------------------------------------
+
+*Regarding the type of problem we are solving with technical indicators*
+----------------------------------------
+[2025-10-20T05:41:23.9160000-05:00] the_biggest_rick: So — the problem-solving is essentially the patterns that have emerged from these indicators. In a way, indicators are just features you could use in machine learning to track certain patterns. Right now I’m not using ML, because ML requires a different methodology for data treatment, and many of these indicators would instead be inserted into an ML pipeline. But conceptually you can view them as a feature-engineering approach — taking logs of a feature, making ratios, etc.
+
+At the end of the day, these indicators are just different derivatives of price. They capture different aspects of price behavior. When you apply the correct one, they can act like an if-then statement: if you optimize their lookbacks and can prove they effectively capture the right aspect of price, they can decide the proper regime to trade in. They either smooth values (like an MA), capture a range (difference between long and short MAs), or capture the severity of autocorrelation.
+
+Take an absolute momentum indicator as an example — previous close divided by current close, giving a percentage difference. Because of autocorrelated aspects (probably driven by psychology), a big, visible stock move can generate a chain reaction — people see the move, buy, and it becomes a domino effect. Different indicators capture that autocorrelated behavior in different ways. But that behavior changes per asset because not every asset attracts the same crowd or the same attention. Nobody buys Bitcoin the same way they buy Qualcomm — they attract different people and motivations. At the end of the day, it’s all people buying for different reasons.
+----------------------------------------
+[2025-10-20T05:42:00.0860000-05:00] the_biggest_rick: So by combining different indicators, you capture different elements behind what drives buyers — that’s why price action is so powerful: it’s the aggregate of all behavior. Macro numbers and sentiment are precursors; price is the final point. Derivatives of price that capture different elements are in a sense a mock-up of that final decision. If you capture the right ones and run a proper grid search, you can build a very strong indicator — especially if you lengthen the horizon, compress data, and remove noise on higher time frames.
+
+Time-frame considerations matter. I think you can apply the same methods I’m discussing for swing trading to 8-hour and 4-hour frames, and even weekly — though weekly might be pushing it, because the data becomes scarce and you lose many input frequencies that exist on the daily. The “sweet-stock-bought” signal might not even be daily, but I’ve found daily to be particularly effective and not to suffer too much from alpha decay.
+
+Now, contrast momentum in large popular stocks versus medium/small cap: the NASDAQ and big tech tend to show the strongest autocorrelative momentum effects, because they capture macro moves and have consistent buying activity. The most popular stocks have the strongest psychological reaction patterns — people react to people reacting to people. When everyone knows about something (e.g., Bitcoin being “at the top”), that itself becomes a top signal. If you capture autocorrelation early in price, you can get in front of trends and be properly positioned.
+----------------------------------------
+[2025-10-20T05:42:06.7700000-05:00] the_biggest_rick: -
+With medium and small caps, you get the small-firm effect and more sideways behavior. These names have less hype and less aligned buying, so autocorrelation is weaker and movement becomes choppier. Value investors or specialized screeners who find firms early can exploit inefficiencies — these stocks may slowly trickle higher and then spike when people catch on (NVIDIA or Tesla style). But because the autocorrelation is weaker, mean reversion is more common and you need different indicators and approaches.
+
+Practical limits: screening small/medium caps is harder because the data is sparser (quarterly or annual reports). You can’t easily feed quarterly fundamentals into ML the same way as daily prices, and reading a stack of annual reports is painful. So while these inefficiencies exist, the effort and data limitations make it more difficult to exploit.
+----------------------------------------
+[2025-10-20T05:42:30.5310000-05:00] the_biggest_rick: -
+That’s basically my explanation of the momentum effect — a bit of rambling, but to sum up: indicators are feature-engineering tools that approximate human behavior reflected in price; choosing and optimizing the right ones (and the right timeframes) lets you detect autocorrelation early and ride trends. Different assets require different features because the underlying buyer behavior differs. Thanks for the push — I’m diving into which indicators work better for the choppier classes of stocks today.
+
+I just answered another guy with basically the same point: the most popular stocks have the strongest psychological reaction patterns, so the momentum effect is strongest there.
+----------------------------------------
+[2025-10-21T10:00:46.9850000-05:00] the_biggest_rick: ------------------------------------------------------------------------------------------------
+----------------------------------------
+[2025-10-21T10:00:56.8760000-05:00] the_biggest_rick: __*Q1: "I'm currently in the gridsearching part and I wanted to hear your opinion about universality. From my experience you usually start with overfitted charts where you try and optimize every parameter which looks great in backtest but will wreck you in forward test. For that reason you test it on multiple different assets and timeframes and see if the logic is still valid. This way you don't get the perfect strategy but you know that it is more robust and can trust it more"*__
+
+A1:
+Hey dude, great question, happy to elaborate.
+
+So, the sensitivity analysis test over the parameter-range 'neighbors' of the 'optimal values' defined by the gridsearch,
+
+I don't test 1 strategy across different assets. In the last video, I show a this sensitivity analysis where all the parameters are plotted to see if a small change causes a crazy skew in trade amounts or metrics like Sharpe ratio. That’s a good indication if something is overly, 'curve-fitted' to that asset, which of course is something you don’t want—it’s a sanity check.
+
+The problem with testing across multiple assets is that they can differ quite a lot. For example, the triple EMA (which BTW isn’t fully ensembled yet).
+
+*(The ensemble method combines 2-3 indicators to help keep each other in check, either by cancelling a trade or entering one when the other didn’t, and by parsimony of the two together and not gridsearching over both, concurrently and instead separate from each other they maintain the corrective job they have, by producing sell or buy's concurrently. Which can help delay false or delayed signals, which helps performance and robustness.)*
+----------------------------------------
+[2025-10-21T10:01:05.2680000-05:00] the_biggest_rick: .
+Testing it on different assets doesn’t really test overfitting—it might just be less optimal for that asset. That’s the nature of a grid search: data values for BTC versus NASDAQ are very different and not fully correlated.
+
+*(That said, I’ve tested the same indicators on multiple assets—Solana, ESPO (a video gaming ETF), Bitcoin, and TQQQ—and the metrics actually remain similar and pass sensitivity analysis. Of course, universality is somewhat disregarded in a grid search)*
+
+IF you universalize too much, you give up performance. That’s where training split comes in though to offer robustness-checks and insurance in a different approach.
+
+I use a 60-40 split, and I’ve tested out-of-sample data going back to 2008 with minimal drift. Using daily intervals compresses different volatility profiles from open, close, and lunch hours, so the data inputs are much more consistent and produce better autocorrelated patterns for momentum indicators to catch entries and exits on.
+
+Also, a 60-40 split is punishing by design—the forward test might not help produce the optimal values, but I chose it deliberately because I’m giving this strategy to people to try with potentially-real money.
+
+I’ve run this algo for three years with minimal parameter drift, which is why I’m confident sharing it. You could do repeated holdouts or walking forward cross-validation (60-40 → 70-30 → 80-20) to be extra thorough, but for this framework, the goal is to provide a solid starting strategy for people to learn and experiment with under my guidance.
+----------------------------------------
+[2025-10-21T10:01:23.8130000-05:00] the_biggest_rick: .
+Regarding indicators, the triple EMA is a strong choice. Moving averages are widely used, simple, and have low overfit risk. The “golden cross” or 200 MA is cited in books like Stocks for the Long Run and the paper 'leverage for the long run', and the triple EMA is essentially an evolution—it captures subtle trends and whipsaws by using three values instead of one or two. The fast EMA crosses the medium for small shifts, the slow crosses medium for prolonged trends, and quick whipsaws are also captured. It’s like a confirmation system similar to MACD (though this asset will still catch different elements especially after a gridsearch, there is absolutely no one size fits all indicators). Each set of parameters is unique to the asset, which is why grid searches are so useful—humans can’t manually optimize this reliably, there is no perfect technical approach.
+
+Survivability in the OOS test is key, so metrics like Sharpe ratio, max drawdown, and profit factor are crucial. in Forward testing, the survival would be defined by ensuring Sharpe stays above 1, drawdowns are controlled, and then, given metrics survive you will have the “casino factor,” meaning you’re set up to win more than you lose and the compounding works in your favor, Ofcourse, if you've tested conservatively and aggressively to see your parameters survive.
+----------------------------------------
+[2025-10-21T10:01:27.7200000-05:00] the_biggest_rick: .
+Re-optimization is possible, and while I recently re-optimized and saw improvements, three years of historical robustness shows drift isn’t significant enough to make it necessary frequently with daily interval based swing trading. Of course, you could measure drift monthly and retrain if needed, similar to MLOps methodology—but for the current model, that’s not essential as per my own riddance.
+
+The framework is designed to provide a tested, robust starting point. It balances conservativeness, forward-tested reliability, and adaptability, gives a safe method to learn and experiment and potentially trade with while minimizing overfitting risk. Optimizations can always be made, I’m working on such right now, head the first lecture for example, and I will be dropping more 'juice' later, and will keep elaborating as long as I need to try and make myself as logically sounding as possible :).
+----------------------------------------
+[2025-10-21T10:01:35.8970000-05:00] the_biggest_rick: .
+__**Q2: "Also one of the people I learn a lot from says that after universal strategies there are concepts and he himself uses one indicator he developed that measures the trend and that's it and he does it in order to avoid any overfitting risk. He also says that concepts are the next step as instead of lowering DD by optimizing the strategy you use a concept like a short strategy in order to minimize the DD without modifying the strategy."**__
+
+A2:
+This ties directly into my philosophy—rather than over-optimizing for one asset, I focus on robust indicators and a well-tested grid search. The triple EMA captures subtle trends and whipsaws without overfitting, and survivability metrics like Sharpe, drawdown, and profit factor ensure the strategy can work forward in time. Using concepts like an overarching trend filter or short strategy can further reduce drawdown risk, which is exactly in line with the approach of providing a robust, minimal-overfit framework.
+----------------------------------------
+[2025-10-21T10:01:43.3680000-05:00] the_biggest_rick: .
+**__Q3: "Also, if I optimize my strategy for BTC for example and its behavior changes I need to reoptimize which would lead to an infinite loop of optimization and make the strat break."__**
+
+A3:
+Re-optimization is possible, but in my experience with this strategy, drift over three years has been minimal, so frequent re-optimization isn’t required. You could measure drift monthly and retrain if needed, similar to MLOps methods, but for daily-interval swing trading, it isn’t essential. This avoids the infinite loop of continuous re-optimization while maintaining robustness and survivability.
+----------------------------------------
+[2025-10-28T11:47:32.6940000-05:00] the_biggest_rick: ***On Posting Your Research and Models Publicly on Linkedin (for example***
+
+This question often comes from people who are hesitant to post their research or models online — worried about criticism, or about how much validity their work will have without exhaustive proof. It’s understandable. When you build a model, there’s always the concern that someone will question its soundness or point out overfitting.
+
+Of course, you can share your methodology, show out-of-sample data, or even link to a GitHub repository for transparency. But let’s set aside the technical side for a moment and talk about the reality of posting on social media, especially on LinkedIn.
+
+People will always have opinions. Some might be overly critical; others will simply read, appreciate, and move on. If you explain your work clearly, use precise language, and demonstrate thoughtful reasoning, most people won’t question you harshly at all. And even if they do — it doesn’t matter.
+
+Take it from someone who’s built an audience of over 46,000 followers: a small fraction of people will always criticize, but the vast majority — the 90% — will be impressed, inspired, or at least curious. They might reach out, ask questions, or engage in meaningful discussion.
+
+So, my advice is simple: hold your ground and post your work. Don’t let fear of criticism keep you silent. Social media is full of people who want to look perfect and overly professional — but very few who are bold enough to show the process. Those who do end up standing out, getting noticed, and opening real opportunities.
+
+You’ll make a few mistakes along the way, sure. But the visibility, growth, and feedback you gain will far outweigh the occasional critique. In the long run, sharing your progress publicly is one of the best ways to advance — and to not be lost in the HR backlog.
+----------------------------------------
+[2025-10-28T11:49:09.4020000-05:00] the_biggest_rick: *My next big question — and the direction I’m heading — is about testing models in real-life conditions. Specifically, I’m curious how I could start applying these models to prop trading, for example. Before I get to that stage, though, I’m thinking it might be wise to walk through a few strategies and ideas together and refine them before testing in live conditions. Hopefully, you understand the direction I’m aiming for.*
+
+Rick’s reply:
+The tricky part is that prop firms like FTMO have a very limited asset list for swing trading. To make it work, you’ll need to develop a model over a long horizon, walk it forward, and run Monte Carlo simulations, similar to how you’d treat an intraday strategy. Swing trading might be worth a shot, but it’s more constrained.
+
+For prop firms, a collection or ensemble approach is usually best — much like the portfolio concepts I’ll be discussing soon. Think of it as building parsimonious strategies for individual assets by combining multiple indicators that each address different drivers of price. When you combine multiple uncorrelated strategies, their collective Sharpe ratio can exceed 2.0, thanks to diversification effects.
+
+When testing a single strategy, use multiple years of data, with at least 30% held out as out-of-sample (OOS) if you’re working intraday. Then run 10,000–100,000 Monte Carlo simulations and use K-purged cross-validation for your optimization grid searches.
+
+Follow those steps rigorously, and overfitting becomes a challenge rather than a trap.
+
+> Check out the latest lecture i am posting in a second for what an aggregation of strategies can achieve in beeeaaaautifull parismony
+----------------------------------------
+[2025-10-30T06:56:23.3360000-05:00] the_biggest_rick: ***Question:
+
+For the swing trading strategy we’re running in the file you provided, if all the stress tests check out positively, can we safely assume that the selected model for each asset is robust?***
+
+__Answer:__
+
+Yes — if all the stress tests pass under the framework you’re using, you can reasonably assume that the model selected for the asset is robust.
+
+__A few key points reinforce this:__
+
+By operating on daily bars, the strategy naturally filters out a lot of intraday noise and microstructure effects. It’s extremely difficult for high-frequency algorithms to “take you out” of positions, which already adds a layer of inherent robustness to your execution.
+
+**Sanity Check Framework**
+The sanity checks outlined in the bootcamp are the exact same procedures I personally follow — with identical training periods and forward-testing horizons. This framework was built and refined over years of live trading and has proven itself stable and reliable across multiple market regimes.
+----------------------------------------
+[2025-10-30T06:56:25.6720000-05:00] the_biggest_rick: -
+**Track Record**
+The methodology has three years of verified live performance, which is the ultimate burden of proof. Live data is always the most unforgiving test, and a strategy that continues to perform under real-world conditions is as close to “robust” as it gets.
+
+**Out-of-Sample Integrity**
+Roughly 40% of the training period data is reserved for out-of-sample testing. This ensures the model isn’t simply overfitting historical data but is generalizing effectively to unseen conditions.
+
+**Ensemble Layering and Veto Logic**
+The portfolio structure itself adds redundancy and corrective behavior. Each strategy runs as part of an ensemble, with a secondary model acting as a corrective layer — capable of vetoing poor or late trades. This dynamic interaction significantly reduces tail-risk from single-model failure.
+
+**Dynamic Portfolio Allocation**
+On top of that, your ranked asset allocation model dynamically adjusts exposure based on relative momentum and signal confidence. That creates a system of constant recalibration, where capital naturally flows toward stronger assets and away from weaker ones.
+
+**Multi-Layer Robustness**
+The end result is a deeply layered robustness — multiple models, multiple out-of-sample validations, ensemble veto mechanisms, and dynamic allocation shifts — all interacting in real time. Every component is tested, verified, and stress-tested independently, then again in combination.
+
+So yes — when those sanity checks confirm everything holds up, that’s a very strong indication that the strategy, as a whole, is sound. Personally, I’d put my life on it. There’s just too much structural and procedural redundancy built into this process for it to be a coincidence.
+----------------------------------------
+[2025-11-05T06:34:47.3260000-06:00] the_biggest_rick: Someone asked for 5 book recommendations from the big notion file in #resources 
+
+Obviously there's like 100s in there so i did a scroll down for a long minute and for newer people i would say from that list doing a
+
+CTRL+F to
+
+The black swan, 
+
+Quantitative Trading: How to Build Your Own Algorithmic Trading Business,
+
+Quantitative Trading: Algorithms, Analytics, Data, Models, Optimization,
+
+The High Frequency Game Changer,
+
+The Myth of the Rational Market.
+
+Can be cool. 
+
+When reading I personally like to use LLM's to help me digest information faster and give me overviews of chapters and then pick what i want to digest, but thats up to you but can help cut the fluff and save time while reading what you want mostly.
+----------------------------------------
+[2025-11-06T10:24:07.6080000-06:00] the_biggest_rick: Question:
+How does combining different technical indicators in an ensemble using OR logic help reduce noise and improve signal accuracy in price action data?
+----------------------------------------
+[2025-11-06T10:24:28.8640000-06:00] the_biggest_rick: The main idea behind the ensemble is denoising. Price action data — especially OHLCV — is inherently noisy, so you need different tools to clean it up. Each indicator can focus on something different: one might capture volume better, another strength or momentum, etc.
+
+When you combine these signals using OR statements, they start to correct each other. For example, if one indicator triggers a buy, you enter; if another exits soon after, it corrects a potential false signal. Likewise, if one misses an entry, another can still catch it. This makes the system more adaptive and less dependent on a single signal’s timing.
+
+At that point, ensembling becomes very useful — it’s like building a corrective network of indicators. To go even deeper into recognizing specific patterns, that’s where machine learning comes in. ML can detect the underlying structures and relationships that traditional indicators might miss, depending on the algorithm you use.
+----------------------------------------
+[2025-11-07T06:11:03.9070000-06:00] the_biggest_rick: **Notebook review of someone building a model akin to the ranked asset allocation model:**
+
+You’ve got a solid start. Your Sharpe ratio looks fine (1.27), but this isn’t the most optimized version of the model yet. What you want to do now is go through your code and start iterating, tweaking the small gears and parameters that make the whole system run.
+
+Here’s how to approach it step by step:
+
+1. Review the structure:
+Check how I organized another student’s codebook in lecture 2 or 3. The goal is to make your code modular and easy to experiment with so you can quickly change settings and test ideas without rewriting everything.
+
+2. Experiment with holdings:
+Don’t stick to a fixed number of assets. Try holding 8, 6, 4, or even 20 at a time. See how portfolio size affects performance and drawdown.
+
+3. Play with indicators:
+Test different indicators and see which ones give stronger or more stable results. You might find that a completely different signal works better with your setup.
+
+4. Adjust lookback periods:
+You’re currently using a 3-month lookback. Try 6 months or other intervals and compare results. Different timeframes can change the model’s responsiveness and stability.
+
+5. Extend your testing window:
+Since you’re rolling forward without heavy optimization, start your backtest from 2010 instead of just recent years. This gives you a broader range of market conditions and a better idea of long-term robustness.
+
+6. Consider leverage (carefully):
+If your maximum drawdown stays low enough, you could explore adding a small amount of leverage depending on what your brokerage allows. But treat this as an advanced step after refining your base model.
+
+Overall, this is a reiterative process. Keep tuning, testing, and adjusting. The goal isn’t just to get a higher Sharpe ratio, but to understand why certain settings or indicators work better. That’s how you’ll build a truly robust strategy.
+----------------------------------------
+[2025-11-07T06:14:46.0860000-06:00] the_biggest_rick: -
+
+**Question: Reasoning for Using Only Long Positions**
+
+The main reason for focusing solely on long positions is that, over time, markets are structurally biased to move upward. This upward bias comes from several economic and behavioral factors — inflation, rising costs, long-term economic growth, and general investor optimism. Historically, bull markets tend to last longer than bear markets, and even statistically, price movements show a natural skew toward the upside.
+
+When inflation occurs, the unit of currency itself loses value. This means that even during market drawdowns, prices rarely return to a true zero baseline. A 30% drop, for example, represents a decline from an inflated base — not a total collapse in value. Over the long run, the market’s natural drift, combined with monetary expansion, makes upward trends more sustainable than downward ones.
+
+Additionally, when markets fall below key regime indicators — such as the 50-day moving average — volatility typically increases sharply. Trend-following during these downtrending regimes becomes much riskier, especially in broad indices like the S&P 500. The higher volatility amplifies losses, making short strategies harder to manage and less predictable.
+
+While shorting can sometimes be justified in specific markets, such as crypto, it still carries substantial risk. So far, there are few algorithmic systems that consistently justify pure short exposure. In most cases, long-only strategies align better with the natural structure and long-term growth bias of major markets.
+----------------------------------------
+[2025-11-08T07:11:09.3500000-06:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - questions-i-answered-before [1429045618382209064].csv_Files\AD3D98C2-05B5-4DA3-B717-5ED5C1AA01A7-3202372b5b51c6b2.jpeg
+----------------------------------------
+[2025-11-09T08:10:50.9900000-06:00] the_biggest_rick: ***“Lastly, as someone new to quantitative system design, I’d like to ask — what are some common traps or misconceptions that beginners often fall into when identifying overfitted models or when trying to construct a quant system blueprint conceptually? I’d really value your insights on how to recognize and avoid these pitfalls early.”***
+
+Anything that looks too good to be true — or has a Sharpe above 2 — is probably off, especially if you haven’t done a proper train–test split and run it out of sample, right? The whole point of generalization is that your model performs well enough without being overly influenced by outliers — that it’s actually picked up some kind of pattern that will hold when new data is introduced. New data means new patterns, and you want your model to handle that gracefully.
+
+So if you do a healthy out-of-sample split — say 30–40% — the real test is whether the model still accepts those unseen inputs in a general way, and whether it continues to make strong, consistent trading decisions. If the performance collapses, it’s probably overfit.
+
+When something seems too good to be true, start sanity-checking everything:
+
+Verify your logic and your code.
+
+Double-check your train/test procedure.
+
+Compare in-sample vs. out-of-sample performance.
+
+Run a proper parameter sensitivity analysis.
+
+This is especially important with intraday data, where noise dominates and everything moves with that Brownian-motion energy you mentioned.
+
+For swing trading, things are a bit easier — the data tends to be more consistent and less dominated by micro-structure noise. Still, the same principles apply. Stay small, stay simple, don’t overthink it.
+
+Simplicity wins. Think of it as tearing down a jungle and turning it into clean oak planks — structured, intentional, minimal. And above all, understand your logic. You should be able to explain what your model is doing. Nine times out of ten, the real answer is simple — it’s just about seeing it clearly.
+----------------------------------------
+[2025-11-09T08:17:28.7460000-06:00] the_biggest_rick: **Are there preferred APIs, data vendors, or data formats (e.g., CSV, JSON, SQL) that you would recommend for smooth integration during model development? In another word, how to start from scratch, any good materials or draft to start with? **
+
+Concerning computation, this can become a big topic once you start going down in timeframes or add multiple stocks. With one stock, a few parameters, and daily intervals, you likely won’t hit many computational bottlenecks. But as soon as you scale — multiple assets, lower intervals — computation becomes important.
+
+You might want to start building with SQLite or Parquet files combined with Dask. Here’s the layman’s breakdown:
+
+Parquet files: They can store lots of columns and rows efficiently. When coded properly, you can access just a single row without loading the entire dataset into memory. This makes them much faster to run than, say, a Pandas DataFrame.
+
+Dask: Enables parallel computing — essentially a lighter version of Spark. Spark, used in Databricks, is extremely powerful because it distributes the load across multiple machines, making huge datasets manageable. But for one machine, Dask is much more practical.
+
+SQLite: Another option for handling moderate-sized datasets efficiently.
+
+If you’re doing heavy grid searches, libraries like Optuna can be very useful for managing parameter optimization efficiently, and dealing with the search faster than a bruteforce gridsearch would.
+
+The key takeaway: once you’re handling more than three stocks, more than four parameters, and intervals shorter than daily, it makes sense to architect your data pipeline with these tools from the start. Treat data processing and cleaning as an integral part of the system, not an afterthought.
+----------------------------------------
+[2025-11-12T07:59:29.8010000-06:00] the_biggest_rick: student — 12:33
+Do you consider Bayesian optimisation to be better for parameter optimisation than Genetic Algorithms?
+
+rick — 13:21
+I think with a small number of parameters, Bayesian is fine — most likely the landscape is well-behaved in that case.
+When the search space isn’t too chaotic, Bayesian tends to converge quickly and efficiently.
+
+But the thing is, these models can get tricky to tune in finance because of noise and shifting distributions.
+They can easily overfit or mislead you if you don’t watch how the acquisition function behaves.
+
+rick — 13:22
+Don’t get me wrong — I’ve always had a fascination with Genetic Programming.
+I’ve caught myself thinking about doing symbolic regression on combinations of indicators more than once.
+That kind of approach could uncover relationships that aren’t obvious from manual tuning.
+Do it correctly and you could literally build something hedge-fund-worthy.
+
+The way GP can evolve solutions — it’s wild.
+It can automate what would normally take analysts months to research and engineer.
+
+student — 13:42
+Do you mean like some kind of PCA on steroids?
+
+I’ve been having issues with non-reproducible results from Bayesian optimisation.
+Probably because the parameter space has a lot of local minima, so it keeps finding slightly different optima.
+Still, I’m getting pretty solid results, which makes me think the model’s robust even with the randomness.
+
+rick — 13:49
+How many parameters are we talking?
+
+student — 13:50
+Six.
+momentum_period_l (40–200), momentum_period_s (5–40), high_period (20–150), low_period (40–250), atr_period (5–50) — around that range.
+----------------------------------------
+[2025-11-12T07:59:30.3580000-06:00] the_biggest_rick: rick — 13:50
+Curious.
+Those ranges are pretty wide — that’s probably what’s making the search surface messy and full of local traps.
+
+rick — 13:50
+Have you tried running it with n-jobs parallel and pruning underperforming runs early?
+Or forcing convergence only after the Sharpe ratio exceeds a certain threshold?
+That can stabilize the exploration-exploitation balance.
+
+Also maybe test simulated annealing — it’s often easier to deploy and less sensitive to randomness than Bayesian.
+
+student — 13:51
+Yeah, I started experimenting with GA and some annealing today.
+But GA’s painfully slow — I’ll probably spin up some AWS EC2 instances soon to get more CPU.
+
+rick — 13:52
+Yup. Makes sense.
+
+A professor I studied optimization under told me once — there’s never truly a “best” solution.
+You’re always just measuring, matching, and adapting based on what works for your data and objective.
+The landscape changes, so your optimization logic has to evolve with it.
+
+rick — 13:53
+Oh, and check out GSGP-SLIM — it’s a Genetic Programming variant that deals with bloat way better.
+That’s one of the biggest issues with GP systems, and this one keeps the complexity under control.
+----------------------------------------
+[2025-11-13T07:12:13.4910000-06:00] the_biggest_rick: **Something I'm struggling to understand is that if most actively managed funds struggle to beat the SP500, why don't they just adopt this strategy which has been proven to work?
+**
+----------------------------------------
+[2025-11-13T07:12:54.4690000-06:00] the_biggest_rick: The thing with the momentum effect, at least on a daily timeframe, is that there are so many participants — mainly because it’s such a sentiment-driven event. A lot of people have access to the same information, especially retail traders reacting to it. But that high level of participation actually creates opportunity.
+
+When you have a solid momentum indicator in place, you can still enter at a favorable moment while being early enough to catch the move. Most people FOMO in later, but if your indicator is well-calibrated — for example, if you’ve properly event-sampled your training period — your timing tends to remain consistent.
+
+The attached paper (and another I’ll include) demonstrates that this is a time-tested concept. If you can make your indicators strong enough and your exit conditions well-structured — through some intelligent use of technical tools that measure momentum as the range or difference between the mean and an autocorrelated upward move — you can capture those sentiment-driven trends effectively.
+----------------------------------------
+[2025-11-13T07:12:56.3390000-06:00] the_biggest_rick: -
+Most algorithms based on this will only have around a 50–55% win rate, which is fine. You don’t need to be perfect. The key is maintaining a high profit factor and being early enough “before the party starts.” If your backtests show low drawdowns and your risk management is sound — as I discuss in the Final Boss lecture (funny name, but it fits) — multiple momentum measures can consistently identify these strong sentiment phases.
+Of course, it’s not foolproof — a 100% win rate doesn’t exist — but that’s the point. If it were perfect, it wouldn’t work. The goal is to ride the wave with other participants. Momentum is one of the most thoroughly documented and validated financial phenomena — it’s used everywhere, including by private banks.
+
+If you try to do this on a lower timeframe, it becomes much harder. You can get “sniped” because autocorrelated moves are shorter, and stochastic noise is much higher. On the daily interval, however, you’re aligning with the main data points that drive actual decision-making — the kind of information that hits the news and shapes both institutional and retail behavior. No one’s analyzing hourly charts the day after; it’s the daily data that drives market reactions.
+
+If you can position yourself correctly — bull or bear — and manage trade frequency properly (not over-trading, just taking a set number of quality trades per year, depending on the asset), then when those big waves erupt, you’re there to ride them. And that’s where the money is made.
+----------------------------------------
+[2025-11-13T07:13:10.3700000-06:00] the_biggest_rick: https://cmtassociation.org/wp-content/uploads/2025/10/2025-DowWinner_A-Century-of-Profitable-Trends.pdf
+----------------------------------------
+[2025-11-13T07:13:22.7300000-06:00] the_biggest_rick: The reason I think most people don’t approach this — and honestly, I think that’s a shame — is because it’s really not that hard. With some technical background, you can set up the pipelines in a few days. You can even apply it to indices, which provides diversification across the underlying stocks and improves entries and exits from broader market trends.
+
+The real issue is that most people simply don’t have the technical background, don’t think critically enough, or aren’t persistent. A lot of them just quit midway. You see it everywhere — the same way people in university projects just stopped trying. That’s really the bottom line: people don’t look deeply enough.
+
+To be fair, even though this concept is well-documented in scientific literature, that doesn’t necessarily mean it’s well-understood in practice. There are plenty of things in science that are proven but still underapplied. I think momentum strategies fall into that category — well-documented, but still largely underexplored.
+
+That’s just my personal view, but the evidence supports it. There are certainly more advanced or alternative applications — probably ten others I haven’t even discovered yet — but I think people get intimidated. This approach is simple but still technical, because it sits at the intersection of finance and programming. Many prefer to jump straight into machine learning, which is far more complex and error-prone.
+That’s what I find unique about the framework I’m developing: it’s a balanced application of technical rigor and practicality — something that works without needing to overcomplicate it.
+----------------------------------------
+[2025-11-15T11:28:14.5600000-06:00] the_biggest_rick: The way I look at it is this: the sensitivity analysis is what tells you whether you’re overfitting. The test data (OS) is only there to show that the strategy actually survives real conditions.
+
+So yeah, I can tell you that a Sharpe of 1.5 is the “best,” but if you compute a rolling Sharpe you’ll see it depends heavily on external factors. None of them looked great in 2022 because the whole market was shit—nothing performed well except a perfect short. So what matters in the OS is not that the Sharpe stays identical, but that the equity curve doesn’t magically turn into some exponential line straight up with a Sharpe of 9. If that happens, you’re obviously overfit.
+
+Sensitivity analysis then checks the neighboring parameter space. If all neighboring parameters still perform reasonably well—within range—then you’re not overfit.
+
+And if the OS decays a bit (say Sharpe goes from 1.6 to 1.2), that actually means it survived, because the market is non-stationary. An average Sharpe is by definition not the Sharpe right now. Three months ago conditions were different; three months from now they’ll be different again. In machine learning they check for something like a 5% difference because they’re cross-validating on data that’s much more stationary than markets.
+
+That’s also why you add a momentum ranking on top. Momentum ensures you’re entering the assets that likely have a good Sharpe at that moment because they currently have positive sentiment. It’s a universal filter—doesn’t need to be optimized.
+-
+----------------------------------------
+[2025-11-15T11:28:16.2120000-06:00] the_biggest_rick: There are more security layers too. You’re using two algorithms and then ensembling them instead of optimizing them jointly. So even in a pessimistic scenario—say indicator A is overfit and indicator B isn’t—B can still correct A when you combine their signals under the right logical conditions (AND/OR, etc.).
+
+Now stack that into a pyramid: you have multiple algos (one, two, three, four, five), each of them ensembles consisting of one or two or three indicators. Those ensembles already correct each other. Then you have five strategies, each composed of those ensembles, also correcting each other.
+
+And when you add the momentum ranking on top—which is broad and robust—it rotates capital across all of those diversified strategies. So you end up with layer after layer of correction and diversification.
+
+That’s what robustness actually is: stacking multiple security layers so the system can’t collapse just because one component was slightly off.
+----------------------------------------
+[2025-11-15T11:28:19.4850000-06:00] the_biggest_rick: @skool  ^
+----------------------------------------
+[2025-11-21T17:45:09.2880000-06:00] the_biggest_rick: ***Hi Rick i basically just watched the your video on picking data periods and assets. I dont really grasp the exact way of how to actually pick the data periods. I understand that we can intuitively pick the period that includes meaningful corrections while roughly being in a bull market (so i have to avoid to take only the data of a period of bear market or bull market) and basically a balance is the best one. So from this i wanted to ask if there is a good range of data periods that is a good sample size in your experience for all assets you worked on so far?
+.***
+.
+----------------------------------------
+[2025-11-21T17:45:44.4520000-06:00] the_biggest_rick: The difficulty in this type of modeling comes from the fact that, ideally, you would want to cluster momentum raises, compare them, and then adjust them for non-stationarity. The same applies to volatility: you’d want to cluster it properly, but because markets shift, any cluster you create eventually needs to adapt.
+
+
+Based on live-trading track record, I can currently say that looking seven years back and then splitting it 60–40 has worked. That conclusion can also be reached intuitively—by “eye”—because those periods have gone through heavy stress tests. The range I’m using right now contains 2018, 2020, and 2022. These are extremely useful because they include strong raises with deep dips and three major “gray rhino” or “black swan” events, with 20–30% drawdowns inside them.
+
+
+Going forward, as we move into the next year and beyond, it may not need to be hard-coded. You might eventually want to use present day minus seven years and cut it there. We’ve already had several crashes since then, so the adjustment happens naturally. That’s the core premise: the lookback adapts over time while still capturing the major structural events needed to keep the model calibrated.
+The true quantitative analysis behind this is very advanced and extremely difficult to formalize. I’ve worked through the logic mentally, but fully analyzing these dynamics with clustering would be extremely challenging. 
+
+The period I’ve outlined works primarily because it has been tested and traded live. That’s why I point to those specific years—they provide excellent adjustment periods and contain the type of price behavior the model needs.
+----------------------------------------
+[2025-11-21T17:45:47.2520000-06:00] the_biggest_rick: .
+However, I cannot guarantee that by 2028, looking ten years back would still be viable. It’s likely that by then the market environment will have changed too much. Even now, if you test on something like 2016, you’ll see sharp decays. You’ll also see that even increasing the split from 60 to 70 doesn’t necessarily improve performance. In that sense, we’re still operating in a relatively “lucky” period where the price action from those years happens to fit extremely well for this methodology.
+----------------------------------------
+[2025-11-22T08:57:33.7140000-06:00] the_biggest_rick: ***About how the indicators get you out of quick drops in price, and how they mark starts of trends***
+
+The indicators measure either trend from price movement, volatility-spike movement, or volume, depending on how they're computed. Movements in these daily values that occur intraday can be translated through these indicators, which act as measures of these effects on price. 
+
+
+For example, if you have a volume indicator, it will be measuring volume spikes and moves which—if they occur—will trigger reactions in entries and exits, provided the parameters are properly searched.
+
+
+Because of these movements, and because of a gradual trickle in autocorrelation—what we call the momentum effect—large macroeconomic rises can occur. These then, if your parameters and indicators are good enough in conjunction, give you the trend-following position.
+When this exits—meaning the range tightens—you can imagine your short moving average and your longer one. When the trend is very strong, their values are far apart. But when this tightens due to quick dumps in price, the range compresses and the position closes.
+-
+----------------------------------------
+[2025-11-22T09:03:26.8660000-06:00] the_biggest_rick: ***Where to start?***
+
+Gotcha. So the machine learning—I have it in production right now. The notebooks will be published, and it’s going to be really cool, honestly. I’m taking intraday measures triggered by events like volume or dollar-amount spikes above the median, then plotting linear regressions, R²s, and a whole lot more on them, and then bringing those signals up to the daily level to strengthen swing-trading signals. Give me a week, maybe a little longer, for the first videos to be up. There’s a big introduction, too, which you’ll find very cool.
+-
+----------------------------------------
+[2025-11-22T09:03:28.1840000-06:00] the_biggest_rick: Financial machine learning is hardly centralized in education. So I think, given your background—you’re a QF student, right?—you’ll understand this much better than some of the more beginning practitioners here, because the education really isn’t centralized and doesn’t teach you this at all. I took two good books, made a big paper out of them, reviewed it, and explained my thoughts based on what I’ve seen. I used to do machine learning at the bank.
+
+For where to start, you should begin at the bootcamp. You saw the welcome video, blah blah blah—but start at the bootcamp. You’re going to be better at coding than most, so I assume you’ll pick things up faster. The bootcamp is an A-to-Z quick start: do this and make money. Flatly put, you track macroeconomic moves. There’s no alpha decay on those because it’s macro—when the whole economy moves, it’s hard to exploit that or, you know, sell you the call options.
+
+Then, once you have that done and you feel confident with one or two notebooks you’ve made on a few assets, I recommend moving to the Drivers to Price Action, or even already watching it. They’re BlackRock analyst papers, and they give a bigger insight into how price moves and how you address it with indicators purely. And then, when I get a little bit further—and maybe after you watch the Introduction to Machine Learning—you’ll really start understanding microstructure and these things more deeply.
+
+So it goes from the bootcamp (beginner, practical, to the point), to Drivers to Price Action (intermediate, theoretical, less direct but with backtesting articles), and then the ML should be up by then, if you get me.
+----------------------------------------
+[2025-11-29T11:18:10.0540000-06:00] the_biggest_rick: ***Rick, should we also run other econometric tests for our models? Like checking heteroskedasticity, linearity, normality etc.
+I mean should we also deal with them for better model selections? Speaking of model selections, should we also select our models based on AIC, BIC criteria and test overfitting with RMSE cross validation?
+They are mainly credit risk concepts but still can be useful for selection criteria I think
+***
+the smoothing of values is basically the adressal of the non-stationarity, since the N parameter lookback naturally trails a stock's prices. gridsearch then identifies the non-linear values that trail well, and those identified values smooth out the non-IID stock movements. there is no differentiation happening like in econometrics, it's literally just smoothing.
+
+normally you’d want stationarity before applying ARIMA or ML models, because both assume stationary data. credit risk is a good example of that since you usually have IID and stationary-ish data on customers, accounts, defaults, etc. in econometrics you difference first for the same reason. same thing in machine learning, stationarity is key.
+
+but in our case we’re not enforcing stationarity at all, we’re only smoothing, so the values trail and the volatility gets compressed. when you move to daily intervals the compression cuts down the stochasticity enough that you can still decide the regime with technical indicators, so the usual stationarity step sort of falls away.
+
+the tradeoff though is that daily intervals give you sparsity. the data becomes so sparse and still non-stationary that your sample size is tiny, and cross validation ends up performing badly because it aggregates everything too much and loses signal.
+----------------------------------------
+[2025-12-01T07:55:54.2730000-06:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - questions-i-answered-before [1429045618382209064].csv_Files\68794C41-3848-4E3C-BFF3-B918C65B862E-b65f545590b2814e.jpeg
+----------------------------------------
+[2025-12-14T08:43:38.1010000-06:00] the_biggest_rick: An important lesson from looking at the momentum ranking and the regime classification through the ensembles is that a lower sharp can be completely fine. A lot of it comes down to the stock’s own movement profile. When the regime flips to one and you’re buying into high cross-sectional momentum, you don’t actually need every asset to be a perfectly trending monster. Some stocks just aren’t built that way.
+
+Take Meta for example. With the indicators we usually talk about the classic trend ones Meta isn’t a strong trender. It has a lot of mean reversion in its behavior, but its drawdowns stay extremely low. That matters. I saw this more clearly when I was doing Monte Carlo testing for FTMO and modeled NVIDIA and Tesla alongside it.
+
+Tesla and NVIDIA had a much higher sharp than Meta. But their volatility was also way higher. Meta had a lower sharp sometimes even seventy percent lower but it also had much lower drawdowns and much lower volatility. Meanwhile the returns on NVIDIA and Tesla were so absurdly high that the sharp looked amazing, but when I put them into a portfolio it never played out as some big improvement. The volatility penalty was still massive.
+
+That leads to the bigger point. Sometimes it’s totally fine and even beneficial to model in those slightly less efficient assets because your rotational system through the cross-sectional momentum measures is still going to pull you into them when it matters. And on the flip side a historically explosive asset with insane past returns is way less likely to replicate that forever. Its sharp ends up kind of inflated just because the asset became so popular and that same argument applies to a lot of crypto as well.
+
+So the takeaway is that efficiency on paper doesn’t always translate into a stronger portfolio. Regime-aware momentum rotation tends to smooth that out anyway while letting you avoid getting trapped chasing the most volatile names just because their sharp looked amazing in hindsight.
+----------------------------------------
+[2025-12-20T10:03:09.1220000-06:00] the_biggest_rick: ***Sup brother wanted to ask a question about an approach I was taught in my statistics class.
+
+We were doing a very simple trading system calculating the MAs of prices and then doing the risk on risk off approach to compare to Buy and Hold
+
+However we added a level of complexity by determining if the difference between the MA is statistically significant with a T test for a given alpha
+
+and to find that we did a F test for the variances of the 2 MAs to determine whether to used the Welch Var or just the Pooled Variance for the t test
+
+I was wondering if that is a better way to generalize and to not pick up much noise
+
+Or if when doing the grid search optimization you can still pick up noise despite the t test***
+
+--
+----------------------------------------
+[2025-12-20T10:03:21.8350000-06:00] the_biggest_rick: well the MA's and the way i propose it is more like budging a slow ass 1995 toyota into driving mode, you know its lasted a long time, wont be the fastest on the road but kinda still keeps up because its a bloody toyota. It's gonna last you another 50.000 but wont be the first finishing the lap around the circuit. But you won't need to replace the tires/components as much because its just not wearing down his whatevers that much.
+
+The assets i propose which are tech and crypto move so fast so sentimentally strong causing the autocorrelation with such strong momentum that they do the work themselves, the only you do is creating the least shit lookback to allow the momentum effect do its own job for you. The macro economy will surge eventually and if your MA is good enough there's going to be a spike up eventually.
+
+MA's or 2 or 3 or adding effective periods from KAMA's are not too likely to pass all of the purity tests for applied statistics or most STEM subjects. They're price-data transformations with rolling windows applied with some datascience on top to filter out bad regimes but the playing field is really not much more than places in which fundamentalists/traditional financials have been making returns for years. 
+
+By ranking, by regime classifying on the low low low interval of daily with the method suggested you are merely waiting for an asset + market to make a move while you are there with some simple algorithm waiting for the economy to explode up or down for good or bad.
+----------------------------------------
+[2025-12-20T10:03:23.1900000-06:00] the_biggest_rick: By scanning  enough assets and measuring enough momentum with enough speed to move into positions its just waiting for a trend to happen.
+
+the anomalies and contradictions of CAPM/Efficient market hypothesis were defined and became prominent in 1960s. Alot of recent science hasnt had this much academic history but finance has, its the old boy on the marketblock just still prospering and making some %'s
+
+ergo, the anomalies are pattern captured in much more literature than the firms do. 
+Which, because it has been so consistent, by applying some more modern methods which have not been as captured you gain a strong edge while waiting for sentiment to simply do its working and momentum strength to appear and make a trend emergent. 
+
+alot of the current industry methods are definetly more refined but they operate with very different goals and in QF there's many ways to rome, its a combo of multiple sciences after all.
+----------------------------------------
+[2025-12-25T11:13:26.0790000-06:00] the_biggest_rick: ***Also, I have been thinking about moving into a lower timeframe from 1D to 4H or 2H or even 1H and build strategies for that, I wanted to ask from your experience what is the difference as far as the strategy itself, do you still do trend following? Do you change your strategy? Do you look at other metrics?***
+----------------------------------------
+[2025-12-25T11:13:34.7980000-06:00] the_biggest_rick: At the four-hour and one-hour intervals, the markets are super mean-reverting. Sure, there are trends, quote-unquote, but they’re not on the same scale as a daily trend. Daily trends come from macro stuff, while what you see on a four-hour chart is really intraday trends. It’s a different type of trend-following. It’s more like a mean-reverting kind of trend-following—you know, the green bar on a daily chart that shows up as a trend on the hourly timeframe.
+
+What you can do is make a portfolio of these. Ideally, you’d have the daily trend followers—the ones holding for maybe 40 days—and then have some sort of regime classification that tells you what the portfolio’s state is. You could use something like a Hurst exponent or a Markov model to figure out if the daily frequency is in an uptrend or mean-reverting. You could tune this, though it’s a bit far-fetched. I’d say finish the main portfolio first, but once you have the assets and you’re happy with the result, you can boost the portfolio’s power and robustness by adding these extra decision layers. Both Markov and Hurst can do this.
+-
+----------------------------------------
+[2025-12-25T11:13:43.0290000-06:00] the_biggest_rick: There are multiple cases. You can have a mean-reverting state, a downtrend state, and an uptrend state. Each state could have a different portfolio. In a downtrend, you could build short ensembles optimized for shorting. In sideways markets, maybe use Hurst to confirm signals, or weigh more toward intraday bots—four-hour, one-hour, maybe even minute-level strategies. These would perform much better than daily trend-following strategies, which are flat for half the year. Trend followers on the daily interval have serious merit, but on shorter timeframes, these intraday systems can stay active when daily strategies are dormant.
+
+By combining these layers—daily trend followers, intraday bots, regime classification—you create a portfolio that adapts to market conditions. You don’t rely on a single strategy; instead, the portfolio becomes robust through multiple decision layers that complement each other.
+----------------------------------------
+[2025-12-25T11:19:43.9630000-06:00] the_biggest_rick: ***this way it's more dynamic and may be able to deal better with surviorship bias as some companies got bankrupt or whatever and that can affect the performance of the startegy***
+
+See, what you’re saying is completely true. However, that’s the thing: if you look at it—and I’ve tested this in a sense—you have, say, the FTMO swing trading selection, which is largely made up of really bad companies. They’re awful. So yes, you’re right, there’s a survivorship bias because these companies survived.
+
+At the same time, if you want to model trend-following in the way I’m thinking, using momentum effects, you actually need data that has momentum. You see how these two things interact? You can’t just exclude one; they’re not mutually exclusive. What happens is that this is somewhat handled by the momentum ranking: dead companies won’t have momentum, and surviving companies will naturally rank higher. So yes, there is a survivorship bias—they are totally guilty of it—but at the same time, you need assets that actually move to model momentum.
+
+Think about something like PayPal, which barely moves, or Coca-Cola, which is slow and steady. Sure, they move, but modeling them would require an intraday bot, which is harder work. Ideally, you treat your asset universe like the S&P 500: the index updates its composition every year, selecting the largest, most active companies. The S&P inherently has a survivorship bias because it picks the companies that succeeded.
+
+By weighing by market cap, it’s effectively giving more weight to companies that have risen the most. In a sense, that’s already a momentum weighting; otherwise, all 500 companies would be equally weighted. The ones that grew the most have more money, more momentum, and are the most efficient. Essentially, everything has a survivorship bias. Honestly, I’m laughing at how crazy that is when you lay it all out.
+----------------------------------------
+[2025-12-26T11:00:19.7910000-06:00] the_biggest_rick: ***So HFT isn't really worth it for retail?***
+
+the industry operates there because of the small bets they can take to up the quantity to still be able to move alot of capital through the sheer amount of trades and it not disrupting the general market
+they can't deploy massive scale capital on macro level it would move the market
+they need to position into positions for months
+but they also need to report positions
+they're restricted, not smarter neccesarily
+----------------------------------------
+[2026-01-25T09:53:00.2860000-06:00] the_biggest_rick: There are two points I want to clarify, and this should be very clear. Otherwise, you probably need to rewatch some of the videos.
+
+First, a Sharpe ratio of 1 is extremely good. You have to realize that, historically speaking, the S&P 500, which is what mutual funds, Roth IRAs, and similar long-term investment vehicles track, has a Sharpe ratio of about 0.85. If millions of people use this as their main investment vehicle, and even Warren Buffett recommends it, then a Sharpe ratio of 1 is objectively very strong. This is especially true when considering a 60/40 dataset split.
+
+This level of performance is extremely significant and will pass every statistical test. It is very good and very solid. You should not mistrust it. I made a video explaining this in more detail if you want to understand it better, but the results are robust and reliable. Do not be afraid to use this.
+
+Second, trend following is about riding macro waves. Open TradingView and look at the S&P 500 on the daily timeframe. Any large move, surge, or sustained wave is a trend. That is what you want to follow. This is why you need a certain number of trades and why there may only be two or three trades per year. You need to stay in these trades for a long time.
+
+That is what we are doing, and that is what I show in the video. You may want to rewatch the first YouTube video, the introduction to trend following, to understand this better. That is the core idea.
+----------------------------------------
+[2026-01-26T07:37:21.1270000-06:00] the_biggest_rick: ABOUT POLYMARKETS
+
+The exact turn point or power of certain static signals, like technical indicators, comes from what actually carries predictive power. For example, in general, a price can mean revert at a certain Z-score of a given value. In general, the strongest asset with the most momentum has the strongest autocorrelated pattern, and this is the most likely to play out.
+
+But when you start looking at something like Polymarket, it is binary: up or down for the next time period. This has no real autocorrelated pattern. It does not really have a certain Z-score to turn on. I think for Polymarket, the real approach is actually machine learning or statistical arbitrage. Arbitrage between markets is actually very big.
+
+I know everyone is very interested in Polymarkets, and I know you see the big numbers, but it is tricky. Machine learning is not really the easiest way to go, and there is a lot less flexibility. The fact that you have to trade at set intervals already means you cannot truly mean revert, because mean reversion could happen at any point in between.
+
+You can do this over multiple time intervals and apply more tools to price and bid behavior, but the contracts on Polymarkets can change very quickly. I think ML might be the only real approach here, along with statistical arbitrage.
+
+@everyone
+----------------------------------------
+[2026-01-26T09:08:06.0850000-06:00] the_biggest_rick: ***ABOUT SENSITVITY ANALYSIS***
+
+The most important thing about sensitivity analysis is that you’re comparing five different tests across five different parameter combinations — maybe after something like a Boruta pass — and then selecting the one with the tightest range. Smaller is better.
+
+The biggest deviations usually show up in the trade count. If trade count suddenly starts deviating by more than, say, five trades, you immediately know something is wrong with the timing at least. That’s a red flag.
+
+Sharpe is an aggregate — it’s a composition of multiple trades and multiple metrics stacked on top of each other. Because of that, it’s much more likely to deviate even if just two small inputs move slightly. So it’s naturally going to look different. The Sharpe ratio isn’t really the best standalone metric to rely on here.
+
+But if, during sensitivity analysis, the number of trades starts deviating heavily, that’s a clear sign you’re overfitting to a specific curve pattern, which is obviously not favorable.
+
+The whole point is to make sure there’s a range — a safety buffer — and that performance isn’t overly sensitive to one single parameter combination.
+----------------------------------------
+[2026-01-26T09:17:31.7360000-06:00] the_biggest_rick: ***ABOUT INCREASING YOUR PORTFOLIO TO 30 ASSETS***
+
+Traditional finance always says you need around 30 stocks to achieve maximum diversification. There’s a chart that shows this pretty clearly. Once you start layering algorithms on top of those assets, correlations drop even further. At that point, you’re achieving a level of diversification that traditional financials will realistically never see.
+
+That said, what some fundamental analysts, discretionary traders, or traditional managers do have over us — as systematics — is selection by merit. They’ll pick a single asset based on perceived value, fundamentals, or a business case.
+
+By diversifying more broadly, though, you’re not just mitigating risk. You’re adding more logic, more signals, and more assets to be ranked. At the same time, you’re increasing your probability of catching something like the next Nvidia-style move — a 600% run.
+
+If you diversify across WisdomTree and VanEck ETFs, for example, you’re gaining exposure to multiple technology sectors while still positioning yourself to catch the next semiconductor run, the next theme, the next breakout. WisdomTree has a cybersecurity ETF. VanEck has a biotech ETF. The opportunity set expands.
+
+Because you’re ranking by momentum, if an autocorrelative pattern continues and emerges in one of these sectors — and you already have it modeled — the upside potential increases while remaining extremely diversified.
+
+Look at the chart below.
+  ATTACHMENTS: rick's skool - skool - questions-i-answered-before [1429045618382209064].csv_Files\cover-2-2493eead11b16339.png
+----------------------------------------
+[2026-03-04T09:49:06.0910000-06:00] the_biggest_rick: **On Parameterization, Momentum, and the Gap Between Market Sciences**
+
+There is a large discrepancy in approach in terms of how severely you can parameterize — and therefore optimize — a given indicator or measure.
+
+In the bootcamp, I advise working with technical indicators because they can give you a smoothed value over a very long time period. That smoothed value is effectively an encoding of many months, down to maybe a few weeks in the shortest cases, right? Think of a fast EMA, for example. You are compressing a lot of price history into a single evolving number.
+
+In machine learning, patterns are sought and optimized. In econophysics, something like the Hurst exponent is largely left unoptimized because econophysicists don’t believe in that type of fitting. Yet it is a very deep mathematical reading of the market — basically measuring auto-correlation to detect whether the market is in a trending state or not.
+----------------------------------------
+[2026-03-04T09:49:19.5520000-06:00] the_biggest_rick: All of these tools, at least in the context of trend following, pertain to the same objective. The workings differ:
+    •    A machine learning algorithm gives you an estimated value based on learned patterns.
+    •    A Hurst exponent gives you an auto-correlative state.
+    •    A technical indicator is, by all means, basic arithmetic and theoretically shouldn’t even work.
+
+But it does work — because of momentum effects and the range measures you can take between EMA lines, MACD convergences, or the distance between price and a moving average. If you read the mandatory literature, momentum measures are quite strong.
+
+These are just observations I’ve taken.
+----------------------------------------
+[2026-03-04T09:49:32.4530000-06:00] the_biggest_rick: Because it’s basic arithmetic, people disavow technical indicators as something that shouldn’t carry signal. By definition and in practice, they are not predictive. However, the way price bounces around them — and if the asset is efficient enough and volatile enough — the price itself dancing around these smoothings can give you a usable signal.
+
+Now here’s the crazy part.
+
+In machine learning, optimization is assumed depending on the data. In econophysics, it isn’t. They are all used for the same application, but most public-facing tools — like investing.com or Seeking Alpha — use generic metrics. The golden cross (50 and 200 MA), RSI 14, and similar defaults. These are consistent, yes, because they look back over multiple months and can give long-term trend information.
+----------------------------------------
+[2026-03-04T09:49:44.4880000-06:00] the_biggest_rick: But these are also basically dead signals. This is where a lot of the bad reputation of technical indicators comes from.
+
+The key touch — and why the trend-following bootcamp template works — is that it takes machine learning principles like grid searching and optimization and applies them to indicators. Basic arithmetic with a universal parameter works okay if you read the papers. If you optimize it, it can turn into a sharp above one. Then you add portfolio management principles (like RSI rotation), and suddenly you’re turning coals into diamonds.
+
+The research gap — and the debate between these market sciences — is still there.
+----------------------------------------
+[2026-03-04T09:50:00.6290000-06:00] the_biggest_rick: What’s interesting is that even when universal lookbacks are used (EMA 50/200, RSI 14), which dominate large investing websites, they resemble the structure of some of the strongest momentum research. If you look at triple EMA systems, they mirror the work of Jegadeesh and Titman. They use short-, medium-, and long-term moving averages — generic metrics — and yet their work is among the most cited and strongest in the momentum literature.
+
+Now take that framework and lightly optimize it with machine learning — without going into the danger zone of triple-ML models like gradient boosters or neural networks. You are still capturing the encoding of smoothed periods, but now fit to an asset type while retaining the momentum signal. You are borrowing influence from both domains.
+
+Momentum is also used in private banking — including the one I worked at — but they use universal metrics. So the question becomes: how much more is there left to unfold?
+
+It’s not that deep, but it’s also not finished. I know some of how the industry does it. What I find compelling is that this approach is pragmatic, teachable to most skill levels, and structurally interesting. It can also be extended orthogonally into other frameworks.
+
+I’ve already built templates for it. I want to explore it more. And honestly, this is where my mind goes most of the time.
+----------------------------------------
+[2026-03-04T09:50:15.7080000-06:00] the_biggest_rick: shower thoughts, some perspective @everyone
+----------------------------------------
+[2026-03-19T07:59:21.2910000-05:00] the_biggest_rick: **About diversifying over sectors and the 'hidden' regimes no one talks about**
+
+and the most general theory is
+
+HOW TO EXPONENTIATE THAT AT THE RIGHT MOMENTS
+
+whether that be knowing that there's ratios like yen/usd levels at 160, or generic absolute momentum measures.
+
+build a system around highlighting those and you're going to be riding SOME form of wave.
+
+diversify over them and your risk is hedged.
+
+thats how you can largely not mind mean reversion regimes and or.
+
+but there are many regimes ofcourse of many sorts, currently we can argue we are mean reverting on tech, on a downtrend on crypto.
+
+but in an uptrend for energies. but because the market is maintaining very little correlation generally currently. it implies we are also in a stock-picking regime of sorts.
+
+if the general correlation to SPY for all asset classes is high times are easy and you can hold literally anything.  but currently all markets are left and right.
+﻿
+@everyone
+----------------------------------------
+[2026-03-19T08:01:08.2710000-05:00] the_biggest_rick: **rough example**
+
+SPY correlation > 0.7 = concentration regime. Just hold QQQ, SPY, or broad diversified. Stop picking
+
+SPY correlation 0.3–0.6 = current state. This is where you hunt for relative alpha. Scale winners, stop losers fast.
+
+SPY correlation < 0 or approaching it = true hedge regime. Short losers aggressively, these moves are uncorrelated so sizing doesn't blow up your portfolio.
+----------------------------------------
+[2026-03-22T09:04:48.7840000-05:00] the_biggest_rick: ***Q:
+Should I rely on a single indicator’s result when building a strategy, and should I focus on maximizing returns?***
+
+**A:**
+No, you should never rely on a single indicator in isolation. One indicator is not robust enough on its own, and robustness is far more important than any individual result it produces. Instead, you should be combining multiple signals into an ensemble so that your decision-making process is more stable and reliable.
+
+You also need to be careful about what you are optimizing for. Looking at returns alone is not the right approach. Past returns are not indicative of future performance, so they should not be your focus. What actually matters is improving risk-adjusted performance by increasing the Sharpe ratio while reducing volatility and drawdowns. Those are the metrics that define a stronger strategy.
+
+Real-world examples make this clear. A stock like Alibaba could have shown strong results up to a certain point and then declined significantly. If you were relying on a single indicator or past performance, you could have been misled. The same applies to war-related stocks, which surged due to external events. Before those events, an ensemble driven by momentum and price action might have generated a buy signal simply because price was increasing. When the event occurred, you would already be positioned.
+
+This is why the Sharpe ratio often looks better only after evaluating the full portfolio. The improvement comes from rotating into assets that are actually showing momentum. You are not predicting events directly, but your system is reacting to changing conditions and reallocating capital accordingly.
+
+@here
+----------------------------------------
+[2026-03-22T09:04:52.8710000-05:00] the_biggest_rick: To make your analysis realistic, you should focus on relevant stress testing. This includes testing scenarios like a 2008-style drop, looking at 2000, and running Monte Carlo simulations to evaluate whether the strategy would recover to break-even over a three to four year period. That gives you a much clearer understanding of how the strategy behaves under pressure.
+
+The main objective is not maximizing raw returns, but improving the Sharpe ratio and lowering volatility. For example, the S&P 500 may have a Sharpe ratio around 0.7, but it comes with deep drawdowns and no entry or exit logic. The moment you apply any indicator or algorithm and achieve even the same Sharpe ratio, you are already adding value because you are timing the market. If you improve it, then you are timing the market successfully.
+
+This allows you to manage capital dynamically. Instead of a static buy-and-hold position, you now have entry and exit mechanisms. You can move out of positions during unfavorable conditions and reallocate into assets that are trending. Using something like RSI rotation enables you to shift capital into stronger assets while avoiding weaker ones.
+
+In contrast, a buy-and-hold approach locks you into a single decision. Once you move to a dynamic framework, you are no longer constrained in that way. You are actively managing capital, responding to trends, and improving both risk control and opportunity capture.
+
+@here
+----------------------------------------
+[2026-04-08T17:56:18.9910000-05:00] the_biggest_rick: **QUESTION:**
+
+About XLE not performing very well.
+
+**ANSWER:**
+
+Here you can see circled under, I put a gray line at RSI value 55. 
+
+The lookback on the RSI is 90. If the trends are long enough, the RSI would have filtered out all these MRs. This one concerns the energy sector. You know that the energy sector is not like tech. The MA here is a single one. 
+
+This will catch a trend, but it's not going to oscillate much like a double moving average crossover rule because the trends are not consistent. 
+
+That's why you need a single line here, but the RSI, if you had it in rotation, would have kept it down and would have filtered all the bad entries out, while the MA would have gone crossed and the trend would have been entered. I would advise a single MA, EMA, KAMA, or ALMA.
+----------------------------------------
+[2026-04-08T17:56:27.8200000-05:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - questions-i-answered-before [1429045618382209064].csv_Files\image-8ef2fb8a155b2070.png
+----------------------------------------
+[2026-04-08T17:56:35.1030000-05:00] the_biggest_rick: (just a very quick example btw)
+XLE does not have consistent trends. It's sharp, is always going to look worse with trend indicators. However, that's not the point. RSI rotation will always filter this out, as you can see here. 
+
+As long as other assets have better trends, the RSI still needs to confirm that it's worthy of being the top ranked asset. Even a single MA here can do work. This one is now currently trending because of the war, otherwise it would have simply filtered out and been in oblivion and not in your top end ranks.
+-
+-
+-
+
+**Question:**
+How can leveraging extremely low volatility and low drawdowns, as modeled in QQQ, help ensure better future returns, and why is controlling volatility through exits more reliable than trying to control future returns directly? 
+
+**Answer:**
+
+In this case, dilution is still very key. If you look at how you can model QQQ, you can get the volatility extremely low. This is the casino factor that I've tried to reference. Get that volatility so low so that you can now leverage it.
+
+QQQ ensemble usually = 10-12% MDD
+
+Thats controlled returns if you leverage it.
+
+This is the only thing that's going to guarantee you future returns. Whatever the risk tolerance is, leveraging extremely low volatility and low drawdowns will always be better because the logic imprinted that keeps volatility low is your exits. Future return, however, you cannot control this. 
+﻿
+----------------------------------------
+[2026-04-11T06:43:59.6180000-05:00] the_biggest_rick: ***QUESTION***
+
+Hey Rick,
+Over the past month (March) and into early April, trend following hasn’t been performing well. Based on my paper trading results, PnL for March was -4.2%, and I’m already down -1.2% this month.
+
+I think the main reason is the recent market volatility. It’s been hard to find strong assets in our universe after applying the ranking, momentum, and RSI filters. On the bright side, the losses haven’t been too large, risk management seems to be working well. The strategy is holding more cash as a hedge when everything gets volatile.
+
+Just wanted to check—do you think it’s normal for trend-following strategies to struggle in these conditions, or am I just being biased and trying to rationalize the poor performance?
+----------------------------------------
+[2026-04-11T06:44:23.9700000-05:00] the_biggest_rick: ***ANSWER***
+----------------------------------------
+[2026-04-11T06:44:27.7810000-05:00] the_biggest_rick: Okay, so right now we're in an MR regime, but zoom out, right? It's the age-old saying, when you are in doubt, zoom out, blah, blah, blah. Last year, the market was mostly up. We had a regime that lasted for nearly the whole year. 
+
+Right now, we are in MR, but this is also because of the heavy world tension, as you've obviously noticed if you've turned on the news even for two minutes, right? Energies, however, are going up significantly. That's why I made the last video about power law, about the diversification, etc. 
+
+So you would have to have some less than optimal-looking ensembles, likely with a single line MA or something of the sort that isn't very limiting, right? The problem with a triple mom on an asset that doesn't trend is that it's going to be too restrictive. So you need to have as little parameters on the indicators as possible. It will actually allow it to move. I've posted this a bunch of times, but I'm going to post it again just for you.
+
+200MA + FILTER RSI AT VALUE 55
+----------------------------------------
+[2026-04-11T06:44:37.5170000-05:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - questions-i-answered-before [1429045618382209064].csv_Files\image-7125e3448cd6ee3c.png
+----------------------------------------
+[2026-04-11T06:44:45.6450000-05:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - questions-i-answered-before [1429045618382209064].csv_Files\image-06fbcb13a50c776a.png
+----------------------------------------
+[2026-04-11T06:45:01.6530000-05:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - questions-i-answered-before [1429045618382209064].csv_Files\ciclos_de_bull_e_bear_markets_491380984687-d543e73329a757f4.png
+----------------------------------------
+[2026-04-11T06:45:22.1110000-05:00] the_biggest_rick: READ, IMPORTANT TO UNDERSTAND THE CURRENT REGIME:
+
+@everyone
+----------------------------------------
+[2026-04-11T06:46:53.5960000-05:00] the_biggest_rick: WATCH, ON MY YOUTUBE & SKOOL
+
+https://www.youtube.com/watch?v=C-AqMeiP2wc&t=451s
+
+https://www.skool.com/quant-rick/classroom/e25f2f55?md=b0bf1551ff7944b998022756984979c7
+----------------------------------------
+[2026-04-12T09:44:09.4960000-05:00] the_biggest_rick: ***About passing faster with less passrate***
+
+Given that it's a total 50-50 and 10% is theoretically not hard to gain, at least temporarily, like you can shoot up 10 because of volatility and go right back down, right? If you were to kind of moonshot it, you could pass very fast if you close it at that exact percentage, of course. In a real trading environment, I would never advise this because obviously you need long-term compounding, but to pass an account, you don't need to compound over time.
+
+ I would say when you pass, it turns entirely into normal investing and or swing trading because then you actually want consistent gains, you know, good runs, et cetera. But you can moonshot it. You could literally open two accounts and long and short them, for example. You could even mimic an iron condor with the right stop loss and take profit levels, if you will. The easiest ways to pass are an intraday bot, you make it, and you model in no slip. Prop firms have no slip. 
+
+This is one of the easiest ways to pass, but the same principle applies for switching to a normal strategy after. But for passing, this works. You can also measure momentum of the last month and take positions for that week only. So you make a model only for that. I have a video about this in the lectures with alternative portfolio ideas where I made a very low risk, also lower return strategy, but because of the risk, you could take a leveraged position and kind of do it like that, right?
+----------------------------------------
+[2026-04-12T09:44:11.2100000-05:00] the_biggest_rick: Like you get a higher positive win streak (more green days so more wins in a sense), which is what you kind of want if you want to moonshot it, right? You just need to be in that position even temporarily and this can help you. But again, you would have to switch after. So it's do something like that, which is, I believe, similar to what Zenji did. And you can do a no slip intraday bot. 
+
+You can still trade that on a swing account, where after I would still recommend you to use the regular bootcamp system for consistent swing trading so that you can get gains over the whole year and you're not trying to rely on that one tiny factor that is kind of a little cheat you can do. There's also, of course, simply waiting. I'm going the long route because I don't really have time to model all of those different things, but there are definitely some tricks.
+----------------------------------------
+[2026-04-24T09:04:00.4120000-05:00] the_biggest_rick: Q: When using a rotation strategy with top_N, why does increasing the number of assets held keep improving performance metrics?
+
+A: As you increase top_N toward ~50% of all assets, most metrics peak. Beyond that, gains become marginal — you might trade slightly higher CAGR for slightly lower drawdown (~±2%), which is just normal diversification at work.
+
+Q: Shouldn’t holding fewer, highest-RSI assets (e.g. top 5) give better returns since they have the strongest momentum signal?
+
+A: Intuitively yes, but in practice no. RSI is actually a reversal indicator at its extremes — a very high RSI value doesn’t guarantee continuation, it can just as easily mean a faster drop incoming. It’s not definitively predictive of further upside.
+
+Q: Does asset selection affect how top_N behaves?
+
+A: Yes. If your universe includes granular subsectors, a higher top_N can and should naturally allocate to the best risers within those. The relationship between concentration and performance is universe-dependent.
+
+Q: What’s the risk of concentrating in high-RSI assets specifically?
+
+A: High RSI assets tend to be the most overbought. They carry more downside volatility risk — especially in downtrends — similar to leverage effects over the long run. A higher value can simply drop faster.​​​​​​​​​​​​​​​​
+----------------------------------------
+[2026-05-17T13:30:07.3060000-05:00] the_biggest_rick: A leveraged ETF like TQQQ resets every day. That daily reset means if the market chops sideways — up 3%, down 3%, up 3%, down 3% — the LETF bleeds money even though the underlying went nowhere. That's volatility decay. The bumpier the ride, the more it bleeds, regardless of direction.
+
+GARCH is a model that tries to predict how bumpy tomorrow will be based on how bumpy recent days were. That part is fine.
+The problem is what GARCH does with that bumpiness number. It assumes "bumpy" only tells you about risk — how wide the range of outcomes is. It does not know that on an LETF, bumpy also mechanically eats your return. The bumpiness is both a risk signal and a return signal at the same time, and GARCH can only see it as one thing.
+
+So when you feed GARCH's vol estimate into a position-sizing rule, you're getting half the picture. The model says "vol is high, size down for safety" — but it's missing "vol is high, and by the way you're also losing money to decay even if you're right about direction." You think you're managing risk; you're actually ignoring a return drag that scales with the square of the volatility you just measured.
+
+The fix is what you'd expect: model the volatility on the underlying (QQQ), then separately subtract the known decay penalty for the LETF. Two clean numbers instead of one muddy one.
+----------------------------------------
+[2026-07-18T07:48:30.4560000-05:00] the_biggest_rick: Regarding TLT not performing in the carver system:
+
+See, it's logical that it wouldn't perform on a treasury, for example, because it's based on volatility sizing, basically meaning that the reaction of the allocation engine that Carver has needs to actually, you know, move, literally, in convexity, in a convinced manner upward or downward, which means that when you use the price history, the way it loops back, right, because it takes a history of five to ten years, and then, you know, it attenuates the volatility to this, right, and already, obviously, also to other ones.
+
+A treasury, you know, it pays out yield. This is inherent. A TLT would not perform in this system in any case, because it would be much better served having like a beta rotation, where if TLT, if above SPY, meaning they're below T-bills, then you would just simply hold SPY because, you know, they're actually returning more than, you know, the TLT, the risk-free asset would do.
+
+@everyone
+----------------------------------------
+[2026-07-18T07:48:34.2870000-05:00] the_biggest_rick: And the same would be for XLU. This would be better done with a straight breadth measure than with this trend system, because with this trend system, you want uncorrelated trends so that the price movements that can then actually be attenuated for through the volatility mechanism can actually be read, right? If there's very little movement, then those expansions and forecasts are inherently different.
+
+The correlation, you know, it will basically try to de-correlate things that are already not uncorrelated because literally the forecast will always be tinier, right? So it's going to have kind of a wrong feedback loop there. If you want to make this work, you have to use, basically, assets that swing a lot, you know, like tech stocks, stocks in general.
+
+They move more, they're being held, they have inherent fundamental-based rallies up, mean-reverting periods, and in those rallies, then there's an actual forecast score that can be compared, while TLT will just be returning whatever its yield is consistently over that time.
+
+It's a safe haven asset, not a trending asset, right? It's not being bought based on conviction of a fundamental case, like you would buy Apple or Nvidia, for example. So, because of the inherent lack of these numbers, it's not going to perform, right? So you need to make a selection of Dow Jones, Nasdaq, gold. You can do a bucket of only stocks, you can do this with futures, you can do this with a bucket of cryptos, you know?
+
+@everyone
+----------------------------------------
+[2026-07-20T07:42:45.8510000-05:00] the_biggest_rick: *about industrial change and shifts of focus of demand in the economy*
+
+Okay, so obviously this is a very historical result, and it also wasn’t tested much beyond that period. The world changes, the market structure changes, and the asset universe changes. Unless a variable is directly tied to price itself—like a moving average or another pure price-derived measure—you shouldn’t expect it to keep working perfectly forever.
+
+The main point is that fundamentals do change.
+
+Based on my own analysis, I think the technology landscape changed massively after 2010. If you think about it logically, we went from flip phones and relatively simple consumer tech to:
+
+smartphones becoming dominant,
+
+cloud computing,
+neural networks,
+the explosion of AI research,
+data-center infrastructure,
+semiconductor dependence,
+EV's, spaceX
+
+and now things like quantum computing attracting significant investment.
+
+At the same time, the major indices became far more concentrated in technology. If you look at the S&P 500 after 2010, tech gradually became the dominant driver of index performance. You could argue that a very large share of economic growth and market-cap growth came from technology-related companies.
+
+That creates a problem for broad index models. The sector labels—technology, industrials, retail, utilities, etc.—are often too broad and not very precise. Many companies operate across multiple themes, so the classification can become somewhat arbitrary. That’s why I usually prefer working with subsector ETFs rather than only the headline index.
+
+A useful test would be to keep the same model, but change the benchmark:
+
+use SOXX instead of QQQ, or
+
+use QQQ instead of SPY,
+
+and see how the backtest changes. That would tell you whether the edge is really coming from the model itself, or whether it is mostly capturing the structural dominance of the semiconductor and technology sectors during that period.
+
+I’d treat that as the first alternative worth testing.
+
+@everyone
+----------------------------------------
+[2026-07-20T07:45:47.4880000-05:00] the_biggest_rick: We’ve gone through the Agricultural Revolution, the Industrial Revolution, and multiple technological revolutions. The economy doesn’t stay static—it shifts toward whatever sector becomes the primary driver of growth.
+
+That’s why something like XLU relative to SPY can still behave in a fairly consistent way. Utilities remain a defensive sector, and the signal can continue to show defensive strength because the underlying economic role of utilities hasn’t fundamentally changed.
+
+The issue is different when the market experiences an extreme concentration into a single sector. If technology becomes the dominant driver of earnings growth, productivity growth, and market-cap expansion, then a model that has relatively low exposure to that sector will naturally start to lag.
+
+In this specific case, the growth has been astronomical. The index became increasingly concentrated in large-cap technology and semiconductor-related companies. So if your allocation to those expansionary assets wasn’t large enough, the backtest will, by definition, look worse during that regime.
+
+That doesn’t automatically mean the model is broken. It may simply mean that the model was designed in a period when market leadership was more diversified, whereas the post-2010 environment rewarded a much heavier allocation to technology than historical averages would have suggested.
+
+So the key question is not “Does the model still work?” but rather “Is the model adapting to the current market regime and concentration structure?” That’s why testing SOXX vs. QQQ or QQQ vs. SPY with the same framework is useful—it helps isolate whether the underperformance comes from the signal itself or from insufficient exposure to the sector that dominated the regime.
+
+@everyone
+----------------------------------------
+[2026-07-20T07:47:19.3870000-05:00] the_biggest_rick: The algorithm is purely backward-looking. Our history, our research, and our backtests are all based on data that has already happened. That’s important to keep in mind.
+
+Also realize that the financial product landscape itself is changing. Today we have many more ETF products than were available in the early 2000s or even before 2018:
+
+space and aerospace ETFs,
+
+photonics ETFs,
+
+semiconductor and AI infrastructure ETFs,
+
+quantum-computing-related ETFs,
+
+and other highly specialized thematic products.
+
+A lot of these products were launched after 2018–2020, so they simply did not exist during a large part of the historical sample. Logically, that means the opportunity set available to investors is changing over time as well.
+
+So when you run a historical backtest, you are not only testing a strategy on old market behavior—you are also testing it on an older product universe. The strategy could not allocate to assets that hadn’t been created yet, even if those assets later became major beneficiaries of new technological trends.
+
+This ties directly into the idea of non-stationary data. Markets are not generated by a fixed process. We continuously receive new data from a changing system:
+
+new technologies,
+new sectors,
+new regulations,
+new monetary regimes,
+and new financial instruments.
+
+As the system evolves, the statistical properties of the data can change as well. That doesn’t mean historical research is useless—it means we should treat it as a probabilistic guide, not as a permanent law of markets. The key is to keep validating whether the relationships observed in the past still hold under the current regime and with the current investment universe.
+
+@everyone
+----------------------------------------

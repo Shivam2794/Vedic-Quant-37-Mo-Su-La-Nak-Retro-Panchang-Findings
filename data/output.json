@@ -1,0 +1,20 @@
+{
+  "columns": [
+    "source",
+    "features",
+    "n_events",
+    "confidence",
+    "lift",
+    "score",
+    "score_norm",
+    "anchors",
+    "rank"
+  ],
+  "total_rows": 9111,
+  "source_type": "<class 'str'>",
+  "unique_sources": 2,
+  "top_sources": {
+    "Transformer-Attention": 8911,
+    "SAE-Latent": 200
+  }
+}

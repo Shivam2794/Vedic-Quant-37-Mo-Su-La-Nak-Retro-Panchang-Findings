@@ -1,0 +1,1703 @@
+{
+  "Sector_ETFs_conception": {
+    "birth_datetime": "1998-12-16 12:00:00",
+    "D1": {
+      "Sun": {
+        "sign": "Sagittarius",
+        "degrees": "00\u00b041'21\"",
+        "longitude": 240.689305,
+        "nakshatra": "Mula",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Scorpio",
+        "degrees": "05\u00b045'53\"",
+        "longitude": 215.764766,
+        "nakshatra": "Anuradha",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Virgo",
+        "degrees": "16\u00b041'45\"",
+        "longitude": 166.696081,
+        "nakshatra": "Hasta",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Scorpio",
+        "degrees": "09\u00b038'05\"",
+        "longitude": 219.634928,
+        "nakshatra": "Anuradha",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Aquarius",
+        "degrees": "26\u00b009'15\"",
+        "longitude": 326.154246,
+        "nakshatra": "Purva Bhadrapada",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Sagittarius",
+        "degrees": "12\u00b021'24\"",
+        "longitude": 252.356736,
+        "nakshatra": "Mula",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Aries",
+        "degrees": "03\u00b004'59\"",
+        "longitude": 3.083105,
+        "nakshatra": "Ashwini",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Leo",
+        "degrees": "01\u00b021'58\"",
+        "longitude": 121.36634,
+        "nakshatra": "Magha",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Aquarius",
+        "degrees": "01\u00b021'58\"",
+        "longitude": 301.36634,
+        "nakshatra": "Dhanishtha",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Aquarius",
+        "degrees": "29\u00b026'11\"",
+        "longitude": 329.436616,
+        "nakshatra": "Purva Bhadrapada",
+        "pada": 3,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Trayodashi (Krishna)",
+      "tithi_number": 28,
+      "karana": "Vanija",
+      "yoga": "Dhriti",
+      "vara": "Wednesday",
+      "moon_nakshatra": "Anuradha",
+      "moon_pada": 1
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Saturn",
+      "moon_nakshatra": "Anuradha",
+      "moon_pada": 1,
+      "full_sequence": [
+        {
+          "lord": "Saturn",
+          "start": "1995-06-30",
+          "end": "2014-06-29",
+          "years": 19
+        },
+        {
+          "lord": "Mercury",
+          "start": "2014-06-29",
+          "end": "2031-06-30",
+          "years": 17
+        },
+        {
+          "lord": "Ketu",
+          "start": "2031-06-30",
+          "end": "2038-06-29",
+          "years": 7
+        },
+        {
+          "lord": "Venus",
+          "start": "2038-06-29",
+          "end": "2058-06-29",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2058-06-29",
+          "end": "2064-06-29",
+          "years": 6
+        },
+        {
+          "lord": "Moon",
+          "start": "2064-06-29",
+          "end": "2074-06-29",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2074-06-29",
+          "end": "2081-06-29",
+          "years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start": "2081-06-29",
+          "end": "2099-06-30",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2099-06-30",
+          "end": "2115-07-01",
+          "years": 16
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Saturn",
+          "start": "1995-06-30",
+          "end": "2014-06-29"
+        },
+        "antardasha": {
+          "lord": "Mercury",
+          "start": "1998-07-02",
+          "end": "2001-03-12"
+        },
+        "pratyantardasha": {
+          "lord": "Ketu",
+          "start": "1998-11-19",
+          "end": "1999-01-15"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Mercury",
+          "start": "2014-06-29",
+          "end": "2031-06-30"
+        },
+        "antardasha": {
+          "lord": "Rahu",
+          "start": "2023-12-26",
+          "end": "2026-07-15"
+        },
+        "pratyantardasha": {
+          "lord": "Mars",
+          "start": "2026-05-21",
+          "end": "2026-07-15"
+        }
+      }
+    }
+  },
+  "Sector_ETFs_trading": {
+    "birth_datetime": "1998-12-22 09:30:00",
+    "D1": {
+      "Sun": {
+        "sign": "Sagittarius",
+        "degrees": "06\u00b041'35\"",
+        "longitude": 246.693101,
+        "nakshatra": "Mula",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Capricorn",
+        "degrees": "19\u00b007'41\"",
+        "longitude": 289.128298,
+        "nakshatra": "Shravana",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Virgo",
+        "degrees": "19\u00b047'00\"",
+        "longitude": 169.783391,
+        "nakshatra": "Hasta",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Scorpio",
+        "degrees": "15\u00b018'04\"",
+        "longitude": 225.301339,
+        "nakshatra": "Anuradha",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Aquarius",
+        "degrees": "26\u00b049'55\"",
+        "longitude": 326.832132,
+        "nakshatra": "Purva Bhadrapada",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Sagittarius",
+        "degrees": "19\u00b045'26\"",
+        "longitude": 259.757311,
+        "nakshatra": "Purva Ashadha",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Aries",
+        "degrees": "02\u00b058'26\"",
+        "longitude": 2.974078,
+        "nakshatra": "Ashwini",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Leo",
+        "degrees": "01\u00b003'14\"",
+        "longitude": 121.053908,
+        "nakshatra": "Magha",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Aquarius",
+        "degrees": "01\u00b003'14\"",
+        "longitude": 301.053908,
+        "nakshatra": "Dhanishtha",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Capricorn",
+        "degrees": "10\u00b057'05\"",
+        "longitude": 280.951625,
+        "nakshatra": "Shravana",
+        "pada": 1,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Chaturthi (Shukla)",
+      "tithi_number": 4,
+      "karana": "Vishti",
+      "yoga": "Harshana",
+      "vara": "Tuesday",
+      "moon_nakshatra": "Shravana",
+      "moon_pada": 3
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Moon",
+      "moon_nakshatra": "Shravana",
+      "moon_pada": 3,
+      "full_sequence": [
+        {
+          "lord": "Moon",
+          "start": "1992-02-17",
+          "end": "2002-02-16",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2002-02-16",
+          "end": "2009-02-16",
+          "years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start": "2009-02-16",
+          "end": "2027-02-16",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2027-02-16",
+          "end": "2043-02-16",
+          "years": 16
+        },
+        {
+          "lord": "Saturn",
+          "start": "2043-02-16",
+          "end": "2062-02-16",
+          "years": 19
+        },
+        {
+          "lord": "Mercury",
+          "start": "2062-02-16",
+          "end": "2079-02-16",
+          "years": 17
+        },
+        {
+          "lord": "Ketu",
+          "start": "2079-02-16",
+          "end": "2086-02-16",
+          "years": 7
+        },
+        {
+          "lord": "Venus",
+          "start": "2086-02-16",
+          "end": "2106-02-17",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2106-02-17",
+          "end": "2112-02-18",
+          "years": 6
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Moon",
+          "start": "1992-02-17",
+          "end": "2002-02-16"
+        },
+        "antardasha": {
+          "lord": "Mercury",
+          "start": "1997-12-17",
+          "end": "1999-05-19"
+        },
+        "pratyantardasha": {
+          "lord": "Jupiter",
+          "start": "1998-12-19",
+          "end": "1999-02-26"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Rahu",
+          "start": "2009-02-16",
+          "end": "2027-02-16"
+        },
+        "antardasha": {
+          "lord": "Mars",
+          "start": "2026-01-29",
+          "end": "2027-02-16"
+        },
+        "pratyantardasha": {
+          "lord": "Jupiter",
+          "start": "2026-04-19",
+          "end": "2026-06-09"
+        }
+      }
+    }
+  },
+  "XLRE_conception": {
+    "birth_datetime": "2015-10-06 12:00:00",
+    "D1": {
+      "Sun": {
+        "sign": "Virgo",
+        "degrees": "19\u00b000'08\"",
+        "longitude": 169.002292,
+        "nakshatra": "Hasta",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Cancer",
+        "degrees": "09\u00b047'09\"",
+        "longitude": 99.785872,
+        "nakshatra": "Pushya",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Leo",
+        "degrees": "13\u00b008'17\"",
+        "longitude": 133.138182,
+        "nakshatra": "Magha",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Virgo",
+        "degrees": "07\u00b036'00\"",
+        "longitude": 157.600167,
+        "nakshatra": "Uttara Phalguni",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Leo",
+        "degrees": "17\u00b054'45\"",
+        "longitude": 137.912687,
+        "nakshatra": "Purva Phalguni",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Leo",
+        "degrees": "04\u00b015'45\"",
+        "longitude": 124.262606,
+        "nakshatra": "Magha",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Scorpio",
+        "degrees": "07\u00b025'48\"",
+        "longitude": 217.430036,
+        "nakshatra": "Anuradha",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Virgo",
+        "degrees": "06\u00b006'13\"",
+        "longitude": 156.103625,
+        "nakshatra": "Uttara Phalguni",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Pisces",
+        "degrees": "06\u00b006'13\"",
+        "longitude": 336.103625,
+        "nakshatra": "Uttara Bhadrapada",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Scorpio",
+        "degrees": "17\u00b050'42\"",
+        "longitude": 227.845114,
+        "nakshatra": "Jyeshtha",
+        "pada": 1,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Dashami (Krishna)",
+      "tithi_number": 25,
+      "karana": "Vanija",
+      "yoga": "Siddha",
+      "vara": "Tuesday",
+      "moon_nakshatra": "Pushya",
+      "moon_pada": 2
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Saturn",
+      "moon_nakshatra": "Pushya",
+      "moon_pada": 2,
+      "full_sequence": [
+        {
+          "lord": "Saturn",
+          "start": "2006-07-27",
+          "end": "2025-07-26",
+          "years": 19
+        },
+        {
+          "lord": "Mercury",
+          "start": "2025-07-26",
+          "end": "2042-07-27",
+          "years": 17
+        },
+        {
+          "lord": "Ketu",
+          "start": "2042-07-27",
+          "end": "2049-07-26",
+          "years": 7
+        },
+        {
+          "lord": "Venus",
+          "start": "2049-07-26",
+          "end": "2069-07-26",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2069-07-26",
+          "end": "2075-07-27",
+          "years": 6
+        },
+        {
+          "lord": "Moon",
+          "start": "2075-07-27",
+          "end": "2085-07-26",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2085-07-26",
+          "end": "2092-07-26",
+          "years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start": "2092-07-26",
+          "end": "2110-07-28",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2110-07-28",
+          "end": "2126-07-28",
+          "years": 16
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Saturn",
+          "start": "2006-07-27",
+          "end": "2025-07-26"
+        },
+        "antardasha": {
+          "lord": "Venus",
+          "start": "2013-05-17",
+          "end": "2016-07-17"
+        },
+        "pratyantardasha": {
+          "lord": "Saturn",
+          "start": "2015-05-30",
+          "end": "2015-11-29"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Mercury",
+          "start": "2025-07-26",
+          "end": "2042-07-27"
+        },
+        "antardasha": {
+          "lord": "Mercury",
+          "start": "2025-07-26",
+          "end": "2027-12-23"
+        },
+        "pratyantardasha": {
+          "lord": "Venus",
+          "start": "2026-01-18",
+          "end": "2026-06-14"
+        }
+      }
+    }
+  },
+  "XLRE_trading": {
+    "birth_datetime": "2015-10-08 09:30:00",
+    "D1": {
+      "Sun": {
+        "sign": "Virgo",
+        "degrees": "20\u00b052'22\"",
+        "longitude": 170.872882,
+        "nakshatra": "Hasta",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Leo",
+        "degrees": "02\u00b046'13\"",
+        "longitude": 122.770439,
+        "nakshatra": "Magha",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Leo",
+        "degrees": "14\u00b018'53\"",
+        "longitude": 134.314961,
+        "nakshatra": "Purva Phalguni",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Virgo",
+        "degrees": "06\u00b055'24\"",
+        "longitude": 156.923358,
+        "nakshatra": "Uttara Phalguni",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Leo",
+        "degrees": "18\u00b017'28\"",
+        "longitude": 138.291356,
+        "nakshatra": "Purva Phalguni",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Leo",
+        "degrees": "05\u00b047'12\"",
+        "longitude": 125.786892,
+        "nakshatra": "Magha",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Scorpio",
+        "degrees": "07\u00b036'16\"",
+        "longitude": 217.604708,
+        "nakshatra": "Anuradha",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Virgo",
+        "degrees": "06\u00b000'11\"",
+        "longitude": 156.003161,
+        "nakshatra": "Uttara Phalguni",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Pisces",
+        "degrees": "06\u00b000'11\"",
+        "longitude": 336.003161,
+        "nakshatra": "Uttara Bhadrapada",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Libra",
+        "degrees": "19\u00b031'43\"",
+        "longitude": 199.528705,
+        "nakshatra": "Swati",
+        "pada": 4,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Ekadashi (Krishna)",
+      "tithi_number": 26,
+      "karana": "Balava",
+      "yoga": "Shubha",
+      "vara": "Thursday",
+      "moon_nakshatra": "Magha",
+      "moon_pada": 1
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Ketu",
+      "moon_nakshatra": "Magha",
+      "moon_pada": 1,
+      "full_sequence": [
+        {
+          "lord": "Ketu",
+          "start": "2014-04-25",
+          "end": "2021-04-25",
+          "years": 7
+        },
+        {
+          "lord": "Venus",
+          "start": "2021-04-25",
+          "end": "2041-04-25",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2041-04-25",
+          "end": "2047-04-25",
+          "years": 6
+        },
+        {
+          "lord": "Moon",
+          "start": "2047-04-25",
+          "end": "2057-04-25",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2057-04-25",
+          "end": "2064-04-24",
+          "years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start": "2064-04-24",
+          "end": "2082-04-25",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2082-04-25",
+          "end": "2098-04-25",
+          "years": 16
+        },
+        {
+          "lord": "Saturn",
+          "start": "2098-04-25",
+          "end": "2117-04-26",
+          "years": 19
+        },
+        {
+          "lord": "Mercury",
+          "start": "2117-04-26",
+          "end": "2134-04-26",
+          "years": 17
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Ketu",
+          "start": "2014-04-25",
+          "end": "2021-04-25"
+        },
+        "antardasha": {
+          "lord": "Venus",
+          "start": "2014-09-21",
+          "end": "2015-11-21"
+        },
+        "pratyantardasha": {
+          "lord": "Mercury",
+          "start": "2015-08-28",
+          "end": "2015-10-27"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Venus",
+          "start": "2021-04-25",
+          "end": "2041-04-25"
+        },
+        "antardasha": {
+          "lord": "Moon",
+          "start": "2025-08-24",
+          "end": "2027-04-25"
+        },
+        "pratyantardasha": {
+          "lord": "Saturn",
+          "start": "2026-05-10",
+          "end": "2026-08-14"
+        }
+      }
+    }
+  },
+  "XLC_conception": {
+    "birth_datetime": "2018-06-18 12:00:00",
+    "D1": {
+      "Sun": {
+        "sign": "Gemini",
+        "degrees": "03\u00b015'32\"",
+        "longitude": 63.259085,
+        "nakshatra": "Mrigasira",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Leo",
+        "degrees": "10\u00b013'47\"",
+        "longitude": 130.229956,
+        "nakshatra": "Magha",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Capricorn",
+        "degrees": "14\u00b041'39\"",
+        "longitude": 284.694388,
+        "nakshatra": "Shravana",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Gemini",
+        "degrees": "17\u00b041'13\"",
+        "longitude": 77.687221,
+        "nakshatra": "Ardra",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Libra",
+        "degrees": "19\u00b057'24\"",
+        "longitude": 199.956903,
+        "nakshatra": "Swati",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Cancer",
+        "degrees": "11\u00b025'25\"",
+        "longitude": 101.423823,
+        "nakshatra": "Pushya",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Sagittarius",
+        "degrees": "12\u00b023'40\"",
+        "longitude": 252.394688,
+        "nakshatra": "Mula",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Cancer",
+        "degrees": "13\u00b051'12\"",
+        "longitude": 103.853518,
+        "nakshatra": "Pushya",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Capricorn",
+        "degrees": "13\u00b051'12\"",
+        "longitude": 283.853518,
+        "nakshatra": "Shravana",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Leo",
+        "degrees": "22\u00b016'42\"",
+        "longitude": 142.278377,
+        "nakshatra": "Purva Phalguni",
+        "pada": 3,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Shashthi (Shukla)",
+      "tithi_number": 6,
+      "karana": "Taitila",
+      "yoga": "Vajra",
+      "vara": "Monday",
+      "moon_nakshatra": "Magha",
+      "moon_pada": 4
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Ketu",
+      "moon_nakshatra": "Magha",
+      "moon_pada": 4,
+      "full_sequence": [
+        {
+          "lord": "Ketu",
+          "start": "2013-02-03",
+          "end": "2020-02-03",
+          "years": 7
+        },
+        {
+          "lord": "Venus",
+          "start": "2020-02-03",
+          "end": "2040-02-03",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2040-02-03",
+          "end": "2046-02-03",
+          "years": 6
+        },
+        {
+          "lord": "Moon",
+          "start": "2046-02-03",
+          "end": "2056-02-03",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2056-02-03",
+          "end": "2063-02-03",
+          "years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start": "2063-02-03",
+          "end": "2081-02-03",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2081-02-03",
+          "end": "2097-02-03",
+          "years": 16
+        },
+        {
+          "lord": "Saturn",
+          "start": "2097-02-03",
+          "end": "2116-02-04",
+          "years": 19
+        },
+        {
+          "lord": "Mercury",
+          "start": "2116-02-04",
+          "end": "2133-02-04",
+          "years": 17
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Ketu",
+          "start": "2013-02-03",
+          "end": "2020-02-03"
+        },
+        "antardasha": {
+          "lord": "Saturn",
+          "start": "2017-12-28",
+          "end": "2019-02-06"
+        },
+        "pratyantardasha": {
+          "lord": "Venus",
+          "start": "2018-05-22",
+          "end": "2018-07-29"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Venus",
+          "start": "2020-02-03",
+          "end": "2040-02-03"
+        },
+        "antardasha": {
+          "lord": "Mars",
+          "start": "2026-02-03",
+          "end": "2027-04-05"
+        },
+        "pratyantardasha": {
+          "lord": "Jupiter",
+          "start": "2026-05-03",
+          "end": "2026-06-28"
+        }
+      }
+    }
+  },
+  "XLC_trading": {
+    "birth_datetime": "2018-06-19 09:30:00",
+    "D1": {
+      "Sun": {
+        "sign": "Gemini",
+        "degrees": "04\u00b006'51\"",
+        "longitude": 64.114319,
+        "nakshatra": "Mrigasira",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Leo",
+        "degrees": "22\u00b046'49\"",
+        "longitude": 142.780551,
+        "nakshatra": "Purva Phalguni",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Capricorn",
+        "degrees": "14\u00b046'43\"",
+        "longitude": 284.778691,
+        "nakshatra": "Shravana",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Gemini",
+        "degrees": "19\u00b023'45\"",
+        "longitude": 79.396035,
+        "nakshatra": "Ardra",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Libra",
+        "degrees": "19\u00b054'00\"",
+        "longitude": 199.900112,
+        "nakshatra": "Swati",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Cancer",
+        "degrees": "12\u00b027'46\"",
+        "longitude": 102.462922,
+        "nakshatra": "Pushya",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Sagittarius",
+        "degrees": "12\u00b019'47\"",
+        "longitude": 252.329835,
+        "nakshatra": "Mula",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Cancer",
+        "degrees": "13\u00b048'21\"",
+        "longitude": 103.806046,
+        "nakshatra": "Pushya",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Capricorn",
+        "degrees": "13\u00b048'21\"",
+        "longitude": 283.806046,
+        "nakshatra": "Shravana",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Cancer",
+        "degrees": "23\u00b030'57\"",
+        "longitude": 113.515965,
+        "nakshatra": "Ashlesha",
+        "pada": 3,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Saptami (Shukla)",
+      "tithi_number": 7,
+      "karana": "Vanija",
+      "yoga": "Siddhi",
+      "vara": "Tuesday",
+      "moon_nakshatra": "Purva Phalguni",
+      "moon_pada": 3
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Venus",
+      "moon_nakshatra": "Purva Phalguni",
+      "moon_pada": 3,
+      "full_sequence": [
+        {
+          "lord": "Venus",
+          "start": "2004-04-17",
+          "end": "2024-04-17",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2024-04-17",
+          "end": "2030-04-18",
+          "years": 6
+        },
+        {
+          "lord": "Moon",
+          "start": "2030-04-18",
+          "end": "2040-04-17",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2040-04-17",
+          "end": "2047-04-18",
+          "years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start": "2047-04-18",
+          "end": "2065-04-17",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2065-04-17",
+          "end": "2081-04-17",
+          "years": 16
+        },
+        {
+          "lord": "Saturn",
+          "start": "2081-04-17",
+          "end": "2100-04-18",
+          "years": 19
+        },
+        {
+          "lord": "Mercury",
+          "start": "2100-04-18",
+          "end": "2117-04-18",
+          "years": 17
+        },
+        {
+          "lord": "Ketu",
+          "start": "2117-04-18",
+          "end": "2124-04-18",
+          "years": 7
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Venus",
+          "start": "2004-04-17",
+          "end": "2024-04-17"
+        },
+        "antardasha": {
+          "lord": "Saturn",
+          "start": "2017-02-16",
+          "end": "2020-04-17"
+        },
+        "pratyantardasha": {
+          "lord": "Venus",
+          "start": "2018-04-06",
+          "end": "2018-10-16"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Sun",
+          "start": "2024-04-17",
+          "end": "2030-04-18"
+        },
+        "antardasha": {
+          "lord": "Jupiter",
+          "start": "2026-05-06",
+          "end": "2027-02-22"
+        },
+        "pratyantardasha": {
+          "lord": "Jupiter",
+          "start": "2026-05-06",
+          "end": "2026-06-14"
+        }
+      }
+    }
+  },
+  "SMH_conception": {
+    "birth_datetime": "2000-12-18 12:00:00",
+    "D1": {
+      "Sun": {
+        "sign": "Sagittarius",
+        "degrees": "03\u00b013'19\"",
+        "longitude": 243.222165,
+        "nakshatra": "Mula",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Virgo",
+        "degrees": "11\u00b046'41\"",
+        "longitude": 161.778073,
+        "nakshatra": "Hasta",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Libra",
+        "degrees": "03\u00b013'28\"",
+        "longitude": 183.224661,
+        "nakshatra": "Chitra",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Scorpio",
+        "degrees": "29\u00b014'26\"",
+        "longitude": 239.240651,
+        "nakshatra": "Jyeshtha",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Taurus",
+        "degrees": "09\u00b037'48\"",
+        "longitude": 39.63001,
+        "nakshatra": "Krittika",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Capricorn",
+        "degrees": "18\u00b006'52\"",
+        "longitude": 288.114549,
+        "nakshatra": "Shravana",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Taurus",
+        "degrees": "01\u00b026'00\"",
+        "longitude": 31.433362,
+        "nakshatra": "Krittika",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Gemini",
+        "degrees": "22\u00b031'23\"",
+        "longitude": 82.523196,
+        "nakshatra": "Punarvasu",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Sagittarius",
+        "degrees": "22\u00b031'23\"",
+        "longitude": 262.523196,
+        "nakshatra": "Purva Ashadha",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Pisces",
+        "degrees": "03\u00b042'24\"",
+        "longitude": 333.706932,
+        "nakshatra": "Uttara Bhadrapada",
+        "pada": 1,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Navami (Krishna)",
+      "tithi_number": 24,
+      "karana": "Taitila",
+      "yoga": "Saubhagya",
+      "vara": "Monday",
+      "moon_nakshatra": "Hasta",
+      "moon_pada": 1
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Moon",
+      "moon_nakshatra": "Hasta",
+      "moon_pada": 1,
+      "full_sequence": [
+        {
+          "lord": "Moon",
+          "start": "1999-08-19",
+          "end": "2009-08-19",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2009-08-19",
+          "end": "2016-08-18",
+          "years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start": "2016-08-18",
+          "end": "2034-08-19",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2034-08-19",
+          "end": "2050-08-19",
+          "years": 16
+        },
+        {
+          "lord": "Saturn",
+          "start": "2050-08-19",
+          "end": "2069-08-19",
+          "years": 19
+        },
+        {
+          "lord": "Mercury",
+          "start": "2069-08-19",
+          "end": "2086-08-19",
+          "years": 17
+        },
+        {
+          "lord": "Ketu",
+          "start": "2086-08-19",
+          "end": "2093-08-19",
+          "years": 7
+        },
+        {
+          "lord": "Venus",
+          "start": "2093-08-19",
+          "end": "2113-08-20",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2113-08-20",
+          "end": "2119-08-20",
+          "years": 6
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Moon",
+          "start": "1999-08-19",
+          "end": "2009-08-19"
+        },
+        "antardasha": {
+          "lord": "Mars",
+          "start": "2000-06-19",
+          "end": "2001-01-18"
+        },
+        "pratyantardasha": {
+          "lord": "Venus",
+          "start": "2000-11-15",
+          "end": "2000-12-20"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Rahu",
+          "start": "2016-08-18",
+          "end": "2034-08-19"
+        },
+        "antardasha": {
+          "lord": "Mercury",
+          "start": "2024-07-31",
+          "end": "2027-02-18"
+        },
+        "pratyantardasha": {
+          "lord": "Jupiter",
+          "start": "2026-05-22",
+          "end": "2026-09-23"
+        }
+      }
+    }
+  },
+  "SMH_trading": {
+    "birth_datetime": "2000-12-20 09:30:00",
+    "D1": {
+      "Sun": {
+        "sign": "Sagittarius",
+        "degrees": "05\u00b009'09\"",
+        "longitude": 245.152607,
+        "nakshatra": "Mula",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Libra",
+        "degrees": "06\u00b050'19\"",
+        "longitude": 186.838827,
+        "nakshatra": "Swati",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Libra",
+        "degrees": "04\u00b021'07\"",
+        "longitude": 184.35205,
+        "nakshatra": "Chitra",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Sagittarius",
+        "degrees": "02\u00b013'09\"",
+        "longitude": 242.219247,
+        "nakshatra": "Mula",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Taurus",
+        "degrees": "09\u00b025'02\"",
+        "longitude": 39.417326,
+        "nakshatra": "Krittika",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Capricorn",
+        "degrees": "20\u00b017'02\"",
+        "longitude": 290.283922,
+        "nakshatra": "Shravana",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Taurus",
+        "degrees": "01\u00b019'01\"",
+        "longitude": 31.317047,
+        "nakshatra": "Krittika",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Gemini",
+        "degrees": "22\u00b025'21\"",
+        "longitude": 82.422732,
+        "nakshatra": "Punarvasu",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Sagittarius",
+        "degrees": "22\u00b025'21\"",
+        "longitude": 262.422732,
+        "nakshatra": "Purva Ashadha",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Capricorn",
+        "degrees": "09\u00b004'28\"",
+        "longitude": 279.074594,
+        "nakshatra": "Uttara Ashadha",
+        "pada": 4,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Ekadashi (Krishna)",
+      "tithi_number": 26,
+      "karana": "Bava",
+      "yoga": "Atiganda",
+      "vara": "Wednesday",
+      "moon_nakshatra": "Swati",
+      "moon_pada": 1
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Rahu",
+      "moon_nakshatra": "Swati",
+      "moon_pada": 1,
+      "full_sequence": [
+        {
+          "lord": "Rahu",
+          "start": "2000-09-26",
+          "end": "2018-09-27",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2018-09-27",
+          "end": "2034-09-27",
+          "years": 16
+        },
+        {
+          "lord": "Saturn",
+          "start": "2034-09-27",
+          "end": "2053-09-26",
+          "years": 19
+        },
+        {
+          "lord": "Mercury",
+          "start": "2053-09-26",
+          "end": "2070-09-27",
+          "years": 17
+        },
+        {
+          "lord": "Ketu",
+          "start": "2070-09-27",
+          "end": "2077-09-26",
+          "years": 7
+        },
+        {
+          "lord": "Venus",
+          "start": "2077-09-26",
+          "end": "2097-09-26",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2097-09-26",
+          "end": "2103-09-28",
+          "years": 6
+        },
+        {
+          "lord": "Moon",
+          "start": "2103-09-28",
+          "end": "2113-09-27",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2113-09-27",
+          "end": "2120-09-27",
+          "years": 7
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Rahu",
+          "start": "2000-09-26",
+          "end": "2018-09-27"
+        },
+        "antardasha": {
+          "lord": "Rahu",
+          "start": "2000-09-26",
+          "end": "2003-06-09"
+        },
+        "pratyantardasha": {
+          "lord": "Rahu",
+          "start": "2000-09-26",
+          "end": "2001-02-21"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Jupiter",
+          "start": "2018-09-27",
+          "end": "2034-09-27"
+        },
+        "antardasha": {
+          "lord": "Ketu",
+          "start": "2025-09-02",
+          "end": "2026-08-09"
+        },
+        "pratyantardasha": {
+          "lord": "Saturn",
+          "start": "2026-04-29",
+          "end": "2026-06-22"
+        }
+      }
+    }
+  },
+  "XME_conception": {
+    "birth_datetime": "2006-06-19 12:00:00",
+    "D1": {
+      "Sun": {
+        "sign": "Gemini",
+        "degrees": "04\u00b017'07\"",
+        "longitude": 64.285544,
+        "nakshatra": "Mrigasira",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Moon": {
+        "sign": "Pisces",
+        "degrees": "18\u00b024'17\"",
+        "longitude": 348.404898,
+        "nakshatra": "Revati",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Mars": {
+        "sign": "Cancer",
+        "degrees": "15\u00b040'34\"",
+        "longitude": 105.676263,
+        "nakshatra": "Pushya",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Mercury": {
+        "sign": "Gemini",
+        "degrees": "29\u00b010'08\"",
+        "longitude": 89.168931,
+        "nakshatra": "Punarvasu",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Jupiter": {
+        "sign": "Libra",
+        "degrees": "15\u00b026'51\"",
+        "longitude": 195.447628,
+        "nakshatra": "Swati",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Venus": {
+        "sign": "Taurus",
+        "degrees": "00\u00b053'22\"",
+        "longitude": 30.889571,
+        "nakshatra": "Krittika",
+        "pada": 2,
+        "retrograde": false
+      },
+      "Saturn": {
+        "sign": "Cancer",
+        "degrees": "14\u00b058'03\"",
+        "longitude": 104.967565,
+        "nakshatra": "Pushya",
+        "pada": 4,
+        "retrograde": false
+      },
+      "Rahu": {
+        "sign": "Pisces",
+        "degrees": "06\u00b003'52\"",
+        "longitude": 336.06446,
+        "nakshatra": "Uttara Bhadrapada",
+        "pada": 1,
+        "retrograde": false
+      },
+      "Ketu": {
+        "sign": "Virgo",
+        "degrees": "06\u00b003'52\"",
+        "longitude": 156.06446,
+        "nakshatra": "Uttara Phalguni",
+        "pada": 3,
+        "retrograde": false
+      },
+      "Ascendant": {
+        "sign": "Leo",
+        "degrees": "23\u00b009'08\"",
+        "longitude": 143.152274,
+        "nakshatra": "Purva Phalguni",
+        "pada": 3,
+        "retrograde": false
+      }
+    },
+    "panchang": {
+      "tithi": "Navami (Krishna)",
+      "tithi_number": 24,
+      "karana": "Gara",
+      "yoga": "Saubhagya",
+      "vara": "Monday",
+      "moon_nakshatra": "Revati",
+      "moon_pada": 1
+    },
+    "vimshottari_dasha": {
+      "birth_lord": "Mercury",
+      "moon_nakshatra": "Revati",
+      "moon_pada": 1,
+      "full_sequence": [
+        {
+          "lord": "Mercury",
+          "start": "2004-04-01",
+          "end": "2021-04-01",
+          "years": 17
+        },
+        {
+          "lord": "Ketu",
+          "start": "2021-04-01",
+          "end": "2028-04-01",
+          "years": 7
+        },
+        {
+          "lord": "Venus",
+          "start": "2028-04-01",
+          "end": "2048-04-01",
+          "years": 20
+        },
+        {
+          "lord": "Sun",
+          "start": "2048-04-01",
+          "end": "2054-04-01",
+          "years": 6
+        },
+        {
+          "lord": "Moon",
+          "start": "2054-04-01",
+          "end": "2064-04-01",
+          "years": 10
+        },
+        {
+          "lord": "Mars",
+          "start": "2064-04-01",
+          "end": "2071-04-01",
+          "years": 7
+        },
+        {
+          "lord": "Rahu",
+          "start": "2071-04-01",
+          "end": "2089-04-01",
+          "years": 18
+        },
+        {
+          "lord": "Jupiter",
+          "start": "2089-04-01",
+          "end": "2105-04-02",
+          "years": 16
+        },
+        {
+          "lord": "Saturn",
+          "start": "2105-04-02",
+          "end": "2124-04-02",
+          "years": 19
+        }
+      ],
+      "at_birth": {
+        "mahadasha": {
+          "lord": "Mercury",
+          "start": "2004-04-01",
+          "end": "2021-04-01"
+        },
+        "antardasha": {
+          "lord": "Mercury",
+          "start": "2004-04-01",
+          "end": "2006-08-28"
+        },
+        "pratyantardasha": {
+          "lord": "Saturn",
+          "start": "2006-04-11",
+          "end": "2006-08-28"
+        }
+      },
+      "at_2026_06_04": {
+        "mahadasha": {
+          "lord": "Ketu",
+          "start": "2021-04-01",
+          "end": "2028-04-01"
+        },
+        "antardasha": {
+          "lord": "Saturn",
+          "start": "2026-02-24",
+          "end": "2027-04-04"
+        },
+        "pratyantardasha": {
+          "lord": "Mercury",
+          "start": "2026-04-29",
+          "end": "2026-06-25"
+        }
+      }
+    }
+  }
+}

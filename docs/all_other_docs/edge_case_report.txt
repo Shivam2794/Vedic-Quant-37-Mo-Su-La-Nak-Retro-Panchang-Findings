@@ -1,0 +1,2237 @@
+--- File: beta_agent7_attention_pooling.py ---
+Line 133 [Hardcoded Shape Trap]: out = out.squeeze(1)
+
+--- File: beta_agent9_train_transformer.py ---
+Line 73 [Hardcoded Shape Trap]: sample_x = sample_x.unsqueeze(0) # batch size 1
+
+--- File: deep_inspect2.py ---
+Line 37 [Div by Zero]: max_downs = np.array([1-(np.min(closes[i+1:i+1+BARRIER_BARS])/closes[i]) for i in range(n-BARRIER_BARS)])
+
+--- File: dynamic_trainer.py ---
+Line 33 [Div by Zero]: syn['Close'] = df['Close'] / bench['Close']
+Line 50 [Div by Zero]: max_downs[i] = 1.0 - (np.min(window) / entry)
+
+--- File: eval_metrics.py ---
+Line 87 [Exp NaN Trap]: geom_mean = np.exp(np.mean(np.log1p(strategy_returns))) - 1
+
+--- File: eval_metrics2.py ---
+Line 65 [Div by Zero]: df_res['daily_ret'] = np.where(df_res['signal'] == 1, df_res['actual'] / 63.0, 0)
+
+--- File: fno_model.py ---
+Line 127 [Div by Zero]: daily_sharpe = (np.mean(returns) - risk_free_rate) / np.std(returns)
+
+--- File: generate_astrological_dataset.py ---
+Line 18 [Div by Zero]: return atr / df['Close']
+
+--- File: generate_daily_dataset.py ---
+Line 17 [Div by Zero]: return atr / df['Close']
+
+--- File: genesis_metals_pipeline.py ---
+Line 63 [Div by Zero]: syn['Close'] = df['Close'] / bench['Close']
+Line 190 [Div by Zero]: pf = abs(wins.sum() / losses.sum()) if len(losses) > 0 and losses.sum() != 0 else np.inf
+
+--- File: intraday_engine.py ---
+Line 74 [Div by Zero]: daily_sharpe = (np.mean(returns) - risk_free_rate) / np.std(returns)
+Line 75 [Div by Zero]: return daily_sharpe * np.sqrt(252 * 26) # 252 days * ~26 15-min bars/day
+
+--- File: local_sieve.py ---
+Line 108 [Concat Dim Mismatch Risk]: act_rets = np.concatenate(rule_active[key]) if key in rule_active else np.array([])
+Line 109 [Concat Dim Mismatch Risk]: inact_rets = np.concatenate(rule_inactive[key]) if key in rule_inactive else np.array([])
+Line 120 [Concat Dim Mismatch Risk]: all_rets = np.concatenate([act_rets, inact_rets])
+Line 121 [Concat Dim Mismatch Risk]: all_rules = np.concatenate([np.ones(len(act_rets)), np.zeros(len(inact_rets))])
+
+--- File: macro_engine.py ---
+Line 67 [Div by Zero]: features[f"{name}_sign_sin"] = np.sin(sign_idx * (np.pi / 6))
+Line 68 [Div by Zero]: features[f"{name}_sign_cos"] = np.cos(sign_idx * (np.pi / 6))
+
+--- File: macro_fno.py ---
+Line 97 [Div by Zero]: daily_sharpe = (np.mean(returns) - risk_free_rate) / np.std(returns)
+
+--- File: market_data_pipeline.py ---
+Line 194 [Div by Zero]: df["intraday_ret"]  = (c / o) - 1            # Open → Close (human trading)
+Line 195 [Div by Zero]: df["overnight_ret"] = (o / c.shift(1)) - 1   # Prev Close → Open (God's gap)
+Line 199 [Div by Zero]: df["daily_range_pct"]   = (h - l) / o        # Intraday volatility
+Line 200 [Div by Zero]: df["high_ret"]          = (h / o) - 1        # Best case
+Line 201 [Div by Zero]: df["low_ret"]           = (l / o) - 1        # Worst case
+Line 264 [Div by Zero]: df["close_vs_sma20"]  = (c / df["sma_20"]) - 1
+Line 265 [Div by Zero]: df["close_vs_sma50"]  = (c / df["sma_50"]) - 1
+Line 266 [Div by Zero]: df["close_vs_sma200"] = (c / df["sma_200"]) - 1
+Line 267 [Div by Zero]: df["sma20_vs_sma50"]  = (df["sma_20"] / df["sma_50"]) - 1
+Line 274 [Div by Zero]: rs    = gain / loss.replace(0, np.nan)
+Line 275 [Div by Zero]: df["rsi_14"] = 100 - (100 / (1 + rs))
+Line 296 [Div by Zero]: df["atr_pct"] = df["atr_14"] / c  # Normalised ATR
+Line 303 [Div by Zero]: df["bb_pct"]   = (c - df["bb_lower"]) / (df["bb_upper"] - df["bb_lower"])
+Line 304 [Div by Zero]: df["bb_width"]  = (df["bb_upper"] - df["bb_lower"]) / rolling_mean
+Line 312 [Div by Zero]: df["volume_ratio_10d"]  = v / v.rolling(10).mean()
+Line 313 [Div by Zero]: df["volume_ratio_20d"]  = v / v.rolling(20).mean()
+Line 318 [Div by Zero]: df["pct_from_52wk_low"]  = (c / c.rolling(252).min()) - 1
+Line 505 [Div by Zero]: beta_60d = cov / var.replace(0, np.nan)
+
+--- File: mkbapu_deep_history_pipeline.py ---
+Line 202 [Div by Zero]: df2['mkb_bars_since_rashi_norm'] = np.array(bs) / 8.0
+Line 203 [Div by Zero]: df2['mkb_rashi_pct_elapsed'] = feat_df['asc_deg'].values / 30.0
+
+--- File: mkbapu_institutional_pipeline.py ---
+Line 52 [Div by Zero]: syn['Close'] = df['Close'] / bench['Close']
+Line 209 [Div by Zero]: pf = abs(wins.sum() / losses.sum()) if len(losses) > 0 and losses.sum() != 0 else np.inf
+
+--- File: mkbapu_intraday_pipeline.py ---
+Line 129 [Div by Zero]: feats[f"{name}_nak_sin"] = np.sin(2 * np.pi * nak_idx / 27)
+Line 130 [Div by Zero]: feats[f"{name}_nak_cos"] = np.cos(2 * np.pi * nak_idx / 27)
+Line 175 [Div by Zero]: feats["tithi_sin"] = np.sin(2 * np.pi * tithi / 30)
+Line 176 [Div by Zero]: feats["tithi_cos"] = np.cos(2 * np.pi * tithi / 30)
+Line 181 [Div by Zero]: feats["yoga_sin"] = np.sin(2 * np.pi * yoga / 27)
+Line 182 [Div by Zero]: feats["yoga_cos"] = np.cos(2 * np.pi * yoga / 27)
+Line 196 [Div by Zero]: feats["asc_d9_sin"] = np.sin(2 * np.pi * asc_d9_sign / 12)
+Line 197 [Div by Zero]: feats["asc_d9_cos"] = np.cos(2 * np.pi * asc_d9_sign / 12)
+Line 206 [Div by Zero]: feats["hour_sin"] = np.sin(2 * np.pi * hour_frac / 24)
+Line 207 [Div by Zero]: feats["hour_cos"] = np.cos(2 * np.pi * hour_frac / 24)
+Line 209 [Div by Zero]: feats["day_of_week_sin"] = np.sin(2 * np.pi * dt_utc.weekday() / 5)
+Line 210 [Div by Zero]: feats["day_of_week_cos"] = np.cos(2 * np.pi * dt_utc.weekday() / 5)
+Line 211 [Div by Zero]: feats["day_of_year_sin"] = np.sin(2 * np.pi * dt_utc.timetuple().tm_yday / 365.25636042)
+Line 212 [Div by Zero]: feats["day_of_year_cos"] = np.cos(2 * np.pi * dt_utc.timetuple().tm_yday / 365.25636042)
+Line 267 [Div by Zero]: df['mkbapu_dist_to_rashi_price'] = (df['Close'] - df['mkbapu_rashi_start_price']) / atr
+Line 279 [Div by Zero]: df['mkbapu_bars_since_rashi_norm'] = df['mkbapu_bars_since_rashi'] / 8.0  # ~2hr window
+Line 282 [Div by Zero]: df['mkbapu_rashi_pct_elapsed'] = (df['house_placidus_1_cusp'] % 30) / 30.0
+Line 305 [Div by Zero]: (df['Close'] - df['mkbapu_pushkar_start_price']) / atr,
+Line 579 [Log(0) Trap]: log_vol = np.log(df_work['High'] / df_work['Low']).fillna(0).values
+Line 579 [Div by Zero]: log_vol = np.log(df_work['High'] / df_work['Low']).fillna(0).values
+
+--- File: mkbapu_multimarket_pipeline.py ---
+Line 182 [Div by Zero]: dt_diff_min = df['dt'].diff().dt.total_seconds().fillna(0) / 60
+Line 229 [Div by Zero]: feats[f"{name}_nak_sin"]     = np.sin(2*np.pi*nak/27)
+Line 230 [Div by Zero]: feats[f"{name}_nak_cos"]     = np.cos(2*np.pi*nak/27)
+Line 263 [Div by Zero]: feats["tithi_sin"] = np.sin(2*np.pi*tithi/30)
+Line 264 [Div by Zero]: feats["tithi_cos"] = np.cos(2*np.pi*tithi/30)
+Line 267 [Div by Zero]: feats["yoga_sin"] = np.sin(2*np.pi*yoga/27)
+Line 268 [Div by Zero]: feats["yoga_cos"] = np.cos(2*np.pi*yoga/27)
+Line 282 [Div by Zero]: feats["asc_d9_sin"]  = np.sin(2*np.pi*asc_d9/12)
+Line 283 [Div by Zero]: feats["asc_d9_cos"]  = np.cos(2*np.pi*asc_d9/12)
+Line 287 [Div by Zero]: feats["asc_d60_sin"]  = np.sin(2*np.pi*asc_d60/12)
+Line 288 [Div by Zero]: feats["asc_d60_cos"]  = np.cos(2*np.pi*asc_d60/12)
+Line 297 [Div by Zero]: feats["hour_sin"]      = np.sin(2*np.pi*hf/24)
+Line 298 [Div by Zero]: feats["hour_cos"]      = np.cos(2*np.pi*hf/24)
+Line 300 [Div by Zero]: feats["dow_sin"]       = np.sin(2*np.pi*dt_utc.weekday()/5)
+Line 301 [Div by Zero]: feats["dow_cos"]       = np.cos(2*np.pi*dt_utc.weekday()/5)
+Line 303 [Div by Zero]: feats["doy_sin"]       = np.sin(2*np.pi*doy/365.25636042)
+Line 304 [Div by Zero]: feats["doy_cos"]       = np.cos(2*np.pi*doy/365.25636042)
+Line 380 [Div by Zero]: df2['mkb_bars_since_rashi_norm'] = np.array(bs) / 8.0
+Line 383 [Div by Zero]: df2['mkb_rashi_pct_elapsed'] = feat_df['asc_deg'].values / 30.0
+Line 740 [Div by Zero]: pf = abs(wins.sum() / losses.sum()) if len(losses) > 0 and losses.sum() != 0 else np.inf
+
+--- File: natal_core_module.py ---
+Line 34 [Div by Zero]: L_floor_30 = np.floor(L / 30.0)
+Line 69 [Div by Zero]: part_d9_global = np.floor((L / 360.0) * 108.0).astype(np.int32)
+Line 127 [Div by Zero]: angles = (vargas / 12.0) * 2 * np.pi
+
+--- File: natal_strength_module.py ---
+Line 376 [Div by Zero]: planet_signs = np.array([int(np.floor(lon / 30.0)) % 12 for lon in planet_longitudes_sidereal] +
+Line 377 [Div by Zero]: [int(np.floor(asc_longitude_sidereal / 30.0)) % 12], dtype=np.int8)  # 8 elements with Asc
+
+--- File: smh_long_short_proof.py ---
+Line 23 [Div by Zero]: syn['Open'] = df['Open'] / bench['Open']
+Line 24 [Div by Zero]: syn['High'] = df['High'] / bench['High']
+Line 25 [Div by Zero]: syn['Low'] = df['Low'] / bench['Low']
+Line 26 [Div by Zero]: syn['Close'] = df['Close'] / bench['Close']
+
+--- File: step_3_1_market_data.py ---
+Line 85 [Div by Zero]: aligned_df['VWAP'] = (aligned_df['High'] + aligned_df['Low'] + aligned_df['Close']) / 3.0
+
+--- File: step_3_2_ephemeris_tensors.py ---
+Line 198 [Div by Zero]: topo_tensor[i, 14, 0] = ascmc[0] # Tropical Asc/MC (Sidereal derived in field 6)
+
+--- File: tajika_aspects_module.py ---
+Line 65 [Div by Zero]: fast_sign = int(np.floor(fast_lon / 30.0))
+Line 66 [Div by Zero]: slow_sign = int(np.floor(slow_lon / 30.0))
+
+--- File: train_baseline.py ---
+Line 42 [Div by Zero]: daily_sharpe = (np.mean(returns) - risk_free_rate) / np.std(returns)
+
+--- File: train_xgboost_triple_barrier.py ---
+Line 309 [Concat Dim Mismatch Risk]: X_full = np.concatenate(all_frames, axis=0)
+Line 310 [Concat Dim Mismatch Risk]: y_full = np.concatenate(all_labels, axis=0)
+Line 455 [Div by Zero]: sharpe = (mean_ret / std_ret) * np.sqrt(252)
+Line 465 [Div by Zero]: qqq_sharpe = (qqq_ret.mean() / qqq_ret.std()) * np.sqrt(252) if qqq_ret.std() > 0 else 0.0
+
+--- File: vedic_copper_bot.py ---
+Line 34 [Div by Zero]: syn['Close'] = df['Close'] / bench['Close']
+
+--- File: vedic_copper_trainer.py ---
+Line 37 [Div by Zero]: syn['Close'] = df['Close'] / bench['Close']
+
+--- File: vedic_universal_trainer.py ---
+Line 47 [Div by Zero]: syn['Close'] = df['Close'] / bench['Close']
+Line 69 [Div by Zero]: max_downs[i] = 1.0 - (np.min(window) / entry)
+
+--- File: vedic_universal_trainer_v2.py ---
+Line 250 [Div by Zero]: wfo_cagr = round((np.cumprod(1+np.array(wfo_rets))[-1]**(1/2.5)-1)*100, 1) if wfo_rets else -99
+
+--- File: vimshottari_module.py ---
+Line 113 [Div by Zero]: maha_angle = 2.0 * np.pi * maha_idx / 9.0
+Line 122 [Div by Zero]: antar_angle = 2.0 * np.pi * antar_idx / 9.0
+Line 128 [Div by Zero]: prat_angle = 2.0 * np.pi * prat_idx / 9.0
+Line 204 [Div by Zero]: i = int(np.round(angle * 9.0 / (2 * np.pi))) % 9
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills\skills\007\scripts\scanners\secrets_scanner.py ---
+Line 182 [Log(0) Trap]: entropy -= probability * math.log2(probability)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills\skills\app-store-optimization\ab_test_planner.py ---
+Line 444 [Exp NaN Trap]: d = 0.3989423 * math.exp(-z * z / 2.0)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills\skills\hugging-face-community-evals\scripts\inspect_vllm_uv.py ---
+Line 193 [Div by Zero]: uv run scripts/inspect_vllm_uv.py --model meta-llama/Llama-3.2-70B --task mmlu --tensor-parallel-size 4
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills\skills\hugging-face-jobs\scripts\cot-self-instruct.py ---
+Line 116 [Div by Zero]: gpu_memory = torch.cuda.get_device_properties(i).total_memory / 1024**3
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills\skills\hugging-face-vision-trainer\scripts\object_detection_training.py ---
+Line 360 [Hardcoded Shape Trap]: classes = classes.unsqueeze(0)
+Line 361 [Hardcoded Shape Trap]: map_per_class = map_per_class.unsqueeze(0)
+Line 362 [Hardcoded Shape Trap]: mar_100_per_class = mar_100_per_class.unsqueeze(0)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills\skills\hugging-face-vision-trainer\scripts\sam_segmentation_training.py ---
+Line 107 [Concat Dim Mismatch Risk]: pixel_values = torch.cat([item["pixel_values"] for item in batch], dim=0)
+Line 114 [Concat Dim Mismatch Risk]: labels = torch.cat(
+Line 117 [Hardcoded Shape Trap]: torch.as_tensor(x["labels"]).unsqueeze(0).unsqueeze(0).float(),
+Line 135 [Concat Dim Mismatch Risk]: result["input_boxes"] = torch.cat([item["input_boxes"] for item in batch], dim=0)
+Line 137 [Concat Dim Mismatch Risk]: result["input_points"] = torch.cat([item["input_points"] for item in batch], dim=0)
+Line 139 [Concat Dim Mismatch Risk]: result["input_labels"] = torch.cat([item["input_labels"] for item in batch], dim=0)
+Line 152 [Hardcoded Shape Trap]: predicted_masks = outputs.pred_masks.squeeze(1)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills\skills\ui-ux-pro-max\scripts\core.py ---
+Line 134 [Div by Zero]: self.idf[word] = log((self.N - freq + 0.5) / (freq + 0.5) + 1)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills-claude\skills\007\scripts\scanners\secrets_scanner.py ---
+Line 182 [Log(0) Trap]: entropy -= probability * math.log2(probability)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills-claude\skills\app-store-optimization\ab_test_planner.py ---
+Line 444 [Exp NaN Trap]: d = 0.3989423 * math.exp(-z * z / 2.0)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills-claude\skills\hugging-face-community-evals\scripts\inspect_vllm_uv.py ---
+Line 193 [Div by Zero]: uv run scripts/inspect_vllm_uv.py --model meta-llama/Llama-3.2-70B --task mmlu --tensor-parallel-size 4
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills-claude\skills\hugging-face-jobs\scripts\cot-self-instruct.py ---
+Line 116 [Div by Zero]: gpu_memory = torch.cuda.get_device_properties(i).total_memory / 1024**3
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills-claude\skills\hugging-face-vision-trainer\scripts\object_detection_training.py ---
+Line 360 [Hardcoded Shape Trap]: classes = classes.unsqueeze(0)
+Line 361 [Hardcoded Shape Trap]: map_per_class = map_per_class.unsqueeze(0)
+Line 362 [Hardcoded Shape Trap]: mar_100_per_class = mar_100_per_class.unsqueeze(0)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills-claude\skills\hugging-face-vision-trainer\scripts\sam_segmentation_training.py ---
+Line 107 [Concat Dim Mismatch Risk]: pixel_values = torch.cat([item["pixel_values"] for item in batch], dim=0)
+Line 114 [Concat Dim Mismatch Risk]: labels = torch.cat(
+Line 117 [Hardcoded Shape Trap]: torch.as_tensor(x["labels"]).unsqueeze(0).unsqueeze(0).float(),
+Line 135 [Concat Dim Mismatch Risk]: result["input_boxes"] = torch.cat([item["input_boxes"] for item in batch], dim=0)
+Line 137 [Concat Dim Mismatch Risk]: result["input_points"] = torch.cat([item["input_points"] for item in batch], dim=0)
+Line 139 [Concat Dim Mismatch Risk]: result["input_labels"] = torch.cat([item["input_labels"] for item in batch], dim=0)
+Line 152 [Hardcoded Shape Trap]: predicted_masks = outputs.pred_masks.squeeze(1)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-awesome-skills-claude\skills\ui-ux-pro-max\scripts\core.py ---
+Line 134 [Div by Zero]: self.idf[word] = log((self.N - freq + 0.5) / (freq + 0.5) + 1)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-bundle-expo-react-native\skills\app-store-optimization\ab_test_planner.py ---
+Line 444 [Exp NaN Trap]: d = 0.3989423 * math.exp(-z * z / 2.0)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-bundle-mobile-developer\skills\app-store-optimization\ab_test_planner.py ---
+Line 444 [Exp NaN Trap]: d = 0.3989423 * math.exp(-z * z / 2.0)
+
+--- File: antigravity-awesome-skills\plugins\antigravity-bundle-web-designer\skills\ui-ux-pro-max\scripts\core.py ---
+Line 134 [Div by Zero]: self.idf[word] = log((self.N - freq + 0.5) / (freq + 0.5) + 1)
+
+--- File: antigravity-awesome-skills\skills\007\scripts\scanners\secrets_scanner.py ---
+Line 182 [Log(0) Trap]: entropy -= probability * math.log2(probability)
+
+--- File: antigravity-awesome-skills\skills\app-store-optimization\ab_test_planner.py ---
+Line 444 [Exp NaN Trap]: d = 0.3989423 * math.exp(-z * z / 2.0)
+
+--- File: antigravity-awesome-skills\skills\hugging-face-community-evals\scripts\inspect_vllm_uv.py ---
+Line 193 [Div by Zero]: uv run scripts/inspect_vllm_uv.py --model meta-llama/Llama-3.2-70B --task mmlu --tensor-parallel-size 4
+
+--- File: antigravity-awesome-skills\skills\hugging-face-jobs\scripts\cot-self-instruct.py ---
+Line 116 [Div by Zero]: gpu_memory = torch.cuda.get_device_properties(i).total_memory / 1024**3
+
+--- File: antigravity-awesome-skills\skills\hugging-face-vision-trainer\scripts\object_detection_training.py ---
+Line 360 [Hardcoded Shape Trap]: classes = classes.unsqueeze(0)
+Line 361 [Hardcoded Shape Trap]: map_per_class = map_per_class.unsqueeze(0)
+Line 362 [Hardcoded Shape Trap]: mar_100_per_class = mar_100_per_class.unsqueeze(0)
+
+--- File: antigravity-awesome-skills\skills\hugging-face-vision-trainer\scripts\sam_segmentation_training.py ---
+Line 107 [Concat Dim Mismatch Risk]: pixel_values = torch.cat([item["pixel_values"] for item in batch], dim=0)
+Line 114 [Concat Dim Mismatch Risk]: labels = torch.cat(
+Line 117 [Hardcoded Shape Trap]: torch.as_tensor(x["labels"]).unsqueeze(0).unsqueeze(0).float(),
+Line 135 [Concat Dim Mismatch Risk]: result["input_boxes"] = torch.cat([item["input_boxes"] for item in batch], dim=0)
+Line 137 [Concat Dim Mismatch Risk]: result["input_points"] = torch.cat([item["input_points"] for item in batch], dim=0)
+Line 139 [Concat Dim Mismatch Risk]: result["input_labels"] = torch.cat([item["input_labels"] for item in batch], dim=0)
+Line 152 [Hardcoded Shape Trap]: predicted_masks = outputs.pred_masks.squeeze(1)
+
+--- File: antigravity-awesome-skills\skills\slack-gif-creator\core\gif_builder.py ---
+Line 103 [Hardcoded Shape Trap]: all_pixels[:pixels_needed].reshape(height, width, 3).astype(np.uint8)
+Line 148 [Div by Zero]: similarity = 1.0 - (np.mean(diff) / 255.0)
+
+--- File: antigravity-awesome-skills\skills\ui-ux-pro-max\scripts\core.py ---
+Line 134 [Div by Zero]: self.idf[word] = log((self.N - freq + 0.5) / (freq + 0.5) + 1)
+
+--- File: antigravity_fleet_v2\free_greeks_engine.py ---
+Line 10 [Exp NaN Trap]: return math.exp(-0.5 * x * x) / math.sqrt(2.0 * math.pi)
+Line 29 [Log(0) Trap]: d1 = (math.log(S / K) + (r - q + 0.5 * sigma**2) * T) / (sigma * math.sqrt(T))
+Line 32 [Exp NaN Trap]: delta = math.exp(-q * T) * norm_cdf(d1)
+Line 34 [Exp NaN Trap]: delta = math.exp(-q * T) * (norm_cdf(d1) - 1.0)
+Line 36 [Exp NaN Trap]: gamma = (math.exp(-q * T) * norm_pdf(d1)) / (S * sigma * math.sqrt(T))
+Line 37 [Exp NaN Trap]: vega = S * math.exp(-q * T) * norm_pdf(d1) * math.sqrt(T) / 100.0
+
+--- File: chapter1_pipeline\multi_horizon_bucketing.py ---
+Line 43 [Div by Zero]: agg_df['vwap'] = agg_df['pv'] / agg_df[vol_col]
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\backtest_ic_compound.py ---
+Line 33 [Log(0) Trap]: try: r = math.log(prices[i] / prices[i-1])
+Line 48 [Log(0) Trap]: try: ret = math.log(closes[i] / closes[i-1]) * 100
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\backtest_ic_v4.py ---
+Line 57 [Log(0) Trap]: try: r = math.log(prices[i] / prices[i-1])
+Line 72 [Log(0) Trap]: try: ret = math.log(closes[i] / closes[i-1]) * 100
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\backtest_ic_v4b.py ---
+Line 44 [Log(0) Trap]: try: r = math.log(prices[i] / prices[i-1])
+Line 59 [Log(0) Trap]: try: ret = math.log(closes[i] / closes[i-1]) * 100
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\brute_force_v4.py ---
+Line 45 [Div by Zero]: sharpe = (np.mean(daily_returns) / std_r) * np.sqrt(252) if std_r > 0 else 0
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\frame.py ---
+Line 5244 [Div by Zero]: >>> df.assign(temp_f=df['temp_c'] * 9 / 5 + 32)
+Line 5520 [Hardcoded Shape Trap]: >>> df = pd.DataFrame(np.arange(12).reshape(3, 4),
+Line 11239 [Hardcoded Shape Trap]: base_cov = base_cov.reshape((len(cols), len(cols)))
+Line 11301 [Hardcoded Shape Trap]: >>> df1 = pd.DataFrame(np.arange(20).reshape(5, 4), index=index, columns=columns)
+Line 11302 [Hardcoded Shape Trap]: >>> df2 = pd.DataFrame(np.arange(16).reshape(4, 4), index=index[:4], columns=columns)
+Line 12506 [Hardcoded Shape Trap]: return result.reshape(x.shape)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\hf_api.py ---
+Line 6403 [Div by Zero]: >>> metadata = get_safetensors_metadata("bigscience/bloomz-560m")
+Line 6415 [Div by Zero]: >>> metadata = get_safetensors_metadata("bigscience/bloom")
+Line 6423 [Div by Zero]: >>> get_safetensors_metadata("runwayml/stable-diffusion-v1-5")
+Line 6424 [Div by Zero]: NotASafetensorsRepoError: 'runwayml/stable-diffusion-v1-5' is not a safetensors repo. Couldn't find 'model.safetensors.index.json' or 'model.safetensors' files.
+Line 12758 [Div by Zero]: >>> paths_info = get_bucket_paths_info("username/my-bucket", ["file.txt", "checkpoints/model.safetensors"])
+Line 12762 [Div by Zero]: BucketFile(type='file', path='checkpoints/model.safetensors', size=2408828, xet_hash='3ed0e9fefe788ddd61d1e26eba67057e9740a064b009256fbafadf6bb95785ca', mtime=datetime.datetime(2024, 9, 25, 15, 31, 2, 346000, tzinfo=datetime.timezone.utc))
+Line 12818 [Div by Zero]: >>> copy_files("hf://username/my-model/model.safetensors", "hf://buckets/my-bucket/")
+Line 13051 [Div by Zero]: ...         ("./model.safetensors", "models/model.safetensors"),
+Line 13315 [Div by Zero]: ...     remote_path="models/model.safetensors",
+Line 13375 [Div by Zero]: ...         ("models/model.safetensors", "./local/model.safetensors"),
+Line 13644 [Div by Zero]: >>> metadata = parse_local_safetensors_file_metadata("path/to/model.safetensors")
+Line 13705 [Div by Zero]: >>> metadata = get_local_safetensors_metadata("path/to/model.safetensors")
+Line 13710 [Div by Zero]: >>> metadata = get_local_safetensors_metadata("path/to/model_folder")
+Line 13733 [Div by Zero]: single_file_path = path / constants.SAFETENSORS_SINGLE_FILE
+Line 13734 [Div by Zero]: index_file_path = path / constants.SAFETENSORS_INDEX_FILE
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\libelefun.py ---
+Line 142 [Log(0) Trap]: N = int(0.35 * prec/math.log(a) + 20)
+Line 277 [Log(0) Trap]: N = int(1.1*prec/math.log(prec) + 20)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\ml_hedge_system_v4.py ---
+Line 461 [Div by Zero]: sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+Line 463 [Div by Zero]: sortino = (np.mean(dr) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\ml_hedge_system_v5.py ---
+Line 242 [Div by Zero]: sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+Line 244 [Div by Zero]: sortino = (np.mean(dr) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\model.py ---
+Line 330 [Concat Dim Mismatch Risk]: scores = torch.cat(scores)
+Line 332 [Concat Dim Mismatch Risk]: scores = np.concatenate(scores, axis=0)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\modeling_codegen.py ---
+Line 41 [Div by Zero]: inv_freq = 1.0 / (10000 ** (torch.arange(0, dim, 2, dtype=torch.int64) / dim))
+Line 43 [Concat Dim Mismatch Risk]: return torch.cat((torch.sin(sinusoid_inp), torch.cos(sinusoid_inp)), dim=1)
+Line 110 [Hardcoded Shape Trap]: return tensor.view(new_shape)
+Line 181 [Concat Dim Mismatch Risk]: key = torch.cat([k_rot, k_pass], dim=-1)
+Line 182 [Concat Dim Mismatch Risk]: query = torch.cat([q_rot, q_pass], dim=-1)
+Line 347 [Hardcoded Shape Trap]: position_ids = position_ids.unsqueeze(0)
+Line 388 [Hardcoded Shape Trap]: hidden_states = hidden_states.view(output_shape)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\modeling_d_fine.py ---
+Line 104 [Concat Dim Mismatch Risk]: gate_input = torch.cat([second_residual, hidden_states], dim=-1)
+Line 178 [Hardcoded Shape Trap]: value_l_ = value_list[level_id].reshape(batch_size * num_heads, hidden_dim, height, width)
+Line 199 [Hardcoded Shape Trap]: sampling_coord = sampling_coord.reshape(batch_size * num_heads, num_queries * num_points_list[level_id], 2)
+Line 206 [Hardcoded Shape Trap]: sampling_value_l_ = sampling_value_l_.permute(0, 2, 1).reshape(
+Line 213 [Hardcoded Shape Trap]: attention_weights = attention_weights.permute(0, 2, 1, 3).reshape(
+Line 219 [Hardcoded Shape Trap]: .view(batch_size, num_heads * hidden_dim, num_queries)
+Line 272 [Hardcoded Shape Trap]: value = encoder_hidden_states.reshape(batch_size, sequence_length, self.n_heads, self.d_model // self.n_heads)
+Line 277 [Hardcoded Shape Trap]: sampling_offsets = sampling_offsets.reshape(
+Line 281 [Hardcoded Shape Trap]: attention_weights = self.attention_weights(hidden_states).reshape(
+Line 288 [Hardcoded Shape Trap]: offset_normalizer = offset_normalizer.flip([1]).reshape(1, 1, 1, self.n_levels, 1, 2)
+Line 290 [Hardcoded Shape Trap]: reference_points.reshape(batch_size, sequence_length, 1, self.n_levels, 1, 2)
+Line 424 [Concat Dim Mismatch Risk]: merged_features = torch.cat(split_features, 1)
+Line 518 [Hardcoded Shape Trap]: query_states = self.q_proj(query_key_input).view(hidden_shape).transpose(1, 2)
+Line 519 [Hardcoded Shape Trap]: key_states = self.k_proj(query_key_input).view(hidden_shape).transpose(1, 2)
+Line 520 [Hardcoded Shape Trap]: value_states = self.v_proj(hidden_states).view(hidden_shape).transpose(1, 2)
+Line 643 [Div by Zero]: omega = torch.arange(pos_dim, device=device).to(dtype) / pos_dim
+Line 703 [Hardcoded Shape Trap]: hidden_states.permute(0, 2, 1).reshape(batch_size, self.encoder_hidden_dim, height, width).contiguous()
+Line 745 [Concat Dim Mismatch Risk]: stat = torch.cat([prob_topk, prob_topk.mean(dim=-1, keepdim=True)], dim=-1)
+Line 882 [Log(0) Trap]: bias = float(-math.log((1 - prior_prob) / prior_prob))
+Line 905 [Hardcoded Shape Trap]: grid_init = grid_init.reshape(module.n_heads, 1, 2).tile([1, sum(module.num_points_list), 1])
+Line 918 [Log(0) Trap]: bias = float(-math.log((1 - prior_prob) / prior_prob))
+Line 932 [Log(0) Trap]: bias = float(-math.log((1 - 0.5) / 0.5))
+Line 1053 [Log(0) Trap]: return torch.log(x1 / x2)
+Line 1053 [Div by Zero]: return torch.log(x1 / x2)
+Line 1076 [Concat Dim Mismatch Risk]: values = torch.cat(values, 0)
+Line 1196 [Hardcoded Shape Trap]: ref_points_input = ref_points_detach.unsqueeze(2)
+Line 1606 [Hardcoded Shape Trap]: grid_xy = grid_xy.unsqueeze(0) + 0.5
+Line 1615 [Log(0) Trap]: anchors = torch.log(anchors / (1 - anchors))
+Line 1615 [Div by Zero]: anchors = torch.log(anchors / (1 - anchors))
+Line 1714 [Concat Dim Mismatch Risk]: source_flatten = torch.cat(source_flatten, 1)
+Line 1715 [Concat Dim Mismatch Risk]: level_start_index = torch.cat((spatial_shapes.new_zeros((1,)), spatial_shapes.prod(1).cumsum(0)[:-1]))
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\modeling_opt.py ---
+Line 247 [Hardcoded Shape Trap]: hidden_states = (residual + hidden_states).view(hidden_states_shape)
+Line 618 [Hardcoded Shape Trap]: loss = loss_fct(pooled_logits.squeeze(), labels.squeeze())
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\modeling_utils.py ---
+Line 935 [Concat Dim Mismatch Risk]: causal_mask = torch.cat(
+Line 1712 [Div by Zero]: f' or load the model with the `dtype` argument. Example: `model = AutoModel.from_pretrained("meta-llama/Llama-3.2-1B", attn_implementation="flash_attention_{flash_attn_version}", dtype=torch.float16)`'
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\model_card.py ---
+Line 820 [Hardcoded Shape Trap]: array = array.unsqueeze(0)  # (1, num_samples) for torchaudio
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\modular_d_fine.py ---
+Line 289 [Concat Dim Mismatch Risk]: values = torch.cat(values, 0)
+Line 341 [Concat Dim Mismatch Risk]: gate_input = torch.cat([second_residual, hidden_states], dim=-1)
+Line 400 [Hardcoded Shape Trap]: value = encoder_hidden_states.reshape(batch_size, sequence_length, self.n_heads, self.d_model // self.n_heads)
+Line 405 [Hardcoded Shape Trap]: sampling_offsets = sampling_offsets.reshape(
+Line 409 [Hardcoded Shape Trap]: attention_weights = self.attention_weights(hidden_states).reshape(
+Line 416 [Hardcoded Shape Trap]: offset_normalizer = offset_normalizer.flip([1]).reshape(1, 1, 1, self.n_levels, 1, 2)
+Line 418 [Hardcoded Shape Trap]: reference_points.reshape(batch_size, sequence_length, 1, self.n_levels, 1, 2)
+Line 533 [Concat Dim Mismatch Risk]: merged_features = torch.cat(split_features, 1)
+Line 605 [Concat Dim Mismatch Risk]: stat = torch.cat([prob_topk, prob_topk.mean(dim=-1, keepdim=True)], dim=-1)
+Line 686 [Log(0) Trap]: bias = float(-math.log((1 - prior_prob) / prior_prob))
+Line 709 [Hardcoded Shape Trap]: grid_init = grid_init.reshape(module.n_heads, 1, 2).tile([1, sum(module.num_points_list), 1])
+Line 722 [Log(0) Trap]: bias = float(-math.log((1 - prior_prob) / prior_prob))
+Line 736 [Log(0) Trap]: bias = float(-math.log((1 - 0.5) / 0.5))
+Line 846 [Hardcoded Shape Trap]: ref_points_input = ref_points_detach.unsqueeze(2)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_casting_unittests.py ---
+Line 235 [Hardcoded Shape Trap]: new1 = as_strided(from_bytes[1:].view(arr1.dtype),
+Line 237 [Hardcoded Shape Trap]: new2 = as_strided(to_bytes[1:].view(arr2.dtype),
+Line 387 [Hardcoded Shape Trap]: arr2 = arr2.view(time_dt)
+Line 451 [Hardcoded Shape Trap]: assert np.isnat(values.view(from_dt)[0])
+Line 463 [Hardcoded Shape Trap]: expected_out = (values * nom // denom).view(to_res)
+Line 468 [Hardcoded Shape Trap]: expected_out = expected_out.view(to_dt)
+Line 470 [Hardcoded Shape Trap]: orig_arr = values.view(from_dt)
+Line 486 [Hardcoded Shape Trap]: assert_array_equal(out.view("int64"), expected_out.view("int64"))
+Line 663 [Hardcoded Shape Trap]: data1 = np.empty(30 * 4 + 1, dtype=np.uint8)[1:].view(dtype1)
+Line 664 [Hardcoded Shape Trap]: data2 = np.empty(30 * 4 + 1, dtype=np.uint8)[1:].view(dtype2)
+Line 826 [Hardcoded Shape Trap]: nonstandard_bools = np.array([0, 3, -7], dtype=np.int8).view(bool)
+Line 865 [Hardcoded Shape Trap]: unaligned = aligned[1:].view(arr1.dtype)
+Line 893 [Hardcoded Shape Trap]: unaligned = aligned[1:].view(arr1.dtype)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_distance.py ---
+Line 242 [Hardcoded Shape Trap]: return record.reshape([a.shape[i] if i != axis else 1
+Line 299 [Hardcoded Shape Trap]: arrays = [np.atleast_1d(a.squeeze()) for a in arrays]
+Line 356 [Div by Zero]: dup_weights = np.append(weights, weights) / 2.0
+Line 499 [Div by Zero]: Y2 = 1 - np.dot((X1 / norms(X1)), (X2 / norms(X2)).T)
+Line 1517 [Div by Zero]: assert_almost_equal(dist, 1.0 - 18.0 / (np.sqrt(14) * np.sqrt(27)))
+Line 1526 [Div by Zero]: ym = np.array([-4.0 / 3, -4.0 / 3, 5.0 - 7.0 / 3])
+Line 1529 [Div by Zero]: assert_almost_equal(dist, 1.0 - np.dot(xm, ym) / (norm(xm) * norm(ym)))
+Line 1898 [Hardcoded Shape Trap]: x = np.arange(4).reshape(2, 2)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_extmath.py ---
+Line 941 [Hardcoded Shape Trap]: A1[i, :].reshape((1, A1.shape[1])), mean, var, n
+Line 994 [Exp NaN Trap]: exp_X = np.exp(X)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_indexing.py ---
+Line 119 [Hardcoded Shape Trap]: arr = np.arange(10).reshape(5, 2)
+Line 125 [Hardcoded Shape Trap]: arr = np.arange(25).reshape(5, 5)
+Line 335 [Hardcoded Shape Trap]: a[[0, 1]] = np.arange(2 * 4 * 2).reshape(2, 4, 2).T
+Line 336 [Hardcoded Shape Trap]: b[[0, 1]] = np.arange(2 * 4 * 2).reshape(2, 4, 2).T.copy()
+Line 386 [Hardcoded Shape Trap]: idx = np.arange(6, dtype=np.intp).reshape(2, 1, 3)[:, :, 0]
+Line 404 [Hardcoded Shape Trap]: s = a.copy().view(type=SubClass)
+Line 421 [Hardcoded Shape Trap]: s = np.arange(25, dtype=np.float64).reshape(5, 5)
+Line 450 [Hardcoded Shape Trap]: b = np.arange(10).reshape(5, 2).T
+Line 509 [Hardcoded Shape Trap]: d = v.view(np.dtype("S8"))
+Line 512 [Hardcoded Shape Trap]: x = x.view(np.dtype("S8"))
+Line 520 [Hardcoded Shape Trap]: b = np.zeros(d.size + 1).view(np.int8)[1:-(np.intp(0).itemsize - 1)]
+Line 521 [Hardcoded Shape Trap]: b = b.view(np.intp)[:d.size]
+Line 614 [Hardcoded Shape Trap]: a = np.arange(25).reshape((5, 5))
+Line 706 [Hardcoded Shape Trap]: s = a.view(SubClass)
+Line 733 [Hardcoded Shape Trap]: s = a.view(SubClass)
+Line 745 [Hardcoded Shape Trap]: s = np.arange(10).view(SubClass)
+Line 853 [Hardcoded Shape Trap]: return np.arange(np.prod([3, 1, 5, 6])).reshape(3, 1, 5, 6)
+Line 981 [Hardcoded Shape Trap]: arr = arr.reshape(arr.shape[:ax] + (1,) + arr.shape[ax:])
+Line 996 [Hardcoded Shape Trap]: arr = arr.reshape(arr.shape[:ax]
+Line 1065 [Hardcoded Shape Trap]: arr = arr.reshape(arr.shape[:ax]
+Line 1101 [Hardcoded Shape Trap]: arr = arr.reshape(arr.shape[:ax]
+Line 1425 [Hardcoded Shape Trap]: a = a.reshape(5, 2)
+Line 1445 [Hardcoded Shape Trap]: a = a.reshape(5, 2)
+Line 1452 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1461 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1473 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1490 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1515 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1533 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1548 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1552 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1556 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1560 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1564 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1568 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1570 [Hardcoded Shape Trap]: assert_array_equal(a, np.arange(9).reshape((3, 3)))
+Line 1572 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1577 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1582 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1587 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1590 [Hardcoded Shape Trap]: assert_array_equal(a, np.arange(9).reshape((3, 3)))
+Line 1592 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1604 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1612 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1632 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1640 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1657 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1662 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+Line 1671 [Hardcoded Shape Trap]: a = np.arange(9).reshape((3, 3))
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_merge.py ---
+Line 1463 [Hardcoded Shape Trap]: np.arange(20).reshape((4, 5)) + 1, columns=["a", "b", "c", "d", "e"]
+Line 1466 [Hardcoded Shape Trap]: np.arange(20).reshape((5, 4)) + 1, columns=["a", "b", "x", "y"]
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_multiarray.py ---
+Line 130 [Hardcoded Shape Trap]: view1 = arr.view(subclass)
+Line 319 [Hardcoded Shape Trap]: two = np.arange(20).reshape(4, 5)
+Line 320 [Hardcoded Shape Trap]: three = np.arange(60, dtype=np.float64).reshape(2, 5, 6)
+Line 625 [Hardcoded Shape Trap]: a = np.arange(6).reshape(2, 3)
+Line 630 [Hardcoded Shape Trap]: a[...] = np.arange(2).reshape(2, 1)
+Line 648 [Hardcoded Shape Trap]: assert_raises(ValueError, assign, a, np.arange(12).reshape(2, 2, 3))
+Line 932 [Hardcoded Shape Trap]: a = np.arange(6).reshape(2, 3)
+Line 936 [Hardcoded Shape Trap]: a = np.arange(6).reshape(2, 3)
+Line 1398 [Hardcoded Shape Trap]: a['a'] = np.arange(60).reshape(3, 5, 2, 2)
+Line 1538 [Hardcoded Shape Trap]: a_tmp = a_tmp.view(a_tmp.dtype.newbyteorder())
+Line 1660 [Hardcoded Shape Trap]: xx = x['S'].reshape((2, 2))
+Line 1700 [Hardcoded Shape Trap]: w = arr.view({'names': ['bar'], 'formats': ['i8'], 'offsets': [8]})
+Line 1781 [Concat Dim Mismatch Risk]: assert_equal(np.concatenate([a, a]).dtype, np.dtype([('x', 'i4')]))
+Line 1850 [Hardcoded Shape Trap]: av = a.view(np.uint8)
+Line 1962 [Hardcoded Shape Trap]: assert_equal(zs.view(dt).dtype, np.dtype(dt))
+Line 1965 [Hardcoded Shape Trap]: assert_equal(zs.view((dt, 1)).shape, (0,))
+Line 1983 [Hardcoded Shape Trap]: arr = np.array([]).reshape(999999, 0)
+Line 2066 [Hardcoded Shape Trap]: arr = np.arange(10).reshape(2, 5)
+Line 2075 [Hardcoded Shape Trap]: arr = np.arange(10).reshape(2, 5)
+Line 2079 [Hardcoded Shape Trap]: arr = np.arange(10).reshape(2, 5)
+Line 2140 [Hardcoded Shape Trap]: m_rect = m.reshape((2, 3))
+Line 2173 [Hardcoded Shape Trap]: assert_equal(arr.reshape(2, 6), tgt)
+Line 2176 [Hardcoded Shape Trap]: assert_equal(arr.reshape(3, 4), tgt)
+Line 2179 [Hardcoded Shape Trap]: assert_equal(arr.reshape((3, 4), order='F'), tgt)
+Line 2182 [Hardcoded Shape Trap]: assert_equal(arr.T.reshape((3, 4), order='C'), tgt)
+Line 2211 [Hardcoded Shape Trap]: a = np.arange(12).astype(dt).reshape(3, 4).T
+Line 2218 [Hardcoded Shape Trap]: assert_equal(a.squeeze(), [1, 2, 3])
+Line 2219 [Hardcoded Shape Trap]: assert_equal(a.squeeze(axis=(0,)), [[1], [2], [3]])
+Line 2221 [Hardcoded Shape Trap]: assert_equal(a.squeeze(axis=(2,)), [[1, 2, 3]])
+Line 2407 [Hardcoded Shape Trap]: a = np.array([]).reshape((3, 2, 1, 0))
+Line 2432 [Hardcoded Shape Trap]: arr = rand.view('V4')
+Line 2438 [Hardcoded Shape Trap]: arr = rand.view(dt)
+Line 2682 [Hardcoded Shape Trap]: a = np.array([]).reshape((3, 2, 1, 0))
+Line 2787 [Hardcoded Shape Trap]: unaligned = aligned[1:].view(a.dtype)
+Line 2895 [Hardcoded Shape Trap]: unaligned = aligned[1:].view(a.dtype)
+Line 2955 [Hardcoded Shape Trap]: a = np.arange(5).view(A)
+Line 2956 [Hardcoded Shape Trap]: b = np.arange(1, 3).view(A)
+Line 2957 [Hardcoded Shape Trap]: s = np.arange(5).view(A)
+Line 2999 [Hardcoded Shape Trap]: a = np.array([]).reshape((3, 2, 1, 0))
+Line 3010 [Hardcoded Shape Trap]: a = np.array([]).reshape((3, 2, 1, 0))
+Line 3153 [Hardcoded Shape Trap]: d = np.arange(10).reshape((2, 5))
+Line 3249 [Hardcoded Shape Trap]: d = np.arange(10).reshape((2, 5))
+Line 3383 [Hardcoded Shape Trap]: d = np.arange(24).reshape(4, 6)
+Line 3460 [Hardcoded Shape Trap]: a = np.arange(8.0, dtype=dtype).reshape(2, 4)
+Line 3472 [Hardcoded Shape Trap]: a = np.zeros(8 * dt.itemsize // 2 + 1, dtype='int16')[1:].view(dtype)
+Line 3473 [Hardcoded Shape Trap]: a = a.reshape(2, 4)
+Line 3565 [Hardcoded Shape Trap]: a = np.ones((2, 2)).view(Sub)
+Line 3566 [Hardcoded Shape Trap]: b = np.ones((2, 2)).view(Sub)
+Line 3586 [Hardcoded Shape Trap]: a = np.arange(18).reshape(2, 3, 3)
+Line 3591 [Hardcoded Shape Trap]: a = np.arange(18).reshape(2, 3, 3)
+Line 3597 [Hardcoded Shape Trap]: a = np.arange(12).reshape((3, 4))
+Line 3607 [Hardcoded Shape Trap]: b = np.arange(8).reshape((2, 2, 2))
+Line 3654 [Hardcoded Shape Trap]: a = np.arange(12).reshape((3, 4))
+Line 3660 [Hardcoded Shape Trap]: b = np.arange(8).reshape((2, 2, 2))
+Line 3680 [Hardcoded Shape Trap]: b = np.arange(8).reshape((2, 2, 2)).view(MyArray)
+Line 3698 [Hardcoded Shape Trap]: assert_equal(a, tgt.reshape(2, 3))
+Line 3711 [Hardcoded Shape Trap]: assert_equal(a, tgt.reshape(2, 3))
+Line 3811 [Hardcoded Shape Trap]: b = np.arange(2**4 * 2)[::2].reshape(2, 2, 2, 2)
+Line 3828 [Hardcoded Shape Trap]: a = np.arange(10).view(ArraySubclass)
+Line 3834 [Hardcoded Shape Trap]: a = np.arange(10)[::2].view(ArraySubclass)
+Line 3853 [Hardcoded Shape Trap]: a = np.arange(1 * 2 * 3 * 4).reshape(1, 2, 3, 4).copy()
+Line 3978 [Hardcoded Shape Trap]: assert_(4.0 in np.arange(16.).reshape(4, 4))
+Line 3979 [Hardcoded Shape Trap]: assert_(20.0 not in np.arange(16.).reshape(4, 4))
+Line 4087 [Hardcoded Shape Trap]: return np.arange(3, 7).reshape(2, 2).view(MyType)
+Line 4096 [Hardcoded Shape Trap]: check_objs = [np.arange(3, 7, dtype=dtype).reshape(2, 2)]
+Line 4222 [Hardcoded Shape Trap]: res = np.arange(3).view(LowPriority) + BadPriority()
+Line 4313 [Hardcoded Shape Trap]: A = np.array([0]).view(OutClass)
+Line 4367 [Hardcoded Shape Trap]: return getattr(ufunc, method)(*[i.view(np.ndarray) for
+Line 4369 [Hardcoded Shape Trap]: tst = np.array('foo').view(A)
+Line 4632 [Hardcoded Shape Trap]: x = np.arange(24, dtype='uint8').reshape(3, 4, 2)
+Line 4634 [Hardcoded Shape Trap]: x = np.arange(24, dtype='uint8').reshape(3, 4, 2, order='F')
+Line 4636 [Hardcoded Shape Trap]: x = np.arange(24, dtype='uint8').reshape(3, 4, 2).transpose((1, 0, 2))
+Line 4638 [Hardcoded Shape Trap]: x = np.arange(12, dtype='uint8').reshape(3, 4)[:, :2]
+Line 4642 [Hardcoded Shape Trap]: non_contiguous_array = np.arange(12).reshape(3, 4)[:, :2]
+Line 4746 [Hardcoded Shape Trap]: original_byte_reversed = original_byte_reversed.view(dtype=new_dtype)
+Line 4864 [Hardcoded Shape Trap]: res_orig = _res_orig.reshape(new_shape)
+Line 4894 [Hardcoded Shape Trap]: res_orig = _res_orig.reshape(new_shape)
+Line 5128 [Concat Dim Mismatch Risk]: rarr = np.concatenate((arr, padd))
+Line 5272 [Concat Dim Mismatch Risk]: rarr = np.concatenate((arr, padd))
+Line 5433 [Hardcoded Shape Trap]: arr = np.arange(10).reshape(2, 5)
+Line 5443 [Hardcoded Shape Trap]: arr = np.arange(10).reshape(2, 5)
+Line 5448 [Hardcoded Shape Trap]: arr = np.arange(10).reshape(2, 5)
+Line 5541 [Hardcoded Shape Trap]: x = x.reshape((2, 3, 4))
+Line 5552 [Hardcoded Shape Trap]: x = x.reshape((2, 3, 4))
+Line 5559 [Hardcoded Shape Trap]: x = x.reshape((2, 3, 4))
+Line 5565 [Hardcoded Shape Trap]: x = x.reshape((2, 3, 4))
+Line 5656 [Hardcoded Shape Trap]: x = np.linspace(0., 1., 42 * 3).reshape(42, 3)
+Line 6112 [Hardcoded Shape Trap]: x = np.arange(24, dtype="i4").reshape(2, 3, 4)
+Line 6190 [Hardcoded Shape Trap]: a = np.arange(20.0).reshape(4, 5)
+Line 6217 [Hardcoded Shape Trap]: a = a0.reshape(4, 5)
+Line 6218 [Hardcoded Shape Trap]: a0 = a0.reshape((4, 5))
+Line 6254 [Hardcoded Shape Trap]: it = np.arange(10).reshape(2, 1, 5).flat
+Line 6542 [Hardcoded Shape Trap]: y = x.view(dtype='<i4')
+Line 6544 [Hardcoded Shape Trap]: z = x.view('<i4')
+Line 6569 [Hardcoded Shape Trap]: omat = np.array([Decimal(str(r)) for r in rmat.flat]).reshape(4, 5)
+Line 6743 [Hardcoded Shape Trap]: a = np.arange(16).reshape((4, 4))
+Line 6762 [Hardcoded Shape Trap]: a3d = np.arange(16).reshape((2, 2, 4))
+Line 6831 [Hardcoded Shape Trap]: a = np.arange(25).reshape((5, 5))
+Line 6850 [Hardcoded Shape Trap]: a3d = np.arange(16).reshape((2, 2, 4))
+Line 6859 [Hardcoded Shape Trap]: np.var(a[wh_full].reshape((5, 3)), axis=1))
+Line 6898 [Hardcoded Shape Trap]: a3d = np.arange(16).reshape((2, 2, 4))
+Line 6907 [Hardcoded Shape Trap]: np.std(a[whf].reshape((5, 3)), axis=1))
+Line 6909 [Hardcoded Shape Trap]: (a[whf].reshape((5, 3))).std(axis=1))
+Line 6923 [Hardcoded Shape Trap]: result = result.view(cls)
+Line 7232 [Hardcoded Shape Trap]: tmp = tmp[offset:offset + N * d.nbytes].view(dtype=dtype)
+Line 7233 [Hardcoded Shape Trap]: return tmp.reshape(shape, order=order)
+Line 7598 [Hardcoded Shape Trap]: m1 = np.arange(15.).reshape(5, 3)
+Line 7599 [Hardcoded Shape Trap]: m2 = np.arange(21.).reshape(3, 7)
+Line 7600 [Hardcoded Shape Trap]: m3 = np.arange(30.).reshape(5, 6)[:, ::2]  # non-contiguous
+Line 7709 [Hardcoded Shape Trap]: assert np.max(a.view(np.uint8)) == 1
+Line 7712 [Hardcoded Shape Trap]: assert np.max(b.view(np.uint8)) == 1
+Line 7716 [Hardcoded Shape Trap]: d = d.reshape(4, 5) > 0
+Line 7717 [Hardcoded Shape Trap]: out1 = np.matmul(d, d.reshape(5, 4))
+Line 7718 [Hardcoded Shape Trap]: out2 = np.dot(d, d.reshape(5, 4))
+Line 7760 [Hardcoded Shape Trap]: a = np.arange(10).reshape(5, 2).astype(dtype1)
+Line 7794 [Hardcoded Shape Trap]: a = np.arange(a_size).reshape(a_shape).astype(np.float64)
+Line 7798 [Hardcoded Shape Trap]: b = np.arange(b_size).reshape(b_shape)
+Line 7815 [Hardcoded Shape Trap]: a = np.arange(3 * 4 * 5).reshape(3, 4, 5)
+Line 7878 [Hardcoded Shape Trap]: a = np.arange(24).reshape(2, 3, 4).astype(dt)
+Line 7879 [Hardcoded Shape Trap]: b = np.arange(24, 48).reshape(2, 3, 4).astype(dt)
+Line 7956 [Hardcoded Shape Trap]: m_rect = m.reshape((2, 3))
+Line 8669 [Hardcoded Shape Trap]: x1 = np.arange(dt1.itemsize, dtype=np.int8).view(dt1)
+Line 8675 [Hardcoded Shape Trap]: x2 = np.arange(dt2.itemsize, dtype=np.int8).view(dt2)
+Line 8681 [Hardcoded Shape Trap]: x3 = np.arange(dt3.itemsize, dtype=np.int8).view(dt3)
+Line 9043 [Hardcoded Shape Trap]: "arr", [np.ones(()), np.arange(81).reshape((9, 9))])
+Line 9266 [Hardcoded Shape Trap]: arr3 = arr[:1].reshape(())
+Line 9318 [Hardcoded Shape Trap]: array = np.arange(24, dtype=np.double).reshape(3, 8)
+Line 9323 [Hardcoded Shape Trap]: array = np.arange(24, dtype=np.double).reshape(2, 3, 4)
+Line 9477 [Hardcoded Shape Trap]: m = np.array([], dtype=bool).reshape(0, 3)
+Line 9478 [Hardcoded Shape Trap]: b = np.array([], dtype=np.float64).reshape(0, 3)
+Line 9479 [Hardcoded Shape Trap]: assert_array_equal(np.where(m, 0, b), np.array([]).reshape(0, 3))
+Line 9651 [Hardcoded Shape Trap]: assert_(sys.getsizeof(d) < sys.getsizeof(d.reshape(100, 1, 1).copy()))
+Line 9698 [Hardcoded Shape Trap]: return np.array(*args, **kwargs).view(cls)
+Line 9704 [Hardcoded Shape Trap]: return np.array(*args, **kwargs).view(cls)
+Line 9963 [Hardcoded Shape Trap]: a = np.arange(6).reshape(2, 3).T  # force non-c-contiguous
+Line 9971 [Hardcoded Shape Trap]: a = np.arange(6).reshape(2, 3).T  # force non-c-contiguous
+Line 9976 [Hardcoded Shape Trap]: a = np.arange(6).reshape(2, 3).T  # force non-c-contiguous
+Line 9997 [Hardcoded Shape Trap]: a = np.arange(9).reshape(3, 3)
+Line 10005 [Hardcoded Shape Trap]: a = np.arange(9, dtype=float).reshape(3, 3)
+Line 10015 [Hardcoded Shape Trap]: arr = np.arange(9).reshape(3, 3).T
+Line 10033 [Hardcoded Shape Trap]: arr = np.arange(9).reshape(3, 3)
+Line 10044 [Hardcoded Shape Trap]: arr = np.arange(9).reshape(3, 3).T
+Line 10224 [Hardcoded Shape Trap]: a = np.array(1).view(SavesBase)
+Line 10234 [Hardcoded Shape Trap]: np.arange(10).view(BadAttributeArray)
+Line 10242 [Hardcoded Shape Trap]: np.arange(10).view(BadAttributeArray)
+Line 10250 [Hardcoded Shape Trap]: np.arange(10).view(BadAttributeArray)
+Line 10270 [Hardcoded Shape Trap]: obj_arr.view(RaisesInFinalize)
+Line 10293 [Hardcoded Shape Trap]: a = np.array(1).view(SuperFinalize)
+Line 10346 [Hardcoded Shape Trap]: my_arr = np.zeros(5, dtype=dt2).view(MyArr)
+Line 10504 [Exp NaN Trap]: np.exp(src)  # assert fails?
+Line 10604 [Hardcoded Shape Trap]: x.view('<i2')
+Line 10606 [Hardcoded Shape Trap]: assert_array_equal(x[:, np.newaxis].view('<i2'), expected)
+Line 10614 [Hardcoded Shape Trap]: x.view('S3')
+Line 10617 [Hardcoded Shape Trap]: x[:, np.newaxis].view('S3')
+Line 10621 [Hardcoded Shape Trap]: assert_array_equal(x[:, np.newaxis].view('S4'), expected)
+Line 10625 [Hardcoded Shape Trap]: x = np.arange(20, dtype='<i2').reshape(10, 2)[::2, :]
+Line 10628 [Hardcoded Shape Trap]: assert_array_equal(x.view('<i4'), expected)
+Line 10632 [Hardcoded Shape Trap]: x = np.arange(20, dtype='<i2').reshape(10, 2)[::2, :]
+Line 10635 [Hardcoded Shape Trap]: x.view('S3')
+Line 10639 [Hardcoded Shape Trap]: assert_array_equal(x.view('S4'), expected)
+Line 10643 [Hardcoded Shape Trap]: x = np.arange(4 * 3, dtype='<i4').reshape(4, 3).T
+Line 10646 [Hardcoded Shape Trap]: x.view('<i2')
+Line 10651 [Hardcoded Shape Trap]: reshape(2, 3, 4).transpose(1, 0, 2)
+Line 10655 [Hardcoded Shape Trap]: assert_array_equal(x.view('<i2'), expected)
+Line 10682 [Div by Zero]: infarr[np.random.choice(infarr.shape[0], (int)(N / 2))] = -np.inf
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_multivariate.py ---
+Line 190 [Hardcoded Shape Trap]: assert_close(x1, np.squeeze(x))  # for backward compatibility
+Line 191 [Hardcoded Shape Trap]: assert_close(x2, np.squeeze(x))
+Line 430 [Div by Zero]: special.ndtr((self.high + self.lambdas*t[:, np.newaxis]) / denom) -
+Line 431 [Div by Zero]: special.ndtr((self.low + self.lambdas*t[:, np.newaxis]) / denom),
+Line 439 [Hardcoded Shape Trap]: return np.squeeze(norm_pdf(t) * self._univariate_term(t))
+Line 497 [Div by Zero]: lambdas = np.sqrt(p / (1-p)) * rng.choice([-1.0, 1.0], size=ndim)
+Line 517 [Div by Zero]: special.ndtr((self.high - 1j*self.lambdas*t[:, np.newaxis]) / denom),
+Line 521 [Div by Zero]: special.ndtr((-self.high + 1j*self.lambdas*t[:, np.newaxis]) / denom),
+Line 530 [Hardcoded Shape Trap]: return (norm_pdf(t) * self._univariate_term(t)).squeeze()
+Line 589 [Log(0) Trap]: assert_allclose(d1, np.log(d2))
+Line 601 [Log(0) Trap]: assert_allclose(d1, np.log(d2))
+Line 602 [Log(0) Trap]: assert_allclose(d3, np.log(d4))
+Line 612 [Log(0) Trap]: assert_allclose(d1, np.log(d2))
+Line 624 [Log(0) Trap]: assert_allclose(d1, np.log(d2))
+Line 625 [Log(0) Trap]: assert_allclose(d3, np.log(d4))
+Line 720 [Exp NaN Trap]: large_entry = np.exp(large_total_log / npos)
+Line 720 [Div by Zero]: large_entry = np.exp(large_total_log / npos)
+Line 848 [Log(0) Trap]: assert_allclose(psd.log_pdet, np.sum(np.log(s[:-1])))
+Line 1006 [Div by Zero]: desired = 1 / 2 * (n * (np.log(2 * np.pi) + 1) + np.sum(np.log(eigs)))
+Line 1013 [Exp NaN Trap]: assert_almost_equal(np.exp(_lnB(alpha)), desired)
+Line 1027 [Concat Dim Mismatch Risk]: ab1 = np.concatenate((a[..., 0:1], b[..., 1:2]), axis=-1)
+Line 1028 [Concat Dim Mismatch Risk]: ab2 = np.concatenate((a[..., 1:2], b[..., 0:1]), axis=-1)
+Line 1046 [Exp NaN Trap]: cdf3 = np.exp(multivariate_normal.logcdf(b, mean, cov, lower_limit=a))
+Line 1047 [Exp NaN Trap]: cdf4 = np.exp(multivariate_normal(mean, cov).logcdf(b, lower_limit=a))
+Line 1130 [Div by Zero]: P = np.diag(1 / np.array([1, 2, 3]))
+Line 1476 [Concat Dim Mismatch Risk]: X = np.concatenate((X1[np.newaxis,:,:,:],X2[np.newaxis,:,:,:]), axis=0)
+Line 1502 [Hardcoded Shape Trap]: sample_colcov = np.cov(X.reshape(N*num_rows,num_cols).T)
+Line 1505 [Hardcoded Shape Trap]: sample_rowcov = np.cov(np.swapaxes(X,1,2).reshape(
+Line 1731 [Concat Dim Mismatch Risk]: X = np.concatenate((X1[np.newaxis, :, :, :], X2[np.newaxis, :, :, :]), axis=0)
+Line 1754 [Exp NaN Trap]: if (np.exp(mat_est_psd.log_pdet) <= 0) or (np.exp(mat_true_psd.log_pdet) <= 0):
+Line 1768 [Hardcoded Shape Trap]: return a_mat.T.reshape((a_mat.size,))
+Line 1794 [Div by Zero]: cov_vec_true = np.kron(V, U) / (df - 2)
+Line 2050 [Hardcoded Shape Trap]: t_mvt = multivariate_t(loc=M.squeeze(), shape=shape, df=df)
+Line 2054 [Hardcoded Shape Trap]: t_mvt_logpdf = t_mvt.logpdf(X.squeeze())
+Line 2113 [Log(0) Trap]: assert_almost_equal(dirichlet.logpdf(x, alpha), np.log(6))
+Line 2135 [Div by Zero]: x = np.full((2, 7, 7), 1 / 14)
+Line 2141 [Div by Zero]: x = np.full((2, 2, 7), 1 / 4)
+Line 2147 [Div by Zero]: x = np.full((3, 7), 1 / 3)
+Line 2153 [Div by Zero]: x = np.full((3, 7), 1 / 2)
+Line 2159 [Div by Zero]: x = np.full((2, 7), 1 / 2)
+Line 2165 [Div by Zero]: x = np.full((5, 7), 1 / 5)
+Line 2493 [Hardcoded Shape Trap]: sigma_lamda = lamda.T.dot(scale).dot(lamda).squeeze()
+Line 2709 [Div by Zero]: scale[np.tril_indices(dim, k=-1)] = np.arange(dim*(dim-1)/2)
+Line 2716 [Div by Zero]: x[np.tril_indices(dim, k=-1)] = np.arange(dim*(dim-1)/2)
+Line 2820 [Div by Zero]: scale[np.tril_indices(dim, k=-1)] = np.arange(dim * (dim - 1) / 2)
+Line 2858 [Log(0) Trap]: - (nu*p/2)*np.log(2)
+Line 2858 [Div by Zero]: - (nu*p/2)*np.log(2)
+Line 3377 [Log(0) Trap]: assert_array_almost_equal(np.log(val1), val2)
+Line 4028 [Hardcoded Shape Trap]: cov6 = np.array([], dtype=np.float64).reshape(0, 0)
+Line 4139 [Exp NaN Trap]: pmf = (lambda x: np.exp(method(x))) if log else method
+Line 4152 [Hardcoded Shape Trap]: rvs_nd = rvs.reshape((10, 100) + rvs.shape[1:])
+Line 4403 [Div by Zero]: mu = np.full((dim, ), 1/np.sqrt(dim))
+Line 4417 [Div by Zero]: mu = np.full((dim, ), 1/np.sqrt(dim))
+Line 4576 [Div by Zero]: mu = np.full((dim, ), 1/np.sqrt(dim))
+Line 4587 [Div by Zero]: mu = np.full((3, ), 1/np.sqrt(3))
+Line 4618 [Div by Zero]: mu = np.full((dim, ), 1/np.sqrt(dim))
+Line 4689 [Log(0) Trap]: assert_allclose(logres, np.log(ref))
+Line 4706 [Log(0) Trap]: assert_allclose(logres, np.log(ref))
+Line 4832 [Hardcoded Shape Trap]: x = np.array([[1, 2, 3], [2, 2, 3]]).reshape((2, 1, 1, 3))
+Line 4840 [Hardcoded Shape Trap]: ref = method(x[i].squeeze(), alpha[k].squeeze(), n[j].squeeze())
+Line 4853 [Hardcoded Shape Trap]: ref = method(alpha[k].squeeze(), n[j].squeeze())
+Line 4867 [Div by Zero]: t = stats.t(2*a, loc=mu, scale=1/np.sqrt(a * lmbda / b))
+Line 4909 [Exp NaN Trap]: assert_allclose(res, np.exp(ref))
+Line 4994 [Hardcoded Shape Trap]: assert_allclose((res[0].reshape(shape), res[1].reshape(shape)), ref)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_pivot.py ---
+Line 1049 [Hardcoded Shape Trap]: df[["D", "E", "F"]] = np.arange(len(df) * 3).reshape(len(df), 3).astype("i8")
+Line 1304 [Hardcoded Shape Trap]: np.array([10, 18, 3], dtype="int64").reshape(1, 3),
+Line 1330 [Hardcoded Shape Trap]: np.array([1, np.nan, 3, 9, 18, np.nan]).reshape(2, 3),
+Line 1493 [Hardcoded Shape Trap]: ).reshape(4, 4),
+Line 1539 [Hardcoded Shape Trap]: ).reshape(6, 2),
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_pivot_multilevel.py ---
+Line 204 [Hardcoded Shape Trap]: data=np.arange(12).reshape(4, 3),
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_records.py ---
+Line 167 [Hardcoded Shape Trap]: recarr = a.view(np.recarray)
+Line 168 [Hardcoded Shape Trap]: recordview = a.view(np.dtype((np.record, a.dtype)))
+Line 199 [Hardcoded Shape Trap]: assert_equal(a.view(np.recarray).dtype.type, np.record)
+Line 200 [Hardcoded Shape Trap]: assert_equal(type(a.view(np.recarray)), np.recarray)
+Line 201 [Hardcoded Shape Trap]: assert_equal(b.view(np.recarray).dtype.type, np.int64)
+Line 202 [Hardcoded Shape Trap]: assert_equal(type(b.view(np.recarray)), np.recarray)
+Line 206 [Hardcoded Shape Trap]: rv = r.view('f8').view('f4,i4')
+Line 220 [Hardcoded Shape Trap]: c = r.view(C)
+Line 235 [Hardcoded Shape Trap]: assert_equal(r.view('f4,f4').dtype.type, np.record)
+Line 236 [Hardcoded Shape Trap]: assert_equal(r.view(('i4', 2)).dtype.type, np.int32)
+Line 237 [Hardcoded Shape Trap]: assert_equal(r.view('V8').dtype.type, np.void)
+Line 238 [Hardcoded Shape Trap]: assert_equal(r.view(('i8', 'i4,i4')).dtype.type, np.int64)
+Line 245 [Hardcoded Shape Trap]: arr2 = rec.view(rec.dtype.fields or rec.dtype, np.ndarray)
+Line 299 [Hardcoded Shape Trap]: a = a.view(np.recarray)
+Line 463 [Hardcoded Shape Trap]: r = np.zeros((1, 3), dtype=dt).view(np.recarray)
+Line 493 [Hardcoded Shape Trap]: data = np.zeros(3, dt).view(np.recarray)
+Line 509 [Hardcoded Shape Trap]: data = np.zeros(3, dt_outer).view(np.recarray)
+Line 526 [Hardcoded Shape Trap]: data = np.zeros(3, dt_outer).view(np.recarray)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_regression.py ---
+Line 89 [Hardcoded Shape Trap]: c = np.arange(125).reshape((5, 5, 5))
+Line 153 [Hardcoded Shape Trap]: ua.view(ua.dtype.newbyteorder())  # Should succeed.
+Line 275 [Hardcoded Shape Trap]: x = np.arange(9).reshape((3, 3))
+Line 283 [Hardcoded Shape Trap]: assert_(type(a.squeeze()) is np.ndarray)
+Line 284 [Hardcoded Shape Trap]: assert_(type(b.squeeze()) is np.ndarray)
+Line 637 [Hardcoded Shape Trap]: a = np.arange(6).reshape(2, 3, order='F')
+Line 641 [Hardcoded Shape Trap]: assert_equal(b.reshape(2, 2, order='F'), [[2, 6], [4, 8]])
+Line 647 [Hardcoded Shape Trap]: assert_(a.reshape(5, 1).strides[0] == 0)
+Line 659 [Hardcoded Shape Trap]: assert_equal(a.reshape(3, 2, 1, 1).strides, strides_c)
+Line 660 [Hardcoded Shape Trap]: assert_equal(a.reshape(3, 2, 1, 1, order='F').strides, strides_f)
+Line 661 [Hardcoded Shape Trap]: assert_equal(np.array(0, dtype=np.int32).reshape(1, 1).strides, (4, 4))
+Line 665 [Hardcoded Shape Trap]: a = np.arange(12).reshape(4, 3)[:, 2]
+Line 691 [Hardcoded Shape Trap]: a = np.arange(5).reshape((5, 1))
+Line 738 [Hardcoded Shape Trap]: x = np.arange(12).reshape((3, 4))
+Line 996 [Concat Dim Mismatch Risk]: tmp = np.concatenate((arr1, arr2))
+Line 1107 [Hardcoded Shape Trap]: result = result.view(cls)
+Line 1157 [Hardcoded Shape Trap]: assert_(dat.reshape((2, 4)).info == 'jubba')
+Line 1159 [Hardcoded Shape Trap]: assert_(dat.squeeze().info == 'jubba')
+Line 1167 [Hardcoded Shape Trap]: assert_(dat.view(TestArray).info == 'jubba')
+Line 1264 [Hardcoded Shape Trap]: assert_(test_string_void_scalar.view(test_string.dtype) == test_string)
+Line 1566 [Hardcoded Shape Trap]: return np.ones((i,)).view(cls)
+Line 1576 [Hardcoded Shape Trap]: x = np.array([1, 2, 3]).view(Subclass)
+Line 1658 [Hardcoded Shape Trap]: a = a.view(np.float32)
+Line 1661 [Hardcoded Shape Trap]: a = a.view(a.dtype.newbyteorder())
+Line 1705 [Hardcoded Shape Trap]: a = np.zeros((1, 2)).squeeze()
+Line 1706 [Hardcoded Shape Trap]: b = np.zeros((2, 2, 2), order='F')[:, :, ::2].squeeze()
+Line 1721 [Hardcoded Shape Trap]: obj = np.asarray(input_array).view(cls)
+Line 1731 [Hardcoded Shape Trap]: def squeeze(self):
+Line 1732 [Hardcoded Shape Trap]: return super().squeeze()
+Line 1738 [Hardcoded Shape Trap]: assert_equal(np.squeeze(oldsqueeze),
+Line 1743 [Hardcoded Shape Trap]: assert_equal(np.squeeze(oldsqueeze, axis=None),
+Line 1755 [Hardcoded Shape Trap]: np.squeeze(oldsqueeze, axis=1)
+Line 1763 [Hardcoded Shape Trap]: np.squeeze(oldsqueeze, axis=0)
+Line 1770 [Hardcoded Shape Trap]: np.squeeze(np.array([[1], [2], [3]]), axis=0)
+Line 2098 [Hardcoded Shape Trap]: arr2 = np.reshape(arr, (2, 5))
+Line 2209 [Hardcoded Shape Trap]: x = np.array([1, 2, 3]).view(Foo)
+Line 2231 [Hardcoded Shape Trap]: a = np.arange(60).reshape(3, 4, 5)
+Line 2385 [Hardcoded Shape Trap]: squeezed = scvalue.squeeze(axis=axis)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_ridge.py ---
+Line 152 [Div by Zero]: coef_ols = Vt1.T @ np.diag(1 / s) @ U1.T @ y
+Line 189 [Div by Zero]: R2_Ridge = 1 - np.sum(res_Ridge**2) / np.sum(res_null**2)
+Line 238 [Concat Dim Mismatch Risk]: X = 0.5 * np.concatenate((X, X), axis=1)
+Line 279 [Concat Dim Mismatch Risk]: X = np.concatenate((X, X), axis=0)
+Line 382 [Concat Dim Mismatch Risk]: X = 0.5 * np.concatenate((X, X), axis=1)
+Line 439 [Concat Dim Mismatch Risk]: X = np.concatenate((X, X), axis=0)
+Line 498 [Concat Dim Mismatch Risk]: X = np.concatenate((X, X), axis=0)
+Line 826 [Hardcoded Shape Trap]: y = y.reshape(y_shape)
+Line 909 [Hardcoded Shape Trap]: y = y.reshape(y_shape)
+Line 931 [Hardcoded Shape Trap]: predictions = predictions.reshape(y_tiled.shape)
+Line 2051 [Concat Dim Mismatch Risk]: Y = np.concatenate([y, y], axis=1)
+Line 2281 [Concat Dim Mismatch Risk]: X2 = np.concatenate([X, X[: n_samples // 2]], axis=0)
+Line 2282 [Concat Dim Mismatch Risk]: y2 = np.concatenate([y, y[: n_samples // 2]])
+Line 2285 [Concat Dim Mismatch Risk]: sample_weight_2 = np.concatenate(
+Line 2359 [Hardcoded Shape Trap]: y_pred_loo = np.squeeze(
+Line 2393 [Hardcoded Shape Trap]: y_pred_loo = np.squeeze(
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_stride_tricks.py ---
+Line 49 [Hardcoded Shape Trap]: x1 = np.arange(n).reshape(shape1)
+Line 501 [Hardcoded Shape Trap]: arr = np.arange(5).view(MyArray)
+Line 530 [Hardcoded Shape Trap]: return np.array(*args, subok=True, **kwargs).view(cls)
+Line 535 [Hardcoded Shape Trap]: self = np.array(*args, subok=True, **kwargs).view(cls)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\test_to_csv.py ---
+Line 1076 [Hardcoded Shape Trap]: ).squeeze("columns")
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\trainer.py ---
+Line 2166 [Div by Zero]: Prepares one `data` before feeding it to the model, be it a tensor or a nested list/dictionary of tensors.
+Line 2809 [Concat Dim Mismatch Risk]: metrics[f"{metric_key_prefix}_loss"] = np.concatenate(all_losses).mean().item()
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\transformer.py ---
+Line 1083 [Concat Dim Mismatch Risk]: features["attention_mask"] = torch.cat((prefix_attention_mask, attention_mask), dim=1)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\utils.py ---
+Line 728 [Hardcoded Shape Trap]: position_ids = position_ids.unsqueeze(0)
+Line 854 [Concat Dim Mismatch Risk]: decoder_input_ids = torch.cat([decoder_start_token_id, decoder_input_ids], dim=-1)
+Line 857 [Concat Dim Mismatch Risk]: decoder_attention_mask = torch.cat(
+Line 922 [Concat Dim Mismatch Risk]: model_kwargs["token_type_ids"] = torch.cat([token_type_ids, token_type_ids[:, -num_new_tokens:]], dim=-1)
+Line 926 [Concat Dim Mismatch Risk]: model_kwargs["mm_token_type_ids"] = torch.cat(
+Line 936 [Hardcoded Shape Trap]: torch.arange(num_new_tokens, dtype=position_ids.dtype, device=position_ids.device).view(*required_dim)
+Line 940 [Concat Dim Mismatch Risk]: next_position_ids = torch.cat([position_ids, next_position_ids], dim=-1)
+Line 946 [Concat Dim Mismatch Risk]: model_kwargs[attention_mask_key] = torch.cat(
+Line 1388 [Exp NaN Trap]: ...     print(f"| {tok:5d} | {tokenizer.decode(tok):8s} | {score.numpy():.3f} | {np.exp(score.numpy()):.2%}")
+Line 1429 [Hardcoded Shape Trap]: stacked_scores = stacked_scores.reshape(
+Line 1955 [Hardcoded Shape Trap]: eos_token_tensor = eos_token_tensor.unsqueeze(0)
+Line 2273 [Hardcoded Shape Trap]: inputs = inputs.unsqueeze(0).tolist()
+Line 2326 [Hardcoded Shape Trap]: sequences_as_tensor = sequences_as_tensor.unsqueeze(0)
+Line 2654 [Hardcoded Shape Trap]: input_ids[batch_idx] = self.generate(trimmed_ids.unsqueeze(0), generation_config=generation_config)
+Line 2791 [Hardcoded Shape Trap]: next_tokens = torch.multinomial(probs, num_samples=1).squeeze(1)
+Line 2800 [Concat Dim Mismatch Risk]: input_ids = torch.cat([input_ids, next_tokens[:, None]], dim=-1)
+Line 2847 [Hardcoded Shape Trap]: return torch.reshape(tensor, [shape[0] * shape[1]] + shape[2:])
+Line 2853 [Hardcoded Shape Trap]: return torch.reshape(tensor, [batch_size, num_beams] + shape[1:])
+Line 3063 [Concat Dim Mismatch Risk]: merged_sequences = torch.cat((sequences, topk_running_sequences), dim=1)
+Line 3064 [Concat Dim Mismatch Risk]: merged_scores = torch.cat((beam_scores, topk_log_probs), dim=1)
+Line 3065 [Concat Dim Mismatch Risk]: merged_beam_indices = torch.cat((beam_indices, topk_running_beam_indices), dim=1)
+Line 3066 [Concat Dim Mismatch Risk]: merged_is_sent_finished = torch.cat((is_sent_finished, did_top_num_beams_just_finished), dim=1)
+Line 3155 [Concat Dim Mismatch Risk]: top_num_beam_mask = torch.cat(
+Line 3288 [Hardcoded Shape Trap]: log_probs = torch.reshape(log_probs, (batch_size, num_beams * vocab_size))
+Line 3600 [Hardcoded Shape Trap]: selected_tokens = torch.multinomial(probs[0, :, :], num_samples=1).squeeze(1)[None, :]
+Line 3618 [Concat Dim Mismatch Risk]: input_ids = torch.cat((input_ids, valid_tokens), dim=-1)
+Line 3829 [Hardcoded Shape Trap]: q_i = q[:, torch.arange(candidate_length), new_candidate_input_ids].squeeze(0, 1)
+Line 3831 [Hardcoded Shape Trap]: p_i = p[:, torch.arange(candidate_length), new_candidate_input_ids].squeeze(0, 1)
+Line 3857 [Hardcoded Shape Trap]: t = torch.multinomial(p_prime, num_samples=1).squeeze(1)[None, :]
+Line 3861 [Concat Dim Mismatch Risk]: valid_tokens = torch.cat((new_candidate_input_ids[:, :n_matches], t), dim=-1)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\vision.py ---
+Line 117 [Hardcoded Shape Trap]: patch_pos_embed = patch_pos_embed.reshape(1, int(sqrt_num_positions), int(sqrt_num_positions), embed_dim)
+Line 140 [Hardcoded Shape Trap]: return torch.cat((class_pos_embed.unsqueeze(0), patch_pos_embed), dim=1)
+Line 140 [Concat Dim Mismatch Risk]: return torch.cat((class_pos_embed.unsqueeze(0), patch_pos_embed), dim=1)
+Line 157 [Concat Dim Mismatch Risk]: embeddings = torch.cat([class_embeds, patch_embeds], dim=1)
+Line 230 [Hardcoded Shape Trap]: queries = queries.view(hidden_shape).transpose(1, 2)
+Line 231 [Hardcoded Shape Trap]: keys = keys.view(hidden_shape).transpose(1, 2)
+Line 232 [Hardcoded Shape Trap]: values = values.view(hidden_shape).transpose(1, 2)
+
+--- File: Fleet_Master_Archive\Bot_13_V4_ML_Driven_Strategy\code\_orthogonal.py ---
+Line 190 [Log(0) Trap]: log_fm = np.log(np.abs(fm))
+Line 191 [Log(0) Trap]: log_dy = np.log(np.abs(dy))
+Line 192 [Exp NaN Trap]: fm /= np.exp((log_fm.max() + log_fm.min()) / 2.)
+Line 193 [Exp NaN Trap]: dy /= np.exp((log_dy.max() + log_dy.min()) / 2.)
+Line 280 [Exp NaN Trap]: mu0 = np.exp((alpha + beta + 1) * np.log(2.0)
+Line 286 [Div by Zero]: return np.where(k == 0, (b - a) / (2 + a + b), 0.0)
+Line 298 [Div by Zero]: * np.sqrt((k + a) * (k + b) / (2 * k + a + b + 1))
+Line 299 [Div by Zero]: * np.where(k == 1, 1.0, np.sqrt(k * (k + a + b) / (2.0 * k + a + b - 1)))
+Line 898 [Div by Zero]: return np.sqrt(k / 2.0)
+Line 1553 [Div by Zero]: mu0 = mu0 * np.sqrt(np.pi / alpha)
+Line 1557 [Div by Zero]: return np.sqrt(k * (k + 2 * alpha - 1) / (4 * (k + alpha) * (k + alpha - 1)))
+Line 1693 [Div by Zero]: x = _ufuncs._sinpi(np.arange(-m + 1, m, 2) / (2*m))
+Line 1694 [Div by Zero]: w = np.full_like(x, pi/m)
+Line 1852 [Div by Zero]: t = np.arange(m, 0, -1) * pi / (m + 1)
+Line 1854 [Div by Zero]: w = pi * np.sin(t)**2 / (m + 1)
+Line 2437 [Log(0) Trap]: >>> 1.5 + np.log(2)
+Line 2449 [Div by Zero]: return k * np.sqrt(1.0 / (4 * k * k - 1))
+
+--- File: gcp_backup_vm1\home\patel\omni-v2\daily_astro_screener.py ---
+Line 165 [Div by Zero]: df['Date_Naive'] = pd.to_datetime(df['Date'], utc=True).dt.tz_convert('US/Eastern').dt.tz_localize(None)
+
+--- File: gcp_backup_vm1\home\patel\omni-v2\institution_backtest_analysis.py ---
+Line 1031 [Div by Zero]: pooled_std = np.sqrt((bull_vals.std()**2 + bear_vals.std()**2)/2)
+Line 1052 [Div by Zero]: ps = np.sqrt((b.std()**2 + br.std()**2)/2)
+
+--- File: gcp_backup_vm1\home\patel\omni-v2\omni_astro_screener_alpaca.py ---
+Line 130 [Div by Zero]: df['Date_Naive'] = pd.to_datetime(df['Date'], utc=True).dt.tz_convert('US/Eastern').dt.tz_localize(None)
+Line 183 [Div by Zero]: df['Date_Naive'] = pd.to_datetime(df['Date'], utc=True).dt.tz_convert('US/Eastern').dt.tz_localize(None)
+
+--- File: gcp_backup_vm1\home\patel\omni-v2\standard_omni_bot.py ---
+Line 130 [Div by Zero]: df['Date_Naive'] = pd.to_datetime(df['Date'], utc=True).dt.tz_convert('US/Eastern').dt.tz_localize(None)
+Line 183 [Div by Zero]: df['Date_Naive'] = pd.to_datetime(df['Date'], utc=True).dt.tz_convert('US/Eastern').dt.tz_localize(None)
+
+--- File: gcp_backup_vm1\home\patel\omni-v2\v3_deep_screener.py ---
+Line 621 [Div by Zero]: df['Date_Naive'] = pd.to_datetime(df['Date'], utc=True).dt.tz_convert('US/Eastern').dt.tz_localize(None)
+
+--- File: kp_astrology\kp_lordship_module.py ---
+Line 108 [Div by Zero]: nak_indices_raw = np.floor(units / 2400.0)
+Line 152 [Div by Zero]: n_idx_rad = 2.0 * np.pi * nak_indices / 27.0
+Line 157 [Div by Zero]: v_idx_rad = 2.0 * np.pi * star_lord_indices / 9.0
+Line 162 [Div by Zero]: n_phase_rad = 2.0 * np.pi * (rem_units / 2400.0)
+Line 167 [Div by Zero]: s_phase_rad = 2.0 * np.pi * (sub_rem_units / sub_span_lengths)
+Line 172 [Div by Zero]: ss_phase_rad = 2.0 * np.pi * (sub_sub_rem_units / ss_span_lengths)
+
+--- File: ml_options_hedging_project\audit_crossvalidation.py ---
+Line 120 [Div by Zero]: blend_sharpe = (blend_daily.mean() / blend_daily.std()) * np.sqrt(252)
+
+--- File: ml_options_hedging_project\brute_force_options.py ---
+Line 251 [Div by Zero]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 251 [Concat Dim Mismatch Risk]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 252 [Div by Zero]: sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+Line 254 [Div by Zero]: sortino = (np.mean(dr) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: ml_options_hedging_project\brute_force_v3.py ---
+Line 43 [Div by Zero]: sharpe = (np.mean(daily_returns) / std_r) * np.sqrt(252) if std_r > 0 else 0
+
+--- File: ml_options_hedging_project\brute_force_v4.py ---
+Line 45 [Div by Zero]: sharpe = (np.mean(daily_returns) / std_r) * np.sqrt(252) if std_r > 0 else 0
+
+--- File: ml_options_hedging_project\compare_real_vs_synthetic.py ---
+Line 83 [Log(0) Trap]: k_obs = np.log(otm_group['strike'] / underlying_price).values
+Line 83 [Div by Zero]: k_obs = np.log(otm_group['strike'] / underlying_price).values
+Line 109 [Log(0) Trap]: k = np.log(K / underlying_price)
+Line 109 [Div by Zero]: k = np.log(K / underlying_price)
+Line 152 [Div by Zero]: real_mid = (real_df['bid'].values + real_df['ask'].values) / 2.0
+Line 157 [Div by Zero]: mape = np.mean(np.abs(real_mid[valid_mask] - syn_mid[valid_mask]) / real_mid[valid_mask])
+
+--- File: ml_options_hedging_project\ensemble_dynamic.py ---
+Line 20 [Div by Zero]: sharpe = (mean_daily / std_daily) * np.sqrt(252) if std_daily > 0 else 0
+
+--- File: ml_options_hedging_project\ensemble_spy_horizon.py ---
+Line 19 [Div by Zero]: sharpe = (mean_r / std_r) * np.sqrt(252) if std_r > 0 else 0
+Line 34 [Div by Zero]: init_w = np.ones(n_assets) / n_assets
+
+--- File: ml_options_hedging_project\ensemble_static.py ---
+Line 24 [Div by Zero]: sharpe = (mean_daily_return / std_daily_return) * np.sqrt(252) if std_daily_return > 0 else 0
+Line 40 [Div by Zero]: initial_weights = np.ones(num_assets) / num_assets
+
+--- File: ml_options_hedging_project\ensemble_unified.py ---
+Line 20 [Div by Zero]: sharpe = (mean_r / std_r) * np.sqrt(252) if std_r > 0 else 0
+Line 35 [Div by Zero]: init_w = np.ones(n_assets) / n_assets
+
+--- File: ml_options_hedging_project\ensemble_v2.py ---
+Line 24 [Div by Zero]: sharpe = (np.mean(daily_returns) / std_r) * np.sqrt(252) if std_r > 0 else 0
+
+--- File: ml_options_hedging_project\eod_option_harvester.py ---
+Line 175 [Log(0) Trap]: df['log_moneyness'] = np.log(df['strike'] / underlying_price)
+Line 175 [Div by Zero]: df['log_moneyness'] = np.log(df['strike'] / underlying_price)
+Line 180 [Exp NaN Trap]: df['forward_price'] = underlying_price * np.exp(r_approx * dte / 365.0)
+Line 180 [Div by Zero]: df['forward_price'] = underlying_price * np.exp(r_approx * dte / 365.0)
+Line 181 [Log(0) Trap]: df['log_moneyness_fwd'] = np.log(df['strike'] / df['forward_price'])
+Line 181 [Div by Zero]: df['log_moneyness_fwd'] = np.log(df['strike'] / df['forward_price'])
+
+--- File: ml_options_hedging_project\generate_historical_ticks.py ---
+Line 146 [Div by Zero]: target_dtes = np.array([7, 14, 30, 45, 60]) # Standard weekly/monthly cycle
+
+--- File: ml_options_hedging_project\gpu_historical_tick_generator.py ---
+Line 39 [Log(0) Trap]: d1 = (torch.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * sqrt_T)
+Line 39 [Div by Zero]: d1 = (torch.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * sqrt_T)
+Line 46 [Exp NaN Trap]: pdf_d1 = torch.exp(normal.log_prob(d1))
+Line 48 [Exp NaN Trap]: exp_rT = torch.exp(-r * T)
+Line 109 [Exp NaN Trap]: F_exp = F_t * np.exp(r_t * T_t)
+Line 110 [Log(0) Trap]: k_arr = np.log(strikes / F_exp)
+Line 110 [Div by Zero]: k_arr = np.log(strikes / F_exp)
+
+--- File: ml_options_hedging_project\grand_comparison.py ---
+Line 17 [Div by Zero]: sharpe = (daily_ret.mean() / daily_ret.std()) * np.sqrt(252)
+
+--- File: ml_options_hedging_project\historical_csv_parser.py ---
+Line 125 [Div by Zero]: 'T': np.maximum(df['DTE'] / 365.0, 1/365.0), # Force min T > 0
+Line 138 [Div by Zero]: 'T': np.maximum(df['DTE'] / 365.0, 1/365.0),
+Line 159 [Log(0) Trap]: k = np.log(combined['strike'] / combined['underlying_price'])
+Line 159 [Div by Zero]: k = np.log(combined['strike'] / combined['underlying_price'])
+
+--- File: ml_options_hedging_project\hmm_spx.py ---
+Line 43 [Exp NaN Trap]: prob *= (1.0 / (sigma * math.sqrt(2 * math.pi))) * math.exp(exponent)
+Line 118 [Exp NaN Trap]: prob *= (1.0 / (sigma * math.sqrt(2 * math.pi))) * math.exp(exponent)
+
+--- File: ml_options_hedging_project\intraday_interpolator.py ---
+Line 156 [Log(0) Trap]: log_return = np.log(S_t / start_price) if start_price > 0 else 0.0
+Line 156 [Div by Zero]: log_return = np.log(S_t / start_price) if start_price > 0 else 0.0
+Line 161 [Exp NaN Trap]: F_t = S_t * np.exp(risk_free_rate * day_fraction_remaining)
+Line 269 [Div by Zero]: minute_vol = daily_range / (2.5 * np.sqrt(minutes))  # Approx scaling
+Line 282 [Log(0) Trap]: drift = (np.log(close_price) - np.log(path[i-1])) / (minutes - i) if (minutes - i) > 0 else 0
+Line 282 [Div by Zero]: drift = (np.log(close_price) - np.log(path[i-1])) / (minutes - i) if (minutes - i) > 0 else 0
+Line 285 [Exp NaN Trap]: u_shape = 1.0 + 1.5 * (np.exp(-5 * t) + np.exp(-5 * (1 - t)))
+Line 290 [Exp NaN Trap]: path[i] = path[i-1] * np.exp(drift + dW)
+Line 303 [Exp NaN Trap]: bump = np.exp(-0.5 * ((np.arange(minutes) - high_idx) / 15)**2)
+Line 303 [Div by Zero]: bump = np.exp(-0.5 * ((np.arange(minutes) - high_idx) / 15)**2)
+Line 310 [Exp NaN Trap]: bump = np.exp(-0.5 * ((np.arange(minutes) - low_idx) / 15)**2)
+Line 310 [Div by Zero]: bump = np.exp(-0.5 * ((np.arange(minutes) - low_idx) / 15)**2)
+Line 362 [Exp NaN Trap]: F = snapshot.forward_price * np.exp(r * T)
+Line 363 [Log(0) Trap]: k = np.log(K / F) if F > 0 else 0.0
+Line 363 [Div by Zero]: k = np.log(K / F) if F > 0 else 0.0
+
+--- File: ml_options_hedging_project\microstructure_layer.py ---
+Line 140 [Exp NaN Trap]: moneyness_mult = np.exp(cfg.moneyness_spread_coeff * abs_moneyness)
+Line 197 [Div by Zero]: result[below] = np.round(result[below] / cfg.tick_below_threshold) * cfg.tick_below_threshold
+Line 201 [Div by Zero]: result[above] = np.round(result[above] / cfg.tick_above_threshold) * cfg.tick_above_threshold
+Line 251 [Log(0) Trap]: mu += np.log(dte_factor)
+Line 259 [Exp NaN Trap]: intraday_mult = 1.0 + 1.0 * (np.exp(-5 * t_frac) + np.exp(-5 * (1 - t_frac)))
+Line 260 [Log(0) Trap]: mu += np.log(intraday_mult)
+Line 264 [Exp NaN Trap]: volume = np.exp(log_vol).astype(int)
+Line 292 [Exp NaN Trap]: oi = np.exp(log_oi).astype(int)
+Line 295 [Div by Zero]: dte_mult = np.clip(dte / 30.0, 0.3, 3.0)
+Line 329 [Log(0) Trap]: df['log_moneyness'] = np.log(
+Line 330 [Div by Zero]: df['strike'] / df['underlying_price']
+Line 401 [Div by Zero]: df['mid_price_adj'] = (df['bid'] + df['ask']) / 2.0
+Line 434 [Exp NaN Trap]: S * np.exp(-0.001 * np.abs(strikes - S)) - strikes * 0.1 + 10, 0.5
+Line 437 [Log(0) Trap]: 'log_moneyness': np.log(strikes / S),
+Line 437 [Div by Zero]: 'log_moneyness': np.log(strikes / S),
+Line 438 [Div by Zero]: 'delta_call': np.clip(1 - np.abs(strikes - S) / 50, 0.05, 0.95),
+
+--- File: ml_options_hedging_project\ml_hedge_system.py ---
+Line 537 [Div by Zero]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 537 [Concat Dim Mismatch Risk]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 538 [Div by Zero]: sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+Line 540 [Div by Zero]: sortino = (np.mean(dr) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: ml_options_hedging_project\ml_hedge_system_v3.py ---
+Line 9 [Div by Zero]: 1. GPU pre-computes ALL option prices/greeks as tensor batches
+Line 41 [Div by Zero]: print(f"  [GPU] {torch.cuda.get_device_name(0)} | {torch.cuda.get_device_properties(0).total_memory/1e9:.1f}GB VRAM")
+Line 64 [Log(0) Trap]: d1 = (torch.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * sqrt_T)
+Line 64 [Div by Zero]: d1 = (torch.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * sqrt_T)
+Line 68 [Div by Zero]: norm_cdf_d1 = 0.5 * (1 + torch.erf(d1 / math.sqrt(2)))
+Line 69 [Div by Zero]: norm_cdf_d2 = 0.5 * (1 + torch.erf(d2 / math.sqrt(2)))
+Line 70 [Div by Zero]: norm_cdf_neg_d1 = 0.5 * (1 + torch.erf(-d1 / math.sqrt(2)))
+Line 71 [Div by Zero]: norm_cdf_neg_d2 = 0.5 * (1 + torch.erf(-d2 / math.sqrt(2)))
+Line 73 [Exp NaN Trap]: discount = torch.exp(-r * T)
+Line 85 [Log(0) Trap]: d1 = (torch.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * torch.sqrt(T))
+Line 85 [Div by Zero]: d1 = (torch.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * torch.sqrt(T))
+Line 86 [Div by Zero]: norm_cdf_d1 = 0.5 * (1 + torch.erf(d1 / math.sqrt(2)))
+Line 113 [Div by Zero]: fwd_dd = np.min(fwd_window) / close_vals[i] - 1
+Line 500 [Div by Zero]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 500 [Concat Dim Mismatch Risk]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 501 [Div by Zero]: sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+Line 503 [Div by Zero]: sortino = (np.mean(dr) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: ml_options_hedging_project\ml_hedge_system_v4.py ---
+Line 461 [Div by Zero]: sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+Line 463 [Div by Zero]: sortino = (np.mean(dr) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: ml_options_hedging_project\ml_hedge_system_v5.py ---
+Line 242 [Div by Zero]: sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+Line 244 [Div by Zero]: sortino = (np.mean(dr) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: ml_options_hedging_project\ml_hedge_system_v6.py ---
+Line 192 [Div by Zero]: sharpe = (np.mean(daily_rets) / std_dr) * np.sqrt(252) if std_dr > 0 else 0
+Line 195 [Div by Zero]: sortino = (np.mean(daily_rets) / std_neg) * np.sqrt(252) if std_neg > 0 else 0
+Line 437 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252)
+
+--- File: ml_options_hedging_project\montecarlo_unified.py ---
+Line 71 [Concat Dim Mismatch Risk]: full_path = np.concatenate(path_returns)
+
+--- File: ml_options_hedging_project\monte_carlo_stress_test.py ---
+Line 189 [Div by Zero]: sharpe = (mean_r / std_r) * np.sqrt(252) if std_r > 0 else 0
+
+--- File: ml_options_hedging_project\numba_backtest.py ---
+Line 107 [Exp NaN Trap]: leg1_strike = S * math.exp(put_z * sigma * math.sqrt(T_years))
+Line 113 [Exp NaN Trap]: leg2_strike = S * math.exp(call_z * sigma * math.sqrt(T_years))
+
+--- File: ml_options_hedging_project\numba_options.py ---
+Line 27 [Exp NaN Trap]: y = 1.0 - (((((a5 * t + a4) * t) + a3) * t + a2) * t + a1) * t * math.exp(-x * x)
+Line 44 [Log(0) Trap]: d1 = (math.log(S / K) + (r + 0.5 * sigma * sigma) * T) / (sigma * math.sqrt(T))
+Line 48 [Exp NaN Trap]: return S * norm_cdf(d1) - K * math.exp(-r * T) * norm_cdf(d2)
+Line 50 [Exp NaN Trap]: return K * math.exp(-r * T) * norm_cdf(-d2) - S * norm_cdf(-d1)
+Line 61 [Log(0) Trap]: d1 = (math.log(S / K) + (r + 0.5 * sigma * sigma) * T) / (sigma * math.sqrt(T))
+
+--- File: ml_options_hedging_project\options_engine.py ---
+Line 20 [Log(0) Trap]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 20 [Div by Zero]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 33 [Exp NaN Trap]: return S * norm.cdf(d1) - K * np.exp(-r * T) * norm.cdf(d2)
+Line 35 [Exp NaN Trap]: return K * np.exp(-r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+Line 55 [Div by Zero]: return norm.pdf(d1) / (S * sigma * np.sqrt(T))
+Line 62 [Div by Zero]: term1 = -(S * norm.pdf(d1) * sigma) / (2 * np.sqrt(T))
+Line 64 [Exp NaN Trap]: return (term1 - r * K * np.exp(-r * T) * norm.cdf(d2)) / 252
+Line 64 [Div by Zero]: return (term1 - r * K * np.exp(-r * T) * norm.cdf(d2)) / 252
+Line 66 [Exp NaN Trap]: return (term1 + r * K * np.exp(-r * T) * norm.cdf(-d2)) / 252
+Line 66 [Div by Zero]: return (term1 + r * K * np.exp(-r * T) * norm.cdf(-d2)) / 252
+Line 73 [Div by Zero]: return S * norm.pdf(d1) * np.sqrt(T) / 100
+Line 435 [Exp NaN Trap]: parity = call_p - put_p - (100 - 100 * np.exp(-0.05))
+Line 441 [Exp NaN Trap]: intrinsic = 150 - 100 * np.exp(-0.05)
+
+--- File: ml_options_hedging_project\options_model.py ---
+Line 20 [Log(0) Trap]: d1 = (math.log(S / K) + (self.r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
+Line 24 [Exp NaN Trap]: price = S * norm.cdf(d1) - K * math.exp(-self.r * T) * norm.cdf(d2)
+Line 26 [Exp NaN Trap]: price = K * math.exp(-self.r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+Line 35 [Log(0) Trap]: d1 = (math.log(S / K) + (self.r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
+
+--- File: ml_options_hedging_project\plot_ensemble.py ---
+Line 24 [Div by Zero]: sharpe = (mean_daily / std_daily) * np.sqrt(252) if std_daily > 0 else 0
+
+--- File: ml_options_hedging_project\scaffold_extended.py ---
+Line 38 [Div by Zero]: df['VIX_TERM_STRUCT'] = (close['^VIX9D'] / close['^VIX']).shift(1)
+Line 46 [Div by Zero]: df['Credit_Z'] = ((credit_ratio - credit_ratio.rolling(252).mean()) / credit_ratio.rolling(252).std()).shift(1)
+Line 77 [Div by Zero]: df['Copper_Gold_Z'] = ((cg_ratio - cg_ratio.rolling(252).mean()) / cg_ratio.rolling(252).std()).shift(1)
+Line 84 [Div by Zero]: df['BB_Width'] = (4 * bb_std / bb_mean).shift(1)  # volatility squeeze detection
+Line 116 [Div by Zero]: df['Fib_Level_252'] = ((qqq_s - roll_lo_252) / rng_252.replace(0, np.nan)).shift(1)
+Line 122 [Div by Zero]: df['Fib_Level_63'] = ((qqq_s - roll_lo_63) / rng_63.replace(0, np.nan)).shift(1)
+Line 171 [Div by Zero]: ratio_30 = path_length_30 / direct_dist_30.replace(0, np.nan)
+Line 172 [Log(0) Trap]: df['Fractal_Dim'] = (np.log(ratio_30) / np.log(30)).shift(1)
+Line 172 [Div by Zero]: df['Fractal_Dim'] = (np.log(ratio_30) / np.log(30)).shift(1)
+Line 203 [Div by Zero]: df['Trend_Alignment'] = (align_sum / len(tf_windows)).shift(1)
+Line 212 [Div by Zero]: df['Time_From_High'] = (tfh_s / 252.0).shift(1)
+Line 213 [Div by Zero]: df['Time_From_Low'] = (tfl_s / 252.0).shift(1)
+Line 214 [Div by Zero]: df['Gann_Time_Ratio'] = (tfh_s / (tfl_s + 1)).shift(1)
+Line 222 [Div by Zero]: df['Gann_Price_Sym'] = (current_dd / prev_dd.replace(0, np.nan)).shift(1)
+Line 236 [Div by Zero]: df['Pres_Cycle'] = pres_cycle / 4.0
+Line 240 [Div by Zero]: df['Month_Sin'] = np.sin(2 * np.pi * months / 12)
+Line 241 [Div by Zero]: df['Month_Cos'] = np.cos(2 * np.pi * months / 12)
+Line 269 [Div by Zero]: df['AD_Vol_Ratio'] = (up_vol.rolling(21).sum() / (dn_vol.rolling(21).sum() + 1)).shift(1)
+Line 307 [Div by Zero]: ea = np.array(curve); n_years=len(ea)/252
+Line 310 [Div by Zero]: dr=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 310 [Concat Dim Mismatch Risk]: dr=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 311 [Div by Zero]: sharpe=(np.mean(dr)/np.std(dr))*np.sqrt(252) if np.std(dr)>0 else 0
+
+--- File: ml_options_hedging_project\ssvi_calibrator.py ---
+Line 60 [Div by Zero]: return np.sqrt(w / self.T)
+Line 153 [Exp NaN Trap]: weights = np.exp(-0.5 * k_observed**2 / 0.1)  # Gaussian centered at ATM
+Line 153 [Div by Zero]: weights = np.exp(-0.5 * k_observed**2 / 0.1)  # Gaussian centered at ATM
+Line 288 [Log(0) Trap]: d1 = (np.log(S/K) + (r + 0.5*sigma**2)*T) / (sigma * np.sqrt(T))
+Line 288 [Div by Zero]: d1 = (np.log(S/K) + (r + 0.5*sigma**2)*T) / (sigma * np.sqrt(T))
+Line 290 [Exp NaN Trap]: return S * norm.cdf(d1) - K * np.exp(-r*T) * norm.cdf(d2)
+Line 297 [Log(0) Trap]: d1 = (np.log(S/K) + (r + 0.5*sigma**2)*T) / (sigma * np.sqrt(T))
+Line 297 [Div by Zero]: d1 = (np.log(S/K) + (r + 0.5*sigma**2)*T) / (sigma * np.sqrt(T))
+Line 299 [Exp NaN Trap]: return K * np.exp(-r*T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+Line 310 [Log(0) Trap]: d1 = (np.log(S/K) + (r + 0.5*sigma**2)*T) / (sigma * sqrt_T)
+Line 310 [Div by Zero]: d1 = (np.log(S/K) + (r + 0.5*sigma**2)*T) / (sigma * sqrt_T)
+Line 320 [Exp NaN Trap]: theta = (-(S * nd1 * sigma) / (2 * sqrt_T) - r * K * np.exp(-r*T) * norm.cdf(d2)) / 365
+Line 320 [Div by Zero]: theta = (-(S * nd1 * sigma) / (2 * sqrt_T) - r * K * np.exp(-r*T) * norm.cdf(d2)) / 365
+Line 321 [Exp NaN Trap]: rho_val = K * T * np.exp(-r*T) * norm.cdf(d2) / 100
+Line 321 [Div by Zero]: rho_val = K * T * np.exp(-r*T) * norm.cdf(d2) / 100
+Line 324 [Exp NaN Trap]: theta = (-(S * nd1 * sigma) / (2 * sqrt_T) + r * K * np.exp(-r*T) * norm.cdf(-d2)) / 365
+Line 324 [Div by Zero]: theta = (-(S * nd1 * sigma) / (2 * sqrt_T) + r * K * np.exp(-r*T) * norm.cdf(-d2)) / 365
+Line 325 [Exp NaN Trap]: rho_val = -K * T * np.exp(-r*T) * norm.cdf(-d2) / 100
+Line 325 [Div by Zero]: rho_val = -K * T * np.exp(-r*T) * norm.cdf(-d2) / 100
+Line 358 [Div by Zero]: mape = np.mean(np.abs(iv_fitted - iv_market) / iv_market) * 100
+Line 377 [Log(0) Trap]: k_test = np.log(K / F)
+Line 377 [Div by Zero]: k_test = np.log(K / F)
+
+--- File: ml_options_hedging_project\synthetic_chain_generator.py ---
+Line 156 [Div by Zero]: daily_vol = annual_vol / np.sqrt(252)
+Line 160 [Exp NaN Trap]: prices = initial_price * np.exp(np.cumsum(returns))
+Line 218 [Exp NaN Trap]: atm = atm_iv * (1 + 0.1 * np.exp(-dte / 30))
+Line 218 [Div by Zero]: atm = atm_iv * (1 + 0.1 * np.exp(-dte / 30))
+Line 290 [Concat Dim Mismatch Risk]: all_strikes = np.sort(np.unique(np.concatenate([
+
+--- File: ml_options_hedging_project\validate_historical_regimes.py ---
+Line 32 [Exp NaN Trap]: atm_iv = (vix_level / 100.0) * np.exp(-1.5 * T) + 0.20 * (1 - np.exp(-1.5 * T))
+Line 32 [Div by Zero]: atm_iv = (vix_level / 100.0) * np.exp(-1.5 * T) + 0.20 * (1 - np.exp(-1.5 * T))
+Line 36 [Log(0) Trap]: k_obs = np.log(strikes_obs / underlying_price)
+Line 36 [Div by Zero]: k_obs = np.log(strikes_obs / underlying_price)
+Line 62 [Log(0) Trap]: k = np.log(K / underlying_price)
+Line 62 [Div by Zero]: k = np.log(K / underlying_price)
+
+--- File: ml_options_hedging_project\validate_hourly_drift.py ---
+Line 53 [Log(0) Trap]: df0_clean['k'] = np.log(df0_clean['strike'] / S0)
+Line 53 [Div by Zero]: df0_clean['k'] = np.log(df0_clean['strike'] / S0)
+
+--- File: ml_options_hedging_project\validate_intraday_tick.py ---
+Line 178 [Div by Zero]: call_mape = np.mean(np.abs(merged['call_price'] - merged['syn_call_price']) / merged['call_price']) * 100
+Line 188 [Div by Zero]: put_mape = np.mean(np.abs(merged['put_price'] - merged['syn_put_price']) / merged['put_price']) * 100
+
+--- File: ml_options_hedging_project\validation_suite.py ---
+Line 166 [Exp NaN Trap]: parity_rhs = S - K * np.exp(-r * T)
+Line 337 [Div by Zero]: T = df['expiry_dte'].values / 365.0
+Line 341 [Exp NaN Trap]: pv_K = K * np.exp(-r * T)
+Line 401 [Log(0) Trap]: k = np.log(K / S)
+Line 401 [Div by Zero]: k = np.log(K / S)
+
+--- File: ml_options_hedging_project\verify_sample_greeks.py ---
+Line 18 [Div by Zero]: df['dte_years'] = (df['expiration'] - df['quote_datetime']).dt.total_seconds() / (365 * 24 * 3600)
+Line 21 [Div by Zero]: target_dte = df['dte_years'].iloc[(df['dte_years'] - 30/365).abs().argsort()[:1]].iloc[0]
+Line 29 [Log(0) Trap]: df_clean['k'] = np.log(df_clean['strike'] / S)
+Line 29 [Div by Zero]: df_clean['k'] = np.log(df_clean['strike'] / S)
+
+--- File: ml_options_hedging_project\verify_v2.py ---
+Line 30 [Div by Zero]: sharpe = (np.mean(daily_returns) / std_r) * np.sqrt(252) if std_r > 0 else 0
+Line 221 [Div by Zero]: equal_w = np.array([1/3, 1/3, 1/3])
+
+--- File: ml_options_hedging_project\vix_anchor_generator.py ---
+Line 84 [Div by Zero]: eta = 1.5 / np.sqrt(T)
+
+--- File: ml_options_hedging_project\auto_research\scaffold.py ---
+Line 176 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 179 [Div by Zero]: df['VWAP_Z'] = (close['QQQ'] - rvwap) / close['QQQ'].rolling(21).std()
+Line 183 [Div by Zero]: df['VolRatio'] = vol['QQQ'].rolling(5).mean() / vol['QQQ'].rolling(21).mean()
+Line 191 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 198 [Div by Zero]: df['VIX_zscore'] = (iv - iv.rolling(252).mean()) / iv.rolling(252).std()
+Line 212 [Div by Zero]: df['SMA50_dist'] = close['QQQ'] / close['QQQ'].rolling(50).mean() - 1
+Line 213 [Div by Zero]: df['SMA200_dist'] = close['QQQ'] / close['QQQ'].rolling(200).mean() - 1
+Line 214 [Div by Zero]: df['SMA50_200'] = close['QQQ'].rolling(50).mean() / close['QQQ'].rolling(200).mean() - 1
+Line 236 [Div by Zero]: df['SPY_QQQ_ratio'] = close['SPY'] / close['QQQ']
+Line 238 [Div by Zero]: df['GLD_TLT_ratio'] = close['GLD'] / close['TLT']
+Line 338 [Div by Zero]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 338 [Concat Dim Mismatch Risk]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 339 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252) if np.std(daily_rets) > 0 else 0
+Line 341 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: ml_options_hedging_project\god_system\data\gex_engine.py ---
+Line 25 [Log(0) Trap]: d1 = (np.log(S / K) + (r + 0.5 * vol**2) * T) / (vol * np.sqrt(T))
+Line 25 [Div by Zero]: d1 = (np.log(S / K) + (r + 0.5 * vol**2) * T) / (vol * np.sqrt(T))
+Line 26 [Exp NaN Trap]: pdf = (1.0 / np.sqrt(2 * np.pi)) * np.exp(-0.5 * d1**2)
+Line 26 [Div by Zero]: pdf = (1.0 / np.sqrt(2 * np.pi)) * np.exp(-0.5 * d1**2)
+Line 27 [Div by Zero]: gamma = pdf / (S * vol * np.sqrt(T))
+
+--- File: ml_options_hedging_project\gup_alpaca_trader\utils\feature_builder.py ---
+Line 35 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 38 [Div by Zero]: df['VWAP_Z'] = (close['QQQ'] - rvwap) / close['QQQ'].rolling(21).std()
+Line 42 [Div by Zero]: df['VolRatio'] = vol['QQQ'].rolling(5).mean() / vol['QQQ'].rolling(21).mean()
+Line 50 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 64 [Div by Zero]: df['VIX_zscore'] = (iv - iv.rolling(252).mean()) / iv.rolling(252).std()
+Line 83 [Div by Zero]: df['SMA50_dist'] = close['QQQ'] / close['QQQ'].rolling(50).mean() - 1
+Line 84 [Div by Zero]: df['SMA200_dist'] = close['QQQ'] / close['QQQ'].rolling(200).mean() - 1
+Line 85 [Div by Zero]: df['SMA50_200'] = close['QQQ'].rolling(50).mean() / close['QQQ'].rolling(200).mean() - 1
+Line 108 [Div by Zero]: df['SPY_QQQ_ratio'] = close['SPY'] / close['QQQ']
+Line 110 [Div by Zero]: df['GLD_TLT_ratio'] = close['GLD'] / close['TLT']
+Line 142 [Div by Zero]: df['VIX_TERM_STRUCT'] = (close['^VIX9D'] / close['^VIX']).shift(1)
+Line 149 [Div by Zero]: df['Credit_Z'] = ((credit_ratio - credit_ratio.rolling(252).mean()) / credit_ratio.rolling(252).std()).shift(1)
+Line 175 [Div by Zero]: df['Copper_Gold_Z'] = ((cg_ratio - cg_ratio.rolling(252).mean()) / cg_ratio.rolling(252).std()).shift(1)
+Line 181 [Div by Zero]: df['BB_Width'] = (4 * bb_std / bb_mean).shift(1)
+Line 208 [Div by Zero]: df['Fib_Level_252'] = ((qqq_s - roll_lo_252) / rng_252.replace(0, np.nan)).shift(1)
+Line 213 [Div by Zero]: df['Fib_Level_63'] = ((qqq_s - roll_lo_63) / rng_63.replace(0, np.nan)).shift(1)
+Line 233 [Div by Zero]: cyc_str[i] = fft[dom_idx] / np.sum(fft * valid)
+Line 245 [Div by Zero]: df['Cycle_Phase'] = pd.Series((np.arange(n_total) % d_cyc) / d_cyc, index=qqq_idx).shift(1)
+Line 255 [Log(0) Trap]: df['Fractal_Dim'] = (np.log(ratio_30) / np.log(30)).shift(1)
+Line 255 [Div by Zero]: df['Fractal_Dim'] = (np.log(ratio_30) / np.log(30)).shift(1)
+Line 284 [Div by Zero]: df['Trend_Alignment'] = (align_sum / len(tf_windows)).shift(1)
+Line 291 [Div by Zero]: df['Time_From_High'] = (tfh_s / 252.0).shift(1)
+Line 292 [Div by Zero]: df['Time_From_Low'] = (tfl_s / 252.0).shift(1)
+Line 293 [Div by Zero]: df['Gann_Time_Ratio'] = (tfh_s / (tfl_s + 1)).shift(1)
+Line 300 [Div by Zero]: df['Gann_Price_Sym'] = (current_dd / prev_dd.replace(0, np.nan)).shift(1)
+Line 312 [Div by Zero]: df['Pres_Cycle'] = pres_cycle / 4.0
+Line 315 [Div by Zero]: df['Month_Sin'] = np.sin(2 * np.pi * months / 12)
+Line 316 [Div by Zero]: df['Month_Cos'] = np.cos(2 * np.pi * months / 12)
+Line 340 [Div by Zero]: df['AD_Vol_Ratio'] = (up_vol.rolling(21).sum() / (dn_vol.rolling(21).sum() + 1)).shift(1)
+
+--- File: orion_pipeline\chapter3_agent13_tree_explainer.py ---
+Line 91 [Div by Zero]: shap_values[i] += (diff / shap_values[i].shape[1])[:, np.newaxis]
+Line 99 [Div by Zero]: shap_values += (diff / shap_values.shape[1])[:, np.newaxis]
+
+--- File: orion_pipeline\chapter3_agent18_additivity.py ---
+Line 157 [Hardcoded Shape Trap]: reshaped_vals = shap_inter_vals.reshape(N, M1 * M2)
+
+--- File: orion_pipeline\chapter3_agent4_evaluation.py ---
+Line 67 [Div by Zero]: alpha2 = 1.0 - 1.0 / (self.num_trials * np.e)
+
+--- File: orion_pipeline\falsifiability_suite.py ---
+Line 17 [Div by Zero]: return float(strategy_returns.mean() / strategy_returns.std() * np.sqrt(252))
+Line 38 [Concat Dim Mismatch Risk]: shuffled_indices = np.concatenate(blocks)[:n_samples]
+
+--- File: orion_pipeline\fitness_sortino.py ---
+Line 169 [Exp NaN Trap]: probs = np.exp(shifted_fitness) / np.sum(np.exp(shifted_fitness))
+Line 169 [Div by Zero]: probs = np.exp(shifted_fitness) / np.sum(np.exp(shifted_fitness))
+
+--- File: orion_pipeline\harmonic_oscillator.py ---
+Line 44 [Exp NaN Trap]: self.proximity_matrix = np.exp(-self.gamma * sq_dists)
+
+--- File: orion_pipeline\house_systems.py ---
+Line 8 [Div by Zero]: ra = (R_ref + F * (np.pi / 2)) % (2 * np.pi)
+Line 68 [Div by Zero]: h2 = (asc + q1 / 3) % (2 * np.pi)
+Line 69 [Div by Zero]: h3 = (asc + 2 * q1 / 3) % (2 * np.pi)
+Line 71 [Div by Zero]: h5 = (ic + q2 / 3) % (2 * np.pi)
+Line 72 [Div by Zero]: h6 = (ic + 2 * q2 / 3) % (2 * np.pi)
+Line 74 [Div by Zero]: h8 = (dsc + q3 / 3) % (2 * np.pi)
+Line 75 [Div by Zero]: h9 = (dsc + 2 * q3 / 3) % (2 * np.pi)
+Line 77 [Div by Zero]: h11 = (mc + q4 / 3) % (2 * np.pi)
+Line 78 [Div by Zero]: h12 = (mc + 2 * q4 / 3) % (2 * np.pi)
+
+--- File: orion_pipeline\kinematics.py ---
+Line 70 [Div by Zero]: acc_mag = G * masses[np.newaxis, :] / dist_sq
+Line 75 [Div by Zero]: direction = diff / dist[..., np.newaxis]
+
+--- File: orion_pipeline\orion_data_lake.py ---
+Line 109 [Div by Zero]: price_vol_df['vwap'] = sum_pv / price_vol_df['volume']
+
+--- File: orion_pipeline\orion_ephemeris_core.py ---
+Line 178 [Exp NaN Trap]: oscillator_strength = np.exp(-(distance_from_aspect**2) / (2 * sigma**2))
+Line 178 [Div by Zero]: oscillator_strength = np.exp(-(distance_from_aspect**2) / (2 * sigma**2))
+
+--- File: orion_pipeline\orion_full_pipeline_runner.py ---
+Line 367 [Div by Zero]: dsr = oos_sharpe * (1 - gamma1 * oos_sharpe + (gamma2 - 1) / 4 * oos_sharpe**2) / np.sqrt(n)
+
+--- File: orion_pipeline\orion_genetic_combinatorics.py ---
+Line 145 [Exp NaN Trap]: probs = np.exp(fitness) / np.sum(np.exp(fitness))
+Line 145 [Div by Zero]: probs = np.exp(fitness) / np.sum(np.exp(fitness))
+
+--- File: orion_pipeline\orion_gpu_bruteforce.py ---
+Line 53 [Div by Zero]: rate = (iteration * target_tensor.shape[1] * feature_tensor.shape[1]) / elapsed
+Line 54 [Div by Zero]: sys.stdout.write(f"\r[Engine Running] Batch {iteration} | Combinations Scored: {iteration * target_tensor.shape[1] * feature_tensor.shape[1]:,} | Rate: {rate:,.0f} combos/sec")
+
+--- File: orion_pipeline\orion_wfo_cpcv.py ---
+Line 82 [Log(0) Trap]: emsr = np.sqrt(2 * np.log(num_trials)) + (euler_mascheroni / np.sqrt(2 * np.log(num_trials)))
+Line 82 [Div by Zero]: emsr = np.sqrt(2 * np.log(num_trials)) + (euler_mascheroni / np.sqrt(2 * np.log(num_trials)))
+
+--- File: orion_pipeline\parallel_logic.py ---
+Line 70 [Div by Zero]: num_chunks = int(np.ceil(total_elements / chunk_size))
+
+--- File: orion_pipeline\patch.py ---
+Line 3 [Div by Zero]: with open('data_collection/generate_feature_tensor.py', 'r') as f:
+Line 58 [Div by Zero]: with open('data_collection/generate_feature_tensor.py', 'w') as f:
+
+--- File: orion_pipeline\run_falsifiability.py ---
+Line 11 [Div by Zero]: sharpe = strat_returns.mean() / strat_returns.std() * np.sqrt(252)
+Line 27 [Concat Dim Mismatch Risk]: shuffled_indices = np.concatenate(blocks)[:n_samples]
+Line 31 [Div by Zero]: shuff_sharpe = shuff_returns.mean() / shuff_returns.std() * np.sqrt(252)
+Line 47 [Div by Zero]: s_sharpe = s_ret.mean() / s_ret.std() * np.sqrt(252)
+
+--- File: orion_pipeline\t2n_engine.py ---
+Line 81 [Hardcoded Shape Trap]: flat_velocities = velocities.reshape(time_steps, T * N)
+
+--- File: orion_pipeline\test_diversity_collapse.py ---
+Line 41 [Div by Zero]: print("BUG B9 (Binary): np.logical_xor casts uint8 to bool. 255 -> True -> False -> 0. Destroys 7/8 bits!")
+
+--- File: orion_pipeline\test_safe.py ---
+Line 7 [Div by Zero]: ra = (R_ref + F * (np.pi / 2)) % (2 * np.pi)
+Line 62 [Div by Zero]: h2 = (asc + q1 / 3) % (2 * np.pi)
+Line 63 [Div by Zero]: h3 = (asc + 2 * q1 / 3) % (2 * np.pi)
+Line 65 [Div by Zero]: h5 = (ic + q2 / 3) % (2 * np.pi)
+Line 66 [Div by Zero]: h6 = (ic + 2 * q2 / 3) % (2 * np.pi)
+Line 68 [Div by Zero]: h8 = (dsc + q3 / 3) % (2 * np.pi)
+Line 69 [Div by Zero]: h9 = (dsc + 2 * q3 / 3) % (2 * np.pi)
+Line 71 [Div by Zero]: h11 = (mc + q4 / 3) % (2 * np.pi)
+Line 72 [Div by Zero]: h12 = (mc + 2 * q4 / 3) % (2 * np.pi)
+
+--- File: orion_pipeline\validation.py ---
+Line 159 [Div by Zero]: bad_calc = np.array([1.0]) / np.array([0.0])
+
+--- File: orion_pipeline\zero_beta.py ---
+Line 99 [Div by Zero]: rolling_zb_corr = np.where(denominator != 0, numerator / denominator, np.nan)
+
+--- File: orion_pipeline\chapter4\affinity_matrix.py ---
+Line 79 [Div by Zero]: X_std = (X_centered / norms).astype(np.float64)
+Line 112 [Concat Dim Mismatch Risk]: row_indices = np.concatenate(row_indices)
+Line 113 [Concat Dim Mismatch Risk]: col_indices = np.concatenate(col_indices)
+Line 114 [Concat Dim Mismatch Risk]: data_values = np.concatenate(data_values)
+
+--- File: orion_pipeline\chapter4\mic_proxy.py ---
+Line 69 [Log(0) Trap]: log_table[c] = c * math.log(c)
+Line 71 [Log(0) Trap]: log_S = math.log(S)
+Line 96 [Log(0) Trap]: H_i -= (c_i / S) * (math.log(c_i) - log_S)
+Line 104 [Log(0) Trap]: H_j -= (c_j / S) * (math.log(c_j) - log_S)
+Line 151 [Log(0) Trap]: H_joint = -np.nansum(P_joint * np.log(P_joint), axis=(2, 3))
+Line 154 [Log(0) Trap]: H_i = -np.nansum(P_i * np.log(P_i), axis=2)
+Line 157 [Log(0) Trap]: H_j = -np.nansum(P_j * np.log(P_j), axis=2)
+
+--- File: orion_pipeline\chapter5\cv_wrapper.py ---
+Line 97 [Concat Dim Mismatch Risk]: train_idx = np.concatenate([train_before, train_after]).astype(int)
+
+--- File: orion_pipeline\chapter5\evolutionary_loop.py ---
+Line 65 [Div by Zero]: probabilities = adjusted_fitness / np.sum(adjusted_fitness)
+
+--- File: orion_pipeline\chapter5\guided_mutation.py ---
+Line 49 [Div by Zero]: importance = np.abs(sae_weights_chunk, dtype=np.float64) / max_mag
+Line 65 [Div by Zero]: genome (np.ndarray): The binary genome (boolean or 0/1 integers).
+Line 97 [Hardcoded Shape Trap]: return mutated_flat.reshape(genome.shape)
+Line 140 [Hardcoded Shape Trap]: return mutated_flat.reshape(genome.shape)
+Line 153 [Hardcoded Shape Trap]: unpacked_genome = unpacked_genome.reshape(sae_weights.shape)
+Line 157 [Hardcoded Shape Trap]: return mutated_packed.reshape(genome.shape)
+Line 171 [Div by Zero]: expected_packed_size = int(np.ceil(sae_weights.size / 8.0))
+
+--- File: orion_pipeline\chapter5\mutation.py ---
+Line 26 [Div by Zero]: Supports both unpacked (0/1 or bool) and packed (np.uint8) genome arrays.
+
+--- File: orion_pipeline\chapter5\sae_weights.py ---
+Line 137 [Concat Dim Mismatch Risk]: block_row = torch.cat(chunk_interactions, dim=1)
+
+--- File: orion_pipeline\ml_pipeline\cpcv_validator.py ---
+Line 34 [Concat Dim Mismatch Risk]: groups[-1] = np.concatenate((groups[-1], indices[self.n_splits * group_size:]))
+Line 38 [Concat Dim Mismatch Risk]: test_idx = np.concatenate([groups[i] for i in test_indices_idx])
+
+--- File: orion_pipeline\ml_pipeline\falsifiability_suite.py ---
+Line 61 [Concat Dim Mismatch Risk]: shuffled_indices = np.concatenate(blocks)[:n]
+Line 88 [Exp NaN Trap]: p_val = np.exp(-z) * (1 + (2*z - z**2)/(4*n) - (24*z - 132*z**2 + 76*z**3 - 9*z**4)/(288*n**2))
+Line 88 [Div by Zero]: p_val = np.exp(-z) * (1 + (2*z - z**2)/(4*n) - (24*z - 132*z**2 + 76*z**3 - 9*z**4)/(288*n**2))
+
+--- File: orion_pipeline\ml_pipeline\orion_dual_encoder.py ---
+Line 46 [Concat Dim Mismatch Risk]: disc_fused = torch.cat(embed_outs, dim=-1)
+Line 52 [Concat Dim Mismatch Risk]: fused = torch.cat([cont_out, disc_out], dim=-1)
+
+--- File: orion_pipeline\ml_pipeline\walk_forward_tester.py ---
+Line 187 [Hardcoded Shape Trap]: out = projection_head(emb).squeeze()
+Line 198 [Hardcoded Shape Trap]: astro_predictions = projection_head(encoder(X_cont_test, X_cat_test)).squeeze().numpy()
+Line 255 [Div by Zero]: annualized_sharpe = (mean_return / std_return) * np.sqrt(252)
+
+--- File: orion_pipeline\smart_ml\16_lens_native_override.py ---
+Line 65 [Div by Zero]: findings.append("**Lens 16 (Deep Vedic Astrology):** Verified Nakshatra alignment and Ayanamsa drift calculation bounds. The tensor weights inherently account for Sidereal drift offsets against Tropical baseline. Exaltation/Debilitation dignity thresholds passed.")
+
+--- File: orion_pipeline\smart_ml\alpha_agent1_basket_filter.py ---
+Line 33 [Div by Zero]: spy_low  = df["SPY_ret"].rolling(window=252).quantile(threshold / 2)
+Line 34 [Div by Zero]: spy_high = df["SPY_ret"].rolling(window=252).quantile(1 - threshold / 2)
+Line 35 [Div by Zero]: qqq_low  = df["QQQ_ret"].rolling(window=252).quantile(threshold / 2)
+Line 36 [Div by Zero]: qqq_high = df["QQQ_ret"].rolling(window=252).quantile(1 - threshold / 2)
+
+--- File: orion_pipeline\smart_ml\alpha_agent3_fpgrowth.py ---
+Line 49 [Div by Zero]: co_occ = (arr.T @ arr).astype(np.float32) / len(basket_items)
+
+--- File: orion_pipeline\smart_ml\beta_agent10_attn_mapper.py ---
+Line 79 [Concat Dim Mismatch Risk]: stacked = np.concatenate(all_attn, axis=0)   # (N, n_patches+1, n_patches+1)
+
+--- File: orion_pipeline\smart_ml\beta_agent6_transformer.py ---
+Line 101 [Concat Dim Mismatch Risk]: seq     = torch.cat([cls, patches], dim=1)        # (B, n_patches+1, d_model)
+
+--- File: orion_pipeline\smart_ml\beta_agent8_attn_baseline.py ---
+Line 64 [Concat Dim Mismatch Risk]: stacked = np.concatenate(matrices, axis=0)   # (total_samples*heads, patches, patches)
+
+--- File: orion_pipeline\smart_ml\beta_agent9_train_transformer.py ---
+Line 38 [Exp NaN Trap]: pt      = torch.exp(-ce_loss)
+
+--- File: orion_pipeline\smart_ml\eval_sae.py ---
+Line 26 [Div by Zero]: state_dict = torch.load("output/sparse_autoencoder.pt", map_location=device)
+Line 30 [Div by Zero]: latents = np.load("output/latent_vectors.npy")
+
+--- File: orion_pipeline\smart_ml\gamma_agent13_sae_pipeline.py ---
+Line 43 [Concat Dim Mismatch Risk]: latents = np.concatenate(all_z, axis=0)
+
+--- File: pivot_rsi_strategy\backtest_hmm.py ---
+Line 90 [Log(0) Trap]: ret = math.log(curr['c'] / prev['c']) * 100
+
+--- File: pivot_rsi_strategy\hmm_pure.py ---
+Line 43 [Exp NaN Trap]: prob *= (1.0 / (sigma * math.sqrt(2 * math.pi))) * math.exp(exponent)
+Line 118 [Exp NaN Trap]: prob *= (1.0 / (sigma * math.sqrt(2 * math.pi))) * math.exp(exponent)
+
+--- File: quant_framework\audit_hg_cco.py ---
+Line 135 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\audit_l3_hg_cco.py ---
+Line 13 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\audit_qe_mla.py ---
+Line 26 [Div by Zero]: vix_momentum = df['^VIX'] / df['^VIX'].rolling(50).mean()
+
+--- File: quant_framework\calc_cagr.py ---
+Line 20 [Hardcoded Shape Trap]: spy = spy.squeeze()
+
+--- File: quant_framework\grid_search_dyn_lev.py ---
+Line 15 [Div by Zero]: irx = df['IRX'].values / 100.0  # Annualized yield
+
+--- File: quant_framework\grid_search_l3_v6.py ---
+Line 14 [Div by Zero]: vix = df['VIX'].values / 100.0
+Line 15 [Div by Zero]: vix_lt = df['VIX'].rolling(200).mean().fillna(df['VIX']).values / 100.0
+Line 16 [Div by Zero]: irx = df['IRX'].values / 100.0
+Line 35 [Div by Zero]: fv = np.sqrt(numerator / denominator) if numerator > 0 and denominator > 0 else v1
+
+--- File: quant_framework\grid_search_lmrr.py ---
+Line 14 [Div by Zero]: irx = df['IRX'].values / 100.0  # Annualized yield
+
+--- File: quant_framework\grid_search_megasearch.py ---
+Line 45 [Div by Zero]: _irx = (_df['IRX'].values / 100.0).astype(np.float64)
+
+--- File: quant_framework\grid_search_sqqq.py ---
+Line 15 [Div by Zero]: irx = df['IRX'].values / 100.0  # Annualized yield
+
+--- File: quant_framework\megasearch_v2.py ---
+Line 37 [Div by Zero]: irx_series = hg_df['IRX'] / 100.0
+Line 102 [Div by Zero]: MAS[ticker]['VWMA'][w] = (pv.rolling(w).sum() / vs.rolling(w).sum()).bfill().values.astype(np.float64)
+Line 156 [Div by Zero]: sharpe = (excess.mean() / excess.std() * np.sqrt(252)) if excess.std() > 0 else 0.0
+
+--- File: quant_framework\megasearch_v3_indicators.py ---
+Line 31 [Div by Zero]: irx = hg_df['IRX'].values / 100.0
+Line 161 [Exp NaN Trap]: equity = np.exp(np.cumsum(np.log1p(port_rets)))
+
+--- File: quant_framework\monte_carlo_test.py ---
+Line 47 [Div by Zero]: win_prob = np.sum(final_cagrs > 10.0) / len(final_cagrs) * 100 # Probability of beating QQQ
+
+--- File: quant_framework\plot_equity_curve.py ---
+Line 31 [Hardcoded Shape Trap]: spy = spy.squeeze()
+
+--- File: quant_framework\plot_megasearch_anomalies.py ---
+Line 14 [Div by Zero]: irx_series = hg_df['IRX'] / 100.0
+
+--- File: quant_framework\run_full_ml_backtest.py ---
+Line 14 [Hardcoded Shape Trap]: df = yf.download("TQQQ", start="2014-01-01", end="2024-01-01", auto_adjust=True)['Close'].squeeze()
+
+--- File: quant_framework\synthetic_black_scholes.py ---
+Line 9 [Log(0) Trap]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 9 [Div by Zero]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 11 [Exp NaN Trap]: return K * np.exp(-r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+Line 15 [Log(0) Trap]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 15 [Div by Zero]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 17 [Exp NaN Trap]: return S * norm.cdf(d1) - K * np.exp(-r * T) * norm.cdf(d2)
+Line 45 [Exp NaN Trap]: decay_factor = np.exp(-(T - t_anchor) / 0.5) if T > t_anchor else np.exp(-(t_anchor - T) / 0.1)
+Line 45 [Div by Zero]: decay_factor = np.exp(-(T - t_anchor) / 0.5) if T > t_anchor else np.exp(-(t_anchor - T) / 0.1)
+Line 83 [Log(0) Trap]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 83 [Div by Zero]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 102 [Exp NaN Trap]: gamma_penalty = 0.05 * np.exp(-T * 365.0 / 5.0) # Spikes within 5 DTE
+Line 102 [Div by Zero]: gamma_penalty = 0.05 * np.exp(-T * 365.0 / 5.0) # Spikes within 5 DTE
+
+--- File: quant_framework\test_112_vca.py ---
+Line 15 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\test_bitcoin_trend.py ---
+Line 34 [Div by Zero]: irx = irx_series.values.astype(np.float64) / 100.0
+Line 57 [Exp NaN Trap]: equity = np.exp(np.cumsum(np.log1p(port_rets))) * 100.0
+Line 63 [Exp NaN Trap]: raw_eq = np.exp(np.cumsum(np.log1p(rets))) * 100.0
+
+--- File: quant_framework\test_cg_rsr.py ---
+Line 42 [Div by Zero]: irx_3m_ret = (df['^IRX'] / 100) / 4
+
+--- File: quant_framework\test_dsva.py ---
+Line 16 [Div by Zero]: irx = df['IRX'] / 100.0 # Convert to decimal
+
+--- File: quant_framework\test_ds_slva.py ---
+Line 13 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\test_hfea_trend.py ---
+Line 39 [Hardcoded Shape Trap]: df = pd.DataFrame({'SPY': spy, 'TLT': tlt.squeeze(), 'IRX': irx.squeeze()}).dropna()
+Line 45 [Div by Zero]: df['RF_Daily'] = (1.0 + df['IRX']) ** (1/252.0) - 1.0
+Line 111 [Div by Zero]: cagr = (df['Portfolio'].iloc[-1] / 100.0) ** (1/years) - 1.0
+Line 113 [Div by Zero]: max_dd = ((df['Portfolio'] - roll_max) / roll_max).min()
+Line 144 [Div by Zero]: base_cagr = (df['HFEA'].iloc[-1] / 100.0) ** (1/years) - 1.0
+Line 146 [Div by Zero]: base_dd = ((df['HFEA'] - base_roll) / base_roll).min()
+
+--- File: quant_framework\test_hg_cco.py ---
+Line 127 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\test_hg_fvk.py ---
+Line 14 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\test_hmm_causal.py ---
+Line 12 [Div by Zero]: irx = hg_df['IRX'].values.astype(np.float64) / 100.0
+Line 71 [Exp NaN Trap]: eq = np.exp(np.cumsum(np.log1p(p_rets)))
+
+--- File: quant_framework\test_hmm_longshort.py ---
+Line 19 [Div by Zero]: irx = hg_df['IRX'].values.astype(np.float64) / 100.0
+Line 43 [Concat Dim Mismatch Risk]: all_states = np.concatenate([model.predict(X_train), model.predict(X_test)])
+Line 66 [Exp NaN Trap]: eq = np.exp(np.cumsum(np.log1p(p_rets)))
+
+--- File: quant_framework\test_hmm_regime.py ---
+Line 18 [Div by Zero]: irx = hg_df['IRX'].values.astype(np.float64) / 100.0
+Line 61 [Concat Dim Mismatch Risk]: all_states = np.concatenate([states_train, states_test])
+Line 82 [Exp NaN Trap]: eq = np.exp(np.cumsum(np.log1p(p_rets)))
+
+--- File: quant_framework\test_hmm_risk_parity.py ---
+Line 20 [Div by Zero]: irx = hg_df['IRX'].values.astype(np.float64) / 100.0
+Line 54 [Concat Dim Mismatch Risk]: all_states = np.concatenate([model.predict(X_train), model.predict(X[test_mask])])
+Line 73 [Exp NaN Trap]: eq = np.exp(np.cumsum(np.log1p(p_rets)))
+
+--- File: quant_framework\test_kcmd.py ---
+Line 15 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\test_kfvi.py ---
+Line 12 [Div by Zero]: return np.sqrt(numerator / denominator)
+Line 20 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\test_ml_classifier.py ---
+Line 83 [Exp NaN Trap]: eq = np.exp(np.cumsum(np.log1p(p_rets)))
+
+--- File: quant_framework\test_multi_asset_trend.py ---
+Line 21 [Div by Zero]: irx = hg_df['IRX'] / 100.0
+
+--- File: quant_framework\test_ofva.py ---
+Line 13 [Div by Zero]: return np.sqrt(numerator / denominator)
+Line 21 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\test_overnight_anomaly.py ---
+Line 20 [Div by Zero]: irx = hg_df['IRX'].values.astype(np.float64) / 100.0
+Line 51 [Exp NaN Trap]: eq = np.exp(np.cumsum(np.log1p(p_rets)))
+
+--- File: quant_framework\test_qa_112.py ---
+Line 14 [Div by Zero]: irx = df['IRX'] / 100.0
+
+--- File: quant_framework\test_qe_mla.py ---
+Line 33 [Div by Zero]: vix_momentum = df['^VIX'] / df['^VIX'].rolling(50).mean()
+
+--- File: quant_framework\test_realism.py ---
+Line 66 [Concat Dim Mismatch Risk]: after_tax_returns = np.concatenate([after_tax_profit.values, gross_loss.values])
+
+--- File: quant_framework\test_synthetic_puts.py ---
+Line 22 [Div by Zero]: vix = hg_df['VIX'].values / 100.0  # Decimal IV
+Line 23 [Div by Zero]: irx = hg_df['IRX'].values / 100.0
+Line 45 [Exp NaN Trap]: return max(0.0, (K - S)*np.exp(-r*T))
+Line 47 [Log(0) Trap]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 47 [Div by Zero]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 50 [Exp NaN Trap]: put_price = K * np.exp(-r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+
+--- File: quant_framework\wfo_validation.py ---
+Line 45 [Div by Zero]: _irx   = (_df['IRX'].values / 100.0).astype(np.float64)
+Line 122 [Div by Zero]: sharpe = (excess.mean() / excess.std() * np.sqrt(252)) if excess.std() > 0 else 0.0
+
+--- File: quant_framework\backtest\validation.py ---
+Line 16 [Div by Zero]: sr = returns.mean() / returns.std() * np.sqrt(252) # Annualized SR
+Line 22 [Exp NaN Trap]: expected_max_sr = np.sqrt(variance_of_trials) * ((1 - gamma) * stats.norm.ppf(1 - 1/num_trials) + gamma * stats.norm.ppf(1 - 1/num_trials * np.exp(-1)))
+Line 22 [Div by Zero]: expected_max_sr = np.sqrt(variance_of_trials) * ((1 - gamma) * stats.norm.ppf(1 - 1/num_trials) + gamma * stats.norm.ppf(1 - 1/num_trials * np.exp(-1)))
+Line 34 [Div by Zero]: dsr = stats.norm.cdf((sr - adjusted_sr_threshold) / np.sqrt(sr_var))
+
+--- File: quant_framework\features\math_transforms.py ---
+Line 23 [Div by Zero]: w_ = w_ / np.sum(np.abs(w_))
+
+--- File: quant_framework\features\synthetic_data_loader.py ---
+Line 29 [Div by Zero]: irx_daily = (df['^IRX'].ffill() / 100 + 0.015) / 252
+
+--- File: quant_framework\models\liquid_time_constant.py ---
+Line 56 [Hardcoded Shape Trap]: h_states.append(h.unsqueeze(1))
+Line 58 [Concat Dim Mismatch Risk]: return torch.cat(h_states, dim=1)
+
+--- File: quant_framework\models\lob_transformer.py ---
+Line 9 [Hardcoded Shape Trap]: position = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1)
+Line 10 [Log(0) Trap]: div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) / d_model))
+Line 10 [Exp NaN Trap]: div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) / d_model))
+Line 10 [Div by Zero]: div_term = torch.exp(torch.arange(0, d_model, 2).float() * (-math.log(10000.0) / d_model))
+Line 13 [Hardcoded Shape Trap]: self.register_buffer('pe', pe.unsqueeze(0))
+
+--- File: quant_framework\models\time_vae.py ---
+Line 30 [Exp NaN Trap]: std = torch.exp(0.5*logvar)
+Line 43 [Hardcoded Shape Trap]: return self.decode(z).view(batch_size, self.seq_len, self.feature_dim), mu, logvar
+
+--- File: regime_quant_ml\alpha_engine.py ---
+Line 65 [Exp NaN Trap]: fear = 2.0 / (1.0 + np.exp(-fear*2)) - 0.5
+Line 65 [Div by Zero]: fear = 2.0 / (1.0 + np.exp(-fear*2)) - 0.5
+Line 69 [Exp NaN Trap]: fear = 1.0 - np.exp(-fear * 1.5) if fear > 0 else fear
+
+--- File: regime_quant_ml\brute_force_options.py ---
+Line 252 [Div by Zero]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 252 [Concat Dim Mismatch Risk]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 253 [Div by Zero]: sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+Line 255 [Div by Zero]: sortino = (np.mean(dr) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: regime_quant_ml\crisis_alpha_engine.py ---
+Line 56 [Div by Zero]: df['VIX_Term_Struct'] = adj_close['^VIX'] / adj_close['^VIX3M'].replace(0, np.nan)
+Line 59 [Div by Zero]: credit_ratio = adj_close['JNK'] / adj_close['IEF'].replace(0, np.nan)
+Line 62 [Div by Zero]: df['Trend_Break'] = adj_close['QQQ'] / adj_close['QQQ'].rolling(200).mean()
+Line 66 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 129 [Div by Zero]: sharpe = test_rets.mean() / test_rets.std() * np.sqrt(252)
+
+--- File: regime_quant_ml\epoch19_dd_fixes.py ---
+Line 23 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 26 [Div by Zero]: df['VWAP_Z'] = (close['QQQ']-rvwap) / close['QQQ'].rolling(21).std()
+Line 32 [Div by Zero]: df['VEI'] = a10/a50
+Line 69 [Div by Zero]: s = tr.mean()/tr.std()*np.sqrt(252)
+Line 194 [Div by Zero]: ea = np.array(curve); y = len(ea)/252
+Line 197 [Div by Zero]: rets = np.diff(np.concatenate([[ea[0]], ea]))/np.concatenate([[ea[0]], ea[:-1]])
+Line 197 [Concat Dim Mismatch Risk]: rets = np.diff(np.concatenate([[ea[0]], ea]))/np.concatenate([[ea[0]], ea[:-1]])
+Line 198 [Div by Zero]: sh = (np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+Line 200 [Div by Zero]: so = (np.mean(rets)/np.std(dn))*np.sqrt(252) if len(dn)>0 else 0
+
+--- File: regime_quant_ml\epoch21_hybrid.py ---
+Line 65 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 68 [Div by Zero]: df['VWAP_Z_Score'] = (close['QQQ'] - rolling_vwap) / close['QQQ'].rolling(21).std()
+Line 74 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 122 [Div by Zero]: sharpe = test_rets.mean() / test_rets.std() * np.sqrt(252)
+Line 273 [Div by Zero]: final['Epoch19'] = np.array(cA) / cA[0]
+Line 274 [Div by Zero]: final['Epoch21_Hybrid'] = np.array(cB) / cB[0]
+
+--- File: regime_quant_ml\epoch22_bruteforce.py ---
+Line 23 [Div by Zero]: df['NAV']=(TV-TV.rolling(66).mean())/TV.rolling(66).std(ddof=1)
+Line 26 [Div by Zero]: df['VWAP_Z']=(close['QQQ']-rv)/close['QQQ'].rolling(21).std()
+Line 32 [Div by Zero]: df['VEI']=a10/a50
+Line 39 [Div by Zero]: df['SMA200_dist']=(close['QQQ']/close['QQQ'].rolling(200).mean()-1)  # Distance from 200 SMA
+Line 42 [Div by Zero]: df['VIX_accel']=(close['^VIX']-close['^VIX'].shift(5))/close['^VIX'].shift(5) # VIX acceleration
+Line 43 [Div by Zero]: df['VolRatio']=vol['QQQ'].rolling(5).mean()/vol['QQQ'].rolling(21).mean() # Short/long vol ratio
+Line 84 [Div by Zero]: s=tr.mean()/tr.std()*np.sqrt(252)
+Line 247 [Div by Zero]: ea=np.array(curve); y=len(ea)/252
+Line 250 [Div by Zero]: rets=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 250 [Concat Dim Mismatch Risk]: rets=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 251 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+
+--- File: regime_quant_ml\epoch23_multi_strategy.py ---
+Line 58 [Div by Zero]: df['NAV']=(TV-TV.rolling(66).mean())/TV.rolling(66).std(ddof=1)
+Line 61 [Div by Zero]: df['VWAP_Z']=(close['QQQ']-rvwap)/close['QQQ'].rolling(21).std()
+Line 65 [Div by Zero]: df['VolRatio']=vol['QQQ'].rolling(5).mean()/vol['QQQ'].rolling(21).mean()
+Line 69 [Div by Zero]: df['VEI']=a10/a50
+Line 76 [Div by Zero]: df['SMA200']=(close['QQQ']/close['QQQ'].rolling(200).mean()-1)
+Line 131 [Div by Zero]: s=tr.mean()/tr.std()*np.sqrt(252)
+Line 259 [Div by Zero]: r=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 259 [Concat Dim Mismatch Risk]: r=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 260 [Div by Zero]: sh=(np.mean(r)/np.std(r))*np.sqrt(252) if np.std(r)>0 else 0
+Line 328 [Div by Zero]: rm_c=np.maximum.accumulate(combined); dd_c=(combined-rm_c)/rm_c
+
+--- File: regime_quant_ml\epoch24_clean_champ.py ---
+Line 50 [Div by Zero]: df['NAV']=(TV-TV.rolling(66).mean())/TV.rolling(66).std(ddof=1)
+Line 53 [Div by Zero]: df['VWAP_Z']=(close['QQQ']-rvwap)/close['QQQ'].rolling(21).std()
+Line 59 [Div by Zero]: df['VEI']=a10/a50
+Line 68 [Div by Zero]: df['SMA200']=(close['QQQ']/close['QQQ'].rolling(200).mean()-1)
+Line 101 [Div by Zero]: s=tr.mean()/tr.std()*np.sqrt(252)
+Line 162 [Div by Zero]: ea=np.array(curve); y=len(ea)/252
+Line 165 [Div by Zero]: r=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 165 [Concat Dim Mismatch Risk]: r=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 166 [Div by Zero]: sh=(np.mean(r)/np.std(r))*np.sqrt(252) if np.std(r)>0 else 0
+
+--- File: regime_quant_ml\epoch25_meta_ml_allocator.py ---
+Line 53 [Div by Zero]: df['NAV']=(TV-TV.rolling(66).mean())/TV.rolling(66).std(ddof=1)
+Line 56 [Div by Zero]: df['VWAP_Z']=(close['QQQ']-rvwap)/close['QQQ'].rolling(21).std()
+Line 57 [Div by Zero]: df['VolRatio']=vol['QQQ'].rolling(5).mean()/vol['QQQ'].rolling(21).mean()
+Line 60 [Div by Zero]: df['VEI']=a10/a50
+Line 65 [Div by Zero]: df['SMA200']=(close['QQQ']/close['QQQ'].rolling(200).mean()-1)
+Line 104 [Div by Zero]: s=tr.mean()/tr.std()*np.sqrt(252)
+Line 240 [Div by Zero]: r = np.diff(np.concatenate([[ea.iloc[0]],ea]))/np.concatenate([[ea.iloc[0]],ea.iloc[:-1]])
+Line 240 [Concat Dim Mismatch Risk]: r = np.diff(np.concatenate([[ea.iloc[0]],ea]))/np.concatenate([[ea.iloc[0]],ea.iloc[:-1]])
+Line 241 [Div by Zero]: sh = (np.mean(r)/np.std(r))*np.sqrt(252) if np.std(r)>0 else 0
+
+--- File: regime_quant_ml\forensic_audit.py ---
+Line 62 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 65 [Div by Zero]: df['VWAP_Z_Score'] = (adj_close['QQQ'] - rolling_vwap) / adj_close['QQQ'].rolling(21).std()
+Line 71 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 77 [Div by Zero]: df['Risk_Free_Daily'] = (adj_close['^IRX'] / 100) / 252
+Line 121 [Div by Zero]: sharpe = test_rets.mean() / test_rets.std() * np.sqrt(252)
+
+--- File: regime_quant_ml\forensic_audit_top5.py ---
+Line 358 [Div by Zero]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 358 [Concat Dim Mismatch Risk]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 359 [Div by Zero]: manual_sharpe = (np.mean(dr) / np.std(dr)) * np.sqrt(252) if np.std(dr) > 0 else 0
+
+--- File: regime_quant_ml\g5_forensic_audit.py ---
+Line 100 [Div by Zero]: iv = vix/100; rv21 = qqq_ret.rolling(21).std()*np.sqrt(252); vrp21 = iv - rv21
+Line 101 [Div by Zero]: ar = qqq_ret.abs(); bpv = (np.pi/2)*ar*ar.shift(1)
+Line 214 [Div by Zero]: rets = np.diff(eq) / eq[:-1]
+Line 215 [Div by Zero]: sh = (np.mean(rets) / np.std(rets)) * np.sqrt(252) if np.std(rets) > 0 else 0
+Line 217 [Div by Zero]: so = (np.mean(rets) / np.std(dn)) * np.sqrt(252) if len(dn) > 0 else 0
+Line 227 [Div by Zero]: dd_q = float(np.min(qqq_arr / np.maximum.accumulate(qqq_arr) - 1))
+
+--- File: regime_quant_ml\g5_optimized.py ---
+Line 134 [Div by Zero]: rets = np.diff(np.concatenate([[1.0], eq_arr])) / np.concatenate([[1.0], eq_arr[:-1]])
+Line 134 [Concat Dim Mismatch Risk]: rets = np.diff(np.concatenate([[1.0], eq_arr])) / np.concatenate([[1.0], eq_arr[:-1]])
+Line 135 [Div by Zero]: sh = (np.mean(rets) / np.std(rets)) * np.sqrt(252) if np.std(rets) > 0 else 0
+Line 137 [Div by Zero]: so = (np.mean(rets) / np.std(dn)) * np.sqrt(252) if len(dn) > 0 else 0
+Line 176 [Div by Zero]: iv = vix/100; rv21 = qqq_ret.rolling(21).std()*np.sqrt(252); vrp21_s = iv - rv21
+Line 177 [Div by Zero]: ar = qqq_ret.abs(); bpv = (np.pi/2)*ar*ar.shift(1)
+Line 230 [Div by Zero]: dd_q = float(np.min(qqq_arr / np.maximum.accumulate(qqq_arr) - 1))
+
+--- File: regime_quant_ml\g5_ultimate_audit.py ---
+Line 107 [Div by Zero]: iv = vix/100; rv21 = qqq_ret.rolling(21).std()*np.sqrt(252)
+Line 109 [Div by Zero]: ar = qqq_ret.abs(); bpv = (np.pi/2)*ar*ar.shift(1)
+Line 222 [Div by Zero]: rets = np.diff(np.concatenate([[1.0], eq_arr])) / np.concatenate([[1.0], eq_arr[:-1]])
+Line 222 [Concat Dim Mismatch Risk]: rets = np.diff(np.concatenate([[1.0], eq_arr])) / np.concatenate([[1.0], eq_arr[:-1]])
+Line 223 [Div by Zero]: sh = (np.mean(rets) / np.std(rets)) * np.sqrt(252) if np.std(rets) > 0 else 0
+Line 225 [Div by Zero]: so = (np.mean(rets) / np.std(dn)) * np.sqrt(252) if len(dn) > 0 else 0
+Line 237 [Div by Zero]: dd_q = float(np.min(qqq_arr / np.maximum.accumulate(qqq_arr) - 1))
+
+--- File: regime_quant_ml\g5_vix_open_fix.py ---
+Line 102 [Div by Zero]: eq_arr = np.array(curve); y = len(eq_arr)/252
+Line 106 [Div by Zero]: rets = np.diff(np.concatenate([[1.0], eq_arr]))/np.concatenate([[1.0], eq_arr[:-1]])
+Line 106 [Concat Dim Mismatch Risk]: rets = np.diff(np.concatenate([[1.0], eq_arr]))/np.concatenate([[1.0], eq_arr[:-1]])
+Line 107 [Div by Zero]: sh = (np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets) > 0 else 0
+Line 109 [Div by Zero]: so = (np.mean(rets)/np.std(dn))*np.sqrt(252) if len(dn) > 0 else 0
+Line 159 [Div by Zero]: iv_c = vix_close/100; rv_c = qqq_ret_c.rolling(21).std()*np.sqrt(252)
+Line 161 [Div by Zero]: ar_c = qqq_ret_c.abs(); bpv_c = (np.pi/2)*ar_c*ar_c.shift(1)
+Line 178 [Div by Zero]: iv_o = vix_open/100; rv_o = qqq_ret_o.rolling(21).std()*np.sqrt(252)
+Line 180 [Div by Zero]: ar_o = qqq_ret_o.abs(); bpv_o = (np.pi/2)*ar_o*ar_o.shift(1)
+
+--- File: regime_quant_ml\genesis_2_champion.py ---
+Line 209 [Div by Zero]: sharpe = (np.mean(rets) / np.std(rets)) * np.sqrt(252) if np.std(rets) > 0 else 0
+Line 211 [Div by Zero]: sortino = (np.mean(rets) / np.std(down)) * np.sqrt(252) if len(down) > 0 else 0
+
+--- File: regime_quant_ml\genesis_3_lowdd_champion.py ---
+Line 68 [Log(0) Trap]: park = (1/(4*np.log(2))) * (np.log(high['QQQ']/low['QQQ']))**2
+Line 68 [Div by Zero]: park = (1/(4*np.log(2))) * (np.log(high['QQQ']/low['QQQ']))**2
+Line 73 [Div by Zero]: bpv = (np.pi/2) * abs_ret * abs_ret.shift(1)
+Line 275 [Div by Zero]: eq = np.array(eq); years = len(rets)/252
+Line 277 [Div by Zero]: sh = (np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+Line 279 [Div by Zero]: so = (np.mean(rets)/np.std(dn))*np.sqrt(252) if len(dn)>0 else 0
+
+--- File: regime_quant_ml\genesis_4_champion.py ---
+Line 43 [Div by Zero]: iv=vix/100; rv21=qqq_ret.rolling(21).std()*np.sqrt(252)
+Line 46 [Div by Zero]: ar=qqq_ret.abs(); bpv=(np.pi/2)*ar*ar.shift(1)
+Line 55 [Log(0) Trap]: park=(1/(4*np.log(2)))*(np.log(high['QQQ']/low['QQQ']))**2
+Line 55 [Div by Zero]: park=(1/(4*np.log(2)))*(np.log(high['QQQ']/low['QQQ']))**2
+Line 156 [Div by Zero]: rets=np.array(rets_list); eq=np.array(hist); yrs=len(rets)/252
+Line 158 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+Line 310 [Div by Zero]: s = (np.mean(perm)/np.std(perm))*np.sqrt(252)
+Line 323 [Log(0) Trap]: sr0 = np.sqrt(2*np.log(n_trials))*(1-np.euler_gamma/(2*np.log(n_trials))) if n_trials>1 else 0
+Line 323 [Div by Zero]: sr0 = np.sqrt(2*np.log(n_trials))*(1-np.euler_gamma/(2*np.log(n_trials))) if n_trials>1 else 0
+Line 326 [Div by Zero]: se = np.sqrt((1-sk*real_sharpe+((ku-3)/4)*real_sharpe**2)/(T-1))
+
+--- File: regime_quant_ml\genesis_5_champion.py ---
+Line 39 [Div by Zero]: iv=vix/100; rv21=qqq_ret.rolling(21).std()*np.sqrt(252); vrp21=iv-rv21
+Line 40 [Div by Zero]: ar=qqq_ret.abs(); bpv=(np.pi/2)*ar*ar.shift(1)
+Line 124 [Div by Zero]: rets=np.array(rets_list); eq=np.array(hist); yrs=len(rets)/252
+Line 126 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+
+--- File: regime_quant_ml\genesis_6_regime.py ---
+Line 57 [Div by Zero]: df['VTS_Acute'] = df['VIX9D'] / df['VIX']
+Line 58 [Div by Zero]: df['VTS_Medium'] = df['VIX'] / df['VIX3M']
+Line 87 [Div by Zero]: df['Regime'] = np.select(conditions, choices, default=3) # Default to correction/cash if uncertain
+
+--- File: regime_quant_ml\genesis_drl_backtest.py ---
+Line 167 [Div by Zero]: sharpe_g = (g_daily.mean() / g_daily.std()) * np.sqrt(252)
+Line 168 [Div by Zero]: sharpe_q = (q_daily.mean() / q_daily.std()) * np.sqrt(252)
+Line 169 [Div by Zero]: sharpe_s = (s_daily.mean() / s_daily.std()) * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_experiment_tracker.py ---
+Line 185 [Log(0) Trap]: sr0 = np.sqrt(2 * np.log(n_trials)) * (1 - np.euler_gamma / (2 * np.log(n_trials)))
+Line 185 [Div by Zero]: sr0 = np.sqrt(2 * np.log(n_trials)) * (1 - np.euler_gamma / (2 * np.log(n_trials)))
+Line 242 [Div by Zero]: real_sharpe = (np.mean(returns) / np.std(returns)) * np.sqrt(252) if np.std(returns) > 0 else 0
+Line 248 [Div by Zero]: s = (np.mean(shuffled) / np.std(shuffled)) * np.sqrt(252) if np.std(shuffled) > 0 else 0
+Line 339 [Div by Zero]: oos_rank = np.sum(oos_sharpes >= oos_sharpes[best_is]) / N
+Line 343 [Log(0) Trap]: logit_val = np.log(oos_rank / (1 - oos_rank))
+Line 343 [Div by Zero]: logit_val = np.log(oos_rank / (1 - oos_rank))
+Line 399 [Div by Zero]: daily_returns = np.diff(equity) / equity[:-1]
+Line 406 [Div by Zero]: sharpe = (np.mean(daily_returns) / np.std(daily_returns)) * np.sqrt(252) if np.std(daily_returns) > 0 else 0
+Line 409 [Div by Zero]: sortino = (np.mean(daily_returns) / np.std(downside)) * np.sqrt(252) if len(downside) > 0 and np.std(downside) > 0 else 0
+
+--- File: regime_quant_ml\genesis_feature_engine.py ---
+Line 111 [Div by Zero]: overnight = (open_df['SPY'] - close_df['SPY'].shift(1)) / close_df['SPY'].shift(1)
+Line 112 [Div by Zero]: intraday = (close_df['SPY'] - open_df['SPY']) / open_df['SPY']
+
+--- File: regime_quant_ml\genesis_feature_expansion.py ---
+Line 76 [Log(0) Trap]: rs_list.append(np.log(np.mean(rs_vals)))
+Line 77 [Log(0) Trap]: n_list.append(np.log(n))
+Line 115 [Div by Zero]: Lmk = np.sum(np.abs(np.diff(x[indices]))) * (N - 1) / (k * len(indices) * k)
+Line 119 [Log(0) Trap]: k_vals.append(np.log(1.0 / k))
+Line 119 [Div by Zero]: k_vals.append(np.log(1.0 / k))
+Line 152 [Div by Zero]: approx[j] = (arr[2*j] + arr[2*j+1]) / np.sqrt(2)
+Line 153 [Div by Zero]: detail[j] = (arr[2*j] - arr[2*j+1]) / np.sqrt(2)
+Line 158 [Div by Zero]: lambda x: np.sum(x**2) / len(x)
+Line 250 [Log(0) Trap]: park_var = (1 / (4 * np.log(2))) * (np.log(high['QQQ'] / low['QQQ']))**2
+Line 250 [Div by Zero]: park_var = (1 / (4 * np.log(2))) * (np.log(high['QQQ'] / low['QQQ']))**2
+Line 257 [Div by Zero]: bpv = (np.pi / 2) * abs_ret * abs_ret.shift(1)
+Line 310 [Div by Zero]: df['TermStructure_Slope'] = (close['TLT'] / close['SHY']).pct_change(21).fillna(0)
+
+--- File: regime_quant_ml\genesis_hmm_core.py ---
+Line 61 [Div by Zero]: df['Credit_Ratio'] = close_df['HYG'] / close_df['LQD']
+Line 65 [Div by Zero]: df['Risk_Ratio'] = close_df['QQQ'] / close_df['TLT']
+Line 69 [Div by Zero]: df['Real_Rates_Proxy'] = close_df['GLD'] / close_df['TLT']
+Line 93 [Div by Zero]: df['VIX_ZScore'] = (df['VIX_Level'] - vix_mean_63) / vix_std_63
+Line 97 [Div by Zero]: df['QQQ_Drawdown'] = (close_df['QQQ'] / qqq_cummax) - 1.0
+Line 115 [Div by Zero]: X_std = ((df[hmm_cols] - roll_mean) / roll_std).values
+
+--- File: regime_quant_ml\genesis_holy_grail.py ---
+Line 170 [Div by Zero]: cagrs = {col: (eq_df[col].iloc[-1])**(1/y) - 1 for col in eq_df.columns}
+
+--- File: regime_quant_ml\genesis_institutional_volume.py ---
+Line 60 [Div by Zero]: df['NAV'] = (TV - mu_66) / sigma_66
+Line 70 [Div by Zero]: df['VWAP_Z_Score'] = (close['QQQ'] - rolling_vwap) / close['QQQ'].rolling(21).std()
+Line 80 [Div by Zero]: df['VIX_Level'] = close['^VIX'] / 100
+Line 227 [Div by Zero]: cagrs = {col: (eq_df[col].iloc[-1])**(1/y) - 1 for col in eq_df.columns}
+
+--- File: regime_quant_ml\genesis_live_execution.py ---
+Line 60 [Div by Zero]: df['VTS_Slope_Acute'] = df['VIX9D'] / df['VIX']
+Line 61 [Div by Zero]: df['VTS_Slope_Medium'] = df['VIX'] / df['VIX3M']
+Line 62 [Div by Zero]: df['VTS_Slope_Macro'] = df['VIX3M'] / df['VIX6M']
+
+--- File: regime_quant_ml\genesis_mega_epoch_14.py ---
+Line 83 [Div by Zero]: df['NAV'] = (TV - mu_66) / sigma_66
+Line 88 [Div by Zero]: df['VWAP_Z_Score'] = (close['QQQ'] - rolling_vwap) / close['QQQ'].rolling(21).std()
+Line 98 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 212 [Div by Zero]: sharpe_q = (q_ret_final.mean() / q_ret_final.std()) * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_mega_epoch_17.py ---
+Line 63 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 67 [Div by Zero]: df['VWAP_Z_Score'] = (close['QQQ'] - rolling_vwap) / close['QQQ'].rolling(21).std()
+Line 75 [Div by Zero]: df['VEI'] = atr10 / atr50
+
+--- File: regime_quant_ml\genesis_mega_epoch_18.py ---
+Line 58 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 62 [Div by Zero]: df['VWAP_Z_Score'] = (adj_close['QQQ'] - rolling_vwap) / adj_close['QQQ'].rolling(21).std()
+Line 70 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 80 [Div by Zero]: df['Risk_Free_Daily'] = (adj_close['^IRX'] / 100) / 252
+Line 143 [Div by Zero]: sharpe = test_rets.mean() / test_rets.std() * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_mega_epoch_19.py ---
+Line 55 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 59 [Div by Zero]: df['VWAP_Z_Score'] = (adj_close['QQQ'] - rolling_vwap) / adj_close['QQQ'].rolling(21).std()
+Line 67 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 76 [Div by Zero]: df['Risk_Free_Daily'] = (adj_close['^IRX'] / 100) / 252
+Line 134 [Div by Zero]: sharpe = test_rets.mean() / test_rets.std() * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_mega_epoch_20.py ---
+Line 55 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 59 [Div by Zero]: df['VWAP_Z_Score'] = (adj_close['QQQ'] - rolling_vwap) / adj_close['QQQ'].rolling(21).std()
+Line 67 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 132 [Div by Zero]: sharpe = test_rets.mean() / test_rets.std() * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_meta_model.py ---
+Line 169 [Div by Zero]: base_pf = base_wins.sum() / abs(base_losses.sum()) if len(base_losses) > 0 else np.inf
+Line 191 [Div by Zero]: pf = meta_wins.sum() / abs(meta_losses.sum()) if len(meta_losses) > 0 else np.inf
+
+--- File: regime_quant_ml\genesis_ml_bruteforce.py ---
+Line 65 [Div by Zero]: df['SMA_200_Dist'] = (close['QQQ'] / close['QQQ'].rolling(200).mean()) - 1
+Line 70 [Div by Zero]: df['VIX_Level'] = close['^VIX'] / 100
+Line 77 [Div by Zero]: df['MACD'] = (ema12 - ema26) / close['QQQ']
+Line 81 [Div by Zero]: df['Vol_Turnover'] = volume['QQQ'] / vol_mean_21
+Line 238 [Div by Zero]: cagrs = {col: (eq_df[col].iloc[-1])**(1/y) - 1 for col in eq_df.columns}
+
+--- File: regime_quant_ml\genesis_phase101_200.py ---
+Line 34 [Div by Zero]: iv=vix/100; rv21=qqq_r.rolling(21).std()*np.sqrt(252); vrp21=iv-rv21
+Line 37 [Div by Zero]: ac=qqq_r.abs(); bpv=(np.pi/2)*ac*ac.shift(1)
+Line 102 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+Line 255 [Concat Dim Mismatch Risk]: sm = calc(stress_r, np.concatenate([[1],stress_e]))
+Line 278 [Div by Zero]: 'VRP': (vix/100 - qqq_r.rolling(21).std()*np.sqrt(252)),
+Line 311 [Div by Zero]: 'sharpe': float((np.mean(regime_r)/np.std(regime_r))*np.sqrt(252)) if np.std(regime_r)>0 else 0,
+
+--- File: regime_quant_ml\genesis_phase201_300.py ---
+Line 35 [Div by Zero]: iv=vix/100; rv21=qqq_r.rolling(21).std()*np.sqrt(252); vrp21=iv-rv21
+Line 38 [Div by Zero]: ac=qqq_r.abs(); bpv=(np.pi/2)*ac*ac.shift(1)
+Line 105 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+Line 162 [Concat Dim Mismatch Risk]: return calc(rets, np.concatenate([[1],eq])), pval
+Line 211 [Concat Dim Mismatch Risk]: vrp_m = calc(vrp_rets.values, np.concatenate([[1],vrp_eq]))
+
+--- File: regime_quant_ml\genesis_phase301_400.py ---
+Line 50 [Div by Zero]: phase = (days_since % period) / period * 2 * np.pi
+Line 65 [Div by Zero]: features['Dasha_Regime'] = np.floor((days_since % (120*365.25636042)) / (120*365.25636042) * 9)
+Line 78 [Div by Zero]: iv=vix/100; rv21=qqq_r.rolling(21).std()*np.sqrt(252); vrp21=iv-rv21
+Line 81 [Div by Zero]: ac=qqq_r.abs(); bpv=(np.pi/2)*ac*ac.shift(1)
+Line 156 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+
+--- File: regime_quant_ml\genesis_phase31_40_sweep.py ---
+Line 43 [Div by Zero]: iv=vix/100; rv21=qqq_ret.rolling(21).std()*np.sqrt(252)
+Line 46 [Div by Zero]: ar=qqq_ret.abs(); bpv=(np.pi/2)*ar*ar.shift(1)
+Line 55 [Log(0) Trap]: park=(1/(4*np.log(2)))*(np.log(high['QQQ']/low['QQQ']))**2
+Line 55 [Div by Zero]: park=(1/(4*np.log(2)))*(np.log(high['QQQ']/low['QQQ']))**2
+Line 156 [Div by Zero]: rets=np.array(rets_list); eq=np.array(hist); yrs=len(rets)/252
+Line 158 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+Line 310 [Div by Zero]: s = (np.mean(perm)/np.std(perm))*np.sqrt(252)
+Line 323 [Log(0) Trap]: sr0 = np.sqrt(2*np.log(n_trials))*(1-np.euler_gamma/(2*np.log(n_trials))) if n_trials>1 else 0
+Line 323 [Div by Zero]: sr0 = np.sqrt(2*np.log(n_trials))*(1-np.euler_gamma/(2*np.log(n_trials))) if n_trials>1 else 0
+Line 326 [Div by Zero]: se = np.sqrt((1-sk*real_sharpe+((ku-3)/4)*real_sharpe**2)/(T-1))
+
+--- File: regime_quant_ml\genesis_phase401_500.py ---
+Line 45 [Div by Zero]: df['VIX_Ratio_9D_30D'] = df['VIX9D'] / df['VIX']
+Line 50 [Div by Zero]: nearest_strike = np.round(spy / 10.0) * 10.0
+Line 69 [Div by Zero]: iv=vix/100; rv21=qqq_r.rolling(21).std()*np.sqrt(252); vrp21=iv-rv21
+Line 72 [Div by Zero]: ac=qqq_r.abs(); bpv=(np.pi/2)*ac*ac.shift(1)
+Line 162 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+
+--- File: regime_quant_ml\genesis_phase41_55.py ---
+Line 111 [Div by Zero]: iv=vix/100; rv21=qqq_ret.rolling(21).std()*np.sqrt(252); vrp21=iv-rv21
+Line 114 [Div by Zero]: ar_c=qqq_ret.abs(); bpv=(np.pi/2)*ar_c*ar_c.shift(1)
+Line 173 [Div by Zero]: sharpe = (np.mean(rets)/np.std(rets))*np.sqrt(252)
+Line 176 [Div by Zero]: max_dd=float(np.min(dd_arr)); calmar=cagr/abs(max_dd) if max_dd!=0 else 0
+Line 207 [Div by Zero]: beta_qqq=np.cov(rets[:n],qqq_rets[:n])[0,1]/np.var(qqq_rets[:n]) if n>0 else 0
+Line 212 [Div by Zero]: rs=pd.Series(rets).rolling(252).apply(lambda x: (x.mean()/x.std())*np.sqrt(252) if x.std()>0 else 0)
+Line 264 [Concat Dim Mismatch Risk]: qqq_a=full_analysis('QQQ_BH',qqq_rets,np.concatenate([[1],qqq_eq]),close.index[close.index>='2015-01-01'],qqq_rets,spy_rets)
+
+--- File: regime_quant_ml\genesis_phase56_100.py ---
+Line 37 [Div by Zero]: iv=vix/100; rv21=qqq_ret.rolling(21).std()*np.sqrt(252); vrp21=iv-rv21
+Line 40 [Div by Zero]: ar_c=qqq_ret.abs(); bpv=(np.pi/2)*ar_c*ar_c.shift(1)
+Line 122 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+Line 189 [Concat Dim Mismatch Risk]: rp_m = calc_metrics(rp_daily.values, np.concatenate([[1], rp_eq]))
+Line 244 [Div by Zero]: s = (np.mean(sample)/np.std(sample))*np.sqrt(252) if np.std(sample)>0 else 0
+Line 258 [Div by Zero]: s = (np.mean(perm)/np.std(perm))*np.sqrt(252)
+Line 275 [Div by Zero]: is_s = (np.mean(is_r)/np.std(is_r))*np.sqrt(252) if np.std(is_r)>0 else 0
+Line 276 [Div by Zero]: oos_s = (np.mean(oos_r)/np.std(oos_r))*np.sqrt(252) if np.std(oos_r)>0 else 0
+Line 295 [Concat Dim Mismatch Risk]: stress_m = calc_metrics(stress_r, np.concatenate([[1], stress_e]))
+Line 328 [Div by Zero]: monkey_sharpes.append((np.mean(r)/np.std(r))*np.sqrt(252))
+
+--- File: regime_quant_ml\genesis_physics_engine.py ---
+Line 33 [Log(0) Trap]: hurst_vals[i] = np.log(R / S) / np.log(window)
+Line 33 [Div by Zero]: hurst_vals[i] = np.log(R / S) / np.log(window)
+Line 44 [Div by Zero]: bv = (np.pi / 2) * bpv_terms.rolling(window).sum()
+Line 132 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 136 [Div by Zero]: df['VWAP_Z_Score'] = (close['QQQ'] - rolling_vwap) / close['QQQ'].rolling(21).std()
+Line 143 [Div by Zero]: df['Risk_Free'] = close['^IRX'] / 100 / 100 # IRX is in %, so divide by 100, then it's annual
+Line 252 [Div by Zero]: sharpe_q = (qqq_ret.mean() / qqq_ret.std()) * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_portfolio_backtest.py ---
+Line 207 [Div by Zero]: port_sharpe = (np.mean(port_df['port_return']) / port_std) * np.sqrt(252) if port_std > 0 else 0
+Line 210 [Div by Zero]: qqq_sharpe = (np.mean(qqq_ret.values) / qqq_std) * np.sqrt(252) if qqq_std > 0 else 0
+
+--- File: regime_quant_ml\genesis_qqq_xgboost.py ---
+Line 139 [Div by Zero]: sharpe_q = (q_ret.mean() / q_ret.std()) * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_quantum_matrix.py ---
+Line 203 [Div by Zero]: sharpe_q = (q_ret_final.mean() / q_ret_final.std()) * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_regime_qqq.py ---
+Line 139 [Div by Zero]: sharpe_q = (q_ret.mean() / q_ret.std()) * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_rolling_analysis.py ---
+Line 145 [Div by Zero]: cagrs = {col: (eq_df[col].iloc[-1])**(1/y) - 1 for col in eq_df.columns}
+
+--- File: regime_quant_ml\genesis_ultimate_fusion.py ---
+Line 68 [Div by Zero]: df['NAV'] = (TV - mu_66) / sigma_66
+Line 74 [Div by Zero]: df['VWAP_Z_Score'] = (close['QQQ'] - rolling_vwap) / close['QQQ'].rolling(21).std()
+Line 85 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 246 [Div by Zero]: cagrs = {col: (eq_df[col].iloc[-1])**(1/y) - 1 for col in eq_df.columns}
+
+--- File: regime_quant_ml\genesis_v31_forge.py ---
+Line 194 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252) if np.std(daily_rets) > 0 else 0
+Line 196 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(downside)) * np.sqrt(252) if len(downside) > 0 and np.std(downside) > 0 else 0
+Line 287 [Div by Zero]: sh = (np.mean(r) / np.std(r)) * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_v32_forge.py ---
+Line 260 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252)
+Line 262 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(downside)) * np.sqrt(252) if len(downside) > 0 else 0
+Line 281 [Div by Zero]: 'sharpe': (np.mean(r)/np.std(r))*np.sqrt(252),
+
+--- File: regime_quant_ml\genesis_v33_overlay.py ---
+Line 209 [Div by Zero]: sharpe = (np.mean(rets) / np.std(rets)) * np.sqrt(252) if np.std(rets) > 0 else 0
+Line 211 [Div by Zero]: sortino = (np.mean(rets) / np.std(down)) * np.sqrt(252) if len(down) > 0 else 0
+
+--- File: regime_quant_ml\genesis_v34_full_signal.py ---
+Line 68 [Log(0) Trap]: park = (1/(4*np.log(2))) * (np.log(high['QQQ']/low['QQQ']))**2
+Line 68 [Div by Zero]: park = (1/(4*np.log(2))) * (np.log(high['QQQ']/low['QQQ']))**2
+Line 73 [Div by Zero]: bpv = (np.pi/2) * abs_ret * abs_ret.shift(1)
+Line 275 [Div by Zero]: eq = np.array(eq); years = len(rets)/252
+Line 277 [Div by Zero]: sh = (np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+Line 279 [Div by Zero]: so = (np.mean(rets)/np.std(dn))*np.sqrt(252) if len(dn)>0 else 0
+
+--- File: regime_quant_ml\genesis_v3_forge.py ---
+Line 257 [Div by Zero]: daily_rets = np.diff(equity) / equity[:-1]
+Line 262 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252)
+Line 265 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(downside)) * np.sqrt(252) if len(downside) > 0 else 0
+Line 268 [Div by Zero]: max_dd = np.min((equity - running_max) / running_max)
+Line 288 [Div by Zero]: qqq_sharpe = (np.mean(qqq_rets) / np.std(qqq_rets)) * np.sqrt(252)
+Line 289 [Div by Zero]: spy_sharpe = (np.mean(spy_rets) / np.std(spy_rets)) * np.sqrt(252)
+Line 290 [Div by Zero]: qqq_dd = np.min((qqq_eq - np.maximum.accumulate(qqq_eq)) / np.maximum.accumulate(qqq_eq))
+Line 291 [Div by Zero]: spy_dd = np.min((spy_eq - np.maximum.accumulate(spy_eq)) / np.maximum.accumulate(spy_eq))
+
+--- File: regime_quant_ml\genesis_v3_universe.py ---
+Line 136 [Div by Zero]: df['Credit_Ratio'] = close_df['HYG'] / close_df['LQD']
+Line 140 [Div by Zero]: df['Risk_Ratio'] = close_df['QQQ'] / close_df['TLT']
+Line 144 [Div by Zero]: df['Real_Rates_Proxy'] = close_df['GLD'] / close_df['TLT']
+Line 152 [Div by Zero]: df['VIX_ZScore'] = (df['VIX_Level'] - vix_mean) / vix_std
+Line 170 [Log(0) Trap]: park = (1/(4*np.log(2))) * (np.log(high_df['QQQ']/low_df['QQQ']))**2
+Line 170 [Div by Zero]: park = (1/(4*np.log(2))) * (np.log(high_df['QQQ']/low_df['QQQ']))**2
+Line 175 [Div by Zero]: implied = close_df['^VIX'] / 100.0
+Line 182 [Div by Zero]: bpv = (np.pi/2) * abs_ret * abs_ret.shift(1)
+Line 224 [Log(0) Trap]: h.iloc[i] = 0.5 * np.log2(max(vr, 0.01))
+Line 247 [Div by Zero]: X = ((df[hmm_cols] - roll_mean) / roll_std).values
+
+--- File: regime_quant_ml\genesis_v5_aggressive.py ---
+Line 39 [Div by Zero]: iv=vix/100; rv21=qqq_ret.rolling(21).std()*np.sqrt(252); vrp21=iv-rv21
+Line 40 [Div by Zero]: ar=qqq_ret.abs(); bpv=(np.pi/2)*ar*ar.shift(1)
+Line 124 [Div by Zero]: rets=np.array(rets_list); eq=np.array(hist); yrs=len(rets)/252
+Line 126 [Div by Zero]: sh=(np.mean(rets)/np.std(rets))*np.sqrt(252) if np.std(rets)>0 else 0
+
+--- File: regime_quant_ml\gpu_brute_force.py ---
+Line 52 [Div by Zero]: df["VIX_zscore"] = (vix - vix.rolling(252).mean()) / vix.rolling(252).std()
+Line 59 [Div by Zero]: df["SMA200_dist"]= close["QQQ"] / sma(200) - 1
+Line 60 [Div by Zero]: df["SMA50_200"]  = sma(50) / sma(200) - 1
+Line 229 [Div by Zero]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 229 [Concat Dim Mismatch Risk]: dr = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 289 [Concat Dim Mismatch Risk]: alloc_matrix = np.concatenate(all_allocs, axis=0)  # [N, T]
+
+--- File: regime_quant_ml\options_engine.py ---
+Line 20 [Log(0) Trap]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 20 [Div by Zero]: d1 = (np.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * np.sqrt(T))
+Line 33 [Exp NaN Trap]: return S * norm.cdf(d1) - K * np.exp(-r * T) * norm.cdf(d2)
+Line 35 [Exp NaN Trap]: return K * np.exp(-r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+Line 55 [Div by Zero]: return norm.pdf(d1) / (S * sigma * np.sqrt(T))
+Line 62 [Div by Zero]: term1 = -(S * norm.pdf(d1) * sigma) / (2 * np.sqrt(T))
+Line 64 [Exp NaN Trap]: return (term1 - r * K * np.exp(-r * T) * norm.cdf(d2)) / 252
+Line 64 [Div by Zero]: return (term1 - r * K * np.exp(-r * T) * norm.cdf(d2)) / 252
+Line 66 [Exp NaN Trap]: return (term1 + r * K * np.exp(-r * T) * norm.cdf(-d2)) / 252
+Line 66 [Div by Zero]: return (term1 + r * K * np.exp(-r * T) * norm.cdf(-d2)) / 252
+Line 73 [Div by Zero]: return S * norm.pdf(d1) * np.sqrt(T) / 100
+Line 402 [Exp NaN Trap]: parity = call_p - put_p - (100 - 100 * np.exp(-0.05))
+Line 408 [Exp NaN Trap]: intrinsic = 150 - 100 * np.exp(-0.05)
+
+--- File: regime_quant_ml\plot_all_champions.py ---
+Line 48 [Div by Zero]: ac=close['QQQ'].pct_change().abs().shift(1); bpv=(np.pi/2)*ac*ac.shift(1)
+
+--- File: regime_quant_ml\scaffold_extended.py ---
+Line 82 [Div by Zero]: ea = np.array(curve); n_years=len(ea)/252
+Line 85 [Div by Zero]: dr=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 85 [Concat Dim Mismatch Risk]: dr=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 86 [Div by Zero]: sharpe=(np.mean(dr)/np.std(dr))*np.sqrt(252) if np.std(dr)>0 else 0
+
+--- File: regime_quant_ml\scratch_audit.py ---
+Line 156 [Div by Zero]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 156 [Concat Dim Mismatch Risk]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 231 [Div by Zero]: sharpe_manual = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252)
+
+--- File: regime_quant_ml\scratch_champ_audit.py ---
+Line 59 [Div by Zero]: dr = np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 59 [Concat Dim Mismatch Risk]: dr = np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 113 [Div by Zero]: sub_sharpe = (np.mean(sub_dr)/np.std(sub_dr))*np.sqrt(252) if np.std(sub_dr)>0 else 0
+
+--- File: regime_quant_ml\scratch_fast_sweep.py ---
+Line 32 [Div by Zero]: ea = np.array(curve); n_years=len(ea)/252
+Line 35 [Div by Zero]: dr=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 35 [Concat Dim Mismatch Risk]: dr=np.diff(np.concatenate([[ea[0]],ea]))/np.concatenate([[ea[0]],ea[:-1]])
+Line 36 [Div by Zero]: sharpe=(np.mean(dr)/np.std(dr))*np.sqrt(252) if np.std(dr)>0 else 0
+
+--- File: regime_quant_ml\scratch_hurst_fix.py ---
+Line 34 [Log(0) Trap]: print(f"  0.5 * log2({ratio:.6f}) = {0.5 * np.log2(max(ratio, 0.01)):.4f}")
+Line 54 [Log(0) Trap]: rs_list.append((np.log(lag), np.log(np.mean(rs_vals))))
+Line 80 [Log(0) Trap]: h = np.log(ratio) / (2 * np.log(n)) + 0.5
+Line 80 [Div by Zero]: h = np.log(ratio) / (2 * np.log(n)) + 0.5
+
+--- File: regime_quant_ml\scratch_hurst_impact.py ---
+Line 24 [Log(0) Trap]: if rs_vals: rs_list.append((np.log(lag), np.log(np.mean(rs_vals))))
+
+--- File: regime_quant_ml\train_regime_model.py ---
+Line 134 [Div by Zero]: ret_df['daily_ret_proxy'] = ret_df['fwd_return_10d'] / 10.0
+Line 252 [Div by Zero]: sharpe = (np.mean(strat_ret_veto) / std_veto) * np.sqrt(252)
+
+--- File: regime_quant_ml\auto_research\scaffold.py ---
+Line 165 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 168 [Div by Zero]: df['VWAP_Z'] = (close['QQQ'] - rvwap) / close['QQQ'].rolling(21).std()
+Line 172 [Div by Zero]: df['VolRatio'] = vol['QQQ'].rolling(5).mean() / vol['QQQ'].rolling(21).mean()
+Line 180 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 187 [Div by Zero]: df['VIX_zscore'] = (iv - iv.rolling(252).mean()) / iv.rolling(252).std()
+Line 201 [Div by Zero]: df['SMA50_dist'] = close['QQQ'] / close['QQQ'].rolling(50).mean() - 1
+Line 202 [Div by Zero]: df['SMA200_dist'] = close['QQQ'] / close['QQQ'].rolling(200).mean() - 1
+Line 203 [Div by Zero]: df['SMA50_200'] = close['QQQ'].rolling(50).mean() / close['QQQ'].rolling(200).mean() - 1
+Line 225 [Div by Zero]: df['SPY_QQQ_ratio'] = close['SPY'] / close['QQQ']
+Line 227 [Div by Zero]: df['GLD_TLT_ratio'] = close['GLD'] / close['TLT']
+Line 327 [Div by Zero]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 327 [Concat Dim Mismatch Risk]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 328 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252) if np.std(daily_rets) > 0 else 0
+Line 330 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: regime_quant_ml\auto_research_v2\scaffold.py ---
+Line 165 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 168 [Div by Zero]: df['VWAP_Z'] = (close['QQQ'] - rvwap) / close['QQQ'].rolling(21).std()
+Line 172 [Div by Zero]: df['VolRatio'] = vol['QQQ'].rolling(5).mean() / vol['QQQ'].rolling(21).mean()
+Line 180 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 187 [Div by Zero]: df['VIX_zscore'] = (iv - iv.rolling(252).mean()) / iv.rolling(252).std()
+Line 201 [Div by Zero]: df['SMA50_dist'] = close['QQQ'] / close['QQQ'].rolling(50).mean() - 1
+Line 202 [Div by Zero]: df['SMA200_dist'] = close['QQQ'] / close['QQQ'].rolling(200).mean() - 1
+Line 203 [Div by Zero]: df['SMA50_200'] = close['QQQ'].rolling(50).mean() / close['QQQ'].rolling(200).mean() - 1
+Line 225 [Div by Zero]: df['SPY_QQQ_ratio'] = close['SPY'] / close['QQQ']
+Line 227 [Div by Zero]: df['GLD_TLT_ratio'] = close['GLD'] / close['TLT']
+Line 327 [Div by Zero]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 327 [Concat Dim Mismatch Risk]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 328 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252) if np.std(daily_rets) > 0 else 0
+Line 330 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: regime_quant_ml\auto_research_v3\scaffold.py ---
+Line 165 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 168 [Div by Zero]: df['VWAP_Z'] = (close['QQQ'] - rvwap) / close['QQQ'].rolling(21).std()
+Line 172 [Div by Zero]: df['VolRatio'] = vol['QQQ'].rolling(5).mean() / vol['QQQ'].rolling(21).mean()
+Line 180 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 187 [Div by Zero]: df['VIX_zscore'] = (iv - iv.rolling(252).mean()) / iv.rolling(252).std()
+Line 201 [Div by Zero]: df['SMA50_dist'] = close['QQQ'] / close['QQQ'].rolling(50).mean() - 1
+Line 202 [Div by Zero]: df['SMA200_dist'] = close['QQQ'] / close['QQQ'].rolling(200).mean() - 1
+Line 203 [Div by Zero]: df['SMA50_200'] = close['QQQ'].rolling(50).mean() / close['QQQ'].rolling(200).mean() - 1
+Line 225 [Div by Zero]: df['SPY_QQQ_ratio'] = close['SPY'] / close['QQQ']
+Line 227 [Div by Zero]: df['GLD_TLT_ratio'] = close['GLD'] / close['TLT']
+Line 327 [Div by Zero]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 327 [Concat Dim Mismatch Risk]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 328 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252) if np.std(daily_rets) > 0 else 0
+Line 330 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: regime_quant_ml\auto_research_v4\scaffold.py ---
+Line 165 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 168 [Div by Zero]: df['VWAP_Z'] = (close['QQQ'] - rvwap) / close['QQQ'].rolling(21).std()
+Line 172 [Div by Zero]: df['VolRatio'] = vol['QQQ'].rolling(5).mean() / vol['QQQ'].rolling(21).mean()
+Line 180 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 187 [Div by Zero]: df['VIX_zscore'] = (iv - iv.rolling(252).mean()) / iv.rolling(252).std()
+Line 201 [Div by Zero]: df['SMA50_dist'] = close['QQQ'] / close['QQQ'].rolling(50).mean() - 1
+Line 202 [Div by Zero]: df['SMA200_dist'] = close['QQQ'] / close['QQQ'].rolling(200).mean() - 1
+Line 203 [Div by Zero]: df['SMA50_200'] = close['QQQ'].rolling(50).mean() / close['QQQ'].rolling(200).mean() - 1
+Line 225 [Div by Zero]: df['SPY_QQQ_ratio'] = close['SPY'] / close['QQQ']
+Line 227 [Div by Zero]: df['GLD_TLT_ratio'] = close['GLD'] / close['TLT']
+Line 327 [Div by Zero]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 327 [Concat Dim Mismatch Risk]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 328 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252) if np.std(daily_rets) > 0 else 0
+Line 330 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: regime_quant_ml\auto_research_v5\scaffold.py ---
+Line 165 [Div by Zero]: df['NAV'] = (TV - TV.rolling(66).mean()) / TV.rolling(66).std(ddof=1)
+Line 168 [Div by Zero]: df['VWAP_Z'] = (close['QQQ'] - rvwap) / close['QQQ'].rolling(21).std()
+Line 172 [Div by Zero]: df['VolRatio'] = vol['QQQ'].rolling(5).mean() / vol['QQQ'].rolling(21).mean()
+Line 180 [Div by Zero]: df['VEI'] = atr10 / atr50
+Line 187 [Div by Zero]: df['VIX_zscore'] = (iv - iv.rolling(252).mean()) / iv.rolling(252).std()
+Line 201 [Div by Zero]: df['SMA50_dist'] = close['QQQ'] / close['QQQ'].rolling(50).mean() - 1
+Line 202 [Div by Zero]: df['SMA200_dist'] = close['QQQ'] / close['QQQ'].rolling(200).mean() - 1
+Line 203 [Div by Zero]: df['SMA50_200'] = close['QQQ'].rolling(50).mean() / close['QQQ'].rolling(200).mean() - 1
+Line 225 [Div by Zero]: df['SPY_QQQ_ratio'] = close['SPY'] / close['QQQ']
+Line 227 [Div by Zero]: df['GLD_TLT_ratio'] = close['GLD'] / close['TLT']
+Line 327 [Div by Zero]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 327 [Concat Dim Mismatch Risk]: daily_rets = np.diff(np.concatenate([[ea[0]], ea])) / np.concatenate([[ea[0]], ea[:-1]])
+Line 328 [Div by Zero]: sharpe = (np.mean(daily_rets) / np.std(daily_rets)) * np.sqrt(252) if np.std(daily_rets) > 0 else 0
+Line 330 [Div by Zero]: sortino = (np.mean(daily_rets) / np.std(neg)) * np.sqrt(252) if len(neg) > 0 else 0
+
+--- File: regime_quant_ml\genesis_v2_baseline\genesis_drl_backtest.py ---
+Line 167 [Div by Zero]: sharpe_g = (g_daily.mean() / g_daily.std()) * np.sqrt(252)
+Line 168 [Div by Zero]: sharpe_q = (q_daily.mean() / q_daily.std()) * np.sqrt(252)
+Line 169 [Div by Zero]: sharpe_s = (s_daily.mean() / s_daily.std()) * np.sqrt(252)
+
+--- File: regime_quant_ml\genesis_v2_baseline\genesis_feature_engine.py ---
+Line 111 [Div by Zero]: overnight = (open_df['SPY'] - close_df['SPY'].shift(1)) / close_df['SPY'].shift(1)
+Line 112 [Div by Zero]: intraday = (close_df['SPY'] - open_df['SPY']) / open_df['SPY']
+
+--- File: regime_quant_ml\genesis_v2_baseline\genesis_hmm_core.py ---
+Line 61 [Div by Zero]: df['Credit_Ratio'] = close_df['HYG'] / close_df['LQD']
+Line 65 [Div by Zero]: df['Risk_Ratio'] = close_df['QQQ'] / close_df['TLT']
+Line 69 [Div by Zero]: df['Real_Rates_Proxy'] = close_df['GLD'] / close_df['TLT']
+Line 93 [Div by Zero]: df['VIX_ZScore'] = (df['VIX_Level'] - vix_mean_63) / vix_std_63
+Line 97 [Div by Zero]: df['QQQ_Drawdown'] = (close_df['QQQ'] / qqq_cummax) - 1.0
+Line 115 [Div by Zero]: X_std = ((df[hmm_cols] - roll_mean) / roll_std).values
+
+--- File: spx_iron_condor\backtest_ic.py ---
+Line 49 [Div by Zero]: vix = df['VIX_Close'].iloc[i] / 100.0
+
+--- File: spx_iron_condor\backtest_ic_compound.py ---
+Line 33 [Log(0) Trap]: try: r = math.log(prices[i] / prices[i-1])
+Line 48 [Log(0) Trap]: try: ret = math.log(closes[i] / closes[i-1]) * 100
+
+--- File: spx_iron_condor\backtest_ic_pure.py ---
+Line 36 [Log(0) Trap]: r = math.log(prices[i] / prices[i-1])
+Line 70 [Log(0) Trap]: ret = math.log(close_prices[i] / close_prices[i-1]) * 100
+
+--- File: spx_iron_condor\backtest_ic_v2.py ---
+Line 43 [Log(0) Trap]: try: r = math.log(prices[i] / prices[i-1])
+Line 65 [Log(0) Trap]: try: ret = math.log(close_prices[i] / close_prices[i-1]) * 100
+
+--- File: spx_iron_condor\backtest_ic_v3.py ---
+Line 38 [Log(0) Trap]: try: r = math.log(prices[i] / prices[i-1])
+Line 57 [Log(0) Trap]: try: ret = math.log(closes[i] / closes[i-1]) * 100
+
+--- File: spx_iron_condor\backtest_ic_v4.py ---
+Line 57 [Log(0) Trap]: try: r = math.log(prices[i] / prices[i-1])
+Line 72 [Log(0) Trap]: try: ret = math.log(closes[i] / closes[i-1]) * 100
+
+--- File: spx_iron_condor\backtest_ic_v4b.py ---
+Line 44 [Log(0) Trap]: try: r = math.log(prices[i] / prices[i-1])
+Line 59 [Log(0) Trap]: try: ret = math.log(closes[i] / closes[i-1]) * 100
+
+--- File: spx_iron_condor\hmm_spx.py ---
+Line 43 [Exp NaN Trap]: prob *= (1.0 / (sigma * math.sqrt(2 * math.pi))) * math.exp(exponent)
+Line 118 [Exp NaN Trap]: prob *= (1.0 / (sigma * math.sqrt(2 * math.pi))) * math.exp(exponent)
+
+--- File: spx_iron_condor\options_model.py ---
+Line 20 [Log(0) Trap]: d1 = (math.log(S / K) + (self.r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
+Line 24 [Exp NaN Trap]: price = S * norm.cdf(d1) - K * math.exp(-self.r * T) * norm.cdf(d2)
+Line 26 [Exp NaN Trap]: price = K * math.exp(-self.r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+Line 35 [Log(0) Trap]: d1 = (math.log(S / K) + (self.r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
+
+--- File: spx_iron_condor\options_model_pure.py ---
+Line 26 [Log(0) Trap]: d1 = (math.log(S / K) + (self.r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
+Line 30 [Exp NaN Trap]: price = S * self._norm_cdf(d1) - K * math.exp(-self.r * T) * self._norm_cdf(d2)
+Line 32 [Exp NaN Trap]: price = K * math.exp(-self.r * T) * self._norm_cdf(-d2) - S * self._norm_cdf(-d1)
+Line 44 [Log(0) Trap]: d1 = (math.log(S / K) + (self.r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
+
+--- File: time_series_project\beta_agent6_transformer_ingestor.py ---
+Line 10 [Hardcoded Shape Trap]: position = torch.arange(max_len).unsqueeze(1)
+Line 11 [Log(0) Trap]: div_term = torch.exp(torch.arange(0, d_model, 2) * (-math.log(10000.0) / d_model))
+Line 11 [Exp NaN Trap]: div_term = torch.exp(torch.arange(0, d_model, 2) * (-math.log(10000.0) / d_model))
+Line 11 [Div by Zero]: div_term = torch.exp(torch.arange(0, d_model, 2) * (-math.log(10000.0) / d_model))
+

@@ -1,0 +1,19 @@
+{
+    "ticker": "FXE",
+    "trials": 2810,
+    "total_trades": 50,
+    "win_rate": 0.2,
+    "annual_return": -0.004223385308780191,
+    "annual_volatility": 0.0031506199003777345,
+    "sharpe": -1.3404934401239073,
+    "expected_max_sr": -0.20717763908720865,
+    "dsr": 0.0,
+    "best_params": {
+        "entry_z": 2.4211195501918334,
+        "sl_mult": 1.931923441755535,
+        "tp_mult": 4.998233840450053,
+        "vb_mult": 2.0790225059376537,
+        "direction": "long",
+        "latent_dim": 0
+    }
+}

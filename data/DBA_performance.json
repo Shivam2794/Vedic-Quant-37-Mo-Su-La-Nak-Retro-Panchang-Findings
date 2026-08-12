@@ -1,0 +1,19 @@
+{
+    "ticker": "DBA",
+    "trials": 2859,
+    "total_trades": 50,
+    "win_rate": 0.18,
+    "annual_return": -0.0015581925945246974,
+    "annual_volatility": 0.0034907895398463553,
+    "sharpe": -0.4463725402916385,
+    "expected_max_sr": 0.8739371452357211,
+    "dsr": 0.0003827421575479239,
+    "best_params": {
+        "entry_z": 2.289516942286667,
+        "sl_mult": 0.5000314756631232,
+        "tp_mult": 4.998855101284663,
+        "vb_mult": 6.387051317586341,
+        "direction": "long",
+        "latent_dim": 2
+    }
+}

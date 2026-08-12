@@ -1,0 +1,629 @@
+[2025-10-20T15:30:57.7230000-05:00] the_biggest_rick: @here
+  ATTACHMENTS: rick's skool - skool - coding [1429929883034718218].csv_Files\F705F48B-48F9-4319-8ABC-05DFAA59197C-9f9b846469f4b73f.jpeg
+----------------------------------------
+[2025-10-20T15:31:25.5620000-05:00] the_biggest_rick: small tip, if u need a GPU for free for 3-4 hours, u can load your stuff up in google colab and use the T4 GPU by changing the runtime to it
+----------------------------------------
+[2025-10-20T15:31:28.8130000-05:00] the_biggest_rick: pretty powerfull
+----------------------------------------
+[2025-10-20T15:31:41.7850000-05:00] the_biggest_rick: can speed up gridsearches alot
+----------------------------------------
+[2025-10-21T06:14:45.8350000-05:00] the_biggest_rick: if anyone also wishes to try some integrated AI, gemini in colab is also half decent and you can use it for free and you can upgrade to pro for 11 euros a month and get acces to 100 computing units for very strong GPU's, if you turn on the GPU for any gridsearch of massive scale or ML its enough, especially if you add in CUDA @here
+
+you can play around with free and see if its enjoyable before switching to a visualstudiocode integration like cursor
+----------------------------------------
+[2025-10-21T07:08:47.6670000-05:00] joelhh.: This is working for me but I don't achieve the speed you showed in the course: (31k cycles in 12 minutes)
+----------------------------------------
+[2025-10-21T07:08:54.9820000-05:00] joelhh.: or is your hardware just op
+----------------------------------------
+[2025-10-21T07:41:40.8970000-05:00] the_biggest_rick: M4 macbook is pretty good
+----------------------------------------
+[2025-10-21T07:41:45.4580000-05:00] the_biggest_rick: https://www.skool.com/quant-ricks-retail-academy-1259/classroom/bdce6ea9?md=8fcc12aa42a84141a68132b3518484aa @here
+----------------------------------------
+[2025-10-21T07:42:25.2150000-05:00] the_biggest_rick: Dropped a short lecture on notebook organisation, anyone beginning with code should find this insightfull, any questions, please ask, this was a quick response to things ive been asked
+----------------------------------------
+[2025-10-21T08:18:16.2910000-05:00] joelhh.: great video, now I understand why claude code started to make python files in order to make small changes to the notebook
+----------------------------------------
+[2025-10-21T08:41:03.2390000-05:00] the_biggest_rick: claude is fucking wild, i do think in a way cursorAI is more optimal because you can cycle through different LLM's. they all have their own personalities and Claude is like the wildest most creative powerfull one that has helped me cut 5 hours of work to 10 minutes for a neuro-evolutionary augmented topology (NEAT), (really fascinating look it up) but has also created the biggest destructions in my notebooks ahahah at the same time. i like to employ claude for large scale complicated problems but most of the time you'll see me using a simpler version of deepseek to make smaller changes, Claude will legitemately break your whole notebook open to the point you can be forced to spend 2 hours just understanding it, thats why breaking things up and 'keeping up' with the LLM is so very important
+----------------------------------------
+[2025-10-21T09:14:41.1410000-05:00] joelhh.: Yeah, I have the same experience with Claude code. For me the main advantage is the fact that with a max plan on anthropic (claude) you can use claude code infinite. So for 100 euro’s a month you are set for LLM expenses
+----------------------------------------
+[2025-10-21T09:14:53.3670000-05:00] joelhh.: How is the pricing for cursor?
+----------------------------------------
+[2025-10-21T09:15:19.3170000-05:00] the_biggest_rick: 18 in euros
+----------------------------------------
+[2025-10-21T09:15:22.2560000-05:00] the_biggest_rick: very cheap
+----------------------------------------
+[2025-10-21T09:41:33.6800000-05:00] joelhh.: Oh that is very doable
+----------------------------------------
+[2025-10-21T09:41:39.4890000-05:00] joelhh.: I will consider using them both
+----------------------------------------
+[2025-10-21T09:52:05.0310000-05:00] rockyv9885: papa rick, ive been attempting other “classical” strategies like MACD myself following your notebook for 3EMA before I can wrap my head around anything more complex. 
+
+Right off the bat, it performs worse than buy-and-hold and overfitting when it comes to test data. I was wondering if you have any advice before I send my notebook over
+----------------------------------------
+[2025-10-21T09:57:49.3960000-05:00] the_biggest_rick: which asset?
+----------------------------------------
+[2025-10-21T09:57:59.7410000-05:00] the_biggest_rick: #strategies please
+----------------------------------------
+[2025-10-21T11:55:24.8490000-05:00] the_biggest_rick: @rockyv9885 send it to me on skool please, as long as you watched lecture 2 and order it
+----------------------------------------
+[2025-10-21T11:55:33.3840000-05:00] the_biggest_rick: im covering another NB tommorow but rn im in deepwork mode
+----------------------------------------
+[2025-10-23T13:25:23.0220000-05:00] steve9133: Thanks for the workbooks in the first module. Haven't had much time to dive in yet but...  When I have some time I'm going to see if I can implement some logic to re-train every N observations (perhaps yearly) and see if that can help smooth out some of the variance in returns. Addition of regime filter will also be interesting - MMI, Kalman, etc.
+----------------------------------------
+[2025-10-23T16:12:23.1610000-05:00] the_biggest_rick: @everyone for anyone wanting to do an integration to pinescript, id recommend grabbing someones codes or existing whatever from pine, then replicating it to python w the exact buy rules
+----------------------------------------
+[2025-10-23T16:12:44.4830000-05:00] the_biggest_rick: gives you a second platform to confirm metrics on different data vendor etc, and to host possible signals
+----------------------------------------
+[2025-10-23T16:13:11.7530000-05:00] the_biggest_rick: its that or VPS, but with the suggested swing trading strategy its actually doable to just have tradingview send you an email
+----------------------------------------
+[2025-10-23T16:13:25.3910000-05:00] the_biggest_rick: the frequency of trades is so low that its not a hindrance
+----------------------------------------
+[2025-10-23T16:46:10.2700000-05:00] joelhh.: I am not sure what you mean by this😬
+----------------------------------------
+[2025-10-23T16:46:44.5930000-05:00] the_biggest_rick: like, the coding languages have differences, i think its easier to go from pine to python than other way around
+----------------------------------------
+[2025-10-23T16:46:48.1680000-05:00] the_biggest_rick: idk just me
+----------------------------------------
+[2025-10-23T16:47:08.3640000-05:00] joelhh.: Ah okay check
+----------------------------------------
+[2025-10-23T16:47:46.8710000-05:00] the_biggest_rick: due to datavendor differences and differences in the datavalues it can serve as a second robustness check
+----------------------------------------
+[2025-10-23T16:48:01.3310000-05:00] the_biggest_rick: just test 1 crypto algo on 5 different exchanges and you'll see crazy differences in metrics
+----------------------------------------
+[2025-10-23T16:50:31.4270000-05:00] joelhh.: Yes, that's indeed crazy. Do you optimize for the exchange you are trading on? 
+
+I always take Binance USDT futures because they have the most volume
+----------------------------------------
+[2025-10-23T16:54:27.2230000-05:00] the_biggest_rick: i optimize for an exchange yes but i make sure my metrics are in a very tight range
+----------------------------------------
+[2025-10-26T03:50:58.2790000-05:00] vidhem.: AI can do this conversion for you pretty easily in a matter of seconds to minutes.
+----------------------------------------
+[2025-10-26T04:00:24.4740000-05:00] the_biggest_rick: depending on, not every LLM is as flawless with pinescript as you want it to be
+----------------------------------------
+[2025-10-26T07:34:18.5040000-05:00] the_biggest_rick: its gotta be CursorAI hallucination sunday jesus christ
+----------------------------------------
+[2025-10-26T08:07:54.2710000-05:00] vidhem.: Sonnet 4.5 rules for me, claude code works amazingly with that. If you have a chatgpt plus membership, openai codex with gpt-5 works equally well in my experience.
+----------------------------------------
+[2025-11-04T07:36:59.0640000-06:00] the_biggest_rick: https://programming-25.mooc.fi @everyone 
+
+beginner python classes from the uni of helsinki for beginners
+
+they're long, i recommend skimming through slides to understand what python 'entails' and understanding all your 'tools'
+
+then as you start building notebooks going back and re-reading what you are trying to apply and then itiratively learning by doing and going through trial and error.
+----------------------------------------
+[2025-11-04T07:37:05.6700000-06:00] the_biggest_rick: Pinned a message.
+----------------------------------------
+[2025-11-04T08:01:20.1050000-06:00] eugene_44235: Had a great experience with vibe coding with GPT-5 Pro, thinks forever, but doesn't halucinate nearly as much as GPT4 did
+----------------------------------------
+[2025-11-04T08:01:44.7590000-06:00] the_biggest_rick: claude still my best friend
+----------------------------------------
+[2025-11-04T08:09:47.6000000-06:00] ezhdeha.: Agreed
+----------------------------------------
+[2025-11-07T08:40:22.0980000-06:00] the_biggest_rick: https://www.edx.org/learn/python/harvard-university-cs50-s-introduction-to-programming-with-python
+
+^ free up untill you want the certificate
+----------------------------------------
+[2025-11-07T08:42:52.6740000-06:00] stoked_6419: https://youtu.be/nLRL_NcnK-4?si=STd4fwYmLBbZtaTP same Course but on YouTube 🫡
+----------------------------------------
+[2025-11-07T12:49:43.7450000-06:00] the_biggest_rick: ah great find
+----------------------------------------
+[2025-11-07T12:49:47.7740000-06:00] the_biggest_rick: Pinned a message.
+----------------------------------------
+[2025-11-10T02:14:28.7120000-06:00] eugene_44235: A question, I see that many of you prefer to buy OHLCV data from data providers. Why not just fetch and cache it (if coding on python for example), sure it takes longer on the 1st run, but you get the data from the exchange you plan on trading on (so the nuances of this exchange are factored in), and you can be pretty sure about the quality. Am I missing something?
+----------------------------------------
+[2025-11-10T02:15:52.6930000-06:00] stefanalex2002: Not all historical data is available from the exchange actually. The approach would work, but depending on the data you’ll just have it from the moment you start recording it
+
+(Example orderbook updates on binance)
+----------------------------------------
+[2025-11-11T20:36:45.5100000-06:00] stoked_6419: @Quant Rickdanoff  I saw in one of your Instagram stories that you are working on a code for FTMO. Are there any sources for this yet, or is the code even available anywhere? I would like to familiarise myself with the approach
+----------------------------------------
+[2025-11-25T00:25:12.1370000-06:00] thos1320: Which python version do you have ? I guess vectorbt doesn’t like  3.14
+----------------------------------------
+[2025-11-25T00:26:45.4100000-06:00] eugene_44235: Yeah I had compatability issues when running vectorbt on google colab, which runs 3.14
+----------------------------------------
+[2025-11-25T07:09:59.1130000-06:00] the_biggest_rick: drivers to price action classroom
+----------------------------------------
+[2025-11-25T07:10:40.5670000-06:00] the_biggest_rick: i got 3.13 on my venv kernel
+----------------------------------------
+[2025-12-22T15:27:23.2120000-06:00] the_biggest_rick: 
+  ATTACHMENTS: rick's skool - skool - coding [1429929883034718218].csv_Files\message-82ed001dcadcf4d1.txt
+----------------------------------------
+[2025-12-22T15:27:29.8160000-06:00] the_biggest_rick: coded an indicator, good on gold, crypto
+----------------------------------------
+[2025-12-22T15:28:21.8160000-06:00] joelhh.: soldier
+----------------------------------------
+[2025-12-23T22:52:08.6510000-06:00] masob: claude is amazing, i havent had to write any of my own lines since i started using it lol
+----------------------------------------
+[2025-12-24T10:00:23.2240000-06:00] the_biggest_rick: alot of overentineering and random decisions though really watchout with it ahaha
+----------------------------------------
+[2025-12-24T10:20:29.8830000-06:00] riemifx: hi rick, purely new to this stuff. for such indicators, what percentage of an account is used to perform like the metrics say?
+----------------------------------------
+[2025-12-24T10:26:38.0210000-06:00] the_biggest_rick: hm?
+----------------------------------------
+[2025-12-24T10:26:40.7160000-06:00] the_biggest_rick: clarify
+----------------------------------------
+[2025-12-24T10:26:44.5670000-06:00] k0nstantinos: Can’t see the file but usually you’ll just use 100%
+----------------------------------------
+[2025-12-24T10:26:57.7930000-06:00] k0nstantinos: For backtesting
+----------------------------------------
+[2025-12-24T10:27:00.5950000-06:00] the_biggest_rick: oh allocation?
+----------------------------------------
+[2025-12-24T10:27:22.1020000-06:00] k0nstantinos: I think he means if ur doing % of account allocation… no point in doing that in backtesting
+----------------------------------------
+[2025-12-24T10:27:29.4900000-06:00] the_biggest_rick: yeah no the tuning of asset allocation comes later just use 100% of funds so that you actually see the performance in totality without engineering it
+----------------------------------------
+[2025-12-24T10:27:35.9560000-06:00] riemifx: yes
+----------------------------------------
+[2025-12-24T10:28:19.6450000-06:00] riemifx: okay i thank you guys for the quick answers.
+----------------------------------------
+[2025-12-24T10:28:39.9490000-06:00] riemifx: tryna read through some things at first on skool and here
+----------------------------------------
+[2025-12-24T10:28:53.9110000-06:00] the_biggest_rick: its alot take your time to digest
+----------------------------------------
+[2025-12-24T10:28:58.4180000-06:00] the_biggest_rick: i have a habit of info dumping ahahhaa
+----------------------------------------
+[2025-12-24T10:29:06.9990000-06:00] riemifx: i see hahaha
+----------------------------------------
+[2025-12-24T10:29:09.4050000-06:00] the_biggest_rick: always ask questions
+----------------------------------------
+[2025-12-24T10:29:23.9090000-06:00] riemifx: ofc i‘ll do
+----------------------------------------
+[2025-12-24T10:29:50.8180000-06:00] riemifx: bit handycapped rn cuz i‘m on vacation without a laptop🥶
+----------------------------------------
+[2025-12-24T10:30:12.5980000-06:00] riemifx: bit reading should do it for now
+----------------------------------------
+[2025-12-24T10:30:36.4710000-06:00] the_biggest_rick: phone is fine for everything but the coding
+----------------------------------------
+[2025-12-24T10:31:05.8620000-06:00] riemifx: ye, got my ipad with me too but still horrible for coding haha
+----------------------------------------
+[2025-12-24T10:31:30.5140000-06:00] the_biggest_rick: arguably vibecoding via remote desktop with ipad is viable
+----------------------------------------
+[2025-12-24T10:31:34.6320000-06:00] the_biggest_rick: sounds kinda chill
+----------------------------------------
+[2025-12-24T10:31:50.9480000-06:00] riemifx: i‘ll look into that thanks
+----------------------------------------
+[2025-12-24T12:17:25.5480000-06:00] ogragu.yurrrr: I am working on a para-virtualized HTML cursor port for the same thing
+----------------------------------------
+[2025-12-24T12:17:35.0220000-06:00] ogragu.yurrrr: The Web cursor just cost too much money
+----------------------------------------
+[2026-01-03T09:44:03.3550000-06:00] kawa.636_: i wish there was vscode on ipad
+----------------------------------------
+[2026-01-03T09:48:07.4080000-06:00] the_biggest_rick: well
+----------------------------------------
+[2026-01-03T09:48:11.1660000-06:00] the_biggest_rick: remote desktop
+----------------------------------------
+[2026-01-03T09:48:22.4360000-06:00] the_biggest_rick: i think thatd be sweet
+----------------------------------------
+[2026-01-03T09:48:26.5910000-06:00] the_biggest_rick: lol
+----------------------------------------
+[2026-01-03T09:54:58.4270000-06:00] kawa.636_: laggy
+----------------------------------------
+[2026-01-03T09:55:04.9060000-06:00] kawa.636_: i go crazy when it lags even a little bit
+----------------------------------------
+[2026-01-03T09:55:13.7330000-06:00] kawa.636_: monitor gotta be fluid as fuck otherwise i cant read the code lmao
+----------------------------------------
+[2026-01-03T09:55:26.4590000-06:00] kawa.636_: there is vscode on browser you can link a server to it but its annoying
+----------------------------------------
+[2026-01-03T09:55:49.2570000-06:00] the_biggest_rick: theres gotta be a way to make it chill
+----------------------------------------
+[2026-01-03T09:56:01.2900000-06:00] kawa.636_: vscode browser + ssh server is the best option at the moment i think
+----------------------------------------
+[2026-01-03T09:56:09.3920000-06:00] kawa.636_: to not have it laggy and behave like a real vscode instance
+----------------------------------------
+[2026-01-03T09:56:12.6030000-06:00] the_biggest_rick: >not vibecoding from the couch
+----------------------------------------
+[2026-01-03T09:56:21.8090000-06:00] kawa.636_: downside is you are executing code on the server and not the ipad
+----------------------------------------
+[2026-01-03T09:56:41.1940000-06:00] kawa.636_: lmao
+----------------------------------------
+[2026-01-13T22:13:51.4130000-06:00] ogragu.yurrrr: ...
+----------------------------------------
+[2026-01-13T22:13:59.7060000-06:00] ogragu.yurrrr: container streaming
+----------------------------------------
+[2026-01-13T22:21:35.4540000-06:00] ogragu.yurrrr: https://drive.google.com/file/d/1L8N4Q_dFsEXrpZBV2__nQSt61BMGFWnC/view?usp=sharing
+----------------------------------------
+[2026-01-13T22:21:52.7920000-06:00] ogragu.yurrrr: @Quant Rickdanoff  @᲼
+----------------------------------------
+[2026-01-14T06:30:24.4360000-06:00] kawa.636_: pretty cool is this your own platform?
+----------------------------------------
+[2026-01-14T06:31:02.7430000-06:00] kawa.636_: altought personally wouldnt be very useful but its pretty cool
+----------------------------------------
+[2026-01-14T11:12:45.4480000-06:00] dimka0747: Uhhh Kali Linux. Do you work in security 😏
+----------------------------------------
+[2026-01-14T11:35:23.4420000-06:00] k0nstantinos: Heyo has anyone set up an llm locally
+----------------------------------------
+[2026-01-14T11:36:23.6620000-06:00] ogragu.yurrrr: so i do, it doubles as my security suite for app development too
+----------------------------------------
+[2026-01-14T11:36:34.3230000-06:00] ogragu.yurrrr: 👋
+----------------------------------------
+[2026-01-14T11:37:36.1100000-06:00] k0nstantinos: May I dm u, I have a 12 hour flight coming up - would love to have some kind of local model
+----------------------------------------
+[2026-01-14T11:38:03.0970000-06:00] ogragu.yurrrr: it is, but it will eventually use all of the major changes as well
+----------------------------------------
+[2026-01-14T11:38:15.2990000-06:00] ogragu.yurrrr: sure do u use pc or mac?
+----------------------------------------
+[2026-01-14T11:38:39.3260000-06:00] ogragu.yurrrr: pm open
+----------------------------------------
+[2026-01-14T11:38:58.1840000-06:00] k0nstantinos: For the flight would be m4 pro
+----------------------------------------
+[2026-01-14T11:39:09.1120000-06:00] ogragu.yurrrr: ram and free space?
+----------------------------------------
+[2026-01-14T11:39:38.4060000-06:00] ogragu.yurrrr: https://lmstudio.ai/download?os=mac
+----------------------------------------
+[2026-01-14T11:40:06.6900000-06:00] ogragu.yurrrr: is the best one size fit's all but they give you alot of control and choice - use it wisely
+----------------------------------------
+[2026-01-17T05:11:00.3140000-06:00] k0nstantinos: hey everyone so I ran into an issue with actually integrating local llm into cursor, not sure if anyone tried and found a solution?
+
+I get this error message:
+{"error":{"type":"client","reason":"ssrf_blocked","message":"connection to private IP is blocked","retryable":false}}
+
+so essentially as far as i understand cursor wont work at all while offline because requests are proxied via cursor, so you can technically use a local llm but youd have to do something  like using ngrok thus not actually able to run offline.
+
+does anyone have any workaround for this or possibly any experience with one of these below?
+
+
+the following are some suggestions from ai but i have no idea:
+
+``` Option A — Continue.dev (closest Cursor analogue)
+
+Why it fits your goals:
+    •    Runs entirely locally
+    •    Talks directly to Ollama / LM Studio
+    •    Has repo-aware context
+    •    Inline edits, chat, refactors ``` 
+
+```
+Option B — Aider + local LLM (best for serious refactors)
+
+If your work is:
+    •    Large refactors
+    •    Multi-file changes
+    •    Reasoned diffs ```
+
+``` 
+Option C — OpenHands (local autonomous agent)
+
+If you want:
+    •    “Agentic” behavior
+    •    Multi-step planning
+    •    Tool usage
+```
+----------------------------------------
+[2026-01-17T05:13:51.2620000-06:00] ezhdeha.: Easiest would be to use a proxy to "fool" it into working
+----------------------------------------
+[2026-01-17T05:14:47.6260000-06:00] ezhdeha.: But yes a workaround will involve at least the local network or some software/script that acts like it
+----------------------------------------
+[2026-01-17T05:15:34.9980000-06:00] ezhdeha.: Unless you want to get into reverse engineering
+----------------------------------------
+[2026-01-17T20:10:52.4580000-06:00] kawa.636_: running ngrok as a reverse proxy on the same machine as the llm doesnt make it "online"
+----------------------------------------
+[2026-01-17T20:11:20.4910000-06:00] kawa.636_: youre still offline
+----------------------------------------
+[2026-01-17T20:11:26.7520000-06:00] kawa.636_: the proxy will work locally
+----------------------------------------
+[2026-01-17T20:12:30.9640000-06:00] kawa.636_: im sure you could easily proxy them locally and make a little webserver to handle communication between llm and cursor
+----------------------------------------
+[2026-01-17T20:13:24.1470000-06:00] ogragu.yurrrr: you could run them all as containers and use the container network
+----------------------------------------
+[2026-01-17T20:57:19.2230000-06:00] kawa.636_: even better
+----------------------------------------
+[2026-01-23T03:34:03.3660000-06:00] paul0805: Hey guys, where do you get the financial data  ? I used to call Yahoo finance but I think, I called it too much and now my IP address seems to be banned
+----------------------------------------
+[2026-01-23T03:34:40.4680000-06:00] .murat13100: Delete and download again
+----------------------------------------
+[2026-01-23T03:34:53.5770000-06:00] .murat13100: No such thing as banning someone for using a lot
+----------------------------------------
+[2026-01-23T03:35:20.8260000-06:00] nico108_: Maybe you had to much calls at once
+----------------------------------------
+[2026-01-23T08:15:33.5110000-06:00] paul0805: Thanks guys, it seems to be working again 🙂
+----------------------------------------
+[2026-01-23T08:44:52.8130000-06:00] the_biggest_rick: i DMed you about data, did you try databento?
+----------------------------------------
+[2026-01-23T09:36:04.4370000-06:00] paul0805: Yeap, but I can not register. You have to add a credit card and I dont know why but the 3 cards I have tried registering with did not  worked
+----------------------------------------
+[2026-01-23T09:40:05.6440000-06:00] the_biggest_rick: @𓂀 Shane are you willing to pull a file for paul?
+----------------------------------------
+[2026-01-23T09:47:26.5170000-06:00] .murat13100: @PsychoQuant use stooq.com
+----------------------------------------
+[2026-01-23T09:47:38.2910000-06:00] .murat13100: You can manually download files
+----------------------------------------
+[2026-01-23T09:53:11.5960000-06:00] dhawan_trader: This website is in polish, safe to use right?
+----------------------------------------
+[2026-01-23T09:53:30.2280000-06:00] the_biggest_rick: stooq
+----------------------------------------
+[2026-01-23T09:53:32.8720000-06:00] the_biggest_rick: yes its fine
+----------------------------------------
+[2026-01-23T09:53:46.7560000-06:00] the_biggest_rick: you can pull in python too
+----------------------------------------
+[2026-01-23T09:56:30.2490000-06:00] paul0805: Thanks, ll try that
+----------------------------------------
+[2026-01-25T14:15:38.4580000-06:00] navarretuz: guys, I created a sysprompt for boruta GPU
+the way I used it :
+go to terminal, type claude, type /plan, and provide the sysprompt
+  ATTACHMENTS: rick's skool - skool - coding [1429929883034718218].csv_Files\systemprompt_boruta_GPU-d78adf0cc3a286de.txt
+----------------------------------------
+[2026-01-25T14:47:39.1040000-06:00] navarretuz: also
+when creating a claude project, I put this as file on my codebase
+https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-4-best-practices
+and tell claude to integrate to its knowledge (as skill, as agent, you decide)
+----------------------------------------
+[2026-01-25T18:07:14.5490000-06:00] the_biggest_rick: this is big @here
+----------------------------------------
+[2026-01-26T03:14:33.0500000-06:00] navarretuz: if you are going to train several times on the same data window for the same ticker, follow the best practice and implement a cache memory on your codebase. So the code will call from the cache and not api call to yfinance
+----------------------------------------
+[2026-01-26T03:55:24.9710000-06:00] dhawan_trader: Hey man, i just got claude code and got no clue how to maximise the usage... can you help me out?
+----------------------------------------
+[2026-01-26T04:33:22.3050000-06:00] paul0805: Thanks !
+----------------------------------------
+[2026-01-26T04:36:33.4820000-06:00] navarretuz: Follow 80/20
+80 for preparing your prompts
+20 to check Claude's output
+
+Take some time to research about skills, MCP, agents, hooks
+----------------------------------------
+[2026-01-26T04:37:44.8280000-06:00] dhawan_trader: Any video or article i can follow?
+----------------------------------------
+[2026-01-26T04:38:10.0200000-06:00] dhawan_trader: And any git repos where i can get plugins and all?
+----------------------------------------
+[2026-01-26T04:38:16.3300000-06:00] navarretuz: https://code.claude.com/docs/en/sub-agents
+----------------------------------------
+[2026-01-29T16:53:03.3270000-06:00] .murat13100: @Ash
+  ATTACHMENTS: rick's skool - skool - coding [1429929883034718218].csv_Files\message-42bf1522c0ea9fa1.txt
+----------------------------------------
+[2026-01-29T16:53:29.9630000-06:00] ash09130: Thanks!
+----------------------------------------
+[2026-03-11T13:10:03.8690000-05:00] joelhh.: https://github.com/joelvdhoeven/memord
+----------------------------------------
+[2026-03-11T13:10:22.3820000-05:00] joelhh.: I thinks this is pretty cool!
+----------------------------------------
+[2026-03-11T15:11:59.3110000-05:00] the_biggest_rick: bro is self promoting
+----------------------------------------
+[2026-03-11T15:12:18.0570000-05:00] the_biggest_rick: can you give a short run-down? @joelhh
+----------------------------------------
+[2026-03-11T15:35:27.4450000-05:00] ogragu.yurrrr: no docker?!
+----------------------------------------
+[2026-03-11T15:36:27.7860000-05:00] kawa.636_: bro put no docker in the desc as if it was a feature 💀
+----------------------------------------
+[2026-03-11T15:36:47.4690000-05:00] kawa.636_: why bro hatin on my bro docker
+----------------------------------------
+[2026-03-11T15:36:54.3570000-05:00] kawa.636_: https://tenor.com/view/the-hangover-who-brought-this-guy-along-gif-19266714
+----------------------------------------
+[2026-03-12T13:50:03.8340000-05:00] joelhh.: haha excuse the self-glaze guys 😅
+quick rundown:
+it’s basically a shared memory MCP server for AI coding tools.
+
+if Claude learns something about your codebase → Cursor/Copilot can recall it too.
+everything runs locally (sqlite + embeddings)
+----------------------------------------
+[2026-03-15T07:11:13.0250000-05:00] xyrus1418: Does anyone know what the best tool for coding the algo is?
+----------------------------------------
+[2026-03-15T07:11:43.4610000-05:00] joelhh.: Claude code for me
+----------------------------------------
+[2026-03-15T07:11:53.1230000-05:00] the_biggest_rick: claude 100%
+----------------------------------------
+[2026-03-15T07:11:59.0180000-05:00] xyrus1418: Claude Pro is enough?
+----------------------------------------
+[2026-03-15T07:12:06.6380000-05:00] the_biggest_rick: but for fast, smaller executions i use GROK
+----------------------------------------
+[2026-03-15T07:12:35.5780000-05:00] k0nstantinos: Keyboard usually
+----------------------------------------
+[2026-03-15T07:12:37.7970000-05:00] the_biggest_rick: for large, error fixing, metaprompt sanity checks > Claude
+----------------------------------------
+[2026-03-15T07:12:49.1680000-05:00] the_biggest_rick: https://tenor.com/view/ascending-energy-galaxy-gif-17739196
+----------------------------------------
+[2026-03-15T07:13:29.2020000-05:00] xyrus1418: Do you have a go-to metaprompt to sanity check the system? To make sure there are no weird calculations or bugs before deploying
+----------------------------------------
+[2026-03-15T07:13:55.6410000-05:00] the_biggest_rick: > classroom > Lectures > Sanity checks video
+----------------------------------------
+[2026-03-15T07:18:00.2060000-05:00] the_biggest_rick: i usually prefer grok, its cheaper on cursor and i’ll essentially use it 80% of the time.
+
+i like to build from the ground up with small steps into my ‘bigger picture view’ for the notebook so i’ll split the notebook up in the desired structure, add the needed prints, add partial printing for whats happening in classes definitions. and use claude only for major error fixing, sanity checking, like actual big operations. the prompts are long and more expensive
+----------------------------------------
+[2026-03-15T07:23:24.8620000-05:00] nico108_: Arent you using Cursor anymore?
+----------------------------------------
+[2026-03-15T07:24:45.8690000-05:00] the_biggest_rick: i am
+----------------------------------------
+[2026-03-15T07:56:17.9060000-05:00] kawa.636_: you should really be manually checking if you wanna make sure
+----------------------------------------
+[2026-03-15T07:56:41.4960000-05:00] kawa.636_: claude might be decent at coding tasks but for complex algorithms it will often hallucinate pretty hard
+----------------------------------------
+[2026-03-15T08:31:46.3760000-05:00] dhawan_trader: Just make .md files, it really helps with the workflow
+----------------------------------------
+[2026-03-15T08:32:47.4230000-05:00] dhawan_trader: For me claude pro was just 30 mins of work and all tokens were exhausted in 4-5 hour session.
+
+Claude max $100 works best for me personally
+----------------------------------------
+[2026-03-15T08:34:50.6780000-05:00] ogragu.yurrrr: I bet you guys aren't prompt maxxing
+----------------------------------------
+[2026-03-15T08:34:51.6180000-05:00] the_biggest_rick: for sake of not blackboxing and making complete spaghetti just dont start your notebooks with it
+----------------------------------------
+[2026-03-15T08:35:48.8960000-05:00] xyrus1418: lol what even is prompt maxxing
+----------------------------------------
+[2026-03-15T08:35:49.8170000-05:00] ogragu.yurrrr: https://github.com/ogilya/QuantBot/blob/main/.agents/skills/mixture-of-experts/SKILL.md
+----------------------------------------
+[2026-03-15T08:35:53.9720000-05:00] the_biggest_rick: claude is highly creative and is extremely good with very contextual prompts. it will do wonders but without it might aswell start fucking your wife aswell. its seriously going to be like a MDMA’ed person at a hardcore party at 5 AM. 
+
+this nutta is gonna dance if you dont give it the proper instructions
+----------------------------------------
+[2026-03-15T08:36:06.7740000-05:00] the_biggest_rick: best with context, fucking lalaloopie land without
+----------------------------------------
+[2026-03-15T08:37:14.3540000-05:00] the_biggest_rick: grok with a proper pipeline with .py’s > claude on a .ipynb
+----------------------------------------
+[2026-03-15T08:37:21.7780000-05:00] the_biggest_rick: the embedded elements mess alot up
+----------------------------------------
+[2026-03-15T08:38:00.6960000-05:00] the_biggest_rick: homeboy might aswell be on that flakka zombie drug without
+----------------------------------------
+[2026-03-15T08:38:10.9180000-05:00] the_biggest_rick: (i love claude btw)
+----------------------------------------
+[2026-03-15T08:39:03.6940000-05:00] ogragu.yurrrr: https://github.com/ogilya/QuantBot/blob/main/.agents/skills/mixture-of-experts/personas.md
+----------------------------------------
+[2026-03-15T08:45:39.3240000-05:00] az0148: I’m quite happy with Codex
+----------------------------------------
+[2026-03-15T08:53:02.7390000-05:00] n0te3d: The new 5.4 model is insane with codex I have been using Claude for a very long time but it kinda takes a dump on 4.6 (biggest thing is the limits are much higher)
+----------------------------------------
+[2026-03-15T09:32:18.6490000-05:00] xyrus1418: Codex has much higher usage limits?
+----------------------------------------
+[2026-03-15T09:44:25.4890000-05:00] xyrus1418: That’s pretty nice
+----------------------------------------
+[2026-03-15T09:44:32.5970000-05:00] xyrus1418: Ig they need it to catch up in market share
+----------------------------------------
+[2026-03-15T10:27:53.9640000-05:00] kawa.636_: if you dont know tf you are doing doesnt really matter if you write a clean .md 😂
+----------------------------------------
+[2026-03-15T10:28:41.4550000-05:00] dhawan_trader: Implied assumption was that you know tf you doing 🫡😂
+----------------------------------------
+[2026-03-15T10:30:22.7330000-05:00] kawa.636_: which really isnt the case if the question starts with " best tool for coding the algo " perhaps 🤣
+----------------------------------------
+[2026-03-15T10:41:22.4860000-05:00] ogragu.yurrrr: promptmaxing, needs customization for your needs
+  ATTACHMENTS: rick's skool - skool - coding [1429929883034718218].csv_Files\run-review-71ca6a4fa9c5a905.md,rick's skool - skool - coding [1429929883034718218].csv_Files\personas-5b427d61dc23c98c.md,rick's skool - skool - coding [1429929883034718218].csv_Files\SKILL-772a1a9d0ea5b1cb.md
+----------------------------------------
+[2026-03-21T18:52:21.4800000-05:00] coffeeboyj2: Currently I use quantconnect to run back tests what alternative options do yall use
+----------------------------------------
+[2026-03-21T19:00:52.1040000-05:00] the_biggest_rick: vectorBT only here
+----------------------------------------
+[2026-03-21T19:01:02.5000000-05:00] the_biggest_rick: the hedgefund owner i know uses quantconnect though so
+----------------------------------------
+[2026-03-21T19:01:06.4990000-05:00] the_biggest_rick: should be solid
+----------------------------------------
+[2026-03-21T22:50:11.8640000-05:00] quant_trades: Backtrader is also another api that could be used. VectorBT is the most popular though.
+----------------------------------------
+[2026-03-28T15:51:24.4810000-05:00] xyrus1418: Anyone found some cool SKILLS.md to use?
+----------------------------------------
+[2026-03-28T15:51:37.9330000-05:00] xyrus1418: https://github.com/hesreallyhim/awesome-claude-code?tab=readme-ov-file#agent-skills-
+----------------------------------------
+[2026-05-18T10:00:16.2630000-05:00] jeysun: curious if anyone’s built out any of their own online pipelines (etl + multi-layered strats) and/or datastores:
+- what the monthly cost was if using a service(s) (aws, etc) 
+- how much data are you handling, etc
+- latency tiers
+----------------------------------------
+[2026-05-18T10:02:16.6980000-05:00] cruellerkhan: I did
+----------------------------------------
+[2026-05-18T10:02:21.9570000-05:00] cruellerkhan: Wasnt worth it
+----------------------------------------
+[2026-05-18T10:02:39.6130000-05:00] jeysun: just running on a personal computer/server instead now?
+----------------------------------------
+[2026-05-18T10:02:54.7930000-05:00] cruellerkhan: Nah google cloud
+----------------------------------------
+[2026-05-18T10:03:08.5550000-05:00] cruellerkhan: I just store my data locally then run strats on quantconnect
+----------------------------------------
+[2026-05-18T10:03:22.9400000-05:00] jeysun: how much data are you dealing with?
+----------------------------------------
+[2026-05-18T10:03:50.2400000-05:00] cruellerkhan: Not much at all
+----------------------------------------
+[2026-05-18T10:04:06.5600000-05:00] cruellerkhan: Fundamentals back to 1995 ticker prices
+----------------------------------------
+[2026-05-18T10:04:15.2060000-05:00] cruellerkhan: I had options data for a bit
+----------------------------------------
+[2026-05-18T10:04:20.5000000-05:00] cruellerkhan: That was heavy
+----------------------------------------
+[2026-05-18T10:04:40.7200000-05:00] jeysun: i see - yeah L2+ data seems to get pretty heavy (couple tbs)
+----------------------------------------
+[2026-05-18T10:05:01.3990000-05:00] jeysun: and dynamo is expensive
+----------------------------------------
+[2026-05-18T10:05:25.3650000-05:00] cruellerkhan: Colocation is more expensive
+----------------------------------------
+[2026-05-18T10:05:29.3790000-05:00] cruellerkhan: So is the cable
+----------------------------------------
+[2026-05-18T10:05:54.8490000-05:00] jeysun: very true - better to redistribute effort ig
+----------------------------------------
+[2026-05-18T10:06:24.5480000-05:00] cruellerkhan: Databento u can get like 100 well sampled days
+----------------------------------------
+[2026-05-18T10:06:36.5620000-05:00] cruellerkhan: And do really good research
+----------------------------------------
+[2026-05-18T10:07:04.5490000-05:00] jeysun: what was the lowest latency you were able to get? (if you’d measured / used a systems lang)
+----------------------------------------
+[2026-05-18T10:07:16.7740000-05:00] jeysun: on their standard plan rn
+----------------------------------------
+[2026-05-18T10:07:21.6120000-05:00] jeysun: dbn format is really nice
+----------------------------------------
+[2026-05-18T10:08:13.4120000-05:00] cruellerkhan: I honestly didnt measure my latency, i have no plans to actually trade microstructure unless I get a job at a place that specifically does it
+----------------------------------------
+[2026-05-18T10:08:55.8360000-05:00] cruellerkhan: They have engineering teams focused on just infra for it
+----------------------------------------
+[2026-05-18T10:08:59.9340000-05:00] cruellerkhan: Not even strategies
+----------------------------------------
+[2026-05-18T10:09:07.4140000-05:00] cruellerkhan: I feel like thats most of their edge
+----------------------------------------
+[2026-05-18T10:09:07.6810000-05:00] jeysun: i see, i guess the pool of ppl looking to do so outside of their job is pretty small 😭
+----------------------------------------
+[2026-05-18T10:09:33.5150000-05:00] cruellerkhan: But most retail data providers have like a 12 second lag
+----------------------------------------
+[2026-05-18T10:09:34.2060000-05:00] jeysun: yeahh - i’m in infra, so it’s a bit of fun to explore in thought
+----------------------------------------
+[2026-05-18T10:09:46.6540000-05:00] cruellerkhan: I saw that on tiktok dont trust it too much
+----------------------------------------
+[2026-05-18T10:09:48.9110000-05:00] jeysun: this is kinda huge though no?
+----------------------------------------
+[2026-05-18T10:10:03.7560000-05:00] jeysun: i’ve come up with similar numbers when searching for free providers
+----------------------------------------
+[2026-05-18T10:10:13.0850000-05:00] cruellerkhan: Massive but still unrecognizable to anyone not trading HFT
+----------------------------------------
+[2026-05-18T10:10:57.0600000-05:00] jeysun: gotcha - still new to the space
+----------------------------------------
+[2026-05-18T10:13:24.8790000-05:00] cruellerkhan: If you like infra youll realize how simple it is then be like “fuck really?” Once it fully clicks
+----------------------------------------
+[2026-05-18T10:13:53.8580000-05:00] cruellerkhan: The best stuff (IMO) you can lag the signal and it still maintains alpha
+----------------------------------------
+[2026-05-18T10:14:40.2600000-05:00] cruellerkhan: Other than that youre racing teams who might not be smarter than you, but they do have more man power
+----------------------------------------
+[2026-05-18T10:14:48.0640000-05:00] cruellerkhan: Like playing chess against 50 people
+----------------------------------------
+[2026-05-18T10:17:37.8830000-05:00] jeysun: i see
+----------------------------------------
+[2026-05-18T10:18:18.3350000-05:00] jeysun: i was able to get <100ms RTT steady
+----------------------------------------
+[2026-05-18T10:18:52.5280000-05:00] jeysun: but don’t have enough experience with the field to know if that’s worth anything at the timescale
+----------------------------------------
+[2026-05-18T10:18:54.2390000-05:00] jeysun: LOL
+----------------------------------------
+[2026-05-18T10:19:59.1830000-05:00] cruellerkhan: It can be and its definitely strong, ik a guy who trades hourly strategies at that timeframe
+----------------------------------------
+[2026-05-18T10:20:10.7710000-05:00] cruellerkhan: Hes not in and out but just for good execution
+----------------------------------------
+[2026-05-18T10:21:12.5000000-05:00] cruellerkhan: But then comes in model speed + execution time + all this other bullshit
+----------------------------------------
+[2026-05-18T10:22:53.2530000-05:00] jeysun: that’s good to know - will do have to do some more playing around
+----------------------------------------
+[2026-05-18T10:23:09.0960000-05:00] jeysun: haven’t explored inference yet
+----------------------------------------
+[2026-05-31T08:54:22.3470000-05:00] ogragu.yurrrr: https://unusualwhales.com/public-api/mcp
+----------------------------------------
+[2026-05-31T08:54:51.7620000-05:00] ogragu.yurrrr: can anyone vouch?
+----------------------------------------
+[2026-05-31T08:55:29.4120000-05:00] jaygonza: I heard about this but haven’t tested it yet.
+----------------------------------------
+[2026-05-31T08:55:46.8870000-05:00] shanks9899: how‘s the pricing on unusualwhales?
+----------------------------------------
+[2026-05-31T08:59:36.1640000-05:00] ogragu.yurrrr: 315 a month bill annually if you wanna do anything fun
+  ATTACHMENTS: rick's skool - skool - coding [1429929883034718218].csv_Files\IMG_1059-ed3f835db9b3440b.png,rick's skool - skool - coding [1429929883034718218].csv_Files\IMG_1058-27102c8fd0112946.png
+----------------------------------------
+[2026-05-31T09:01:05.7000000-05:00] shanks9899: But it almosy has everything a quant could need
+----------------------------------------
+[2026-05-31T09:02:40.2840000-05:00] jaygonza: Can turn almost all of this into skills using Claude on a pro plan.
+----------------------------------------
+[2026-05-31T09:03:08.3400000-05:00] jaygonza: The unique endpoints are the only things worth looking into.
+----------------------------------------
+[2026-05-31T09:03:21.6150000-05:00] ogragu.yurrrr: hmm
+----------------------------------------
+[2026-05-31T09:03:59.5310000-05:00] ogragu.yurrrr: do you have any of those skills.md you’d care to give to chat
+----------------------------------------
+[2026-05-31T09:04:31.3320000-05:00] jaygonza: Also the next question would be is it cheaper to buy the higher tier data directly from the source or to use unusual whales instead
+----------------------------------------
+[2026-05-31T09:05:38.7890000-05:00] ogragu.yurrrr: if u build a platform off of it you could probs have a lower cost mvp with thr whales
+----------------------------------------
+[2026-05-31T09:10:43.3260000-05:00] jaygonza: Claude can do almost all of this on its own, I would have to create the skills, which I don’t really want to do at this time sorry 😅. I do have a pinescript paper trading skill, strategy builder skill, strategy foundation skill, notebook generator skill, indicator sweet spot skill. All of these you can just ask Claude to make based on Rick’s bootcamp.
+----------------------------------------
+[2026-05-31T09:11:24.6450000-05:00] jaygonza: And a Bayesian search skill
+----------------------------------------
+[2026-05-31T09:31:20.9330000-05:00] ogragu.yurrrr: Fair enough thanks for the tip
+----------------------------------------
+[2026-07-26T08:06:13.4860000-05:00] rasta_mcpasta: Anyone got tips for gridsearching large parameter spaces? I'm trying to do a multi-asset gridsearch with 50-70 params and my 32gb ram shitter laptop ooms every time.
+Best I can do currently is non-exhaustive bayesian optimization by tiers, so I'll optimize and freeze tier 1 before optimizing tier 2 etc.
+----------------------------------------
+[2026-07-26T08:07:10.0000000-05:00] rasta_mcpasta: But tiered optimization means you don't know if your frozen earlier tiers are the best parameters for your later tiers to optimize on so it's a bit annoying
+----------------------------------------
+[2026-07-26T10:09:49.4850000-05:00] rickulaquant_11963: Random search is more efficient than grid-search
+----------------------------------------
+[2026-07-26T10:10:27.8370000-05:00] rickulaquant_11963: Not sure why your code would be OOM'ing, sounds like it could be optimized
+----------------------------------------

@@ -1,0 +1,28 @@
+Out-of-Sample Accuracy: 0.5269
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.54      0.84      0.66       804
+           1       0.48      0.17      0.25       701
+
+    accuracy                           0.53      1505
+   macro avg       0.51      0.50      0.45      1505
+weighted avg       0.51      0.53      0.46      1505
+
+Top 15 Astrological Features:
+DASHA_AD_Venus                       0.025251
+TRANSIT_x_NATAL_Saturn_Delta_Sin     0.017032
+TRANSIT_D1_Sign_Saturn_Taurus        0.015712
+TRANSIT_D1_Sign_Mars_Aquarius        0.014152
+TRANSIT_D1_Sign_Venus_Libra          0.013473
+DASHA_x_NATAL_AD_Strength            0.011820
+TRANSIT_D1_Sign_Moon_Taurus          0.011704
+TRANSIT_D1_Sign_Saturn_Leo           0.011394
+TRANSIT_D1_Sign_Jupiter_Libra        0.011304
+DASHA_x_TRANSIT_MD_Sign_Libra        0.011176
+TRANSIT_D1_Sign_Venus_Sagittarius    0.010829
+TRANSIT_D1_Sign_Mars_Leo             0.010770
+TRANSIT_D1_Sign_Mars_Aries           0.010693
+TRANSIT_D9_Sign_Mars_Sagittarius     0.010610
+TRANSIT_D9_Sign_Rahu_Virgo           0.010593
