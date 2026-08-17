@@ -158,9 +158,10 @@ def compute_tod_rvol(df: pd.DataFrame, timeframe: str = "1H", window: int = 20, 
         tod_vol_sma = df.groupby("Hour_Of_Day")["Volume"].transform(
             lambda s: s.shift(1).rolling(window=window, min_periods=min_periods).mean()
         )
-        tod_rvol = np.where(tod_vol_sma > 0, df["Volume"] / tod_vol_sma, standard_rvol)
+        tod_vol_sma_clean = np.where(tod_vol_sma > 0, tod_vol_sma, trailing_vol_sma)
+        tod_rvol = np.where(tod_vol_sma_clean > 0, df["Volume"] / tod_vol_sma_clean, standard_rvol)
 
-        df["TOD_Vol_SMA20"] = tod_vol_sma
+        df["TOD_Vol_SMA20"] = tod_vol_sma_clean
         df["TOD_RVOL"] = tod_rvol
         df["RVOL"] = tod_rvol
     else:

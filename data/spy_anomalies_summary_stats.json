@@ -1,6 +1,8 @@
 {
   "1H": {
     "total_bars": 21346,
+    "start_date_utc": "2016-01-04 19:00:00+00:00",
+    "end_date_utc": "2026-08-14 20:00:00+00:00",
     "start_date_ny": "2016-01-04 14:00:00-05:00",
     "end_date_ny": "2026-08-14 16:00:00-04:00",
     "anomaly_count": 445,
@@ -8,11 +10,15 @@
     "red_count": 281,
     "tier2_super_anomalies": 71,
     "mean_solid_ratio": 0.8257560084745172,
+    "min_solid_ratio": 0.6542750929368107,
     "mean_rvol": 2.2091644573338334,
+    "min_rvol": 1.500299313672592,
     "mean_body_return_pct": 0.9315479916108815
   },
   "2H": {
     "total_bars": 11573,
+    "start_date_utc": "2016-01-05 14:00:00+00:00",
+    "end_date_utc": "2026-08-14 19:00:00+00:00",
     "start_date_ny": "2016-01-05 08:00:00-05:00",
     "end_date_ny": "2026-08-14 15:00:00-04:00",
     "anomaly_count": 210,
@@ -20,11 +26,15 @@
     "red_count": 131,
     "tier2_super_anomalies": 33,
     "mean_solid_ratio": 0.8361733656467144,
+    "min_solid_ratio": 0.6551724137931002,
     "mean_rvol": 2.119909057738619,
+    "min_rvol": 1.5040562669583353,
     "mean_body_return_pct": 1.268752373985497
   },
   "4H": {
     "total_bars": 6235,
+    "start_date_utc": "2016-01-05 21:00:00+00:00",
+    "end_date_utc": "2026-08-14 17:00:00+00:00",
     "start_date_ny": "2016-01-05 16:00:00-05:00",
     "end_date_ny": "2026-08-14 13:00:00-04:00",
     "anomaly_count": 124,
@@ -32,11 +42,15 @@
     "red_count": 85,
     "tier2_super_anomalies": 18,
     "mean_solid_ratio": 0.8315495234014665,
+    "min_solid_ratio": 0.6890168654874552,
     "mean_rvol": 2.0308716040306654,
+    "min_rvol": 1.5014611017758908,
     "mean_body_return_pct": 1.6782146987551534
   },
   "1D": {
     "total_bars": 8439,
+    "start_date_utc": "1993-02-05 05:00:00+00:00",
+    "end_date_utc": "2026-08-17 04:00:00+00:00",
     "start_date_ny": "1993-02-05 00:00:00-05:00",
     "end_date_ny": "2026-08-17 00:00:00-04:00",
     "anomaly_count": 177,
@@ -44,11 +58,15 @@
     "red_count": 121,
     "tier2_super_anomalies": 32,
     "mean_solid_ratio": 0.8542804154701187,
+    "min_solid_ratio": 0.6533909301447037,
     "mean_rvol": 2.076334182237562,
+    "min_rvol": 1.506251519950574,
     "mean_body_return_pct": 2.486914406201079
   },
   "1W": {
     "total_bars": 1747,
+    "start_date_utc": "1993-03-01 05:00:00+00:00",
+    "end_date_utc": "2026-08-17 04:00:00+00:00",
     "start_date_ny": "1993-03-01 00:00:00-05:00",
     "end_date_ny": "2026-08-17 00:00:00-04:00",
     "anomaly_count": 34,
@@ -56,11 +74,15 @@
     "red_count": 22,
     "tier2_super_anomalies": 7,
     "mean_solid_ratio": 0.8212800973166495,
+    "min_solid_ratio": 0.6666666666666666,
     "mean_rvol": 1.9815202540402928,
+    "min_rvol": 1.5063660638226235,
     "mean_body_return_pct": 5.4574937385770355
   },
   "1MO": {
     "total_bars": 399,
+    "start_date_utc": "1993-06-01 04:00:00+00:00",
+    "end_date_utc": "2026-08-01 04:00:00+00:00",
     "start_date_ny": "1993-06-01 00:00:00-04:00",
     "end_date_ny": "2026-08-01 00:00:00-04:00",
     "anomaly_count": 11,
@@ -68,7 +90,12 @@
     "red_count": 6,
     "tier2_super_anomalies": 1,
     "mean_solid_ratio": 0.7911341373303309,
+    "min_solid_ratio": 0.6975914659668404,
     "mean_rvol": 2.1417024519809242,
+    "min_rvol": 1.5013000659743283,
     "mean_body_return_pct": 7.5963874836408545
-  }
+  },
+  "total_anomalies": 1001,
+  "master_union_verified": true,
+  "canonical_columns_count": 66
 }
