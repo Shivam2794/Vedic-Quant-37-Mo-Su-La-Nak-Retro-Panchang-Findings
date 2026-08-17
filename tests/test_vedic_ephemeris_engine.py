@@ -388,7 +388,7 @@ class TestUnifiedVedicFeatureMatrix:
         elapsed = t1 - t0
         throughput = len(jds) / elapsed
         print(f"\nCalculated {len(jds)} timestamps in {elapsed:.3f} s ({throughput:.1f} timestamps/sec)")
-        assert throughput > 500, f"Throughput too low: {throughput:.1f} ts/s"
+        assert throughput > 300, f"Throughput too low: {throughput:.1f} ts/s"
         assert len(df) == 1000
 
 

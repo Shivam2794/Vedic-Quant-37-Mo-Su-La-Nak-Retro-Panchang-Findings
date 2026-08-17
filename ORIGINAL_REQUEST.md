@@ -57,3 +57,68 @@ Integrity mode: development
 - [ ] Continuous inspection test suite executes without a single assertion error or unhandled exception.
 - [ ] Full summary report generated documenting exact counts, green vs. red distributions, and average metrics per timeframe.
 - [ ] All deliverables committed and pushed cleanly to git branch feat/extreme-solid-candlestick-anomalies.
+
+## Follow-up — 2026-08-17T19:43:58Z
+
+Build an end-to-end Automated Vedic Planetary Pattern Mining, Statistical Significance Sieve, and Machine Learning Discovery Engine on the 1,408 enriched SPY candlestick anomaly dataset (2008–2026) to uncover the exact, statistically verified planetary configurations, aspects, harmonic vargas, karakas, shadbalas, and dasha alignments that move the market.
+
+Working directory: C:\Users\Shivam Patel\.gemini\antigravity\scratch\Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings
+Integrity mode: development
+
+## Requirements
+
+### R1. Baseline Distribution Generation & Null Hypothesis Calibration
+- Ingest a representative control baseline of non-anomaly historical SPY timestamps (e.g. continuous regular trading hours 2008–2026) enriched with the same 397 Omni-Vedic features.
+- Establish empirical null distributions for all categorical (signs, nakshatras, padas, vargas, karakas, kakshya lords, dashas) and continuous (angular distances, declinations, speeds, shadbala rupas, SAV points) features.
+
+### R2. Univariate Statistical Significance & Lift Ratio Engine
+- For every planetary position and Vedic parameter across Bullish Anomalies, Bearish Anomalies, and Multi-Timeframe Confluences:
+  - Calculate Empirical Lift: Lift = P(Feature | Anomaly) / P(Feature | Baseline).
+  - Compute two-tailed statistical significance using Fisher's Exact Test / Chi-Square Test (p < 0.01).
+  - Apply Benjamini-Hochberg False Discovery Rate (FDR) correction to eliminate false positives and spurious data-mining artifacts across thousands of hypotheses.
+  - Perform Kolmogorov-Smirnov (KS) and Mann-Whitney U tests on continuous distributions (e.g., angular separation, planetary speed, Shadbala rupas).
+
+### R3. Higher-Order Combinatorial Pattern Mining (Multi-Planet Confluences)
+- Implement frequent pattern and association rule mining algorithms (FP-Growth / Apriori / Decision Tree Rule Extraction) on discrete Vedic states.
+- Extract 2-way, 3-way, and 4-way planetary interacting rules (e.g. [Mars 6/8 to Saturn] AND [Moon in Rahu Nakshatra] AND [Lagna = Leo] -> Bearish Crash Probability >= 80%, Lift >= 3.0x, N >= 15).
+- Filter rules strictly by: Minimum Support (N >= 10), Minimum Confidence (>= 70%), Lift (>= 2.0x), and p < 0.005.
+
+### R4. Machine Learning Feature Attribution & Interaction Mining
+- Train Gradient Boosted Models (XGBoost, LightGBM, CatBoost) and Random Forests to predict:
+  1. Directional Class (Extreme Green Bullish Shock vs. Extreme Red Panic Crash).
+  2. Anomaly Magnitude (Solid Body / ATR(20) Multiplier).
+- Apply TreeSHAP to calculate exact Shapley feature importance rankings across all 397 columns.
+- Extract top 20 global driver features and compute pairwise SHAP Interaction Values to identify non-linear astronomical synergies.
+
+### R5. Deep Vedic 10-Pillar Forensic Drilldown
+- Perform targeted statistical hypothesis testing across each of the classical pillars:
+  - Pillar 1 (Ephemeris): Out-of-bounds declinations (|delta| > 23.44 deg) and planetary stations (Speed approx 0).
+  - Pillar 2 (Aspects): Exact orb clustering for Shadashtaka (6/8), Dwirdwadasa (2/12), and Samasaptaka (1/7).
+  - Pillar 3 (Vargas): Pushkara Navamsha and Vargottama resonance frequency on breakout days.
+  - Pillar 4 (Jaimini): Gnatikaraka (GK - 6th highest degree) activations during crashes vs. Atmakaraka (AK) activations.
+  - Pillar 5 (Ashtakavarga): Extreme SAV thresholds (< 25 vs. > 32 bindus) in transited signs.
+  - Pillar 6 (Shadbala): High Chesta Bala vs. Low Kala Bala ratio on trend days.
+  - Pillar 7 (SBC & Vedha): Malefic Vedha network intensity and Gochar Murti impact.
+  - Pillar 8 (KP Sub-Lords): Star Lord / Sub-Lord rulers of NYSE Lagna and 10th/11th cusps.
+  - Pillar 9 (NYSE Vimshottari): Mahadasha / Antardasha / Pratyantardasha lord transit triggers.
+  - Pillar 10 (MTF Confluence): Astrological signatures of 4-timeframe simultaneous co-occurrences.
+
+### R6. Automated Master Codex of Market Movers & Visualizations
+- Generate the executive report vedic_market_movers_codex.md detailing:
+  - Top 50 verified, non-spurious planetary rules that move SPY, with sample counts (N), win rate (confidence), lift, p-value, and historical dates.
+  - Directional taxonomy separating Pure Bullish Planetary Drivers from Pure Bearish Crash Triggers.
+  - Visual summary tables, distribution charts, and actionable quantitative rule definitions.
+
+---
+
+## Acceptance Criteria
+
+### Statistical & Mathematical Rigor
+- [ ] Every reported planetary rule or feature must have a calculated Lift Ratio, Sample Size (N >= 10), and FDR-adjusted p-value < 0.01.
+- [ ] No self-fulfilling or spurious claims: all anomalies must be rigorously benchmarked against the empirical baseline distribution.
+- [ ] ML feature attribution must report Cross-Validated Out-of-Sample AUC-ROC / F1 / Precision metrics with zero data leakage.
+
+### Comprehensive Deliverables
+- [ ] Full statistical discovery engine module (src/analysis/vedic_pattern_miner.py) executed cleanly.
+- [ ] ML attribution module (src/ml/vedic_feature_importance.py) generating SHAP values and feature rankings.
+- [ ] Master findings report (reports/vedic_market_movers_codex.md) published and committed to git branch feat/extreme-solid-candlestick-anomalies.
