@@ -1,5 +1,5 @@
 {
-  "validation_timestamp_utc": "2026-08-17T15:59:29.699396+00:00",
+  "validation_timestamp_utc": "2026-08-17T16:08:25.705467+00:00",
   "git_branch": "feat/extreme-solid-candlestick-anomalies",
   "overall_status": "PASSED",
   "total_atomic_checks": 29,
@@ -556,7 +556,7 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 12.950299998919945,
+      "execution_time_ms": 14.00850000209175,
       "description": "Evaluates strict shift(1) prior-bar lagging on ATR, Volume SMA, and RVOL to guarantee zero lookahead bias.",
       "mathematical_proof": "Theorem (Non-Lookahead Temporal Causality):\nLet x_t be the market observation at bar t. The rolling baseline B_t is defined strictly as:\n  B_t = (1/W) * sum_{i=1}^{W} x_{t-i} = roll_mean(x, W).shift(1)\nHence, partial derivative d(B_t)/d(x_t) == 0 for all t, guaranteeing zero information leakage from bar t to baseline B_t.",
       "details": {
@@ -575,7 +575,7 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 17.162800002552103,
+      "execution_time_ms": 18.539000000600936,
       "description": "Evaluates intraday TOD volume stratification to eliminate U-curve bias between opening, midday, and closing sessions.",
       "mathematical_proof": "Theorem (Time-of-Day Stratification Invariance):\nLet V(t, h) be the volume at day t during hour slot h in {09, 10, 11, 12, 13, 14, 15}.\nThe TOD RVOL is computed as:\n  RVOL_{TOD}(t, h) = V(t, h) / [ (1/W) * sum_{k=1}^{W} V(t-k, h) ]\nBecause E[V(t, h_close)] >> E[V(t, h_midday)], stratification ensures:\n  E[RVOL_{TOD}(t, h_midday)] = E[RVOL_{TOD}(t, h_close)] = 1.0 under null baseline.",
       "details": {
@@ -601,7 +601,7 @@
       "checks_run": 2,
       "checks_passed": 2,
       "checks_failed": 0,
-      "execution_time_ms": 17.72069999788073,
+      "execution_time_ms": 18.167099999118363,
       "description": "Verifies elimination of extended-hours noise and confirms 100% RTH session alignment across intraday feeds.",
       "mathematical_proof": "Theorem (Session Boundary RTH Filtering Completeness):\nLet t in T_market. The indicator function I_{RTH}(t) satisfies:\n  I_{RTH}(t) = 1 iff 09:30 <= time(t_NY) <= 16:00 AND dayofweek(t_NY) in {0, 1, 2, 3, 4}.\nAll ETH sessions (04:00-09:30 pre-market and 16:00-20:00 post-market) are filtered prior to multi-timeframe resampling.",
       "details": {},
@@ -616,7 +616,7 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 21.21660000193515,
+      "execution_time_ms": 22.667299999739043,
       "description": "Enforces strict Solid Ratio >= 0.65 and Max Wick Ratio <= 0.25 to reject shooting stars, hammers, and dojis.",
       "mathematical_proof": "Theorem (Geometric Solid Dominance Invariant):\nLet H, L, O, C be candle prices. Range R = H - L, Body B = |C - O|.\nSolid_Ratio = B / R >= 0.65\nMax_Wick_Ratio = max(H - max(O, C), min(O, C) - L) / R <= 0.25\nSince Solid_Ratio + Upper_Wick_Ratio + Lower_Wick_Ratio == 1.0, the dual constraint ensures:\n  Total_Wick_Ratio <= 0.35 AND each individual wick <= 0.25 * Range.",
       "details": {
@@ -635,7 +635,7 @@
       "checks_run": 2,
       "checks_passed": 2,
       "checks_failed": 0,
-      "execution_time_ms": 8.70059999942896,
+      "execution_time_ms": 9.151300000667106,
       "description": "Evaluates price return disentanglement to prevent overnight gap carry from polluting intraday solid candlestick metrics.",
       "mathematical_proof": "Theorem (Price Return Disentanglement Decomposition):\nLet C_{t-1}, O_t, C_t be sequential prices.\n  Overnight_Gap_Pct = (O_t - C_{t-1}) / C_{t-1} * 100\n  Body_Return_Pct   = (C_t - O_t) / O_t * 100\n  Total_Return_Pct  = (C_t - C_{t-1}) / C_{t-1} * 100\nIdentity: (1 + Total_Return/100) == (1 + Overnight_Gap/100) * (1 + Body_Return/100).\nThis strictly isolates overnight economic carry from genuine intraday institutional thrust.",
       "details": {},
@@ -650,7 +650,7 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 6.9810999993933365,
+      "execution_time_ms": 7.109599999239435,
       "description": "Verifies adaptive ATR thresholds and timeframe return floors across 1993, 2008, 2020, and modern market regimes.",
       "mathematical_proof": "Theorem (Regime-Adaptive Volatility Normalization):\nLet ATR_20(t) be the trailing 20-period average true range shifted by 1.\nCondition: [ Body_t / ATR_20(t) >= 1.50 ] OR [ |Body_Return_Pct_t| >= Floor_{TF} ].\nThis dual formulation allows the sieve to dynamically scale through $40 SPY (1993), $140 SPY (2008), and $550+ SPY (2026) without parameter drift or survivorship bias.",
       "details": {
@@ -670,7 +670,7 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 44.66820000016014,
+      "execution_time_ms": 47.69440000018221,
       "description": "Evaluates zero-range candles, zero-volume bars, and epsilon guards across 100,000 synthetic fuzzing cases.",
       "mathematical_proof": "Theorem (Total Epsilon Guarding & Numerical Stability):\nFor all denominators D in {Candle_Range, Trailing_ATR20, Trailing_Vol_SMA20}:\n  D_{guarded} = max(D, epsilon) where epsilon in {1e-9, 1e-6, 1.0}.\nHence, lim_{D -> 0} (N / D_{guarded}) < infty, eliminating ZeroDivisionError, inf propagation, and NaN poisoning across 100% of pipeline nodes.",
       "details": {
@@ -687,7 +687,7 @@
       "checks_run": 4,
       "checks_passed": 4,
       "checks_failed": 0,
-      "execution_time_ms": 7.8663999993295874,
+      "execution_time_ms": 8.072500000707805,
       "description": "Verifies Swiss Ephemeris Sidereal Lahiri mode, Julian Date UT conversion, 9 Graha coordinates, and 5 Panchang limbs.",
       "mathematical_proof": "Theorem (Swiss Ephemeris Sidereal Lahiri Precision Invariant):\nLet JD_UT be the astronomical Julian Date in Universal Time.\n  theta_{sidereal} = (theta_{tropical} - Ayanamsha_{Lahiri}(JD_UT)) mod 360.0\n  Ketu_{lon} = (Rahu_{lon} + 180.0) mod 360.0\n  Tithi = floor((Moon_{lon} - Sun_{lon}) mod 360.0 / 12.0) + 1 in [1, 30]\nAyanamsha accuracy is verified to < 10^{-4} degrees (< 0.36 arcseconds) vs IAU baseline.",
       "details": {},
@@ -702,13 +702,13 @@
       "checks_run": 2,
       "checks_passed": 2,
       "checks_failed": 0,
-      "execution_time_ms": 240.06419999932405,
+      "execution_time_ms": 256.5212000008614,
       "description": "Verifies O(N) computational efficiency and tests that processing throughput exceeds 1,000 bars/sec.",
       "mathematical_proof": "Theorem (O(N) Vectorized Processing Complexity):\nAll array operations utilize SIMD vectorized NumPy/Pandas column operations.\nTime complexity is strictly linear O(N) where N is total historical bars.\nObserved throughput exceeds 100,000+ bars/second on standard compute hardware.",
       "details": {
-        "50k_bars_execution_time_sec": 0.026983800002199132,
-        "throughput_bars_per_sec": 1852963.6298788565,
-        "ephemeris_throughput_jds_per_sec": 4747.499491980223
+        "50k_bars_execution_time_sec": 0.028474300001107622,
+        "throughput_bars_per_sec": 1755969.41796831,
+        "ephemeris_throughput_jds_per_sec": 4424.988262700091
       },
       "errors": [],
       "warnings": []
@@ -721,7 +721,7 @@
       "checks_run": 4,
       "checks_passed": 4,
       "checks_failed": 0,
-      "execution_time_ms": 48.3529000011913,
+      "execution_time_ms": 52.85629999707453,
       "description": "Verifies exact 66-column schema presence, exact row union sum (N=1,001), zero duplicate timestamps, and zero NaNs.",
       "mathematical_proof": "Theorem (Master Manifest Partition Union Invariant & Schema Completeness):\nLet A_{TF} be the set of extracted candlestick anomalies for timeframe TF in {1H, 2H, 4H, 1D, 1W, 1MO}.\n  1. A_{Master} = Union_{TF} A_{TF}\n  2. |A_{Master}| = sum_{TF} |A_{TF}| = 445 + 210 + 124 + 177 + 34 + 11 = 1,001.\n  3. dim(Schema(A_{Enriched})) == 66 columns with exactly 0 NaN values.\nData integrity is 100% verified across all partitions.",
       "details": {
