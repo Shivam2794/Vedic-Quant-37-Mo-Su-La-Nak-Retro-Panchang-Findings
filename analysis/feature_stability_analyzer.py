@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from master_trading_plan_v6 import V5ContinuousVedicEngine, load_celestial_matrix
+from master_trading_plan_v7 import V5ContinuousVedicEngine, load_celestial_matrix
 
 def main():
     print("[Analyzer] Starting Feature Stability Analysis...")

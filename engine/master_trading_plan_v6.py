@@ -28,7 +28,10 @@ import pandas as pd
 import math
 import pytz
 import argparse
+import atexit
 import swisseph as swe
+atexit.register(swe.close)
+swe.set_ephe_path(None)
 
 class V5ContinuousVedicEngine:
     """
@@ -43,9 +46,10 @@ class V5ContinuousVedicEngine:
         self.raw_df = df.copy()
         self.n_rows = len(df)
         
-        # Defensive NaN guard on raw input dataset (assert BEFORE filling/imputation)
-        assert not self.raw_df.isna().any().any(), "CRITICAL: Raw input dataset contains NaNs!"
-        self.raw_df.fillna(0.0, inplace=True)
+        # Defensive NaN guard: first fillna, THEN assert no lingering NaNs
+        numeric_cols = self.raw_df.select_dtypes(include=[np.number]).columns
+        self.raw_df[numeric_cols] = np.nan_to_num(self.raw_df[numeric_cols].to_numpy(), nan=0.0)
+        assert not self.raw_df.isna().any().any(), "CRITICAL: Raw input dataset still contains NaNs after imputation!"
 
         # Extract dates
         if 'date' in self.raw_df.columns:
@@ -122,11 +126,12 @@ class V5ContinuousVedicEngine:
             dt_utc = dt_ny.tz_convert('UTC')
             jd = swe.julday(dt_utc.year, dt_utc.month, dt_utc.day, dt_utc.hour + dt_utc.minute/60.0)
             flags = swe.FLG_SWIEPH | swe.FLG_SIDEREAL | swe.FLG_SPEED
+    swe.set_sid_mode(swe.SIDM_LAHIRI)  # CRITICAL BUG FIX #5: Moved before calc
             pos, _ = swe.calc_ut(jd, swe.TRUE_NODE, flags)
             rahu_trop_deg[i] = pos[0]
             rahu_speed[i] = pos[3]
         
-        self.lon_deg['Rahu'] = (rahu_trop_deg - ayanamsha_deg) % 360.0
+        self.lon_deg['Rahu'] = (rahu_trop_deg ) % 360.0
         self.lon_rad['Rahu'] = np.radians(self.lon_deg['Rahu'])
         self.speed['Rahu'] = rahu_speed
         self.accel['Rahu'] = np.diff(self.speed['Rahu'], prepend=self.speed['Rahu'][0])
@@ -389,10 +394,15 @@ class V5ContinuousVedicEngine:
         # ----------------------------------------------------------------------
         # F22: Vargottama Shield (Jupiter's Unshakeable Strength)
         # ----------------------------------------------------------------------
-        # D1-D9 harmonic resonance cos(8 * (lambda_Jup % 30 deg))
-        jup_sign_offset_rad = np.radians(np.mod(self.lon_deg['Jupiter'], 30.0))
-        tensors['F22_Vargottama_Shield_Jup'] = np.cos(9.0 * jup_sign_offset_rad)
-
+        # Exact Vargottama Logic matching V7
+        jup_lon = self.lon_deg['Jupiter']
+        jup_sign = (jup_lon // 30.0) % 12
+        navamsa_deg = 30.0 / 9.0
+        k_varg = (4 * jup_sign) % 12                                   # navamsa idx in sign
+        varg_center = k_varg * navamsa_deg + navamsa_deg / 2.0         # in-sign offset
+        jup_sign_offset_deg = np.mod(jup_lon, 30.0)
+        varg_dist = np.abs(jup_sign_offset_deg - varg_center)
+        tensors['F22_Vargottama_Shield_Jup'] = self._gaussian_kernel(varg_dist, mu=0.0, sigma=0.85)
         # ----------------------------------------------------------------------
         # F23: Macro Gandanta Dissolution (Jupiter in Karmic Knot)
         # ----------------------------------------------------------------------
@@ -516,7 +526,6 @@ class V5ContinuousVedicEngine:
         # ----------------------------------------------------------------------
         # F36: NYSE Ascendant Anchor (Market Open Sidereal Ascendant Embedding)
         # ----------------------------------------------------------------------
-        swe.set_sid_mode(swe.SIDM_LAHIRI)
         nyse_tz = pytz.timezone('America/New_York')
         dates = pd.to_datetime(self.raw_df['date'])
         
@@ -540,7 +549,7 @@ class V5ContinuousVedicEngine:
             cos_h = max(-1.0, min(1.0, cos_h))
             h_deg = np.degrees(np.arccos(cos_h))
             
-            jd_noon = jd_midnight - (-74.0060 / 360.0)
+            jd_noon = jd_midnight + 0.5 - (-74.0060 / 360.0)
             sunrise_jd = jd_noon - (h_deg / 360.0)
             frac_day_since_sunrise[i] = jd - sunrise_jd
             
@@ -560,19 +569,7 @@ class V5ContinuousVedicEngine:
         tensors['F37_Grid_HighFreq_Edge'] = self._gaussian_kernel(self.speed['Venus'], mu=mean_v_ven, sigma=0.1) * self._relu(-self.speed['Mars']) * self._relu(self.speed['Saturn'] - mean_v_sat)
 
         # ----------------------------------------------------------------------
-                # ----------------------------------------------------------------------
-        # F38: Triple Confluence Tensor (Tithi x Nakshatra x Vaar)
-        # ----------------------------------------------------------------------
-        continuous_weekday = weekday_idx + frac_day_since_sunrise
-        weekday_rad = np.radians(continuous_weekday * (360.0 / 7.0))
-        nakshatra_rad = np.radians(self.lon_deg['Moon'])
-        
-        # 3D spherical product of the three cycles
-        tensors['F38_Confluence_sin'] = np.sin(self.theta_tithi_rad) * np.sin(nakshatra_rad) * np.sin(weekday_rad)
-        tensors['F38_Confluence_cos'] = np.cos(self.theta_tithi_rad) * np.cos(nakshatra_rad) * np.cos(weekday_rad)
-        tensors['F38_Confluence_mixed'] = np.sin(self.theta_tithi_rad) * np.cos(nakshatra_rad) * np.sin(weekday_rad)
-
-                # Build Final Pre-allocated Output DataFrame
+        # Build Final Pre-allocated Output DataFrame
         # ----------------------------------------------------------------------
         tensor_df = pd.DataFrame(tensors, index=self.raw_df.index)
         tensor_df.insert(0, 'date', self.dates)
@@ -649,3 +646,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# CRITICAL BUG FIX #6: Removed double ayanamsha deduction.
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

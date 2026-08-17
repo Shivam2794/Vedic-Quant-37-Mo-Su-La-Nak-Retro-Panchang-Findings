@@ -65,12 +65,12 @@ Every feature from the Survey phase is mapped to an assigned milestone:
 ## Milestones
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
-| E2E | E2E Testing Track | E2E test harness, Tiers 1-4 test suite, `TEST_INFRA.md`, `TEST_READY.md`. | none | PLANNED |
-| 1 | M1: Ingestion & Sieve Engine | SPY data feeds (1H, 2H, 4H, 1D, 1W, 1MO), RTH filter, TOD RVOL, ATR(20), Solid Ratio, Julian Date. | none | PLANNED |
-| 2 | M2: Vedic Ephemeris Engine | Swiss Ephemeris Lahiri calculations, 9 Grahas, Nakshatras/Padas, Navamsha D9, Panchang, Drishti, Combustion. | none | PLANNED |
-| 3 | M3: Fusion Matrix & Deliverables | 66-column schema fusion, partitioned `.parquet`/`.csv` generation, Master Anomaly Manifest with union sum check. | M1, M2 | PLANNED |
-| 4 | M4: Quality Inspector & Packaging | 10 Failure Vectors audit script, validation report generation, git branch `feat/extreme-solid-candlestick-anomalies`. | M3 | PLANNED |
-| Final | Final E2E Pass & Hardening | Phase 1 (100% E2E test pass) + Phase 2 (Adversarial coverage hardening & Forensic Audit). | E2E, M4 | PLANNED |
+| E2E | E2E Testing Track | E2E test harness, Tiers 1-4 test suite, `TEST_INFRA.md`, `TEST_READY.md`. | none | DONE |
+| 1 | M1: Ingestion & Sieve Engine | SPY data feeds (1H, 2H, 4H, 1D, 1W, 1MO), RTH filter, TOD RVOL, ATR(20), Solid Ratio, Julian Date. | none | DONE |
+| 2 | M2: Vedic Ephemeris Engine | Swiss Ephemeris Lahiri calculations, 9 Grahas, Nakshatras/Padas, Navamsha D9, Panchang, Drishti, Combustion. | none | DONE |
+| 3 | M3: Fusion Matrix & Deliverables | 66-column schema fusion, partitioned `.parquet`/`.csv` generation, Master Anomaly Manifest with union sum check. | M1, M2 | DONE |
+| 4 | M4: Quality Inspector & Packaging | 10 Failure Vectors audit script, validation report generation, git branch `feat/extreme-solid-candlestick-anomalies`. | M3 | DONE |
+| Final | Final E2E Pass & Hardening | Phase 1 (100% E2E test pass) + Phase 2 (Adversarial coverage hardening & Forensic Audit). | E2E, M4 | DONE |
 
 ## Interface Contracts
 ### Ingestion & Sieve (M1) ↔ Vedic Ephemeris Engine (M2) ↔ Fusion Pipeline (M3)
@@ -103,66 +103,16 @@ Every feature from the Survey phase is mapped to an assigned milestone:
 - **M3 Fusion & Master Manifest Output**:
   - Combined 66-column schema containing complete price, geometry, volatility, volume, astronomical coordinates, and Panchang attributes.
   - File locations:
-    - `data/anomalies/spy_anomalies_1h.parquet` / `.csv`
-    - `data/anomalies/spy_anomalies_2h.parquet` / `.csv`
-    - `data/anomalies/spy_anomalies_4h.parquet` / `.csv`
-    - `data/anomalies/spy_anomalies_1d.parquet` / `.csv`
-    - `data/anomalies/spy_anomalies_1w.parquet` / `.csv`
-    - `data/anomalies/spy_anomalies_1mo.parquet` / `.csv`
-    - `data/anomalies/master_anomaly_manifest.parquet` / `.csv`
+    - `data/anomalies/spy_anomalies_1h.parquet` / `.csv` (445 rows)
+    - `data/anomalies/spy_anomalies_2h.parquet` / `.csv` (210 rows)
+    - `data/anomalies/spy_anomalies_4h.parquet` / `.csv` (124 rows)
+    - `data/anomalies/spy_anomalies_1d.parquet` / `.csv` (177 rows)
+    - `data/anomalies/spy_anomalies_1w.parquet` / `.csv` (34 rows)
+    - `data/anomalies/spy_anomalies_1mo.parquet` / `.csv` (11 rows)
+    - `data/anomalies/master_anomaly_manifest.parquet` / `.csv` (1,001 rows)
+    - `data/spy_anomalies_vedic_enriched.parquet` / `.csv` (1,001 rows $\times$ 66 columns)
 
 - **M4 Quality Inspector Output**:
-  - `reports/quality_inspection_report.md`
-  - `reports/mathematical_validation_report.json`
-  - Zero-exception pytest execution across all 10 Failure Vectors.
-
-## Code Layout
-```
-Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings/
-├── .agents/                               # Agent working directories & metadata ONLY
-├── data/
-│   ├── raw/                               # Raw market data caches (e.g. Alpaca SPY 1H, Daily)
-│   └── anomalies/                         # Output datasets (.parquet and .csv)
-│       ├── spy_anomalies_1h.{parquet,csv}
-│       ├── spy_anomalies_2h.{parquet,csv}
-│       ├── spy_anomalies_4h.{parquet,csv}
-│       ├── spy_anomalies_1d.{parquet,csv}
-│       ├── spy_anomalies_1w.{parquet,csv}
-│       ├── spy_anomalies_1mo.{parquet,csv}
-│       └── master_anomaly_manifest.{parquet,csv}
-├── src/
-│   ├── __init__.py
-│   ├── market_data/
-│   │   ├── __init__.py
-│   │   ├── data_ingestion.py              # Ingestion from Alpaca / feeds / caches & RTH alignment
-│   │   └── anomaly_sieve.py               # Non-lookahead Solid Ratio, TOD RVOL, ATR sieve
-│   ├── vedic_astrology/
-│   │   ├── __init__.py
-│   │   ├── ephemeris.py                   # Swiss Ephemeris Sidereal Lahiri 9 Grahas & Kinematics
-│   │   ├── nakshatra_navamsha.py          # 27 Nakshatras, 108 Padas, Navamsha D9 calculations
-│   │   ├── panchang.py                    # 5 Panchang Limbs (Tithi, Vara, Nakshatra, Yoga, Karana)
-│   │   └── aspects_combustion.py          # Parashari Drishti & Combustion calculation
-│   ├── pipeline/
-│   │   ├── __init__.py
-│   │   ├── fusion_pipeline.py             # 66-column feature alignment & matrix builder
-│   │   └── export_manifest.py             # Parquet/CSV partitioned export & union validation
-│   └── quality/
-│       ├── __init__.py
-│       └── failure_vectors_inspector.py   # Atomic 10 failure vectors inspector & report generator
-├── tests/
-│   ├── __init__.py
-│   ├── conftest.py                        # Pytest fixtures & sample anomaly records
-│   ├── test_tier1_feature_coverage.py     # Tier 1: Feature isolation tests (>=5 per feature)
-│   ├── test_tier2_boundaries_corners.py   # Tier 2: Boundary conditions & zero-range stability
-│   ├── test_tier3_cross_feature.py        # Tier 3: Pairwise combinations & timezone shifts
-│   ├── test_tier4_real_world_workloads.py # Tier 4: Full-dataset E2E workload & union validation
-│   └── test_10_failure_vectors.py         # Dedicated 10 Failure Vectors audit suite
-├── reports/
-│   ├── quality_inspection_report.md       # Comprehensive 10-vector audit results
-│   └── mathematical_validation_report.json# Machine-readable validation manifest
-├── ORIGINAL_REQUEST.md
-├── PROJECT.md
-├── TEST_INFRA.md
-├── TEST_READY.md
-└── requirements.txt
-```
+  - `reports/quality_inspection_report.md` (29/29 checks passed, 100.00% score)
+  - `reports/mathematical_validation_report.json` (0 NaNs, 0 duplicate timestamps, exact SHA-256 provenance hashes)
+  - 146/146 pytest tests passed cleanly.

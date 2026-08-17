@@ -33,6 +33,9 @@ OUT_BASE = BASE  # Output files go to same dir as source but with _modelB / _mod
 # MODEL IMPLEMENTATIONS (from v3 verified harness)
 # ─────────────────────────────────────────────────────────────
 
+# C1 FIX: TOXIC_FINDINGS must be filtered in B/C too (matches signal_aggregator.py)
+TOXIC_FINDINGS = {16, 25}
+
 def _log_weight(n_size):
     return math.log10(max(2, n_size)) / 2.0
 
@@ -43,23 +46,23 @@ def _sigmoid(x, k):
     return 1.0 / (1.0 + math.exp(arg))
 
 def _resolve_tier1(signals):
-    """Order-independent Tier-1 resolver."""
+    """Order-independent Tier-1 resolver matching Model A."""
     t1 = [s for s in signals if s.get("tier", 3) == 1]
     if not t1: return None
-    long_t1  = [s for s in t1 if s["direction"] == "LONG"]
-    short_t1 = [s for s in t1 if s["direction"] == "SHORT"]
-    if long_t1 and short_t1:
-        return (0.5, "TIER1 CONFLICT NEUTRAL", "NEUTRAL")
-    if short_t1:
-        return (0.001, "TIER1 SHORT OVERRIDE", "SHORT")
-    if long_t1:
-        return (0.999, "TIER1 LONG OVERRIDE", "LONG")
-    return (0.5, "TIER1 FLAT/CASH OVERRIDE", "CASH")
+    
+    # Model A: Take the one with highest absolute yield.
+    dominant = max(t1, key=lambda x: abs(x.get("yield_pct", 0.0)))
+    direction = dominant.get("direction", "SHORT")
+    
+    if direction == "LONG":
+        return (0.999, "TIER 1 OVERRIDE", "LONG")
+    else:
+        return (0.001, "TIER 1 OVERRIDE", "SHORT")
 
 def model_b_time_decay(signals):
     t1 = _resolve_tier1(signals)
     if t1: return t1
-    active = [s for s in signals if s["direction"] != "CASH"]
+    active = [s for s in signals if s["direction"] != "CASH" and s.get("finding") not in TOXIC_FINDINGS]  # C1 FIX
     if not active: return (0.5, "FLAT", "CASH")
     net = 0.0
     for s in active:
@@ -77,7 +80,7 @@ def model_b_time_decay(signals):
 def model_c_two_factor(signals):
     t1 = _resolve_tier1(signals)
     if t1: return t1
-    active = [s for s in signals if s["direction"] != "CASH"]
+    active = [s for s in signals if s["direction"] != "CASH" and s.get("finding") not in TOXIC_FINDINGS]  # C1 FIX
     if not active: return (0.5, "FLAT", "CASH")
 
     macro_sigs = [s for s in active if s.get("hold_days", 20) >= 7]
@@ -160,16 +163,12 @@ HOLD_RE      = re.compile(r'Hold Period.*?(\d+)\s+trading')
 FINDING_RE   = re.compile(r'Finding #(\d+)')
 DATE_RE      = re.compile(r'###\s+☀️\s+(.+?)\s+—\s+DAILY MATH AGGREGATE')
 SIGNAL_HDR_RE= re.compile(r'###\s+\[(\d+)/\d+\]')
-N_SIZE_MAP   = {
-    # Approximate N-sizes from findings ledger
-    4: 471, 5: 99, 12: 45, 13: 55, 17: 620, 18: 22, 21: 1400, 22: 36,
-    26: 95, 28: 85, 29: 180, 30: 1500, 31: 4000, 32: 12000, 33: 9000,
-    34: 11000, 35: 17000, 36: 220, 37: 30, 7: 308, 1: 1241, 2: 1758,
-    3: 780, 6: 59, 8: 1226, 9: 130, 10: 550, 11: 450, 14: 320,
-    15: 680, 16: 380, 19: 2200, 20: 820, 23: 14000, 24: 1800, 25: 3200,
-    27: 5000, 38: 200,
-}
-TIER_MAP = {4: 1, 5: 1, 13: 1, 26: 1, 12: 2, 18: 1, 37: 2, 28: 2, 22: 2}
+import sys, os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from engine.master_trading_plan import FINDING_META
+
+N_SIZE_MAP = {k: v["n_size"] for k, v in FINDING_META.items()}
+TIER_MAP = {k: v["tier"] for k, v in FINDING_META.items()}
 
 def parse_master_plan(path):
     """
@@ -390,7 +389,8 @@ def build_summary(days, day_order, model_fn, model_name):
 
 ## ⚖️ SIGNAL HIERARCHY ({model_name})
 
-1. 🚨 **TIER 1 ABSOLUTE OVERRIDE** — Findings #4, #5, #13, #26 → `_resolve_tier1()` collects ALL Tier-1 signals; conflicting Tier-1s return NEUTRAL (0.5); same-direction Tier-1s return 0.001 (SHORT) or 0.999 (LONG). **Order-independent.**
+1. ⚖️ **TIER 1 ABSOLUTE OVERRIDE** - Findings #4, #5, #13, #26   
+`_resolve_tier1()` collects ALL Tier-1 signals; if multiple exist, it forcefully resolves using the one with the highest absolute yield. It NEVER returns NEUTRAL. Order-independent.
 2. 🏆 **MACRO ENGINE** (hold ≥ 7 days) — daily-rate sigmoid aggregation
 3. ⚡ **MICRO ENGINE** (hold < 7 days) — daily-rate sigmoid aggregation
 {"4. 🔀 **CONFLICT RESOLUTION** — Both engines computed; squared-force blend weights determine outcome" if "C" in model_name else "4. ✅ **TIME-NORMALIZED BLEND** — All signals unified to daily rate before sigmoid"}

@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import swisseph as swe
 import pytz
-from master_trading_plan_v6 import V5ContinuousVedicEngine, load_celestial_matrix
+from master_trading_plan_v7 import V5ContinuousVedicEngine, load_celestial_matrix
 
 def jd_from_dt(dt):
     """Convert UTC datetime to Julian Day"""
@@ -151,3 +151,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

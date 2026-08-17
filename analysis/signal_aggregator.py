@@ -1,6 +1,6 @@
 import math
 
-TOXIC_FINDINGS = {16, 1, 11, 27, 20, 2, 4, 26, 6}
+TOXIC_FINDINGS = {16, 25}
 
 def compute_daily_probability(signals):
     """
@@ -64,8 +64,8 @@ def compute_daily_probability(signals):
     # Phase 3: Sigmoid Probability Mapping
     # Base formula: P(Long) = 1 / (1 + e^(-k * net_yield))
     # 'k' controls the steepness. We use k=0.55 to ensure that strong conviction
-    # days (Yield > 9%) cross the 99% probability threshold.
-    k = 0.55
+    # 'k' controls the steepness. Unifying to k=8.0 to match B/C models.
+    k = 8.0
     p_long = 1.0 / (1.0 + math.exp(-k * net_yield))
     p_short = 1.0 - p_long
     

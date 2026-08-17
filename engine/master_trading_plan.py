@@ -71,6 +71,7 @@ if hasattr(sys.stdout, "reconfigure"):
 # ─────────────────────────────────────────────────────────────────────────────
 try:
     import swisseph as swe
+swe.set_ephe_path(None)
 except ImportError:
     print("ERROR: pyswisseph not installed. Run: pip install pyswisseph")
     sys.exit(1)
@@ -1170,3 +1171,8 @@ if __name__ == "__main__":
     sd = datetime.date.fromisoformat(args.start) if args.start else None
     ed = datetime.date.fromisoformat(args.end)   if args.end   else None
     generate_calendar(start_date=sd, end_date=ed, output_path=args.out)
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

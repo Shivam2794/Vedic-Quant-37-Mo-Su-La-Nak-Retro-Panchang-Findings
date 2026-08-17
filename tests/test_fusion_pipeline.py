@@ -99,8 +99,8 @@ class TestFusionPipelineFunctions:
         extended = build_extended_unified_matrix(candles)
         assert len(extended) == len(candles)
         assert extended.shape[1] >= 100
-        assert "Mars_Drishti_Score" in extended.columns
-        assert "Sun_Gandanta" in extended.columns
+        assert "Ang_Sun_Moon" in extended.columns
+        assert "Mars_Combust" in extended.columns
 
 
 class TestExportAndValidationEngine:

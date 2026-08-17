@@ -43,7 +43,7 @@ from eternal_quant_evolution_v6 import (
     optimize_genome_lamarckian, init_worker, eval_genome_worker,
     evaluate_backtest
 )
-from master_trading_plan_v6 import V5ContinuousVedicEngine, load_celestial_matrix
+from src.core.master_trading_plan_v7 import V5ContinuousVedicEngine, load_celestial_matrix
 
 
 # ============================================================================

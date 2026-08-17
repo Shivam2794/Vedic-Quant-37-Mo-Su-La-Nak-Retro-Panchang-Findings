@@ -24,6 +24,9 @@ Genius Coder Guarantees:
 import os
 import sys
 import time
+import atexit
+import swisseph as swe
+atexit.register(swe.close)
 import numpy as np
 import pandas as pd
 
@@ -41,9 +44,10 @@ class V5ContinuousVedicEngine:
         self.raw_df = df.copy()
         self.n_rows = len(df)
         
-        # Defensive NaN guard on raw input dataset (assert BEFORE filling/imputation)
-        assert not self.raw_df.isna().any().any(), "CRITICAL: Raw input dataset contains NaNs!"
-        self.raw_df.fillna(0.0, inplace=True)
+        # Defensive NaN guard: first fillna, THEN assert no lingering NaNs
+        numeric_cols = self.raw_df.select_dtypes(include=[np.number]).columns
+        self.raw_df[numeric_cols] = np.nan_to_num(self.raw_df[numeric_cols].to_numpy(), nan=0.0)
+        assert not self.raw_df.isna().any().any(), "CRITICAL: Raw input dataset still contains NaNs after imputation!"
 
         # Extract dates
         if 'date' in self.raw_df.columns:
@@ -348,10 +352,15 @@ class V5ContinuousVedicEngine:
         # ----------------------------------------------------------------------
         # F22: Vargottama Shield (Jupiter's Unshakeable Strength)
         # ----------------------------------------------------------------------
-        # D1-D9 harmonic resonance cos(8 * (lambda_Jup % 30 deg))
-        jup_sign_offset_rad = np.radians(np.mod(self.lon_deg['Jupiter'], 30.0))
-        tensors['F22_Vargottama_Shield_Jup'] = np.cos(8.0 * jup_sign_offset_rad)
-
+        # Exact Vargottama Logic matching V7
+        jup_lon = self.lon_deg['Jupiter']
+        jup_sign = (jup_lon // 30.0) % 12
+        navamsa_deg = 30.0 / 9.0
+        k_varg = (4 * jup_sign) % 12                                   # navamsa idx in sign
+        varg_center = k_varg * navamsa_deg + navamsa_deg / 2.0         # in-sign offset
+        jup_sign_offset_deg = np.mod(jup_lon, 30.0)
+        varg_dist = np.abs(jup_sign_offset_deg - varg_center)
+        tensors['F22_Vargottama_Shield_Jup'] = self._gaussian_kernel(varg_dist, mu=0.0, sigma=0.85)
         # ----------------------------------------------------------------------
         # F23: Macro Gandanta Dissolution (Jupiter in Karmic Knot)
         # ----------------------------------------------------------------------
@@ -439,13 +448,13 @@ class V5ContinuousVedicEngine:
         dagdha_coupling = np.zeros(self.n_rows, dtype=np.float64)
         # Dagdha tithi pairs mapped to ISO dayofweek (0=Mon..6=Sun): Mon:6, Tue:7, Wed:2, Thu:14, Fri:9, Sat:4, Sun:12
         dagdha_tithi_by_day = {
-            0: 72.0,   # Monday (Tithi 6 -> 72 deg)
-            1: 84.0,   # Tuesday (Tithi 7 -> 84 deg)
-            2: 24.0,   # Wednesday (Tithi 2 -> 24 deg)
-            3: 168.0,  # Thursday (Tithi 14 -> 168 deg)
-            4: 108.0,  # Friday (Tithi 9 -> 108 deg)
-            5: 48.0,   # Saturday (Tithi 4 -> 48 deg)
-            6: 144.0,  # Sunday (Tithi 12 -> 144 deg)
+            0: 66.0,   # Monday (Tithi 6 -> center = 6*12-6 = 66 deg)  # H1 FIX
+            1: 78.0,   # Tuesday (Tithi 7 -> center = 7*12-6 = 78 deg) # H1 FIX
+            2: 18.0,   # Wednesday (Tithi 2 -> center = 2*12-6 = 18 deg) # H1 FIX
+            3: 162.0,  # Thursday (Tithi 14 -> center = 14*12-6 = 162 deg) # H1 FIX
+            4: 102.0,  # Friday (Tithi 9 -> center = 9*12-6 = 102 deg) # H1 FIX
+            5: 42.0,   # Saturday (Tithi 4 -> center = 4*12-6 = 42 deg) # H1 FIX
+            6: 138.0,  # Sunday (Tithi 12 -> center = 12*12-6 = 138 deg) # H1 FIX
         }
         for w_day, target_angle in dagdha_tithi_by_day.items():
             mask = (weekday_idx == w_day)

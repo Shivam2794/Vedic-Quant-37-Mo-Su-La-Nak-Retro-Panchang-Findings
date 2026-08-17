@@ -17,7 +17,34 @@ def kp_ayanamsha_context():
     finally:
         swe.set_sid_mode(swe.SIDM_LAHIRI)
 
-def compute_kp_longitudes(jd: float, lat: float, lon: float) -> dict:
+DASHA_LORDS = ["Ketu", "Venus", "Sun", "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury"]
+DASHA_YEARS = [7, 20, 6, 10, 7, 18, 16, 19, 17]
+
+def _get_kp_lords(longitude: float) -> dict:
+    if np.isnan(longitude):
+        return {"star_lord": "", "sub_lord": ""}
+        
+    nak_idx = int(longitude / (360.0 / 27.0))
+    star_lord_idx = nak_idx % 9
+    star_lord = DASHA_LORDS[star_lord_idx]
+    
+    nak_start = nak_idx * (360.0 / 27.0)
+    deg_in_nak = longitude - nak_start
+    
+    current_idx = star_lord_idx
+    elapsed = 0.0
+    sub_lord = ""
+    for _ in range(9):
+        sub_len = (DASHA_YEARS[current_idx] / 120.0) * (360.0 / 27.0)
+        if elapsed + sub_len > deg_in_nak:
+            sub_lord = DASHA_LORDS[current_idx]
+            break
+        elapsed += sub_len
+        current_idx = (current_idx + 1) % 9
+        
+    return {"star_lord": star_lord, "sub_lord": sub_lord}
+
+def compute_kp_longitudes(jd: float, lat: float = None, lon: float = None) -> dict:
     """
     Computes the 9 classical planetary longitudes under KP Ayanamsha.
     Uses True Nodes for Rahu/Ketu as required by precision Jyotish.
@@ -82,6 +109,10 @@ def compute_kp_longitudes(jd: float, lat: float, lon: float) -> dict:
                 results[f"{p_name}_sin"] = float('nan')
                 results[f"{p_name}_cos"] = float('nan')
                 
+            # Populate nested dict for omni_vedic_fusion
+            results[p_name] = _get_kp_lords(lon_deg)
+            results[p_name]["longitude"] = float(lon_deg)
+                
         # Ketu is diametrically opposite Rahu (180 degrees away)
         ketu_lon = np.nan
         if not np.isnan(rahu_lon):
@@ -95,6 +126,10 @@ def compute_kp_longitudes(jd: float, lat: float, lon: float) -> dict:
         else:
             results["Ketu_sin"] = float('nan')
             results["Ketu_cos"] = float('nan')
+            
+        # Add Ketu sublords
+        results["Ketu"] = _get_kp_lords(ketu_lon)
+        results["Ketu"]["longitude"] = float(ketu_lon)
             
     return results
 

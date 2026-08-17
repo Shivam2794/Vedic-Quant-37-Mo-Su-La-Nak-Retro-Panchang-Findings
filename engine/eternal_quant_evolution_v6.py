@@ -48,12 +48,12 @@ try:
 except ImportError:
     HAS_NUMBA = False
 
-# Ensure project root is in sys.path for importing master_trading_plan_v6
+# Ensure project root is in sys.path for importing master_trading_plan_v7
 PROJECT_ROOT = r"C:\Users\Shivam Patel\.gemini\antigravity\brain\f7cdee3c-586a-4806-b281-db74f64d657a"
 if os.path.exists(PROJECT_ROOT) and PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
-from master_trading_plan_v6 import V5ContinuousVedicEngine, load_celestial_matrix
+from master_trading_plan_v7 import V5ContinuousVedicEngine, load_celestial_matrix
 
 # =====================================================================
 # NUMBA ACCELERATED BACKTEST PHYSICS ENGINE

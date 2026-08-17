@@ -3,7 +3,7 @@
 ACCURACY VALIDATOR V5 — SPEARMAN RANK IC VALIDATOR (PHASE 3)
 ================================================================================
 Author: Genius Coder / Brutal Multipoint Quality Inspector / Relentless Grinder
-Target: master_trading_plan_v6.py continuous tensor outputs
+Target: master_trading_plan_v7.py continuous tensor outputs
 
 Description:
     Replaces primitive Hit Rate metric with institutional-grade Spearman Rank
@@ -49,7 +49,7 @@ PROJECT_ROOT = r"C:\Users\Shivam Patel\.gemini\antigravity\brain\f7cdee3c-586a-4
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from master_trading_plan_v6 import V5ContinuousVedicEngine, load_celestial_matrix
+from src.core.master_trading_plan_v7 import V5ContinuousVedicEngine, load_celestial_matrix
 
 
 # ============================================================================
@@ -119,7 +119,7 @@ def fetch_price_data(tickers: List[str], start: str = "1993-01-01", end: str = "
     """
     prices: Dict[str, pd.Series] = {}
     for ticker in tickers:
-        raw = yf.download(ticker, start=start, end=end, auto_adjust=True, progress=False)
+        raw = yf.download(ticker, start=start, end=end, auto_adjust=False, progress=False)
         if raw.empty:
             raise ValueError(f"yfinance returned empty data for {ticker}.")
         close = raw["Close"]
@@ -584,7 +584,7 @@ def main() -> None:
     nan_count_pre = tensor_df[feat_cols].isna().sum().sum()
     if nan_count_pre > 0:
         print(f"  [WARN] {nan_count_pre} NaNs in tensor output — filling with 0.0 for IC alignment.")
-        tensor_df[feat_cols] = tensor_df[feat_cols].fillna(0.0)
+        tensor_df[feat_cols] = tensor_df[feat_cols].ffill().bfill()
     inf_mask = np.isinf(tensor_df[feat_cols].to_numpy())
     inf_count = int(inf_mask.sum())
     if inf_count > 0:

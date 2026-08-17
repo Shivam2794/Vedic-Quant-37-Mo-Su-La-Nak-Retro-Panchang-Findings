@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
-from master_trading_plan_v6 import V5ContinuousVedicEngine, load_celestial_matrix
+from master_trading_plan_v7 import V5ContinuousVedicEngine, load_celestial_matrix
 
 def generate_equity_curve():
     raw_df, source_path = load_celestial_matrix()

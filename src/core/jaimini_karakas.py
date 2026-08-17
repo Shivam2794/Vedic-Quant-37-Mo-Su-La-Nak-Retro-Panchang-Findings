@@ -42,8 +42,8 @@ def calculate_jaimini_karakas(planets: List[PlanetLongitude]) -> List[KarakaResu
                 "formatted_degree": format_degree(degree_in_sign)
             })
             
-    # 2. Sort descending by degree within the sign
-    chara_planets.sort(key=lambda x: x["degree_in_sign"], reverse=True)
+    # 2. Sort descending by degree within the sign. NO ties allowed without resolution (resolved by planet name).
+    chara_planets.sort(key=lambda x: (x["degree_in_sign"], x["planet"]), reverse=True)
     
     # 3. Assign Karakas based on the sorted order
     # Note: Using 'Matru' instead of 'Matrua' as it is the standard Sanskrit term used by AstroSage
