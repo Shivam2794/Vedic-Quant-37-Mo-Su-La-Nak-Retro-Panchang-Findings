@@ -625,8 +625,8 @@ def generate_master_codex_report(
             feat = str(r.get("Feature", "N/A"))
             val = str(r.get("Value", "N/A"))
             asp = str(r.get("Aspect_Type", f"House {val}"))
-            k_a = int(r.get("Support_Anomaly", 0))
-            k_b = int(r.get("Support_Baseline", 0))
+            k_a = int(r.get("Anomaly_Count", r.get("Support_Anomaly", 0)))
+            k_b = int(r.get("Baseline_Count", r.get("Support_Baseline", 0)))
             lift = float(r.get("Lift", 1.0))
             p_f = float(r.get("P_Fisher", 1.0))
             q_f = float(r.get("Q_Value_FDR", 1.0))
@@ -643,7 +643,7 @@ def generate_master_codex_report(
         for _, r in df_p3.head(8).iterrows():
             feat = str(r.get("Feature", "N/A"))
             val = str(r.get("Value", "N/A"))
-            k_a = int(r.get("Support_Anomaly", 0))
+            k_a = int(r.get("Anomaly_Count", r.get("Support_Anomaly", 0)))
             p_a = float(r.get("Anomaly_Prob", 0.0)) * 100.0
             p_b = float(r.get("Baseline_Prob", 0.0)) * 100.0
             lift = float(r.get("Lift", 1.0))
@@ -662,7 +662,7 @@ def generate_master_codex_report(
         for _, r in df_p4.head(8).iterrows():
             feat = str(r.get("Feature", "N/A"))
             val = str(r.get("Value", "N/A"))
-            k_a = int(r.get("Support_Anomaly", 0))
+            k_a = int(r.get("Anomaly_Count", r.get("Support_Anomaly", 0)))
             p_a = float(r.get("Anomaly_Prob", 0.0)) * 100.0
             p_b = float(r.get("Baseline_Prob", 0.0)) * 100.0
             lift = float(r.get("Lift", 1.0))
@@ -681,10 +681,10 @@ def generate_master_codex_report(
         for _, r in df_p5.head(8).iterrows():
             feat = str(r.get("Feature", "N/A"))
             ks_d = float(r.get("KS_Stat", 0.0))
-            p_ks = float(r.get("P_KS", 1.0))
-            p_mw = float(r.get("P_MW_U", 1.0))
-            m_a = float(r.get("Anomaly_Mean", 0.0))
-            m_b = float(r.get("Baseline_Mean", 0.0))
+            p_ks = float(r.get("KS_PValue", r.get("P_KS", 1.0)))
+            p_mw = float(r.get("MWU_PValue", r.get("P_MW_U", 1.0)))
+            m_a = float(r.get("Mean_Anomaly", r.get("Anomaly_Mean", 0.0)))
+            m_b = float(r.get("Mean_Baseline", r.get("Baseline_Mean", 0.0)))
             shift = "Depleted (< Baseline)" if m_a < m_b else "Elevated (> Baseline)"
             lines.append(f"| `{feat}` | {ks_d:.4f} | `{p_ks:.2e}` | `{p_mw:.2e}` | {m_a:.2f} | {m_b:.2f} | {shift} |")
         lines.append("")
@@ -699,10 +699,10 @@ def generate_master_codex_report(
         for _, r in df_p6_c.head(8).iterrows():
             feat = str(r.get("Feature", "N/A"))
             ks_d = float(r.get("KS_Stat", 0.0))
-            p_ks = float(r.get("P_KS", 1.0))
-            p_mw = float(r.get("P_MW_U", 1.0))
-            m_a = float(r.get("Anomaly_Mean", 0.0))
-            m_b = float(r.get("Baseline_Mean", 0.0))
+            p_ks = float(r.get("KS_PValue", r.get("P_KS", 1.0)))
+            p_mw = float(r.get("MWU_PValue", r.get("P_MW_U", 1.0)))
+            m_a = float(r.get("Mean_Anomaly", r.get("Anomaly_Mean", 0.0)))
+            m_b = float(r.get("Mean_Baseline", r.get("Baseline_Mean", 0.0)))
             bias = "Afflicted (Weak)" if m_a < m_b else "Potent (Strong)"
             lines.append(f"| `{feat}` | {ks_d:.4f} | `{p_ks:.2e}` | `{p_mw:.2e}` | {m_a:.2f} | {m_b:.2f} | {bias} |")
         lines.append("")
@@ -717,7 +717,7 @@ def generate_master_codex_report(
         for _, r in df_p7.head(8).iterrows():
             feat = str(r.get("Feature", "N/A"))
             val = str(r.get("Value", "N/A"))
-            k_a = int(r.get("Support_Anomaly", 0))
+            k_a = int(r.get("Anomaly_Count", r.get("Support_Anomaly", 0)))
             p_a = float(r.get("Anomaly_Prob", 0.0)) * 100.0
             p_b = float(r.get("Baseline_Prob", 0.0)) * 100.0
             lift = float(r.get("Lift", 1.0))
@@ -730,13 +730,18 @@ def generate_master_codex_report(
     lines.append("### Pillar 8: Krishnamurti Paddhati (KP) Sub-Lords of NYSE Ascendant & Cusps")
     lines.append("")
     df_p8 = pillar_findings.get("Pillar_8_KP_SubLords", pd.DataFrame())
+    if not (isinstance(df_p8, pd.DataFrame) and not df_p8.empty):
+        lagna_cols = [c for c in df_anomaly.columns if c.startswith("Lagna_NYSE_") and (pd.api.types.is_string_dtype(df_anomaly[c]) or pd.api.types.is_object_dtype(df_anomaly[c]) or df_anomaly[c].nunique() <= 12)]
+        if lagna_cols:
+            df_p8 = run_fdr_significance_sieve(df_anomaly, df_baseline, discrete_cols=lagna_cols, min_support=5)
+    
     if isinstance(df_p8, pd.DataFrame) and not df_p8.empty:
         lines.append("| KP Planetary Cusp Sub-Lord | RULER / Graha | Support ($N$) | Anomaly (%) | Baseline (%) | Lift Ratio | Fisher $p$-value | BH-FDR $q$-value |")
         lines.append("|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|")
         for _, r in df_p8.head(8).iterrows():
             feat = str(r.get("Feature", "N/A"))
             val = str(r.get("Value", "N/A"))
-            k_a = int(r.get("Support_Anomaly", 0))
+            k_a = int(r.get("Anomaly_Count", r.get("Support_Anomaly", 0)))
             p_a = float(r.get("Anomaly_Prob", 0.0)) * 100.0
             p_b = float(r.get("Baseline_Prob", 0.0)) * 100.0
             lift = float(r.get("Lift", 1.0))
@@ -755,7 +760,7 @@ def generate_master_codex_report(
         for _, r in df_p9.head(8).iterrows():
             feat = str(r.get("Feature", "N/A"))
             val = str(r.get("Value", "N/A"))
-            k_a = int(r.get("Support_Anomaly", 0))
+            k_a = int(r.get("Anomaly_Count", r.get("Support_Anomaly", 0)))
             p_a = float(r.get("Anomaly_Prob", 0.0)) * 100.0
             p_b = float(r.get("Baseline_Prob", 0.0)) * 100.0
             lift = float(r.get("Lift", 1.0))
