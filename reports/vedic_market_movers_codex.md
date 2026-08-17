@@ -1,7 +1,7 @@
 # Master Codex of Vedic Planetary Market Movers & Machine Learning Attributions
 
 > **Authoritative Forensic Discovery Report — SPY Multi-Timeframe Candlestick Anomalies (1994–2026)**  
-> **Generated**: 2026-08-17 23:26:46 UTC | **Repository**: `Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings`
+> **Generated**: 2026-08-17 23:40:39 UTC | **Repository**: `Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings`
 
 ---
 
@@ -14,10 +14,10 @@ This Codex represents the culmination of an end-to-end, rigorous mathematical di
   - **Bullish Shocks (Green Thrusts)**: **520** bars (36.9%)
   - **Bearish Shocks (Red Panic Crashes)**: **888** bars (63.1%)
 - **Calibrated Empirical Null Baseline**: **31,297** continuous Regular Trading Hours (RTH) 1-Hour bars (2008–2026).
-- **Univariate Hypotheses Tested**: **1,391** discrete Vedic states benchmarked against baseline.
+- **Univariate Hypotheses Tested**: **1,478** discrete Vedic states benchmarked against baseline.
 - **Combinatorial Rules Discovered**: **257** verified multi-planet confluences.
 - **Significance Criteria**: Benjamini-Hochberg False Discovery Rate $q < 0.05$, Fisher Exact $p < 0.005$, Min Support $N \ge 10$, Min Confidence $\ge 70.0\%$, Min Lift $\ge 2.0\text{x}$.
-- **Machine Learning Directional Out-of-Sample Performance**: **AUC-ROC = 0.5458 \pm 0.0297**, **Accuracy = 59.37%**, **Brier Score = 0.2487** across 5-fold Purged & Embargoed TimeSeriesSplit Cross-Validation (LIGHTGBM).
+- **Machine Learning Directional Out-of-Sample Performance**: **AUC-ROC = 0.5425 \pm 0.0313**, **Accuracy = 57.92%**, **Brier Score = 0.2506** across 5-fold Purged & Embargoed TimeSeriesSplit Cross-Validation (LIGHTGBM).
 
 ---
 
@@ -240,49 +240,49 @@ A systematic hypothesis sieve was executed across all 10 Classical Vedic Pillars
 
 | Model Architecture | Out-of-Sample AUC-ROC | F1-Score | Precision | Recall | Accuracy | Brier Score Loss |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **XGBOOST** | **0.5106 \pm 0.0202** | 0.2768 | 36.4% | 26.0% | 58.17% | 0.2506 |
-| **LIGHTGBM** | **0.5458 \pm 0.0297** | 0.3266 | 39.4% | 32.2% | 59.37% | 0.2487 |
-| **RANDOM_FOREST** | **0.5298 \pm 0.0592** | 0.1596 | 38.4% | 15.1% | 62.00% | 0.2344 |
+| **XGBOOST** | **0.5224 \pm 0.0344** | 0.2481 | 31.0% | 23.0% | 56.97% | 0.2481 |
+| **LIGHTGBM** | **0.5425 \pm 0.0313** | 0.3615 | 41.7% | 36.2% | 57.92% | 0.2506 |
+| **RANDOM_FOREST** | **0.5247 \pm 0.0359** | 0.1833 | 38.8% | 23.4% | 59.01% | 0.2392 |
 
 ### 5.2 Top 20 Global Driver Features (TreeSHAP Feature Importance)
 
 | Rank | Feature Name | Classical Vedic Pillar | Mean Absolute SHAP $E[|\phi_j|]$ | Relative Importance | Interpretability Summary |
 |:---:|:---|:---|:---:|:---:|:---|
-| 1 | `Shadbala_Jupiter_Rupas` | **Pillar 6: Shadbala Strengths** | **0.1224** | 10.2% | 6-fold Shadbala potency ratio |
-| 2 | `Saturn_DegInSign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.1182** | 9.9% | Vedic astronomical state |
-| 3 | `Mars_Kakshya` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0988** | 8.3% | Vedic astronomical state |
-| 4 | `Ang_Mars_Rahu` | **Pillar 2: Planetary Aspects & Orbs** | **0.0779** | 6.5% | Mutual planetary angular separation |
-| 5 | `Ang_Mercury_Lagna` | **Pillar 2: Planetary Aspects & Orbs** | **0.0741** | 6.2% | Mutual planetary angular separation |
-| 6 | `Hour_Of_Day` | **Astrological Indicator** | **0.0659** | 5.5% | Vedic astronomical state |
-| 7 | `Sun_Vargottama` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0638** | 5.3% | Vedic astronomical state |
-| 8 | `Venus_D60` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0592** | 4.9% | Vedic astronomical state |
-| 9 | `Lagna_NYSE_Lon` | **Pillar 8: KP Cusps & NYSE Lagna** | **0.0488** | 4.1% | Vedic astronomical state |
-| 10 | `Venus_DegInSign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0488** | 4.1% | Vedic astronomical state |
-| 11 | `Lagna_NYSE_DegInSign` | **Pillar 8: KP Cusps & NYSE Lagna** | **0.0472** | 3.9% | Vedic astronomical state |
-| 12 | `Ang_Mars_Ketu` | **Pillar 2: Planetary Aspects & Orbs** | **0.0460** | 3.9% | Mutual planetary angular separation |
-| 13 | `Jaimini_DK` | **Pillar 4: Jaimini Karakas** | **0.0456** | 3.8% | Vedic astronomical state |
-| 14 | `Ang_Mercury_Venus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0426** | 3.6% | Mutual planetary angular separation |
-| 15 | `Ang_Mars_Uranus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0413** | 3.5% | Mutual planetary angular separation |
-| 16 | `Jaimini_AmK_Deg` | **Pillar 4: Jaimini Karakas** | **0.0412** | 3.4% | Vedic astronomical state |
-| 17 | `Moon_Sign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0392** | 3.3% | Vedic astronomical state |
-| 18 | `Ang_Sun_Uranus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0386** | 3.2% | Mutual planetary angular separation |
-| 19 | `Saturn_D60` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0382** | 3.2% | Vedic astronomical state |
-| 20 | `Ang_Sun_Venus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0378** | 3.2% | Mutual planetary angular separation |
+| 1 | `Mars_Kakshya` | **Pillar 10: Zodiacal Signs & Mansions** | **0.1115** | 9.7% | Vedic astronomical state |
+| 2 | `Saturn_DegInSign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.1036** | 9.0% | Vedic astronomical state |
+| 3 | `Shadbala_Jupiter_Rupas` | **Pillar 6: Shadbala Strengths** | **0.0939** | 8.2% | 6-fold Shadbala potency ratio |
+| 4 | `Ang_Mars_Rahu` | **Pillar 2: Planetary Aspects & Orbs** | **0.0723** | 6.3% | Mutual planetary angular separation |
+| 5 | `Sun_Vargottama` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0688** | 6.0% | Vedic astronomical state |
+| 6 | `Ang_Mercury_Lagna` | **Pillar 2: Planetary Aspects & Orbs** | **0.0677** | 5.9% | Mutual planetary angular separation |
+| 7 | `Hour_Of_Day` | **Astrological Indicator** | **0.0620** | 5.4% | Vedic astronomical state |
+| 8 | `Venus_D60` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0589** | 5.1% | Vedic astronomical state |
+| 9 | `Ang_Mars_Ketu` | **Pillar 2: Planetary Aspects & Orbs** | **0.0540** | 4.7% | Mutual planetary angular separation |
+| 10 | `Jaimini_DK` | **Pillar 4: Jaimini Karakas** | **0.0519** | 4.5% | Vedic astronomical state |
+| 11 | `Jupiter_Speed` | **Pillar 1: Ephemeris & Speed** | **0.0446** | 3.9% | Geocentric longitudinal speed |
+| 12 | `Jaimini_AmK_Deg` | **Pillar 4: Jaimini Karakas** | **0.0431** | 3.7% | Vedic astronomical state |
+| 13 | `Ang_Sun_Venus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0418** | 3.6% | Mutual planetary angular separation |
+| 14 | `Ang_Sun_Uranus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0412** | 3.6% | Mutual planetary angular separation |
+| 15 | `Mars_DegInSign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0408** | 3.5% | Vedic astronomical state |
+| 16 | `Saturn_D60` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0405** | 3.5% | Vedic astronomical state |
+| 17 | `SAV_Virgo` | **Pillar 5: Ashtakavarga (SAV)** | **0.0402** | 3.5% | Ashtakavarga sign bindus |
+| 18 | `Ang_Mercury_Venus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0389** | 3.4% | Mutual planetary angular separation |
+| 19 | `Lagna_NYSE_Lon` | **Pillar 8: KP Cusps & NYSE Lagna** | **0.0388** | 3.4% | Vedic astronomical state |
+| 20 | `Lagna_NYSE_DegInSign` | **Pillar 8: KP Cusps & NYSE Lagna** | **0.0374** | 3.2% | Vedic astronomical state |
 
 ### 5.3 Top Pairwise Non-Linear Astronomical Interactions (SHAP Synergy)
 
 | Rank | Feature 1 | Feature 2 | SHAP Interaction Strength | Synergistic Mechanism |
 |:---:|:---|:---|:---:|:---|
-| 1 | `Saturn_DegInSign` | `Lagna_NYSE_DegInSign` | **0.0304** | Multi-planet non-linear resonance coupling |
-| 2 | `Mars_D60` | `Shadbala_Jupiter_Rupas` | **0.0155** | Multi-planet non-linear resonance coupling |
-| 3 | `Ang_Sun_Uranus` | `Shadbala_Jupiter_Rupas` | **0.0147** | Multi-planet non-linear resonance coupling |
-| 4 | `Mars_Kakshya` | `Jaimini_AmK` | **0.0132** | Multi-planet non-linear resonance coupling |
-| 5 | `Ang_Moon_Uranus` | `Mars_Kakshya` | **0.0129** | Multi-planet non-linear resonance coupling |
-| 6 | `Ang_Moon_Rahu` | `Mars_Kakshya` | **0.0129** | Multi-planet non-linear resonance coupling |
-| 7 | `Saturn_Speed` | `Saturn_DegInSign` | **0.0125** | Multi-planet non-linear resonance coupling |
-| 8 | `Hour_Of_Day` | `Ang_Mars_Rahu` | **0.0125** | Multi-planet non-linear resonance coupling |
-| 9 | `Bhv_Mars_Ketu` | `Saturn_D60` | **0.0121** | Multi-planet non-linear resonance coupling |
-| 10 | `Ang_Venus_Pluto` | `Sun_Vargottama` | **0.0107** | Multi-planet non-linear resonance coupling |
+| 1 | `Saturn_DegInSign` | `Lagna_NYSE_DegInSign` | **0.0207** | Multi-planet non-linear resonance coupling |
+| 2 | `Mars_D60` | `Shadbala_Jupiter_Rupas` | **0.0170** | Multi-planet non-linear resonance coupling |
+| 3 | `Bhv_Jupiter_Lagna` | `Mars_Kakshya` | **0.0147** | Multi-planet non-linear resonance coupling |
+| 4 | `Ang_Mercury_Lagna` | `Jaimini_AmK` | **0.0146** | Multi-planet non-linear resonance coupling |
+| 5 | `Ang_Venus_Pluto` | `Sun_Vargottama` | **0.0143** | Multi-planet non-linear resonance coupling |
+| 6 | `Saturn_DegInSign` | `Shadbala_Jupiter_Rupas` | **0.0130** | Multi-planet non-linear resonance coupling |
+| 7 | `Hour_Of_Day` | `Ang_Mars_Rahu` | **0.0118** | Multi-planet non-linear resonance coupling |
+| 8 | `Saturn_DegInSign` | `Ang_Mars_Rahu` | **0.0108** | Multi-planet non-linear resonance coupling |
+| 9 | `Ang_Mercury_Jupiter` | `Mars_Kakshya` | **0.0106** | Multi-planet non-linear resonance coupling |
+| 10 | `Lagna_NYSE_DegInSign` | `Venus_D60` | **0.0104** | Multi-planet non-linear resonance coupling |
 
 ---
 
