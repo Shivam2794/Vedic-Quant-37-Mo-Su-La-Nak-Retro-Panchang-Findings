@@ -126,16 +126,29 @@ def mine_fast_vectorized_combinatorial_rules(
     dir_col = "Candle_Direction" if "Candle_Direction" in df_anomaly.columns else "Direction"
     date_col = "Datetime_UTC" if "Datetime_UTC" in df_anomaly.columns else None
 
-    # Identify candidate predicates across Vedic columns
+    # Classical 9 Vedic Grahas + Topocentric Lagna (EXCLUDING non-classical outer planets: Uranus, Neptune, Pluto)
+    NON_VEDIC_OUTER = {"Uranus", "Neptune", "Pluto"}
+
+    # Fast dynamic trigger keywords (Moon, Lagna, Fast Grahas, Kakshya, Hourly Bhava, Stations)
+    FAST_TRIGGER_KEYWORDS = [
+        "Moon_", "Lagna_", "Mercury_", "Venus_", "Sun_", "Mars_",
+        "_Kakshya", "Bhv_", "Hour_Of_Day", "_Stationary"
+    ]
+
+    # Identify candidate predicates across strictly classical Vedic columns
     candidate_cols = [
         c for c in df_anomaly.columns
-        if any(c.endswith(sfx) for sfx in [
-            "_Sign", "_Nakshatra", "_Retro", "_Combust", "_Vargottama", "_Kakshya"
-        ])
-        or c.startswith("Bhv_")
-        or c.startswith("Jaimini_")
-        or c.startswith("Vim_")
-        or c.startswith("Lagna_NYSE_")
+        if not any(outer in c for outer in NON_VEDIC_OUTER)
+        and (
+            any(c.endswith(sfx) for sfx in [
+                "_Sign", "_Nakshatra", "_Retro", "_Combust", "_Vargottama", "_Kakshya"
+            ])
+            or c.startswith("Bhv_")
+            or c.startswith("Jaimini_")
+            or c.startswith("Vim_")
+            or c.startswith("Lagna_NYSE_")
+            or c == "Hour_Of_Day"
+        )
     ]
 
     # Build binary predicates for anomaly and baseline
@@ -196,26 +209,27 @@ def mine_fast_vectorized_combinatorial_rules(
 
     rules = []
     
+    # Extract datetime series for event-time deduplication and multi-year robustness
+    dt_series = pd.to_datetime(df_anomaly[date_col]) if date_col else pd.Series()
+
     # ── Mine 2-Way Conjunctions ──
     for i in range(n_items):
+        it_i = item_names[i]
         m1_a = mat_anom[:, i]
         m1_b = mat_base[:, i]
         
         for j in range(i + 1, n_items):
+            it_j = item_names[j]
+            # Must contain at least one dynamic fast-moving trigger (Moon, Lagna, Fast Graha, Kakshya, Hourly Bhava, Station)
+            if not any(any(kw in it for kw in FAST_TRIGGER_KEYWORDS) for it in [it_i, it_j]):
+                continue
+
             m2_a = m1_a & mat_anom[:, j]
             k_a = int(m2_a.sum())
             if k_a < config.min_combinatorial_support:
                 continue
 
-            m2_b = m1_b & mat_base[:, j]
-            k_b = int(m2_b.sum())
-
-            p_a = k_a / total_anom
-            p_b = max(k_b / total_base, 1e-6)
-            lift = p_a / p_b
-            if lift < config.min_combinatorial_lift:
-                continue
-
+            # Directional purity check
             k_green = int((m2_a & green_mask).sum())
             k_red = int((m2_a & red_mask).sum())
             conf_green = k_green / k_a
@@ -227,8 +241,32 @@ def mine_fast_vectorized_combinatorial_rules(
 
             direction = "BULLISH" if conf_green >= conf_red else "BEARISH"
             target_mask = green_mask if direction == "BULLISH" else red_mask
+            k_target = int((m2_a & target_mask).sum())
 
-            table = [[k_a, total_anom - k_a], [k_b, total_base - k_b]]
+            # ── CRITICAL ANTI-OVERFITTING FIX: Event Date Deduplication & Multi-Year Robustness ──
+            if date_col and len(dt_series) > 0:
+                matching_dts = dt_series[m2_a & target_mask]
+                unique_dates = matching_dts.dt.date.unique()
+                unique_years = matching_dts.dt.year.unique()
+                # Must occur across at least 4 distinct calendar dates and across >= 2 different years
+                if len(unique_dates) < 4 or len(unique_years) < 2:
+                    continue
+                sample_dates = ", ".join([str(d) for d in unique_dates[:4]])
+            else:
+                sample_dates = ""
+
+            m2_b = m1_b & mat_base[:, j]
+            k_b = int(m2_b.sum())
+
+            # Bayesian Laplace-Smoothed Lift to eliminate spurious infinite/10,000x lifts
+            p_a = k_target / total_anom
+            p_b_smooth = (k_b + 1.0) / (total_base + 10.0)
+            lift = p_a / p_b_smooth
+
+            if lift < config.min_combinatorial_lift:
+                continue
+
+            table = [[k_target, total_anom - k_target], [k_b, total_base - k_b]]
             try:
                 _, p_fish = stats.fisher_exact(table)
             except Exception:
@@ -237,17 +275,12 @@ def mine_fast_vectorized_combinatorial_rules(
             if p_fish > config.max_combinatorial_pvalue:
                 continue
 
-            rule_text = f"{item_names[i]} AND {item_names[j]}"
-            sample_dates = ""
-            if date_col:
-                matching_dts = df_anomaly.loc[m2_a & target_mask, date_col].astype(str).tolist()
-                sample_dates = ", ".join([d[:10] for d in matching_dts[:4]])
-
+            rule_text = f"{it_i} AND {it_j}"
             rules.append({
                 "Rule_Order": 2,
                 "Rule": rule_text,
                 "Direction": direction,
-                "Support_N": k_a,
+                "Support_N": k_target,
                 "Baseline_N": k_b,
                 "Confidence_Pct": primary_conf * 100.0,
                 "Lift_Ratio": lift,
@@ -257,18 +290,13 @@ def mine_fast_vectorized_combinatorial_rules(
 
             # ── Mine 3-Way Conjunctions ──
             for m in range(j + 1, min(j + 20, n_items)):
+                it_m = item_names[m]
+                if not any(any(kw in it for kw in FAST_TRIGGER_KEYWORDS) for it in [it_i, it_j, it_m]):
+                    continue
+
                 m3_a = m2_a & mat_anom[:, m]
                 k_a3 = int(m3_a.sum())
                 if k_a3 < config.min_combinatorial_support:
-                    continue
-
-                m3_b = m2_b & mat_base[:, m]
-                k_b3 = int(m3_b.sum())
-
-                p_a3 = k_a3 / total_anom
-                p_b3 = max(k_b3 / total_base, 1e-6)
-                lift3 = p_a3 / p_b3
-                if lift3 < config.min_combinatorial_lift:
                     continue
 
                 green_c3 = int((m3_a & green_mask).sum())
@@ -281,7 +309,30 @@ def mine_fast_vectorized_combinatorial_rules(
                     continue
 
                 direction3 = "BULLISH" if conf_g3 >= conf_r3 else "BEARISH"
-                table3 = [[k_a3, total_anom - k_a3], [k_b3, total_base - k_b3]]
+                target_mask3 = green_mask if direction3 == "BULLISH" else red_mask
+                k_target3 = int((m3_a & target_mask3).sum())
+
+                # Event Date Deduplication & Multi-Year Check for 3-way
+                if date_col and len(dt_series) > 0:
+                    matching_dts3 = dt_series[m3_a & target_mask3]
+                    unique_dates3 = matching_dts3.dt.date.unique()
+                    unique_years3 = matching_dts3.dt.year.unique()
+                    if len(unique_dates3) < 4 or len(unique_years3) < 2:
+                        continue
+                    sample_dates3 = ", ".join([str(d) for d in unique_dates3[:4]])
+                else:
+                    sample_dates3 = ""
+
+                m3_b = m2_b & mat_base[:, m]
+                k_b3 = int(m3_b.sum())
+
+                p_a3 = k_target3 / total_anom
+                p_b3_smooth = (k_b3 + 1.0) / (total_base + 10.0)
+                lift3 = p_a3 / p_b3_smooth
+                if lift3 < config.min_combinatorial_lift:
+                    continue
+
+                table3 = [[k_target3, total_anom - k_target3], [k_b3, total_base - k_b3]]
                 try:
                     _, p_fish3 = stats.fisher_exact(table3)
                 except Exception:
@@ -290,76 +341,18 @@ def mine_fast_vectorized_combinatorial_rules(
                 if p_fish3 > config.max_combinatorial_pvalue:
                     continue
 
-                rule_text3 = f"{item_names[i]} AND {item_names[j]} AND {item_names[m]}"
-                sample_dates3 = ""
-                if date_col:
-                    matching_dts3 = df_anomaly.loc[m3_a & (green_mask if direction3 == "BULLISH" else red_mask), date_col].astype(str).tolist()
-                    sample_dates3 = ", ".join([d[:10] for d in matching_dts3[:4]])
-
+                rule_text3 = f"{it_i} AND {it_j} AND {it_m}"
                 rules.append({
                     "Rule_Order": 3,
                     "Rule": rule_text3,
                     "Direction": direction3,
-                    "Support_N": k_a3,
+                    "Support_N": k_target3,
                     "Baseline_N": k_b3,
                     "Confidence_Pct": primary_conf3 * 100.0,
                     "Lift_Ratio": lift3,
                     "Fisher_pvalue": p_fish3,
                     "Sample_Dates": sample_dates3,
                 })
-
-                # ── Mine 4-Way Conjunctions ──
-                for p_idx in range(m + 1, min(m + 12, n_items)):
-                    m4_a = m3_a & mat_anom[:, p_idx]
-                    k_a4 = int(m4_a.sum())
-                    if k_a4 < config.min_combinatorial_support:
-                        continue
-
-                    m4_b = m3_b & mat_base[:, p_idx]
-                    k_b4 = int(m4_b.sum())
-
-                    p_a4 = k_a4 / total_anom
-                    p_b4 = max(k_b4 / total_base, 1e-6)
-                    lift4 = p_a4 / p_b4
-                    if lift4 < config.min_combinatorial_lift:
-                        continue
-
-                    green_c4 = int((m4_a & green_mask).sum())
-                    red_c4 = int((m4_a & red_mask).sum())
-                    conf_g4 = green_c4 / k_a4
-                    conf_r4 = red_c4 / k_a4
-                    primary_conf4 = max(conf_g4, conf_r4)
-
-                    if primary_conf4 < config.min_combinatorial_confidence:
-                        continue
-
-                    direction4 = "BULLISH" if conf_g4 >= conf_r4 else "BEARISH"
-                    table4 = [[k_a4, total_anom - k_a4], [k_b4, total_base - k_b4]]
-                    try:
-                        _, p_fish4 = stats.fisher_exact(table4)
-                    except Exception:
-                        p_fish4 = 1.0
-
-                    if p_fish4 > config.max_combinatorial_pvalue:
-                        continue
-
-                    rule_text4 = f"{item_names[i]} AND {item_names[j]} AND {item_names[m]} AND {item_names[p_idx]}"
-                    sample_dates4 = ""
-                    if date_col:
-                        matching_dts4 = df_anomaly.loc[m4_a & (green_mask if direction4 == "BULLISH" else red_mask), date_col].astype(str).tolist()
-                        sample_dates4 = ", ".join([d[:10] for d in matching_dts4[:4]])
-
-                    rules.append({
-                        "Rule_Order": 4,
-                        "Rule": rule_text4,
-                        "Direction": direction4,
-                        "Support_N": k_a4,
-                        "Baseline_N": k_b4,
-                        "Confidence_Pct": primary_conf4 * 100.0,
-                        "Lift_Ratio": lift4,
-                        "Fisher_pvalue": p_fish4,
-                        "Sample_Dates": sample_dates4,
-                    })
 
     df_rules = pd.DataFrame(rules)
     if df_rules.empty:

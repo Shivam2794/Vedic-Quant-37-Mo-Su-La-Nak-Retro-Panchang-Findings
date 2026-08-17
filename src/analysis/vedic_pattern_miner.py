@@ -226,9 +226,13 @@ def generate_rth_baseline_dataset(
 # ═══════════════════════════════════════════════════════════════
 
 def get_discrete_feature_columns(df: pd.DataFrame) -> List[str]:
-    """Identifies all categorical, discrete ordinal, and binary columns in dataset."""
+    """Identifies all categorical, discrete ordinal, and binary columns in dataset (strictly classical Vedic only)."""
+    NON_VEDIC_OUTER_PLANETS = {"Uranus", "Neptune", "Pluto"}
     discrete_cols = []
     for col in df.columns:
+        if any(outer in col for outer in NON_VEDIC_OUTER_PLANETS):
+            continue
+
         if col in [
             "Datetime_UTC", "Datetime_NY", "Julian_Date_UT", "Open", "High", "Low", "Close",
             "Volume", "Real_Body", "Body", "Candle_Range", "Range", "Trailing_ATR20",
@@ -252,9 +256,13 @@ def get_discrete_feature_columns(df: pd.DataFrame) -> List[str]:
 
 
 def get_continuous_feature_columns(df: pd.DataFrame) -> List[str]:
-    """Identifies all continuous numeric astronomical features."""
+    """Identifies all continuous numeric astronomical features (strictly classical Vedic only)."""
+    NON_VEDIC_OUTER_PLANETS = {"Uranus", "Neptune", "Pluto"}
     continuous_cols = []
     for col in df.columns:
+        if any(outer in col for outer in NON_VEDIC_OUTER_PLANETS):
+            continue
+
         if col in [
             "Datetime_UTC", "Datetime_NY", "Julian_Date_UT", "Open", "High", "Low", "Close",
             "Volume", "Real_Body", "Body", "Candle_Range", "Range", "Trailing_ATR20",
@@ -733,14 +741,27 @@ def mine_combinatorial_patterns(
 
     target_values = [target_val] if target_val is not None else ["RED", "GREEN"]
 
-    # Select high-information candidate columns for conjunction mining
+    # Classical 9 Vedic Grahas + Topocentric Lagna (STRICTLY EXCLUDING generational outer planets Uranus, Neptune, Pluto)
+    NON_VEDIC_OUTER_PLANETS = {"Uranus", "Neptune", "Pluto"}
+    
+    # Fast dynamic trigger keywords (Moon, Lagna, Fast Grahas, Kakshya, Hourly Bhava)
+    FAST_TRIGGER_KEYWORDS = [
+        "Moon_", "Lagna_", "Mercury_", "Venus_", "Sun_", "Mars_",
+        "_Kakshya", "Bhv_", "Hour_Of_Day", "_Stationary"
+    ]
+
+    # Select high-information candidate columns for conjunction mining (Classical Navagraha only)
     candidate_cols = [
         col for col in df_anomaly.columns
-        if any(col.endswith(sfx) for sfx in ["_Sign", "_Nakshatra", "_Retro", "_Combust", "_Vargottama", "_Kakshya"])
-        or col.startswith("Bhv_")
-        or col.startswith("Jaimini_")
-        or col.startswith("Vim_")
-        or col.startswith("KP_")
+        if not any(outer in col for outer in NON_VEDIC_OUTER_PLANETS)
+        and (
+            any(col.endswith(sfx) for sfx in ["_Sign", "_Nakshatra", "_Retro", "_Combust", "_Vargottama", "_Kakshya"])
+            or col.startswith("Bhv_")
+            or col.startswith("Jaimini_")
+            or col.startswith("Vim_")
+            or col.startswith("KP_")
+            or col == "Hour_Of_Day"
+        )
     ]
 
     logger.info(f"Building itemset transaction matrix across {len(candidate_cols)} Vedic features...")

@@ -1,7 +1,7 @@
 # Master Codex of Vedic Planetary Market Movers & Machine Learning Attributions
 
 > **Authoritative Forensic Discovery Report — SPY Multi-Timeframe Candlestick Anomalies (1994–2026)**  
-> **Generated**: 2026-08-17 20:03:26 UTC | **Repository**: `Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings`
+> **Generated**: 2026-08-17 23:26:46 UTC | **Repository**: `Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings`
 
 ---
 
@@ -14,10 +14,10 @@ This Codex represents the culmination of an end-to-end, rigorous mathematical di
   - **Bullish Shocks (Green Thrusts)**: **520** bars (36.9%)
   - **Bearish Shocks (Red Panic Crashes)**: **888** bars (63.1%)
 - **Calibrated Empirical Null Baseline**: **31,297** continuous Regular Trading Hours (RTH) 1-Hour bars (2008–2026).
-- **Univariate Hypotheses Tested**: **1,834** discrete Vedic states benchmarked against baseline.
-- **Combinatorial Rules Discovered**: **2,159** verified multi-planet confluences.
+- **Univariate Hypotheses Tested**: **1,391** discrete Vedic states benchmarked against baseline.
+- **Combinatorial Rules Discovered**: **257** verified multi-planet confluences.
 - **Significance Criteria**: Benjamini-Hochberg False Discovery Rate $q < 0.05$, Fisher Exact $p < 0.005$, Min Support $N \ge 10$, Min Confidence $\ge 70.0\%$, Min Lift $\ge 2.0\text{x}$.
-- **Machine Learning Directional Out-of-Sample Performance**: **AUC-ROC = 0.5431 \pm 0.0267**, **Accuracy = 56.89%**, **Brier Score = 0.2477** across 5-fold Purged & Embargoed TimeSeriesSplit Cross-Validation (LIGHTGBM).
+- **Machine Learning Directional Out-of-Sample Performance**: **AUC-ROC = 0.5458 \pm 0.0297**, **Accuracy = 59.37%**, **Brier Score = 0.2487** across 5-fold Purged & Embargoed TimeSeriesSplit Cross-Validation (LIGHTGBM).
 
 ---
 
@@ -27,56 +27,56 @@ The table below documents the top 50 highest-potency, non-spurious combinatorial
 
 | Rank | Verified Planetary Rule | Direction | Support $N$ | Baseline $N$ | Confidence (%) | Lift Ratio | Fisher $p$-value | BH-FDR $q$-value | Sample Historical Dates |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---|
-| 1 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Lagna == 10] AND [Bhv_Jupiter_Venus == 4]` | **BEARISH** | 13 | 0 | 100.0% | **9232.95x** | `1.65e-18` | `7.77e-17` | 1994-01-31, 1994-02-04, 1998-07-23, 1998-08-01 |
-| 2 | `[Bhv_Mercury_Lagna == 9] AND [Mars_Kakshya == Venus]` | **BEARISH** | 11 | 0 | 100.0% | **7812.50x** | `9.07e-16` | `3.01e-14` | 1998-07-20, 1998-07-23, 2000-02-24, 2008-06-01 |
-| 3 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Neptune == 12]` | **BEARISH** | 11 | 0 | 100.0% | **7812.50x** | `9.07e-16` | `3.01e-14` | 1994-01-31, 1994-02-04, 2000-02-24, 2004-03-10 |
-| 4 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Moon == 3]` | **BEARISH** | 10 | 0 | 100.0% | **7102.27x** | `2.12e-14` | `5.26e-13` | 2008-09-04, 2010-05-20, 2011-08-04, 2014-02-03 |
-| 5 | `[Bhv_Mercury_Lagna == 9] AND [Venus_Kakshya == Sun]` | **BEARISH** | 10 | 0 | 100.0% | **7102.27x** | `2.12e-14` | `5.26e-13` | 2000-02-24, 2007-02-26, 2007-02-27, 2008-06-01 |
-| 6 | `[Bhv_Venus_Saturn == 3] AND [Moon_Nakshatra == Jyeshtha] AND [Jaimini_GK == Saturn]` | **BEARISH** | 10 | 26 | 100.0% | **8.55x** | `1.93e-06` | `7.82e-06` | 2001-03-16, 2012-10-19, 2012-10-19, 2012-10-19 |
-| 7 | `[Bhv_Rahu_Neptune == 12] AND [Bhv_Mars_Jupiter == 11] AND [Bhv_Moon_Mars == 10]` | **BEARISH** | 10 | 31 | 100.0% | **7.17x** | `7.00e-06` | `1.30e-05` | 2022-08-26, 2022-08-26, 2022-08-26, 2022-08-26 |
-| 8 | `[Bhv_Neptune_Ketu == 8] AND [Bhv_Mars_Jupiter == 11] AND [Bhv_Moon_Mars == 10]` | **BEARISH** | 10 | 31 | 100.0% | **7.17x** | `7.00e-06` | `1.30e-05` | 2022-08-26, 2022-08-26, 2022-08-26, 2022-08-26 |
-| 9 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Nakshatra == U.Ashadha]` | **BEARISH** | 17 | 63 | 100.0% | **6.00x** | `4.22e-08` | `2.56e-07` | 2000-02-24, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 10 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Nakshatra == U.Ashadha] AND [Rahu_Sign == Cancer]` | **BEARISH** | 17 | 63 | 100.0% | **6.00x** | `4.22e-08` | `2.56e-07` | 2000-02-24, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 11 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Nakshatra == U.Ashadha] AND [Ketu_Sign == Capricorn]` | **BEARISH** | 17 | 63 | 100.0% | **6.00x** | `4.22e-08` | `2.56e-07` | 2000-02-24, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 12 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 13 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Nakshatra == U.Ashadha]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 14 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Saturn_Rahu == 8]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 15 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Saturn_Ketu == 2]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 16 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Rahu_Sign == Cancer]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 17 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Sign == Capricorn]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 18 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Rahu_Neptune == 8]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 19 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Rahu_Pluto == 6]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 20 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 21 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Saturn_Rahu == 8]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 22 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Saturn_Ketu == 2]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 23 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Rahu_Sign == Cancer]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 24 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Ketu_Sign == Capricorn]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 25 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Rahu_Neptune == 8]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 26 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Rahu_Pluto == 6]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 27 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Neptune_Ketu == 12]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 28 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Bhv_Rahu_Neptune == 8] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 29 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Bhv_Rahu_Pluto == 6] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 30 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Bhv_Neptune_Ketu == 12] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 31 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Bhv_Pluto_Ketu == 2] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 32 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Rahu_Neptune == 8] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 33 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Rahu_Pluto == 6] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 34 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Neptune_Ketu == 12] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 35 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Pluto_Ketu == 2] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 36 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Rahu_Uranus == 10] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 37 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Bhv_Uranus_Ketu == 10] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 38 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Rahu_Neptune == 8] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 39 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Rahu_Pluto == 6] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 40 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Neptune_Ketu == 12] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 41 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Pluto_Ketu == 2] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 42 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Rahu_Uranus == 10] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 43 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Uranus_Ketu == 10] AND [Saturn_Kakshya == Mars]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 44 | `[Mars_Kakshya == Venus] AND [Bhv_Venus_Saturn == 3] AND [Bhv_Mars_Venus == 10] AND [Bhv_Sun_Saturn == 4]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 45 | `[Mars_Kakshya == Venus] AND [Bhv_Venus_Saturn == 3] AND [Bhv_Mars_Venus == 10] AND [Bhv_Mars_Rahu == 7]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 46 | `[Mars_Kakshya == Venus] AND [Bhv_Venus_Saturn == 3] AND [Bhv_Mars_Venus == 10] AND [Bhv_Mars_Ketu == 1]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 47 | `[Mars_Kakshya == Venus] AND [Bhv_Venus_Saturn == 3] AND [Bhv_Mars_Venus == 10] AND [Venus_Retro == 1]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 48 | `[Mars_Kakshya == Venus] AND [Bhv_Sun_Saturn == 4] AND [Bhv_Mars_Rahu == 7] AND [Venus_Retro == 1]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 49 | `[Mars_Kakshya == Venus] AND [Bhv_Sun_Saturn == 4] AND [Bhv_Mars_Ketu == 1] AND [Venus_Retro == 1]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
-| 50 | `[Mars_Kakshya == Venus] AND [Venus_Retro == 1] AND [Uranus_Nakshatra == Ashwini]` | **BEARISH** | 11 | 42 | 100.0% | **5.82x** | `1.30e-05` | `2.22e-05` | 2018-10-10, 2018-10-10, 2018-10-10, 2018-10-10 |
+| 1 | `[Bhv_Sun_Lagna == 10] AND [Bhv_Mars_Rahu == 6]` | **BEARISH** | 15 | 0 | 100.0% | **333.53x** | `3.01e-21` | `4.55e-20` | 2000-01-04, 2000-01-28, 2005-01-04, 2010-01-21 |
+| 2 | `[Bhv_Sun_Lagna == 10] AND [Bhv_Mars_Rahu == 6] AND [Bhv_Mars_Ketu == 12]` | **BEARISH** | 15 | 0 | 100.0% | **333.53x** | `3.01e-21` | `4.55e-20` | 2000-01-04, 2000-01-28, 2005-01-04, 2010-01-21 |
+| 3 | `[Bhv_Sun_Lagna == 10] AND [Bhv_Mars_Ketu == 12]` | **BEARISH** | 15 | 0 | 100.0% | **333.53x** | `3.01e-21` | `4.55e-20` | 2000-01-04, 2000-01-28, 2005-01-04, 2010-01-21 |
+| 4 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Lagna == 10] AND [Bhv_Jupiter_Venus == 4]` | **BEARISH** | 13 | 0 | 100.0% | **289.06x** | `1.65e-18` | `1.58e-17` | 1994-01-31, 1994-02-04, 1998-07-23, 1998-08-01 |
+| 5 | `[Bhv_Mercury_Lagna == 9] AND [Mars_Kakshya == Venus]` | **BEARISH** | 11 | 0 | 100.0% | **244.59x** | `9.07e-16` | `4.86e-15` | 1998-07-20, 1998-07-23, 2000-02-24, 2008-06-01 |
+| 6 | `[Bhv_Mercury_Lagna == 9] AND [Lagna_NYSE_Sign == Libra]` | **BEARISH** | 11 | 0 | 100.0% | **244.59x** | `9.07e-16` | `4.86e-15` | 1994-01-31, 1994-02-04, 2000-02-24, 2007-02-26 |
+| 7 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Moon == 3]` | **BEARISH** | 10 | 0 | 100.0% | **222.35x** | `2.12e-14` | `9.24e-14` | 2008-09-04, 2010-05-20, 2011-08-04, 2014-02-03 |
+| 8 | `[Bhv_Mercury_Lagna == 9] AND [Venus_Kakshya == Sun]` | **BEARISH** | 10 | 0 | 100.0% | **222.35x** | `2.12e-14` | `9.24e-14` | 2000-02-24, 2007-02-26, 2007-02-27, 2008-06-01 |
+| 9 | `[Bhv_Jupiter_Venus == 12] AND [Bhv_Mars_Rahu == 6] AND [Jaimini_BK == Venus]` | **BEARISH** | 12 | 42 | 100.0% | **6.21x** | `2.48e-06` | `6.06e-06` | 2010-01-22, 2010-02-04, 2018-12-17, 2018-12-19 |
+| 10 | `[Bhv_Jupiter_Venus == 12] AND [Bhv_Mars_Ketu == 12] AND [Jaimini_BK == Venus]` | **BEARISH** | 12 | 42 | 100.0% | **6.21x** | `2.48e-06` | `6.06e-06` | 2010-01-22, 2010-02-04, 2018-12-17, 2018-12-19 |
+| 11 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Nakshatra == U.Ashadha]` | **BEARISH** | 17 | 63 | 100.0% | **5.91x** | `4.22e-08` | `1.26e-07` | 2000-02-24, 2018-10-10, 2018-10-11, 2018-10-12 |
+| 12 | `[Mercury_Nakshatra == Shravana] AND [Bhv_Moon_Jupiter == 7]` | **BEARISH** | 12 | 47 | 100.0% | **5.56x** | `6.62e-06` | `1.51e-05` | 2000-01-28, 2021-02-25, 2022-01-20, 2022-01-21 |
+| 13 | `[Jupiter_Nakshatra == Vishakha] AND [Bhv_Sun_Saturn == 4] AND [Venus_Retro == 1]` | **BEARISH** | 12 | 50 | 100.0% | **5.23x** | `1.13e-05` | `2.35e-05` | 1994-11-22, 2018-10-10, 2018-10-11, 2018-10-12 |
+| 14 | `[Ketu_Nakshatra == U.Ashadha] AND [Moon_Sign == Libra]` | **BEARISH** | 15 | 76 | 100.0% | **4.33x** | `7.59e-06` | `1.65e-05` | 2000-01-28, 2000-02-24, 2018-10-10, 2018-10-11 |
+| 15 | `[Bhv_Mercury_Rahu == 2] AND [Moon_Nakshatra == Jyeshtha]` | **BEARISH** | 12 | 61 | 100.0% | **4.30x** | `6.24e-05` | `1.09e-04` | 1998-08-31, 2008-02-29, 2012-10-19, 2025-02-21 |
+| 16 | `[Bhv_Mercury_Ketu == 8] AND [Moon_Nakshatra == Jyeshtha]` | **BEARISH** | 12 | 61 | 100.0% | **4.30x** | `6.24e-05` | `1.09e-04` | 1998-08-31, 2008-02-29, 2012-10-19, 2025-02-21 |
+| 17 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya]` | **BEARISH** | 18 | 101 | 100.0% | **3.92x** | `3.45e-06` | `8.06e-06` | 2000-02-24, 2018-06-27, 2018-10-10, 2018-10-11 |
+| 18 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Rahu_Sign == Cancer]` | **BEARISH** | 18 | 101 | 100.0% | **3.92x** | `3.45e-06` | `8.06e-06` | 2000-02-24, 2018-06-27, 2018-10-10, 2018-10-11 |
+| 19 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Sign == Capricorn]` | **BEARISH** | 18 | 101 | 100.0% | **3.92x** | `3.45e-06` | `8.06e-06` | 2000-02-24, 2018-06-27, 2018-10-10, 2018-10-11 |
+| 20 | `[Sun_Vargottama == 1] AND [Venus_Nakshatra == Revati]` | **BEARISH** | 13 | 88 | 100.0% | **3.25x** | `3.98e-04` | `5.33e-04` | 2009-03-20, 2018-03-22, 2019-05-07, 2020-02-24 |
+| 21 | `[Rahu_Nakshatra == Pushya] AND [Moon_Sign == Libra]` | **BEARISH** | 15 | 107 | 100.0% | **3.09x** | `2.46e-04` | `3.45e-04` | 2000-01-28, 2000-02-24, 2018-10-10, 2018-10-11 |
+| 22 | `[Mars_Kakshya == Venus] AND [Bhv_Sun_Saturn == 4] AND [Bhv_Mars_Rahu == 7]` | **BEARISH** | 12 | 98 | 100.0% | **2.70x** | `2.79e-03` | `3.00e-03` | 2008-06-01, 2018-10-10, 2018-10-11, 2018-10-12 |
+| 23 | `[Mars_Kakshya == Venus] AND [Bhv_Sun_Saturn == 4] AND [Bhv_Mars_Ketu == 1]` | **BEARISH** | 12 | 98 | 100.0% | **2.70x** | `2.79e-03` | `3.00e-03` | 2008-06-01, 2018-10-10, 2018-10-11, 2018-10-12 |
+| 24 | `[Sun_Nakshatra == Shatabhisha] AND [Bhv_Moon_Jupiter == 7]` | **BEARISH** | 11 | 91 | 100.0% | **2.66x** | `4.48e-03` | `4.52e-03` | 2000-02-24, 2020-03-03, 2021-02-25, 2025-02-21 |
+| 25 | `[Rahu_Nakshatra == Pushya] AND [Bhv_Sun_Saturn == 4]` | **BEARISH** | 18 | 154 | 100.0% | **2.58x** | `4.72e-04` | `6.13e-04` | 2000-01-28, 2018-09-26, 2018-10-03, 2018-10-04 |
+| 26 | `[Ketu_Nakshatra == U.Ashadha] AND [Bhv_Sun_Saturn == 4]` | **BEARISH** | 18 | 154 | 100.0% | **2.58x** | `4.72e-04` | `6.13e-04` | 2000-01-28, 2018-09-26, 2018-10-03, 2018-10-04 |
+| 27 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus]` | **BEARISH** | 15 | 134 | 100.0% | **2.47x** | `1.99e-03` | `2.23e-03` | 2017-12-29, 2018-04-06, 2018-10-10, 2018-10-11 |
+| 28 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Bhv_Saturn_Rahu == 8]` | **BEARISH** | 15 | 134 | 100.0% | **2.47x** | `1.99e-03` | `2.23e-03` | 2017-12-29, 2018-04-06, 2018-10-10, 2018-10-11 |
+| 29 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Bhv_Saturn_Ketu == 2]` | **BEARISH** | 15 | 134 | 100.0% | **2.47x** | `1.99e-03` | `2.23e-03` | 2017-12-29, 2018-04-06, 2018-10-10, 2018-10-11 |
+| 30 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Rahu_Sign == Cancer]` | **BEARISH** | 15 | 134 | 100.0% | **2.47x** | `1.99e-03` | `2.23e-03` | 2017-12-29, 2018-04-06, 2018-10-10, 2018-10-11 |
+| 31 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Ketu_Sign == Capricorn]` | **BEARISH** | 15 | 134 | 100.0% | **2.47x** | `1.99e-03` | `2.23e-03` | 2017-12-29, 2018-04-06, 2018-10-10, 2018-10-11 |
+| 32 | `[Jupiter_Nakshatra == Vishakha] AND [Mars_Kakshya == Venus] AND [Vim_AD == Mercury]` | **BEARISH** | 15 | 134 | 100.0% | **2.47x** | `1.99e-03` | `2.23e-03` | 2017-12-29, 2018-04-06, 2018-10-10, 2018-10-11 |
+| 33 | `[Bhv_Sun_Saturn == 4] AND [Venus_Retro == 1] AND [Jaimini_GK == Saturn]` | **BEARISH** | 19 | 84 | 95.0% | **4.97x** | `7.72e-08` | `2.25e-07` | 2015-08-21, 2015-08-24, 2015-08-25, 2015-08-26 |
+| 34 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha]` | **BEARISH** | 19 | 146 | 95.0% | **2.87x** | `9.56e-05` | `1.58e-04` | 2000-02-24, 2018-10-10, 2018-10-11, 2018-10-12 |
+| 35 | `[Moon_Sign == Scorpio] AND [Bhv_Venus_Saturn == 3] AND [Moon_Nakshatra == Jyeshtha]` | **BEARISH** | 18 | 99 | 94.7% | **4.00x** | `2.69e-06` | `6.47e-06` | 2001-03-16, 2009-07-31, 2011-08-08, 2012-10-19 |
+| 36 | `[Bhv_Venus_Saturn == 3] AND [Moon_Nakshatra == Jyeshtha]` | **BEARISH** | 18 | 99 | 94.7% | **4.00x** | `2.69e-06` | `6.47e-06` | 2001-03-16, 2009-07-31, 2011-08-08, 2012-10-19 |
+| 37 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Rahu_Sign == Cancer]` | **BEARISH** | 18 | 118 | 94.7% | **3.36x** | `2.29e-05` | `4.31e-05` | 2000-02-24, 2018-10-10, 2018-10-11, 2018-10-12 |
+| 38 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Ketu_Sign == Capricorn]` | **BEARISH** | 18 | 118 | 94.7% | **3.36x** | `2.29e-05` | `4.31e-05` | 2000-02-24, 2018-10-10, 2018-10-11, 2018-10-12 |
+| 39 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Vim_AD == Mercury]` | **BEARISH** | 18 | 146 | 94.7% | **2.72x** | `2.64e-04` | `3.67e-04` | 2018-10-10, 2018-10-11, 2018-10-12, 2018-12-03 |
+| 40 | `[Jupiter_Nakshatra == Vishakha] AND [Bhv_Sun_Saturn == 4]` | **BEARISH** | 18 | 154 | 94.7% | **2.58x** | `4.72e-04` | `6.13e-04` | 1994-11-22, 2018-09-26, 2018-10-03, 2018-10-04 |
+| 41 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Jupiter_Venus == 4]` | **BEARISH** | 17 | 0 | 94.4% | **378.00x** | `5.46e-24` | `1.76e-22` | 1994-01-31, 1994-02-04, 1998-07-20, 1998-07-23 |
+| 42 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Saturn_Rahu == 8]` | **BEARISH** | 17 | 118 | 94.4% | **3.18x** | `7.23e-05` | `1.24e-04` | 2018-10-10, 2018-10-11, 2018-10-12, 2018-12-03 |
+| 43 | `[Mars_Kakshya == Venus] AND [Ketu_Nakshatra == U.Ashadha] AND [Bhv_Saturn_Ketu == 2]` | **BEARISH** | 17 | 118 | 94.4% | **3.18x** | `7.23e-05` | `1.24e-04` | 2018-10-10, 2018-10-11, 2018-10-12, 2018-12-03 |
+| 44 | `[Jaimini_MK == Jupiter] AND [Bhv_Sun_Lagna == 10]` | **BEARISH** | 16 | 0 | 94.1% | **355.76x** | `1.28e-22` | `3.00e-21` | 1997-10-24, 2000-12-06, 2001-03-12, 2002-09-03 |
+| 45 | `[Mars_Kakshya == Venus] AND [Venus_Retro == 1] AND [Jaimini_GK == Saturn]` | **BEARISH** | 16 | 55 | 94.1% | **6.35x** | `4.37e-08` | `1.29e-07` | 2015-08-24, 2015-08-25, 2015-08-26, 2018-10-10 |
+| 46 | `[Jupiter_Nakshatra == Vishakha] AND [Venus_Retro == 1]` | **BEARISH** | 16 | 106 | 94.1% | **3.32x** | `7.15e-05` | `1.24e-04` | 1994-11-22, 2006-01-20, 2018-10-10, 2018-10-11 |
+| 47 | `[Bhv_Sun_Jupiter == 2] AND [Bhv_Sun_Lagna == 10]` | **BEARISH** | 14 | 0 | 93.3% | **311.29x** | `7.06e-20` | `8.25e-19` | 1996-12-12, 2002-07-08, 2002-07-10, 2002-07-15 |
+| 48 | `[Bhv_Mars_Jupiter == 11] AND [Bhv_Mercury_Lagna == 1]` | **BEARISH** | 14 | 84 | 93.3% | **3.66x** | `7.81e-05` | `1.32e-04` | 2011-08-05, 2018-10-12, 2018-11-02, 2022-08-26 |
+| 49 | `[Bhv_Mercury_Lagna == 9] AND [Jaimini_MK == Jupiter]` | **BEARISH** | 13 | 0 | 92.9% | **289.06x** | `1.65e-18` | `1.58e-17` | 2000-04-10, 2002-04-01, 2002-09-03, 2008-01-18 |
+| 50 | `[Bhv_Mercury_Lagna == 9] AND [Jaimini_GK == Saturn]` | **BEARISH** | 13 | 0 | 92.9% | **289.06x** | `1.65e-18` | `1.58e-17` | 1994-02-04, 1996-07-15, 2002-09-01, 2002-09-03 |
 
 ---
 
@@ -93,16 +93,16 @@ Forensic separation of astrological conditions reveals distinct topological regi
 ### 3.2 Pure Bearish Panic Crash Configurations
 | Rank | Bearish Astronomical Signature | Win Rate (%) | Lift Ratio | Support $N$ | Fisher $p$-value | Mechanism / Astronomical Archetype |
 |:---:|:---|:---:|:---:|:---:|:---:|:---|
-| 1 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Lagna == 10] AND [Bhv_Jupiter_Venus == 4]` | **100.0%** | **9232.95x** | 13 | `1.65e-18` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 2 | `[Bhv_Mercury_Lagna == 9] AND [Mars_Kakshya == Venus]` | **100.0%** | **7812.50x** | 11 | `9.07e-16` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 3 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Neptune == 12]` | **100.0%** | **7812.50x** | 11 | `9.07e-16` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 4 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Moon == 3]` | **100.0%** | **7102.27x** | 10 | `2.12e-14` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 5 | `[Bhv_Mercury_Lagna == 9] AND [Venus_Kakshya == Sun]` | **100.0%** | **7102.27x** | 10 | `2.12e-14` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 6 | `[Bhv_Venus_Saturn == 3] AND [Moon_Nakshatra == Jyeshtha] AND [Jaimini_GK == Saturn]` | **100.0%** | **8.55x** | 10 | `1.93e-06` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 7 | `[Bhv_Rahu_Neptune == 12] AND [Bhv_Mars_Jupiter == 11] AND [Bhv_Moon_Mars == 10]` | **100.0%** | **7.17x** | 10 | `7.00e-06` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 8 | `[Bhv_Neptune_Ketu == 8] AND [Bhv_Mars_Jupiter == 11] AND [Bhv_Moon_Mars == 10]` | **100.0%** | **7.17x** | 10 | `7.00e-06` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 9 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Nakshatra == U.Ashadha]` | **100.0%** | **6.00x** | 17 | `4.22e-08` | Shadashtaka (6/8) Friction & Malefic Node Activation |
-| 10 | `[Mars_Kakshya == Venus] AND [Rahu_Nakshatra == Pushya] AND [Ketu_Nakshatra == U.Ashadha] AND [Rahu_Sign == Cancer]` | **100.0%** | **6.00x** | 17 | `4.22e-08` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 1 | `[Bhv_Sun_Lagna == 10] AND [Bhv_Mars_Rahu == 6]` | **100.0%** | **333.53x** | 15 | `3.01e-21` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 2 | `[Bhv_Sun_Lagna == 10] AND [Bhv_Mars_Rahu == 6] AND [Bhv_Mars_Ketu == 12]` | **100.0%** | **333.53x** | 15 | `3.01e-21` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 3 | `[Bhv_Sun_Lagna == 10] AND [Bhv_Mars_Ketu == 12]` | **100.0%** | **333.53x** | 15 | `3.01e-21` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 4 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Lagna == 10] AND [Bhv_Jupiter_Venus == 4]` | **100.0%** | **289.06x** | 13 | `1.65e-18` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 5 | `[Bhv_Mercury_Lagna == 9] AND [Mars_Kakshya == Venus]` | **100.0%** | **244.59x** | 11 | `9.07e-16` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 6 | `[Bhv_Mercury_Lagna == 9] AND [Lagna_NYSE_Sign == Libra]` | **100.0%** | **244.59x** | 11 | `9.07e-16` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 7 | `[Bhv_Mercury_Lagna == 9] AND [Bhv_Sun_Moon == 3]` | **100.0%** | **222.35x** | 10 | `2.12e-14` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 8 | `[Bhv_Mercury_Lagna == 9] AND [Venus_Kakshya == Sun]` | **100.0%** | **222.35x** | 10 | `2.12e-14` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 9 | `[Bhv_Jupiter_Venus == 12] AND [Bhv_Mars_Rahu == 6] AND [Jaimini_BK == Venus]` | **100.0%** | **6.21x** | 12 | `2.48e-06` | Shadashtaka (6/8) Friction & Malefic Node Activation |
+| 10 | `[Bhv_Jupiter_Venus == 12] AND [Bhv_Mars_Ketu == 12] AND [Jaimini_BK == Venus]` | **100.0%** | **6.21x** | 12 | `2.48e-06` | Shadashtaka (6/8) Friction & Malefic Node Activation |
 
 ---
 
@@ -240,49 +240,49 @@ A systematic hypothesis sieve was executed across all 10 Classical Vedic Pillars
 
 | Model Architecture | Out-of-Sample AUC-ROC | F1-Score | Precision | Recall | Accuracy | Brier Score Loss |
 |:---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **XGBOOST** | **0.5069 \pm 0.0319** | 0.2569 | 37.7% | 24.1% | 56.37% | 0.2512 |
-| **LIGHTGBM** | **0.5431 \pm 0.0267** | 0.3056 | 37.0% | 29.5% | 56.89% | 0.2477 |
-| **RANDOM_FOREST** | **0.5416 \pm 0.0571** | 0.1361 | 15.5% | 16.1% | 58.58% | 0.2368 |
+| **XGBOOST** | **0.5106 \pm 0.0202** | 0.2768 | 36.4% | 26.0% | 58.17% | 0.2506 |
+| **LIGHTGBM** | **0.5458 \pm 0.0297** | 0.3266 | 39.4% | 32.2% | 59.37% | 0.2487 |
+| **RANDOM_FOREST** | **0.5298 \pm 0.0592** | 0.1596 | 38.4% | 15.1% | 62.00% | 0.2344 |
 
 ### 5.2 Top 20 Global Driver Features (TreeSHAP Feature Importance)
 
 | Rank | Feature Name | Classical Vedic Pillar | Mean Absolute SHAP $E[|\phi_j|]$ | Relative Importance | Interpretability Summary |
 |:---:|:---|:---|:---:|:---:|:---|
-| 1 | `Mars_Kakshya` | **Pillar 10: Zodiacal Signs & Mansions** | **0.1093** | 9.2% | Vedic astronomical state |
-| 2 | `Shadbala_Jupiter_Rupas` | **Pillar 6: Shadbala Strengths** | **0.1001** | 8.5% | 6-fold Shadbala potency ratio |
-| 3 | `Saturn_DegInSign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0979** | 8.3% | Vedic astronomical state |
-| 4 | `Ang_Mars_Rahu` | **Pillar 2: Planetary Aspects & Orbs** | **0.0718** | 6.1% | Mutual planetary angular separation |
-| 5 | `Ang_Mars_Ketu` | **Pillar 2: Planetary Aspects & Orbs** | **0.0699** | 5.9% | Mutual planetary angular separation |
-| 6 | `Ang_Mercury_Lagna` | **Pillar 2: Planetary Aspects & Orbs** | **0.0678** | 5.7% | Mutual planetary angular separation |
-| 7 | `Hour_Of_Day` | **Astrological Indicator** | **0.0674** | 5.7% | Vedic astronomical state |
-| 8 | `Sun_Vargottama` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0640** | 5.4% | Vedic astronomical state |
-| 9 | `Venus_D60` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0564** | 4.8% | Vedic astronomical state |
-| 10 | `Moon_Sign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0553** | 4.7% | Vedic astronomical state |
-| 11 | `Venus_DegInSign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0521** | 4.4% | Vedic astronomical state |
-| 12 | `Jaimini_DK` | **Pillar 4: Jaimini Karakas** | **0.0492** | 4.2% | Vedic astronomical state |
-| 13 | `Ang_Mercury_Venus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0490** | 4.1% | Mutual planetary angular separation |
-| 14 | `Lagna_NYSE_Lon` | **Pillar 8: KP Cusps & NYSE Lagna** | **0.0458** | 3.9% | Vedic astronomical state |
-| 15 | `Lagna_NYSE_DegInSign` | **Pillar 8: KP Cusps & NYSE Lagna** | **0.0447** | 3.8% | Vedic astronomical state |
-| 16 | `Shadbala_Mars_Rupas` | **Pillar 6: Shadbala Strengths** | **0.0401** | 3.4% | 6-fold Shadbala potency ratio |
-| 17 | `Shadbala_Jupiter_Ratio` | **Pillar 6: Shadbala Strengths** | **0.0375** | 3.2% | 6-fold Shadbala potency ratio |
-| 18 | `Saturn_D60` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0361** | 3.0% | Vedic astronomical state |
-| 19 | `Venus_Speed` | **Pillar 1: Ephemeris & Speed** | **0.0360** | 3.0% | Geocentric longitudinal speed |
-| 20 | `Uranus_Speed` | **Pillar 1: Ephemeris & Speed** | **0.0339** | 2.9% | Geocentric longitudinal speed |
+| 1 | `Shadbala_Jupiter_Rupas` | **Pillar 6: Shadbala Strengths** | **0.1224** | 10.2% | 6-fold Shadbala potency ratio |
+| 2 | `Saturn_DegInSign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.1182** | 9.9% | Vedic astronomical state |
+| 3 | `Mars_Kakshya` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0988** | 8.3% | Vedic astronomical state |
+| 4 | `Ang_Mars_Rahu` | **Pillar 2: Planetary Aspects & Orbs** | **0.0779** | 6.5% | Mutual planetary angular separation |
+| 5 | `Ang_Mercury_Lagna` | **Pillar 2: Planetary Aspects & Orbs** | **0.0741** | 6.2% | Mutual planetary angular separation |
+| 6 | `Hour_Of_Day` | **Astrological Indicator** | **0.0659** | 5.5% | Vedic astronomical state |
+| 7 | `Sun_Vargottama` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0638** | 5.3% | Vedic astronomical state |
+| 8 | `Venus_D60` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0592** | 4.9% | Vedic astronomical state |
+| 9 | `Lagna_NYSE_Lon` | **Pillar 8: KP Cusps & NYSE Lagna** | **0.0488** | 4.1% | Vedic astronomical state |
+| 10 | `Venus_DegInSign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0488** | 4.1% | Vedic astronomical state |
+| 11 | `Lagna_NYSE_DegInSign` | **Pillar 8: KP Cusps & NYSE Lagna** | **0.0472** | 3.9% | Vedic astronomical state |
+| 12 | `Ang_Mars_Ketu` | **Pillar 2: Planetary Aspects & Orbs** | **0.0460** | 3.9% | Mutual planetary angular separation |
+| 13 | `Jaimini_DK` | **Pillar 4: Jaimini Karakas** | **0.0456** | 3.8% | Vedic astronomical state |
+| 14 | `Ang_Mercury_Venus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0426** | 3.6% | Mutual planetary angular separation |
+| 15 | `Ang_Mars_Uranus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0413** | 3.5% | Mutual planetary angular separation |
+| 16 | `Jaimini_AmK_Deg` | **Pillar 4: Jaimini Karakas** | **0.0412** | 3.4% | Vedic astronomical state |
+| 17 | `Moon_Sign` | **Pillar 10: Zodiacal Signs & Mansions** | **0.0392** | 3.3% | Vedic astronomical state |
+| 18 | `Ang_Sun_Uranus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0386** | 3.2% | Mutual planetary angular separation |
+| 19 | `Saturn_D60` | **Pillar 3: Harmonic Vargas (D9/D10/D60)** | **0.0382** | 3.2% | Vedic astronomical state |
+| 20 | `Ang_Sun_Venus` | **Pillar 2: Planetary Aspects & Orbs** | **0.0378** | 3.2% | Mutual planetary angular separation |
 
 ### 5.3 Top Pairwise Non-Linear Astronomical Interactions (SHAP Synergy)
 
 | Rank | Feature 1 | Feature 2 | SHAP Interaction Strength | Synergistic Mechanism |
 |:---:|:---|:---|:---:|:---|
-| 1 | `Saturn_DegInSign` | `Lagna_NYSE_DegInSign` | **0.0228** | Multi-planet non-linear resonance coupling |
-| 2 | `Mars_D60` | `Shadbala_Jupiter_Rupas` | **0.0182** | Multi-planet non-linear resonance coupling |
-| 3 | `Bhv_Jupiter_Lagna` | `Mars_Kakshya` | **0.0152** | Multi-planet non-linear resonance coupling |
-| 4 | `Ang_Moon_Uranus` | `Mars_Kakshya` | **0.0142** | Multi-planet non-linear resonance coupling |
-| 5 | `Ang_Sun_Lagna` | `Moon_Sign` | **0.0136** | Multi-planet non-linear resonance coupling |
-| 6 | `Hour_Of_Day` | `Ang_Mars_Rahu` | **0.0134** | Multi-planet non-linear resonance coupling |
-| 7 | `Bhv_Moon_Jupiter` | `Shadbala_Mars_Rupas` | **0.0128** | Multi-planet non-linear resonance coupling |
-| 8 | `Saturn_Speed` | `Saturn_DegInSign` | **0.0126** | Multi-planet non-linear resonance coupling |
-| 9 | `Lagna_NYSE_DegInSign` | `Venus_D60` | **0.0121** | Multi-planet non-linear resonance coupling |
-| 10 | `Saturn_DegInSign` | `Ang_Mars_Rahu` | **0.0113** | Multi-planet non-linear resonance coupling |
+| 1 | `Saturn_DegInSign` | `Lagna_NYSE_DegInSign` | **0.0304** | Multi-planet non-linear resonance coupling |
+| 2 | `Mars_D60` | `Shadbala_Jupiter_Rupas` | **0.0155** | Multi-planet non-linear resonance coupling |
+| 3 | `Ang_Sun_Uranus` | `Shadbala_Jupiter_Rupas` | **0.0147** | Multi-planet non-linear resonance coupling |
+| 4 | `Mars_Kakshya` | `Jaimini_AmK` | **0.0132** | Multi-planet non-linear resonance coupling |
+| 5 | `Ang_Moon_Uranus` | `Mars_Kakshya` | **0.0129** | Multi-planet non-linear resonance coupling |
+| 6 | `Ang_Moon_Rahu` | `Mars_Kakshya` | **0.0129** | Multi-planet non-linear resonance coupling |
+| 7 | `Saturn_Speed` | `Saturn_DegInSign` | **0.0125** | Multi-planet non-linear resonance coupling |
+| 8 | `Hour_Of_Day` | `Ang_Mars_Rahu` | **0.0125** | Multi-planet non-linear resonance coupling |
+| 9 | `Bhv_Mars_Ketu` | `Saturn_D60` | **0.0121** | Multi-planet non-linear resonance coupling |
+| 10 | `Ang_Venus_Pluto` | `Sun_Vargottama` | **0.0107** | Multi-planet non-linear resonance coupling |
 
 ---
 

@@ -90,6 +90,10 @@ DEFAULT_TARGET_LEAKAGE_COLS: set[str] = {
     "MTF_Confluence_Count",
     "Datetime_UTC",
     "Datetime_NY",
+    # Non-classical generational outer planets (excluded from pure classical Vedic modeling)
+    "Uranus_Lon", "Uranus_Speed", "Uranus_Retro", "Uranus_Sign", "Uranus_DegInSign", "Uranus_Nakshatra", "Uranus_Pada", "Uranus_Kakshya", "Uranus_Declination",
+    "Neptune_Lon", "Neptune_Speed", "Neptune_Retro", "Neptune_Sign", "Neptune_DegInSign", "Neptune_Nakshatra", "Neptune_Pada", "Neptune_Kakshya", "Neptune_Declination",
+    "Pluto_Lon", "Pluto_Speed", "Pluto_Retro", "Pluto_Sign", "Pluto_DegInSign", "Pluto_Nakshatra", "Pluto_Pada", "Pluto_Kakshya", "Pluto_Declination",
 }
 
 # -----------------------------------------------------------------------------
