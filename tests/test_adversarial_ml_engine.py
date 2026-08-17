@@ -137,7 +137,8 @@ class TestAdversarialDataLeakageAndPurging:
         for col in DEFAULT_TARGET_LEAKAGE_COLS:
             assert col not in features, f"LEAKAGE ERROR: Target/Market column {col} in features!"
 
-        assert len(features) == 359
+        expected_feature_count = len(df.columns) - len([c for c in DEFAULT_TARGET_LEAKAGE_COLS if c in df.columns])
+        assert len(features) == expected_feature_count
 
     def test_preprocessor_in_sample_fitting_guarantee(self):
         train_df = pd.DataFrame({
