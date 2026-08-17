@@ -26,7 +26,7 @@ from datetime import datetime, timezone
 import math
 
 # ─── Constants ───
-swe.set_sid_mode(swe.SIDM_LAHIRI)
+swe.set_sid_mode(swe.SIDM_LAHIRI, 0.0, 0.0)
 
 BODIES = [
     (swe.SUN, "Sun"), (swe.MOON, "Moon"), (swe.MERCURY, "Mercury"),
@@ -461,3 +461,8 @@ if __name__ == "__main__":
     print("Feature categories:")
     for cat, cnt in sorted(categories.items(), key=lambda x: -x[1]):
         print(f"  {cat:20s} {cnt:5d} features")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

@@ -171,3 +171,8 @@ print(f"Ascendant at {asc_lon:.4f}° in {SIGNS[asc_si]}")
 for pos in sat_rules.get("Ascendant", []):
     tgt_si = (asc_si + pos - 1) % 12
     print(f"  Position {pos} → {SIGNS[tgt_si]}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

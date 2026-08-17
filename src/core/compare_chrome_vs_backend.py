@@ -169,3 +169,8 @@ for label, dt_str in TEST_CASES.items():
     print(f"\n  D9 (Navamsa) - Backend: {backend['D9']}")
     print(f"  D10 (Dasamsa) - Backend: {backend['D10']}")
     print(f"  Moon Nakshatra - Backend: {backend['Moon_Nakshatra']}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

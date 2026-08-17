@@ -2,7 +2,7 @@ import yfinance as yf
 import pandas as pd
 
 tickers = ['SPY', 'BTC-USD']
-df_raw = yf.download(tickers, start="2023-10-01", end="2023-10-10")
+df_raw = yf.download(tickers, start="2023-10-01", end="2023-10-10", auto_adjust=False)
 open_prices = df_raw['Open'].ffill().dropna()
 
 r_open = (open_prices.shift(-1) / open_prices) - 1

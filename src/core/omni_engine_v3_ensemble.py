@@ -18,7 +18,7 @@ def rsi(series, period=2):
 def run_omni_ensemble():
     print("[*] Downloading Data for Omni-Ensemble...")
     tickers = ['UPRO', 'TMF', 'SPY', 'SHV']
-    df = yf.download(tickers, start="2010-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2010-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 
 def run_totm():
     print(f"[*] Downloading Data for Turn of the Month Strategy...")
-    df = yf.download(['SPY', '^IRX'], start="2000-01-01", end="2024-01-01")['Close']
+    df = yf.download(['SPY', '^IRX'], start="2000-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     df = df[df.index.dayofweek < 5] # Strict business days
     

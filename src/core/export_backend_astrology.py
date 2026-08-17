@@ -116,3 +116,8 @@ if __name__ == "__main__":
     with open("backend_astro_verification.json", "w") as f:
         json.dump(results, f, indent=4)
     print("Done!")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

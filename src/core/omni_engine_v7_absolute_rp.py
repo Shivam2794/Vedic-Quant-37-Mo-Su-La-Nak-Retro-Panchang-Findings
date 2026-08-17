@@ -8,14 +8,13 @@ SLIPPAGE_BPS = 5 / 10000
 
 def run_omni_absolute_rp():
     print("[*] Downloading Data for Absolute Risk Parity...")
-    tickers = ['SPY', 'TLT', 'GLD', '^IRX']
-    df = yf.download(tickers, start="2005-01-01", end="2024-01-01")['Close']
+    tickers = ['SPY', 'TLT', 'GLD']
+    df = yf.download(tickers, start="2005-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
     returns = df[['SPY', 'TLT', 'GLD']].pct_change().dropna()
-    daily_cash_yield = (df['^IRX'].loc[returns.index] / 100) / 252
-    daily_cash_yield = daily_cash_yield.fillna(0.0001)
+    daily_cash_yield = 0.02 / 252
     
     # Calculate 12-month (252 day) absolute momentum
     mom_252 = df[['SPY', 'TLT', 'GLD']].pct_change(252).shift(1)

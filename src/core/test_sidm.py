@@ -49,3 +49,8 @@ for sidm in range(40):
         print("-" * 20)
     except Exception as e:
         pass
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

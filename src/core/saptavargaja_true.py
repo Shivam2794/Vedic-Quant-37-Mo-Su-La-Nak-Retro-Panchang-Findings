@@ -205,3 +205,8 @@ for pname in ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]:
     print(f"           {SIGNS[d1][:5]:>6} {SIGNS[d2][:5]:>6} {SIGNS[d3][:5]:>6} {SIGNS[d7][:5]:>6} {SIGNS[d9][:5]:>6} {SIGNS[d12][:5]:>6} {SIGNS[d30][:5]:>6}")
     print(f"           {r1[:5]:>6} {r2[:5]:>6} {r3[:5]:>6} {r7[:5]:>6} {r9[:5]:>6} {r12[:5]:>6} {r30[:5]:>6}")
     print()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

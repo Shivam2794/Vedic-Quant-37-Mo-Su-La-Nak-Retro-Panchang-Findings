@@ -19,7 +19,7 @@ def aggressive_patcher():
                 orig_content = content
                 
                 # 1. YFinance Leakage Fix
-                # Find yf.download(...) and inject auto_adjust=False if neither True nor False is present
+                # Find yf.download(..., auto_adjust=False) and inject auto_adjust=False if neither True nor False is present
                 def yf_replacer(m):
                     call = m.group(0)
                     if "auto_adjust=False" in call or "auto_adjust=True" in call:

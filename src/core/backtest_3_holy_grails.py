@@ -26,7 +26,7 @@ def backtest_drift_regime():
                "PG","JNJ","XOM","CVX","HD","MA","V","UNH","ABBV","LLY"]
     
     try:
-        data = yf.download(tickers, start="2015-01-01", end="2024-01-01", progress=False)['Close']
+        data = yf.download(tickers, start="2015-01-01", end="2024-01-01", progress=False, auto_adjust=False)['Close']
     except Exception as e:
         print(f"Error downloading data: {e}")
         return
@@ -70,7 +70,7 @@ def backtest_drift_regime():
 def backtest_relief_rotation():
     print("[*] Backtesting Strategy #2: Relief-Gated Relative Rotation (QQQ-DIA)")
     try:
-        data = yf.download(["QQQ", "DIA", "^VIX", "^TNX"], start="2015-01-01", end="2024-01-01", progress=False)['Close']
+        data = yf.download(["QQQ", "DIA", "^VIX", "^TNX"], start="2015-01-01", end="2024-01-01", progress=False, auto_adjust=False)['Close']
     except Exception as e:
         print(f"Error downloading data: {e}")
         return
@@ -121,7 +121,7 @@ def backtest_relief_rotation():
 def backtest_gold_atr():
     print("[*] Backtesting Strategy #3: Forecast-to-Fill Gold (GLD)")
     try:
-        data = yf.download(["GLD"], start="2015-01-01", end="2024-01-01", progress=False)
+        data = yf.download(["GLD"], start="2015-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     except Exception as e:
         print(f"Error downloading data: {e}")
         return

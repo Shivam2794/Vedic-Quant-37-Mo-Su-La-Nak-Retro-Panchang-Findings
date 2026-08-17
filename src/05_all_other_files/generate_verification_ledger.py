@@ -115,3 +115,8 @@ df = pd.DataFrame(verification_data)
 out_file = r"C:\Users\Shivam Patel\.gemini\antigravity\scratch\external_audit_sheet.csv"
 df.to_csv(out_file, index=False)
 print(f"Verification Ledger generated: {out_file}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

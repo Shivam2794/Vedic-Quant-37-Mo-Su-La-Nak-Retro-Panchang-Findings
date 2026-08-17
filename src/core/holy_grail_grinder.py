@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 # ---------------------------------------------------------
 def get_traditional_data():
     tickers = ['SPY', 'QQQ', 'GLD', 'TLT', 'UPRO', 'TMF', 'SHY', 'BIL']
-    df_raw = yf.download(tickers, start="2005-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(tickers, start="2005-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     df_raw = df_raw.ffill()
     close_p = df_raw['Close'].dropna()
     returns = close_p.pct_change().dropna()

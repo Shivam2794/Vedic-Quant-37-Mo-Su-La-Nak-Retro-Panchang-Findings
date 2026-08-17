@@ -134,13 +134,13 @@ def main():
     print("[2b] Fetching VIX and QQQ data...")
     min_date = ret_df['date'].min()
     max_date = ret_df['date'].max()
-    vix = yf.download("^VIX", start=min_date, end=max_date, progress=False)
+    vix = yf.download("^VIX", start=min_date, end=max_date, progress=False, auto_adjust=False)
     vix_close = vix['Close'].to_frame('VIX')
     vix_close.index = pd.to_datetime(vix_close.index).date
     vix_close = vix_close.rename_axis('join_date').reset_index()
     print(f"    VIX rows: {len(vix_close)}")
     
-    qqq = yf.download("QQQ", start=min_date, end=max_date, progress=False)
+    qqq = yf.download("QQQ", start=min_date, end=max_date, progress=False, auto_adjust=False)
     qqq_close = qqq['Close'].to_frame('QQQ')
     qqq_close.index = pd.to_datetime(qqq_close.index).date
     qqq_close = qqq_close.rename_axis('join_date').reset_index()

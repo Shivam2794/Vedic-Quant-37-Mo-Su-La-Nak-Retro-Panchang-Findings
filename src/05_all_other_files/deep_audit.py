@@ -233,3 +233,8 @@ print(f"  Total Checks: {total_checks}")
 print(f"  Mismatches:   {total_mismatches}")
 print(f"  Match Rate:   {((total_checks - total_mismatches)/total_checks)*100:.1f}%")
 print(f"{'='*110}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

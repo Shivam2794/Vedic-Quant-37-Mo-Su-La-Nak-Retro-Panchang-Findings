@@ -46,8 +46,8 @@ BARRIER_BARS = 6  # 6 Hours Hold
 
 def fetch_pair_data(asset, benchmark, market):
     print(f"\n[1] Fetching 2 YEARS (1h) data for {asset}/{benchmark} spread...")
-    df_asset = yf.download(asset, period="730d", interval="1h", progress=False)
-    df_bench = yf.download(benchmark, period="730d", interval="1h", progress=False)
+    df_asset = yf.download(asset, period="730d", interval="1h", progress=False, auto_adjust=False)
+    df_bench = yf.download(benchmark, period="730d", interval="1h", progress=False, auto_adjust=False)
     
     if df_asset.empty or df_bench.empty: raise ValueError("No data returned")
     

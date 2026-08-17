@@ -237,3 +237,8 @@ if __name__ == "__main__":
             build_dual_matrix(ticker, dates, df_base)
         except Exception as e:
             print(f"Error on {ticker}: {e}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

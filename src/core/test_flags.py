@@ -39,3 +39,8 @@ for name, flags in [("Geocentric", flags_geocentric), ("Topocentric", flags_topo
     print(f"Jup: {pos_jup:.3f} (diff {pos_jup - targets['Jupiter']:.3f})")
     print(f"Asc: {asc:.3f} (diff {asc - targets['Asc']:.3f})")
     print("Total abs diff:", diff_sun+diff_moon+diff_mars+diff_jup+diff_asc)
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

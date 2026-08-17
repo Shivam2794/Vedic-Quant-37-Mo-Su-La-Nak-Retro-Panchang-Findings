@@ -243,3 +243,8 @@ for case_label, case_data in CHROME_CASES.items():
 print(f"\n{'='*110}")
 print(f"  GRAND TOTAL: {total_pass} PASS / {total_fail} FAIL  ({total_pass/(total_pass+total_fail)*100:.1f}% match rate)")
 print(f"{'='*110}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

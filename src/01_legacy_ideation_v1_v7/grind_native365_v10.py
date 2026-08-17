@@ -12,7 +12,7 @@ warnings.filterwarnings('ignore')
 def get_data():
     assets = ['BTC-USD', 'GLD', 'SPY']
     tickers = assets + ['^IRX']
-    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     biz_idx = df_raw['Close']['SPY'].dropna().index
     
     # Raw 365-day BTC series before ffill

@@ -21,7 +21,7 @@ etf_natal_memory = {}
 
 for t in tickers:
     try:
-        data = yf.download(t, period="max", progress=False)
+        data = yf.download(t, period="max", progress=False, auto_adjust=False)
         if len(data) == 0:
             print(f"Failed to fetch data for {t}")
             continue

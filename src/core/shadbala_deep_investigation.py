@@ -415,3 +415,8 @@ for p in PLANETS:
     print(f"  Natho:{natho:.1f} Paksha:{paksha:.1f} Tribha:{tribha:.1f} Vara:{vara:.1f} Hora:{hora:.1f} Ayana:{ayana:.1f} | Kala={kala:.1f}")
     print(f"  Chesta:{chesta:.1f} Naisar:{naisar:.2f}")
     print(f"  TOTAL Virupas: {total_virupas:.1f} | Rupas: {total_rupas} | Chrome: {exp} | Diff: {diff}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

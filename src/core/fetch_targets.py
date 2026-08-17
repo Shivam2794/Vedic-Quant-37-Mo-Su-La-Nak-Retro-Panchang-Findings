@@ -14,7 +14,7 @@ def fetch_and_merge():
     # We will fetch data from 1999 to 2026 to cover all snapshots
     # To save time and API calls, we download the massive dataframe once
     print("Downloading YF data...")
-    yf_data = yf.download(list(unique_tickers), start="1999-01-01", end="2026-12-31", progress=False)
+    yf_data = yf.download(list(unique_tickers), start="1999-01-01", end="2026-12-31", progress=False, auto_adjust=False)
     
     # yfinance returns a multi-index column df if multiple tickers are passed
     # columns are (PriceType, Ticker). We want 'Adj Close'

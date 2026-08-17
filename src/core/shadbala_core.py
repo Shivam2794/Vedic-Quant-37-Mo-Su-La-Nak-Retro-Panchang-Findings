@@ -336,3 +336,8 @@ def calc_shadbala(planets, asc_lon, sun_lon, moon_lon, jd, mc_lon):
         shadbala[p] = {"total_rupas": total_rupas, "required_rupas": REQUIRED_RUPAS[p], "ratio": ratio, "breakdown": breakdown}
         
     return shadbala
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

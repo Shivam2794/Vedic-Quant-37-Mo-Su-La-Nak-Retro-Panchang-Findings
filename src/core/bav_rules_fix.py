@@ -169,3 +169,8 @@ else:
     # Print the BPHS reference for the fixed rules
     print("\nNote: The remaining SAV mismatches are likely due to Chrome using different")
     print("      planet positions (different Ayanamsha or geographic location).")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

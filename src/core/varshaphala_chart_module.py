@@ -192,3 +192,8 @@ if __name__ == "__main__":
     print(f"Muntha Sign (Raw): {res['muntha_sign_raw']} (Expected: 4 for Yr 1)")
     print(f"Varshapati Scores (Sun=0, ..., Saturn=6): \n{res['varshapati_simplified_scores'][:7]}")
     print("[VALIDATION] varshaphala_chart_module PASSED.")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

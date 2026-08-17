@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 
 def run_path1_latency_test():
     print("[*] PATH 1: Institutional Latency & Execution Stress Test...")
-    df_raw = yf.download(['BTC-USD', 'SPY', '^IRX'], start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(['BTC-USD', 'SPY', '^IRX'], start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     
     biz_idx = df_raw['Close']['SPY'].dropna().index
     df_raw = df_raw.ffill()

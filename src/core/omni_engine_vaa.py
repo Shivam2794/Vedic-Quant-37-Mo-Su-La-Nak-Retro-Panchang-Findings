@@ -13,7 +13,7 @@ def run_vaa():
     tickers = offensive + defensive
     
     # AGG inception 2003, EEM 2003
-    df = yf.download(tickers, start="2005-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2005-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

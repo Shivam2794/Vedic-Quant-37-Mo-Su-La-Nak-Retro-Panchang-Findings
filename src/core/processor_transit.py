@@ -119,3 +119,8 @@ def check_tarabala_ghatis(current_jd, nak_start_jd, tara_type):
     
     # Example logic placeholder
     return elapsed_minutes < 120.0
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

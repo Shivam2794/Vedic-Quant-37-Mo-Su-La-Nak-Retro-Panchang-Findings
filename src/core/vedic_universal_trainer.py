@@ -30,8 +30,8 @@ PAIRS = {
 }
 
 def fetch_pair_data(asset, benchmark):
-    df_asset = yf.download(asset, period="730d", interval="1h", progress=False)
-    df_bench = yf.download(benchmark, period="730d", interval="1h", progress=False)
+    df_asset = yf.download(asset, period="730d", interval="1h", progress=False, auto_adjust=False)
+    df_bench = yf.download(benchmark, period="730d", interval="1h", progress=False, auto_adjust=False)
     
     if df_asset.empty or df_bench.empty: return None
     

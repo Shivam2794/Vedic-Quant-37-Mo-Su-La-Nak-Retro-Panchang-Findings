@@ -140,7 +140,7 @@ if __name__ == '__main__':
         df = pd.read_parquet(f'{ticker}_daily_V17_raw.parquet')
     except:
         print("Raw data not found, downloading...")
-        df = yf.download(ticker, start="1993-01-29", end="2026-07-28")
+        df = yf.download(ticker, start="1993-01-29", end="2026-07-28", auto_adjust=False)
         if isinstance(df.columns, pd.MultiIndex):
             df.columns = df.columns.droplevel(1)
         df = df[['Close', 'High', 'Low', 'Open', 'Volume']].copy()

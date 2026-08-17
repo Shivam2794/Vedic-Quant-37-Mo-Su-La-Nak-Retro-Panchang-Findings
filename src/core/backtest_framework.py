@@ -21,7 +21,7 @@ def load_data():
     tqqq = tqqq.between_time('09:30', '15:59')
     
     # Load daily VIX
-    vix = yf.download('^VIX', start=qqq.index.min().strftime('%Y-%m-%d'), end=(qqq.index.max() + pd.Timedelta(days=5)).strftime('%Y-%m-%d'))
+    vix = yf.download('^VIX', start=qqq.index.min().strftime('%Y-%m-%d'), end=(qqq.index.max() + pd.Timedelta(days=5)).strftime('%Y-%m-%d'), auto_adjust=False)
     vix.index = pd.to_datetime(vix.index).tz_localize('US/Eastern')
     vix = vix.reindex(qqq.index, method='ffill')
     

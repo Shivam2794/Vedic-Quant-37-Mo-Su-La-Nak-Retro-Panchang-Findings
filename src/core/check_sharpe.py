@@ -3,7 +3,7 @@ import numpy as np
 import yfinance as yf
 
 # Get data
-df = yf.download(['SPY', 'QQQ'], start='1999-01-01', progress=False)['Close']
+df = yf.download(['SPY', 'QQQ'], start='1999-01-01', progress=False, auto_adjust=False)['Close']
 df = df.ffill().bfill()
 rets = df.pct_change().fillna(0)
 

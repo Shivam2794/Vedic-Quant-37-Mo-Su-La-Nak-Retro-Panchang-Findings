@@ -406,3 +406,8 @@ with open(out, 'w', encoding='utf-8') as f:
     f.write('\n'.join(lines))
 
 print(f"Written {len(lines)} lines to {out}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

@@ -529,3 +529,8 @@ total = total_pass+total_fail
 if total>0:
     print(f"ACCURACY: {total_pass/total*100:.2f}%")
 print("="*70)
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

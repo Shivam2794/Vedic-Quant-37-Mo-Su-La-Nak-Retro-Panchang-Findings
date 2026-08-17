@@ -9,7 +9,7 @@ warnings.filterwarnings('ignore')
 def get_data():
     print("Downloading historical data (Adj Close) for V25 Multi-Asset Grinder...")
     tickers = ["SPY", "QQQ", "TLT", "^IRX"]  # IRX is 13-week treasury bill (risk free rate)
-    df = yf.download(tickers, start="2005-01-01", end="2026-12-31")['Close']
+    df = yf.download(tickers, start="2005-01-01", end="2026-12-31", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     
     # Convert IRX from annualized percentage (e.g. 5.0 for 5%) to daily return equivalent

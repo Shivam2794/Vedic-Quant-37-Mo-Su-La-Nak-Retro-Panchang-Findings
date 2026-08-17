@@ -34,7 +34,7 @@ def generate_report():
     print(f"OOS Duration: {start_date.date()} to {end_date.date()}")
     
     # Download benchmark SPY
-    benchmark = yf.download("SPY", start=start_date, end=end_date)
+    benchmark = yf.download("SPY", start=start_date, end=end_date, auto_adjust=False)
     benchmark['Daily_Ret'] = benchmark['Close'].pct_change().fillna(0)
     benchmark['Equity'] = (1 + benchmark['Daily_Ret']).cumprod()
     

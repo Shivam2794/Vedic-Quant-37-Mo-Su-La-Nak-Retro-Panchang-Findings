@@ -157,3 +157,8 @@ print("Ketu in SPY: Taurus 25.15°, part=8, start=1(Taurus itself), (1+8)%12=9=C
 print("Hmm. Ketu opposite of Rahu → Taurus opposite is Scorpio (7), (7+8)%12=15%12=3=Cancer ✓!")
 print("\nCONCLUSION: For D10, Rahu uses the sign of KETU (opposite) and Ketu uses sign of RAHU (opposite)")
 print("This is the 'shadow planet' rule for D10 in some schools.")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

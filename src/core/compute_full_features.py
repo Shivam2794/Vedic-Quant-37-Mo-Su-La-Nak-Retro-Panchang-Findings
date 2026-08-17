@@ -314,3 +314,8 @@ with open("backend_full_features.json", "w", encoding="utf-8") as f:
     json.dump(all_results, f, indent=2, default=str, ensure_ascii=False)
 
 print(f"\n\nAll results saved to backend_full_features.json ({len(all_results)} entries)")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 
 def run_overnight_drift():
     print(f"[*] Downloading Data for Overnight Drift Strategy...")
-    df_raw = yf.download(['SPY', '^IRX'], start="2000-01-01", end="2024-01-01")
+    df_raw = yf.download(['SPY', '^IRX'], start="2000-01-01", end="2024-01-01", auto_adjust=False)
     
     close_prices = df_raw['Close']['SPY'].dropna()
     open_prices = df_raw['Open']['SPY'].dropna()

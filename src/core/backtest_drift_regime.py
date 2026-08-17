@@ -5,7 +5,7 @@ import numpy as np
 def backtest_drift_regimes():
     print("Fetching data for a basket of large-cap tech and finance stocks...")
     tickers = ["AAPL", "MSFT", "GOOG", "AMZN", "META", "TSLA", "NVDA", "JPM", "BAC", "WFC"]
-    data = yf.download(tickers, start="2015-01-01", end="2025-01-01")['Close']
+    data = yf.download(tickers, start="2015-01-01", end="2025-01-01", auto_adjust=False)['Close']
     
     # Calculate daily returns
     returns = data.pct_change()

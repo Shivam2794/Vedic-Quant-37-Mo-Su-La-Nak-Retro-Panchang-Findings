@@ -18,16 +18,15 @@ def rsi(series, period=2):
 def run_omni_connors_basket():
     print("[*] Downloading Data for Connors Mean Reversion Basket...")
     # Diverse non-correlated ETFs + VIX + IRX
-    tickers = ['SPY', 'QQQ', 'IWM', 'EFA', 'EEM', 'GLD', 'TLT', 'LQD', 'VNQ', 'XLE', '^VIX', '^IRX']
-    df = yf.download(tickers, start="2007-01-01", end="2024-01-01")['Close']
+    tickers = ['SPY', 'QQQ', 'IWM', 'EFA', 'EEM', 'GLD', 'TLT', 'LQD', 'VNQ', 'XLE', '^VIX']
+    df = yf.download(tickers, start="2007-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     
     etfs = ['SPY', 'QQQ', 'IWM', 'EFA', 'EEM', 'GLD', 'TLT', 'LQD', 'VNQ', 'XLE']
     
     returns = df[etfs].pct_change().dropna()
     vix = df['^VIX'].loc[returns.index]
-    daily_cash_yield = (df['^IRX'].loc[returns.index] / 100) / 252
-    daily_cash_yield = daily_cash_yield.fillna(0.0001)
+    daily_cash_yield = 0.02 / 252
     
     weights = pd.DataFrame(0.0, index=returns.index, columns=etfs)
     

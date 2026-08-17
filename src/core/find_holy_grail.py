@@ -4,7 +4,7 @@ import numpy as np
 
 def test_risk_parity():
     print("Fetching QQQ, TLT data...")
-    df = yf.download(['QQQ', 'TLT'], start='2010-01-01', end='2026-12-31')
+    df = yf.download(['QQQ', 'TLT'], start='2010-01-01', end='2026-12-31', auto_adjust=False)
     if isinstance(df.columns, pd.MultiIndex):
         close = df['Close']
     else:

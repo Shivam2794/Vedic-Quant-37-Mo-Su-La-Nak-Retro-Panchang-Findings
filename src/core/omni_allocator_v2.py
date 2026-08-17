@@ -18,7 +18,7 @@ def rsi(series, period=2):
 def run_omni_allocator_v2():
     print("[*] Downloading Data for Omni-Allocator v2...")
     tickers = ['SPY', '^VIX', '^VIX3M', 'SVXY', 'VIXY', '^IRX', 'BTC-USD']
-    df = yf.download(tickers, start="2014-09-17", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2014-09-17", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

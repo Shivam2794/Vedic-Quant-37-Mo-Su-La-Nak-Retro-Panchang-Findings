@@ -39,7 +39,7 @@ def generate_report():
     print(f"OOS Duration: {start_date.date()} to {end_date.date()}")
     
     # Download benchmark SPY
-    benchmark = yf.download("SPY", start=start_date, end=end_date)
+    benchmark = yf.download("SPY", start=start_date, end=end_date, auto_adjust=False)
     if isinstance(benchmark.columns, pd.MultiIndex):
         benchmark.columns = benchmark.columns.droplevel(1)
         

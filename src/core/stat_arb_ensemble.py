@@ -16,7 +16,7 @@ def rsi(series, period=2):
 def run_stat_arb():
     tickers = ['SPY', 'QQQ', 'TLT', 'GLD', 'LQD', 'HYG', 'VNQ', 'XLE', 'XLF', 'XLK', 'XLV', 'XLU', '^IRX']
     print(f"[*] Downloading Data for {len(tickers)-1} assets...")
-    df = yf.download(tickers, start="2010-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2010-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     df = df[df.index.dayofweek < 5] # Strict business days

@@ -167,7 +167,7 @@ def backtest_deep_mean_reversion(data):
 def main():
     print("Downloading 20 Years of Market Data (SPY, QQQ, GLD, TLT, IWM, EFA)...")
     tickers = ['SPY', 'QQQ', 'GLD', 'TLT', 'IWM', 'EFA']
-    data = yf.download(tickers, start='2005-01-01', end='2026-07-07')['Close']
+    data = yf.download(tickers, start='2005-01-01', end='2026-07-07', auto_adjust=False)['Close']
     
     # Calculate baseline QQQ
     qqq = data['QQQ'].dropna()

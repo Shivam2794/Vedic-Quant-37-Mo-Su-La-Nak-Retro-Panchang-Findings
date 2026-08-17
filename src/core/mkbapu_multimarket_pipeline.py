@@ -137,7 +137,7 @@ def ephemeris_self_test():
 # ═══════════════════════════════════════════════════════════════════════
 def fetch_and_validate(asset_name, ticker, cfg):
     print(f"\n  Fetching {asset_name} ({ticker})...")
-    df = yf.download(ticker, interval="15m", period="60d", progress=False)
+    df = yf.download(ticker, interval="15m", period="60d", progress=False, auto_adjust=False)
     if df.empty:
         print(f"  {FAIL} Empty data for {ticker}")
         return None
@@ -853,3 +853,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

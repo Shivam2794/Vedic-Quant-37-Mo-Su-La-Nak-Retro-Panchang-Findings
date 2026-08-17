@@ -333,3 +333,8 @@ df.drop(columns=[
 df.to_parquet(SUPREME_OUTPUT, index=False)
 print(f"\n[SUCCESS] Supreme Matrix built with exactly {len(df.columns)} features.")
 print(f"Saved to: {SUPREME_OUTPUT}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

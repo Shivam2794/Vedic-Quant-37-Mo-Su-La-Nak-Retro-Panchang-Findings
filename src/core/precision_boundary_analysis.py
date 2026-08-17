@@ -226,3 +226,8 @@ for dt_str, planet, chrome_expected, label in D9_CONFIRMED_FAILURES:
                 needed_lon = needed_nav_int * (10.0/3.0)
                 print(f"  => Chrome requires nav_int={needed_nav_int} (offset={offset:+d}), corresponding to lon={needed_lon:.2f} ({SIGNS[int(needed_lon/30)%12]} {int(needed_lon%30):.0f}°)")
         print(f"  => NO FORMULA MATCHES")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

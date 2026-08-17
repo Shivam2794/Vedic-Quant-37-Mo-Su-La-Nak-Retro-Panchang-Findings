@@ -21,7 +21,7 @@ def load_data():
     df = df.dropna()
     
     # Load daily VIX
-    vix = yf.download('^VIX', start=df.index.min().strftime('%Y-%m-%d'), end=(df.index.max() + pd.Timedelta(days=5)).strftime('%Y-%m-%d'))
+    vix = yf.download('^VIX', start=df.index.min().strftime('%Y-%m-%d'), end=(df.index.max() + pd.Timedelta(days=5)).strftime('%Y-%m-%d'), auto_adjust=False)
     vix.index = pd.to_datetime(vix.index).tz_localize('US/Eastern')
     vix = vix.reindex(df.index, method='ffill')
     df['VIX'] = vix['Close'].values

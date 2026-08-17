@@ -7,7 +7,7 @@ warnings.filterwarnings('ignore')
 def run_cross_sectional_momentum():
     tickers = ['XLK', 'XLV', 'XLF', 'XLY', 'XLI', 'XLP', 'XLE', 'XLU', 'XLB', '^IRX'] # Excluded XLC, XLRE due to shorter history
     print(f"[*] Downloading Data for Cross-Sectional Momentum...")
-    df = yf.download(tickers, start="2005-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2005-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     df = df[df.index.dayofweek < 5] # Strict business days

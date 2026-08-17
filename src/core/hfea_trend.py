@@ -8,7 +8,7 @@ def run_hfea_trend():
     tickers = ['UPRO', 'TMF', 'SPY', 'TLT', '^IRX']
     print(f"[*] Downloading Data for HFEA Trend...")
     # TQQQ, UPRO, TMF started around 2010. Let's use 2011 to be safe.
-    df = yf.download(tickers, start="2011-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2011-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     df = df[df.index.dayofweek < 5] # Strict business days

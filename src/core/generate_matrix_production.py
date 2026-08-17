@@ -276,6 +276,12 @@ def process_ticker(ticker, engine, rule_funcs, sky_cache):
         df[f"{col}_sin"] = np.sin(rad)
         df[f"{col}_cos"] = np.cos(rad)
 
+    # CRITICAL BUG FIX #13: Unwrap phase angles
+    if "moon_phase" in df.columns:
+        # moon_phase is 0 to 1. Convert to radians, unwrap, convert back.
+        rad_phase = df["moon_phase"] * 2 * np.pi
+        df["moon_phase_unwrapped"] = np.unwrap(rad_phase) / (2 * np.pi)
+        
     df['year'] = df['date'].dt.year
 
     table = pa.Table.from_pandas(df)

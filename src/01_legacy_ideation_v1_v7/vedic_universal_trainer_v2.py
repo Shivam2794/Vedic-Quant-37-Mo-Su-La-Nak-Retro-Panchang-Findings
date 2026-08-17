@@ -175,8 +175,8 @@ for asset_name, (ticker, bench, BARRIER, planet_kws) in ASSET_CONFIG.items():
     print(f"\n--- Training {asset_name} (barrier={BARRIER}h, "
           f"rulers={'|'.join(planet_kws) if planet_kws else 'ALL'}) ---")
     try:
-        df_a = yf.download(ticker, period="730d", interval="1h", progress=False)
-        df_b = yf.download(bench,  period="730d", interval="1h", progress=False)
+        df_a = yf.download(ticker, period="730d", interval="1h", progress=False, auto_adjust=False)
+        df_b = yf.download(bench,  period="730d", interval="1h", progress=False, auto_adjust=False)
     except Exception as e:
         print(f"   Download failed: {e}"); continue
     if df_a.empty or df_b.empty:

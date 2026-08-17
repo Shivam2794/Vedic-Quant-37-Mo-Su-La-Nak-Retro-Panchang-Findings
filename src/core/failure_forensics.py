@@ -101,8 +101,8 @@ for asset_name, (ticker, bench) in ASSETS.items():
 
     # Fetch price data
     try:
-        df_a = yf.download(ticker, period="730d", interval="1h", progress=False)
-        df_b = yf.download(bench,  period="730d", interval="1h", progress=False)
+        df_a = yf.download(ticker, period="730d", interval="1h", progress=False, auto_adjust=False)
+        df_b = yf.download(bench,  period="730d", interval="1h", progress=False, auto_adjust=False)
     except: continue
     if df_a.empty or df_b.empty: continue
     if isinstance(df_a.columns, pd.MultiIndex): df_a.columns = df_a.columns.get_level_values(0)

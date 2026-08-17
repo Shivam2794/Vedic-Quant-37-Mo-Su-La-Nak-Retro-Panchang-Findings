@@ -87,8 +87,8 @@ def load_asset_models(asset_name):
 
 def fetch_sync_price(asset, benchmark, lookback_bars=50):
     """Fetch latest hourly bars and compute spread close."""
-    da = yf.download(asset,     period="5d", interval="1h", progress=False)
-    db = yf.download(benchmark, period="5d", interval="1h", progress=False)
+    da = yf.download(asset,     period="5d", interval="1h", progress=False, auto_adjust=False)
+    db = yf.download(benchmark, period="5d", interval="1h", progress=False, auto_adjust=False)
     if da.empty or db.empty: return None, None, None, None
     if isinstance(da.columns, pd.MultiIndex): da.columns = da.columns.get_level_values(0)
     if isinstance(db.columns, pd.MultiIndex): db.columns = db.columns.get_level_values(0)

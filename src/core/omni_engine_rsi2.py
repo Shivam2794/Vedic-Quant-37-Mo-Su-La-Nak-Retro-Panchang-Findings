@@ -17,7 +17,7 @@ def rsi(series, period=2):
 
 def run_connors_rsi2():
     print("[*] Downloading SPY & TLT Data...")
-    df = yf.download(['SPY', 'TLT'], start="2005-01-01", end="2024-01-01")['Close']
+    df = yf.download(['SPY', 'TLT'], start="2005-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

@@ -14,7 +14,7 @@ def get_traditional_data():
     """
     tickers = ['SPY', 'QQQ', 'GLD', 'TLT', 'UPRO', 'TMF', 'SHY']
     print("Downloading data...")
-    df_raw = yf.download(tickers, start="2005-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(tickers, start="2005-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     
     # Forward fill to handle any gaps, drop initial NaNs
     df_raw = df_raw.ffill()

@@ -10,7 +10,7 @@ def run_v7_optimizer():
     print(f"[*] Downloading Data for Massive Diversified Optimizer...")
     
     # Download data
-    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     close_prices = df_raw['Close'].ffill().dropna()
     open_prices = df_raw['Open'].ffill().dropna()
     

@@ -605,3 +605,8 @@ if total > 0:
     acc = total_pass / total * 100
     print(f"  ACCURACY:   {acc:.2f}%")
 print("="*80)
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

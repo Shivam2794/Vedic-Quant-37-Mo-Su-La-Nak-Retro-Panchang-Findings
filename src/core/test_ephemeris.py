@@ -44,3 +44,8 @@ pada = int((ketu_lon % (360/27)) / (360/108)) + 1
 print(f"  {'Ketu':10s} {ketu_lon:8.3f}  {sign:12s} {nak:15s} P{pada}")
 
 print("\nSwiss Ephemeris engine: OPERATIONAL")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

@@ -274,3 +274,8 @@ def generate_all():
 
 if __name__ == "__main__":
     generate_all()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

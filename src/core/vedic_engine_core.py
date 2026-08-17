@@ -149,3 +149,8 @@ class VedicAstrologyEngine:
             "D10_dasamsa": div["D10_dasamsa"],
             "ashtakvarga": ashtakvarga
         }
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

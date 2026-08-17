@@ -377,24 +377,17 @@ def get_nakshatra(lon_deg: float) -> Dict[str, Any]:
         Dictionary containing Nakshatra number (1-27), name, Pada (1-4), Lord, Deity, Gana, and Global Pada (0-107).
     """
     lon = float(lon_deg) % 360.0
-    nak_idx = int(np.floor(lon / NAKSHATRA_SPAN))
-    nak_idx = min(max(nak_idx, 0), 26)
+    global_pada = int(np.floor(((lon % 360.0) + 1e-9) / PADA_SPAN)) % 108
+    nak_idx = global_pada // 4
+    pada = (global_pada % 4) + 1
 
     nak_info = NAKSHATRA_METADATA[nak_idx]
-
-    # Pada within Nakshatra: 1, 2, 3, 4
-    pada_in_nak = int(np.floor((lon % NAKSHATRA_SPAN) / PADA_SPAN)) + 1
-    pada_in_nak = min(max(pada_in_nak, 1), 4)
-
-    # Global Pada across zodiac: 0 to 107
-    global_pada = int(np.floor(lon / PADA_SPAN))
-    global_pada = min(max(global_pada, 0), 107)
 
     return {
         "nakshatra_num": nak_info["index"],
         "nakshatra_name": nak_info["name"],
         "sanskrit": nak_info["sanskrit"],
-        "pada": pada_in_nak,
+        "pada": pada,
         "global_pada": global_pada,
         "lord": nak_info["lord"],
         "deity": nak_info["deity"],
@@ -418,14 +411,9 @@ def get_nakshatra_batch(lons: Union[np.ndarray, pd.Series, List[float]]) -> pd.D
         DataFrame with columns: Nakshatra_Num, Nakshatra_Name, Pada, Global_Pada, Nakshatra_Lord, Deity, Gana.
     """
     lons_arr = np.asarray(lons, dtype=np.float64) % 360.0
-    nak_indices = np.floor(lons_arr / NAKSHATRA_SPAN).astype(int)
-    nak_indices = np.clip(nak_indices, 0, 26)
-
-    padas = (np.floor((lons_arr % NAKSHATRA_SPAN) / PADA_SPAN).astype(int) + 1)
-    padas = np.clip(padas, 1, 4)
-
-    global_padas = np.floor(lons_arr / PADA_SPAN).astype(int)
-    global_padas = np.clip(global_padas, 0, 107)
+    global_padas = (np.floor((lons_arr + 1e-9) / PADA_SPAN).astype(int)) % 108
+    nak_indices = global_padas // 4
+    padas = (global_padas % 4) + 1
 
     names = [NAKSHATRA_METADATA[idx]["name"] for idx in nak_indices]
     lords = [NAKSHATRA_METADATA[idx]["lord"] for idx in nak_indices]
@@ -463,8 +451,9 @@ def get_navamsha(lon_deg: float) -> Dict[str, Any]:
         Dictionary with Navamsha sign index (0-11), sign name, ruling lord, D1 Rasi sign, and Vargottama boolean.
     """
     lon = float(lon_deg) % 360.0
-    nav_idx = int(np.floor(lon / PADA_SPAN)) % 12
-    rasi_idx = int(np.floor(lon / RASI_SPAN)) % 12
+    global_pada = int(np.floor(((lon % 360.0) + 1e-9) / PADA_SPAN)) % 108
+    nav_idx = global_pada % 12
+    rasi_idx = int(np.floor(((lon % 360.0) + 1e-9) / RASI_SPAN)) % 12
 
     return {
         "navamsha_sign_num": nav_idx,
@@ -491,8 +480,9 @@ def get_navamsha_batch(lons: Union[np.ndarray, pd.Series, List[float]]) -> pd.Da
         DataFrame with columns: Navamsha_Sign_Num, Navamsha_Sign_Name, Navamsha_Lord, Rasi_Sign_Num, Rasi_Sign_Name, Is_Vargottama.
     """
     lons_arr = np.asarray(lons, dtype=np.float64) % 360.0
-    nav_indices = (np.floor(lons_arr / PADA_SPAN).astype(int)) % 12
-    rasi_indices = (np.floor(lons_arr / RASI_SPAN).astype(int)) % 12
+    global_padas = (np.floor((lons_arr + 1e-9) / PADA_SPAN).astype(int)) % 108
+    nav_indices = global_padas % 12
+    rasi_indices = (np.floor((lons_arr + 1e-9) / RASI_SPAN).astype(int)) % 12
 
     nav_names = [RASI_NAMES[i] for i in nav_indices]
     nav_lords = [RASI_LORDS[i] for i in nav_indices]

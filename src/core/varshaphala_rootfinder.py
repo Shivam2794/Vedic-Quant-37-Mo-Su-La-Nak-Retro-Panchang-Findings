@@ -137,3 +137,8 @@ if __name__ == "__main__":
         print(f"  Year {i}: JD={sr_jd:.6f}, Sun={actual_lon:.6f} deg, err={diff:.2e} deg")
         assert diff < TOLERANCE_DEG * 5, f"FAIL: Year {i} error {diff} exceeds tolerance!"
     print("[VALIDATION] varshaphala_rootfinder PASSED.")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

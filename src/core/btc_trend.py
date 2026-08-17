@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 
 def run_btc_trend():
     print(f"[*] Downloading Data for BTC...")
-    df = yf.download(['BTC-USD', '^IRX'], start="2014-01-01", end="2024-01-01")['Close']
+    df = yf.download(['BTC-USD', '^IRX'], start="2014-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     df = df[df.index.dayofweek < 5] # Strict business days
     

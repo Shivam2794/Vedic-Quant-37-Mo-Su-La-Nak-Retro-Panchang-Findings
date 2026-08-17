@@ -26,7 +26,7 @@ class ExtremeMarketFilter:
         start_date = end_date - timedelta(days=self.years * 365.25)
         
         print(f"Downloading data for {self.tickers} from {start_date.date()} to {end_date.date()}...")
-        df = yf.download(self.tickers, start=start_date.strftime('%Y-%m-%d'), end=end_date.strftime('%Y-%m-%d'))
+        df = yf.download(self.tickers, start=start_date.strftime('%Y-%m-%d'), end=end_date.strftime('%Y-%m-%d'), auto_adjust=False)
         
         if 'Adj Close' in df.columns:
             self.data = df['Adj Close']

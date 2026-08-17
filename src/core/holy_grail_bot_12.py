@@ -39,7 +39,7 @@ UNIVERSE = ["SPY", "QQQ", "IWM", "TQQQ", "UPRO", "XLK", "XLE", "GLD", "TLT"]
 
 def fetch_historical_prices(universe, days=250):
     logging.info(f"Fetching historical daily price data for universe: {universe}")
-    df = yf.download(universe, period=f"{days}d", interval="1d", progress=False)
+    df = yf.download(universe, period=f"{days}d", interval="1d", progress=False, auto_adjust=False)
     if "Adj Close" in df:
         df = df["Adj Close"]
     elif "Close" in df:

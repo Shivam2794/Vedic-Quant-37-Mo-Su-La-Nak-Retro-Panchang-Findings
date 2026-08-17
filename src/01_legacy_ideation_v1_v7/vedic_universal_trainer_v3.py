@@ -83,8 +83,8 @@ summary = []
 for asset_name, (ticker, bench, BARRIER, rulers, tier) in ASSET_CONFIG.items():
     print(f"\n--- {asset_name}  barrier={BARRIER}h  tier={tier}  rulers={rulers or 'ALL'} ---")
     try:
-        df_a = yf.download(ticker, period="730d", interval="1h", progress=False)
-        df_b = yf.download(bench,  period="730d", interval="1h", progress=False)
+        df_a = yf.download(ticker, period="730d", interval="1h", progress=False, auto_adjust=False)
+        df_b = yf.download(bench,  period="730d", interval="1h", progress=False, auto_adjust=False)
     except Exception as e:
         print(f"   SKIP: {e}"); continue
     if df_a.empty or df_b.empty: print("   SKIP: empty data"); continue

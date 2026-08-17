@@ -8,10 +8,10 @@ SLIPPAGE_BPS = 10 / 10000
 
 def run_vrp_arbitrage():
     print("[*] Downloading Volatility Data (VIX, VIX3M, SVXY, SHV)...")
-    tickers = ['^VIX', '^VIX3M', 'SVXY', 'SHV']
+    tickers = ['^VIX', 'SVXY', 'SHV']
     
     # SVXY inception is late 2011, we will start testing in 2012
-    df = yf.download(tickers, start="2012-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
@@ -21,7 +21,7 @@ def run_vrp_arbitrage():
     # Contango: VIX < VIX3M (Ratio < 1.0) -> Normal regime, short vol is profitable
     # Backwardation: VIX > VIX3M (Ratio > 1.0) -> Panic regime, short vol gets destroyed
     
-    term_structure = df['^VIX'] / df['^VIX3M']
+    term_structure = df['^VIX'] / df['^VIX'].rolling(60).mean()
     
     weights = pd.DataFrame(0.0, index=df.index, columns=['SVXY', 'SHV'])
     
@@ -79,7 +79,7 @@ def run_vrp_arbitrage():
     print(f"Annual Turnover: {annual_turnover:.2f}x")
     
     # Benchmark SPY
-    spy = yf.download('SPY', start="2012-01-01", end="2024-01-01")['Close'].pct_change().dropna()
+    spy = yf.download('SPY', start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close'].pct_change().dropna()
     spy = spy.loc[valid_idx]
     if isinstance(spy, pd.DataFrame): spy = spy.iloc[:, 0]
     bm_cagr = (1 + spy).prod() ** (252 / len(spy)) - 1

@@ -225,3 +225,8 @@ print(f"Difference: {our_total - chrom_total}")
 print(f"\nNote: Total SAV should always be 337 for 7 planets × 48 max bindus / 12 signs")
 print(f"Our total: {our_total} (should be 337)")
 print(f"Chrome total: {chrom_total}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

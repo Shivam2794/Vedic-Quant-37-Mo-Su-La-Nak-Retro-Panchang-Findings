@@ -8,15 +8,15 @@ SLIPPAGE_BPS = 10 / 10000
 
 def run_omni_vrp_optimized():
     print("[*] Downloading Data for Optimized VRP...")
-    tickers = ['SVXY', 'VIXY', '^VIX', '^VIX3M', 'SHV', 'SPY']
-    df = yf.download(tickers, start="2012-01-01", end="2024-01-01")['Close']
+    tickers = ['SVXY', 'VIXY', '^VIX', 'SHV', 'SPY']
+    df = yf.download(tickers, start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
     returns = df.pct_change().dropna()
     r = returns
     
-    term_structure = df['^VIX'] / df['^VIX3M']
+    term_structure = df['^VIX'] / df['^VIX'].rolling(60).mean()
     vix = df['^VIX']
     
     svxy_sma10 = df['SVXY'].rolling(10).mean()

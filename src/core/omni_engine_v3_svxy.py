@@ -8,7 +8,7 @@ SLIPPAGE_BPS = 10 / 10000
 
 def run_svxy_buy_hold():
     print("[*] Downloading SVXY Data...")
-    df = yf.download('SVXY', start="2012-01-01", end="2024-01-01")['Close']
+    df = yf.download('SVXY', start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

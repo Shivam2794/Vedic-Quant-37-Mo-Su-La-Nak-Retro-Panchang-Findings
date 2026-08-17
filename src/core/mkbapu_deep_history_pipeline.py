@@ -93,6 +93,7 @@ def compute_bar_features(dt_utc):
     for pid, name in [(swe.SUN,"Sun"),(swe.MOON,"Moon"),(swe.MERCURY,"Mercury"),
                       (swe.VENUS,"Venus"),(swe.MARS,"Mars"),(swe.JUPITER,"Jupiter"),
                       (swe.SATURN,"Saturn"),(swe.URANUS,"Uranus"),(swe.NEPTUNE,"Neptune")]:
+    swe.set_sid_mode(swe.SIDM_LAHIRI)  # CRITICAL BUG FIX #5: Moved before calc
         r = swe.calc_ut(jd, pid, flags)
         lon2, speed = r[0][0], r[0][3]
         nak = int(lon2 / (360/27))
@@ -150,7 +151,6 @@ def compute_bar_features(dt_utc):
 def compute_ephemeris(df):
     print(f"\n[2] Computing ephemeris for {len(df):,} bars...")
     swe.set_ephe_path('')
-    swe.set_sid_mode(swe.SIDM_LAHIRI)
     
     t0 = time.time()
     rows = []
@@ -350,3 +350,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

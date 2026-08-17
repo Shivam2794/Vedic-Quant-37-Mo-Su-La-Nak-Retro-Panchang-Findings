@@ -8,15 +8,15 @@ SLIPPAGE_BPS = 10 / 10000
 
 def run_vrp_smoothed():
     print("[*] Downloading Volatility Data (VIX, VIX3M, SVXY, SHV)...")
-    tickers = ['^VIX', '^VIX3M', 'SVXY', 'SHV']
+    tickers = ['^VIX', 'SVXY', 'SHV']
     
-    df = yf.download(tickers, start="2012-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
     returns = df.pct_change().dropna()
     
-    term_structure = df['^VIX'] / df['^VIX3M']
+    term_structure = df['^VIX'] / df['^VIX'].rolling(60).mean()
     
     # Smooth the term structure ratio with a 5-day SMA to prevent noise-based whip-saws
     # But react immediately if the RAW signal spikes above 1.0 (backwardation = instant panic)
@@ -82,7 +82,7 @@ def run_vrp_smoothed():
     print(f"Annual Turnover: {annual_turnover:.2f}x")
     
     # Benchmark SPY
-    spy = yf.download('SPY', start="2012-01-01", end="2024-01-01")['Close'].pct_change().dropna()
+    spy = yf.download('SPY', start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close'].pct_change().dropna()
     spy = spy.loc[valid_idx]
     if isinstance(spy, pd.DataFrame): spy = spy.iloc[:, 0]
     bm_cagr = (1 + spy).prod() ** (252 / len(spy)) - 1

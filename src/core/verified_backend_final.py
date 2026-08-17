@@ -149,3 +149,8 @@ print(f"\nD1: {r2['D1']}")
 print(f"\nD9: {r2['D9']}")
 print(f"\nD10: {r2['D10']}")
 print(f"\nSAV: {r2['SAV']}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

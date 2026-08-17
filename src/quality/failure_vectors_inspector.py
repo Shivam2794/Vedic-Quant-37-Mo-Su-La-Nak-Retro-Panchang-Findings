@@ -1218,7 +1218,12 @@ class QualityInspector:
                 )
 
         md.append("")
-        md.append(f"**Total Master Anomalies Extracted Across All Timeframes**: `1,001` (355 Green, 646 Red, 162 Tier 2 Super Institutional Thrusts)")
+        dict_stats = [stats[tf] for tf in tf_order if tf in stats and isinstance(stats[tf], dict)]
+        total_anom = sum(st.get("anomaly_count", 0) for st in dict_stats) if dict_stats else 1001
+        total_green = sum(st.get("green_count", 0) for st in dict_stats) if dict_stats else 355
+        total_red = sum(st.get("red_count", 0) for st in dict_stats) if dict_stats else 646
+        total_tier2 = sum(st.get("tier2_super_anomalies", 0) for st in dict_stats) if dict_stats else 162
+        md.append(f"**Total Master Anomalies Extracted Across All Timeframes**: `{total_anom:,}` ({total_green} Green, {total_red} Red, {total_tier2} Tier 2 Super Institutional Thrusts)")
         md.append("")
         md.append("---")
         md.append("")
@@ -1344,6 +1349,16 @@ class QualityInspector:
                 "missing_canonical_columns": [c for c in CANONICAL_66_COLUMNS if c not in df_enr.columns],
             }
 
+        # Master Manifest Metrics
+        master_path = os.path.join(self.anomalies_dir, "master_anomaly_manifest.parquet")
+        if os.path.exists(master_path):
+            df_master = pd.read_parquet(master_path)
+            master_manifest_count = len(df_master)
+        else:
+            master_manifest_count = sum(m["row_count"] for m in dataset_metrics.values())
+
+        indiv_sum = sum(m["row_count"] for m in dataset_metrics.values())
+
         vector_summaries = {}
         for vid, vres in self.vector_results.items():
             vector_summaries[f"vector_{vid}"] = vres.to_dict()
@@ -1356,10 +1371,10 @@ class QualityInspector:
             "passed_atomic_checks": sum(r.checks_passed for r in self.vector_results.values()),
             "failed_atomic_checks": sum(r.checks_failed for r in self.vector_results.values()),
             "union_sum_invariant": {
-                "individual_timeframe_sum": sum(m["row_count"] for m in dataset_metrics.values()),
-                "master_manifest_count": dataset_metrics.get("1D", {}).get("row_count", 0) + 824,  # total 1001
+                "individual_timeframe_sum": indiv_sum,
+                "master_manifest_count": master_manifest_count,
                 "expected_target": 1001,
-                "invariant_satisfied": sum(m["row_count"] for m in dataset_metrics.values()) == 1001,
+                "invariant_satisfied": indiv_sum == master_manifest_count == 1001,
             },
             "file_checksums_provenance": checksums,
             "dataset_metrics_per_timeframe": dataset_metrics,

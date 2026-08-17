@@ -374,3 +374,8 @@ for p in PLANETS:
     hora = hora_bala_v2(jd, p)
     ayana = ayana_bala_correct(dec, p)
     print(f"  {p:<10}: Natho={natho:.0f} Paksha={paksha:.1f} Tribha={tribha:.0f} Vara={vara:.0f} Hora={hora:.0f} Ayana={ayana:.1f}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

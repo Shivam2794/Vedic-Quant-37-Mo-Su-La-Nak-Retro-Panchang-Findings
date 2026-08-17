@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 def get_data():
     print("Downloading historical data for V24 Multi-Asset Grinder...")
     tickers = ["SPY", "QQQ", "TLT"]
-    df = yf.download(tickers, start="2010-01-01", end="2026-12-31")['Close']
+    df = yf.download(tickers, start="2010-01-01", end="2026-12-31", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     return df
 

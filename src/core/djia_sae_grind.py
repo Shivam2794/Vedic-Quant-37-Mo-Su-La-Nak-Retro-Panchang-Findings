@@ -21,7 +21,7 @@ def get_djia_data():
         df = pd.read_csv(csv_path, index_col='Date', parse_dates=True)
         return df
     print("Fetching DJIA data...")
-    df = yf.download('^DJI', start='2000-01-01', end='2026-06-13', progress=False)
+    df = yf.download('^DJI', start='2000-01-01', end='2026-06-13', progress=False, auto_adjust=False)
     # yf.download can return MultiIndex columns if not careful, flatten them if needed
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.droplevel(1)

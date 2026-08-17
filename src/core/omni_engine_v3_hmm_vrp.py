@@ -8,17 +8,10 @@ warnings.filterwarnings('ignore')
 SLIPPAGE_BPS = 10 / 10000
 
 def get_hmm_regimes(spy_returns):
-    # Fit a Gaussian HMM to SPY returns to mathematically decouple Bull/Bear/Crash regimes
-    model = hmm.GaussianHMM(n_components=3, covariance_type="full", n_iter=1000, random_state=42)
-    
-    # We need expanding window or rolling window to avoid lookahead bias.
-    # To keep it computationally feasible, we will fit on a rolling 252-day window 
-    # and predict the state for the *next* day.
-    
     predictions = pd.Series(index=spy_returns.index, dtype=float)
-    
     # Needs a minimum of 252 days to warm up
     for i in range(252, len(spy_returns)):
+        model = hmm.GaussianHMM(n_components=3, covariance_type="diag", n_iter=100, random_state=42, min_covar=1e-6)
         window = spy_returns.iloc[i-252:i].values.reshape(-1, 1)
         model.fit(window)
         # Predict the hidden state of the *last* day in the window
@@ -52,14 +45,17 @@ def get_hmm_regimes(spy_returns):
 def run_hmm_svxy_arbitrage():
     print("[*] Downloading Data for HMM Volatility Arbitrage...")
     tickers = ['SPY', 'SVXY', 'SHV']
-    df = yf.download(tickers, start="2012-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
-    returns = df.pct_change().dropna()
+    returns = df.pct_change().replace([np.inf, -np.inf], np.nan).dropna()
     
     print("[*] Fitting Rolling Hidden Markov Model (This takes a minute)...")
     spy_returns = returns['SPY']
+    # Add tiny noise to prevent 0-variance singular covariance matrices in HMM
+    np.random.seed(42)
+    spy_returns = spy_returns + np.random.normal(0, 1e-6, len(spy_returns))
     if isinstance(spy_returns, pd.DataFrame): spy_returns = spy_returns.iloc[:, 0]
     spy_returns = spy_returns.fillna(0.0)
         
@@ -67,13 +63,11 @@ def run_hmm_svxy_arbitrage():
     
     weights = pd.DataFrame(0.0, index=df.index, columns=['SVXY', 'SHV'])
     
-    for i in range(len(df)):
-        date = df.index[i]
-        
+    for date in df.index:
         # Safe Regime -> Short Volatility (SVXY)
         # Crash Regime -> Cash (SHV)
         
-        is_safe = safe_regime.iloc[i]
+        is_safe = safe_regime.loc[date] if date in safe_regime.index else np.nan
         
         if pd.isna(is_safe):
             weights.loc[date, 'SHV'] = 1.0

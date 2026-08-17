@@ -19,7 +19,7 @@ def calc_atr(df, period=14):
 
 def generate_architected_dataset():
     print("Fetching SPY data...")
-    df = yf.download("SPY", start="2000-01-01", end="2026-01-01", progress=False)
+    df = yf.download("SPY", start="2000-01-01", end="2026-01-01", progress=False, auto_adjust=False)
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.get_level_values(0)
     df.index = df.index.tz_localize(None)

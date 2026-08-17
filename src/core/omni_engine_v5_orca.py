@@ -8,14 +8,13 @@ SLIPPAGE_BPS = 20 / 10000
 
 def run_omni_orca():
     print("[*] Downloading Data for ORCA (Online Regime Correlation Analyzer)...")
-    tickers = ['UPRO', 'TMF', 'SPY', 'TLT', 'SHV', '^IRX']
-    df = yf.download(tickers, start="2010-01-01", end="2024-01-01")['Close']
+    tickers = ['UPRO', 'TMF', 'SPY', 'TLT', 'SHV']
+    df = yf.download(tickers, start="2010-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
     returns = df.pct_change().dropna()
-    daily_cash_yield = (df['^IRX'].loc[returns.index] / 100) / 252
-    daily_cash_yield = daily_cash_yield.fillna(0.0001)
+    daily_cash_yield = 0.02 / 252
     
     # ---------------------------------------------------------
     # ORCA: Correlation Regime Detection
@@ -72,9 +71,9 @@ def run_omni_orca():
     cash_ret = pd.Series(0.0, index=valid_idx)
     for date, cash in cash_position.items():
         if cash > 0:
-            cash_ret.loc[date] = cash * daily_cash_yield.loc[date]
+            cash_ret.loc[date] = cash * daily_cash_yield
         else:
-            cash_ret.loc[date] = cash * (daily_cash_yield.loc[date] + (0.01/252)) # 1% borrow spread
+            cash_ret.loc[date] = cash * (daily_cash_yield + (0.01/252)) # 1% borrow spread
             
     # Slippage
     delta = weights.diff().abs().fillna(0)
@@ -116,9 +115,9 @@ def run_omni_orca():
         a_ret = (w['UPRO'] * r.loc[date, 'UPRO']) + (w['TMF'] * r.loc[date, 'TMF'])
         
         if cash > 0:
-            c_ret = cash * daily_cash_yield.loc[date]
+            c_ret = cash * daily_cash_yield
         else:
-            c_ret = cash * (daily_cash_yield.loc[date] + (0.01/252))
+            c_ret = cash * (daily_cash_yield + (0.01/252))
             
         if i > 0:
             prev_w = weights.loc[valid_idx[i-1]] * ens_multiplier.loc[valid_idx[i-1]]

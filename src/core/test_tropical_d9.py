@@ -79,3 +79,8 @@ for case_label, dt_str, chrome_d9 in [
         sid_sign = SIGNS[int(sid/30)%12]
         trop_sign = SIGNS[int(trop/30)%12]
         print(f"  {planet:<12} {sid_sign+' '+str(int(sid%30))+'°':>12} {trop_sign+' '+str(int(trop%30))+'°':>12} {d9_sid:>12} {d9_trop:>12} {chrome:>12}  {which}")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

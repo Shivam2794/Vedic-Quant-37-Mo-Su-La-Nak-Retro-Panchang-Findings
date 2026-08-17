@@ -38,7 +38,7 @@ def fetch_and_sync_data(start="2014-01-01", end="2024-01-01"):
     print("[*] Downloading data for BTC-USD, GLD, SPY, ^IRX...")
     assets = ['BTC-USD', 'GLD', 'SPY']
     tickers = assets + ['^IRX']
-    df_raw = yf.download(tickers, start=start, end=end, progress=False)
+    df_raw = yf.download(tickers, start=start, end=end, progress=False, auto_adjust=False)
     
     # SPY defines official 252 business days
     biz_idx = df_raw['Close']['SPY'].dropna().index

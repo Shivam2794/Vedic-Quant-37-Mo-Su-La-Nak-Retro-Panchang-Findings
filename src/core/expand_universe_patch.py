@@ -174,3 +174,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

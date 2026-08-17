@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')
 
 def get_data(tickers, start_date='2010-01-01'): # Starting 2010 to align with leveraged ETFs
     print(f"Downloading data for {tickers}...")
-    df = yf.download(tickers, start=start_date, progress=False)['Close']
+    df = yf.download(tickers, start=start_date, progress=False, auto_adjust=False)['Close']
     df = df.ffill().dropna(how='all')
     return df
 

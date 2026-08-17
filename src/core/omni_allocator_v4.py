@@ -17,7 +17,7 @@ def get_vol_weights(returns, target_vol, month_ends):
 def run_omni_allocator_v4():
     tickers = ['SPY', 'QQQ', 'TLT', 'BTC-USD', '^IRX']
     print(f"[*] Downloading Data for Omni-Allocator V4 (Holy Grail Edition)...")
-    df = yf.download(tickers, start="2014-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2014-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     df = df[df.index.dayofweek < 5] # Enforce 252-day structural soundness
     

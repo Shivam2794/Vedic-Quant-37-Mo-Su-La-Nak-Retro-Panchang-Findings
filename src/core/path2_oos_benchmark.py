@@ -22,7 +22,7 @@ def compute_metrics(returns, cy_arr, delta_days, name):
 
 def run_path2():
     print("[*] PATH 2: Out-Of-Sample (OOS) Validation & Vol-Target Benchmark Test...")
-    df_raw = yf.download(['BTC-USD', 'SPY', '^IRX'], start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(['BTC-USD', 'SPY', '^IRX'], start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     
     biz_idx = df_raw['Close']['SPY'].dropna().index
     df_raw = df_raw.ffill()

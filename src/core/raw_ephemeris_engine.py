@@ -111,3 +111,8 @@ def generate_ephemeris():
 
 if __name__ == "__main__":
     generate_ephemeris()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

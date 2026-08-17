@@ -12,8 +12,8 @@ PAIRS = {'SMH_SPY': ('SMH', 'SPY', 'US', 40.7128, -74.0060)}
 BARRIER_BARS, PT_MULT, SL_MULT = 6, 1.5, 1.0
 
 def fetch_pair_data(asset, benchmark, market):
-    df_asset = yf.download(asset, period="730d", interval="1h", progress=False)
-    df_bench = yf.download(benchmark, period="730d", interval="1h", progress=False)
+    df_asset = yf.download(asset, period="730d", interval="1h", progress=False, auto_adjust=False)
+    df_bench = yf.download(benchmark, period="730d", interval="1h", progress=False, auto_adjust=False)
     if isinstance(df_asset.columns, pd.MultiIndex): df_asset.columns = df_asset.columns.get_level_values(0)
     if isinstance(df_bench.columns, pd.MultiIndex): df_bench.columns = df_bench.columns.get_level_values(0)
     df_asset = df_asset[['Open', 'High', 'Low', 'Close', 'Volume']].dropna()
@@ -158,3 +158,8 @@ try:
     execute_wfo_proof(d2)
 except Exception as e:
     print(e)
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

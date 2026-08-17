@@ -23,7 +23,7 @@ def run_omni_allocator_v9():
     print("[*] Launching OMNI-ALLOCATOR V9 (Tri-Asset Holy Grail)...")
     assets = ['BTC-USD', 'GLD', 'SPY']
     tickers = assets + ['^IRX']
-    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     
     biz_idx = df_raw['Close']['SPY'].dropna().index
     df_raw = df_raw.ffill()

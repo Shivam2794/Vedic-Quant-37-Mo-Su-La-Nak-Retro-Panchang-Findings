@@ -9,7 +9,7 @@ def run_v8_optimizer():
     print(f"[*] Downloading Data for V8 Multi-Asset Optimizer...")
     assets = ['SPY', 'QQQ', 'TLT', 'GLD', 'BTC-USD', 'UUP', 'LQD']
     tickers = assets + ['^IRX']
-    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     df_raw = df_raw.ffill()
     
     close_prices = df_raw['Close']

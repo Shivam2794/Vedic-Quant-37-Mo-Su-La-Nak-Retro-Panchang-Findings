@@ -53,6 +53,7 @@ def get_nadi_progression(natal_lon, age_in_days, cycle_years, is_retrograde=Fals
 # ---------------------------------------------------------------------------------
 def get_sun_lon(jd):
     flags = swe.FLG_SIDEREAL | swe.FLG_SPEED | swe.FLG_SWIEPH
+    swe.set_sid_mode(swe.SIDM_KRISHNAMURTI)  # CRITICAL BUG FIX #5: Moved before calc
     pos, _ = swe.calc_ut(jd, swe.SUN, flags)
     return pos[0]
 
@@ -114,12 +115,15 @@ def build_natal_matrix(ticker, birth_jd, lat, lon, natal_topo_row):
     varshaphala_jds = generate_varshaphala_returns(birth_jd, natal_sun_sidereal)
     
     # Generate KP Cusps
-    swe.set_sid_mode(swe.SIDM_KRISHNAMURTI)
     flags = swe.FLG_SIDEREAL | swe.FLG_SWIEPH
     kp_cusps, _ = swe.houses_ex(birth_jd, lat, lon, b'P', flags)
-    swe.set_sid_mode(swe.SIDM_LAHIRI)
     
     return {
         "kp_cusps": list(kp_cusps),
         "varshaphala_jds": varshaphala_jds
     }
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

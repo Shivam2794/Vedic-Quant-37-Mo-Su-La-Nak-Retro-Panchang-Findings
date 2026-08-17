@@ -69,7 +69,7 @@ def setup_ephemeris():
 # ???????????????????????????????????????????????????????????
 def fetch_spy_15m():
     print("[1] Fetching 15m SPY data (60d)...")
-    df = yf.download("SPY", interval="15m", period="60d", progress=False)
+    df = yf.download("SPY", interval="15m", period="60d", progress=False, auto_adjust=False)
     if df.empty:
         raise ValueError("yfinance returned empty data for SPY.")
     df = df.reset_index()
@@ -677,3 +677,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

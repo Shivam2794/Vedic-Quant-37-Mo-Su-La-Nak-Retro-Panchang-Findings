@@ -19,7 +19,7 @@ def run_v9_audit_suite():
     print("[*] OMNI-ALLOCATOR V9 AUDIT SUITE: LATENCY & OUT-OF-SAMPLE STRESS TEST...")
     assets = ['BTC-USD', 'GLD', 'SPY']
     tickers = assets + ['^IRX']
-    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     
     biz_idx = df_raw['Close']['SPY'].dropna().index
     df_raw = df_raw.ffill()

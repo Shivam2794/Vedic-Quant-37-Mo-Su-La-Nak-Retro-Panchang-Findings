@@ -17,8 +17,8 @@ def rsi(series, period=2):
 
 def run_omni_ensemble_ultimate():
     print("[*] Downloading Data for Ultimate Omni-Ensemble...")
-    tickers = ['UPRO', 'TMF', 'SPY', '^VIX', '^VIX3M', 'SVXY', 'VIXY', 'SHV']
-    df = yf.download(tickers, start="2012-01-01", end="2024-01-01")['Close']
+    tickers = ['UPRO', 'TMF', 'SPY', '^VIX', 'SVXY', 'VIXY', 'SHV']
+    df = yf.download(tickers, start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
@@ -83,7 +83,7 @@ def run_omni_ensemble_ultimate():
     # ---------------------------------------------------------
     # STRATEGY 3: VRP Hedged
     # ---------------------------------------------------------
-    term_structure = df['^VIX'] / df['^VIX3M']
+    term_structure = df['^VIX'] / df['^VIX'].rolling(60).mean()
     vrp_weights = pd.DataFrame(0.0, index=df.index, columns=['SVXY', 'VIXY', 'SHV'])
     
     for i in range(len(df)):

@@ -9,7 +9,7 @@ def run_v5_optimizer():
     tickers = ['SPY', 'QQQ', 'TLT', 'GLD', 'BTC-USD', 'UUP', 'LQD', '^IRX']
     print(f"[*] Downloading Data for Brutal Physics Optimizer...")
     # Get Open and Close
-    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01")
+    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", auto_adjust=False)
     
     close_prices = df_raw['Close'].ffill().dropna()
     open_prices = df_raw['Open'].ffill().dropna()

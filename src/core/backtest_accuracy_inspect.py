@@ -21,8 +21,8 @@ MATRIX_FILE = os.path.join(BASE_DIR, "genesis_9000_MUNDANE.parquet")
 BARRIER_BARS = 6
 
 # ── LOAD DATA ─────────────────────────────────────────────────────────────
-df_asset = yf.download("COPX", period="730d", interval="1h", progress=False)
-df_spy   = yf.download("SPY",  period="730d", interval="1h", progress=False)
+df_asset = yf.download("COPX", period="730d", interval="1h", progress=False, auto_adjust=False)
+df_spy   = yf.download("SPY",  period="730d", interval="1h", progress=False, auto_adjust=False)
 if isinstance(df_asset.columns, pd.MultiIndex): df_asset.columns = df_asset.columns.get_level_values(0)
 if isinstance(df_spy.columns,   pd.MultiIndex): df_spy.columns   = df_spy.columns.get_level_values(0)
 df_asset = df_asset[["Close","Volume"]].dropna()

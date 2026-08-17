@@ -66,8 +66,8 @@ results = {}
 for asset_name, (ticker, bench, BARRIER, use_spec) in FIXABLE.items():
     print(f"\n--- {asset_name} | Barrier={BARRIER}h ---")
     try:
-        df_a = yf.download(ticker, period="730d", interval="1h", progress=False)
-        df_b = yf.download(bench,  period="730d", interval="1h", progress=False)
+        df_a = yf.download(ticker, period="730d", interval="1h", progress=False, auto_adjust=False)
+        df_b = yf.download(bench,  period="730d", interval="1h", progress=False, auto_adjust=False)
     except Exception as e:
         print(f"  Download failed: {e}"); continue
     if df_a.empty or df_b.empty: continue

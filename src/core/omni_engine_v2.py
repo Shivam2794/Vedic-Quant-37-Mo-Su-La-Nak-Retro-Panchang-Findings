@@ -9,7 +9,7 @@ SLIPPAGE_BPS = 10 / 10000
 def run_independent_vol_target_momentum():
     print("[*] Downloading Asset-Level Volatility Targeting Data...")
     tickers = ['SPY', 'TLT', 'GLD', 'DBC', 'VNQ', 'EFA', 'EEM', 'LQD', 'HYG', 'SHV']
-    df = yf.download(tickers, start="2008-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2008-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

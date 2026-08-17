@@ -10,8 +10,8 @@ BARRIER_BARS = 6
 print("=== LABEL DISTRIBUTION CHECK ===")
 assets = ['COPX','XLC','XLF','XLI','PAVE','SMH','JETS','SLV']
 for asset in assets:
-    df_asset = yf.download(asset, period="730d", interval="1h", progress=False)
-    df_spy   = yf.download("SPY",  period="730d", interval="1h", progress=False)
+    df_asset = yf.download(asset, period="730d", interval="1h", progress=False, auto_adjust=False)
+    df_spy   = yf.download("SPY",  period="730d", interval="1h", progress=False, auto_adjust=False)
     if isinstance(df_asset.columns, pd.MultiIndex): df_asset.columns = df_asset.columns.get_level_values(0)
     if isinstance(df_spy.columns,   pd.MultiIndex): df_spy.columns   = df_spy.columns.get_level_values(0)
     df_asset = df_asset[["Close","Volume"]].dropna()
@@ -42,8 +42,8 @@ print(f"  NaN cols >5%: {(df_astro.isna().mean()>0.05).sum()}")
 # ── CHECK C: merge coverage on COPX ──────────────────────────────────────
 print()
 print("=== MERGE COVERAGE CHECK (COPX) ===")
-df_asset = yf.download("COPX", period="730d", interval="1h", progress=False)
-df_spy   = yf.download("SPY",  period="730d", interval="1h", progress=False)
+df_asset = yf.download("COPX", period="730d", interval="1h", progress=False, auto_adjust=False)
+df_spy   = yf.download("SPY",  period="730d", interval="1h", progress=False, auto_adjust=False)
 if isinstance(df_asset.columns, pd.MultiIndex): df_asset.columns = df_asset.columns.get_level_values(0)
 if isinstance(df_spy.columns,   pd.MultiIndex): df_spy.columns   = df_spy.columns.get_level_values(0)
 df_asset = df_asset[["Close","Volume"]].dropna()

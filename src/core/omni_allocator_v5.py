@@ -8,7 +8,7 @@ def run_omni_allocator_v5():
     tickers = ['SPY', 'QQQ', 'TLT', 'GLD', 'BTC-USD', '^IRX']
     print(f"[*] Downloading Data for Omni-Allocator V5 (Ultimate Physics Edition)...")
     
-    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01")
+    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", auto_adjust=False)
     close_prices = df_raw['Close'].ffill().dropna()
     open_prices = df_raw['Open'].ffill().dropna()
     

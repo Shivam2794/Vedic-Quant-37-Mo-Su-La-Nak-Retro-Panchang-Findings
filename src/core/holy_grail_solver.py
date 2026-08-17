@@ -13,7 +13,7 @@ def compute_cagr(cum_returns, days):
     return (total_return ** (1 / years)) - 1
 
 print("Downloading Data...")
-data = yf.download(['QQQ', 'TLT'], start='2005-01-01', end='2026-07-07')['Close'].dropna()
+data = yf.download(['QQQ', 'TLT'], start='2005-01-01', end='2026-07-07', auto_adjust=False)['Close'].dropna()
 
 df = pd.DataFrame()
 df['QQQ_ret'] = data['QQQ'].pct_change()

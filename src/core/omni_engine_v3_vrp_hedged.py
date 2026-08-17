@@ -7,20 +7,20 @@ warnings.filterwarnings('ignore')
 SLIPPAGE_BPS = 10 / 10000
 
 def run_svxy_hedge():
-    print("[*] Downloading Volatility Data (VIX, VIX3M, SVXY, VXX, SHV)...")
-    tickers = ['^VIX', '^VIX3M', 'SVXY', 'VXX', 'SHV']
+    print("[*] Downloading Volatility Data (VIX, SVXY, VXX, SHV)...")
+    tickers = ['^VIX', 'SVXY', 'VXX', 'SHV']
     
     # VXX was delisted and replaced with VXX. We use VIXY as a proxy for long vol if VXX is broken, 
     # but let's try VIXY directly as it tracks the same index and is active.
-    tickers = ['^VIX', '^VIX3M', 'SVXY', 'VIXY', 'SHV']
+    tickers = ['^VIX', 'SVXY', 'VIXY', 'SHV']
     
-    df = yf.download(tickers, start="2012-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
     returns = df.pct_change().dropna()
     
-    term_structure = df['^VIX'] / df['^VIX3M']
+    term_structure = df['^VIX'] / df['^VIX'].rolling(60).mean()
     
     weights = pd.DataFrame(0.0, index=df.index, columns=['SVXY', 'VIXY', 'SHV'])
     
@@ -84,7 +84,7 @@ def run_svxy_hedge():
     print(f"Annual Turnover: {annual_turnover:.2f}x")
     
     # Benchmark SPY
-    spy = yf.download('SPY', start="2012-01-01", end="2024-01-01")['Close'].pct_change().dropna()
+    spy = yf.download('SPY', start="2012-01-01", end="2024-01-01", auto_adjust=False)['Close'].pct_change().dropna()
     spy = spy.loc[valid_idx]
     if isinstance(spy, pd.DataFrame): spy = spy.iloc[:, 0]
     bm_cagr = (1 + spy).prod() ** (252 / len(spy)) - 1

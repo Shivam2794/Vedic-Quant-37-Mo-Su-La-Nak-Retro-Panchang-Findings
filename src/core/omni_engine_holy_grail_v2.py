@@ -11,7 +11,7 @@ def run_holy_grail_v2():
     tickers = ['UPRO', 'TMF', 'GLD', 'SHV']
     
     # UPRO inception 2009-06. We start 2010.
-    df = yf.download(tickers, start="2010-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2010-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
@@ -82,7 +82,7 @@ def run_holy_grail_v2():
     print(f"Annual Turnover: {annual_turnover:.2f}x")
     
     # Benchmark SPY
-    spy = r['SPY'] if 'SPY' in r.columns else yf.download('SPY', start="2010-01-01", end="2024-01-01")['Close'].pct_change().dropna().loc[valid_idx]
+    spy = r['SPY'] if 'SPY' in r.columns else yf.download('SPY', start="2010-01-01", end="2024-01-01", auto_adjust=False)['Close'].pct_change().dropna().loc[valid_idx]
     if isinstance(spy, pd.DataFrame): spy = spy.iloc[:, 0]
     bm_cagr = (1 + spy).prod() ** (252 / len(spy)) - 1
     bm_sharpe = np.sqrt(252) * spy.mean() / (spy.std() + 1e-9)

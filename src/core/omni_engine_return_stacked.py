@@ -15,7 +15,7 @@ def run_return_stacked():
     
     tickers = list(set(offensive + defensive + beta + cash))
     
-    df = yf.download(tickers, start="2010-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2010-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

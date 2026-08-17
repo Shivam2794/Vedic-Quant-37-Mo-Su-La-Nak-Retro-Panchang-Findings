@@ -267,7 +267,7 @@ def run_century_wfa():
     qqq_ret_1d = ret_1d.copy()
     is_post_1999 = (dates >= "1999-01-01").values
     try:
-        yf_df = yf.download("QQQ", start="1999-01-01", progress=False)
+        yf_df = yf.download("QQQ", start="1999-01-01", progress=False, auto_adjust=False)
         price_col = "Adj Close" if "Adj Close" in yf_df else "Close"
         if not yf_df.empty and price_col in yf_df:
             qqq_close = yf_df[price_col]["QQQ"] if isinstance(yf_df[price_col], pd.DataFrame) else yf_df[price_col]
@@ -425,7 +425,7 @@ def run_century_wfa():
     
     oos_start_str = str(oos_dates.iloc[0])[:10]
     try:
-        yf_df_bm = yf.download(["SPY", "QQQ"], start=oos_start_str, progress=False)
+        yf_df_bm = yf.download(["SPY", "QQQ"], start=oos_start_str, progress=False, auto_adjust=False)
         price_col = "Adj Close" if "Adj Close" in yf_df_bm else "Close"
         closes_yf = yf_df_bm[price_col]
         

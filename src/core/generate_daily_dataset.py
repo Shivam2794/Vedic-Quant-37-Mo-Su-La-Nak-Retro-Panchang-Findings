@@ -18,7 +18,7 @@ def calc_atr(df, period=14):
 
 def generate_dataset():
     print("Fetching SPY data...")
-    df = yf.download("SPY", start="2000-01-01", end="2026-01-01", progress=False)
+    df = yf.download("SPY", start="2000-01-01", end="2026-01-01", progress=False, auto_adjust=False)
     # yf download for a single ticker returns MultiIndex columns in recent versions, flatten it:
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.get_level_values(0)

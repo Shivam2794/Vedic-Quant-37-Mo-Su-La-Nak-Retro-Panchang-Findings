@@ -42,7 +42,7 @@ def yang_zhang_volatility(df, window=21):
 
 def execute_pipeline(ticker):
     print(f"[SWARM DATA] Fetching {ticker}...")
-    df = yf.download(ticker, start='2010-01-01', end='2025-12-31')
+    df = yf.download(ticker, start='2010-01-01', end='2025-12-31', auto_adjust=False)
     
     # Flatten MultiIndex columns if present
     if isinstance(df.columns, pd.MultiIndex):

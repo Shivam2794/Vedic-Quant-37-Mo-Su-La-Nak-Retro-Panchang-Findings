@@ -140,7 +140,7 @@ if __name__ == '__main__':
         df = pd.read_parquet(f'{ticker}_daily_V17_raw.parquet')
     except:
         print("Raw data not found, downloading...")
-        df = yf.download(ticker, start="2000-01-01", end="2026-01-01")
+        df = yf.download(ticker, start="2000-01-01", end="2026-01-01", auto_adjust=False)
         df.columns = ['Close', 'High', 'Low', 'Open', 'Volume']
         df['Returns'] = df['Close'].pct_change()
         df['Log_Ret'] = np.log(df['Close'] / df['Close'].shift(1))

@@ -17,7 +17,7 @@ def rsi(series, period=2):
 
 def run_high_winrate_swing():
     print("[*] Downloading Swing Trading Data...")
-    df = yf.download('SPY', start="2005-01-01", end="2024-01-01")['Close']
+    df = yf.download('SPY', start="2005-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

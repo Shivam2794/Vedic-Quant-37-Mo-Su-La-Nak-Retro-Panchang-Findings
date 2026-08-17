@@ -18,8 +18,8 @@ BARRIER_BARS = 6
 print("=== MFE/MAE PREDICTION RANGE CHECK (degenerate models) ===")
 degenerate = ["XLC","XLF","XLI","PAVE"]
 for asset in degenerate:
-    df_asset = yf.download(asset, period="730d", interval="1h", progress=False)
-    df_spy   = yf.download("SPY",  period="730d", interval="1h", progress=False)
+    df_asset = yf.download(asset, period="730d", interval="1h", progress=False, auto_adjust=False)
+    df_spy   = yf.download("SPY",  period="730d", interval="1h", progress=False, auto_adjust=False)
     if isinstance(df_asset.columns, pd.MultiIndex): df_asset.columns = df_asset.columns.get_level_values(0)
     if isinstance(df_spy.columns,   pd.MultiIndex): df_spy.columns   = df_spy.columns.get_level_values(0)
     df_asset = df_asset[["Close","Volume"]].dropna()
@@ -83,7 +83,7 @@ print(f"  TOTAL unhedged across all 6 sample trades: ${total_drift:.2f}")
 # ── CHECK G: Weekend/after-hours resilience ───────────────────────────────
 print()
 print("=== TIMEZONE & TIMESTAMP RESILIENCE CHECK ===")
-dummy_df = yf.download("SPY", period="1d", interval="1h", progress=False)
+dummy_df = yf.download("SPY", period="1d", interval="1h", progress=False, auto_adjust=False)
 dt_now = dummy_df.index[-1]
 print(f"  SPY last bar: {dt_now} | tz={dt_now.tzinfo}")
 try:

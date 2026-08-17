@@ -7,7 +7,7 @@ warnings.filterwarnings('ignore')
 def run_fast_momentum():
     print("[*] Downloading Data for Fast Dual Momentum...")
     tickers = ['QQQ', 'TLT', 'GLD', 'SHV']
-    df = yf.download(tickers, start="2005-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2005-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     
     returns = df.pct_change().dropna()

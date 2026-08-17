@@ -95,7 +95,7 @@ def compute_intraday_sky(dt_utc):
 
 def generate_intraday_data(ticker):
     print(f"Downloading 15-min data for {ticker} (Last 60 Days)...")
-    df = yf.download(ticker, interval="15m", period="60d", progress=False)
+    df = yf.download(ticker, interval="15m", period="60d", progress=False, auto_adjust=False)
     
     if len(df) == 0:
         print("No data retrieved.")
@@ -209,3 +209,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

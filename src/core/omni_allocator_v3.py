@@ -30,7 +30,7 @@ def get_vol_target_weights(raw_asset_returns, target_vol, month_ends):
 def run_omni_allocator_v3():
     print("[*] Downloading Data for Omni-Allocator v3 (Structurally Sound)...")
     tickers = ['SPY', 'TLT', 'GLD', '^IRX', 'BTC-USD']
-    df = yf.download(tickers, start="2014-09-17", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2014-09-17", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

@@ -236,3 +236,8 @@ for ticker in ["SPY", "QQQ", "GLD", "XLC"]:
             print(f"  Mahadasha:       {at_today['Mahadasha']}  ({at_today['Mahadasha_start']} → {at_today['Mahadasha_end']})")
             print(f"  Antardasha:      {at_today['Antardasha']}  ({at_today['Antardasha_start']} → {at_today['Antardasha_end']})")
             print(f"  Pratyantardasha: {at_today['Pratyantardasha']}  ({at_today['Pratyantar_start']} → {at_today['Pratyantar_end']})")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

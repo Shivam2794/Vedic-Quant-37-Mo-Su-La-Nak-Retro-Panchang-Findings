@@ -119,7 +119,7 @@ def fetch_alpaca_1h_cached(cache_path=None, start_year=2016, end_year=2026):
             time_col = "Date" if "Date" in df.columns else ("Datetime" if "Datetime" in df.columns else df.columns[0])
             raw_dt = pd.to_datetime(df[time_col])
             if raw_dt.dt.tz is None:
-                df["Datetime_NY"] = raw_dt.dt.tz_localize("America/New_York")
+                df["Datetime_NY"] = raw_dt.dt.tz_localize("America/New_York", ambiguous="NaT", nonexistent="shift_forward")
             else:
                 df["Datetime_NY"] = raw_dt.dt.tz_convert("America/New_York")
             df["Datetime_UTC"] = df["Datetime_NY"].dt.tz_convert("UTC")
@@ -188,7 +188,7 @@ def fetch_alpaca_1h_cached(cache_path=None, start_year=2016, end_year=2026):
         date_col = "Date" if "Date" in hist.columns else "Datetime"
         raw_dt = pd.to_datetime(hist[date_col])
         if raw_dt.dt.tz is None:
-            hist["Datetime_NY"] = raw_dt.dt.tz_localize("America/New_York")
+            hist["Datetime_NY"] = raw_dt.dt.tz_localize("America/New_York", ambiguous="NaT", nonexistent="shift_forward")
         else:
             hist["Datetime_NY"] = raw_dt.dt.tz_convert("America/New_York")
         hist["Datetime_UTC"] = hist["Datetime_NY"].dt.tz_convert("UTC")
@@ -206,7 +206,7 @@ def filter_rth_sessions(df_1h):
     """
     df = df_1h.copy()
     if df["Datetime_NY"].dt.tz is None:
-        df["Datetime_NY"] = df["Datetime_NY"].dt.tz_localize("America/New_York")
+        df["Datetime_NY"] = df["Datetime_NY"].dt.tz_localize("America/New_York", ambiguous="NaT", nonexistent="shift_forward")
     else:
         df["Datetime_NY"] = df["Datetime_NY"].dt.tz_convert("America/New_York")
 
@@ -261,7 +261,7 @@ def fetch_yfinance_bars(interval="1d", label="1D"):
 
     raw_dt = pd.to_datetime(hist[date_col])
     if raw_dt.dt.tz is None:
-        hist["Datetime_NY"] = raw_dt.dt.tz_localize("America/New_York")
+        hist["Datetime_NY"] = raw_dt.dt.tz_localize("America/New_York", ambiguous="NaT", nonexistent="shift_forward")
     else:
         hist["Datetime_NY"] = raw_dt.dt.tz_convert("America/New_York")
 

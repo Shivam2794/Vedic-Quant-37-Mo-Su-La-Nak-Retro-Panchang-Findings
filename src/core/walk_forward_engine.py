@@ -11,7 +11,7 @@ SLIPPAGE_BPS = 10 / 10000
 def get_data():
     print("[*] Downloading Data...")
     tickers = ['SPY', 'TLT', 'LQD', 'GLD', 'SHV']
-    df = yf.download(tickers, start="2008-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2008-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     returns = df.pct_change().dropna()
     

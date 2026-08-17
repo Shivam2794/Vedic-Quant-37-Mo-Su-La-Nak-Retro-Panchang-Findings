@@ -65,3 +65,8 @@ print(f"  DELTA:            {diff_sun:.6f}°  ({'PASS ✅' if diff_sun < 0.05 el
 print("\nCONCLUSION:")
 if diff_moon < 0.05 and diff_sun < 0.05:
     print("NASA JPL DE421 physical models mathematically confirm the True Jyotish Engine degrees.")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 
 def get_data():
     tickers = ["NVDA", "AAPL", "MSFT", "AMZN", "TLT", "^IRX"]
-    df = yf.download(tickers, start="2005-01-01", end="2026-12-31")['Close']
+    df = yf.download(tickers, start="2005-01-01", end="2026-12-31", auto_adjust=False)['Close']
     df = df.ffill().dropna()
     df['RF_Daily'] = ((1 + (df['^IRX'] / 100.0)) ** (1/252)) - 1
     return df

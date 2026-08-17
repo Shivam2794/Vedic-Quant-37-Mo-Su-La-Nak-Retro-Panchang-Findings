@@ -16,7 +16,7 @@ def rsi(series, period=2):
 def run_omni_allocator_btc():
     print("[*] Downloading Data for Omni-Allocator with Crypto...")
     tickers = ['UPRO', 'TMF', 'SPY', '^VIX', '^VIX3M', 'SVXY', 'VIXY', '^IRX', 'BTC-USD']
-    df = yf.download(tickers, start="2014-09-17", end="2024-01-01")['Close'] # BTC-USD Yahoo start date
+    df = yf.download(tickers, start="2014-09-17", end="2024-01-01", auto_adjust=False)['Close'] # BTC-USD Yahoo start date
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

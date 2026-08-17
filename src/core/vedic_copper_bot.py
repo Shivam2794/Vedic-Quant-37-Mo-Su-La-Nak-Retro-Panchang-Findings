@@ -19,8 +19,8 @@ MAX_UP_MODEL_FILE = os.path.join(BASE_DIR, "genesis_copper_max_up.json")
 MAX_DOWN_MODEL_FILE = os.path.join(BASE_DIR, "genesis_copper_max_down.json")
 
 def fetch_latest_data():
-    df_asset = yf.download("COPX", period="5d", interval="1h", progress=False)
-    df_bench = yf.download("SPY", period="5d", interval="1h", progress=False)
+    df_asset = yf.download("COPX", period="5d", interval="1h", progress=False, auto_adjust=False)
+    df_bench = yf.download("SPY", period="5d", interval="1h", progress=False, auto_adjust=False)
     
     if isinstance(df_asset.columns, pd.MultiIndex): df_asset.columns = df_asset.columns.get_level_values(0)
     if isinstance(df_bench.columns, pd.MultiIndex): df_bench.columns = df_bench.columns.get_level_values(0)

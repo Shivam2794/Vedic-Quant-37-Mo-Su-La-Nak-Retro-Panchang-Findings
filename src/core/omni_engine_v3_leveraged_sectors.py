@@ -12,7 +12,7 @@ def run_leveraged_sector_momentum():
     tickers = ['TECL', 'FAS', 'SOXL', 'TNA', 'SHV']
     
     # SOXL inception is 2010
-    df = yf.download(tickers, start="2011-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2011-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     
@@ -22,7 +22,7 @@ def run_leveraged_sector_momentum():
     mom3 = df.pct_change(63)
     
     # 200-day SMA of SPY as a strict macro filter
-    spy = yf.download('SPY', start="2010-01-01", end="2024-01-01")['Close']
+    spy = yf.download('SPY', start="2010-01-01", end="2024-01-01", auto_adjust=False)['Close']
     spy = spy[~spy.index.duplicated(keep='first')]
     spy = spy.ffill().dropna()
     spy_sma = spy.rolling(200).mean()
@@ -143,7 +143,7 @@ def run_leveraged_sector_momentum():
     print(f"Annual Turnover: {annual_turnover:.2f}x")
     
     # Benchmark SPY
-    spy_ret = yf.download('SPY', start="2011-01-01", end="2024-01-01")['Close'].pct_change().dropna()
+    spy_ret = yf.download('SPY', start="2011-01-01", end="2024-01-01", auto_adjust=False)['Close'].pct_change().dropna()
     spy_ret = spy_ret.loc[valid_idx]
     if isinstance(spy_ret, pd.DataFrame): spy_ret = spy_ret.iloc[:, 0]
     bm_cagr = (1 + spy_ret).prod() ** (252 / len(spy_ret)) - 1

@@ -20,8 +20,8 @@ BARRIER_BARS = 6
 
 def fetch_pair_data():
     print("[1] Fetching 2 YEARS (1h) data for COPX/SPY spread...")
-    df_asset = yf.download("COPX", period="730d", interval="1h", progress=False)
-    df_bench = yf.download("SPY", period="730d", interval="1h", progress=False)
+    df_asset = yf.download("COPX", period="730d", interval="1h", progress=False, auto_adjust=False)
+    df_bench = yf.download("SPY", period="730d", interval="1h", progress=False, auto_adjust=False)
     
     if df_asset.empty or df_bench.empty: raise ValueError("No data returned")
     

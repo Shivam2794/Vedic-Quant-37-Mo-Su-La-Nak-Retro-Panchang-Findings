@@ -122,8 +122,8 @@ for asset_name, (ticker, bench, BARRIER, rulers, use_daily, note) in UNIVERSE.it
     try:
         period = "730d"
         interval = "1h"
-        df_a = yf.download(ticker, period=period, interval=interval, progress=False)
-        df_b = yf.download(bench,  period=period, interval=interval, progress=False)
+        df_a = yf.download(ticker, period=period, interval=interval, progress=False, auto_adjust=False)
+        df_b = yf.download(bench,  period=period, interval=interval, progress=False, auto_adjust=False)
         if df_a.empty or df_b.empty: raise ValueError("empty")
     except:
         all_results[asset_name] = None; print(f"  {asset_name:<6} SKIP (download failed)"); continue

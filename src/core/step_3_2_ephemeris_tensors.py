@@ -116,6 +116,7 @@ def _derive_upagrahas(jd_ut, lat, lon):
     hora_lagna = (sunrise_asc + elapsed_hours * 30.0) % 360.0
 
     # Bhrigu Bindu
+    swe.set_sid_mode(swe.SIDM_LAHIRI)  # CRITICAL BUG FIX #5: Moved before calc
     moon_pos, _ = swe.calc_ut(float(jd_ut), swe.MOON, TOPO_FLAGS_TROPICAL)
     rahu_pos, _ = swe.calc_ut(float(jd_ut), swe.TRUE_NODE, TOPO_FLAGS_TROPICAL)
     moon_lon = moon_pos[0]
@@ -147,11 +148,8 @@ def execute_step_3_2():
 
     # TRAP 3.2.N4 FIX: Precompute Ayanamshas
     print("Pre-computing Ayanamshas...")
-    swe.set_sid_mode(swe.SIDM_LAHIRI)
     lahiri_ayanamsha_arr = np.array([swe.get_ayanamsa_ut(float(jd)) for jd in jd_array])
-    swe.set_sid_mode(swe.SIDM_KRISHNAMURTI)
     kp_ayanamsha_arr = np.array([swe.get_ayanamsa_ut(float(jd)) for jd in jd_array])
-    swe.set_sid_mode(swe.SIDM_LAHIRI) # Restore globally
 
     # Tensors
     N_FIELDS = 8
@@ -311,3 +309,8 @@ def execute_step_3_2():
 
 if __name__ == "__main__":
     execute_step_3_2()
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

@@ -18,8 +18,8 @@ BARRIER_BARS = 6
 
 def fetch_pair_data():
     print("[1] Fetching 2 YEARS (1h) data for COPX/SPY spread...")
-    df_asset = yf.download("COPX", period="730d", interval="1h", progress=False)
-    df_bench = yf.download("SPY", period="730d", interval="1h", progress=False)
+    df_asset = yf.download("COPX", period="730d", interval="1h", progress=False, auto_adjust=False)
+    df_bench = yf.download("SPY", period="730d", interval="1h", progress=False, auto_adjust=False)
     
     if isinstance(df_asset.columns, pd.MultiIndex): df_asset.columns = df_asset.columns.get_level_values(0)
     if isinstance(df_bench.columns, pd.MultiIndex): df_bench.columns = df_bench.columns.get_level_values(0)

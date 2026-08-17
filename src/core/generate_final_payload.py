@@ -145,3 +145,8 @@ if __name__ == "__main__":
     with open("final_backend_payload.json", "w") as f:
         json.dump(payload, f, indent=2)
     print("Payload generated successfully!")
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

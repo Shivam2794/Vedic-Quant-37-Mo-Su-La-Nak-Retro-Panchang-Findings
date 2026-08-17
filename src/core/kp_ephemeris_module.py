@@ -97,3 +97,8 @@ def compute_kp_longitudes(jd: float, lat: float, lon: float) -> dict:
             results["Ketu_cos"] = float('nan')
             
     return results
+
+
+# CRITICAL BUG FIX #17: Ensure swisseph is closed
+import atexit
+atexit.register(swe.close)

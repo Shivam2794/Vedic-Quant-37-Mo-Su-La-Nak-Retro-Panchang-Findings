@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 
 def run_btc_vol_target():
     print(f"[*] Downloading Data for BTC Vol Target Strategy...")
-    df_raw = yf.download(['BTC-USD', '^IRX'], start="2014-01-01", end="2024-01-01")
+    df_raw = yf.download(['BTC-USD', '^IRX'], start="2014-01-01", end="2024-01-01", auto_adjust=False)
     
     close_prices = df_raw['Close']['BTC-USD'].dropna()
     open_prices = df_raw['Open']['BTC-USD'].dropna()

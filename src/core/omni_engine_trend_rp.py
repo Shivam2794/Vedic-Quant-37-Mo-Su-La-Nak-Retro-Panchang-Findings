@@ -9,7 +9,7 @@ SLIPPAGE_BPS = 10 / 10000
 def run_trend_risk_parity():
     print("[*] Downloading Trend Risk Parity Data...")
     tickers = ['SPY', 'QQQ', 'IWM', 'EFA', 'EEM', 'TLT', 'IEF', 'LQD', 'HYG', 'GLD', 'DBC', 'VNQ', 'SHV']
-    df = yf.download(tickers, start="2008-01-01", end="2024-01-01")['Close']
+    df = yf.download(tickers, start="2008-01-01", end="2024-01-01", auto_adjust=False)['Close']
     df = df[~df.index.duplicated(keep='first')]
     df = df.ffill().dropna()
     

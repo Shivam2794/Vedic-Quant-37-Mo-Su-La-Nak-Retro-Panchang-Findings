@@ -6,7 +6,7 @@ warnings.filterwarnings('ignore')
 
 def run_omni_allocator_v8():
     print(f"[*] Downloading Data for Omni-Allocator V8 (The Final Holy Grail)...")
-    df_raw = yf.download(['BTC-USD', 'SPY', '^IRX'], start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(['BTC-USD', 'SPY', '^IRX'], start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     
     # Capture pure business index before ffill
     biz_idx = df_raw['Close']['SPY'].dropna().index

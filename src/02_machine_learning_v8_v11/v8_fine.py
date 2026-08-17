@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 def run_fine_optimizer():
-    df_raw = yf.download(['BTC-USD', 'SPY', '^IRX'], start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(['BTC-USD', 'SPY', '^IRX'], start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     df_raw = df_raw.ffill()
     
     close_prices = df_raw['Close']['BTC-USD']

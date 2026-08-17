@@ -8,7 +8,7 @@ def run_path3():
     print("[*] PATH 3: Multi-Asset Institutional Macro Portfolio...")
     assets = ['SPY', 'QQQ', 'TLT', 'GLD', 'BTC-USD', 'UUP', 'LQD']
     tickers = assets + ['^IRX']
-    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False)
+    df_raw = yf.download(tickers, start="2014-01-01", end="2024-01-01", progress=False, auto_adjust=False)
     
     biz_idx = df_raw['Close']['SPY'].dropna().index
     df_raw = df_raw.ffill()
