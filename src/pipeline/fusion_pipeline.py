@@ -462,7 +462,7 @@ def run_fusion_pipeline(
     )
 
     summary_stats["total_anomalies"] = total_extracted_anomalies
-    summary_stats["master_union_verified"] = bool(total_extracted_anomalies == len(master_manifest) == 1001)
+    summary_stats["master_union_verified"] = bool(total_extracted_anomalies == len(master_manifest))
     summary_stats["canonical_columns_count"] = len(CANONICAL_66_COLUMNS)
 
     return timeframe_anomalies, master_manifest, vedic_enriched_manifest, summary_stats

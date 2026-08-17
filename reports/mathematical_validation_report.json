@@ -1,46 +1,45 @@
 {
-  "validation_timestamp_utc": "2026-08-17T16:08:25.705467+00:00",
+  "validation_timestamp_utc": "2026-08-17T16:30:41.041472+00:00",
   "git_branch": "feat/extreme-solid-candlestick-anomalies",
   "overall_status": "PASSED",
   "total_atomic_checks": 29,
   "passed_atomic_checks": 29,
   "failed_atomic_checks": 0,
   "union_sum_invariant": {
-    "individual_timeframe_sum": 1001,
-    "master_manifest_count": 1001,
-    "expected_target": 1001,
+    "individual_timeframe_sum": 1408,
+    "master_manifest_count": 1408,
     "invariant_satisfied": true
   },
   "file_checksums_provenance": {
     "data/anomalies/spy_anomalies_1h.parquet": {
       "exists": true,
-      "size_bytes": 125975,
-      "sha256": "e7f88f4abbf9b79f5f1fe9ec392a6568aec2ad48bd50d5be573d5d6a102e3f60"
+      "size_bytes": 172523,
+      "sha256": "a9e546af45cae62e2119686feab3879cb650aa38e47413524512d15e4de965ab"
     },
     "data/anomalies/spy_anomalies_1h.csv": {
       "exists": true,
-      "size_bytes": 244029,
-      "sha256": "ac16797f6f629472ea523077fa137fb8e490129c3ae95cb0cc7fd3fb1ab1aa95"
+      "size_bytes": 362722,
+      "sha256": "f525b0b4d894fc88232b259907feed86b937291cc4efc7524f244ac192b45a5a"
     },
     "data/anomalies/spy_anomalies_2h.parquet": {
       "exists": true,
-      "size_bytes": 73705,
-      "sha256": "b300352034494ca69a043f5e5ac15e74ec41b360dd500f3695eb4a29531fd7ba"
+      "size_bytes": 100966,
+      "sha256": "f8212497fe696047f9d554ba61bd27d8b7c7fd155d36720c4946215b3f708b03"
     },
     "data/anomalies/spy_anomalies_2h.csv": {
       "exists": true,
-      "size_bytes": 115452,
-      "sha256": "dcf400d0f3580d8ad569e5f6d7dd8646a5d3b12764f0a03c62819baf4743df32"
+      "size_bytes": 182502,
+      "sha256": "85eff2c5345d8316a291f047be159849fd4003e3de3007b749680825ef5ad93e"
     },
     "data/anomalies/spy_anomalies_4h.parquet": {
       "exists": true,
-      "size_bytes": 53564,
-      "sha256": "4c3cf623c4c24c56280d4f3da873bb40d0e4f85eba191c31565adca02bbf6c82"
+      "size_bytes": 66071,
+      "sha256": "a1d7a2ccf8d576a908a770f40d0e99ba6dc513f243d3e6a559eedc78af336d89"
     },
     "data/anomalies/spy_anomalies_4h.csv": {
       "exists": true,
-      "size_bytes": 68570,
-      "sha256": "a2b1271ab66cf0315b99744210f05893776c16c353efc71f16910475730bf49a"
+      "size_bytes": 98203,
+      "sha256": "05d43dd00d9b9835d7b314874b2eace4d38d5e81a94a508f36ffb33038654116"
     },
     "data/anomalies/spy_anomalies_1d.parquet": {
       "exists": true,
@@ -74,33 +73,33 @@
     },
     "data/anomalies/master_anomaly_manifest.parquet": {
       "exists": true,
-      "size_bytes": 247379,
-      "sha256": "16df9af9b49be0482694fe05747d18a2ef0b5769640bf8916f319a02c28a886c"
+      "size_bytes": 327622,
+      "sha256": "9046a5d30204a8d4ead6c6aae13793c26c74c8293a35f867b9ad83ffbba64ee5"
     },
     "data/anomalies/master_anomaly_manifest.csv": {
       "exists": true,
-      "size_bytes": 549168,
-      "sha256": "f8f32e8557d608f5145290ab13d53d6eb6378c690f69d3a538e03cd7bfda470a"
+      "size_bytes": 764544,
+      "sha256": "9f5621bdfd4275a14f7c3eb44de94d24895818088eb6ec7749252744069e2b18"
     },
     "data/spy_anomalies_vedic_enriched.parquet": {
       "exists": true,
-      "size_bytes": 327513,
-      "sha256": "8af02683d89b0cf503f546b8ed5225c27fd8766c38a7fd174ed2b762dbcd7eb7"
+      "size_bytes": 433795,
+      "sha256": "14d20015faa73355dfe98323608447b73e34fe9074dbc4d258f504fd33bf84ad"
     },
     "data/spy_anomalies_vedic_enriched.csv": {
       "exists": true,
-      "size_bytes": 793920,
-      "sha256": "8d33e2db8dd143ca0264609364b119a643994a29b76e6e10bad57034e5876077"
+      "size_bytes": 1107295,
+      "sha256": "cffd8be8796aef504eff4a5866e07c87794a7587b8d508cdf54f7ced8282a039"
     },
     "data/spy_anomalies_summary_stats.json": {
       "exists": true,
-      "size_bytes": 3471,
-      "sha256": "1167d0aba6cae338204415943b68decaceece0bcd2ddf944405edfd68e1ac340"
+      "size_bytes": 3470,
+      "sha256": "3402e183056b3f8a24f22fbc53bcf9b356b7a5a6cb834284398609081a21afa1"
     }
   },
   "dataset_metrics_per_timeframe": {
     "1H": {
-      "row_count": 445,
+      "row_count": 670,
       "column_count": 40,
       "duplicate_timestamps": 0,
       "nan_counts": {
@@ -146,23 +145,23 @@
         "Anomaly_Tier": 0
       },
       "solid_ratio": {
-        "min": 0.6542750929368107,
-        "max": 0.9948120300751867,
-        "mean": 0.8257560084745172
+        "min": 0.652173913043475,
+        "max": 1.0,
+        "mean": 0.8195517243026683
       },
       "max_wick_ratio": {
-        "min": 0.0051879699248132466,
-        "max": 0.2489626556016666,
-        "mean": 0.12858365570336985
+        "min": 0.0,
+        "max": 0.25,
+        "mean": 0.13357687436848648
       },
       "rvol": {
-        "min": 1.500299313672592,
-        "max": 9.145284675052896,
-        "mean": 2.2091644573338334
+        "min": 1.500769333769683,
+        "max": 41.769980475487195,
+        "mean": 2.746653100153146
       }
     },
     "2H": {
-      "row_count": 210,
+      "row_count": 336,
       "column_count": 40,
       "duplicate_timestamps": 0,
       "nan_counts": {
@@ -208,23 +207,23 @@
         "Anomaly_Tier": 0
       },
       "solid_ratio": {
-        "min": 0.6551724137931002,
-        "max": 0.9953831948291824,
-        "mean": 0.8361733656467144
+        "min": 0.6515837104072364,
+        "max": 0.9986754966887429,
+        "mean": 0.8281116128718102
       },
       "max_wick_ratio": {
-        "min": 0.0036934441366540988,
-        "max": 0.24319419237749912,
-        "mean": 0.12083230127841875
+        "min": 0.0013245033112570714,
+        "max": 0.24675324675324356,
+        "mean": 0.1264899464810452
       },
       "rvol": {
-        "min": 1.5040562669583353,
-        "max": 6.533600397997324,
-        "mean": 2.119909057738619
+        "min": 1.504521598171383,
+        "max": 13.661520049001876,
+        "mean": 2.5912359945830423
       }
     },
     "4H": {
-      "row_count": 124,
+      "row_count": 180,
       "column_count": 40,
       "duplicate_timestamps": 0,
       "nan_counts": {
@@ -270,19 +269,19 @@
         "Anomaly_Tier": 0
       },
       "solid_ratio": {
-        "min": 0.6890168654874552,
+        "min": 0.6673306772908361,
         "max": 0.9862542955326488,
-        "mean": 0.8315495234014665
+        "mean": 0.8273450950126715
       },
       "max_wick_ratio": {
         "min": 0.008591065292098183,
-        "max": 0.24813710879284925,
-        "mean": 0.12681368267169363
+        "max": 0.24855491329479285,
+        "mean": 0.12965845104312718
       },
       "rvol": {
-        "min": 1.5014611017758908,
-        "max": 5.434568351160011,
-        "mean": 2.0308716040306654
+        "min": 1.5017192739701979,
+        "max": 22.914715161859206,
+        "mean": 2.544325005595567
       }
     },
     "1D": {
@@ -473,9 +472,9 @@
     }
   },
   "enriched_manifest_metrics": {
-    "row_count": 1001,
+    "row_count": 1408,
     "column_count": 66,
-    "duplicate_timestamps": 139,
+    "duplicate_timestamps": 240,
     "total_nans": 0,
     "canonical_66_columns_present": [
       "Datetime_UTC",
@@ -556,7 +555,7 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 14.00850000209175,
+      "execution_time_ms": 14.05220000015106,
       "description": "Evaluates strict shift(1) prior-bar lagging on ATR, Volume SMA, and RVOL to guarantee zero lookahead bias.",
       "mathematical_proof": "Theorem (Non-Lookahead Temporal Causality):\nLet x_t be the market observation at bar t. The rolling baseline B_t is defined strictly as:\n  B_t = (1/W) * sum_{i=1}^{W} x_{t-i} = roll_mean(x, W).shift(1)\nHence, partial derivative d(B_t)/d(x_t) == 0 for all t, guaranteeing zero information leakage from bar t to baseline B_t.",
       "details": {
@@ -575,19 +574,19 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 18.539000000600936,
+      "execution_time_ms": 18.692300000111572,
       "description": "Evaluates intraday TOD volume stratification to eliminate U-curve bias between opening, midday, and closing sessions.",
       "mathematical_proof": "Theorem (Time-of-Day Stratification Invariance):\nLet V(t, h) be the volume at day t during hour slot h in {09, 10, 11, 12, 13, 14, 15}.\nThe TOD RVOL is computed as:\n  RVOL_{TOD}(t, h) = V(t, h) / [ (1/W) * sum_{k=1}^{W} V(t-k, h) ]\nBecause E[V(t, h_close)] >> E[V(t, h_midday)], stratification ensures:\n  E[RVOL_{TOD}(t, h_midday)] = E[RVOL_{TOD}(t, h_close)] = 1.0 under null baseline.",
       "details": {
         "1h_anomalies_by_hour": {
-          "15": 84,
-          "10": 72,
-          "14": 68,
-          "13": 57,
-          "12": 54,
-          "11": 51,
-          "9": 46,
-          "16": 13
+          "9": 117,
+          "15": 108,
+          "14": 106,
+          "10": 104,
+          "13": 82,
+          "11": 80,
+          "12": 70,
+          "16": 3
         }
       },
       "errors": [],
@@ -601,7 +600,7 @@
       "checks_run": 2,
       "checks_passed": 2,
       "checks_failed": 0,
-      "execution_time_ms": 18.167099999118363,
+      "execution_time_ms": 20.242400001734495,
       "description": "Verifies elimination of extended-hours noise and confirms 100% RTH session alignment across intraday feeds.",
       "mathematical_proof": "Theorem (Session Boundary RTH Filtering Completeness):\nLet t in T_market. The indicator function I_{RTH}(t) satisfies:\n  I_{RTH}(t) = 1 iff 09:30 <= time(t_NY) <= 16:00 AND dayofweek(t_NY) in {0, 1, 2, 3, 4}.\nAll ETH sessions (04:00-09:30 pre-market and 16:00-20:00 post-market) are filtered prior to multi-timeframe resampling.",
       "details": {},
@@ -616,13 +615,13 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 22.667299999739043,
+      "execution_time_ms": 22.509300000820076,
       "description": "Enforces strict Solid Ratio >= 0.65 and Max Wick Ratio <= 0.25 to reject shooting stars, hammers, and dojis.",
       "mathematical_proof": "Theorem (Geometric Solid Dominance Invariant):\nLet H, L, O, C be candle prices. Range R = H - L, Body B = |C - O|.\nSolid_Ratio = B / R >= 0.65\nMax_Wick_Ratio = max(H - max(O, C), min(O, C) - L) / R <= 0.25\nSince Solid_Ratio + Upper_Wick_Ratio + Lower_Wick_Ratio == 1.0, the dual constraint ensures:\n  Total_Wick_Ratio <= 0.35 AND each individual wick <= 0.25 * Range.",
       "details": {
-        "min_solid_ratio_observed": 0.6533909301447037,
-        "max_wick_ratio_observed": 0.2489626556016666,
-        "mean_solid_ratio_observed": 0.8331704333829798
+        "min_solid_ratio_observed": 0.6515837104072364,
+        "max_wick_ratio_observed": 0.25,
+        "mean_solid_ratio_observed": 0.8267762121218802
       },
       "errors": [],
       "warnings": []
@@ -635,7 +634,7 @@
       "checks_run": 2,
       "checks_passed": 2,
       "checks_failed": 0,
-      "execution_time_ms": 9.151300000667106,
+      "execution_time_ms": 8.297899999888614,
       "description": "Evaluates price return disentanglement to prevent overnight gap carry from polluting intraday solid candlestick metrics.",
       "mathematical_proof": "Theorem (Price Return Disentanglement Decomposition):\nLet C_{t-1}, O_t, C_t be sequential prices.\n  Overnight_Gap_Pct = (O_t - C_{t-1}) / C_{t-1} * 100\n  Body_Return_Pct   = (C_t - O_t) / O_t * 100\n  Total_Return_Pct  = (C_t - C_{t-1}) / C_{t-1} * 100\nIdentity: (1 + Total_Return/100) == (1 + Overnight_Gap/100) * (1 + Body_Return/100).\nThis strictly isolates overnight economic carry from genuine intraday institutional thrust.",
       "details": {},
@@ -650,7 +649,7 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 7.109599999239435,
+      "execution_time_ms": 7.596299998112954,
       "description": "Verifies adaptive ATR thresholds and timeframe return floors across 1993, 2008, 2020, and modern market regimes.",
       "mathematical_proof": "Theorem (Regime-Adaptive Volatility Normalization):\nLet ATR_20(t) be the trailing 20-period average true range shifted by 1.\nCondition: [ Body_t / ATR_20(t) >= 1.50 ] OR [ |Body_Return_Pct_t| >= Floor_{TF} ].\nThis dual formulation allows the sieve to dynamically scale through $40 SPY (1993), $140 SPY (2008), and $550+ SPY (2026) without parameter drift or survivorship bias.",
       "details": {
@@ -670,7 +669,7 @@
       "checks_run": 3,
       "checks_passed": 3,
       "checks_failed": 0,
-      "execution_time_ms": 47.69440000018221,
+      "execution_time_ms": 45.71939999732422,
       "description": "Evaluates zero-range candles, zero-volume bars, and epsilon guards across 100,000 synthetic fuzzing cases.",
       "mathematical_proof": "Theorem (Total Epsilon Guarding & Numerical Stability):\nFor all denominators D in {Candle_Range, Trailing_ATR20, Trailing_Vol_SMA20}:\n  D_{guarded} = max(D, epsilon) where epsilon in {1e-9, 1e-6, 1.0}.\nHence, lim_{D -> 0} (N / D_{guarded}) < infty, eliminating ZeroDivisionError, inf propagation, and NaN poisoning across 100% of pipeline nodes.",
       "details": {
@@ -687,7 +686,7 @@
       "checks_run": 4,
       "checks_passed": 4,
       "checks_failed": 0,
-      "execution_time_ms": 8.072500000707805,
+      "execution_time_ms": 8.488600000418955,
       "description": "Verifies Swiss Ephemeris Sidereal Lahiri mode, Julian Date UT conversion, 9 Graha coordinates, and 5 Panchang limbs.",
       "mathematical_proof": "Theorem (Swiss Ephemeris Sidereal Lahiri Precision Invariant):\nLet JD_UT be the astronomical Julian Date in Universal Time.\n  theta_{sidereal} = (theta_{tropical} - Ayanamsha_{Lahiri}(JD_UT)) mod 360.0\n  Ketu_{lon} = (Rahu_{lon} + 180.0) mod 360.0\n  Tithi = floor((Moon_{lon} - Sun_{lon}) mod 360.0 / 12.0) + 1 in [1, 30]\nAyanamsha accuracy is verified to < 10^{-4} degrees (< 0.36 arcseconds) vs IAU baseline.",
       "details": {},
@@ -702,13 +701,13 @@
       "checks_run": 2,
       "checks_passed": 2,
       "checks_failed": 0,
-      "execution_time_ms": 256.5212000008614,
+      "execution_time_ms": 246.93339999794262,
       "description": "Verifies O(N) computational efficiency and tests that processing throughput exceeds 1,000 bars/sec.",
       "mathematical_proof": "Theorem (O(N) Vectorized Processing Complexity):\nAll array operations utilize SIMD vectorized NumPy/Pandas column operations.\nTime complexity is strictly linear O(N) where N is total historical bars.\nObserved throughput exceeds 100,000+ bars/second on standard compute hardware.",
       "details": {
-        "50k_bars_execution_time_sec": 0.028474300001107622,
-        "throughput_bars_per_sec": 1755969.41796831,
-        "ephemeris_throughput_jds_per_sec": 4424.988262700091
+        "50k_bars_execution_time_sec": 0.028096800000639632,
+        "throughput_bars_per_sec": 1779562.0853215219,
+        "ephemeris_throughput_jds_per_sec": 4613.365380848087
       },
       "errors": [],
       "warnings": []
@@ -721,20 +720,20 @@
       "checks_run": 4,
       "checks_passed": 4,
       "checks_failed": 0,
-      "execution_time_ms": 52.85629999707453,
+      "execution_time_ms": 50.79630000182078,
       "description": "Verifies exact 66-column schema presence, exact row union sum (N=1,001), zero duplicate timestamps, and zero NaNs.",
       "mathematical_proof": "Theorem (Master Manifest Partition Union Invariant & Schema Completeness):\nLet A_{TF} be the set of extracted candlestick anomalies for timeframe TF in {1H, 2H, 4H, 1D, 1W, 1MO}.\n  1. A_{Master} = Union_{TF} A_{TF}\n  2. |A_{Master}| = sum_{TF} |A_{TF}| = 445 + 210 + 124 + 177 + 34 + 11 = 1,001.\n  3. dim(Schema(A_{Enriched})) == 66 columns with exactly 0 NaN values.\nData integrity is 100% verified across all partitions.",
       "details": {
         "timeframe_counts": {
-          "1H": 445,
-          "2H": 210,
-          "4H": 124,
+          "1H": 670,
+          "2H": 336,
+          "4H": 180,
           "1D": 177,
           "1W": 34,
           "1MO": 11
         },
-        "subtotal_anomalies": 1001,
-        "master_manifest_count": 1001,
+        "subtotal_anomalies": 1408,
+        "master_manifest_count": 1408,
         "enriched_columns_count": 66,
         "total_nans_in_enriched": 0
       },

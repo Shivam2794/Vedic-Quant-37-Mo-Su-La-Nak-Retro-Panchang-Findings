@@ -94,18 +94,70 @@ def compute_julian_date(dt_input):
         return res.iloc[0] if not isinstance(dt_input, (list, tuple)) else res
 
 
-def fetch_alpaca_1h_cached(cache_path=None, start_year=2016, end_year=2026):
+def fetch_alpaca_1h_cached(cache_path=None, start_year=2008, end_year=2026):
     """
-    Fetches 1-hour SPY bars from Alpaca API or loads from persistent local cache.
-    Falls back to existing project caches or yfinance if Alpaca API is unavailable.
+    Fetches 1-hour SPY bars spanning 2008 to 2026 by unifying historical 1-minute 
+    institutional archives (e.g. E:\SPY 1min data) and Alpaca API / caches.
     """
+    data_dir = os.path.join(os.getcwd(), "data")
+    unified_cache = os.path.join(data_dir, "raw_spy_1h_unified_2008_2026.parquet")
+    
+    if os.path.exists(unified_cache) and os.path.getsize(unified_cache) > 200000:
+        df = pd.read_parquet(unified_cache)
+        df["Datetime_UTC"] = pd.to_datetime(df["Datetime_UTC"]).dt.tz_convert("UTC")
+        df["Datetime_NY"] = df["Datetime_UTC"].dt.tz_convert("America/New_York")
+        df["Julian_Date_UT"] = compute_julian_date(df["Datetime_UTC"])
+        cols = ["Datetime_UTC", "Datetime_NY", "Julian_Date_UT", "Open", "High", "Low", "Close", "Volume"]
+        return df[[c for c in cols if c in df.columns]].drop_duplicates(subset=["Datetime_UTC"]).sort_values("Datetime_UTC").reset_index(drop=True)
+
+    # Check for local E:\SPY 1min data
+    kaggle_1m_path = r"E:\SPY 1min data\spy_1min_2008_2021_cleaned.csv"
+    if os.path.exists(kaggle_1m_path):
+        df_k = pd.read_csv(kaggle_1m_path)
+        df_k["dt_raw"] = pd.to_datetime(df_k["date"])
+        # Standard Mountain Time to Eastern Time (+2 hours)
+        df_k["dt_ny"] = df_k["dt_raw"] + pd.Timedelta(hours=2)
+        df_rth = df_k[(df_k["dt_ny"].dt.time >= time(9, 30)) & (df_k["dt_ny"].dt.time < time(16, 0))].copy()
+        df_rth = df_rth.set_index("dt_ny")
+        
+        df_1h_k = df_rth.groupby(pd.Grouper(freq="1h", origin="start_day", offset="30min")).agg({
+            "open": "first",
+            "high": "max",
+            "low": "min",
+            "close": "last",
+            "volume": "sum"
+        }).dropna().reset_index()
+        
+        df_1h_k = df_1h_k.rename(columns={"open": "Open", "high": "High", "low": "Low", "close": "Close", "volume": "Volume", "dt_ny": "Datetime_NY"})
+        df_1h_k["Datetime_NY"] = df_1h_k["Datetime_NY"].dt.tz_localize("America/New_York", ambiguous="NaT", nonexistent="shift_forward")
+        df_1h_k = df_1h_k.dropna(subset=["Datetime_NY"])
+        df_1h_k["Datetime_UTC"] = df_1h_k["Datetime_NY"].dt.tz_convert("UTC")
+        df_1h_k["Julian_Date_UT"] = compute_julian_date(df_1h_k["Datetime_UTC"])
+        cols = ["Datetime_UTC", "Datetime_NY", "Julian_Date_UT", "Open", "High", "Low", "Close", "Volume"]
+        df_1h_k = df_1h_k[cols]
+        
+        # Load Alpaca cache for post-2021 data
+        alpaca_cache = os.path.join(data_dir, "raw_spy_1h_alpaca.parquet")
+        if os.path.exists(alpaca_cache):
+            df_alp = pd.read_parquet(alpaca_cache)
+            df_alp["Datetime_UTC"] = pd.to_datetime(df_alp["Datetime_UTC"]).dt.tz_convert("UTC")
+            df_alp["Datetime_NY"] = df_alp["Datetime_UTC"].dt.tz_convert("America/New_York")
+            df_alp["Julian_Date_UT"] = compute_julian_date(df_alp["Datetime_UTC"])
+            max_k = df_1h_k["Datetime_UTC"].max()
+            df_alp_sub = df_alp[df_alp["Datetime_UTC"] > max_k][cols]
+            df_unified = pd.concat([df_1h_k, df_alp_sub], ignore_index=True)
+        else:
+            df_unified = df_1h_k
+            
+        df_unified = df_unified.drop_duplicates(subset=["Datetime_UTC"]).sort_values("Datetime_UTC").reset_index(drop=True)
+        os.makedirs(data_dir, exist_ok=True)
+        df_unified.to_parquet(unified_cache, index=False)
+        return df_unified
+
     if cache_path is None:
-        # Search common cache locations
         candidates = [
             os.path.join(os.getcwd(), "data", "raw_spy_1h_alpaca.parquet"),
-            os.path.join(os.getcwd(), "data", "raw", "raw_spy_1h_alpaca.parquet"),
             os.path.join(os.getcwd(), "data", "spy_full_series_1h.parquet"),
-            r"C:\Users\Shivam Patel\.gemini\antigravity\scratch\Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings\data\raw_spy_1h_alpaca.parquet",
         ]
         for c in candidates:
             if os.path.exists(c) and os.path.getsize(c) > 100000:
@@ -114,7 +166,6 @@ def fetch_alpaca_1h_cached(cache_path=None, start_year=2016, end_year=2026):
 
     if cache_path and os.path.exists(cache_path) and os.path.getsize(cache_path) > 100000:
         df = pd.read_parquet(cache_path)
-        # Ensure standard timestamp columns
         if "Datetime_UTC" not in df.columns:
             time_col = "Date" if "Date" in df.columns else ("Datetime" if "Datetime" in df.columns else df.columns[0])
             raw_dt = pd.to_datetime(df[time_col])

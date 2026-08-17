@@ -1,6 +1,6 @@
 # Comprehensive Quality Inspection & Forensic Validation Audit Report
 
-**Audit Execution Timestamp**: `2026-08-17 16:08:25 UTC`  
+**Audit Execution Timestamp**: `2026-08-17 16:30:41 UTC`  
 **Inspector Persona**: `Brutal Multipoint Quality Inspector (Teamwork M4)`  
 **Git Branch**: `feat/extreme-solid-candlestick-anomalies`  
 **Overall System Grade**: `PASSED (100% COMPLIANT)`  
@@ -29,16 +29,16 @@ Swiss Ephemeris astronomical precision standards.
 
 | Vector ID | Failure Vector Title | Status | Checks (Passed/Run) | Score | Exec Time |
 |:---------:|:---------------------|:------:|:-------------------:|:-----:|:---------:|
-| **V1** | Lookahead Bias & Data Leakage in Rolling Baselines | ✅ PASSED | 3/3 | 100.0% | 14.01ms |
-| **V2** | Intraday Volume U-Curve Distortion & TOD Normalization | ✅ PASSED | 3/3 | 100.0% | 18.54ms |
-| **V3** | Session Boundary & RTH Alignment (09:30-16:00 EST) | ✅ PASSED | 2/2 | 100.0% | 18.17ms |
-| **V4** | Wick/Shadow Asymmetry & Pin-Bar Misclassifications | ✅ PASSED | 3/3 | 100.0% | 22.67ms |
-| **V5** | Overnight Gap vs. Intraday Real Body Separation | ✅ PASSED | 2/2 | 100.0% | 9.15ms |
-| **V6** | Historical Volatility Regime Shifts & Return Floors | ✅ PASSED | 3/3 | 100.0% | 7.11ms |
-| **V7** | Numerical Stability, Zero-Range Guards & Division-by-Zero Protection | ✅ PASSED | 3/3 | 100.0% | 47.69ms |
-| **V8** | Astrological Ephemeris Coordinate & Timezone Precision | ✅ PASSED | 4/4 | 100.0% | 8.07ms |
-| **V9** | Computational Efficiency & Vectorized Batch Throughput | ✅ PASSED | 2/2 | 100.0% | 256.52ms |
-| **V10** | Downstream 66-Column Schema Compatibility & Master Union Invariant | ✅ PASSED | 4/4 | 100.0% | 52.86ms |
+| **V1** | Lookahead Bias & Data Leakage in Rolling Baselines | ✅ PASSED | 3/3 | 100.0% | 14.05ms |
+| **V2** | Intraday Volume U-Curve Distortion & TOD Normalization | ✅ PASSED | 3/3 | 100.0% | 18.69ms |
+| **V3** | Session Boundary & RTH Alignment (09:30-16:00 EST) | ✅ PASSED | 2/2 | 100.0% | 20.24ms |
+| **V4** | Wick/Shadow Asymmetry & Pin-Bar Misclassifications | ✅ PASSED | 3/3 | 100.0% | 22.51ms |
+| **V5** | Overnight Gap vs. Intraday Real Body Separation | ✅ PASSED | 2/2 | 100.0% | 8.30ms |
+| **V6** | Historical Volatility Regime Shifts & Return Floors | ✅ PASSED | 3/3 | 100.0% | 7.60ms |
+| **V7** | Numerical Stability, Zero-Range Guards & Division-by-Zero Protection | ✅ PASSED | 3/3 | 100.0% | 45.72ms |
+| **V8** | Astrological Ephemeris Coordinate & Timezone Precision | ✅ PASSED | 4/4 | 100.0% | 8.49ms |
+| **V9** | Computational Efficiency & Vectorized Batch Throughput | ✅ PASSED | 2/2 | 100.0% | 246.93ms |
+| **V10** | Downstream 66-Column Schema Compatibility & Master Union Invariant | ✅ PASSED | 4/4 | 100.0% | 50.80ms |
 
 ---
 
@@ -47,7 +47,7 @@ Swiss Ephemeris astronomical precision standards.
 ### Vector 1: Lookahead Bias & Data Leakage in Rolling Baselines
 - **Description**: Evaluates strict shift(1) prior-bar lagging on ATR, Volume SMA, and RVOL to guarantee zero lookahead bias.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `14.01 ms`
+- **Execution Latency**: `14.05 ms`
 
 ```text
 Theorem (Non-Lookahead Temporal Causality):
@@ -64,7 +64,7 @@ Hence, partial derivative d(B_t)/d(x_t) == 0 for all t, guaranteeing zero inform
 ### Vector 2: Intraday Volume U-Curve Distortion & TOD Normalization
 - **Description**: Evaluates intraday TOD volume stratification to eliminate U-curve bias between opening, midday, and closing sessions.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `18.54 ms`
+- **Execution Latency**: `18.69 ms`
 
 ```text
 Theorem (Time-of-Day Stratification Invariance):
@@ -76,12 +76,12 @@ Because E[V(t, h_close)] >> E[V(t, h_midday)], stratification ensures:
 ```
 
 **Audit Evidence & Metrics:**
-- `1h_anomalies_by_hour`: `{15: 84, 10: 72, 14: 68, 13: 57, 12: 54, 11: 51, 9: 46, 16: 13}`
+- `1h_anomalies_by_hour`: `{9: 117, 15: 108, 14: 106, 10: 104, 13: 82, 11: 80, 12: 70, 16: 3}`
 
 ### Vector 3: Session Boundary & RTH Alignment (09:30-16:00 EST)
 - **Description**: Verifies elimination of extended-hours noise and confirms 100% RTH session alignment across intraday feeds.
 - **Audit Status**: `PASSED` (2/2 checks passed)
-- **Execution Latency**: `18.17 ms`
+- **Execution Latency**: `20.24 ms`
 
 ```text
 Theorem (Session Boundary RTH Filtering Completeness):
@@ -93,7 +93,7 @@ All ETH sessions (04:00-09:30 pre-market and 16:00-20:00 post-market) are filter
 ### Vector 4: Wick/Shadow Asymmetry & Pin-Bar Misclassifications
 - **Description**: Enforces strict Solid Ratio >= 0.65 and Max Wick Ratio <= 0.25 to reject shooting stars, hammers, and dojis.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `22.67 ms`
+- **Execution Latency**: `22.51 ms`
 
 ```text
 Theorem (Geometric Solid Dominance Invariant):
@@ -105,14 +105,14 @@ Since Solid_Ratio + Upper_Wick_Ratio + Lower_Wick_Ratio == 1.0, the dual constra
 ```
 
 **Audit Evidence & Metrics:**
-- `min_solid_ratio_observed`: `0.6533909301447037`
-- `max_wick_ratio_observed`: `0.2489626556016666`
-- `mean_solid_ratio_observed`: `0.8331704333829798`
+- `min_solid_ratio_observed`: `0.6515837104072364`
+- `max_wick_ratio_observed`: `0.25`
+- `mean_solid_ratio_observed`: `0.8267762121218802`
 
 ### Vector 5: Overnight Gap vs. Intraday Real Body Separation
 - **Description**: Evaluates price return disentanglement to prevent overnight gap carry from polluting intraday solid candlestick metrics.
 - **Audit Status**: `PASSED` (2/2 checks passed)
-- **Execution Latency**: `9.15 ms`
+- **Execution Latency**: `8.30 ms`
 
 ```text
 Theorem (Price Return Disentanglement Decomposition):
@@ -127,7 +127,7 @@ This strictly isolates overnight economic carry from genuine intraday institutio
 ### Vector 6: Historical Volatility Regime Shifts & Return Floors
 - **Description**: Verifies adaptive ATR thresholds and timeframe return floors across 1993, 2008, 2020, and modern market regimes.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `7.11 ms`
+- **Execution Latency**: `7.60 ms`
 
 ```text
 Theorem (Regime-Adaptive Volatility Normalization):
@@ -145,7 +145,7 @@ This dual formulation allows the sieve to dynamically scale through $40 SPY (199
 ### Vector 7: Numerical Stability, Zero-Range Guards & Division-by-Zero Protection
 - **Description**: Evaluates zero-range candles, zero-volume bars, and epsilon guards across 100,000 synthetic fuzzing cases.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `47.69 ms`
+- **Execution Latency**: `45.72 ms`
 
 ```text
 Theorem (Total Epsilon Guarding & Numerical Stability):
@@ -160,7 +160,7 @@ Hence, lim_{D -> 0} (N / D_{guarded}) < infty, eliminating ZeroDivisionError, in
 ### Vector 8: Astrological Ephemeris Coordinate & Timezone Precision
 - **Description**: Verifies Swiss Ephemeris Sidereal Lahiri mode, Julian Date UT conversion, 9 Graha coordinates, and 5 Panchang limbs.
 - **Audit Status**: `PASSED` (4/4 checks passed)
-- **Execution Latency**: `8.07 ms`
+- **Execution Latency**: `8.49 ms`
 
 ```text
 Theorem (Swiss Ephemeris Sidereal Lahiri Precision Invariant):
@@ -174,7 +174,7 @@ Ayanamsha accuracy is verified to < 10^{-4} degrees (< 0.36 arcseconds) vs IAU b
 ### Vector 9: Computational Efficiency & Vectorized Batch Throughput
 - **Description**: Verifies O(N) computational efficiency and tests that processing throughput exceeds 1,000 bars/sec.
 - **Audit Status**: `PASSED` (2/2 checks passed)
-- **Execution Latency**: `256.52 ms`
+- **Execution Latency**: `246.93 ms`
 
 ```text
 Theorem (O(N) Vectorized Processing Complexity):
@@ -184,14 +184,14 @@ Observed throughput exceeds 100,000+ bars/second on standard compute hardware.
 ```
 
 **Audit Evidence & Metrics:**
-- `50k_bars_execution_time_sec`: `0.028474300001107622`
-- `throughput_bars_per_sec`: `1755969.41796831`
-- `ephemeris_throughput_jds_per_sec`: `4424.988262700091`
+- `50k_bars_execution_time_sec`: `0.028096800000639632`
+- `throughput_bars_per_sec`: `1779562.0853215219`
+- `ephemeris_throughput_jds_per_sec`: `4613.365380848087`
 
 ### Vector 10: Downstream 66-Column Schema Compatibility & Master Union Invariant
 - **Description**: Verifies exact 66-column schema presence, exact row union sum (N=1,001), zero duplicate timestamps, and zero NaNs.
 - **Audit Status**: `PASSED` (4/4 checks passed)
-- **Execution Latency**: `52.86 ms`
+- **Execution Latency**: `50.80 ms`
 
 ```text
 Theorem (Master Manifest Partition Union Invariant & Schema Completeness):
@@ -203,9 +203,9 @@ Data integrity is 100% verified across all partitions.
 ```
 
 **Audit Evidence & Metrics:**
-- `timeframe_counts`: `{'1H': 445, '2H': 210, '4H': 124, '1D': 177, '1W': 34, '1MO': 11}`
-- `subtotal_anomalies`: `1001`
-- `master_manifest_count`: `1001`
+- `timeframe_counts`: `{'1H': 670, '2H': 336, '4H': 180, '1D': 177, '1W': 34, '1MO': 11}`
+- `subtotal_anomalies`: `1408`
+- `master_manifest_count`: `1408`
 - `enriched_columns_count`: `66`
 - `total_nans_in_enriched`: `0`
 
@@ -215,14 +215,14 @@ Data integrity is 100% verified across all partitions.
 
 | Timeframe | Total Bars | Historical Period (UTC) | Anomalies Extracted | Green Candles | Red Candles | Tier 2 Super | Mean Solid Ratio | Mean RVOL | Mean Body Return % |
 |:---------:|:----------:|:-----------------------:|:-------------------:|:-------------:|:-----------:|:------------:|:----------------:|:---------:|:------------------:|
-| **1H** | 21,346 | 2016-01-04 to 2026-08-14 | **445** | 164 (36.9%) | 281 (63.1%) | 71 | 0.8258 | 2.21x | 0.93% |
-| **2H** | 11,573 | 2016-01-05 to 2026-08-14 | **210** | 79 (37.6%) | 131 (62.4%) | 33 | 0.8362 | 2.12x | 1.27% |
-| **4H** | 6,235 | 2016-01-05 to 2026-08-14 | **124** | 39 (31.5%) | 85 (68.5%) | 18 | 0.8315 | 2.03x | 1.68% |
+| **1H** | 33,941 | 2008-01-22 to 2026-08-14 | **670** | 273 (40.7%) | 397 (59.3%) | 81 | 0.8196 | 2.75x | 0.92% |
+| **2H** | 19,072 | 2008-01-23 to 2026-08-14 | **336** | 125 (37.2%) | 211 (62.8%) | 45 | 0.8281 | 2.59x | 1.31% |
+| **4H** | 9,755 | 2008-01-24 to 2026-08-14 | **180** | 49 (27.2%) | 131 (72.8%) | 22 | 0.8273 | 2.54x | 1.73% |
 | **1D** | 8,439 | 1993-02-05 to 2026-08-17 | **177** | 56 (31.6%) | 121 (68.4%) | 32 | 0.8543 | 2.08x | 2.49% |
 | **1W** | 1,747 | 1993-03-01 to 2026-08-17 | **34** | 12 (35.3%) | 22 (64.7%) | 7 | 0.8213 | 1.98x | 5.46% |
 | **1MO** | 399 | 1993-06-01 to 2026-08-01 | **11** | 5 (45.5%) | 6 (54.5%) | 1 | 0.7911 | 2.14x | 7.60% |
 
-**Total Master Anomalies Extracted Across All Timeframes**: `1,001` (355 Green, 646 Red, 162 Tier 2 Super Institutional Thrusts)
+**Total Master Anomalies Extracted Across All Timeframes**: `1,408` (520 Green, 888 Red, 188 Tier 2 Super Institutional Thrusts)
 
 ---
 

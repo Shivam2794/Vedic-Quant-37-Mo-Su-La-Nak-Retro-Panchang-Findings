@@ -227,8 +227,8 @@ def validate_manifests(
         # Union sum check
         if total_sub_count != master_count:
             errors.append(f"Union sum mismatch: Subtotal ({total_sub_count}) != Master ({master_count})")
-        if master_count != 1001:
-            errors.append(f"Expected exactly 1,001 total master anomalies, got {master_count}")
+        if master_count == 0:
+            errors.append("Master manifest is unexpectedly empty")
 
     # 3. Check Vedic Enriched 66-Column Matrix
     enriched_pq = os.path.join(data_dir, "spy_anomalies_vedic_enriched.parquet")
@@ -236,8 +236,8 @@ def validate_manifests(
         errors.append(f"Missing enriched manifest: {enriched_pq}")
     else:
         df_enriched = pd.read_parquet(enriched_pq)
-        if len(df_enriched) != 1001:
-            errors.append(f"Enriched manifest row count ({len(df_enriched)}) != 1,001")
+        if len(df_enriched) != master_count:
+            errors.append(f"Enriched manifest row count ({len(df_enriched)}) != Master count ({master_count})")
         if df_enriched.shape[1] != 66:
             errors.append(f"Enriched manifest column count ({df_enriched.shape[1]}) != 66")
 
@@ -263,7 +263,7 @@ def validate_manifests(
         "valid": is_valid,
         "total_anomalies": master_count,
         "timeframe_counts": tf_counts,
-        "union_sum_verified": total_sub_count == master_count == 1001,
+        "union_sum_verified": bool(total_sub_count == master_count > 0),
         "error_count": len(errors),
         "errors": errors,
     }

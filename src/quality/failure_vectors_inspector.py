@@ -1001,17 +1001,17 @@ class QualityInspector:
         subtotal_anomalies = sum(timeframe_counts.values())
         details["subtotal_anomalies"] = subtotal_anomalies
 
-        # 2. Master Anomaly Manifest Union Sum Validation (Exact 1,001 rows)
+        # 2. Master Anomaly Manifest Union Sum Validation
         checks_run += 1
         master_pq = os.path.join(self.anomalies_dir, "master_anomaly_manifest.parquet")
         if os.path.exists(master_pq):
             df_master = pd.read_parquet(master_pq)
             master_count = len(df_master)
             details["master_manifest_count"] = master_count
-            if master_count == subtotal_anomalies == 1001:
+            if master_count == subtotal_anomalies and master_count > 0:
                 checks_passed += 1
             else:
-                errors.append(f"Union Sum Mismatch: Subtotal={subtotal_anomalies}, Master={master_count}, Expected=1001")
+                errors.append(f"Union Sum Mismatch: Subtotal={subtotal_anomalies}, Master={master_count}")
         else:
             errors.append(f"Master manifest missing: {master_pq}")
 
@@ -1373,8 +1373,7 @@ class QualityInspector:
             "union_sum_invariant": {
                 "individual_timeframe_sum": indiv_sum,
                 "master_manifest_count": master_manifest_count,
-                "expected_target": 1001,
-                "invariant_satisfied": indiv_sum == master_manifest_count == 1001,
+                "invariant_satisfied": bool(indiv_sum == master_manifest_count > 0),
             },
             "file_checksums_provenance": checksums,
             "dataset_metrics_per_timeframe": dataset_metrics,
