@@ -1,6 +1,6 @@
 # Comprehensive Quality Inspection & Forensic Validation Audit Report
 
-**Audit Execution Timestamp**: `2026-08-18 01:16:35 UTC`  
+**Audit Execution Timestamp**: `2026-08-18 18:44:23 UTC`  
 **Inspector Persona**: `Brutal Multipoint Quality Inspector (Teamwork M4)`  
 **Git Branch**: `feat/extreme-solid-candlestick-anomalies`  
 **Overall System Grade**: `PASSED (100% COMPLIANT)`  
@@ -29,16 +29,16 @@ Swiss Ephemeris astronomical precision standards.
 
 | Vector ID | Failure Vector Title | Status | Checks (Passed/Run) | Score | Exec Time |
 |:---------:|:---------------------|:------:|:-------------------:|:-----:|:---------:|
-| **V1** | Lookahead Bias & Data Leakage in Rolling Baselines | ✅ PASSED | 3/3 | 100.0% | 13.96ms |
-| **V2** | Intraday Volume U-Curve Distortion & TOD Normalization | ✅ PASSED | 3/3 | 100.0% | 22.03ms |
-| **V3** | Session Boundary & RTH Alignment (09:30-16:00 EST) | ✅ PASSED | 2/2 | 100.0% | 20.41ms |
-| **V4** | Wick/Shadow Asymmetry & Pin-Bar Misclassifications | ✅ PASSED | 3/3 | 100.0% | 23.89ms |
-| **V5** | Overnight Gap vs. Intraday Real Body Separation | ✅ PASSED | 2/2 | 100.0% | 8.81ms |
-| **V6** | Historical Volatility Regime Shifts & Return Floors | ✅ PASSED | 3/3 | 100.0% | 7.67ms |
-| **V7** | Numerical Stability, Zero-Range Guards & Division-by-Zero Protection | ✅ PASSED | 3/3 | 100.0% | 47.22ms |
-| **V8** | Astrological Ephemeris Coordinate & Timezone Precision | ✅ PASSED | 4/4 | 100.0% | 11.25ms |
-| **V9** | Computational Efficiency & Vectorized Batch Throughput | ✅ PASSED | 2/2 | 100.0% | 248.03ms |
-| **V10** | Downstream 66-Column Schema Compatibility & Master Union Invariant | ✅ PASSED | 4/4 | 100.0% | 51.48ms |
+| **V1** | Lookahead Bias & Data Leakage in Rolling Baselines | ✅ PASSED | 3/3 | 100.0% | 13.46ms |
+| **V2** | Intraday Volume U-Curve Distortion & TOD Normalization | ✅ PASSED | 3/3 | 100.0% | 17.31ms |
+| **V3** | Session Boundary & RTH Alignment (09:30-16:00 EST) | ✅ PASSED | 2/2 | 100.0% | 19.34ms |
+| **V4** | Wick/Shadow Asymmetry & Pin-Bar Misclassifications | ✅ PASSED | 3/3 | 100.0% | 21.76ms |
+| **V5** | Overnight Gap vs. Intraday Real Body Separation | ✅ PASSED | 2/2 | 100.0% | 8.37ms |
+| **V6** | Historical Volatility Regime Shifts & Return Floors | ✅ PASSED | 3/3 | 100.0% | 6.82ms |
+| **V7** | Numerical Stability, Zero-Range Guards & Division-by-Zero Protection | ✅ PASSED | 3/3 | 100.0% | 43.32ms |
+| **V8** | Astrological Ephemeris Coordinate & Timezone Precision | ✅ PASSED | 4/4 | 100.0% | 7.70ms |
+| **V9** | Computational Efficiency & Vectorized Batch Throughput | ✅ PASSED | 2/2 | 100.0% | 230.60ms |
+| **V10** | Downstream 66-Column Schema Compatibility & Master Union Invariant | ✅ PASSED | 4/4 | 100.0% | 48.14ms |
 
 ---
 
@@ -47,7 +47,7 @@ Swiss Ephemeris astronomical precision standards.
 ### Vector 1: Lookahead Bias & Data Leakage in Rolling Baselines
 - **Description**: Evaluates strict shift(1) prior-bar lagging on ATR, Volume SMA, and RVOL to guarantee zero lookahead bias.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `13.96 ms`
+- **Execution Latency**: `13.46 ms`
 
 ```text
 Theorem (Non-Lookahead Temporal Causality):
@@ -64,7 +64,7 @@ Hence, partial derivative d(B_t)/d(x_t) == 0 for all t, guaranteeing zero inform
 ### Vector 2: Intraday Volume U-Curve Distortion & TOD Normalization
 - **Description**: Evaluates intraday TOD volume stratification to eliminate U-curve bias between opening, midday, and closing sessions.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `22.03 ms`
+- **Execution Latency**: `17.31 ms`
 
 ```text
 Theorem (Time-of-Day Stratification Invariance):
@@ -81,7 +81,7 @@ Because E[V(t, h_close)] >> E[V(t, h_midday)], stratification ensures:
 ### Vector 3: Session Boundary & RTH Alignment (09:30-16:00 EST)
 - **Description**: Verifies elimination of extended-hours noise and confirms 100% RTH session alignment across intraday feeds.
 - **Audit Status**: `PASSED` (2/2 checks passed)
-- **Execution Latency**: `20.41 ms`
+- **Execution Latency**: `19.34 ms`
 
 ```text
 Theorem (Session Boundary RTH Filtering Completeness):
@@ -93,7 +93,7 @@ All ETH sessions (04:00-09:30 pre-market and 16:00-20:00 post-market) are filter
 ### Vector 4: Wick/Shadow Asymmetry & Pin-Bar Misclassifications
 - **Description**: Enforces strict Solid Ratio >= 0.65 and Max Wick Ratio <= 0.25 to reject shooting stars, hammers, and dojis.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `23.89 ms`
+- **Execution Latency**: `21.76 ms`
 
 ```text
 Theorem (Geometric Solid Dominance Invariant):
@@ -112,7 +112,7 @@ Since Solid_Ratio + Upper_Wick_Ratio + Lower_Wick_Ratio == 1.0, the dual constra
 ### Vector 5: Overnight Gap vs. Intraday Real Body Separation
 - **Description**: Evaluates price return disentanglement to prevent overnight gap carry from polluting intraday solid candlestick metrics.
 - **Audit Status**: `PASSED` (2/2 checks passed)
-- **Execution Latency**: `8.81 ms`
+- **Execution Latency**: `8.37 ms`
 
 ```text
 Theorem (Price Return Disentanglement Decomposition):
@@ -127,7 +127,7 @@ This strictly isolates overnight economic carry from genuine intraday institutio
 ### Vector 6: Historical Volatility Regime Shifts & Return Floors
 - **Description**: Verifies adaptive ATR thresholds and timeframe return floors across 1993, 2008, 2020, and modern market regimes.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `7.67 ms`
+- **Execution Latency**: `6.82 ms`
 
 ```text
 Theorem (Regime-Adaptive Volatility Normalization):
@@ -145,7 +145,7 @@ This dual formulation allows the sieve to dynamically scale through $40 SPY (199
 ### Vector 7: Numerical Stability, Zero-Range Guards & Division-by-Zero Protection
 - **Description**: Evaluates zero-range candles, zero-volume bars, and epsilon guards across 100,000 synthetic fuzzing cases.
 - **Audit Status**: `PASSED` (3/3 checks passed)
-- **Execution Latency**: `47.22 ms`
+- **Execution Latency**: `43.32 ms`
 
 ```text
 Theorem (Total Epsilon Guarding & Numerical Stability):
@@ -160,7 +160,7 @@ Hence, lim_{D -> 0} (N / D_{guarded}) < infty, eliminating ZeroDivisionError, in
 ### Vector 8: Astrological Ephemeris Coordinate & Timezone Precision
 - **Description**: Verifies Swiss Ephemeris Sidereal Lahiri mode, Julian Date UT conversion, 9 Graha coordinates, and 5 Panchang limbs.
 - **Audit Status**: `PASSED` (4/4 checks passed)
-- **Execution Latency**: `11.25 ms`
+- **Execution Latency**: `7.70 ms`
 
 ```text
 Theorem (Swiss Ephemeris Sidereal Lahiri Precision Invariant):
@@ -174,7 +174,7 @@ Ayanamsha accuracy is verified to < 10^{-4} degrees (< 0.36 arcseconds) vs IAU b
 ### Vector 9: Computational Efficiency & Vectorized Batch Throughput
 - **Description**: Verifies O(N) computational efficiency and tests that processing throughput exceeds 1,000 bars/sec.
 - **Audit Status**: `PASSED` (2/2 checks passed)
-- **Execution Latency**: `248.03 ms`
+- **Execution Latency**: `230.60 ms`
 
 ```text
 Theorem (O(N) Vectorized Processing Complexity):
@@ -184,14 +184,14 @@ Observed throughput exceeds 100,000+ bars/second on standard compute hardware.
 ```
 
 **Audit Evidence & Metrics:**
-- `50k_bars_execution_time_sec`: `0.027757899999414803`
-- `throughput_bars_per_sec`: `1801289.0024480997`
-- `ephemeris_throughput_jds_per_sec`: `4587.882027201739`
+- `50k_bars_execution_time_sec`: `0.025718899999901623`
+- `throughput_bars_per_sec`: `1944095.5872992722`
+- `ephemeris_throughput_jds_per_sec`: `4923.137515537122`
 
 ### Vector 10: Downstream 66-Column Schema Compatibility & Master Union Invariant
 - **Description**: Verifies exact 66-column schema presence, exact row union sum (N=1,001), zero duplicate timestamps, and zero NaNs.
 - **Audit Status**: `PASSED` (4/4 checks passed)
-- **Execution Latency**: `51.48 ms`
+- **Execution Latency**: `48.14 ms`
 
 ```text
 Theorem (Master Manifest Partition Union Invariant & Schema Completeness):
@@ -218,7 +218,7 @@ Data integrity is 100% verified across all partitions.
 | **1H** | 33,941 | 2008-01-22 to 2026-08-14 | **670** | 273 (40.7%) | 397 (59.3%) | 81 | 0.8196 | 2.75x | 0.92% |
 | **2H** | 19,072 | 2008-01-23 to 2026-08-14 | **336** | 125 (37.2%) | 211 (62.8%) | 45 | 0.8281 | 2.59x | 1.31% |
 | **4H** | 9,755 | 2008-01-24 to 2026-08-14 | **180** | 49 (27.2%) | 131 (72.8%) | 22 | 0.8273 | 2.54x | 1.73% |
-| **1D** | 8,439 | 1993-02-05 to 2026-08-17 | **177** | 56 (31.6%) | 121 (68.4%) | 32 | 0.8543 | 2.08x | 2.49% |
+| **1D** | 8,440 | 1993-02-05 to 2026-08-18 | **177** | 56 (31.6%) | 121 (68.4%) | 32 | 0.8543 | 2.08x | 2.49% |
 | **1W** | 1,747 | 1993-03-01 to 2026-08-17 | **34** | 12 (35.3%) | 22 (64.7%) | 7 | 0.8213 | 1.98x | 5.46% |
 | **1MO** | 399 | 1993-06-01 to 2026-08-01 | **11** | 5 (45.5%) | 6 (54.5%) | 1 | 0.7911 | 2.14x | 7.60% |
 

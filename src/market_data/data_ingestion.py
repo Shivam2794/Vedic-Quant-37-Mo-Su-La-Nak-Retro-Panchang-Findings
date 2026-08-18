@@ -95,7 +95,7 @@ def compute_julian_date(dt_input):
 
 
 def fetch_alpaca_1h_cached(cache_path=None, start_year=2008, end_year=2026):
-    """
+    r"""
     Fetches 1-hour SPY bars spanning 2008 to 2026 by unifying historical 1-minute 
     institutional archives (e.g. E:\SPY 1min data) and Alpaca API / caches.
     """
