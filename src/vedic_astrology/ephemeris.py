@@ -268,7 +268,7 @@ def calculate_9_grahas(
     k_lon = (r_lon + 180.0) % 360.0
     k_lat = -r_lat
     k_dist = r_dist
-    k_speed_lon = -r_speed_lon
+    k_speed_lon = r_speed_lon
     k_speed_lat = -r_speed_lat
     k_speed_dist = r_speed_dist
     k_is_retro = bool(k_speed_lon < 0.0) if node_mode.lower() == "true" else True
@@ -363,7 +363,7 @@ def calculate_graha_positions_batch(
         k_lon = (r_lon + 180.0) % 360.0
         k_lat = -r_lat
         k_dist = r_dist
-        k_spd = -r_spd
+        k_spd = r_spd
 
         cols_dict["Ketu_Lon"][i] = k_lon
         cols_dict["Ketu_Lat"][i] = k_lat

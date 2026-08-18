@@ -556,3 +556,121 @@ def is_gandanta_batch(
     c2 = np.abs(lons_arr - 120.0) <= threshold_deg
     c3 = np.abs(lons_arr - 240.0) <= threshold_deg
     return c1 | c2 | c3
+
+
+# ═══════════════════════════════════════════════════════════════
+# PUSHKARA NAVAMSHA & PUSHKARA BHAGA
+# ═══════════════════════════════════════════════════════════════
+
+# Classical 24 Pushkara Navamshas (2 per sign across 12 signs = 24 total)
+# Defined by 0-indexed navamsha within sign (0..8 corresponding to 1st..9th Navamsha):
+# Fire signs (Aries=0, Leo=4, Sagittarius=8): Navamsha 7 & 9 -> indices 6 & 8 (Libra & Sag)
+# Earth signs (Taurus=1, Virgo=5, Capricorn=9): Navamsha 3 & 5 -> indices 2 & 4 (Pisces & Taurus)
+# Air signs (Gemini=2, Libra=6, Aquarius=10): Navamsha 6 & 8 -> indices 5 & 7 (Pisces & Taurus)
+# Water signs (Cancer=3, Scorpio=7, Pisces=11): Navamsha 1 & 3 -> indices 0 & 2 (Cancer & Virgo)
+PUSHKARA_NAVAMSHA_INDICES: Dict[int, Tuple[int, int]] = {
+    0: (6, 8),   # Aries (Fire): 7th (20°00'-23°20') & 9th (26°40'-30°00')
+    1: (2, 4),   # Taurus (Earth): 3rd (6°40'-10°00') & 5th (13°20'-16°40')
+    2: (5, 7),   # Gemini (Air): 6th (16°40'-20°00') & 8th (23°20'-26°40')
+    3: (0, 2),   # Cancer (Water): 1st (0°00'-3°20') & 3rd (6°40'-10°00')
+    4: (6, 8),   # Leo (Fire): 7th & 9th
+    5: (2, 4),   # Virgo (Earth): 3rd & 5th
+    6: (5, 7),   # Libra (Air): 6th & 8th
+    7: (0, 2),   # Scorpio (Water): 1st & 3rd
+    8: (6, 8),   # Sagittarius (Fire): 7th & 9th
+    9: (2, 4),   # Capricorn (Earth): 3rd & 5th
+    10: (5, 7),  # Aquarius (Air): 6th & 8th
+    11: (0, 2),  # Pisces (Water): 1st & 3rd
+}
+
+# Classical 12 Pushkara Bhagas (Exact auspicious degrees per sign, Jataka Parijata / CS Patel)
+PUSHKARA_BHAGA_DEGREES: Dict[int, float] = {
+    0: 21.0,   # Aries (Fire): 21°
+    1: 14.0,   # Taurus (Earth): 14°
+    2: 18.0,   # Gemini (Air): 18°
+    3: 8.0,    # Cancer (Water): 8°
+    4: 19.0,   # Leo (Fire): 19°
+    5: 9.0,    # Virgo (Earth): 9°
+    6: 24.0,   # Libra (Air): 24°
+    7: 11.0,   # Scorpio (Water): 11°
+    8: 23.0,   # Sagittarius (Fire): 23°
+    9: 14.0,   # Capricorn (Earth): 14°
+    10: 19.0,  # Aquarius (Air): 19°
+    11: 9.0,   # Pisces (Water): 9°
+}
+
+
+def is_pushkara_navamsha(lon_deg: float) -> bool:
+    """
+    Determines if a celestial longitude falls within one of the 24 classical Pushkara Navamshas.
+
+    Parameters
+    ----------
+    lon_deg : float
+        Sidereal longitude in degrees [0, 360).
+
+    Returns
+    -------
+    bool
+        True if the longitude falls in a Pushkara Navamsha.
+    """
+    lon = float(lon_deg) % 360.0
+    sign_idx = int(np.floor((lon + 1e-9) / 30.0)) % 12
+    deg_in_sign = lon % 30.0
+    nav_idx = int(np.floor((deg_in_sign + 1e-9) / (30.0 / 9.0))) % 9
+    return nav_idx in PUSHKARA_NAVAMSHA_INDICES.get(sign_idx, ())
+
+
+def is_pushkara_navamsha_batch(lons: Union[np.ndarray, pd.Series, List[float]]) -> np.ndarray:
+    """
+    Vectorized Pushkara Navamsha detection for an array of sidereal longitudes.
+    """
+    lons_arr = np.asarray(lons, dtype=np.float64) % 360.0
+    signs = (np.floor((lons_arr + 1e-9) / 30.0).astype(int)) % 12
+    deg_in_signs = lons_arr % 30.0
+    nav_indices = (np.floor((deg_in_signs + 1e-9) / (30.0 / 9.0)).astype(int)) % 9
+
+    result = np.zeros(len(lons_arr), dtype=bool)
+    for sign, valid_navs in PUSHKARA_NAVAMSHA_INDICES.items():
+        mask = (signs == sign) & np.isin(nav_indices, valid_navs)
+        result |= mask
+    return result
+
+
+def is_pushkara_bhaga(lon_deg: float, orb: float = 1.0) -> bool:
+    """
+    Determines if a celestial longitude is within `orb` degrees of a classical Pushkara Bhaga.
+
+    Parameters
+    ----------
+    lon_deg : float
+        Sidereal longitude in degrees [0, 360).
+    orb : float
+        Angular orb around the Pushkara Bhaga degree (default 1.0°).
+
+    Returns
+    -------
+    bool
+        True if within orb of the Pushkara Bhaga degree.
+    """
+    lon = float(lon_deg) % 360.0
+    sign_idx = int(np.floor((lon + 1e-9) / 30.0)) % 12
+    deg_in_sign = lon % 30.0
+    target_deg = PUSHKARA_BHAGA_DEGREES.get(sign_idx, -999.0)
+    return abs(deg_in_sign - target_deg) <= orb
+
+
+def is_pushkara_bhaga_batch(
+    lons: Union[np.ndarray, pd.Series, List[float]],
+    orb: float = 1.0,
+) -> np.ndarray:
+    """
+    Vectorized Pushkara Bhaga detection for an array of sidereal longitudes.
+    """
+    lons_arr = np.asarray(lons, dtype=np.float64) % 360.0
+    signs = (np.floor((lons_arr + 1e-9) / 30.0).astype(int)) % 12
+    deg_in_signs = lons_arr % 30.0
+
+    target_degs = np.array([PUSHKARA_BHAGA_DEGREES[s] for s in signs], dtype=np.float64)
+    return np.abs(deg_in_signs - target_degs) <= orb
+

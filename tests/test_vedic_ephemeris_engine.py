@@ -33,6 +33,10 @@ from src.vedic_astrology.nakshatra_navamsha import (
     get_navamsha_batch,
     is_gandanta,
     is_gandanta_batch,
+    is_pushkara_navamsha,
+    is_pushkara_navamsha_batch,
+    is_pushkara_bhaga,
+    is_pushkara_bhaga_batch,
 )
 from src.vedic_astrology.panchang import (
     get_tithi_info,
@@ -101,11 +105,17 @@ class TestEphemerisEngine:
         assert grahas["Sun"]["is_retrograde"] is False
         assert grahas["Moon"]["is_retrograde"] is False
 
-        # Ketu must be exactly 180° opposite to Rahu
+        # Ketu must be exactly 180° opposite to Rahu and share Rahu's longitudinal speed
         r_lon = grahas["Rahu"]["lon"]
         k_lon = grahas["Ketu"]["lon"]
         expected_k_lon = (r_lon + 180.0) % 360.0
         assert abs(k_lon - expected_k_lon) < 1e-10
+        assert abs(grahas["Ketu"]["speed"] - grahas["Rahu"]["speed"]) < 1e-10
+
+        # True node mode check
+        grahas_true = calculate_9_grahas(jd, node_mode="true")
+        assert abs(grahas_true["Ketu"]["speed"] - grahas_true["Rahu"]["speed"]) < 1e-10
+        assert grahas_true["Ketu"]["is_retrograde"] == grahas_true["Rahu"]["is_retrograde"]
 
     def test_calculate_graha_positions_batch_consistency(self):
         jds = [2460325.0, 2460326.0, 2460327.0]
@@ -207,6 +217,49 @@ class TestNakshatraNavamshaEngine:
         assert is_gandanta(239.5) is True
         assert is_gandanta(240.2) is True
         assert is_gandanta(245.0) is False
+
+    def test_pushkara_navamsha_classical_mapping(self):
+        """Validates classical 24 Pushkara Navamshas across fire, earth, air, water signs."""
+        # Fire: Aries (0) -> Pada 7 (21.5°) & Pada 9 (28.0°)
+        assert is_pushkara_navamsha(21.5) is True
+        assert is_pushkara_navamsha(28.0) is True
+        assert is_pushkara_navamsha(5.0) is False
+
+        # Earth: Taurus (30°) -> Pada 3 (38.0°) & Pada 5 (45.0°)
+        assert is_pushkara_navamsha(38.0) is True
+        assert is_pushkara_navamsha(45.0) is True
+        assert is_pushkara_navamsha(32.0) is False
+
+        # Air: Gemini (60°) -> Pada 6 (78.0°) & Pada 8 (85.0°)
+        assert is_pushkara_navamsha(78.0) is True
+        assert is_pushkara_navamsha(85.0) is True
+        assert is_pushkara_navamsha(65.0) is False
+
+        # Water: Cancer (90°) -> Pada 1 (91.5°) & Pada 3 (98.0°)
+        assert is_pushkara_navamsha(91.5) is True
+        assert is_pushkara_navamsha(98.0) is True
+        assert is_pushkara_navamsha(105.0) is False
+
+        # Batch
+        lons = np.array([21.5, 5.0, 38.0, 78.0, 91.5, 105.0])
+        batch_res = is_pushkara_navamsha_batch(lons)
+        assert np.array_equal(batch_res, [True, False, True, True, True, False])
+
+    def test_pushkara_bhaga_degrees(self):
+        """Validates 12 classical Pushkara Bhaga degree points within 1° orb."""
+        # Aries 21°, Taurus 14°, Gemini 18°, Cancer 8°
+        assert is_pushkara_bhaga(21.0) is True
+        assert is_pushkara_bhaga(21.5, orb=1.0) is True
+        assert is_pushkara_bhaga(25.0, orb=1.0) is False
+
+        assert is_pushkara_bhaga(30.0 + 14.0) is True  # Taurus 14°
+        assert is_pushkara_bhaga(60.0 + 18.0) is True  # Gemini 18°
+        assert is_pushkara_bhaga(90.0 + 8.0) is True   # Cancer 8°
+
+        # Batch
+        lons = np.array([21.0, 44.0, 78.0, 98.0, 15.0])
+        batch_res = is_pushkara_bhaga_batch(lons, orb=1.0)
+        assert np.array_equal(batch_res, [True, True, True, True, False])
 
 
 class TestPanchangEngine:

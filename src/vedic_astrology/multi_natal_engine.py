@@ -52,6 +52,7 @@ DASHA_YEARS = {
 
 TOTAL_VIMSHOTTARI_CYCLE = 120.0  # Solar years
 NAKSHATRA_SPAN_DEG = 360.0 / 27.0  # 13°20' = 13.333333333333334 degrees
+SIDEREAL_YEAR = 365.25636042  # Days in sidereal year (Trap P2.9 fix)
 
 # ─── 4 CANONICAL NATAL CHART SPECIFICATIONS ──────────────────────────────────
 # 1. SPY ETF First Trade: 1993-01-29 09:30:00 EST (UTC = 14:30:00)
@@ -195,8 +196,8 @@ def calculate_vimshottari_dasha(natal_chart: Dict[str, Any], target_jd_ut: float
     birth_lord_total_years = DASHA_YEARS[birth_lord]
     balance_years = remaining_frac * birth_lord_total_years
 
-    # Elapsed solar years between birth and target date
-    elapsed_years = (target_jd_ut - birth_jd) / 365.25
+    # Elapsed sidereal years between birth and target date
+    elapsed_years = (target_jd_ut - birth_jd) / SIDEREAL_YEAR
 
     # 1. Determine Mahadasha (MD)
     current_md_lord = birth_lord

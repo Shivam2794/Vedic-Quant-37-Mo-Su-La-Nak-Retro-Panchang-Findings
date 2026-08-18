@@ -45,7 +45,7 @@ BAV_RULES = {
         6: {3,5,6,11},              # From Saturn
         7: {3,6,10,11},             # From Lagna
     },
-    'Mars': {  # Total: 38
+    'Mars': {  # Total: 39
         0: {3,5,6,10,11},            # From Sun
         1: {3,6,11},                # From Moon
         2: {1,2,4,7,8,10,11},        # From Mars
@@ -85,7 +85,7 @@ BAV_RULES = {
         6: {3,4,5,8,9,10,11},        # From Saturn
         7: {1,2,3,4,5,8,9,11},      # From Lagna
     },
-    'Sat': {  # Total: 38
+    'Sat': {  # Total: 39
         0: {1,2,4,7,8,10,11},        # From Sun
         1: {3,6,11},                # From Moon
         2: {3,5,6,10,11,12},         # From Mars

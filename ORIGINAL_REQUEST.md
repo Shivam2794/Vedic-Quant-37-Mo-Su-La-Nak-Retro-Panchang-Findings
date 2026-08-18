@@ -122,3 +122,64 @@ Integrity mode: development
 - [ ] Full statistical discovery engine module (src/analysis/vedic_pattern_miner.py) executed cleanly.
 - [ ] ML attribution module (src/ml/vedic_feature_importance.py) generating SHAP values and feature rankings.
 - [ ] Master findings report (reports/vedic_market_movers_codex.md) published and committed to git branch feat/extreme-solid-candlestick-anomalies.
+
+## Follow-up — 2026-08-18T00:39:46Z
+
+Execute an eternal, continuous multi-agent brutal multipoint inspection and self-correcting development loop across all 13 Vedic astrological pillars, mathematical formulas, ephemeris calculations, and code chunks until achieving a completely error-free cycle with 100% mathematical, canonical, and quantitative integrity.
+
+Working directory: C:\Users\Shivam Patel\.gemini\antigravity\scratch\Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings
+Integrity mode: development
+
+## Requirements
+
+### R1. Deep Atom-by-Atom Multipoint Forensic Audit of All 13 Astrological Pillars
+- Inspect every single line of code, formula, and boundary condition in:
+  - src/vedic_astrology/omni_vedic_fusion.py (10-pillar core ephemeris extractor)
+  - src/vedic_astrology/multi_natal_engine.py (SPY, USA, Fed, NYSE 4-natal dasha & gochar engine)
+  - src/core/astro_vargas.py, jaimini_karakas.py, astro_ashtakvarga.py, shadbala_core.py, vedha_engine.py, kp_ephemeris_module.py
+  - src/analysis/vedic_pattern_miner.py, run_discovery_engine.py, mine_high_freq_rules.py
+  - src/ml/vedic_feature_importance.py
+- Audit the exact mathematical equations and scriptural canonical fidelity across all 13 domains:
+  1. Ephemeris & Speeds: Sidereal Lahiri precession, topocentric Wall Street coordinates, planetary stations (Speed ≈ 0), retrograde flags, declinations, OOB (|δ| > 23.44°), combustion orbs, Gandanta boundaries.
+  2. Zodiac & Nakshatras: 12 Rasis, 27 Nakshatras, 108 Padas, Pushkara Navamsha/Bhaga, Vargottama invariants.
+  3. Harmonic Shodashvargas: Exact division mappings for D1, D9, D10, D60 (including odd vs even sign reverse rules).
+  4. Panchanga Limbs: Tithi 12° increments, Vara Chaldean sequence, Nithya Yoga formulas, Karana Vishti/Bhadra triggers, Hora planetary hours.
+  5. Bhavas & Angles: Topocentric Lagna, Chandra Lagna, all 66 mutual inter-planetary houses, and exact angular distance arcs (0°..180°).
+  6. Parashari Drishti: Full 7th aspect, Mars 4/8, Jupiter 5/9, Saturn 3/10 special aspects, and continuous degree-to-degree orbs.
+  7. Ashtakavarga & Kakshyas: BAV bindu allocation, SAV 337 total points invariant across all 12 signs, 8 Kakshya 3°45' partitions.
+  8. Shadbala 6-Fold Potencies: Sthana, Dig, Kala, Chesta, Naisargika, Drik Balas, total Rupas, and strength ratios.
+  9. Jaimini 7 Karakas: Degrees in sign sorting (excluding Rahu/Ketu), AK, AmK, BK, MK, PK, GK, DK strict 1-to-1 uniqueness.
+  10. Sarvatobhadra Chakra: 28-Nakshatra grid with Abhijit, 5 Vedha ray intersections, and Gochar Murti 4-metal allocations.
+  11. KP System: Placidus cusp boundaries, 249 sub-lord divisions for Lagna, 10th (MC), and 11th cusps.
+  12. Vimshottari Dasha Engine: Sub-second fractional elapsed arc balance at birth, 120-year rolling cycle for MD, AD, and PD.
+  13. 4-Entity Multi-Natal Hierarchy: SPY ETF (1993), USA (1776), Fed (1913), NYSE (1792) birth charts, Gochar Bhavas (1..12), Sade-Sati, Kantaka Shani, Ashtama Shani, and multi-entity crisis counts.
+
+### R2. Eternal Self-Correcting Continuous Audit Loop
+- Deploy continuous adversarial inspection loops checking for:
+  - Numerical instability, division-by-zero, negative square roots, NaN/Inf generation.
+  - Lookahead bias & data leakage in rolling baselines and ML preprocessors.
+  - Angular degree wrap-around edge cases (0° / 360° boundary jumps).
+  - Multi-year robustness and event-time deduplication across all anomaly clusters.
+- If ANY error, inconsistency, or logical flaw is detected at ANY point in the inspection, the agent must autonomously rewrite the faulty code, re-execute the test suite, and restart the full inspection cycle from step 1.
+- The loop continues grinding indefinitely until a complete, 100% flawless inspection cycle is achieved with ZERO errors, ZERO warnings, and ZERO logic flaws.
+
+### R3. Programmatic Verification & Artifact Publishing
+- Execute the full automated pytest suite across all 7 test engines (pytest tests/ -v).
+- Re-run the Master Discovery Engine (python -m src.analysis.run_discovery_engine) on the enriched 498-column matrix.
+- Generate a comprehensive, line-by-line inspection ledger verifying the mathematical proof of every pillar.
+- Commit all verified deliverables cleanly to git branch feat/extreme-solid-candlestick-anomalies.
+
+## Acceptance Criteria
+
+### Mathematical & Astrological Invariants
+- [ ] 100% of all 13 Vedic pillars strictly adhere to classical BPHS, Jaimini, C.S. Patel, and KP standards.
+- [ ] SAV bindu sum strictly equals 337 across all 12 signs in every row.
+- [ ] Jaimini 7-Karaka mapping strictly maintains 1-to-1 uniqueness (no duplicate AK/GK) in every row.
+- [ ] Vimshottari MD/AD/PD dasha walkers have zero time drift across 33+ years.
+- [ ] Zero NaNs, zero duplicate timestamps, and zero outer-planet leakage across all 498 columns.
+
+### Continuous Loop & Quality Verification
+- [ ] Continuous inspection loop runs to completion with a 100% error-free final pass.
+- [ ] Full automated test suite (pytest tests/ -v) executes with 100% passing tests (zero failures, zero errors).
+- [ ] Full end-to-end discovery engine produces valid, multi-year verified rules with Laplace-smoothed lift and BH-FDR q < 0.05.
+- [ ] All code refactors, test scripts, and reports committed to git branch feat/extreme-solid-candlestick-anomalies.

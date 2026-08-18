@@ -37,11 +37,18 @@ _CORE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "core"
 if _CORE_DIR not in sys.path:
     sys.path.insert(0, _CORE_DIR)
 
+_VA_DIR = os.path.abspath(os.path.dirname(__file__))
+if _VA_DIR not in sys.path:
+    sys.path.insert(0, _VA_DIR)
+
 from astro_vargas import get_all_vargas
 from jaimini_karakas import calculate_jaimini_karakas
 from astro_ashtakvarga import get_raw_ashtakvarga
 from shadbala_core import calc_shadbala
 from kp_ephemeris_module import compute_kp_longitudes
+from nakshatra_navamsha import is_pushkara_navamsha, is_pushkara_bhaga
+from aspects_combustion import COMBUSTION_ORBS_DIRECT, COMBUSTION_ORBS_RETROGRADE, check_combustion
+from multi_natal_engine import extract_all_multi_natal_features
 
 # ═══════════════════════════════════════════════════════════════
 # CONSTANTS
@@ -91,6 +98,7 @@ COMBUSTION_ORBS = {
 VIMSHOTTARI_LORDS = ["Ketu", "Venus", "Sun", "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury"]
 VIMSHOTTARI_YEARS = [7, 20, 6, 10, 7, 18, 16, 19, 17]
 VIMSHOTTARI_TOTAL = 120  # sum of years
+SIDEREAL_YEAR = 365.25636042  # Days in sidereal year (Trap P2.9 fix)
 
 # NYSE Inception: May 17, 1792, estimated ~10:00 AM LMT New York
 NYSE_INCEPTION_JD = swe.julday(1792, 5, 17, 14.93)  # ~14:56 UT (10:00 AM LMT NY approx)
@@ -191,15 +199,14 @@ def _calculate_all_positions(jd_ut: float) -> Dict[str, Dict[str, float]]:
 # ═══════════════════════════════════════════════════════════════
 
 def _check_combustion(positions: Dict) -> Dict[str, int]:
-    """Check classical combustion for each planet against Sun."""
+    """Check classical combustion for each planet against Sun using BPHS/Surya Siddhanta orbs."""
     sun_lon = positions["Sun"]["longitude"]
     combustion = {}
-    for planet, orb in COMBUSTION_ORBS.items():
+    for planet in ["Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
         if planet in positions:
-            dist = _safe_angular_distance(sun_lon, positions[planet]["longitude"])
-            # Retrograde planets have reduced combustion orbs (classical rule)
-            effective_orb = orb * 0.5 if positions[planet]["is_retrograde"] else orb
-            combustion[planet] = 1 if dist <= effective_orb else 0
+            is_retro = bool(positions[planet].get("is_retrograde", 0))
+            is_c, _, _ = check_combustion(sun_lon, positions[planet]["longitude"], planet, is_retro)
+            combustion[planet] = 1 if is_c else 0
     return combustion
 
 
@@ -230,7 +237,7 @@ def _vimshottari_dasha_at_jd(jd_ut: float) -> Dict[str, str]:
     balance_years = first_lord_years * (1.0 - elapsed_frac)
 
     # Total elapsed years from NYSE inception to target date
-    elapsed_years = (jd_ut - NYSE_INCEPTION_JD) / 365.25
+    elapsed_years = (jd_ut - NYSE_INCEPTION_JD) / SIDEREAL_YEAR
 
     # Walk through Mahadashas
     cumulative = 0.0
@@ -313,6 +320,8 @@ def extract_omni_vedic_row(jd_ut: float) -> Dict[str, Any]:
         row[f"{name}_Nakshatra"] = p["nakshatra_name"]
         row[f"{name}_Pada"] = p["pada"]
         row[f"{name}_Kakshya"] = p["kakshya_lord"]
+        row[f"{name}_Pushkara_Navamsha"] = 1 if is_pushkara_navamsha(p["longitude"]) else 0
+        row[f"{name}_Pushkara_Bhaga"] = 1 if is_pushkara_bhaga(p["longitude"]) else 0
         if "declination" in p:
             row[f"{name}_Declination"] = round(p["declination"], 4)
 
@@ -325,6 +334,8 @@ def extract_omni_vedic_row(jd_ut: float) -> Dict[str, Any]:
     row["Lagna_NYSE_DegInSign"] = round(asc_lon % 30.0, 4)
     row["Lagna_NYSE_Nakshatra"] = asc_nak
     row["Lagna_NYSE_Pada"] = asc_pada
+    row["Lagna_Pushkara_Navamsha"] = 1 if is_pushkara_navamsha(asc_lon) else 0
+    row["Lagna_Pushkara_Bhaga"] = 1 if is_pushkara_bhaga(asc_lon) else 0
 
     positions["Lagna"] = {"longitude": asc_lon, "sign_idx": asc_sign}
 
@@ -348,15 +359,15 @@ def extract_omni_vedic_row(jd_ut: float) -> Dict[str, Any]:
     for p_name in varga_planets:
         vargas = get_all_vargas(positions[p_name]["longitude"])
         d1_sign = positions[p_name]["sign_idx"]
-        row[f"{p_name}_D9"] = int(vargas[8])
-        row[f"{p_name}_D10"] = int(vargas[9])
+        row[f"{p_name}_D9"] = int(vargas[5])
+        row[f"{p_name}_D10"] = int(vargas[6])
         row[f"{p_name}_D60"] = int(vargas[15]) if len(vargas) > 15 else -1
-        row[f"{p_name}_Vargottama"] = 1 if d1_sign == int(vargas[8]) else 0
+        row[f"{p_name}_Vargottama"] = 1 if d1_sign == int(vargas[5]) else 0
 
     # Lagna Vargas
     lagna_vargas = get_all_vargas(asc_lon)
-    row["Lagna_D9"] = int(lagna_vargas[8])
-    row["Lagna_Vargottama"] = 1 if asc_sign == int(lagna_vargas[8]) else 0
+    row["Lagna_D9"] = int(lagna_vargas[5])
+    row["Lagna_Vargottama"] = 1 if asc_sign == int(lagna_vargas[5]) else 0
 
     # ── PILLAR 4: Jaimini Chara Karakas ──
     planets_list = [
@@ -431,6 +442,18 @@ def extract_omni_vedic_row(jd_ut: float) -> Dict[str, Any]:
         row["Vim_PD"] = dasha["PD"]
     except Exception as e:
         logger.warning(f"Vimshottari failed: {e}")
+
+    # ── PILLAR 13: 4-Entity Multi-Natal Hierarchy (SPY, USA, Fed, NYSE) ──
+    try:
+        transiting_signs = {
+            n: positions[n]["sign_idx"]
+            for n in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"]
+        }
+        transiting_signs["Lagna"] = asc_sign
+        multi_natal_feats = extract_all_multi_natal_features(jd_ut, transiting_signs)
+        row.update(multi_natal_feats)
+    except Exception as e:
+        logger.warning(f"Multi-Natal Engine failed: {e}")
 
     row["Ayanamsha_Val"] = swe.get_ayanamsa(jd_ut)
 
