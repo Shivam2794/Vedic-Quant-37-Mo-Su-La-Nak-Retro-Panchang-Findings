@@ -183,3 +183,68 @@ Integrity mode: development
 - [ ] Full automated test suite (pytest tests/ -v) executes with 100% passing tests (zero failures, zero errors).
 - [ ] Full end-to-end discovery engine produces valid, multi-year verified rules with Laplace-smoothed lift and BH-FDR q < 0.05.
 - [ ] All code refactors, test scripts, and reports committed to git branch feat/extreme-solid-candlestick-anomalies.
+
+## Follow-up — 2026-08-18T21:29:42Z
+
+Execute an unyielding, continuous multi-agent brutal multipoint inspection and self-correcting development loop across all Frontier 1 (Multi-Candle Trend Wave & Swing Impulse Engine) codes, astrological formulas, and dataset pipelines until achieving an absolute 100% error-free cycle with zero bugs, zero logic gaps, and zero statistical flaws.
+
+Working directory: C:\Users\Shivam Patel\.gemini\antigravity\scratch\Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings
+Integrity mode: development
+
+## Requirements
+
+### R1. Deep Atom-by-Atom Multipoint Forensic Audit of Frontier 1 Codebase
+- Inspect every single line of code, formula, boundary condition, and edge case in:
+  1. src/analysis/trend_wave_engine.py:
+     - Dynamic ATR ZigZag thresholding: verify prior-bar shift (shift(1)) to guarantee zero lookahead bias.
+     - Kaufman Efficiency Ratio (KER): verify bounds (0 <= KER <= 1), path length division-by-zero protection (1e-8), and directional consistency.
+     - Wave boundaries: ensure start index < end index, no overlapping or inverted indices, and correct timeframe displacement floors.
+     - Volume expansion ratio: verify baseline calculation against prior Volume SMA(20).
+  2. src/analysis/enrich_trend_waves.py:
+     - Dual-anchor synchronization: verify T_start (Inception) and T_end (Climax) Swiss Ephemeris Julian Date accuracy.
+     - Column naming & prefix isolation: verify Inception_ vs Climax_ feature separation across all 543 columns.
+     - Astrological invariants: prove sum(SAV) == 337 across all 12 signs in 100% of rows for both Inception and Climax.
+     - Jaimini 7-Karaka uniqueness: prove AK != AmK != BK != MK != PK != GK != DK across 100% of rows.
+     - Intra-wave transit kinematics: verify lunar degrees traversed (0°..360°), sign ingress counts, and stationary turn counts.
+     - Zero NaNs: verify zero missing values across all 1,032 columns.
+  3. src/analysis/mine_trend_wave_rules.py:
+     - Feature space purity: strictly verify that modern outer planets (Uranus, Neptune, Pluto) are 100% purged from candidate features.
+     - Combinatorial indexing: verify 1-way, 2-way, and 3-way feature conjunctions.
+     - Contingency table math: verify Fisher's exact 2x2 contingency matrix [[k, N_r - k], [K - k, (N - K) - (N_r - k)]].
+     - Benjamini-Hochberg FDR control: verify sorted p-value ranking (p_(i) <= i/m * Q) at q < 0.05.
+     - Bayesian Laplace-smoothed lift: verify p_rule = (k + 1)/(N_r + 2) and p_base = (K + 1)/(N + 10).
+     - Multi-year & distinct date mandates: verify >= 2 calendar years and >= 3 distinct dates.
+  4. reports/vedic_trend_wave_codex.md:
+     - Verify markdown table rendering, sample date accuracy, and numerical synchronization with parquet data.
+  5. tests/test_trend_wave_engine.py:
+     - Verify complete coverage of segmentation, enrichment, invariants, and pattern mining.
+
+### R2. Eternal Self-Correcting Continuous Audit Loop
+- Deploy continuous adversarial inspection agents (Reviewers, Challengers, and Forensic Auditor) checking for:
+  - Lookahead bias & data leakage.
+  - Off-by-one index shifts at session or timeframe boundaries.
+  - Division-by-zero, negative square roots, NaN/Inf generation.
+  - Astrological coordinate precision and transit boundary stability.
+- If ANY error, inconsistency, or logical flaw is detected at ANY point, the builder agent must autonomously rewrite the faulty code, re-execute the full test suite, and restart the full inspection cycle from step 1.
+- The loop continues grinding indefinitely until a complete, 100% flawless inspection cycle is achieved with ZERO errors, ZERO warnings, and ZERO logic flaws.
+
+### R3. Automated Test Execution & Git Publication
+- Execute the full automated pytest suite (525+ tests) with 100% passing tests (zero failures, zero warnings).
+- Re-run the Trend Wave Discovery Engine (python -m src.analysis.mine_trend_wave_rules) and verify report generation.
+- Commit and push all verified deliverables cleanly to GitHub.
+
+---
+
+## Acceptance Criteria
+
+### Mathematical & Quantitative Integrity
+- [ ] Zero lookahead bias across all wave segmentation and indicator baselines.
+- [ ] 100% of rows in spy_trend_waves_omni_vedic_supreme.parquet (522 × 1,032) satisfy sum(SAV) == 337 and Jaimini 1-to-1 uniqueness.
+- [ ] Zero NaNs, zero duplicate wave IDs, zero outer planet leakage.
+- [ ] All reported rules in vedic_trend_wave_codex.md have BH-FDR q < 0.05, support N >= 8, confidence >= 68%, and multi-year spans.
+
+### Multi-Agent Inspection & Quality Bar
+- [ ] Continuous inspection gauntlet runs to completion with a 100% error-free final pass.
+- [ ] Full automated test suite (pytest tests/ -v) executes with 100% passing tests (zero failures, zero errors, zero warnings).
+- [ ] All deliverables committed and pushed cleanly to git repository.
+
