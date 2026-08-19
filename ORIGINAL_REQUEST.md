@@ -248,3 +248,80 @@ Integrity mode: development
 - [ ] Full automated test suite (pytest tests/ -v) executes with 100% passing tests (zero failures, zero errors, zero warnings).
 - [ ] All deliverables committed and pushed cleanly to git repository.
 
+
+
+## Follow-up — 2026-08-19T02:15:06.224100+00:00
+
+<USER_REQUEST>
+Execute an unyielding, continuous multi-agent brutal multipoint inspection and self-correcting development loop across all Frontier 2 (Forward 2026–2027 Ephemeris Calendar & Predictive Signal Scanner) and Frontier 3 (Institutional Quant Backtester & Strategy Simulator) codes, astrological formulas, risk formulas, friction models, and portfolio accounting pipelines until achieving an absolute 100% error-free cycle with zero bugs, zero logic gaps, and zero statistical flaws.
+
+Working directory: C:\Users\Shivam Patel\.gemini\antigravity\scratch\Vedic-Quant-37-Mo-Su-La-Nak-Retro-Panchang-Findings
+Integrity mode: development
+
+## Requirements
+
+### R1. Deep Atom-by-Atom Multipoint Forensic Audit of Frontier 2 Codebase
+- Inspect every single line of code, formula, boundary condition, and edge case in:
+  1. src/calendar/forward_ephemeris_engine.py & frontier_2_forward_scanner/src/forward_ephemeris_engine.py:
+     - NYSE trading day generation: verify complete exclusion of all weekends and official US market holidays (2026 & 2027).
+     - RTH session timestamps: verify correct America/New_York localization and UTC conversion (09:30, 10:30, 11:30, 12:30, 13:30, 14:30, 15:30 EST/EDT).
+     - Swiss Ephemeris Julian Date calculation: verify sub-second precision.
+     - Astrological invariants: prove sum(SAV) == 337 across all 12 signs in 100% of forward timestamps (3,514/3,514).
+     - Jaimini 7-Karaka uniqueness: prove AK != AmK != BK != MK != PK != GK != DK across 100% of forward rows.
+     - Zero NaNs: verify zero missing values across all 512 columns.
+  2. src/calendar/forward_signal_scanner.py & frontier_2_forward_scanner/src/forward_signal_scanner.py:
+     - Feature space parity: verify forward candidate discrete features exactly match the training representation in mine_trend_wave_rules.py.
+     - Rule parsing & template matching: verify multi-antecedent conjunction logic (all(feat_matrix[i, idx] for idx in indices)).
+     - Confluence scoring & classification: verify directional classification (Bullish_Inception, Bearish_Liquidation, Conflict, Equilibrium).
+     - Output datasets: verify data/forward_signals_2026_2027_manifest.parquet and reports/forward_2026_2027_astro_quant_calendar.md.
+  3. tests/test_frontier_2_forward_scanner.py:
+     - Verify complete coverage of holiday exclusion, RTH session hours, invariants, and signal scanner output.
+
+### R2. Deep Atom-by-Atom Multipoint Forensic Audit of Frontier 3 Codebase
+- Inspect every single line of code, formula, boundary condition, and edge case in:
+  1. src/backtest/performance_metrics.py & frontier_3_backtester/src/performance_metrics.py:
+     - Sharpe Ratio & LPM2 Sortino Ratio: verify annualization factor sqrt(252), downside deviation thresholding, and risk-free rate adjustment.
+     - Maximum Drawdown (MDD): verify high-water mark tracking and duration calculations.
+     - Calmar Ratio: verify division by zero protection and CAGR alignment.
+     - Probabilistic Sharpe Ratio (PSR): verify Marcos López de Prado asymptotic standard error with skewness and kurtosis adjustments.
+     - Trade Expectancy: verify decoupled win/loss probability handling for scratch trades (R=0).
+     - Monte Carlo Resampling: verify bootstrap permutation math, isolated RNG seeds, and percentile ranking (5th, 50th, 95th).
+  2. src/backtest/backtest_engine.py & frontier_3_backtester/src/backtest_engine.py:
+     - Execution timing: verify Next-Bar Open fill and zero lookahead bias (T_fill > T_signal).
+     - Transaction friction: verify Interactive Brokers commission (.005/share, .00 min) and dynamic slippage (.01/share) deductions across 100% of trades.
+     - Ashtakavarga dynamic position sizing: verify SAV bindu strength multipliers (0.75x ... 1.25x) and maximum position cap (25% of equity).
+     - Macro regime breakdown: verify accurate historical date partitions (1993–2026) reconciling 100% of trades.
+  3. tests/test_frontier_3_backtester.py:
+     - Verify complete coverage of metric calculations, drawdown series, Monte Carlo stability, and backtest execution.
+
+### R3. Eternal Self-Correcting Continuous Audit Loop
+- Deploy continuous adversarial inspection agents (Reviewers, Challengers, and Forensic Auditor) checking for:
+  - Timezone shift / DST ambiguity errors between EDT and EST.
+  - Numerical instability, division-by-zero, negative equity, NaN/Inf generation.
+  - Lookahead bias & data leakage in signal, ephemeris, and fill timestamps.
+  - File parity between root src/ / tests/ / reports/ and dedicated frontier_2_forward_scanner/ & frontier_3_backtester/ packages.
+- If ANY error, inconsistency, or logical flaw is detected at ANY point, the builder agent must autonomously rewrite the faulty code, re-execute the full test suite, and restart the full inspection cycle from step 1.
+- The loop continues grinding indefinitely until a complete, 100% flawless inspection cycle is achieved with ZERO errors, ZERO warnings, and ZERO logic flaws.
+
+### R4. Automated Test Execution & Git Publication
+- Execute the full automated pytest suite (684+ tests) with 100% passing tests (zero failures, zero warnings).
+- Re-run the Forward Scanner and Institutional Backtester and verify report generation.
+- Commit and push all verified deliverables cleanly to GitHub.
+
+---
+
+## Acceptance Criteria
+
+### Mathematical & Quantitative Integrity
+- [ ] 100% of NYSE trading sessions in 2026–2027 are strictly valid RTH market hours without holiday or weekend contamination.
+- [ ] 100% of rows in forward_ephemeris_2026_2027_supreme.parquet satisfy sum(SAV) == 337 and Jaimini 1-to-1 uniqueness.
+- [ ] Zero lookahead bias across all trade signal, ephemeris, and execution events.
+- [ ] 100% of trades have realistic commissions and slippage deducted from net PnL.
+- [ ] Cash equity curves and capital compounding are strictly positive and non-explosive.
+- [ ] All reported backtest metrics in frontier_3_institutional_backtest_ledger.md match exact underlying trade manifests.
+
+### Multi-Agent Inspection & Quality Bar
+- [ ] Continuous inspection gauntlet runs to completion with a 100% error-free final pass.
+- [ ] Full automated test suite (pytest tests/ -v) executes with 100% passing tests (zero failures, zero errors, zero warnings).
+- [ ] All deliverables committed and pushed cleanly to git repository.
+</USER_REQUEST>
